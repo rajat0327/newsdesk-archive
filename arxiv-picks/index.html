@@ -47,8 +47,8 @@ header.top .wrap{display:flex;gap:18px;align-items:center;padding-top:13px;paddi
 nav.top-nav{margin-left:auto;display:flex;gap:6px;align-items:center;font-size:14px}
 nav.top-nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:7px}
 nav.top-nav a:hover{color:var(--ink);background:var(--hair)}
-nav.top-nav a.cta{color:#fff;background:var(--accent)}
-nav.top-nav a.cta:hover{color:#fff;filter:brightness(1.08)}
+nav.top-nav a.join{color:#fff;background:var(--accent);font-weight:600}
+nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
 /* hero */
 .hero{padding:52px 0 30px}
@@ -56,12 +56,10 @@ nav.top-nav a.cta:hover{color:#fff;filter:brightness(1.08)}
   margin:0 0 14px;font-weight:760}
 .hero .lede{font-size:19px;color:var(--soft);margin:0;max-width:62ch}
 .hero .lede b{color:var(--ink);font-weight:650}
-.stats{display:flex;flex-wrap:wrap;gap:0;margin:30px 0 0;border:1px solid var(--line);
-  border-radius:12px;overflow:hidden;background:var(--panel)}
-.stats div{flex:1 1 130px;padding:14px 16px;border-right:1px solid var(--line)}
-.stats div:last-child{border-right:0}
-.stats .n{font-size:23px;font-weight:700;letter-spacing:-.02em;font-family:var(--mono)}
-.stats .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
+.stats{display:flex;flex-wrap:wrap;gap:18px;margin:22px 0 0;font-size:14px;
+  color:var(--muted);align-items:baseline}
+.stats span{white-space:nowrap}
+.stats b{color:var(--ink);font-weight:670;font-family:var(--mono);font-size:15px}
 
 /* countdown strip */
 .countdown{margin:34px 0 0;border:1px solid var(--line);border-radius:12px;
@@ -198,7 +196,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     <a href="../search.html">Search</a>
     <a href="../about.html">About</a>
     <a href="../feed.xml">RSS</a>
-    <a class="cta" href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join Discord</a>
+    <a class="join" href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join Discord</a>
   </nav>
 </div></header>
 <main class="wrap">
@@ -206,11 +204,9 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <h1>arXiv Picks</h1>
   <p class="lede">Papers Worth Reading. Published every
      <b>Wednesday</b>.</p>
-  <div class="stats">
-    <div><div class="n">2</div><div class="k">Issues</div></div>
-    <div><div class="n">12</div><div class="k">Stories</div></div>
-    <div><div class="n">8</div><div class="k">Categories</div></div>
-  </div>
+  <p class="stats"><span><b>2</b> issues</span>
+     <span><b>12</b> stories</span>
+     <span><b>8</b> categories</span></p>
   <p style="margin-top:18px"><span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</span> <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</span> <span class="tag" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Training &amp; Efficiency</span> <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</span> <span class="tag" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Evaluation &amp; Benchmarks</span> <span class="tag" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Safety &amp; Alignment</span> <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</span> <span class="tag" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Research</span></p>
 </div>
 <div class="sec"><h2>Issues</h2><div class="rule"></div>
