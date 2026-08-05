@@ -166,6 +166,29 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
   .item .rail{display:flex;gap:10px;padding-top:0}
   .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
 }
+
+.searchbox{position:relative;margin:26px 0 0}
+.searchbox input{width:100%;font:inherit;font-size:17px;padding:13px 15px 13px 42px;
+  border-radius:11px;border:1px solid var(--line);background:var(--panel);
+  color:var(--ink);outline:none}
+.searchbox input:focus{border-color:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent)}
+.searchbox svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  width:17px;height:17px;stroke:var(--muted);fill:none;stroke-width:2}
+.searchbox kbd{position:absolute;right:12px;top:50%;transform:translateY(-50%);
+  font:600 11px var(--mono);color:var(--muted);border:1px solid var(--line);
+  border-radius:5px;padding:2px 6px;background:var(--hair)}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.filters button{font:inherit;font-size:13px;padding:5px 11px;border-radius:100px;
+  border:1px solid var(--line);background:var(--panel);color:var(--muted);
+  cursor:pointer}
+.filters button:hover{color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--accent);color:#fff;
+  border-color:transparent}
+.count{margin:22px 0 4px;font-size:13px;color:var(--muted);font-family:var(--mono)}
+mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
+  border-radius:3px;padding:0 2px}
+.empty{padding:44px 0;text-align:center;color:var(--muted)}
 </style>
 <style>:root{--accent:#3d7dd8}</style>
 </head>
@@ -173,6 +196,7 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 <header class="top"><div class="wrap">
   <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
   <nav class="top-nav">
+    <a href="../search.html">Search</a>
     <a href="../about.html">About</a>
     <a href="../feed.xml">RSS</a>
     <a class="cta" href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join Discord</a>
@@ -267,5 +291,11 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
   &middot; <a href="../about.html">How it works</a>
   &middot; <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Discord</a>
 </div></footer>
+<script>
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
 </body>
 </html>
