@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Engineering Reading — 01 August 2026</title>
+<meta name="description" content="17 new posts across 8 engineering blogs — 7 worth your time.">
+<meta property="og:title" content="Engineering Reading — 01 August 2026">
+<meta property="og:description" content="17 new posts across 8 engineering blogs — 7 worth your time.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-08-01.html">
+<link rel="alternate" type="application/rss+xml" title="Engineering Reading — 01 August 2026" href="../feed.xml">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#fbfbfa; --panel:#fff; --ink:#1a1a18; --muted:#6b6b66;
+  --line:#e5e4e0; --accent:#b3502a; --chip:#f2f1ed;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#12120f;--panel:#1a1a17;--ink:#eceae4;--muted:#9b978c;
+        --line:#2c2b27;--accent:#e08b5f;--chip:#232320}
+}
+:root[data-theme="dark"]{--bg:#12120f;--panel:#1a1a17;--ink:#eceae4;
+  --muted:#9b978c;--line:#2c2b27;--accent:#e08b5f;--chip:#232320}
+:root[data-theme="light"]{--bg:#fbfbfa;--panel:#fff;--ink:#1a1a18;
+  --muted:#6b6b66;--line:#e5e4e0;--accent:#b3502a;--chip:#f2f1ed}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+header.top{border-bottom:1px solid var(--line);padding:18px 0;margin-bottom:40px}
+header.top .wrap{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.brand{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;
+  letter-spacing:-.01em}
+.brand:hover{color:var(--accent)}
+nav.top-nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap;font-size:14px}
+nav.top-nav a{color:var(--muted);text-decoration:none}
+nav.top-nav a:hover{color:var(--accent)}
+h1{font-size:34px;line-height:1.2;letter-spacing:-.02em;margin:0 0 12px}
+h2{font-size:22px;letter-spacing:-.01em;margin:44px 0 14px}
+.lede{color:var(--muted);font-size:18px;margin:0 0 28px}
+.meta{color:var(--muted);font-size:14px;font-family:var(--mono)}
+.chip{display:inline-block;background:var(--chip);border:1px solid var(--line);
+  border-radius:100px;padding:2px 10px;font-size:12px;font-family:var(--mono);
+  color:var(--muted);white-space:nowrap}
+.headline{background:var(--panel);border:1px solid var(--line);
+  border-left:3px solid var(--accent);border-radius:6px;padding:16px 18px;
+  margin:24px 0 36px}
+.headline p{margin:0;font-size:17px}
+article.story{border-top:1px solid var(--line);padding:26px 0}
+article.story h3{margin:0 0 6px;font-size:20px;line-height:1.3;
+  letter-spacing:-.01em}
+article.story h3 a{color:var(--ink);text-decoration:none}
+article.story h3 a:hover{color:var(--accent);text-decoration:underline}
+article.story p{margin:10px 0 0}
+.why{border-left:2px solid var(--accent);padding-left:12px;margin-top:12px;
+  color:var(--ink)}
+.why b{font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);display:block;margin-bottom:2px;font-weight:600}
+.src{margin-top:12px;font-size:14px;color:var(--muted)}
+ul.channels{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ul.channels li{background:var(--panel);border:1px solid var(--line);
+  border-radius:8px;padding:16px 18px}
+ul.channels a.name{font-weight:650;font-size:17px;text-decoration:none;
+  color:var(--ink)}
+ul.channels a.name:hover{color:var(--accent)}
+ul.channels .desc{color:var(--muted);font-size:15px;margin-top:4px}
+ul.issues{list-style:none;padding:0;margin:0}
+ul.issues li{border-top:1px solid var(--line);padding:14px 0;display:flex;
+  gap:14px;align-items:baseline;flex-wrap:wrap}
+ul.issues a{text-decoration:none;font-weight:600}
+ul.issues a:hover{text-decoration:underline}
+ul.issues .n{color:var(--muted);font-size:14px;font-family:var(--mono);
+  margin-left:auto}
+.cta{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:20px;margin:44px 0}
+.cta p{margin:0 0 10px}
+.pager{display:flex;justify-content:space-between;gap:16px;margin:40px 0 0;
+  font-size:15px}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0 48px;
+  color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+.scroll{overflow-x:auto}
+@media(max-width:560px){body{font-size:16px}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../">Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../about.html">About</a>
+    <a href="../feed.xml">RSS</a>
+    <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Discord</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<p class="meta"><a href="./">Engineering Reading</a> &middot; 01 August 2026</p>
+<h1>Engineering Reading</h1>
+<div class="headline"><p>17 new posts across 8 engineering blogs — 7 worth your time.</p></div>
+<article class="story">
+  <h3><a href="https://blog.cloudflare.com/post-quantum-authentication-to-origins/" rel="noopener nofollow">Post-quantum authentication to origins is now supported</a></h3>
+  <span class="chip">Infrastructure</span>
+  <p>Cloudflare&#x27;s Authenticated Origin Pulls and Custom Origin Trust Store now support post-quantum authentication. The post explains how to configure fully post-quantum secure mutually authenticated TLS connections to origin servers. It also dives into the engineering details of how Cloudflare built this and how it fits into their overall post-quantum migration.</p>
+  <div class="why"><b>Why it matters</b>This article provides engineering details on implementing post-quantum authentication for secure TLS connections to origin servers.</div>
+  <p class="src">Cloudflare &middot; <a href="https://blog.cloudflare.com/post-quantum-authentication-to-origins/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3?source=rss----2615bd06b42e---4" rel="noopener nofollow">GenRec: Towards LLM-Native Recommendation at Netflix</a></h3>
+  <span class="chip">Data &amp; ML</span>
+  <p>Recommendations are central to the Netflix experience, with current production models relying on thousands of hand-crafted features and specialized architectures for sequence modeling, feature interactions, and multi-task objectives. This existing stack has evolved over many years to support diverse content. The post introduces GenRec, signaling a move towards LLM-native recommendation at Netflix.</p>
+  <div class="why"><b>Why it matters</b>It outlines the evolution of Netflix&#x27;s core recommendation system and its shift towards LLM-native approaches.</div>
+  <p class="src">Netflix &middot; <a href="https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3?source=rss----2615bd06b42e---4" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/" rel="noopener nofollow">Don’t stop early: Case-folding source code at memory speed</a></h3>
+  <span class="chip">Performance</span>
+  <p>For accurate text matching in search engines, regex, and case-insensitive contexts, a canonical form called case folding is necessary to erase case distinctions. This ensures that strings differing only in case compare as equal, such as &quot;café&quot; and &quot;CAFÉ.&quot; The post discusses achieving this case folding at memory speed for source code.</p>
+  <div class="why"><b>Why it matters</b>This article details the technical problem and solution for high-performance case folding in text matching systems like search engines.</div>
+  <p class="src">GitHub &middot; <a href="https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://engineering.atspotify.com/2026/7/indexing-the-data-lake-for-online-point-queries/" rel="noopener nofollow">Indexing the Data Lake for Online Point Queries</a></h3>
+  <span class="chip">Data &amp; ML</span>
+  <p>Companies such as Spotify require vast quantities of data to be accessible at low latency for their online services. This post focuses on the specific challenge of indexing the data lake to support online point queries. It aims to address how to efficiently retrieve individual data points from large datasets with minimal delay.</p>
+  <div class="why"><b>Why it matters</b>It addresses the critical problem of making vast data lake quantities accessible at low latency for online point queries.</div>
+  <p class="src">Spotify &middot; <a href="https://engineering.atspotify.com/2026/7/indexing-the-data-lake-for-online-point-queries/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788?source=rss----53c7c27702d5---4" rel="noopener nofollow">Eval-driven development: Lessons from evaluating GenAI at scale</a></h3>
+  <span class="chip">Data &amp; ML</span>
+  <p>Airbnb teams build trustworthy Generative AI products by treating evaluation as a first-class engineering discipline, rather than an afterthought. Generative AI breaks many traditional assumptions, necessitating this approach. The post shares lessons from evaluating GenAI at scale to ensure product reliability.</p>
+  <div class="why"><b>Why it matters</b>This article provides lessons from evaluating Generative AI at scale, emphasizing evaluation as a first-class engineering discipline.</div>
+  <p class="src">Airbnb &middot; <a href="https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788?source=rss----53c7c27702d5---4" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Kafka App? There’s a Skill for That</a></h3>
+  <span class="chip">Data &amp; ML</span>
+  <p>Etsy manages over 100 million unique listings from 5.6 million sellers, lacking a standard product catalog. When shoppers search, models must infer meaning and listing content using data from user visits and Etsy listings. Kafka is utilized in this process to enable these models to understand unique and creative items.</p>
+  <div class="why"><b>Why it matters</b>It explains how Etsy uses Kafka and data models to infer meaning from unique listings for complex search queries.</div>
+  <p class="src">Etsy &middot; <a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://medium.com/pinterest-engineering/pinner-progression-better-use-case-representation-driving-weekly-active-user-growth-at-pinterest-bd2131ab238a?source=rss----4c5a5f6279b6---4" rel="noopener nofollow">Pinner Progression: Better Use-Case Representation Driving Weekly Active User Growth at Pinterest</a></h3>
+  <span class="chip">Data &amp; ML</span>
+  <p>Pinterest&#x27;s mission is to help people discover, and this post, part 1 of 2, focuses on &quot;Pinner Progression.&quot; It aims to achieve better use-case representation to drive weekly active user growth. The article involves contributions from personalization, user understanding, and data science teams, suggesting a deep dive into how these areas contribute to user engagement.</p>
+  <div class="why"><b>Why it matters</b>This post details how better use-case representation in personalization and user understanding drives weekly active user growth.</div>
+  <p class="src">Pinterest &middot; <a href="https://medium.com/pinterest-engineering/pinner-progression-better-use-case-representation-driving-weekly-active-user-growth-at-pinterest-bd2131ab238a?source=rss----4c5a5f6279b6---4" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<div class="cta">
+  <p><b>These land in Discord every week</b>, as a slide deck you can read on a phone.</p>
+  <p><a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join the server &rarr;</a>
+     &middot; <a href="../eng-blogs/feed.xml">Subscribe by RSS</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+  Generated from the digest archive. Facts come from the sources linked on
+  each story. &middot; <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join on Discord</a>
+</div></footer>
+</body>
+</html>

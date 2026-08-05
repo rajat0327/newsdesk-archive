@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Release Radar — 26 July 2026</title>
+<meta name="description" content="28 releases across 31 tracked projects, including 2 with security fixes.">
+<meta property="og:title" content="Release Radar — 26 July 2026">
+<meta property="og:description" content="28 releases across 31 tracked projects, including 2 with security fixes.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/release-radar/2026-07-26.html">
+<link rel="alternate" type="application/rss+xml" title="Release Radar — 26 July 2026" href="../feed.xml">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#fbfbfa; --panel:#fff; --ink:#1a1a18; --muted:#6b6b66;
+  --line:#e5e4e0; --accent:#b3502a; --chip:#f2f1ed;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#12120f;--panel:#1a1a17;--ink:#eceae4;--muted:#9b978c;
+        --line:#2c2b27;--accent:#e08b5f;--chip:#232320}
+}
+:root[data-theme="dark"]{--bg:#12120f;--panel:#1a1a17;--ink:#eceae4;
+  --muted:#9b978c;--line:#2c2b27;--accent:#e08b5f;--chip:#232320}
+:root[data-theme="light"]{--bg:#fbfbfa;--panel:#fff;--ink:#1a1a18;
+  --muted:#6b6b66;--line:#e5e4e0;--accent:#b3502a;--chip:#f2f1ed}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+header.top{border-bottom:1px solid var(--line);padding:18px 0;margin-bottom:40px}
+header.top .wrap{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.brand{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;
+  letter-spacing:-.01em}
+.brand:hover{color:var(--accent)}
+nav.top-nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap;font-size:14px}
+nav.top-nav a{color:var(--muted);text-decoration:none}
+nav.top-nav a:hover{color:var(--accent)}
+h1{font-size:34px;line-height:1.2;letter-spacing:-.02em;margin:0 0 12px}
+h2{font-size:22px;letter-spacing:-.01em;margin:44px 0 14px}
+.lede{color:var(--muted);font-size:18px;margin:0 0 28px}
+.meta{color:var(--muted);font-size:14px;font-family:var(--mono)}
+.chip{display:inline-block;background:var(--chip);border:1px solid var(--line);
+  border-radius:100px;padding:2px 10px;font-size:12px;font-family:var(--mono);
+  color:var(--muted);white-space:nowrap}
+.headline{background:var(--panel);border:1px solid var(--line);
+  border-left:3px solid var(--accent);border-radius:6px;padding:16px 18px;
+  margin:24px 0 36px}
+.headline p{margin:0;font-size:17px}
+article.story{border-top:1px solid var(--line);padding:26px 0}
+article.story h3{margin:0 0 6px;font-size:20px;line-height:1.3;
+  letter-spacing:-.01em}
+article.story h3 a{color:var(--ink);text-decoration:none}
+article.story h3 a:hover{color:var(--accent);text-decoration:underline}
+article.story p{margin:10px 0 0}
+.why{border-left:2px solid var(--accent);padding-left:12px;margin-top:12px;
+  color:var(--ink)}
+.why b{font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);display:block;margin-bottom:2px;font-weight:600}
+.src{margin-top:12px;font-size:14px;color:var(--muted)}
+ul.channels{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ul.channels li{background:var(--panel);border:1px solid var(--line);
+  border-radius:8px;padding:16px 18px}
+ul.channels a.name{font-weight:650;font-size:17px;text-decoration:none;
+  color:var(--ink)}
+ul.channels a.name:hover{color:var(--accent)}
+ul.channels .desc{color:var(--muted);font-size:15px;margin-top:4px}
+ul.issues{list-style:none;padding:0;margin:0}
+ul.issues li{border-top:1px solid var(--line);padding:14px 0;display:flex;
+  gap:14px;align-items:baseline;flex-wrap:wrap}
+ul.issues a{text-decoration:none;font-weight:600}
+ul.issues a:hover{text-decoration:underline}
+ul.issues .n{color:var(--muted);font-size:14px;font-family:var(--mono);
+  margin-left:auto}
+.cta{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:20px;margin:44px 0}
+.cta p{margin:0 0 10px}
+.pager{display:flex;justify-content:space-between;gap:16px;margin:40px 0 0;
+  font-size:15px}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0 48px;
+  color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+.scroll{overflow-x:auto}
+@media(max-width:560px){body{font-size:16px}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../">Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../about.html">About</a>
+    <a href="../feed.xml">RSS</a>
+    <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Discord</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<p class="meta"><a href="./">Release Radar</a> &middot; 26 July 2026</p>
+<h1>Release Radar</h1>
+<div class="headline"><p>28 releases across 31 tracked projects, including 2 with security fixes.</p></div>
+<article class="story">
+  <h3><a href="https://github.com/redis/redis/releases/tag/8.6.5" rel="noopener nofollow">Redis 8.6.5</a></h3>
+  <span class="chip">Data</span>
+  <p>SECURITY: There are security fixes in the release. · Security fixes · A crafted stream RESTORE payload can make two consumers share the same NACK, leading to a use-after-free that may result in Remote Code Execution…</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Release notes reference security fixes. Also released on 4 other maintenance lines: 8.2.8, 7.4.10, 7.2.15, 6.2.23.</div>
+  <p class="src">GitHub · redis/redis &middot; <a href="https://github.com/redis/redis/releases/tag/8.6.5" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/valkey-io/valkey/releases/tag/9.0.5" rel="noopener nofollow">Valkey 9.0.5</a></h3>
+  <span class="chip">Data</span>
+  <p>Valkey 9.0.5 - Released Tue 21 July 2026 · Upgrade urgency SECURITY: This release includes security fixes we recommend you apply as soon as possible. · Security Fixes…</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Fixes CVE-2026-56684, CVE-2026-63639 — patch promptly. Also released on 2 other maintenance lines: 8.0.10, 7.2.14.</div>
+  <p class="src">GitHub · valkey-io/valkey &middot; <a href="https://github.com/valkey-io/valkey/releases/tag/9.0.5" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/opentofu/opentofu/releases/tag/v1.11.13" rel="noopener nofollow">OpenTofu 1.11.13</a></h3>
+  <span class="chip">IaC</span>
+  <p>SECURITY ADVISORIES · Previous releases in the v1.11 series could be affected by several vulnerabilities · The Encrypted Client Hello implementation (which is used by OpenTofu through the go stdlib) would leak the pre-shared key identities during the handshake,…</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Release notes reference security fixes.</div>
+  <p class="src">GitHub · opentofu/opentofu &middot; <a href="https://github.com/opentofu/opentofu/releases/tag/v1.11.13" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/traefik/traefik/releases/tag/v3.6.24" rel="noopener nofollow">Traefik 3.6.24</a></h3>
+  <span class="chip">Networking</span>
+  <p>Important: Please read the migration guide. · [middleware, k8s/crd] Add missing ErrorRequestHeaders field to CRDs · [logs] Remove unrelated error from nonexistent cert resolver log · [middleware] Disable Zstd support in the gzhttp wrapper…</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading.</div>
+  <p class="src">GitHub · traefik/traefik &middot; <a href="https://github.com/traefik/traefik/releases/tag/v3.6.24" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/etcd-io/etcd/releases/tag/v3.7.1" rel="noopener nofollow">etcd 3.7.1</a></h3>
+  <span class="chip">Orchestration</span>
+  <p>Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). · macOS (Darwin) · etcd uses gcr.io/etcd-development/etcd as a primary container registry, and quay.io/coreos/etcd as secondary.</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading. Also released on 1 other maintenance line: 3.5.33.</div>
+  <p class="src">GitHub · etcd-io/etcd &middot; <a href="https://github.com/etcd-io/etcd/releases/tag/v3.7.1" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/ClickHouse/ClickHouse/releases/tag/v26.5.6.64-stable" rel="noopener nofollow">ClickHouse 26.5.6.64-stable</a></h3>
+  <span class="chip">Data</span>
+  <p>ClickHouse published v26.5.6.64-stable with no release notes.</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Also released on 3 other maintenance lines: 26.4.5.143-stable, 26.6.2.81-stable, 26.3.17.56-lts.</div>
+  <p class="src">GitHub · ClickHouse/ClickHouse &middot; <a href="https://github.com/ClickHouse/ClickHouse/releases/tag/v26.5.6.64-stable" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.36.3" rel="noopener nofollow">Kubernetes 1.36.3</a></h3>
+  <span class="chip">Orchestration</span>
+  <p>See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG.</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Also released on 1 other maintenance line: 1.34.10.</div>
+  <p class="src">GitHub · kubernetes/kubernetes &middot; <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.36.3" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3>Also shipped: 8 more releases</h3>
+  <span class="chip">Also Shipped</span>
+  <p>Data: Redis 8.4.5, Valkey 8.1.9, ClickHouse 26.7.1.1315-stable · Networking: Traefik 2.11.53 · Observability: Grafana 12.4.6, Grafana 12.3.9 · Orchestration: etcd 3.6.14, Kubernetes 1.35.7</p>
+  <div class="why"><b>Why it matters</b>Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>
+  <p class="src">GitHub</p>
+</article>
+<article class="story">
+  <h3><a href="https://endoflife.date/mongodb" rel="noopener nofollow">MongoDB 8.2 reaches EOL in under 7 days</a></h3>
+  <span class="chip">End of Life</span>
+  <p>Support for MongoDB 8.2 ends on 31 July 2026 — 5 days away. Latest release on this line is 8.2.11.</p>
+  <div class="why"><b>Why it matters</b>No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
+  <p class="src">endoflife.date &middot; <a href="https://endoflife.date/mongodb" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/redis/redis/releases/tag/8.8.1" rel="noopener nofollow">Redis 8.8.1</a></h3>
+  <span class="chip">Data</span>
+  <p>SECURITY: There is a security fix in the release. · Security fixes · RedisBloom/RedisBloom#1044 Crafted RESTORE payloads in RedisBloom and TDigest may trigger out-of-bounds writes, potentially leading to remote code execution</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Release notes reference security fixes. Also released on 5 other maintenance lines: 8.4.5, 8.2.8, 7.4.10, 7.2.15, 6.2.23.</div>
+  <p class="src">GitHub · redis/redis &middot; <a href="https://github.com/redis/redis/releases/tag/8.8.1" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/duckdb/duckdb/releases/tag/v1.5.5" rel="noopener nofollow">DuckDB 1.5.5</a></h3>
+  <span class="chip">Data</span>
+  <p>This is a bug fix release for various issues discovered after we released v1.5.4. · backport the out-of-bounds security fixes made in #23100 by @Tishj in https://github.com/duckdb/duckdb/pull/23197…</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Release notes reference security fixes.</div>
+  <p class="src">GitHub · duckdb/duckdb &middot; <a href="https://github.com/duckdb/duckdb/releases/tag/v1.5.5" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/valkey-io/valkey/releases/tag/9.1.1" rel="noopener nofollow">Valkey 9.1.1</a></h3>
+  <span class="chip">Data</span>
+  <p>Valkey 9.1.1 - Released Tue 21 July 2026 · Upgrade urgency SECURITY: This release includes security fixes we recommend you apply as soon as possible. · Security Fixes…</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Fixes CVE-2026-56684, CVE-2026-63639 — patch promptly. Also released on 3 other maintenance lines: 8.1.9, 8.0.10, 7.2.14.</div>
+  <p class="src">GitHub · valkey-io/valkey &middot; <a href="https://github.com/valkey-io/valkey/releases/tag/9.1.1" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/opentofu/opentofu/releases/tag/v1.12.5" rel="noopener nofollow">OpenTofu 1.12.5</a></h3>
+  <span class="chip">IaC</span>
+  <p>SECURITY ADVISORIES · Previous releases in the v1.12 series could be affected by several vulnerabilities · The Encrypted Client Hello implementation (which is used by OpenTofu through the go stdlib) would leak the pre-shared key identities during the handshake,…</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Release notes reference security fixes.</div>
+  <p class="src">GitHub · opentofu/opentofu &middot; <a href="https://github.com/opentofu/opentofu/releases/tag/v1.12.5" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://endoflife.date/docker-engine" rel="noopener nofollow">Docker Engine 25.0 reaches EOL in under 180 days</a></h3>
+  <span class="chip">End of Life</span>
+  <p>Support for Docker Engine 25.0 ends on 04 December 2026 — 131 days away. Latest release on this line is 25.0.16.</p>
+  <div class="why"><b>Why it matters</b>No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
+  <p class="src">endoflife.date &middot; <a href="https://endoflife.date/docker-engine" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://endoflife.date/postgresql" rel="noopener nofollow">PostgreSQL 14 reaches EOL in under 180 days</a></h3>
+  <span class="chip">End of Life</span>
+  <p>Support for PostgreSQL 14 ends on 12 November 2026 — 109 days away. Latest release on this line is 14.23.</p>
+  <div class="why"><b>Why it matters</b>No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
+  <p class="src">endoflife.date &middot; <a href="https://endoflife.date/postgresql" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://endoflife.date/python" rel="noopener nofollow">Python 3.10 reaches EOL in under 180 days</a></h3>
+  <span class="chip">End of Life</span>
+  <p>Support for Python 3.10 ends on 31 October 2026 — 97 days away. Latest release on this line is 3.10.20.</p>
+  <div class="why"><b>Why it matters</b>No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
+  <p class="src">endoflife.date &middot; <a href="https://endoflife.date/python" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://endoflife.date/kubernetes" rel="noopener nofollow">Kubernetes 1.34 reaches EOL in under 180 days</a></h3>
+  <span class="chip">End of Life</span>
+  <p>Support for Kubernetes 1.34 ends on 27 October 2026 — 93 days away. Latest release on this line is 1.34.10.</p>
+  <div class="why"><b>Why it matters</b>No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
+  <p class="src">endoflife.date &middot; <a href="https://endoflife.date/kubernetes" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.254.0" rel="noopener nofollow">Pulumi 3.254.0</a></h3>
+  <span class="chip">IaC</span>
+  <p>[cli] Add pulumi logs share command for sharing logs with Pulumi #22546 · [cli] Add pulumi stack migrate to migrate a stack from another backend to the currently logged-in backend, including re-encrypting config secrets and stack state under the target secrets provider #22902…</p>
+  <div class="why"><b>Why it matters</b>Minor release — new functionality, backward compatible.</div>
+  <p class="src">GitHub · pulumi/pulumi &middot; <a href="https://github.com/pulumi/pulumi/releases/tag/v3.254.0" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.157.0" rel="noopener nofollow">OpenTelemetry Collector 0.157.0</a></h3>
+  <span class="chip">Observability</span>
+  <p>Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.157.0 · End User Changelog · 🛑 Breaking changes 🛑…</p>
+  <div class="why"><b>Why it matters</b>Minor release — new functionality, backward compatible. Notes mention breaking changes or deprecations — read before upgrading.</div>
+  <p class="src">GitHub · open-telemetry/opentelemetry-collector &middot; <a href="https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.157.0" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://github.com/traefik/traefik/releases/tag/v3.7.9" rel="noopener nofollow">Traefik 3.7.9</a></h3>
+  <span class="chip">Networking</span>
+  <p>Important: Please read the migration guide. · [k8s/ingress-nginx] Fix redirect with use-regex in IngressNGINX provider · [middleware] Disable Zstd support in the gzhttp wrapper · [server] Defer the CONNECT payload until the backend accepts the tunnel…</p>
+  <div class="why"><b>Why it matters</b>Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading. Also released on 1 other maintenance line: 2.11.53.</div>
+  <p class="src">GitHub · traefik/traefik &middot; <a href="https://github.com/traefik/traefik/releases/tag/v3.7.9" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<div class="cta">
+  <p><b>These land in Discord every week</b>, as a slide deck you can read on a phone.</p>
+  <p><a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join the server &rarr;</a>
+     &middot; <a href="../release-radar/feed.xml">Subscribe by RSS</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+  Generated from the digest archive. Facts come from the sources linked on
+  each story. &middot; <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join on Discord</a>
+</div></footer>
+</body>
+</html>

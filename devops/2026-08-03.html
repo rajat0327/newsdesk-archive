@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DevOps Weekly Digest — 03 August 2026</title>
+<meta name="description" content="Cloud Providers Push Serverless Edge, Kubernetes Enhances AI Workloads, and Observability Tools Gain Predictive Analytics">
+<meta property="og:title" content="DevOps Weekly Digest — 03 August 2026">
+<meta property="og:description" content="Cloud Providers Push Serverless Edge, Kubernetes Enhances AI Workloads, and Observability Tools Gain Predictive Analytics">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/devops/2026-08-03.html">
+<link rel="alternate" type="application/rss+xml" title="DevOps Weekly Digest — 03 August 2026" href="../feed.xml">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#fbfbfa; --panel:#fff; --ink:#1a1a18; --muted:#6b6b66;
+  --line:#e5e4e0; --accent:#b3502a; --chip:#f2f1ed;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#12120f;--panel:#1a1a17;--ink:#eceae4;--muted:#9b978c;
+        --line:#2c2b27;--accent:#e08b5f;--chip:#232320}
+}
+:root[data-theme="dark"]{--bg:#12120f;--panel:#1a1a17;--ink:#eceae4;
+  --muted:#9b978c;--line:#2c2b27;--accent:#e08b5f;--chip:#232320}
+:root[data-theme="light"]{--bg:#fbfbfa;--panel:#fff;--ink:#1a1a18;
+  --muted:#6b6b66;--line:#e5e4e0;--accent:#b3502a;--chip:#f2f1ed}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+header.top{border-bottom:1px solid var(--line);padding:18px 0;margin-bottom:40px}
+header.top .wrap{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.brand{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;
+  letter-spacing:-.01em}
+.brand:hover{color:var(--accent)}
+nav.top-nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap;font-size:14px}
+nav.top-nav a{color:var(--muted);text-decoration:none}
+nav.top-nav a:hover{color:var(--accent)}
+h1{font-size:34px;line-height:1.2;letter-spacing:-.02em;margin:0 0 12px}
+h2{font-size:22px;letter-spacing:-.01em;margin:44px 0 14px}
+.lede{color:var(--muted);font-size:18px;margin:0 0 28px}
+.meta{color:var(--muted);font-size:14px;font-family:var(--mono)}
+.chip{display:inline-block;background:var(--chip);border:1px solid var(--line);
+  border-radius:100px;padding:2px 10px;font-size:12px;font-family:var(--mono);
+  color:var(--muted);white-space:nowrap}
+.headline{background:var(--panel);border:1px solid var(--line);
+  border-left:3px solid var(--accent);border-radius:6px;padding:16px 18px;
+  margin:24px 0 36px}
+.headline p{margin:0;font-size:17px}
+article.story{border-top:1px solid var(--line);padding:26px 0}
+article.story h3{margin:0 0 6px;font-size:20px;line-height:1.3;
+  letter-spacing:-.01em}
+article.story h3 a{color:var(--ink);text-decoration:none}
+article.story h3 a:hover{color:var(--accent);text-decoration:underline}
+article.story p{margin:10px 0 0}
+.why{border-left:2px solid var(--accent);padding-left:12px;margin-top:12px;
+  color:var(--ink)}
+.why b{font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);display:block;margin-bottom:2px;font-weight:600}
+.src{margin-top:12px;font-size:14px;color:var(--muted)}
+ul.channels{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ul.channels li{background:var(--panel);border:1px solid var(--line);
+  border-radius:8px;padding:16px 18px}
+ul.channels a.name{font-weight:650;font-size:17px;text-decoration:none;
+  color:var(--ink)}
+ul.channels a.name:hover{color:var(--accent)}
+ul.channels .desc{color:var(--muted);font-size:15px;margin-top:4px}
+ul.issues{list-style:none;padding:0;margin:0}
+ul.issues li{border-top:1px solid var(--line);padding:14px 0;display:flex;
+  gap:14px;align-items:baseline;flex-wrap:wrap}
+ul.issues a{text-decoration:none;font-weight:600}
+ul.issues a:hover{text-decoration:underline}
+ul.issues .n{color:var(--muted);font-size:14px;font-family:var(--mono);
+  margin-left:auto}
+.cta{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+  padding:20px;margin:44px 0}
+.cta p{margin:0 0 10px}
+.pager{display:flex;justify-content:space-between;gap:16px;margin:40px 0 0;
+  font-size:15px}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0 48px;
+  color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+.scroll{overflow-x:auto}
+@media(max-width:560px){body{font-size:16px}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../">Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../about.html">About</a>
+    <a href="../feed.xml">RSS</a>
+    <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Discord</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<p class="meta"><a href="./">DevOps Weekly Digest</a> &middot; 03 August 2026</p>
+<h1>DevOps Weekly Digest</h1>
+<div class="headline"><p>Cloud Providers Push Serverless Edge, Kubernetes Enhances AI Workloads, and Observability Tools Gain Predictive Analytics</p></div>
+<article class="story">
+  <h3><a href="https://aws.amazon.com/blogs/news/lambda-edge-august-2026-update/" rel="noopener nofollow">AWS Lambda Expands Edge Compute Capabilities</a></h3>
+  <span class="chip">Cloud Providers</span>
+  <p>AWS announced significant enhancements to Lambda@Edge, allowing for more complex serverless functions to run closer to end-users. This update includes increased memory limits and longer execution times, enabling richer application logic at the network edge.</p>
+  <p class="src">aws.amazon.com &middot; <a href="https://aws.amazon.com/blogs/news/lambda-edge-august-2026-update/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://kubernetes.io/blog/2026/07/30/kubernetes-1.37-release/" rel="noopener nofollow">Kubernetes 1.37 Released with AI/ML Enhancements</a></h3>
+  <span class="chip">Kubernetes &amp; Orchestration</span>
+  <p>The Kubernetes project released version 1.37, focusing on improved scheduling for AI/ML workloads and enhanced GPU resource management. New APIs simplify the deployment and scaling of machine learning models within clusters.</p>
+  <p class="src">kubernetes.io &middot; <a href="https://kubernetes.io/blog/2026/07/30/kubernetes-1.37-release/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-devops-gitops-august-2026/" rel="noopener nofollow">Azure DevOps Introduces Advanced GitOps Workflows</a></h3>
+  <span class="chip">CI/CD</span>
+  <p>Azure DevOps unveiled new features for GitOps integration, allowing teams to manage infrastructure and application deployments entirely through Git repositories. This includes enhanced pull request automation and drift detection capabilities.</p>
+  <div class="why"><b>Why it matters</b>Teams can achieve greater consistency, traceability, and automation in their deployment pipelines by fully embracing Git as the single source of truth for operations.</div>
+  <p class="src">azure.microsoft.com &middot; <a href="https://azure.microsoft.com/en-us/blog/azure-devops-gitops-august-2026/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://thenewstack.io/opentofu-1-13-multi-cloud-august-2026/" rel="noopener nofollow">OpenTofu 1.13.0 Boosts Multi-Cloud State Management</a></h3>
+  <span class="chip">IaC</span>
+  <p>OpenTofu, the open-source alternative to Terraform, released version 1.13.0 with significant improvements to multi-cloud state management and provider extensibility. New features include native support for cross-cloud resource tagging and enhanced module versioning.</p>
+  <div class="why"><b>Why it matters</b>This update simplifies managing complex infrastructure across multiple cloud providers, offering better control and flexibility for IaC practitioners.</div>
+  <p class="src">The New Stack &middot; <a href="https://thenewstack.io/opentofu-1-13-multi-cloud-august-2026/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://techcrunch.com/2026/07/29/datadog-predictive-ai-observability/" rel="noopener nofollow">Datadog Launches Predictive Anomaly Detection</a></h3>
+  <span class="chip">Observability</span>
+  <p>Datadog announced a new suite of AI-powered predictive anomaly detection tools, leveraging machine learning to anticipate potential system failures and performance bottlenecks before they impact users. This enhances proactive incident management.</p>
+  <div class="why"><b>Why it matters</b>DevOps teams can move from reactive troubleshooting to proactive prevention, significantly reducing downtime and improving system reliability through early warnings.</div>
+  <p class="src">TechCrunch &middot; <a href="https://techcrunch.com/2026/07/29/datadog-predictive-ai-observability/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://cloud.google.com/blog/products/databases/spanner-global-cdc-streams-2026/" rel="noopener nofollow">Google Cloud Spanner Adds Global Transactional Streams</a></h3>
+  <span class="chip">Databases &amp; Data Infra</span>
+  <p>Google Cloud Spanner introduced global transactional change data capture (CDC) streams, enabling real-time data replication and event-driven architectures across globally distributed databases. This facilitates complex data synchronization scenarios.</p>
+  <div class="why"><b>Why it matters</b>This feature allows enterprises to build highly consistent, real-time data pipelines and microservices architectures that span continents, crucial for global applications.</div>
+  <p class="src">cloud.google.com &middot; <a href="https://cloud.google.com/blog/products/databases/spanner-global-cdc-streams-2026/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<article class="story">
+  <h3><a href="https://www.infoq.com/news/2026/08/platform-engineering-idp-trend/" rel="noopener nofollow">Platform Engineering Gains Traction with Internal Developer Platforms</a></h3>
+  <span class="chip">Platform Engineering</span>
+  <p>A new report from InfoQ highlights the accelerating adoption of internal developer platforms (IDPs) as a key trend in platform engineering. Companies are investing in self-service tools to empower developers and streamline operations.</p>
+  <div class="why"><b>Why it matters</b>IDPs reduce cognitive load for developers, standardize development environments, and accelerate software delivery, leading to increased productivity and innovation.</div>
+  <p class="src">InfoQ &middot; <a href="https://www.infoq.com/news/2026/08/platform-engineering-idp-trend/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</article>
+<div class="cta">
+  <p><b>These land in Discord every week</b>, as a slide deck you can read on a phone.</p>
+  <p><a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join the server &rarr;</a>
+     &middot; <a href="../devops/feed.xml">Subscribe by RSS</a></p>
+</div>
+</main>
+<footer><div class="wrap">
+  Generated from the digest archive. Facts come from the sources linked on
+  each story. &middot; <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join on Discord</a>
+</div></footer>
+</body>
+</html>
