@@ -8,151 +8,264 @@
 <meta property="og:title" content="DevOps Weekly Digest — 27 July 2026">
 <meta property="og:description" content="IaC and Cloud AI Lead DevOps News with Terraform Governance, Azure HPC Expansion, and Google Cloud&#x27;s Secure AI Benchmarking">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#3d7dd8">
 <link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/devops/2026-07-27.html">
-<link rel="alternate" type="application/rss+xml" title="DevOps Weekly Digest — 27 July 2026" href="../feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <style>
 *,*::before,*::after{box-sizing:border-box}
 :root{
-  --bg:#fbfbfa; --panel:#fff; --ink:#1a1a18; --muted:#6b6b66;
-  --line:#e5e4e0; --accent:#b3502a; --chip:#f2f1ed;
+  --bg:#fcfcfb; --panel:#fff; --raise:#fff; --ink:#16161a; --soft:#4a4a52;
+  --muted:#76767f; --line:#e6e5e1; --hair:#f0efec; --accent:#3d7dd8;
   --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
-  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Inter,sans-serif;
+  --shadow:0 1px 2px rgba(20,20,25,.04),0 8px 24px -12px rgba(20,20,25,.12);
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#12120f;--panel:#1a1a17;--ink:#eceae4;--muted:#9b978c;
-        --line:#2c2b27;--accent:#e08b5f;--chip:#232320}
+  :root{--bg:#0e0e11;--panel:#16161a;--raise:#1c1c21;--ink:#f0efec;
+        --soft:#c3c2bd;--muted:#8e8e97;--line:#26262c;--hair:#1e1e23;
+        --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6)}
 }
-:root[data-theme="dark"]{--bg:#12120f;--panel:#1a1a17;--ink:#eceae4;
-  --muted:#9b978c;--line:#2c2b27;--accent:#e08b5f;--chip:#232320}
-:root[data-theme="light"]{--bg:#fbfbfa;--panel:#fff;--ink:#1a1a18;
-  --muted:#6b6b66;--line:#e5e4e0;--accent:#b3502a;--chip:#f2f1ed}
-html{-webkit-text-size-adjust:100%}
+:root[data-theme="dark"]{--bg:#0e0e11;--panel:#16161a;--raise:#1c1c21;
+  --ink:#f0efec;--soft:#c3c2bd;--muted:#8e8e97;--line:#26262c;--hair:#1e1e23}
+:root[data-theme="light"]{--bg:#fcfcfb;--panel:#fff;--raise:#fff;--ink:#16161a;
+  --soft:#4a4a52;--muted:#76767f;--line:#e6e5e1;--hair:#f0efec}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
-  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:760px;margin:0 auto;padding:0 20px}
-a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
-a:hover{text-decoration-thickness:2px}
-header.top{border-bottom:1px solid var(--line);padding:18px 0;margin-bottom:40px}
-header.top .wrap{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
-.brand{font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;
-  letter-spacing:-.01em}
-.brand:hover{color:var(--accent)}
-nav.top-nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap;font-size:14px}
-nav.top-nav a{color:var(--muted);text-decoration:none}
-nav.top-nav a:hover{color:var(--accent)}
-h1{font-size:34px;line-height:1.2;letter-spacing:-.02em;margin:0 0 12px}
-h2{font-size:22px;letter-spacing:-.01em;margin:44px 0 14px}
-.lede{color:var(--muted);font-size:18px;margin:0 0 28px}
-.meta{color:var(--muted);font-size:14px;font-family:var(--mono)}
-.chip{display:inline-block;background:var(--chip);border:1px solid var(--line);
-  border-radius:100px;padding:2px 10px;font-size:12px;font-family:var(--mono);
-  color:var(--muted);white-space:nowrap}
-.headline{background:var(--panel);border:1px solid var(--line);
-  border-left:3px solid var(--accent);border-radius:6px;padding:16px 18px;
-  margin:24px 0 36px}
-.headline p{margin:0;font-size:17px}
-article.story{border-top:1px solid var(--line);padding:26px 0}
-article.story h3{margin:0 0 6px;font-size:20px;line-height:1.3;
-  letter-spacing:-.01em}
-article.story h3 a{color:var(--ink);text-decoration:none}
-article.story h3 a:hover{color:var(--accent);text-decoration:underline}
-article.story p{margin:10px 0 0}
-.why{border-left:2px solid var(--accent);padding-left:12px;margin-top:12px;
-  color:var(--ink)}
-.why b{font-size:12px;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--accent);display:block;margin-bottom:2px;font-weight:600}
-.src{margin-top:12px;font-size:14px;color:var(--muted)}
-ul.channels{list-style:none;padding:0;margin:0;display:grid;gap:12px}
-ul.channels li{background:var(--panel);border:1px solid var(--line);
-  border-radius:8px;padding:16px 18px}
-ul.channels a.name{font-weight:650;font-size:17px;text-decoration:none;
-  color:var(--ink)}
-ul.channels a.name:hover{color:var(--accent)}
-ul.channels .desc{color:var(--muted);font-size:15px;margin-top:4px}
-ul.issues{list-style:none;padding:0;margin:0}
-ul.issues li{border-top:1px solid var(--line);padding:14px 0;display:flex;
-  gap:14px;align-items:baseline;flex-wrap:wrap}
-ul.issues a{text-decoration:none;font-weight:600}
-ul.issues a:hover{text-decoration:underline}
-ul.issues .n{color:var(--muted);font-size:14px;font-family:var(--mono);
-  margin-left:auto}
-.cta{background:var(--panel);border:1px solid var(--line);border-radius:8px;
-  padding:20px;margin:44px 0}
-.cta p{margin:0 0 10px}
-.pager{display:flex;justify-content:space-between;gap:16px;margin:40px 0 0;
-  font-size:15px}
-footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0 48px;
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px}
+.narrow{max-width:720px}
+a{color:var(--accent);text-underline-offset:2px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;backdrop-filter:saturate(180%) blur(12px);
+  background:color-mix(in srgb,var(--bg) 86%,transparent);
+  border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;gap:18px;align-items:center;padding-top:13px;padding-bottom:13px}
+.brand{font-weight:750;font-size:18px;color:var(--ink);text-decoration:none;
+  letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+nav.top-nav{margin-left:auto;display:flex;gap:6px;align-items:center;font-size:14px}
+nav.top-nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:7px}
+nav.top-nav a:hover{color:var(--ink);background:var(--hair)}
+nav.top-nav a.cta{color:#fff;background:var(--accent)}
+nav.top-nav a.cta:hover{color:#fff;filter:brightness(1.08)}
+
+/* hero */
+.hero{padding:52px 0 30px}
+.hero h1{font-size:clamp(34px,5.4vw,52px);line-height:1.04;letter-spacing:-.035em;
+  margin:0 0 14px;font-weight:760}
+.hero .lede{font-size:19px;color:var(--soft);margin:0;max-width:62ch}
+.hero .lede b{color:var(--ink);font-weight:650}
+.stats{display:flex;flex-wrap:wrap;gap:0;margin:30px 0 0;border:1px solid var(--line);
+  border-radius:12px;overflow:hidden;background:var(--panel)}
+.stats div{flex:1 1 130px;padding:14px 16px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats .n{font-size:23px;font-weight:700;letter-spacing:-.02em;font-family:var(--mono)}
+.stats .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
+
+/* countdown strip */
+.countdown{margin:34px 0 0;border:1px solid var(--line);border-radius:12px;
+  background:var(--panel);overflow:hidden}
+.countdown h4{margin:0;padding:11px 16px;font-size:12px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line);
+  font-weight:600}
+.countdown ul{list-style:none;margin:0;padding:6px 0}
+.countdown li{display:flex;align-items:baseline;gap:12px;padding:7px 16px;font-size:15px}
+.countdown .name{font-weight:600}
+.countdown .bar{flex:1;height:4px;border-radius:3px;background:var(--hair);
+  position:relative;min-width:40px;overflow:hidden}
+.countdown .bar i{position:absolute;inset:0 auto 0 0;border-radius:3px;display:block}
+.countdown .days{font-family:var(--mono);font-size:13px;color:var(--muted);
+  white-space:nowrap}
+
+/* section headings */
+.sec{display:flex;align-items:baseline;gap:12px;margin:56px 0 18px}
+.sec h2{font-size:14px;letter-spacing:.09em;text-transform:uppercase;margin:0;
+  color:var(--muted);font-weight:650}
+.sec .rule{flex:1;height:1px;background:var(--line)}
+.sec a{font-size:14px;text-decoration:none}
+
+/* story feed */
+.feed{display:grid;gap:0}
+.item{display:grid;grid-template-columns:118px 1fr;gap:22px;
+  padding:22px 0;border-top:1px solid var(--hair)}
+.item:first-child{border-top:0}
+.item .rail{font-size:12px;color:var(--muted);font-family:var(--mono);
+  padding-top:3px;line-height:1.5}
+.item .rail .ch{display:block;font-weight:600;color:var(--soft);
+  text-decoration:none;letter-spacing:-.01em}
+.item .rail .ch:hover{color:var(--accent)}
+.item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
+  font-weight:660}
+.item h3 a{color:var(--ink);text-decoration:none}
+.item h3 a:hover{color:var(--accent)}
+.item p{margin:0;color:var(--soft);font-size:15.5px}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;
+  font-family:var(--mono);padding:2px 9px;border-radius:100px;
+  border:1px solid;margin-bottom:8px;white-space:nowrap}
+.why{margin-top:11px;padding:9px 13px;border-radius:8px;background:var(--hair);
+  font-size:14.5px;color:var(--ink)}
+.why b{font-weight:650;color:var(--accent)}
+.src{margin-top:9px;font-size:13.5px;color:var(--muted)}
+.src a{text-decoration:none}
+.src a:hover{text-decoration:underline}
+
+/* channel cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.card{position:relative;background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:18px 18px 16px;text-decoration:none;display:block;
+  transition:transform .14s ease,box-shadow .14s ease,border-color .14s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);
+  border-color:color-mix(in srgb,var(--ca) 45%,var(--line))}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;
+  background:var(--ca);border-radius:12px 12px 0 0}
+.card .day{font-size:11.5px;font-family:var(--mono);color:var(--ca);
+  text-transform:uppercase;letter-spacing:.09em;font-weight:650}
+.card h3{margin:7px 0 5px;font-size:18px;color:var(--ink);letter-spacing:-.02em;
+  font-weight:680}
+.card p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.5}
+.card .n{margin-top:11px;font-size:12.5px;font-family:var(--mono);color:var(--muted)}
+
+/* issue list */
+.issues{list-style:none;padding:0;margin:0}
+.issues li{border-top:1px solid var(--hair);padding:18px 0}
+.issues .top{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.issues .top a{font-size:17px;font-weight:660;text-decoration:none;color:var(--ink);
+  letter-spacing:-.015em}
+.issues .top a:hover{color:var(--accent)}
+.issues .top .n{margin-left:auto;font-size:12.5px;font-family:var(--mono);color:var(--muted)}
+.issues .head{margin:5px 0 0;color:var(--soft);font-size:15px}
+.issues .titles{margin:9px 0 0;padding:0;list-style:none;font-size:14.5px;
+  color:var(--muted);display:grid;gap:3px}
+.issues .titles li{border:0;padding:0;display:flex;gap:8px}
+.issues .titles li::before{content:"–";color:var(--line)}
+
+/* misc */
+.cta{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:22px;margin:52px 0 0}
+.cta h3{margin:0 0 6px;font-size:19px;letter-spacing:-.02em}
+.cta p{margin:0;color:var(--soft);font-size:15.5px}
+.cta .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btn{display:inline-block;padding:9px 15px;border-radius:9px;font-size:14.5px;
+  text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--ink)}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+.btn:hover{filter:brightness(1.06)}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:26px 0 56px;
   color:var(--muted);font-size:14px}
 footer a{color:var(--muted)}
+.prose p{color:var(--soft)}
+.prose h2{font-size:21px;letter-spacing:-.02em;margin:38px 0 12px;color:var(--ink)}
 table{width:100%;border-collapse:collapse;font-size:15px}
-.scroll{overflow-x:auto}
-@media(max-width:560px){body{font-size:16px}h1{font-size:27px}}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--hair)}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media(max-width:640px){
+  body{font-size:16px}
+  .item{grid-template-columns:1fr;gap:9px}
+  .item .rail{display:flex;gap:10px;padding-top:0}
+  .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
+}
 </style>
+<style>:root{--accent:#3d7dd8}</style>
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <a class="brand" href="../">Newsdesk</a>
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
   <nav class="top-nav">
     <a href="../about.html">About</a>
     <a href="../feed.xml">RSS</a>
-    <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Discord</a>
+    <a class="cta" href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join Discord</a>
   </nav>
 </div></header>
 <main class="wrap">
-<p class="meta"><a href="./">DevOps Weekly Digest</a> &middot; 27 July 2026</p>
-<h1>DevOps Weekly Digest</h1>
-<div class="headline"><p>IaC and Cloud AI Lead DevOps News with Terraform Governance, Azure HPC Expansion, and Google Cloud&#x27;s Secure AI Benchmarking</p></div>
-<article class="story">
-  <h3><a href="https://devops.com/hashicorp-introduces-tfpolicy-a-native-policy-framework-for-terraform/" rel="noopener nofollow">HashiCorp Introduces tfpolicy for Terraform Governance</a></h3>
-  <span class="chip">IaC</span>
-  <p>HashiCorp has launched tfpolicy in public beta, a new policy-as-code framework built directly into Terraform. This allows platform teams to write governance rules in HCL, the same language they use for infrastructure, reducing reliance on separate policy tools and syntaxes.</p>
-  <div class="why"><b>Why it matters</b>tfpolicy streamlines governance by integrating policy enforcement directly into Terraform workflows, simplifying compliance and security for infrastructure teams.</div>
-  <p class="src">DevOps.com &middot; <a href="https://devops.com/hashicorp-introduces-tfpolicy-a-native-policy-framework-for-terraform/" rel="noopener nofollow">Read the original &rarr;</a></p>
-</article>
-<article class="story">
-  <h3><a href="https://www.hashicorp.com/en/blog/terraform-introduces-workspaces-and-stacks-restore-and-more" rel="noopener nofollow">Terraform Stacks Gain Restore and Monorepo Support</a></h3>
-  <span class="chip">IaC</span>
-  <p>HashiCorp Terraform has announced the general availability of Workspaces and Stacks restore, allowing administrators to recover deleted environments with a single click. Additionally, new monorepo support enables multiple independent Stacks to coexist within a single VCS repository, reducing sprawl and simplifying infrastructure organization.</p>
-  <div class="why"><b>Why it matters</b>These updates significantly improve the resilience and organizational capabilities for platform teams managing complex infrastructure with Terraform, reducing operational overhead and recovery time.</div>
-  <p class="src">HashiCorp &middot; <a href="https://www.hashicorp.com/en/blog/terraform-introduces-workspaces-and-stacks-restore-and-more" rel="noopener nofollow">Read the original &rarr;</a></p>
-</article>
-<article class="story">
-  <h3><a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" rel="noopener nofollow">Azure Expands AI and HPC Infrastructure with AMD</a></h3>
-  <span class="chip">Cloud Providers</span>
-  <p>Microsoft has expanded its Azure AI and high-performance computing (HPC) infrastructure through a deeper partnership with AMD. This collaboration introduces new AMD-powered Azure services, including HDv2 VMs for data processing, HXv2 VMs for electronic design automation (EDA), and ND MI455X v7 VMs for AI inference workloads.</p>
-  <div class="why"><b>Why it matters</b>This expansion provides Azure users with more specialized and powerful infrastructure options tailored for demanding AI and HPC workloads, offering greater choice, scale, and efficiency.</div>
-  <p class="src">blogs.microsoft.com &middot; <a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" rel="noopener nofollow">Read the original &rarr;</a></p>
-</article>
-<article class="story">
-  <h3><a href="https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud" rel="noopener nofollow">Google Cloud Boosts Secure AI with MedPerf and TPUs</a></h3>
-  <span class="chip">Cloud Providers</span>
-  <p>At Google Cloud Next 2026, Google Cloud and MLCommons announced the enablement of MedPerf, a federated benchmarking orchestrator, on Google Cloud&#x27;s confidential compute capabilities for secure medical AI benchmarking. Additionally, Google Cloud has begun shipping its eighth-generation TPU systems (TPU 8t and TPU 8i) to customer data centers.</p>
-  <div class="why"><b>Why it matters</b>These developments enhance secure AI collaboration in sensitive fields like healthcare and provide customers with cutting-edge, purpose-built hardware for AI training and inference.</div>
-  <p class="src">cloud.google.com &middot; <a href="https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud" rel="noopener nofollow">Read the original &rarr;</a></p>
-</article>
-<article class="story">
-  <h3><a href="https://www.pulumi.com/what-is/what-is-pulumi/" rel="noopener nofollow">Pulumi Enhances IaC with Environment Overrides and AI</a></h3>
-  <span class="chip">IaC</span>
-  <p>Pulumi has released &quot;Preview ESC Changes with Environment Overrides,&quot; allowing users to preview proposed environment changes against their stack before promotion. The platform also highlights its AI-powered development assistance, capable of generating infrastructure code from natural language and providing intelligent suggestions.</p>
-  <div class="why"><b>Why it matters</b>These features enhance developer productivity and safety in IaC workflows by enabling pre-deployment validation and leveraging AI for faster, more compliant infrastructure code generation.</div>
-  <p class="src">pulumi.com &middot; <a href="https://www.pulumi.com/what-is/what-is-pulumi/" rel="noopener nofollow">Read the original &rarr;</a></p>
-</article>
-<article class="story">
-  <h3><a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-extended" rel="noopener nofollow">Kubernetes Ecosystem Receives Patch Updates</a></h3>
-  <span class="chip">Kubernetes &amp; Orchestration</span>
-  <p>The Kubernetes ecosystem saw several patch releases across various versions this week. Google Kubernetes Engine (GKE) updated its extended channel with new auto-upgrade targets for versions like 1.30 to 1.31.14-gke.2169000. Similarly, k3s released patch updates for versions including v1.36.2+k3s1 and v1.35.6+k3s1, incorporating bug fixes and dependency bumps.</p>
-  <div class="why"><b>Why it matters</b>These routine patch updates are crucial for maintaining the stability, security, and performance of Kubernetes clusters, ensuring that critical bug fixes and dependency updates are applied.</div>
-  <p class="src">docs.cloud.google.com &middot; <a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-extended" rel="noopener nofollow">Read the original &rarr;</a></p>
-</article>
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#3d7dd8;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">DevOps Weekly Digest</a></p>
+  <h1>27 July 2026</h1>
+  <p class="lede">IaC and Cloud AI Lead DevOps News with Terraform Governance, Azure HPC Expansion, and Google Cloud&#x27;s Secure AI Benchmarking</p>
+</div>
+<div class="feed">
+<div class="item">
+  <div class="rail"><span>27 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</span>
+    <h3><a href="https://devops.com/hashicorp-introduces-tfpolicy-a-native-policy-framework-for-terraform/" rel="noopener nofollow">HashiCorp Introduces tfpolicy for Terraform Governance</a></h3>
+    <p>HashiCorp has launched tfpolicy in public beta, a new policy-as-code framework built directly into Terraform. This allows platform teams to write governance rules in HCL, the same language they use for infrastructure, reducing reliance on separate policy tools and syntaxes.</p>
+    <div class="why"><b>Why it matters</b> — tfpolicy streamlines governance by integrating policy enforcement directly into Terraform workflows, simplifying compliance and security for infrastructure teams.</div>
+    <p class="src">DevOps.com &middot; <a href="https://devops.com/hashicorp-introduces-tfpolicy-a-native-policy-framework-for-terraform/" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>27 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</span>
+    <h3><a href="https://www.hashicorp.com/en/blog/terraform-introduces-workspaces-and-stacks-restore-and-more" rel="noopener nofollow">Terraform Stacks Gain Restore and Monorepo Support</a></h3>
+    <p>HashiCorp Terraform has announced the general availability of Workspaces and Stacks restore, allowing administrators to recover deleted environments with a single click. Additionally, new monorepo support enables multiple independent Stacks to coexist within a single VCS repository, reducing sprawl and simplifying infrastructure organization.</p>
+    <div class="why"><b>Why it matters</b> — These updates significantly improve the resilience and organizational capabilities for platform teams managing complex infrastructure with Terraform, reducing operational overhead and recovery time.</div>
+    <p class="src">HashiCorp &middot; <a href="https://www.hashicorp.com/en/blog/terraform-introduces-workspaces-and-stacks-restore-and-more" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>27 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Cloud Providers</span>
+    <h3><a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" rel="noopener nofollow">Azure Expands AI and HPC Infrastructure with AMD</a></h3>
+    <p>Microsoft has expanded its Azure AI and high-performance computing (HPC) infrastructure through a deeper partnership with AMD. This collaboration introduces new AMD-powered Azure services, including HDv2 VMs for data processing, HXv2 VMs for electronic design automation (EDA), and ND MI455X v7 VMs for AI inference workloads.</p>
+    <div class="why"><b>Why it matters</b> — This expansion provides Azure users with more specialized and powerful infrastructure options tailored for demanding AI and HPC workloads, offering greater choice, scale, and efficiency.</div>
+    <p class="src">blogs.microsoft.com &middot; <a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>27 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Cloud Providers</span>
+    <h3><a href="https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud" rel="noopener nofollow">Google Cloud Boosts Secure AI with MedPerf and TPUs</a></h3>
+    <p>At Google Cloud Next 2026, Google Cloud and MLCommons announced the enablement of MedPerf, a federated benchmarking orchestrator, on Google Cloud&#x27;s confidential compute capabilities for secure medical AI benchmarking. Additionally, Google Cloud has begun shipping its eighth-generation TPU systems (TPU 8t and TPU 8i) to customer data centers.</p>
+    <div class="why"><b>Why it matters</b> — These developments enhance secure AI collaboration in sensitive fields like healthcare and provide customers with cutting-edge, purpose-built hardware for AI training and inference.</div>
+    <p class="src">cloud.google.com &middot; <a href="https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>27 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</span>
+    <h3><a href="https://www.pulumi.com/what-is/what-is-pulumi/" rel="noopener nofollow">Pulumi Enhances IaC with Environment Overrides and AI</a></h3>
+    <p>Pulumi has released &quot;Preview ESC Changes with Environment Overrides,&quot; allowing users to preview proposed environment changes against their stack before promotion. The platform also highlights its AI-powered development assistance, capable of generating infrastructure code from natural language and providing intelligent suggestions.</p>
+    <div class="why"><b>Why it matters</b> — These features enhance developer productivity and safety in IaC workflows by enabling pre-deployment validation and leveraging AI for faster, more compliant infrastructure code generation.</div>
+    <p class="src">pulumi.com &middot; <a href="https://www.pulumi.com/what-is/what-is-pulumi/" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>27 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Kubernetes &amp; Orchestration</span>
+    <h3><a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-extended" rel="noopener nofollow">Kubernetes Ecosystem Receives Patch Updates</a></h3>
+    <p>The Kubernetes ecosystem saw several patch releases across various versions this week. Google Kubernetes Engine (GKE) updated its extended channel with new auto-upgrade targets for versions like 1.30 to 1.31.14-gke.2169000. Similarly, k3s released patch updates for versions including v1.36.2+k3s1 and v1.35.6+k3s1, incorporating bug fixes and dependency bumps.</p>
+    <div class="why"><b>Why it matters</b> — These routine patch updates are crucial for maintaining the stability, security, and performance of Kubernetes clusters, ensuring that critical bug fixes and dependency updates are applied.</div>
+    <p class="src">docs.cloud.google.com &middot; <a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-extended" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+</div>
 <div class="cta">
-  <p><b>These land in Discord every week</b>, as a slide deck you can read on a phone.</p>
-  <p><a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join the server &rarr;</a>
-     &middot; <a href="../devops/feed.xml">Subscribe by RSS</a></p>
+  <h3>6 stories, every Monday</h3>
+  <p>Delivered to Discord as a slide deck you can read on a phone, or follow by RSS.</p>
+  <div class="row">
+    <a class="btn primary" href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join the server</a>
+    <a class="btn" href="feed.xml">RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-07-26.html">&larr; Previous issue</a> <a href="2026-08-03.html">Next issue &rarr;</a>
 </div>
 </main>
 <footer><div class="wrap">
-  Generated from the digest archive. Facts come from the sources linked on
-  each story. &middot; <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join on Discord</a>
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Discord</a>
 </div></footer>
 </body>
 </html>
