@@ -139,6 +139,14 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .card p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.5}
 .card .n{margin-top:11px;font-size:12.5px;font-family:var(--mono);color:var(--muted)}
 
+.morelink{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  margin:26px 0 0;padding:15px 18px;border:1px solid var(--line);
+  border-radius:10px;background:var(--panel)}
+.morelink a{font-weight:640;text-decoration:none;font-size:15.5px}
+.morelink a:hover{text-decoration:underline}
+.morelink span{margin-left:auto;font-size:13px;color:var(--muted);
+  font-family:var(--mono)}
+
 /* issue list */
 .issues{list-style:none;padding:0;margin:0}
 .issues li{border-top:1px solid var(--hair);padding:18px 0}
@@ -229,7 +237,6 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 
 <div class="sec"><h2>Latest stories</h2><div class="rule"></div>
   <a href="feed.xml">RSS</a></div>
-
 <div class="feed">
 <div class="item">
   <div class="rail"><span>05 August 2026</span></div>
@@ -311,47 +318,8 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.22798" rel="noopener nofollow">Read the original &rarr;</a></p>
   </div>
 </div>
-<div class="item">
-  <div class="rail"><span>29 July 2026</span></div>
-  <div>
-    <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</span>
-    <h3><a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</a></h3>
-    <p>SANA-Video 2.0 is introduced as a hybrid video diffusion transformer, scaled to 5B and 14B parameters, designed for high-quality 720p video generation on a single GPU. It achieves quality comparable to full-softmax video DiTs while maintaining the favorable long-sequence scaling of linear attention by employing Hybrid Linear-Softmax Attention and Attention Residuals.</p>
-    <div class="why"><b>Why it matters</b> — This paper details architectural innovations, specifically hybrid attention and attention residuals, that enable efficient and high-quality video generation, addressing a key scaling challenge in multimodal models.</div>
-    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
 </div>
-<div class="item">
-  <div class="rail"><span>29 July 2026</span></div>
-  <div>
-    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</span>
-    <h3><a href="https://arxiv.org/abs/2607.22529" rel="noopener nofollow">Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills</a></h3>
-    <p>This research explores interaction-driven self-evolution for LLM training, moving beyond manual design and annotation. It introduces Skill Self-Play to address the dilemma between task diversity and verification reliability, allowing LLMs to co-evolve skills and broaden their task space while maintaining reliable verification.</p>
-    <div class="why"><b>Why it matters</b> — It presents an advanced training paradigm for LLMs that leverages self-evolution and co-evolving skills to overcome fundamental limitations in scaling LLM capabilities and task diversity.</div>
-    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.22529" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
-</div>
-<div class="item">
-  <div class="rail"><span>29 July 2026</span></div>
-  <div>
-    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</span>
-    <h3><a href="https://arxiv.org/abs/2607.24027" rel="noopener nofollow">Sol-Attn: Accelerating Video Generation Inference via On-the-Fly Attention Sparsification</a></h3>
-    <p>This paper addresses the dominant attention bottleneck in diffusion transformers for high-fidelity video generation by proposing Sol-Attn, an on-the-fly attention sparsification method. It aims to overcome the limitations of existing training-free dynamic sparse attention methods, which struggle with efficient and accurate sparsification due to rigid or costly routing.</p>
-    <div class="why"><b>Why it matters</b> — It offers a crucial systems and inference optimization technique for video generation models, tackling the computational cost of attention through dynamic sparsification.</div>
-    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.24027" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
-</div>
-<div class="item">
-  <div class="rail"><span>29 July 2026</span></div>
-  <div>
-    <span class="tag" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Research</span>
-    <h3><a href="https://arxiv.org/abs/2607.24744" rel="noopener nofollow">Data Pyramid for Embodied Manipulation</a></h3>
-    <p>This work proposes organizing the embodied data ecosystem as a &#x27;pyramid&#x27; of five complementary sources to address the unique data requirements of embodied agents. Unlike multimodal foundation models that leverage internet-scale data, embodied agents need data coupling observations with physical states and actions, which this pyramid structure aims to provide.</p>
-    <div class="why"><b>Why it matters</b> — It offers a structured approach to understanding and leveraging diverse data sources for embodied AI, which is critical for overcoming the data scarcity bottleneck in learning physical interactions.</div>
-    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.24744" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
-</div>
-</div>
+<div class="morelink"><a href="../search.html?c=arxiv-picks">Browse all 12 stories in this channel &rarr;</a><span>4 older stories</span></div>
 
 <div class="sec"><h2>Every issue</h2><div class="rule"></div></div>
 <ul class="issues">
