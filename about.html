@@ -97,6 +97,12 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
   color:var(--muted);font-weight:650}
 .sec .rule{flex:1;height:1px;background:var(--line)}
 .sec a{font-size:14px;text-decoration:none}
+.sec h2{white-space:nowrap}
+.domlinks{font-size:13.5px;color:var(--muted);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.domlinks a{text-decoration:none}
+.domlinks a:hover{text-decoration:underline}
+@media(max-width:640px){.domlinks{display:none}}
 
 /* story feed */
 .feed{display:grid;gap:0}
@@ -236,7 +242,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="chanbar"><div class="wrap"><a href="india-tech/" style="--cc:#2f9e6f">India</a><a href="devops/" style="--cc:#3d7dd8">DevOps</a><a href="security-news/" style="--cc:#d9552f">Security</a><a href="arxiv-picks/" style="--cc:#8a5cd6">Papers</a><a href="supply-chain/" style="--cc:#3d7dd8">Supply Chain</a><a href="hr-tech/" style="--cc:#3d7dd8">HR Tech</a><a href="release-radar/" style="--cc:#b8860b">Releases</a><a href="ai/" style="--cc:#0f9dab">AI</a><a href="eng-blogs/" style="--cc:#c2456f">Reading</a></div></div>
 <main class="wrap">
 <div class="hero"><h1>How this works</h1>
-<p class="lede">Seven engineering digests, one a day. Most of what you read here comes straight from an API — not from a language model.</p></div>
+<p class="lede">Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</p></div>
 <div class="prose narrow">
 <p>Each channel gathers a week of stories, then publishes them here and to
 Discord as a slide deck. What differs between channels is how much a language
@@ -263,8 +269,8 @@ says nothing instead of filling the space.</p>
 <tr><td><a href='devops/'>DevOps Weekly Digest</a></td><td>Monday</td><td>3</td><td>20</td></tr>
 <tr><td><a href='security-news/'>Security Weekly Digest</a></td><td>Tuesday</td><td>3</td><td>22</td></tr>
 <tr><td><a href='arxiv-picks/'>arXiv Picks</a></td><td>Wednesday</td><td>2</td><td>12</td></tr>
-<tr><td><a href='supply-chain/'>Supply Chain &amp; ERP</a></td><td>Wednesday</td><td>0</td><td>0</td></tr>
-<tr><td><a href='hr-tech/'>HR &amp; Payroll Tech</a></td><td>Thursday</td><td>0</td><td>0</td></tr>
+<tr><td><a href='supply-chain/'>Supply Chain &amp; ERP</a></td><td>Wednesday</td><td>1</td><td>12</td></tr>
+<tr><td><a href='hr-tech/'>HR &amp; Payroll Tech</a></td><td>Thursday</td><td>1</td><td>11</td></tr>
 <tr><td><a href='release-radar/'>Release Radar</a></td><td>Thursday</td><td>2</td><td>28</td></tr>
 <tr><td><a href='ai/'>AI Tech Weekly Digest</a></td><td>Friday</td><td>5</td><td>30</td></tr>
 <tr><td><a href='eng-blogs/'>Engineering Reading</a></td><td>Saturday</td><td>1</td><td>7</td></tr>

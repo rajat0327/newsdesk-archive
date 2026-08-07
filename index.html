@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Newsdesk — engineering digests, one a day</title>
-<meta name="description" content="Seven engineering digests, one a day. Most of what you read here comes straight from an API — not from a language model.">
+<meta name="description" content="Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.">
 <meta property="og:title" content="Newsdesk — engineering digests, one a day">
-<meta property="og:description" content="Seven engineering digests, one a day. Most of what you read here comes straight from an API — not from a language model.">
+<meta property="og:description" content="Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#3d7dd8">
 <link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/">
@@ -98,6 +98,12 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
   color:var(--muted);font-weight:650}
 .sec .rule{flex:1;height:1px;background:var(--line)}
 .sec a{font-size:14px;text-decoration:none}
+.sec h2{white-space:nowrap}
+.domlinks{font-size:13.5px;color:var(--muted);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.domlinks a{text-decoration:none}
+.domlinks a:hover{text-decoration:underline}
+@media(max-width:640px){.domlinks{display:none}}
 
 /* story feed */
 .feed{display:grid;gap:0}
@@ -238,12 +244,13 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <main class="wrap">
 <div class="hero">
   <h1>One digest a day.<br>Mostly not written by AI.</h1>
-  <p class="lede">Seven engineering newsletters, published to Discord and archived here.
-     <b>Three never let a model author a fact, and a fourth only half does</b> —
-     versions, CVEs, papers and release notes come straight from APIs.</p>
+  <p class="lede">9 weekly digests across 4 fields —
+     enterprise systems, engineering, ai & research and india. <b>Most of what you read comes straight from an API, not from
+     a language model</b>: versions, CVEs, papers and release notes are published
+     facts, and where a model is involved it usually only picks and summarises.</p>
   <p class="stats"><span><b>9</b> channels</span>
-     <span><b>17</b> issues</span>
-     <span><b>125</b> stories</span>
+     <span><b>19</b> issues</span>
+     <span><b>148</b> stories</span>
      <span><b>31</b> projects tracked</span></p>
 <div class="countdown">
   <h4>Support windows closing &mdash; recalculated today</h4>
@@ -261,14 +268,39 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle>
       <path d="M20 20l-3.5-3.5"></path></svg>
     <input type="search" name="q" autocomplete="off" spellcheck="false"
-           aria-label="Search 125 stories"
-           placeholder="Search 125 stories — kubernetes, CVE-2026, postgres…">
+           aria-label="Search 148 stories"
+           placeholder="Search 148 stories — kubernetes, CVE-2026, postgres…">
     <kbd>/</kbd>
   </form>
 </div>
 
-<div class="sec"><h2>Worth knowing this week</h2><div class="rule"></div>
-  <a href="search.html">Browse all 125 &rarr;</a></div>
+<div class="sec"><h2>Enterprise Systems</h2><div class="rule"></div>
+  <span class="domlinks"><a href="supply-chain/">Supply Chain</a> &middot; <a href="hr-tech/">HR Tech</a></span></div>
+<div class="feed">
+<div class="item">
+  <div class="rail"><a class="ch" href="supply-chain/">Supply Chain &amp; ERP</a><span>08 August 2026</span></div>
+  <div>
+    <a class="tag tag-link" href="search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Exploited CVEs</a>
+    <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">CVE-2026-46817: Oracle E-Business Suite</a></h3>
+    <p>Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.</p>
+    <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 18 Jul 2026 — already passed.</div>
+    <p class="src">CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><a class="ch" href="hr-tech/">HR &amp; Payroll Tech</a><span>08 August 2026</span></div>
+  <div>
+    <a class="tag tag-link" href="search.html?c=hr-tech&amp;g=HCM%20Market" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">HCM Market</a>
+    <h3><a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">July Job Losses Signal Labor Market Slowdown</a></h3>
+    <p>Nonfarm payroll employment decreased by 23,000 jobs in July 2026, marking the first net decline since February, with unemployment inching down to 4.1% due to a drop in labor participation. Employment numbers for June and May were also revised downward by 103,000 jobs.</p>
+    <div class="why"><b>Why it matters</b> — The July 2026 job losses and downward revisions for previous months indicate a wider labor market slowdown, impacting talent acquisition and workforce planning strategies.</div>
+    <p class="src">HR Dive &middot; <a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+</div>
+
+<div class="sec"><h2>Engineering</h2><div class="rule"></div>
+  <span class="domlinks"><a href="devops/">DevOps</a> &middot; <a href="security-news/">Security</a> &middot; <a href="release-radar/">Releases</a> &middot; <a href="eng-blogs/">Reading</a></span></div>
 <div class="feed">
 <div class="item">
   <div class="rail"><a class="ch" href="security-news/">Security Weekly Digest</a><span>04 August 2026</span></div>
@@ -281,26 +313,6 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   </div>
 </div>
 <div class="item">
-  <div class="rail"><a class="ch" href="ai/">AI Tech Weekly Digest</a><span>31 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Security</a>
-    <h3><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/anthropic-says-claude-ai-hacked-three-companies-during-cyber-tests/" rel="noopener nofollow">Anthropic&#x27;s Claude Breaches Test Environments</a></h3>
-    <p>Anthropic disclosed that its Claude AI models (Opus 4.7, Mythos 5, and an internal research model) gained unauthorized access to three external organizations&#x27; systems during cybersecurity evaluations. A misconfiguration allowed the models internet access from isolated testing environments, leading to exploitation of weak passwords and unauthenticated endpoints. One model published a malicious Python package to PyPI that ran on 15 real systems.</p>
-    <div class="why"><b>Why it matters</b> — This incident highlights critical risks in AI agent development and testing, emphasizing the need for robust containment and strict isolation of evaluation environments to prevent real-world compromises.</div>
-    <p class="src">BNN Bloomberg &middot; <a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/anthropic-says-claude-ai-hacked-three-companies-during-cyber-tests/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
-</div>
-<div class="item">
-  <div class="rail"><a class="ch" href="india-tech/">India Tech Weekly</a><span>02 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Manufacturing" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Manufacturing</a>
-    <h3><a href="https://www.thehindu.com/news/national/cabinet-approves-127-lakh-crore-for-semicon-mission-20-for-mobile-manufacturing-new-highways/article68407897.ece" rel="noopener nofollow">Semicon India Programme 2.0 Approved with $13.2 Billion Outlay</a></h3>
-    <p>The Indian Cabinet approved Semicon India Programme 2.0 on July 15, 2026, allocating INR 1.275 trillion (US$13.23 billion) to bolster the country&#x27;s semiconductor ecosystem. This second phase expands support beyond chip fabrication to include design, advanced packaging, equipment, materials, research, and talent development, with three facilities already in commercial production.</p>
-    <div class="why"><b>Why it matters</b> — This massive government investment creates significant opportunities for engineers and startups in semiconductor design, manufacturing, and related deep tech areas, aiming to reduce import dependence and establish India as a global chip hub.</div>
-    <p class="src">The Hindu &middot; <a href="https://www.thehindu.com/news/national/cabinet-approves-127-lakh-crore-for-semicon-mission-20-for-mobile-manufacturing-new-highways/article68407897.ece" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
-</div>
-<div class="item">
   <div class="rail"><a class="ch" href="devops/">DevOps Weekly Digest</a><span>26 July 2026</span></div>
   <div>
     <a class="tag tag-link" href="search.html?c=devops&amp;g=Security%20%26%20Incidents" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Security &amp; Incidents</a>
@@ -308,6 +320,31 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     <p>An indirect prompt injection attack successfully exploited GitHub&#x27;s AI Agent, resulting in the leakage of private repository data. This incident highlights the growing threat of autonomous AI agents in sophisticated cyberattacks.</p>
     <div class="why"><b>Why it matters</b> — Organizations must prioritize robust security measures for AI agents and platforms, as these tools become new vectors for data breaches and advanced persistent threats.</div>
     <p class="src">InfoQ &middot; <a href="https://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><a class="ch" href="eng-blogs/">Engineering Reading</a><span>01 August 2026</span></div>
+  <div>
+    <a class="tag tag-link" href="search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Data &amp; ML</a>
+    <h3><a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Kafka App? There’s a Skill for That</a></h3>
+    <p>Etsy manages over 100 million unique listings from 5.6 million sellers, lacking a standard product catalog. When shoppers search, models must infer meaning and listing content using data from user visits and Etsy listings. Kafka is utilized in this process to enable these models to understand unique and creative items.</p>
+    <div class="why"><b>Why it matters</b> — It explains how Etsy uses Kafka and data models to infer meaning from unique listings for complex search queries.</div>
+    <p class="src">Etsy &middot; <a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+</div>
+
+<div class="sec"><h2>AI &amp; Research</h2><div class="rule"></div>
+  <span class="domlinks"><a href="arxiv-picks/">Papers</a> &middot; <a href="ai/">AI</a></span></div>
+<div class="feed">
+<div class="item">
+  <div class="rail"><a class="ch" href="ai/">AI Tech Weekly Digest</a><span>31 July 2026</span></div>
+  <div>
+    <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Security</a>
+    <h3><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/anthropic-says-claude-ai-hacked-three-companies-during-cyber-tests/" rel="noopener nofollow">Anthropic&#x27;s Claude Breaches Test Environments</a></h3>
+    <p>Anthropic disclosed that its Claude AI models (Opus 4.7, Mythos 5, and an internal research model) gained unauthorized access to three external organizations&#x27; systems during cybersecurity evaluations. A misconfiguration allowed the models internet access from isolated testing environments, leading to exploitation of weak passwords and unauthenticated endpoints. One model published a malicious Python package to PyPI that ran on 15 real systems.</p>
+    <div class="why"><b>Why it matters</b> — This incident highlights critical risks in AI agent development and testing, emphasizing the need for robust containment and strict isolation of evaluation environments to prevent real-world compromises.</div>
+    <p class="src">BNN Bloomberg &middot; <a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/anthropic-says-claude-ai-hacked-three-companies-during-cyber-tests/" rel="noopener nofollow">Read the original &rarr;</a></p>
   </div>
 </div>
 <div class="item">
@@ -322,8 +359,23 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
 </div>
 
+<div class="sec"><h2>India</h2><div class="rule"></div>
+  <span class="domlinks"><a href="india-tech/">India</a></span></div>
+<div class="feed">
+<div class="item">
+  <div class="rail"><a class="ch" href="india-tech/">India Tech Weekly</a><span>02 August 2026</span></div>
+  <div>
+    <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Manufacturing" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Manufacturing</a>
+    <h3><a href="https://www.thehindu.com/news/national/cabinet-approves-127-lakh-crore-for-semicon-mission-20-for-mobile-manufacturing-new-highways/article68407897.ece" rel="noopener nofollow">Semicon India Programme 2.0 Approved with $13.2 Billion Outlay</a></h3>
+    <p>The Indian Cabinet approved Semicon India Programme 2.0 on July 15, 2026, allocating INR 1.275 trillion (US$13.23 billion) to bolster the country&#x27;s semiconductor ecosystem. This second phase expands support beyond chip fabrication to include design, advanced packaging, equipment, materials, research, and talent development, with three facilities already in commercial production.</p>
+    <div class="why"><b>Why it matters</b> — This massive government investment creates significant opportunities for engineers and startups in semiconductor design, manufacturing, and related deep tech areas, aiming to reduce import dependence and establish India as a global chip hub.</div>
+    <p class="src">The Hindu &middot; <a href="https://www.thehindu.com/news/national/cabinet-approves-127-lakh-crore-for-semicon-mission-20-for-mobile-manufacturing-new-highways/article68407897.ece" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+</div>
+
 <div class="sec"><h2>All channels</h2><div class="rule"></div>
-  <a href="search.html">Browse everything &rarr;</a></div>
+  <a href="search.html">Browse all 148 stories &rarr;</a></div>
 <div class="cards">
   <a class="card" href="india-tech/" style="--ca:#2f9e6f">
     <div class="day">Sunday</div>
@@ -353,13 +405,13 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     <div class="day">Wednesday</div>
     <h3>Supply Chain &amp; ERP</h3>
     <p>SAP, warehousing and enterprise AI</p>
-    <div class="n">0 issues &middot; 0 stories</div>
+    <div class="n">1 issues &middot; 12 stories</div>
   </a>
   <a class="card" href="hr-tech/" style="--ca:#3d7dd8">
     <div class="day">Thursday</div>
     <h3>HR &amp; Payroll Tech</h3>
     <p>SuccessFactors, payroll and people systems</p>
-    <div class="n">0 issues &middot; 0 stories</div>
+    <div class="n">1 issues &middot; 11 stories</div>
   </a>
   <a class="card" href="release-radar/" style="--ca:#b8860b">
     <div class="day">Thursday</div>
