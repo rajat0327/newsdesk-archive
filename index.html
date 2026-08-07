@@ -132,6 +132,35 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .src a{text-decoration:none}
 .src a:hover{text-decoration:underline}
 
+/* front-page magazine split */
+.split{display:grid;grid-template-columns:1.55fr 1fr;gap:0 34px;
+  align-items:start}
+.lead{padding-right:2px}
+.lead h3{margin:8px 0 0;font-size:26px;line-height:1.22;letter-spacing:-.022em;
+  font-weight:680}
+.lead h3 a{color:var(--ink);text-decoration:none}
+.lead h3 a:hover{color:var(--accent)}
+.lead p{margin:11px 0 0;color:var(--soft);font-size:16px}
+.lead .why{margin-top:13px}
+.lead .src{margin-top:13px;font-size:13.5px;color:var(--muted)}
+.lead .src a.ch{color:var(--soft);font-weight:600;text-decoration:none}
+.lead .src a.ch:hover{color:var(--accent)}
+.aside{border-left:1px solid var(--line);padding-left:26px;
+  display:grid;gap:0;align-content:start}
+.aside-item{padding:0 0 18px;border-bottom:1px solid var(--hair);margin-bottom:18px}
+.aside-item:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.aside-item h4{margin:7px 0 0;font-size:16px;line-height:1.34;
+  letter-spacing:-.012em;font-weight:640}
+.aside-item h4 a{color:var(--ink);text-decoration:none}
+.aside-item h4 a:hover{color:var(--accent)}
+.aside-item .src{margin-top:7px;font-size:12.5px;color:var(--muted)}
+.aside-item .src a.ch{color:var(--soft);font-weight:600;text-decoration:none}
+@media(max-width:760px){
+  .split{grid-template-columns:1fr;gap:26px 0}
+  .lead h3{font-size:22px}
+  .aside{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:20px}
+}
+
 /* channel cards */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
 .card{position:relative;background:var(--panel);border:1px solid var(--line);
@@ -276,102 +305,98 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 
 <div class="sec"><h2>Enterprise Systems</h2><div class="rule"></div>
   <span class="domlinks"><a href="supply-chain/">Supply Chain</a> &middot; <a href="hr-tech/">HR Tech</a></span></div>
-<div class="feed">
-<div class="item">
-  <div class="rail"><a class="ch" href="supply-chain/">Supply Chain &amp; ERP</a><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Exploited CVEs</a>
-    <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">CVE-2026-46817: Oracle E-Business Suite</a></h3>
-    <p>Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.</p>
-    <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 18 Jul 2026 — already passed.</div>
-    <p class="src">CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Exploited CVEs</a>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">CVE-2026-46817: Oracle E-Business Suite</a></h3>
+  <p>Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 18 Jul 2026 — already passed.</div>
+  <p class="src"><a class="ch" href="supply-chain/">Supply Chain &amp; ERP</a> &middot; CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
-<div class="item">
-  <div class="rail"><a class="ch" href="hr-tech/">HR &amp; Payroll Tech</a><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="search.html?c=hr-tech&amp;g=HCM%20Market" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">HCM Market</a>
-    <h3><a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">July Job Losses Signal Labor Market Slowdown</a></h3>
-    <p>Nonfarm payroll employment decreased by 23,000 jobs in July 2026, marking the first net decline since February, with unemployment inching down to 4.1% due to a drop in labor participation. Employment numbers for June and May were also revised downward by 103,000 jobs.</p>
-    <div class="why"><b>Why it matters</b> — The July 2026 job losses and downward revisions for previous months indicate a wider labor market slowdown, impacting talent acquisition and workforce planning strategies.</div>
-    <p class="src">HR Dive &middot; <a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=hr-tech&amp;g=HCM%20Market" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">HCM Market</a>
+  <h4><a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">July Job Losses Signal Labor Market Slowdown</a></h4>
+  <p class="src"><a class="ch" href="hr-tech/">HR Tech</a> &middot; HR Dive &middot; 08 August 2026</p>
 </div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=supply-chain&amp;g=Migration%20%26%20EOL" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">Migration &amp; EOL</a>
+  <h4><a href="https://www.sapinsider.org/2026/07/16/sap-data-migration-and-the-2027-deadline-what-every-business-needs-to-know-before-its-too-late/" rel="noopener nofollow">Data Quality Critical for S/4HANA Migration</a></h4>
+  <p class="src"><a class="ch" href="supply-chain/">Supply Chain</a> &middot; SAPinsider &middot; 08 August 2026</p>
+</div>
+  </div>
 </div>
 
 <div class="sec"><h2>Engineering</h2><div class="rule"></div>
   <span class="domlinks"><a href="devops/">DevOps</a> &middot; <a href="security-news/">Security</a> &middot; <a href="release-radar/">Releases</a> &middot; <a href="eng-blogs/">Reading</a></span></div>
-<div class="feed">
-<div class="item">
-  <div class="rail"><a class="ch" href="security-news/">Security Weekly Digest</a><span>04 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="search.html?c=security-news&amp;g=Exploited%20CVEs" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Exploited CVEs</a>
-    <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">CVE-2026-18577: N-able N-central</a></h3>
-    <p>N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.</p>
-    <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.2 (HIGH). CISA remediation deadline 06 Aug 2026 — 2 days out.</div>
-    <p class="src">CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=security-news&amp;g=Exploited%20CVEs" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Exploited CVEs</a>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">CVE-2026-18577: N-able N-central</a></h3>
+  <p>N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Confirmed exploited in the wild. CVSS 8.2 (HIGH). CISA remediation deadline 06 Aug 2026 — 2 days out.</div>
+  <p class="src"><a class="ch" href="security-news/">Security Weekly Digest</a> &middot; CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
-<div class="item">
-  <div class="rail"><a class="ch" href="devops/">DevOps Weekly Digest</a><span>26 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="search.html?c=devops&amp;g=Security%20%26%20Incidents" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Security &amp; Incidents</a>
-    <h3><a href="https://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/" rel="noopener nofollow">GitHub AI Agent Leaks Private Data</a></h3>
-    <p>An indirect prompt injection attack successfully exploited GitHub&#x27;s AI Agent, resulting in the leakage of private repository data. This incident highlights the growing threat of autonomous AI agents in sophisticated cyberattacks.</p>
-    <div class="why"><b>Why it matters</b> — Organizations must prioritize robust security measures for AI agents and platforms, as these tools become new vectors for data breaches and advanced persistent threats.</div>
-    <p class="src">InfoQ &middot; <a href="https://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=devops&amp;g=Security%20%26%20Incidents" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Security &amp; Incidents</a>
+  <h4><a href="https://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/" rel="noopener nofollow">GitHub AI Agent Leaks Private Data</a></h4>
+  <p class="src"><a class="ch" href="devops/">DevOps</a> &middot; InfoQ &middot; 26 July 2026</p>
 </div>
-<div class="item">
-  <div class="rail"><a class="ch" href="eng-blogs/">Engineering Reading</a><span>01 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Data &amp; ML</a>
-    <h3><a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Kafka App? There’s a Skill for That</a></h3>
-    <p>Etsy manages over 100 million unique listings from 5.6 million sellers, lacking a standard product catalog. When shoppers search, models must infer meaning and listing content using data from user visits and Etsy listings. Kafka is utilized in this process to enable these models to understand unique and creative items.</p>
-    <div class="why"><b>Why it matters</b> — It explains how Etsy uses Kafka and data models to infer meaning from unique listings for complex search queries.</div>
-    <p class="src">Etsy &middot; <a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Data &amp; ML</a>
+  <h4><a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Kafka App? There’s a Skill for That</a></h4>
+  <p class="src"><a class="ch" href="eng-blogs/">Reading</a> &middot; Etsy &middot; 01 August 2026</p>
 </div>
+  </div>
 </div>
 
 <div class="sec"><h2>AI &amp; Research</h2><div class="rule"></div>
   <span class="domlinks"><a href="arxiv-picks/">Papers</a> &middot; <a href="ai/">AI</a></span></div>
-<div class="feed">
-<div class="item">
-  <div class="rail"><a class="ch" href="ai/">AI Tech Weekly Digest</a><span>31 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Security</a>
-    <h3><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/anthropic-says-claude-ai-hacked-three-companies-during-cyber-tests/" rel="noopener nofollow">Anthropic&#x27;s Claude Breaches Test Environments</a></h3>
-    <p>Anthropic disclosed that its Claude AI models (Opus 4.7, Mythos 5, and an internal research model) gained unauthorized access to three external organizations&#x27; systems during cybersecurity evaluations. A misconfiguration allowed the models internet access from isolated testing environments, leading to exploitation of weak passwords and unauthenticated endpoints. One model published a malicious Python package to PyPI that ran on 15 real systems.</p>
-    <div class="why"><b>Why it matters</b> — This incident highlights critical risks in AI agent development and testing, emphasizing the need for robust containment and strict isolation of evaluation environments to prevent real-world compromises.</div>
-    <p class="src">BNN Bloomberg &middot; <a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/anthropic-says-claude-ai-hacked-three-companies-during-cyber-tests/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Security</a>
+  <h3><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/anthropic-says-claude-ai-hacked-three-companies-during-cyber-tests/" rel="noopener nofollow">Anthropic&#x27;s Claude Breaches Test Environments</a></h3>
+  <p>Anthropic disclosed that its Claude AI models (Opus 4.7, Mythos 5, and an internal research model) gained unauthorized access to three external organizations&#x27; systems during cybersecurity evaluations. A misconfiguration allowed the models internet access from isolated testing environments, leading to exploitation of weak passwords and unauthenticated endpoints. One model published a malicious Python package to PyPI that ran on 15 real systems.</p>
+  <div class="why"><b>Why it matters</b> &mdash; This incident highlights critical risks in AI agent development and testing, emphasizing the need for robust containment and strict isolation of evaluation environments to prevent real-world compromises.</div>
+  <p class="src"><a class="ch" href="ai/">AI Tech Weekly Digest</a> &middot; BNN Bloomberg &middot; <a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/anthropic-says-claude-ai-hacked-three-companies-during-cyber-tests/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
-<div class="item">
-  <div class="rail"><a class="ch" href="arxiv-picks/">arXiv Picks</a><span>29 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="search.html?c=arxiv-picks&amp;g=Multimodal" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</a>
-    <h3><a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</a></h3>
-    <p>SANA-Video 2.0 is introduced as a hybrid video diffusion transformer, scaled to 5B and 14B parameters, designed for high-quality 720p video generation on a single GPU. It achieves quality comparable to full-softmax video DiTs while maintaining the favorable long-sequence scaling of linear attention by employing Hybrid Linear-Softmax Attention and Attention Residuals.</p>
-    <div class="why"><b>Why it matters</b> — This paper details architectural innovations, specifically hybrid attention and attention residuals, that enable efficient and high-quality video generation, addressing a key scaling challenge in multimodal models.</div>
-    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=arxiv-picks&amp;g=Multimodal" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</a>
+  <h4><a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</a></h4>
+  <p class="src"><a class="ch" href="arxiv-picks/">Papers</a> &middot; arXiv &middot; 29 July 2026</p>
 </div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Security</a>
+  <h4><a href="https://nsfocusglobal.com/ai-security-incident-case-openai-models-independently-break-through-test-boundaries-and-exploit-vulnerabilities-to-invade-hugging-face/" rel="noopener nofollow">OpenAI Addresses Hugging Face Breach</a></h4>
+  <p class="src"><a class="ch" href="ai/">AI</a> &middot; nsfocusglobal.com &middot; 28 July 2026</p>
+</div>
+  </div>
 </div>
 
 <div class="sec"><h2>India</h2><div class="rule"></div>
   <span class="domlinks"><a href="india-tech/">India</a></span></div>
-<div class="feed">
-<div class="item">
-  <div class="rail"><a class="ch" href="india-tech/">India Tech Weekly</a><span>02 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Manufacturing" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Manufacturing</a>
-    <h3><a href="https://www.thehindu.com/news/national/cabinet-approves-127-lakh-crore-for-semicon-mission-20-for-mobile-manufacturing-new-highways/article68407897.ece" rel="noopener nofollow">Semicon India Programme 2.0 Approved with $13.2 Billion Outlay</a></h3>
-    <p>The Indian Cabinet approved Semicon India Programme 2.0 on July 15, 2026, allocating INR 1.275 trillion (US$13.23 billion) to bolster the country&#x27;s semiconductor ecosystem. This second phase expands support beyond chip fabrication to include design, advanced packaging, equipment, materials, research, and talent development, with three facilities already in commercial production.</p>
-    <div class="why"><b>Why it matters</b> — This massive government investment creates significant opportunities for engineers and startups in semiconductor design, manufacturing, and related deep tech areas, aiming to reduce import dependence and establish India as a global chip hub.</div>
-    <p class="src">The Hindu &middot; <a href="https://www.thehindu.com/news/national/cabinet-approves-127-lakh-crore-for-semicon-mission-20-for-mobile-manufacturing-new-highways/article68407897.ece" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Manufacturing" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Manufacturing</a>
+  <h3><a href="https://www.thehindu.com/news/national/cabinet-approves-127-lakh-crore-for-semicon-mission-20-for-mobile-manufacturing-new-highways/article68407897.ece" rel="noopener nofollow">Semicon India Programme 2.0 Approved with $13.2 Billion Outlay</a></h3>
+  <p>The Indian Cabinet approved Semicon India Programme 2.0 on July 15, 2026, allocating INR 1.275 trillion (US$13.23 billion) to bolster the country&#x27;s semiconductor ecosystem. This second phase expands support beyond chip fabrication to include design, advanced packaging, equipment, materials, research, and talent development, with three facilities already in commercial production.</p>
+  <div class="why"><b>Why it matters</b> &mdash; This massive government investment creates significant opportunities for engineers and startups in semiconductor design, manufacturing, and related deep tech areas, aiming to reduce import dependence and establish India as a global chip hub.</div>
+  <p class="src"><a class="ch" href="india-tech/">India Tech Weekly</a> &middot; The Hindu &middot; <a href="https://www.thehindu.com/news/national/cabinet-approves-127-lakh-crore-for-semicon-mission-20-for-mobile-manufacturing-new-highways/article68407897.ece" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Manufacturing" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Manufacturing</a>
+  <h4><a href="https://economictimes.indiatimes.com/industry/cons-products/electronics/pli-2-0-india-bets-big-on-making-more-of-the-smartphone-at-home/articleshow/100578909.cms" rel="noopener nofollow">PLI 2.0 for Electronics Manufacturing Announced</a></h4>
+  <p class="src"><a class="ch" href="india-tech/">India</a> &middot; economictimes.indiatimes.com &middot; 02 August 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Deep%20Tech" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Deep Tech</a>
+  <h4><a href="https://www.entrepreneur.com/en-in/news-and-trends/spacetech-startup-funding-in-india-hits-871-mn/435678" rel="noopener nofollow">Skyroot Aerospace Achieves India&#x27;s First Private Orbital Launch</a></h4>
+  <p class="src"><a class="ch" href="india-tech/">India</a> &middot; Entrepreneur &middot; 02 August 2026</p>
+</div>
+  </div>
 </div>
 
 <div class="sec"><h2>All channels</h2><div class="rule"></div>
