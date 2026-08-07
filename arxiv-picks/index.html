@@ -149,15 +149,21 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .morelink span{margin-left:auto;font-size:13px;color:var(--muted);
   font-family:var(--mono)}
 
-/* issue list */
+/* weekly editions */
+.editions-note{margin:-6px 0 14px;color:var(--muted);font-size:14.5px;max-width:60ch}
 .issues{list-style:none;padding:0;margin:0}
-.issues li{border-top:1px solid var(--hair);padding:18px 0}
-.issues .top{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
-.issues .top a{font-size:17px;font-weight:660;text-decoration:none;color:var(--ink);
-  letter-spacing:-.015em}
-.issues .top a:hover{color:var(--accent)}
-.issues .top .n{margin-left:auto;font-size:12.5px;font-family:var(--mono);color:var(--muted)}
-.issues .head{margin:5px 0 0;color:var(--soft);font-size:15px}
+.issues li{border-top:1px solid var(--hair)}
+.issues a.edition{display:grid;grid-template-columns:132px 1fr auto;gap:16px;
+  align-items:baseline;padding:15px 0;text-decoration:none}
+.issues a.edition:hover .h{color:var(--accent)}
+.issues .d{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.issues .h{color:var(--ink);font-size:15.5px;font-weight:560;line-height:1.45}
+.issues a.edition .n{font-family:var(--mono);font-size:12.5px;color:var(--muted);
+  white-space:nowrap}
+@media(max-width:640px){
+  .issues a.edition{grid-template-columns:1fr;gap:4px}
+  .issues a.edition .n{display:none}
+}
 .issues .titles{margin:9px 0 0;padding:0;list-style:none;font-size:14.5px;
   color:var(--muted);display:grid;gap:3px}
 .issues .titles li{border:0;padding:0;display:flex;gap:8px}
@@ -295,10 +301,12 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
 <div class="morelink"><a href="../search.html?c=arxiv-picks">Browse all 12 stories in this channel &rarr;</a><span>7 older stories</span></div>
 
-<div class="sec"><h2>Every issue</h2><div class="rule"></div></div>
+<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
+<p class="editions-note">Each edition is one week's digest exactly as it went
+   out to Discord — a slide deck with a summary of the week at the top.</p>
 <ul class="issues">
-  <li><div class="top"><a href="2026-08-05.html">05 August 2026</a><span class="n">6 stories</span></div><p class="head">20 papers shortlisted this week — most discussed: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instru (142 upvotes).</p></li>
-  <li><div class="top"><a href="2026-07-29.html">29 July 2026</a><span class="n">6 stories</span></div><p class="head">20 papers shortlisted this week — most discussed: Kimi K3: Open Frontier Intelligence (291 upvotes).</p></li>
+  <li><a class="edition" href="2026-08-05.html"><span class="d">05 August 2026</span><span class="h">20 papers shortlisted this week — most discussed: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instru (142 upvotes).</span><span class="n">6 stories &rarr;</span></a></li>
+  <li><a class="edition" href="2026-07-29.html"><span class="d">29 July 2026</span><span class="h">20 papers shortlisted this week — most discussed: Kimi K3: Open Frontier Intelligence (291 upvotes).</span><span class="n">6 stories &rarr;</span></a></li>
 </ul>
 </main>
 <footer><div class="wrap">

@@ -150,15 +150,21 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .morelink span{margin-left:auto;font-size:13px;color:var(--muted);
   font-family:var(--mono)}
 
-/* issue list */
+/* weekly editions */
+.editions-note{margin:-6px 0 14px;color:var(--muted);font-size:14.5px;max-width:60ch}
 .issues{list-style:none;padding:0;margin:0}
-.issues li{border-top:1px solid var(--hair);padding:18px 0}
-.issues .top{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
-.issues .top a{font-size:17px;font-weight:660;text-decoration:none;color:var(--ink);
-  letter-spacing:-.015em}
-.issues .top a:hover{color:var(--accent)}
-.issues .top .n{margin-left:auto;font-size:12.5px;font-family:var(--mono);color:var(--muted)}
-.issues .head{margin:5px 0 0;color:var(--soft);font-size:15px}
+.issues li{border-top:1px solid var(--hair)}
+.issues a.edition{display:grid;grid-template-columns:132px 1fr auto;gap:16px;
+  align-items:baseline;padding:15px 0;text-decoration:none}
+.issues a.edition:hover .h{color:var(--accent)}
+.issues .d{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.issues .h{color:var(--ink);font-size:15.5px;font-weight:560;line-height:1.45}
+.issues a.edition .n{font-family:var(--mono);font-size:12.5px;color:var(--muted);
+  white-space:nowrap}
+@media(max-width:640px){
+  .issues a.edition{grid-template-columns:1fr;gap:4px}
+  .issues a.edition .n{display:none}
+}
 .issues .titles{margin:9px 0 0;padding:0;list-style:none;font-size:14.5px;
   color:var(--muted);display:grid;gap:3px}
 .issues .titles li{border:0;padding:0;display:flex;gap:8px}
@@ -236,6 +242,8 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
      text-transform:uppercase">India Tech Weekly</a></p>
   <h1>02 August 2026</h1>
   <p class="lede">UPI transactions hit record highs, India boosts semiconductor and electronics manufacturing, and private space sector achieves orbital launch.</p>
+  <p class="meta" style="margin-top:12px">This edition went out to Discord on
+     02 August 2026 as a slide deck.</p>
 </div>
 <div class="feed">
 <div class="item">
