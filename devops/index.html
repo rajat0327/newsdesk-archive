@@ -50,6 +50,20 @@ nav.top-nav a:hover{color:var(--ink);background:var(--hair)}
 nav.top-nav a.join{color:#fff;background:var(--accent);font-weight:600}
 nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
+/* channel bar */
+.chanbar{border-bottom:1px solid var(--line);background:var(--bg)}
+.chanbar .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;
+  -webkit-overflow-scrolling:touch}
+.chanbar .wrap::-webkit-scrollbar{display:none}
+.chanbar a{position:relative;padding:11px 13px;font-size:14.5px;font-weight:600;
+  color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:-.01em}
+.chanbar a:hover{color:var(--ink)}
+.chanbar a::after{content:"";position:absolute;left:13px;right:13px;bottom:-1px;
+  height:2px;background:transparent;border-radius:2px 2px 0 0}
+.chanbar a:hover::after{background:color-mix(in srgb,var(--cc) 40%,transparent)}
+.chanbar a[aria-current]{color:var(--cc)}
+.chanbar a[aria-current]::after{background:var(--cc)}
+
 /* hero */
 .hero{padding:52px 0 30px}
 .hero h1{font-size:clamp(34px,5.4vw,52px);line-height:1.04;letter-spacing:-.035em;
@@ -165,6 +179,7 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 }
 
 .searchbox{position:relative;margin:26px 0 0}
+.searchbox form{margin:0}
 .searchbox input{width:100%;font:inherit;font-size:17px;padding:13px 15px 13px 42px;
   border-radius:11px;border:1px solid var(--line);background:var(--panel);
   color:var(--ink);outline:none}
@@ -199,6 +214,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     <a class="join" href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join Discord</a>
   </nav>
 </div></header>
+<div class="chanbar"><div class="wrap"><a href="../india-tech/" style="--cc:#2f9e6f">India</a><a href="../devops/" style="--cc:#3d7dd8" aria-current="page">DevOps</a><a href="../security-news/" style="--cc:#d9552f">Security</a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers</a><a href="../release-radar/" style="--cc:#b8860b">Releases</a><a href="../ai/" style="--cc:#0f9dab">AI</a><a href="../eng-blogs/" style="--cc:#c2456f">Reading</a></div></div>
 <main class="wrap">
 <div class="hero">
   <h1>DevOps Weekly Digest</h1>
