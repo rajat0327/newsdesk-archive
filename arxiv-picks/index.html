@@ -113,6 +113,8 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
+.tag-link{text-decoration:none;transition:filter .12s}
+.tag-link:hover{filter:brightness(1.25)}
 .tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;
   font-family:var(--mono);padding:2px 9px;border-radius:100px;
   border:1px solid;margin-bottom:8px;white-space:nowrap}
@@ -206,6 +208,12 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .filters button:hover{color:var(--ink)}
 .filters button[aria-pressed="true"]{background:var(--accent);color:#fff;
   border-color:transparent}
+.activefilter{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0;
+  padding:5px 8px 5px 12px;border-radius:100px;border:1px solid var(--line);
+  background:var(--panel);font-size:13.5px}
+.activefilter a{text-decoration:none;color:var(--muted);font-weight:700;
+  font-size:15px;line-height:1;padding:0 3px}
+.activefilter a:hover{color:var(--ink)}
 .count{margin:22px 0 4px;font-size:13px;color:var(--muted);font-family:var(--mono)}
 mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   border-radius:3px;padding:0 2px}
@@ -232,7 +240,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <p class="stats"><span><b>12</b> stories</span>
      <span><b>2</b> issues</span>
      <span><b>8</b> categories</span></p>
-  <p style="margin-top:16px"><span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</span> <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</span> <span class="tag" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Training &amp; Efficiency</span> <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</span> <span class="tag" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Evaluation &amp; Benchmarks</span> <span class="tag" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Safety &amp; Alignment</span> <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</span> <span class="tag" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Research</span></p>
+  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Training &amp; Efficiency</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Evaluation%20%26%20Benchmarks" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Evaluation &amp; Benchmarks</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Safety%20%26%20Alignment" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Safety &amp; Alignment</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Research" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Research</a></p>
 </div>
 
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
@@ -241,7 +249,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>29 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</span>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</a>
     <h3><a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</a></h3>
     <p>SANA-Video 2.0 is introduced as a hybrid video diffusion transformer, scaled to 5B and 14B parameters, designed for high-quality 720p video generation on a single GPU. It achieves quality comparable to full-softmax video DiTs while maintaining the favorable long-sequence scaling of linear attention by employing Hybrid Linear-Softmax Attention and Attention Residuals.</p>
     <div class="why"><b>Why it matters</b> — This paper details architectural innovations, specifically hybrid attention and attention residuals, that enable efficient and high-quality video generation, addressing a key scaling challenge in multimodal models.</div>
@@ -251,7 +259,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>05 August 2026</span></div>
   <div>
-    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</span>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</a>
     <h3><a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow">DiffusionGemma Technical Report</a></h3>
     <p>DiffusionGemma introduces discrete diffusion to LLM decoding by iteratively refining blocks of 256 tokens in parallel. Converted directly from pre-trained Gemma weights rather than trained from scratch, the model bypasses sequential token-by-token autoregressive decoding bottlenecks while maintaining generation quality.</p>
     <div class="why"><b>Why it matters</b> — Adapting autoregressive model weights into block-parallel discrete diffusion bypasses sequential KV-cache bottlenecks without requiring full pre-training from scratch.</div>
@@ -261,7 +269,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>05 August 2026</span></div>
   <div>
-    <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</span>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</a>
     <h3><a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow">JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion</a></h3>
     <p>JoyAI-Video-Edit introduces a 16B-parameter autoregressive diffusion framework designed for low-latency streaming video editing. The system processes video in causal chunks without requiring future frame lookahead or a fixed duration, balancing computational complexity with temporal consistency.</p>
     <div class="why"><b>Why it matters</b> — Chunk-wise causal autoregressive diffusion enables real-time unbounded video editing within fixed memory and latency budgets.</div>
@@ -271,7 +279,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>05 August 2026</span></div>
   <div>
-    <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</span>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</a>
     <h3><a href="https://arxiv.org/abs/2608.01964" rel="noopener nofollow">LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks</a></h3>
     <p>LongHorizon-Harness analyzes how standard LLM agent frameworks fail during extended multi-step workflows due to context bloat. Managing task execution, state, and evaluation inside a single expanding context window causes early assessment errors to compound and derail downstream actions.</p>
     <div class="why"><b>Why it matters</b> — Decoupling state tracking and completion verification from prompt execution history stops hallucinated self-evaluations from cascading across long-horizon agent tasks.</div>
@@ -281,7 +289,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>05 August 2026</span></div>
   <div>
-    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</span>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</a>
     <h3><a href="https://arxiv.org/abs/2608.01735" rel="noopener nofollow">DAPD: Dual-Anchored Policy Distillation</a></h3>
     <p>DAPD addresses the privilege illusion in on-policy self-distillation, where student models attempt to emulate privileged teacher behaviors without having access to privileged inputs during inference. The dual-anchored approach regularizes the student policy against both baseline context and privileged teacher distributions.</p>
     <div class="why"><b>Why it matters</b> — Anchoring student training against both baseline and privileged context prevents models from developing dependencies on context features absent at inference time.</div>

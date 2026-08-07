@@ -114,6 +114,8 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
+.tag-link{text-decoration:none;transition:filter .12s}
+.tag-link:hover{filter:brightness(1.25)}
 .tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;
   font-family:var(--mono);padding:2px 9px;border-radius:100px;
   border:1px solid;margin-bottom:8px;white-space:nowrap}
@@ -207,6 +209,12 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .filters button:hover{color:var(--ink)}
 .filters button[aria-pressed="true"]{background:var(--accent);color:#fff;
   border-color:transparent}
+.activefilter{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0;
+  padding:5px 8px 5px 12px;border-radius:100px;border:1px solid var(--line);
+  background:var(--panel);font-size:13.5px}
+.activefilter a{text-decoration:none;color:var(--muted);font-weight:700;
+  font-size:15px;line-height:1;padding:0 3px}
+.activefilter a:hover{color:var(--ink)}
 .count{margin:22px 0 4px;font-size:13px;color:var(--muted);font-family:var(--mono)}
 mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   border-radius:3px;padding:0 2px}
@@ -237,7 +245,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>10 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Models</span>
+    <a class="tag tag-link" href="../search.html?c=ai&amp;g=Models" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Models</a>
     <h3><a href="https://www.mediapost.com/publications/article/416436/openai-shutters-its-browser-amidst-major-changes.html" rel="noopener nofollow">GPT-5.6 Powers Microsoft 365 Copilot</a></h3>
     <p>OpenAI publicly launched its GPT-5.6 family (Sol, Terra, Luna) on July 9, 2026, with Sol as the flagship model. GPT-5.6 is now the preferred model in Microsoft 365 Copilot, integrating OpenAI&#x27;s latest capabilities into productivity tools like Word, Excel, and PowerPoint.</p>
     <div class="why"><b>Why it matters</b> — This signifies a major advancement in OpenAI&#x27;s model capabilities and a deeper integration into enterprise workflows, directly impacting how businesses leverage AI for productivity.</div>
@@ -247,7 +255,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>10 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Developer Tools</span>
+    <a class="tag tag-link" href="../search.html?c=ai&amp;g=Developer%20Tools" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Developer Tools</a>
     <h3><a href="https://openai.com/news/" rel="noopener nofollow">OpenAI Introduces GPT-Live for Real-time AI</a></h3>
     <p>On July 8, 2026, OpenAI introduced GPT-Live, a new product designed for real-time interactions. This offering aims to provide immediate and dynamic responses, enhancing applications that require live conversational AI.</p>
     <div class="why"><b>Why it matters</b> — GPT-Live opens new possibilities for developers building applications requiring instant AI responses, such as advanced chatbots, interactive assistants, and real-time content generation.</div>
@@ -257,7 +265,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>10 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Security</span>
+    <a class="tag tag-link" href="../search.html?c=ai&amp;g=Security" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Security</a>
     <h3><a href="https://openai.com/news/" rel="noopener nofollow">OpenAI Launches Bio Bug Bounty Program</a></h3>
     <p>On July 9, 2026, OpenAI initiated a Bio Bug Bounty program, inviting security researchers to identify and report vulnerabilities related to biological misuse or risks within its AI models. This initiative aims to proactively address potential safety concerns in advanced AI systems.</p>
     <div class="why"><b>Why it matters</b> — This demonstrates OpenAI&#x27;s commitment to responsible AI development and security, encouraging external scrutiny to mitigate risks associated with powerful AI models, particularly in sensitive domains.</div>
@@ -267,7 +275,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>10 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Developer Tools</span>
+    <a class="tag tag-link" href="../search.html?c=ai&amp;g=Developer%20Tools" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Developer Tools</a>
     <h3><a href="https://openai.com/news/" rel="noopener nofollow">ChatGPT Evolves for Ambitious Work</a></h3>
     <p>OpenAI announced on July 9, 2026, that ChatGPT is evolving to become a partner for users&#x27; most ambitious work. This signifies an expansion of ChatGPT&#x27;s capabilities and its role in assisting complex projects and workflows.</p>
     <div class="why"><b>Why it matters</b> — This indicates a strategic push to position ChatGPT as a more comprehensive and powerful tool for advanced tasks, potentially enhancing its utility for developers and businesses tackling challenging problems.</div>

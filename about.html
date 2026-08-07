@@ -113,6 +113,8 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
+.tag-link{text-decoration:none;transition:filter .12s}
+.tag-link:hover{filter:brightness(1.25)}
 .tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;
   font-family:var(--mono);padding:2px 9px;border-radius:100px;
   border:1px solid;margin-bottom:8px;white-space:nowrap}
@@ -206,6 +208,12 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .filters button:hover{color:var(--ink)}
 .filters button[aria-pressed="true"]{background:var(--accent);color:#fff;
   border-color:transparent}
+.activefilter{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0;
+  padding:5px 8px 5px 12px;border-radius:100px;border:1px solid var(--line);
+  background:var(--panel);font-size:13.5px}
+.activefilter a{text-decoration:none;color:var(--muted);font-weight:700;
+  font-size:15px;line-height:1;padding:0 3px}
+.activefilter a:hover{color:var(--ink)}
 .count{margin:22px 0 4px;font-size:13px;color:var(--muted);font-family:var(--mono)}
 mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   border-radius:3px;padding:0 2px}

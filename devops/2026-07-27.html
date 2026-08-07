@@ -114,6 +114,8 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
+.tag-link{text-decoration:none;transition:filter .12s}
+.tag-link:hover{filter:brightness(1.25)}
 .tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;
   font-family:var(--mono);padding:2px 9px;border-radius:100px;
   border:1px solid;margin-bottom:8px;white-space:nowrap}
@@ -207,6 +209,12 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .filters button:hover{color:var(--ink)}
 .filters button[aria-pressed="true"]{background:var(--accent);color:#fff;
   border-color:transparent}
+.activefilter{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0;
+  padding:5px 8px 5px 12px;border-radius:100px;border:1px solid var(--line);
+  background:var(--panel);font-size:13.5px}
+.activefilter a{text-decoration:none;color:var(--muted);font-weight:700;
+  font-size:15px;line-height:1;padding:0 3px}
+.activefilter a:hover{color:var(--ink)}
 .count{margin:22px 0 4px;font-size:13px;color:var(--muted);font-family:var(--mono)}
 mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   border-radius:3px;padding:0 2px}
@@ -237,7 +245,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>27 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</span>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a>
     <h3><a href="https://devops.com/hashicorp-introduces-tfpolicy-a-native-policy-framework-for-terraform/" rel="noopener nofollow">HashiCorp Introduces tfpolicy for Terraform Governance</a></h3>
     <p>HashiCorp has launched tfpolicy in public beta, a new policy-as-code framework built directly into Terraform. This allows platform teams to write governance rules in HCL, the same language they use for infrastructure, reducing reliance on separate policy tools and syntaxes.</p>
     <div class="why"><b>Why it matters</b> — tfpolicy streamlines governance by integrating policy enforcement directly into Terraform workflows, simplifying compliance and security for infrastructure teams.</div>
@@ -247,7 +255,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>27 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</span>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a>
     <h3><a href="https://www.hashicorp.com/en/blog/terraform-introduces-workspaces-and-stacks-restore-and-more" rel="noopener nofollow">Terraform Stacks Gain Restore and Monorepo Support</a></h3>
     <p>HashiCorp Terraform has announced the general availability of Workspaces and Stacks restore, allowing administrators to recover deleted environments with a single click. Additionally, new monorepo support enables multiple independent Stacks to coexist within a single VCS repository, reducing sprawl and simplifying infrastructure organization.</p>
     <div class="why"><b>Why it matters</b> — These updates significantly improve the resilience and organizational capabilities for platform teams managing complex infrastructure with Terraform, reducing operational overhead and recovery time.</div>
@@ -257,7 +265,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>27 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Cloud Providers</span>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Cloud%20Providers" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Cloud Providers</a>
     <h3><a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" rel="noopener nofollow">Azure Expands AI and HPC Infrastructure with AMD</a></h3>
     <p>Microsoft has expanded its Azure AI and high-performance computing (HPC) infrastructure through a deeper partnership with AMD. This collaboration introduces new AMD-powered Azure services, including HDv2 VMs for data processing, HXv2 VMs for electronic design automation (EDA), and ND MI455X v7 VMs for AI inference workloads.</p>
     <div class="why"><b>Why it matters</b> — This expansion provides Azure users with more specialized and powerful infrastructure options tailored for demanding AI and HPC workloads, offering greater choice, scale, and efficiency.</div>
@@ -267,7 +275,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>27 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Cloud Providers</span>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Cloud%20Providers" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Cloud Providers</a>
     <h3><a href="https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud" rel="noopener nofollow">Google Cloud Boosts Secure AI with MedPerf and TPUs</a></h3>
     <p>At Google Cloud Next 2026, Google Cloud and MLCommons announced the enablement of MedPerf, a federated benchmarking orchestrator, on Google Cloud&#x27;s confidential compute capabilities for secure medical AI benchmarking. Additionally, Google Cloud has begun shipping its eighth-generation TPU systems (TPU 8t and TPU 8i) to customer data centers.</p>
     <div class="why"><b>Why it matters</b> — These developments enhance secure AI collaboration in sensitive fields like healthcare and provide customers with cutting-edge, purpose-built hardware for AI training and inference.</div>
@@ -277,7 +285,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>27 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</span>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a>
     <h3><a href="https://www.pulumi.com/what-is/what-is-pulumi/" rel="noopener nofollow">Pulumi Enhances IaC with Environment Overrides and AI</a></h3>
     <p>Pulumi has released &quot;Preview ESC Changes with Environment Overrides,&quot; allowing users to preview proposed environment changes against their stack before promotion. The platform also highlights its AI-powered development assistance, capable of generating infrastructure code from natural language and providing intelligent suggestions.</p>
     <div class="why"><b>Why it matters</b> — These features enhance developer productivity and safety in IaC workflows by enabling pre-deployment validation and leveraging AI for faster, more compliant infrastructure code generation.</div>
@@ -287,7 +295,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>27 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Kubernetes &amp; Orchestration</span>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Kubernetes%20%26%20Orchestration" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Kubernetes &amp; Orchestration</a>
     <h3><a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-extended" rel="noopener nofollow">Kubernetes Ecosystem Receives Patch Updates</a></h3>
     <p>The Kubernetes ecosystem saw several patch releases across various versions this week. Google Kubernetes Engine (GKE) updated its extended channel with new auto-upgrade targets for versions like 1.30 to 1.31.14-gke.2169000. Similarly, k3s released patch updates for versions including v1.36.2+k3s1 and v1.35.6+k3s1, incorporating bug fixes and dependency bumps.</p>
     <div class="why"><b>Why it matters</b> — These routine patch updates are crucial for maintaining the stability, security, and performance of Kubernetes clusters, ensuring that critical bug fixes and dependency updates are applied.</div>

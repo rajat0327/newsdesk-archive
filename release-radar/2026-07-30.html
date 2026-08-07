@@ -114,6 +114,8 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
+.tag-link{text-decoration:none;transition:filter .12s}
+.tag-link:hover{filter:brightness(1.25)}
 .tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;
   font-family:var(--mono);padding:2px 9px;border-radius:100px;
   border:1px solid;margin-bottom:8px;white-space:nowrap}
@@ -207,6 +209,12 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .filters button:hover{color:var(--ink)}
 .filters button[aria-pressed="true"]{background:var(--accent);color:#fff;
   border-color:transparent}
+.activefilter{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0;
+  padding:5px 8px 5px 12px;border-radius:100px;border:1px solid var(--line);
+  background:var(--panel);font-size:13.5px}
+.activefilter a{text-decoration:none;color:var(--muted);font-weight:700;
+  font-size:15px;line-height:1;padding:0 3px}
+.activefilter a:hover{color:var(--ink)}
 .count{margin:22px 0 4px;font-size:13px;color:var(--muted);font-family:var(--mono)}
 mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   border-radius:3px;padding:0 2px}
@@ -237,7 +245,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Runtimes</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Runtimes" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Runtimes</a>
     <h3><a href="https://github.com/nodejs/node/releases/tag/v24.18.1" rel="noopener nofollow">Node.js 24.18.1</a></h3>
     <p>This is a security release. · Notable Changes · (CVE-2026-56846) http2: retain header memory in session accounting (Matteo Collina) – High · (CVE-2026-56848) http2: defer rst stream while in scope (Matteo Collina) – High…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Fixes CVE-2026-56846, CVE-2026-56848, CVE-2026-58043 — patch promptly. Also released on 1 other maintenance line: 22.23.2.</div>
@@ -247,7 +255,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</a>
     <h3><a href="https://github.com/redis/redis/releases/tag/8.4.5" rel="noopener nofollow">Redis 8.4.5</a></h3>
     <p>SECURITY: There are security fixes in the release. · Security fixes · A crafted stream RESTORE payload can make two consumers share the same NACK, leading to a use-after-free that may result in Remote Code Execution…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Release notes reference security fixes. Also released on 4 other maintenance lines: 7.4.10, 7.2.15, 6.2.23, 8.10.0.</div>
@@ -257,7 +265,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Networking</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Networking</a>
     <h3><a href="https://github.com/cilium/cilium/releases/tag/v1.20.0" rel="noopener nofollow">Cilium 1.20.0</a></h3>
     <p>🎉 Release Announcement 🎉: We are excited to announce the Cilium 1.20.0 release! · More than 2,660 new commits have landed in this release, supported by a community of over 1,100 contributors and more than 24,800 GitHub stars! 🤩…</p>
     <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
@@ -267,7 +275,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a>
     <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.255.0" rel="noopener nofollow">Pulumi 3.255.0</a></h3>
     <p>[cli] Add an --extension flag to package commands for extension-parameterized packages, reinstalled from Pulumi.yaml on pulumi install · [cli] Project files to disk and surface their paths as environment variables for all output formats when opening an ESC environment #23993…</p>
     <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
@@ -277,7 +285,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Containers</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Containers" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Containers</a>
     <h3><a href="https://github.com/moby/moby/releases/tag/client/v0.5.1" rel="noopener nofollow">Docker Engine client/v0.5.1</a></h3>
     <p>client/pkg/jsonmessage: Display: fix godoc link. moby/moby#53070 · client: ServiceCreate, ServiceUpdate: fix duplicate and &#x27;unkown&#x27; platforms. moby/moby#53012 · client: ServiceInspect, ContainerCommit: omit optional query args if not set. moby/moby#53010 · golangci-lint: enable perfsprint linter…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade.</div>
@@ -287,7 +295,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Networking</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Networking</a>
     <h3><a href="https://github.com/traefik/traefik/releases/tag/v2.11.53" rel="noopener nofollow">Traefik 2.11.53</a></h3>
     <p>Important: Please read the migration guide. · Advisory GHSA-3ccp-42pg-hgv6 · [middleware, k8s/crd] Add missing ErrorRequestHeaders field to CRDs · [server] Defer the CONNECT payload until the backend accepts the tunnel · [server] Bump google.golang.org/grpc to v1.82.1…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading.</div>
@@ -297,7 +305,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Orchestration</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Orchestration" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Orchestration</a>
     <h3><a href="https://github.com/etcd-io/etcd/releases/tag/v3.6.14" rel="noopener nofollow">etcd 3.6.14</a></h3>
     <p>Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). · macOS (Darwin) · etcd uses gcr.io/etcd-development/etcd as a primary container registry, and quay.io/coreos/etcd as secondary.</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading.</div>
@@ -307,7 +315,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Also Shipped</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Also Shipped</a>
     <h3>Also shipped: 3 more releases</h3>
     <p>Data: Redis 8.2.8 · Orchestration: etcd 3.5.33 · Runtimes: Node.js 26.5.1</p>
     <div class="why"><b>Why it matters</b> — Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>

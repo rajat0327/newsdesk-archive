@@ -114,6 +114,8 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
+.tag-link{text-decoration:none;transition:filter .12s}
+.tag-link:hover{filter:brightness(1.25)}
 .tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;
   font-family:var(--mono);padding:2px 9px;border-radius:100px;
   border:1px solid;margin-bottom:8px;white-space:nowrap}
@@ -207,6 +209,12 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .filters button:hover{color:var(--ink)}
 .filters button[aria-pressed="true"]{background:var(--accent);color:#fff;
   border-color:transparent}
+.activefilter{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0;
+  padding:5px 8px 5px 12px;border-radius:100px;border:1px solid var(--line);
+  background:var(--panel);font-size:13.5px}
+.activefilter a{text-decoration:none;color:var(--muted);font-weight:700;
+  font-size:15px;line-height:1;padding:0 3px}
+.activefilter a:hover{color:var(--ink)}
 .count{margin:22px 0 4px;font-size:13px;color:var(--muted);font-family:var(--mono)}
 mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   border-radius:3px;padding:0 2px}
@@ -246,6 +254,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <button data-c="ai" aria-pressed="false">AI Tech Weekly Digest</button>
   <button data-c="eng-blogs" aria-pressed="false">Engineering Reading</button>
   </div>
+  <span class="activefilter" id="activefilter" style="display:none"></span>
 </div>
 <p class="count" id="count"></p>
 <div class="feed" id="results"></div>
@@ -259,10 +268,22 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   var IDX = window.__IDX__, F = document.getElementById('q'),
       OUT = document.getElementById('results'), CNT = document.getElementById('count'),
       BTNS = Array.prototype.slice.call(document.querySelectorAll('.filters button')),
-      channel = '';
+      PILL = document.getElementById('activefilter'),
+      channel = '', category = '';
 
-  function esc(s){ return s.replace(/[&<>"]/g, function(c){
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  function showPill(){
+    if(!category){ PILL.innerHTML = ''; PILL.style.display = 'none'; return; }
+    PILL.style.display = 'inline-flex';
+    // Escape, do not strip: "Kubernetes & Orchestration" lost its ampersand
+    PILL.innerHTML = 'Category: <b>' + esc(category) + '</b>'
+      + '<a href="#" title="Clear this filter" aria-label="Clear category filter">&times;</a>';
+    PILL.querySelector('a').addEventListener('click', function(ev){
+      ev.preventDefault(); category = ''; showPill(); render(F.value.trim()); sync();
+    });
+  }
 
   function mark(text, terms){
     var out = esc(text);
@@ -278,6 +299,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     var terms = q.toLowerCase().split(/\s+/).filter(Boolean);
     var hits = IDX.filter(function(r){
       if(channel && r.s !== channel) return false;
+      if(category && r.g !== category) return false;
       if(!terms.length) return true;
       var hay = r.h;
       return terms.every(function(t){ return hay.indexOf(t) !== -1; });
@@ -290,7 +312,9 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     });
 
     CNT.textContent = hits.length + (hits.length === 1 ? ' story' : ' stories')
-      + (q ? ' matching "' + q + '"' : '') + (channel ? ' in ' + channel : '');
+      + (q ? ' matching "' + q + '"' : '')
+      + (category ? ' in ' + category : '')
+      + (channel ? ' from ' + channel : '');
 
     if(!hits.length){
       OUT.innerHTML = '<div class="empty">Nothing matched. Try a product name, '
@@ -317,6 +341,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     var u = new URL(location.href);
     F.value ? u.searchParams.set('q', F.value) : u.searchParams.delete('q');
     channel ? u.searchParams.set('c', channel) : u.searchParams.delete('c');
+    category ? u.searchParams.set('g', category) : u.searchParams.delete('g');
     history.replaceState(null, '', u);
   }
 
@@ -340,6 +365,8 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   var p = new URLSearchParams(location.search);
   F.value = p.get('q') || '';
   channel = p.get('c') || '';
+  category = p.get('g') || '';
+  showPill();
   BTNS.forEach(function(x){ x.setAttribute('aria-pressed', x.dataset.c === channel); });
   render(F.value.trim());
   F.focus();

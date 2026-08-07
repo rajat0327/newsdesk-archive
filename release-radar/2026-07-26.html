@@ -114,6 +114,8 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
+.tag-link{text-decoration:none;transition:filter .12s}
+.tag-link:hover{filter:brightness(1.25)}
 .tag{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;
   font-family:var(--mono);padding:2px 9px;border-radius:100px;
   border:1px solid;margin-bottom:8px;white-space:nowrap}
@@ -207,6 +209,12 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .filters button:hover{color:var(--ink)}
 .filters button[aria-pressed="true"]{background:var(--accent);color:#fff;
   border-color:transparent}
+.activefilter{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0;
+  padding:5px 8px 5px 12px;border-radius:100px;border:1px solid var(--line);
+  background:var(--panel);font-size:13.5px}
+.activefilter a{text-decoration:none;color:var(--muted);font-weight:700;
+  font-size:15px;line-height:1;padding:0 3px}
+.activefilter a:hover{color:var(--ink)}
 .count{margin:22px 0 4px;font-size:13px;color:var(--muted);font-family:var(--mono)}
 mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   border-radius:3px;padding:0 2px}
@@ -237,7 +245,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</a>
     <h3><a href="https://github.com/redis/redis/releases/tag/8.6.5" rel="noopener nofollow">Redis 8.6.5</a></h3>
     <p>SECURITY: There are security fixes in the release. · Security fixes · A crafted stream RESTORE payload can make two consumers share the same NACK, leading to a use-after-free that may result in Remote Code Execution…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Release notes reference security fixes. Also released on 4 other maintenance lines: 8.2.8, 7.4.10, 7.2.15, 6.2.23.</div>
@@ -247,7 +255,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</a>
     <h3><a href="https://github.com/valkey-io/valkey/releases/tag/9.0.5" rel="noopener nofollow">Valkey 9.0.5</a></h3>
     <p>Valkey 9.0.5 - Released Tue 21 July 2026 · Upgrade urgency SECURITY: This release includes security fixes we recommend you apply as soon as possible. · Security Fixes…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Fixes CVE-2026-56684, CVE-2026-63639 — patch promptly. Also released on 2 other maintenance lines: 8.0.10, 7.2.14.</div>
@@ -257,7 +265,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a>
     <h3><a href="https://github.com/opentofu/opentofu/releases/tag/v1.11.13" rel="noopener nofollow">OpenTofu 1.11.13</a></h3>
     <p>SECURITY ADVISORIES · Previous releases in the v1.11 series could be affected by several vulnerabilities · The Encrypted Client Hello implementation (which is used by OpenTofu through the go stdlib) would leak the pre-shared key identities during the handshake,…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Release notes reference security fixes.</div>
@@ -267,7 +275,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Networking</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Networking</a>
     <h3><a href="https://github.com/traefik/traefik/releases/tag/v3.6.24" rel="noopener nofollow">Traefik 3.6.24</a></h3>
     <p>Important: Please read the migration guide. · [middleware, k8s/crd] Add missing ErrorRequestHeaders field to CRDs · [logs] Remove unrelated error from nonexistent cert resolver log · [middleware] Disable Zstd support in the gzhttp wrapper…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading.</div>
@@ -277,7 +285,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Orchestration</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Orchestration" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Orchestration</a>
     <h3><a href="https://github.com/etcd-io/etcd/releases/tag/v3.7.1" rel="noopener nofollow">etcd 3.7.1</a></h3>
     <p>Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). · macOS (Darwin) · etcd uses gcr.io/etcd-development/etcd as a primary container registry, and quay.io/coreos/etcd as secondary.</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading. Also released on 1 other maintenance line: 3.5.33.</div>
@@ -287,7 +295,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</a>
     <h3><a href="https://github.com/ClickHouse/ClickHouse/releases/tag/v26.5.6.64-stable" rel="noopener nofollow">ClickHouse 26.5.6.64-stable</a></h3>
     <p>ClickHouse published v26.5.6.64-stable with no release notes.</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Also released on 3 other maintenance lines: 26.4.5.143-stable, 26.6.2.81-stable, 26.3.17.56-lts.</div>
@@ -297,7 +305,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Orchestration</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Orchestration" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Orchestration</a>
     <h3><a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.36.3" rel="noopener nofollow">Kubernetes 1.36.3</a></h3>
     <p>See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG.</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Also released on 1 other maintenance line: 1.34.10.</div>
@@ -307,7 +315,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Also Shipped</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Also Shipped</a>
     <h3>Also shipped: 8 more releases</h3>
     <p>Data: Redis 8.4.5, Valkey 8.1.9, ClickHouse 26.7.1.1315-stable · Networking: Traefik 2.11.53 · Observability: Grafana 12.4.6, Grafana 12.3.9 · Orchestration: etcd 3.6.14, Kubernetes 1.35.7</p>
     <div class="why"><b>Why it matters</b> — Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>
@@ -317,7 +325,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=End%20of%20Life" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</a>
     <h3><a href="https://endoflife.date/mongodb" rel="noopener nofollow">MongoDB 8.2 reaches EOL in under 7 days</a></h3>
     <p>Support for MongoDB 8.2 ends on 31 July 2026 — 5 days away. Latest release on this line is 8.2.11.</p>
     <div class="why"><b>Why it matters</b> — No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
@@ -327,7 +335,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</a>
     <h3><a href="https://github.com/redis/redis/releases/tag/8.8.1" rel="noopener nofollow">Redis 8.8.1</a></h3>
     <p>SECURITY: There is a security fix in the release. · Security fixes · RedisBloom/RedisBloom#1044 Crafted RESTORE payloads in RedisBloom and TDigest may trigger out-of-bounds writes, potentially leading to remote code execution</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Release notes reference security fixes. Also released on 5 other maintenance lines: 8.4.5, 8.2.8, 7.4.10, 7.2.15, 6.2.23.</div>
@@ -337,7 +345,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</a>
     <h3><a href="https://github.com/duckdb/duckdb/releases/tag/v1.5.5" rel="noopener nofollow">DuckDB 1.5.5</a></h3>
     <p>This is a bug fix release for various issues discovered after we released v1.5.4. · backport the out-of-bounds security fixes made in #23100 by @Tishj in https://github.com/duckdb/duckdb/pull/23197…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Release notes reference security fixes.</div>
@@ -347,7 +355,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</a>
     <h3><a href="https://github.com/valkey-io/valkey/releases/tag/9.1.1" rel="noopener nofollow">Valkey 9.1.1</a></h3>
     <p>Valkey 9.1.1 - Released Tue 21 July 2026 · Upgrade urgency SECURITY: This release includes security fixes we recommend you apply as soon as possible. · Security Fixes…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Fixes CVE-2026-56684, CVE-2026-63639 — patch promptly. Also released on 3 other maintenance lines: 8.1.9, 8.0.10, 7.2.14.</div>
@@ -357,7 +365,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a>
     <h3><a href="https://github.com/opentofu/opentofu/releases/tag/v1.12.5" rel="noopener nofollow">OpenTofu 1.12.5</a></h3>
     <p>SECURITY ADVISORIES · Previous releases in the v1.12 series could be affected by several vulnerabilities · The Encrypted Client Hello implementation (which is used by OpenTofu through the go stdlib) would leak the pre-shared key identities during the handshake,…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Release notes reference security fixes.</div>
@@ -367,7 +375,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=End%20of%20Life" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</a>
     <h3><a href="https://endoflife.date/docker-engine" rel="noopener nofollow">Docker Engine 25.0 reaches EOL in under 180 days</a></h3>
     <p>Support for Docker Engine 25.0 ends on 04 December 2026 — 131 days away. Latest release on this line is 25.0.16.</p>
     <div class="why"><b>Why it matters</b> — No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
@@ -377,7 +385,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=End%20of%20Life" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</a>
     <h3><a href="https://endoflife.date/postgresql" rel="noopener nofollow">PostgreSQL 14 reaches EOL in under 180 days</a></h3>
     <p>Support for PostgreSQL 14 ends on 12 November 2026 — 109 days away. Latest release on this line is 14.23.</p>
     <div class="why"><b>Why it matters</b> — No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
@@ -387,7 +395,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=End%20of%20Life" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</a>
     <h3><a href="https://endoflife.date/python" rel="noopener nofollow">Python 3.10 reaches EOL in under 180 days</a></h3>
     <p>Support for Python 3.10 ends on 31 October 2026 — 97 days away. Latest release on this line is 3.10.20.</p>
     <div class="why"><b>Why it matters</b> — No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
@@ -397,7 +405,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=End%20of%20Life" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</a>
     <h3><a href="https://endoflife.date/kubernetes" rel="noopener nofollow">Kubernetes 1.34 reaches EOL in under 180 days</a></h3>
     <p>Support for Kubernetes 1.34 ends on 27 October 2026 — 93 days away. Latest release on this line is 1.34.10.</p>
     <div class="why"><b>Why it matters</b> — No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
@@ -407,7 +415,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a>
     <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.254.0" rel="noopener nofollow">Pulumi 3.254.0</a></h3>
     <p>[cli] Add pulumi logs share command for sharing logs with Pulumi #22546 · [cli] Add pulumi stack migrate to migrate a stack from another backend to the currently logged-in backend, including re-encrypting config secrets and stack state under the target secrets provider #22902…</p>
     <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
@@ -417,7 +425,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Observability</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Observability" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Observability</a>
     <h3><a href="https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.157.0" rel="noopener nofollow">OpenTelemetry Collector 0.157.0</a></h3>
     <p>Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.157.0 · End User Changelog · 🛑 Breaking changes 🛑…</p>
     <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible. Notes mention breaking changes or deprecations — read before upgrading.</div>
@@ -427,7 +435,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Networking</span>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Networking</a>
     <h3><a href="https://github.com/traefik/traefik/releases/tag/v3.7.9" rel="noopener nofollow">Traefik 3.7.9</a></h3>
     <p>Important: Please read the migration guide. · [k8s/ingress-nginx] Fix redirect with use-regex in IngressNGINX provider · [middleware] Disable Zstd support in the gzhttp wrapper · [server] Defer the CONNECT payload until the backend accepts the tunnel…</p>
     <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading. Also released on 1 other maintenance line: 2.11.53.</div>
