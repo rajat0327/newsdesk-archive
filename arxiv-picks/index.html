@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>arXiv Picks — every issue</title>
-<meta name="description" content="Papers Worth Reading. 2 issues, 12 stories.">
-<meta property="og:title" content="arXiv Picks — every issue">
-<meta property="og:description" content="Papers Worth Reading. 2 issues, 12 stories.">
+<title>arXiv Picks — Papers Worth Reading</title>
+<meta name="description" content="Papers Worth Reading. 12 stories across 2 issues.">
+<meta property="og:title" content="arXiv Picks — Papers Worth Reading">
+<meta property="og:description" content="Papers Worth Reading. 12 stories across 2 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#8a5cd6">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -65,7 +65,7 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .chanbar a[aria-current]::after{background:var(--cc)}
 
 /* hero */
-.hero{padding:52px 0 30px}
+.hero{padding:48px 0 22px}
 .hero h1{font-size:clamp(34px,5.4vw,52px);line-height:1.04;letter-spacing:-.035em;
   margin:0 0 14px;font-weight:760}
 .hero .lede{font-size:19px;color:var(--soft);margin:0;max-width:62ch}
@@ -91,7 +91,8 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
   white-space:nowrap}
 
 /* section headings */
-.sec{display:flex;align-items:baseline;gap:12px;margin:56px 0 18px}
+.sec{display:flex;align-items:baseline;gap:12px;margin:52px 0 18px}
+.hero+.sec,.hero+.count{margin-top:26px}
 .sec h2{font-size:14px;letter-spacing:.09em;text-transform:uppercase;margin:0;
   color:var(--muted);font-weight:650}
 .sec .rule{flex:1;height:1px;background:var(--line)}
@@ -220,38 +221,142 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <h1>arXiv Picks</h1>
   <p class="lede">Papers Worth Reading. Published every
      <b>Wednesday</b>.</p>
-  <p class="stats"><span><b>2</b> issues</span>
-     <span><b>12</b> stories</span>
+  <p class="stats"><span><b>12</b> stories</span>
+     <span><b>2</b> issues</span>
      <span><b>8</b> categories</span></p>
-  <p style="margin-top:18px"><span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</span> <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</span> <span class="tag" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Training &amp; Efficiency</span> <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</span> <span class="tag" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Evaluation &amp; Benchmarks</span> <span class="tag" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Safety &amp; Alignment</span> <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</span> <span class="tag" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Research</span></p>
+  <p style="margin-top:16px"><span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</span> <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</span> <span class="tag" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Training &amp; Efficiency</span> <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</span> <span class="tag" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Evaluation &amp; Benchmarks</span> <span class="tag" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Safety &amp; Alignment</span> <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</span> <span class="tag" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Research</span></p>
 </div>
-<div class="sec"><h2>Issues</h2><div class="rule"></div>
+
+<div class="sec"><h2>Latest stories</h2><div class="rule"></div>
   <a href="feed.xml">RSS</a></div>
+
+<div class="feed">
+<div class="item">
+  <div class="rail"><span>05 August 2026</span></div>
+  <div>
+    <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</span>
+    <h3><a href="https://arxiv.org/abs/2608.01964" rel="noopener nofollow">LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks</a></h3>
+    <p>LongHorizon-Harness analyzes how standard LLM agent frameworks fail during extended multi-step workflows due to context bloat. Managing task execution, state, and evaluation inside a single expanding context window causes early assessment errors to compound and derail downstream actions.</p>
+    <div class="why"><b>Why it matters</b> — Decoupling state tracking and completion verification from prompt execution history stops hallucinated self-evaluations from cascading across long-horizon agent tasks.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2608.01964" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>05 August 2026</span></div>
+  <div>
+    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</span>
+    <h3><a href="https://arxiv.org/abs/2608.01735" rel="noopener nofollow">DAPD: Dual-Anchored Policy Distillation</a></h3>
+    <p>DAPD addresses the privilege illusion in on-policy self-distillation, where student models attempt to emulate privileged teacher behaviors without having access to privileged inputs during inference. The dual-anchored approach regularizes the student policy against both baseline context and privileged teacher distributions.</p>
+    <div class="why"><b>Why it matters</b> — Anchoring student training against both baseline and privileged context prevents models from developing dependencies on context features absent at inference time.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2608.01735" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>05 August 2026</span></div>
+  <div>
+    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</span>
+    <h3><a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow">DiffusionGemma Technical Report</a></h3>
+    <p>DiffusionGemma introduces discrete diffusion to LLM decoding by iteratively refining blocks of 256 tokens in parallel. Converted directly from pre-trained Gemma weights rather than trained from scratch, the model bypasses sequential token-by-token autoregressive decoding bottlenecks while maintaining generation quality.</p>
+    <div class="why"><b>Why it matters</b> — Adapting autoregressive model weights into block-parallel discrete diffusion bypasses sequential KV-cache bottlenecks without requiring full pre-training from scratch.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>05 August 2026</span></div>
+  <div>
+    <span class="tag" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Training &amp; Efficiency</span>
+    <h3><a href="https://arxiv.org/abs/2607.29209" rel="noopener nofollow">SAF-OPD: Stable Advantage Fusion for On-Policy Distillation</a></h3>
+    <p>SAF-OPD tackles the instability caused by combining scalar RL rewards with token-level teacher distillation. It identifies gradient conflicts between dense teacher advantage bounds and sparse outcome-based exploration, proposing a unified advantage fusion mechanism to balance teacher imitation with independent policy search.</p>
+    <div class="why"><b>Why it matters</b> — Blending dense teacher advantages with sparse outcome rewards requires explicit advantage fusion to keep teacher supervision bounds from suffocating RL exploration.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.29209" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>05 August 2026</span></div>
+  <div>
+    <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</span>
+    <h3><a href="https://arxiv.org/abs/2608.01755" rel="noopener nofollow">Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs</a></h3>
+    <p>This work reveals trajectory anchoring bias in autonomous driving VLMs, where revealing ground-truth trajectory data to teacher models produces ungrounded CoT explanations. It introduces deferred trajectory exposure, withholding ground-truth future paths until after the teacher generates verifiable chain-of-thought spatial reasoning.</p>
+    <div class="why"><b>Why it matters</b> — Withholding target ground-truth data during teacher CoT generation forces models to build verifiable reasoning from visual inputs instead of reverse-engineering answers.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2608.01755" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>05 August 2026</span></div>
+  <div>
+    <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</span>
+    <h3><a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow">JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion</a></h3>
+    <p>JoyAI-Video-Edit introduces a 16B-parameter autoregressive diffusion framework designed for low-latency streaming video editing. The system processes video in causal chunks without requiring future frame lookahead or a fixed duration, balancing computational complexity with temporal consistency.</p>
+    <div class="why"><b>Why it matters</b> — Chunk-wise causal autoregressive diffusion enables real-time unbounded video editing within fixed memory and latency budgets.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>29 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</span>
+    <h3><a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow">Kimi K3: Open Frontier Intelligence</a></h3>
+    <p>This paper introduces Kimi K3, a massive 2.8T parameter Mixture-of-Experts model with 104 billion activated parameters, native vision capabilities, and a 1-million-token context window. Its architecture incorporates Kimi Delta Attention and Attention Residuals to enhance information flow across sequence length and model depth, alongside Stable LatentMoE for efficient expert activation.</p>
+    <div class="why"><b>Why it matters</b> — It provides insight into the architectural innovations and scaling strategies behind a new frontier-level multimodal LLM, detailing specific attention mechanisms and MoE techniques.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>29 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</span>
+    <h3><a href="https://arxiv.org/abs/2607.22798" rel="noopener nofollow">StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents</a></h3>
+    <p>This work proposes StateAct, an approach for computer-use agents that prioritizes underlying program state over pixel-based screenshots for perception. It argues that screenshots are a lossy rendering, while program state (files, backends, DOM) offers direct, lossless access to task data, enabling more robust inspection and modification.</p>
+    <div class="why"><b>Why it matters</b> — It presents a fundamental design decision for improving computer-use agents by shifting perception from visual rendering to direct program state interaction, offering a more robust and less lossy approach.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.22798" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>29 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</span>
+    <h3><a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</a></h3>
+    <p>SANA-Video 2.0 is introduced as a hybrid video diffusion transformer, scaled to 5B and 14B parameters, designed for high-quality 720p video generation on a single GPU. It achieves quality comparable to full-softmax video DiTs while maintaining the favorable long-sequence scaling of linear attention by employing Hybrid Linear-Softmax Attention and Attention Residuals.</p>
+    <div class="why"><b>Why it matters</b> — This paper details architectural innovations, specifically hybrid attention and attention residuals, that enable efficient and high-quality video generation, addressing a key scaling challenge in multimodal models.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>29 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</span>
+    <h3><a href="https://arxiv.org/abs/2607.22529" rel="noopener nofollow">Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills</a></h3>
+    <p>This research explores interaction-driven self-evolution for LLM training, moving beyond manual design and annotation. It introduces Skill Self-Play to address the dilemma between task diversity and verification reliability, allowing LLMs to co-evolve skills and broaden their task space while maintaining reliable verification.</p>
+    <div class="why"><b>Why it matters</b> — It presents an advanced training paradigm for LLMs that leverages self-evolution and co-evolving skills to overcome fundamental limitations in scaling LLM capabilities and task diversity.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.22529" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>29 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</span>
+    <h3><a href="https://arxiv.org/abs/2607.24027" rel="noopener nofollow">Sol-Attn: Accelerating Video Generation Inference via On-the-Fly Attention Sparsification</a></h3>
+    <p>This paper addresses the dominant attention bottleneck in diffusion transformers for high-fidelity video generation by proposing Sol-Attn, an on-the-fly attention sparsification method. It aims to overcome the limitations of existing training-free dynamic sparse attention methods, which struggle with efficient and accurate sparsification due to rigid or costly routing.</p>
+    <div class="why"><b>Why it matters</b> — It offers a crucial systems and inference optimization technique for video generation models, tackling the computational cost of attention through dynamic sparsification.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.24027" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+<div class="item">
+  <div class="rail"><span>29 July 2026</span></div>
+  <div>
+    <span class="tag" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Research</span>
+    <h3><a href="https://arxiv.org/abs/2607.24744" rel="noopener nofollow">Data Pyramid for Embodied Manipulation</a></h3>
+    <p>This work proposes organizing the embodied data ecosystem as a &#x27;pyramid&#x27; of five complementary sources to address the unique data requirements of embodied agents. Unlike multimodal foundation models that leverage internet-scale data, embodied agents need data coupling observations with physical states and actions, which this pyramid structure aims to provide.</p>
+    <div class="why"><b>Why it matters</b> — It offers a structured approach to understanding and leveraging diverse data sources for embodied AI, which is critical for overcoming the data scarcity bottleneck in learning physical interactions.</div>
+    <p class="src">arXiv &middot; <a href="https://arxiv.org/abs/2607.24744" rel="noopener nofollow">Read the original &rarr;</a></p>
+  </div>
+</div>
+</div>
+
+<div class="sec"><h2>Every issue</h2><div class="rule"></div></div>
 <ul class="issues">
-  <li>
-    <div class="top"><a href="2026-08-05.html">05 August 2026</a>
-      <span class="n">6 stories</span></div>
-    <p class="head">20 papers shortlisted this week — most discussed: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instru (142 upvotes).</p>
-    <ul class="titles">
-      <li>LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks</li>
-      <li>DAPD: Dual-Anchored Policy Distillation</li>
-      <li>DiffusionGemma Technical Report</li>
-      <li>SAF-OPD: Stable Advantage Fusion for On-Policy Distillation</li>
-      <li>Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs</li>      <li>and 1 more</li>
-    </ul>
-  </li>
-  <li>
-    <div class="top"><a href="2026-07-29.html">29 July 2026</a>
-      <span class="n">6 stories</span></div>
-    <p class="head">20 papers shortlisted this week — most discussed: Kimi K3: Open Frontier Intelligence (291 upvotes).</p>
-    <ul class="titles">
-      <li>Kimi K3: Open Frontier Intelligence</li>
-      <li>StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents</li>
-      <li>SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</li>
-      <li>Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills</li>
-      <li>Sol-Attn: Accelerating Video Generation Inference via On-the-Fly Attention Sparsification</li>      <li>and 1 more</li>
-    </ul>
-  </li>
+  <li><div class="top"><a href="2026-08-05.html">05 August 2026</a><span class="n">6 stories</span></div><p class="head">20 papers shortlisted this week — most discussed: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instru (142 upvotes).</p></li>
+  <li><div class="top"><a href="2026-07-29.html">29 July 2026</a><span class="n">6 stories</span></div><p class="head">20 papers shortlisted this week — most discussed: Kimi K3: Open Frontier Intelligence (291 upvotes).</p></li>
 </ul>
 </main>
 <footer><div class="wrap">
