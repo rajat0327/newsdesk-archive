@@ -85,6 +85,9 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .chanbar .menu{position:absolute;top:100%;left:6px;min-width:250px;
   background:var(--panel);border:1px solid var(--line);border-radius:10px;
   box-shadow:var(--shadow);padding:6px;display:grid;gap:1px;z-index:30}
+/* Seven channels in one column filled two thirds of the screen. Two
+   columns halve it without dropping the descriptions. */
+.chanbar .menu.wide{grid-template-columns:1fr 1fr;min-width:480px}
 .chanbar .menu a{display:block;padding:9px 11px;border-radius:7px;
   text-decoration:none;color:var(--ink);font-size:14.5px;font-weight:620;
   border-left:2px solid transparent}
@@ -92,7 +95,7 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .chanbar .menu a[aria-current]{color:var(--cc);background:var(--hair);
   border-left-color:var(--cc)}
 .chanbar .menu a span{display:block;font-size:12.5px;font-weight:400;
-  color:var(--muted);margin-top:1px;letter-spacing:0}
+  color:var(--muted);margin-top:1px;letter-spacing:0;line-height:1.35}
 .narrow{display:none}
 @media(max-width:680px){
   /* Phone header: the button was wrapping to two lines and the nav to two
@@ -104,7 +107,11 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
   nav.top-nav a{padding:6px 8px}
   .brand{font-size:17px}
   .chanbar summary,.chanbar a.solo{padding:9px 9px;font-size:13.5px}
-  .chanbar .menu{position:absolute;left:8px;right:8px;min-width:0}
+  /* On a phone the descriptions cost more than they explain */
+  .chanbar .menu,.chanbar .menu.wide{position:absolute;left:8px;right:8px;
+    min-width:0;grid-template-columns:1fr}
+  .chanbar .menu a{padding:8px 10px}
+  .chanbar .menu a span{display:none}
   .chanbar a.solo.all{display:none}   /* Search in the header already covers it */
   /* One line, scrolled sideways, rather than three stacked rows */
   .eolstrip{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
@@ -319,7 +326,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
       <span class="wide">Join Discord</span><span class="narrow">Discord</span></a>
   </nav>
 </div></header>
-<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="data/" style="--cc:#3d7dd8">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="web/" style="--cc:#3d7dd8">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="craft/" style="--cc:#3d7dd8">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><details class="group"><summary>AI &amp; Research<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="supply-chain/" style="--cc:#3d7dd8">Supply Chain<span>SAP, warehousing and enterprise AI</span></a><a href="hr-tech/" style="--cc:#3d7dd8">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><a class="solo" href="india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="search.html">All stories</a></div></div>
+<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="data/" style="--cc:#3d7dd8">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="web/" style="--cc:#3d7dd8">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="craft/" style="--cc:#3d7dd8">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><details class="group"><summary>AI &amp; Research<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="supply-chain/" style="--cc:#3d7dd8">Supply Chain<span>SAP, warehousing and enterprise AI</span></a><a href="hr-tech/" style="--cc:#3d7dd8">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><a class="solo" href="india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero" style="padding-bottom:8px">
   <h1>Search 200 stories</h1>
