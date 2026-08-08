@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Web &amp; Frontend — Browsers, Frameworks &amp; the Platform</title>
-<meta name="description" content="Browsers, Frameworks &amp; the Platform. 22 stories across 1 issues.">
+<meta name="description" content="Browsers, Frameworks &amp; the Platform. 19 stories across 1 issues.">
 <meta property="og:title" content="Web &amp; Frontend — Browsers, Frameworks &amp; the Platform">
-<meta property="og:description" content="Browsers, Frameworks &amp; the Platform. 22 stories across 1 issues.">
+<meta property="og:description" content="Browsers, Frameworks &amp; the Platform. 19 stories across 1 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#3d7dd8">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -333,7 +333,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <h1>Web &amp; Frontend</h1>
   <p class="lede">Browsers, Frameworks &amp; the Platform. Published every
      <b>Wednesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>22</b> stories</span>
+  <p class="stats"><span><b>19</b> stories</span>
      <span><b>1</b> issues</span>
      <span><b>9</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=web&amp;g=Browsers%20%26%20Standards" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Browsers &amp; Standards</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Frameworks" style="--tc:#3fb950"><i style="background:#3fb950"></i>Frameworks</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=CSS%20%26%20Layout" style="--tc:#f778ba"><i style="background:#f778ba"></i>CSS &amp; Layout</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=TypeScript%20%26%20Tooling" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>TypeScript &amp; Tooling</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Runtimes" style="--tc:#f78166"><i style="background:#f78166"></i>Runtimes</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Accessibility" style="--tc:#e3b341"><i style="background:#e3b341"></i>Accessibility</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Security" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Security</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
@@ -352,13 +352,6 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=web&amp;g=TypeScript%20%26%20Tooling" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>TypeScript &amp; Tooling</a>
-  <h3><a href="https://www.google.com/search?q=TypeScript%206.0%20Breaks%20Existing%20Builds%20TypeScript%20Documentation" rel="noopener nofollow">TypeScript 6.0 Breaks Existing Builds</a></h3>
-  <p>TypeScript 6.0, a transitional release before the Go-based TypeScript 7.0, introduces breaking changes by defaulting to strict mode, removing ES5 target support, and altering several `tsconfig.json` defaults. The `--ts6-migration` flag is available to assist with these changes.</p>
-  <div class="why"><b>Why it matters</b> — Existing projects relying on TypeScript 5.x without explicit `tsconfig` settings will experience compilation failures due to new strict defaults and removed ES5 support.</div>
-  <p class="src">TypeScript Documentation &middot; 08 August 2026 &middot; <a href="https://www.google.com/search?q=TypeScript%206.0%20Breaks%20Existing%20Builds%20TypeScript%20Documentation" rel="noopener nofollow">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=web&amp;g=TypeScript%20%26%20Tooling" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>TypeScript &amp; Tooling</a>
   <h3><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/" rel="noopener nofollow">TypeScript 7.0 Ships Go Compiler</a></h3>
   <p>Microsoft released TypeScript 7.0 on July 8, 2026, featuring a new native Go-based compiler that delivers 8x to 12x faster full builds and improved editor responsiveness. This version also makes deprecations from TypeScript 6.0 into hard errors, setting `strict` and `esnext` as new defaults.</p>
   <div class="why"><b>Why it matters</b> — Developers will experience significantly faster build times and more responsive editor experiences, but must address TypeScript 6.0 deprecations to avoid breaking changes.</div>
@@ -372,14 +365,21 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <p class="src">Svelte &middot; 08 August 2026 &middot; <a href="https://svelte.dev/blog/whats-new-in-svelte-august-2026" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
+  <a class="tag tag-link" href="../search.html?c=web&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
+  <h3><a href="https://smashingmagazine.com/2026/08/how-baseline-can-help-ship-less-javascript/" rel="noopener nofollow">How Baseline Can Help You Ship Less JavaScript</a></h3>
+  <p>In a typical mid-sized JavaScript application, developers often carry 60KB to 90KB of minified and gzipped dependencies for features now supported directly by modern browsers. Baseline tracking allows teams to identify when standard browser APIs can replace these npm packages. Replacing redundant dependencies reduces bundle sizes without sacrificing functionality.</p>
+  <div class="why"><b>Why it matters</b> — Auditing third-party dependencies against baseline browser features can eliminate 60KB to 90KB of gzipped JavaScript from application bundles.</div>
+  <p class="src">Smashing Magazine &middot; 08 August 2026 &middot; <a href="https://smashingmagazine.com/2026/08/how-baseline-can-help-ship-less-javascript/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
   <a class="tag tag-link" href="../search.html?c=web&amp;g=Browsers%20%26%20Standards" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Browsers &amp; Standards</a>
-  <h3><a href="https://www.google.com/search?q=Chromium%20Browsers%20Adopt%20Two-Week%20Releases%20SuperchargeBrowser" rel="noopener nofollow">Chromium Browsers Adopt Two-Week Releases</a></h3>
-  <p>Google Chrome will transition to a two-week release cycle starting September 8, 2026, with Chrome 153. Microsoft Edge will follow suit, moving to a two-week cadence beginning August 27, 2026, with Edge 152.</p>
-  <div class="why"><b>Why it matters</b> — Frontend teams must adapt testing and deployment strategies to a faster browser update cadence, ensuring compatibility with new features and potential breaking changes every two weeks.</div>
-  <p class="src">SuperchargeBrowser &middot; 08 August 2026 &middot; <a href="https://www.google.com/search?q=Chromium%20Browsers%20Adopt%20Two-Week%20Releases%20SuperchargeBrowser" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <h3><a href="https://master.dev/blog/same-name-different-component-with-scoped-custom-element-registries/" rel="noopener nofollow">Same Name; Different Component with Scoped Custom Element Registries</a></h3>
+  <p>Scoped custom element registries allow web developers to register custom elements locally rather than on the global window namespace. Introduced in Chrome 146 and flagged in Firefox 150, this mechanism lets different versions or entirely distinct custom elements share identical HTML tag names without collision.</p>
+  <div class="why"><b>Why it matters</b> — Scoped custom element registries eliminate global tag namespace collisions, allowing multiple component versions to safely coexist on a single page.</div>
+  <p class="src">Frontend Masters &middot; 08 August 2026 &middot; <a href="https://master.dev/blog/same-name-different-component-with-scoped-custom-element-registries/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=web">Browse all 22 stories in this channel &rarr;</a><span>17 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=web">Browse all 19 stories in this channel &rarr;</a><span>14 older stories</span></div>
 
 <p class="signoff">Another week of fixing things that worked perfectly fine yesterday.</p>
 
@@ -387,7 +387,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <p class="editions-note">Each edition is one week's digest exactly as it went
    out to Discord — a slide deck with a summary of the week at the top.</p>
 <ul class="issues">
-  <li><a class="edition" href="2026-08-08.html"><span class="d">08 August 2026</span><span class="h">16 new posts across 7 web platform sources — 7 worth your time.</span><span class="n">22 stories &rarr;</span></a></li>
+  <li><a class="edition" href="2026-08-08.html"><span class="d">08 August 2026</span><span class="h">16 new posts across 7 web platform sources — 7 worth your time.</span><span class="n">19 stories &rarr;</span></a></li>
 </ul>
 </main>
 <footer><div class="wrap">
