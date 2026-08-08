@@ -152,14 +152,10 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
 /* story feed */
 .feed{display:grid;gap:0}
-.item{display:grid;grid-template-columns:118px 1fr;gap:22px;
-  padding:22px 0;border-top:1px solid var(--hair)}
+.item{padding:22px 0;border-top:1px solid var(--hair);max-width:72ch}
 .item:first-child{border-top:0}
-.item .rail{font-size:12.5px;color:var(--muted);padding-top:3px;line-height:1.5;
-  font-variant-numeric:tabular-nums}
-.item .rail .ch{display:block;font-weight:600;color:var(--soft);
-  text-decoration:none;letter-spacing:-.01em}
-.item .rail .ch:hover{color:var(--accent)}
+.item .src .ch{font-weight:600;color:var(--soft);text-decoration:none}
+.item .src .ch:hover{color:var(--accent)}
 .item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
   font-weight:660}
 .item h3 a{color:var(--ink);text-decoration:none}
@@ -280,8 +276,6 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media(max-width:640px){
   body{font-size:16px}
-  .item{grid-template-columns:1fr;gap:9px}
-  .item .rail{display:flex;gap:10px;padding-top:0}
   .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
 }
 
@@ -338,223 +332,157 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
 <div class="feed">
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
-    <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/reimagining-filters-on-mobile-the-engine-behind-it/ba-p/14452966" rel="noopener nofollow">Reimagining Filters on Mobile: The Engine Behind It</a></h3>
-    <p>Details the underlying engine and architecture behind natural language filtering in SAP Fiori elements on mobile devices. It covers how unstructured natural language inputs typed or spoken by users are parsed and evaluated to filter enterprise data sets on small screens where traditional filter bars are impractical.</p>
-    <div class="why"><b>Why it matters</b> — Converting natural language directly into schema-bound UI filters avoids the UI layout constraints of multi-field forms on mobile viewports.</div>
-    <p class="src">SAP Community &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/reimagining-filters-on-mobile-the-engine-behind-it/ba-p/14452966" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
+  <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/reimagining-filters-on-mobile-the-engine-behind-it/ba-p/14452966" rel="noopener nofollow">Reimagining Filters on Mobile: The Engine Behind It</a></h3>
+  <p>Details the underlying engine and architecture behind natural language filtering in SAP Fiori elements on mobile devices. It covers how unstructured natural language inputs typed or spoken by users are parsed and evaluated to filter enterprise data sets on small screens where traditional filter bars are impractical.</p>
+  <div class="why"><b>Why it matters</b> — Converting natural language directly into schema-bound UI filters avoids the UI layout constraints of multi-field forms on mobile viewports.</div>
+  <p class="src">SAP Community &middot; 08 August 2026 &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/reimagining-filters-on-mobile-the-engine-behind-it/ba-p/14452966" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
-    <h3><a href="https://erp.today/dynamics-365-erp-mcp-server-agentic-supply-chain/" rel="noopener nofollow">Microsoft Dynamics 365 ERP MCP Server Lets Agents Move from Supply Chain Insight to Action</a></h3>
-    <p>Examines Microsoft&#x27;s integration of the Model Context Protocol (MCP) Server into Dynamics 365 Supply Chain Management. The architecture provides a governed connection layer that allows AI agents to perform execution tasks directly across ERP supply chain workflows rather than merely presenting read-only recommendations.</p>
-    <div class="why"><b>Why it matters</b> — Using a standardized protocol layer like MCP to mediate agent actions provides a centralized governance boundary for autonomous enterprise operations.</div>
-    <p class="src">ERP Today &middot; <a href="https://erp.today/dynamics-365-erp-mcp-server-agentic-supply-chain/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
+  <h3><a href="https://erp.today/dynamics-365-erp-mcp-server-agentic-supply-chain/" rel="noopener nofollow">Microsoft Dynamics 365 ERP MCP Server Lets Agents Move from Supply Chain Insight to Action</a></h3>
+  <p>Examines Microsoft&#x27;s integration of the Model Context Protocol (MCP) Server into Dynamics 365 Supply Chain Management. The architecture provides a governed connection layer that allows AI agents to perform execution tasks directly across ERP supply chain workflows rather than merely presenting read-only recommendations.</p>
+  <div class="why"><b>Why it matters</b> — Using a standardized protocol layer like MCP to mediate agent actions provides a centralized governance boundary for autonomous enterprise operations.</div>
+  <p class="src">ERP Today &middot; 08 August 2026 &middot; <a href="https://erp.today/dynamics-365-erp-mcp-server-agentic-supply-chain/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a>
-    <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/key-user-custom-fields-value-help-available-in-plain-sap-gui-uis-via-abap/ba-p/14454437" rel="noopener nofollow">Key User Custom Fields: Value Help Available in Plain SAP GUI UIs via ABAP Dictionary Search Help</a></h3>
-    <p>Explains how to resolve missing value help issues when inspecting key user custom fields in standard SAP GUI transactions like SE16. It details how custom fields constructed on CDS view code lists or Business Object associations can surface value help options via ABAP Dictionary Search Helps.</p>
-    <div class="why"><b>Why it matters</b> — Mapping ABAP Dictionary Search Helps to custom fields preserves lookup capabilities in legacy inspection utilities without requiring full database view re-engineering.</div>
-    <p class="src">SAP Community &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/key-user-custom-fields-value-help-available-in-plain-sap-gui-uis-via-abap/ba-p/14454437" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a>
+  <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/key-user-custom-fields-value-help-available-in-plain-sap-gui-uis-via-abap/ba-p/14454437" rel="noopener nofollow">Key User Custom Fields: Value Help Available in Plain SAP GUI UIs via ABAP Dictionary Search Help</a></h3>
+  <p>Explains how to resolve missing value help issues when inspecting key user custom fields in standard SAP GUI transactions like SE16. It details how custom fields constructed on CDS view code lists or Business Object associations can surface value help options via ABAP Dictionary Search Helps.</p>
+  <div class="why"><b>Why it matters</b> — Mapping ABAP Dictionary Search Helps to custom fields preserves lookup capabilities in legacy inspection utilities without requiring full database view re-engineering.</div>
+  <p class="src">SAP Community &middot; 08 August 2026 &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/key-user-custom-fields-value-help-available-in-plain-sap-gui-uis-via-abap/ba-p/14454437" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Migration%20%26%20EOL" style="--tc:#e3b341"><i style="background:#e3b341"></i>Migration &amp; EOL</a>
-    <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/simplify-your-chart-of-accounts-with-selective-data-transition/ba-p/14445968" rel="noopener nofollow">Simplify your Chart of Accounts with Selective Data Transition</a></h3>
-    <p>Covers a solution pattern in the SAP Business Transformation Center (BTC) for restructuring operative charts of accounts during S/4HANA migrations. The capability automates chart-of-accounts simplification as part of a Selective Data Transition workflow.</p>
-    <div class="why"><b>Why it matters</b> — Coupling chart-of-accounts restructuring directly into selective data transition pipelines removes manual financial remapping steps during legacy ERP upgrades.</div>
-    <p class="src">SAP Community &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/simplify-your-chart-of-accounts-with-selective-data-transition/ba-p/14445968" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Migration%20%26%20EOL" style="--tc:#e3b341"><i style="background:#e3b341"></i>Migration &amp; EOL</a>
+  <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/simplify-your-chart-of-accounts-with-selective-data-transition/ba-p/14445968" rel="noopener nofollow">Simplify your Chart of Accounts with Selective Data Transition</a></h3>
+  <p>Covers a solution pattern in the SAP Business Transformation Center (BTC) for restructuring operative charts of accounts during S/4HANA migrations. The capability automates chart-of-accounts simplification as part of a Selective Data Transition workflow.</p>
+  <div class="why"><b>Why it matters</b> — Coupling chart-of-accounts restructuring directly into selective data transition pipelines removes manual financial remapping steps during legacy ERP upgrades.</div>
+  <p class="src">SAP Community &middot; 08 August 2026 &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/simplify-your-chart-of-accounts-with-selective-data-transition/ba-p/14445968" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=SAP%20Releases" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>SAP Releases</a>
-    <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/update-btp-trial-update-kyma-runtime-availability-now-available-again/ba-p/14459752" rel="noopener nofollow">[UPDATE] BTP Trial Update: Kyma Runtime Availability - Now available again</a></h3>
-    <p>Outlines the restoration of the SAP BTP Kyma runtime trial environment after access was temporarily suspended. The update details how platform misuse triggered the restriction and the measures taken to restore access while safeguarding platform stability.</p>
-    <div class="why"><b>Why it matters</b> — Public developer cloud environments require strict abuse prevention controls to protect multi-tenant infrastructure availability without locking out legitimate trial users.</div>
-    <p class="src">SAP Community &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/update-btp-trial-update-kyma-runtime-availability-now-available-again/ba-p/14459752" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=SAP%20Releases" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>SAP Releases</a>
+  <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/update-btp-trial-update-kyma-runtime-availability-now-available-again/ba-p/14459752" rel="noopener nofollow">[UPDATE] BTP Trial Update: Kyma Runtime Availability - Now available again</a></h3>
+  <p>Outlines the restoration of the SAP BTP Kyma runtime trial environment after access was temporarily suspended. The update details how platform misuse triggered the restriction and the measures taken to restore access while safeguarding platform stability.</p>
+  <div class="why"><b>Why it matters</b> — Public developer cloud environments require strict abuse prevention controls to protect multi-tenant infrastructure availability without locking out legitimate trial users.</div>
+  <p class="src">SAP Community &middot; 08 August 2026 &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/update-btp-trial-update-kyma-runtime-availability-now-available-again/ba-p/14459752" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Reading" style="--tc:#8b949e"><i style="background:#8b949e"></i>Reading</a>
-    <h3><a href="https://erp.today/ai-erp-transformation-enterprise-systems-gap/" rel="noopener nofollow">Report: AI Is Moving Faster Than the Enterprise Systems Built to Support It</a></h3>
-    <p>Examines data from Microsoft&#x27;s Work Trend Index across 20,000 knowledge workers and M365 telemetry. It highlights a growing operational divide between individual employee AI tool usage and rigid enterprise operating structures.</p>
-    <div class="why"><b>Why it matters</b> — Bottom-up AI tool adoption creates friction and compliance gaps unless enterprise workflows and governance models adapt to match worker execution speeds.</div>
-    <p class="src">ERP Today &middot; <a href="https://erp.today/ai-erp-transformation-enterprise-systems-gap/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Reading" style="--tc:#8b949e"><i style="background:#8b949e"></i>Reading</a>
+  <h3><a href="https://erp.today/ai-erp-transformation-enterprise-systems-gap/" rel="noopener nofollow">Report: AI Is Moving Faster Than the Enterprise Systems Built to Support It</a></h3>
+  <p>Examines data from Microsoft&#x27;s Work Trend Index across 20,000 knowledge workers and M365 telemetry. It highlights a growing operational divide between individual employee AI tool usage and rigid enterprise operating structures.</p>
+  <div class="why"><b>Why it matters</b> — Bottom-up AI tool adoption creates friction and compliance gaps unless enterprise workflows and governance models adapt to match worker execution speeds.</div>
+  <p class="src">ERP Today &middot; 08 August 2026 &middot; <a href="https://erp.today/ai-erp-transformation-enterprise-systems-gap/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
-    <h3><a href="https://erpnews.com/" rel="noopener nofollow">AI-Driven Attacks Target ERP</a></h3>
-    <p>An Onapsis study reveals that AI-driven attacks are compromising ERP systems faster than security teams can respond. This highlights a critical and growing concern for enterprise security as new AI capabilities are exploited for malicious purposes.</p>
-    <div class="why"><b>Why it matters</b> — ERP security teams must rapidly adapt to AI-driven attack vectors, as traditional response times are insufficient against machine-speed threats.</div>
-    <p class="src">ERP News &middot; <a href="https://erpnews.com/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
+  <h3><a href="https://erpnews.com/" rel="noopener nofollow">AI-Driven Attacks Target ERP</a></h3>
+  <p>An Onapsis study reveals that AI-driven attacks are compromising ERP systems faster than security teams can respond. This highlights a critical and growing concern for enterprise security as new AI capabilities are exploited for malicious purposes.</p>
+  <div class="why"><b>Why it matters</b> — ERP security teams must rapidly adapt to AI-driven attack vectors, as traditional response times are insufficient against machine-speed threats.</div>
+  <p class="src">ERP News &middot; 08 August 2026 &middot; <a href="https://erpnews.com/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Warehousing%20%26%20EWM" style="--tc:#3fb950"><i style="background:#3fb950"></i>Warehousing &amp; EWM</a>
-    <h3><a href="https://www.mmh.com/article/lift_truck_series_how_autonomous_lift_trucks_are_reshaping_the_warehouse_workforce" rel="noopener nofollow">Autonomous Lift Trucks Reshape Workforce</a></h3>
-    <p>Autonomous lift trucks are increasingly adopted in warehouses, prompting companies to redefine workforce roles, enhance safety, and leverage AI-driven orchestration to address persistent labor shortages. This shift transforms warehouse operations and creates new opportunities for skilled employees.</p>
-    <div class="why"><b>Why it matters</b> — Warehouse operations will see redefined roles and improved safety as autonomous lift trucks with AI orchestration become standard, addressing labor challenges.</div>
-    <p class="src">mmh.com &middot; <a href="https://www.mmh.com/article/lift_truck_series_how_autonomous_lift_trucks_are_reshaping_the_warehouse_workforce" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Warehousing%20%26%20EWM" style="--tc:#3fb950"><i style="background:#3fb950"></i>Warehousing &amp; EWM</a>
+  <h3><a href="https://www.mmh.com/article/lift_truck_series_how_autonomous_lift_trucks_are_reshaping_the_warehouse_workforce" rel="noopener nofollow">Autonomous Lift Trucks Reshape Workforce</a></h3>
+  <p>Autonomous lift trucks are increasingly adopted in warehouses, prompting companies to redefine workforce roles, enhance safety, and leverage AI-driven orchestration to address persistent labor shortages. This shift transforms warehouse operations and creates new opportunities for skilled employees.</p>
+  <div class="why"><b>Why it matters</b> — Warehouse operations will see redefined roles and improved safety as autonomous lift trucks with AI orchestration become standard, addressing labor challenges.</div>
+  <p class="src">mmh.com &middot; 08 August 2026 &middot; <a href="https://www.mmh.com/article/lift_truck_series_how_autonomous_lift_trucks_are_reshaping_the_warehouse_workforce" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Supply%20Chain" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Supply Chain</a>
-    <h3><a href="https://www.logisticsmgmt.com/article/u.s_bound_imports_are_expected_to_trend_down_over_balance_of_2026_following_an_earlier_peak_season/" rel="noopener nofollow">US Imports Decline Post-Peak Season</a></h3>
-    <p>U.S.-bound container import volumes are projected to decrease for the remainder of 2026, following an early peak season. Retailers expedited merchandise imports due to anticipated late July tariff changes and other supply chain uncertainties.</p>
-    <div class="why"><b>Why it matters</b> — Supply chain teams must adjust to declining import volumes and tariff impacts, as the traditional peak season shifted earlier in 2026.</div>
-    <p class="src">logisticsmgmt.com &middot; <a href="https://www.logisticsmgmt.com/article/u.s_bound_imports_are_expected_to_trend_down_over_balance_of_2026_following_an_earlier_peak_season/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Supply%20Chain" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Supply Chain</a>
+  <h3><a href="https://www.logisticsmgmt.com/article/u.s_bound_imports_are_expected_to_trend_down_over_balance_of_2026_following_an_earlier_peak_season/" rel="noopener nofollow">US Imports Decline Post-Peak Season</a></h3>
+  <p>U.S.-bound container import volumes are projected to decrease for the remainder of 2026, following an early peak season. Retailers expedited merchandise imports due to anticipated late July tariff changes and other supply chain uncertainties.</p>
+  <div class="why"><b>Why it matters</b> — Supply chain teams must adjust to declining import volumes and tariff impacts, as the traditional peak season shifted earlier in 2026.</div>
+  <p class="src">logisticsmgmt.com &middot; 08 August 2026 &middot; <a href="https://www.logisticsmgmt.com/article/u.s_bound_imports_are_expected_to_trend_down_over_balance_of_2026_following_an_earlier_peak_season/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a>
-    <h3><a href="https://community.sap.com/t5/cloud-erp-learning-group-blog-posts/live-sessions-in-august-for-sap-s-4hana-cloud-public-edition-implementation/ba-p/14454697" rel="noopener nofollow">SAP S/4HANA Cloud Live Sessions</a></h3>
-    <p>SAP is hosting live sessions throughout August 2026 to cover key implementation topics for SAP S/4HANA Cloud Public Edition. The sessions include preparation for SAP certification, foundational cloud computing, and AI concepts, as well as differentiating GROW and RISE with SAP.</p>
-    <p class="src">community.sap.com &middot; <a href="https://community.sap.com/t5/cloud-erp-learning-group-blog-posts/live-sessions-in-august-for-sap-s-4hana-cloud-public-edition-implementation/ba-p/14454697" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a>
+  <h3><a href="https://community.sap.com/t5/cloud-erp-learning-group-blog-posts/live-sessions-in-august-for-sap-s-4hana-cloud-public-edition-implementation/ba-p/14454697" rel="noopener nofollow">SAP S/4HANA Cloud Live Sessions</a></h3>
+  <p>SAP is hosting live sessions throughout August 2026 to cover key implementation topics for SAP S/4HANA Cloud Public Edition. The sessions include preparation for SAP certification, foundational cloud computing, and AI concepts, as well as differentiating GROW and RISE with SAP.</p>
+  <p class="src">community.sap.com &middot; 08 August 2026 &middot; <a href="https://community.sap.com/t5/cloud-erp-learning-group-blog-posts/live-sessions-in-august-for-sap-s-4hana-cloud-public-edition-implementation/ba-p/14454697" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-    <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">CVE-2026-46817: Oracle E-Business Suite</a></h3>
-    <p>Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.</p>
-    <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 18 Jul 2026 — already passed.</div>
-    <p class="src">CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">CVE-2026-46817: Oracle E-Business Suite</a></h3>
+  <p>Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 18 Jul 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 08 August 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
-    <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/sap-agentic-ai-from-prompt-engineering-to-outcome-engineering/ba-p/14458317" rel="noopener nofollow">SAP Agentic AI: From Prompt Engineering to Outcome Engineering</a></h3>
-    <p>Outlines six engineering disciplines required to transition enterprise AI agents from basic prompt engineering to production execution. Focuses on contextual understanding, tool governance, identity control, multi-step safety checks, and issue resolution verification.</p>
-    <div class="why"><b>Why it matters</b> — Autonomous enterprise agents require explicit tool governance and multi-step output verification rather than relying solely on refined LLM prompts.</div>
-    <p class="src">SAP Community &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/sap-agentic-ai-from-prompt-engineering-to-outcome-engineering/ba-p/14458317" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
+  <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/sap-agentic-ai-from-prompt-engineering-to-outcome-engineering/ba-p/14458317" rel="noopener nofollow">SAP Agentic AI: From Prompt Engineering to Outcome Engineering</a></h3>
+  <p>Outlines six engineering disciplines required to transition enterprise AI agents from basic prompt engineering to production execution. Focuses on contextual understanding, tool governance, identity control, multi-step safety checks, and issue resolution verification.</p>
+  <div class="why"><b>Why it matters</b> — Autonomous enterprise agents require explicit tool governance and multi-step output verification rather than relying solely on refined LLM prompts.</div>
+  <p class="src">SAP Community &middot; 08 August 2026 &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/sap-agentic-ai-from-prompt-engineering-to-outcome-engineering/ba-p/14458317" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a>
-    <h3><a href="https://erp.today/erp-platform-changes-before-go-live/" rel="noopener nofollow">The Mid-Flight ERP Decision: What to Do When the Platform Changes Before Go-Live</a></h3>
-    <p>Presents a strategic framework for managing enterprise ERP implementations when underlying cloud platforms evolve during development. Addresses how to make architectural and scope adjustments when vendor updates change core capabilities prior to project go-live.</p>
-    <div class="why"><b>Why it matters</b> — Cloud-native ERP projects must treat vendor feature roadmaps as a continuous variable rather than assuming a static technology target at kickoff.</div>
-    <p class="src">ERP Today &middot; <a href="https://erp.today/erp-platform-changes-before-go-live/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a>
+  <h3><a href="https://erp.today/erp-platform-changes-before-go-live/" rel="noopener nofollow">The Mid-Flight ERP Decision: What to Do When the Platform Changes Before Go-Live</a></h3>
+  <p>Presents a strategic framework for managing enterprise ERP implementations when underlying cloud platforms evolve during development. Addresses how to make architectural and scope adjustments when vendor updates change core capabilities prior to project go-live.</p>
+  <div class="why"><b>Why it matters</b> — Cloud-native ERP projects must treat vendor feature roadmaps as a continuous variable rather than assuming a static technology target at kickoff.</div>
+  <p class="src">ERP Today &middot; 08 August 2026 &middot; <a href="https://erp.today/erp-platform-changes-before-go-live/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
-    <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/groundwork-ai-powered-strategic-wargaming-built-natively-on-sap/ba-p/14453437" rel="noopener nofollow">GroundWork: AI-Powered Strategic Wargaming, Built Natively on SAP</a></h3>
-    <p>Details GroundWork, a strategic simulation engine built on SAP BTP, HANA Cloud, and S/4HANA that combines real-time inventory constraints with game theory. Uses Nash Equilibrium modeling and frontier LLMs to evaluate supply chain actions based on live plant data.</p>
-    <div class="why"><b>Why it matters</b> — Combining game theory mathematical models with real-time ERP operational state provides structured scenario evaluation without depending entirely on LLM reasoning.</div>
-    <p class="src">SAP Community &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/groundwork-ai-powered-strategic-wargaming-built-natively-on-sap/ba-p/14453437" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
+  <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/groundwork-ai-powered-strategic-wargaming-built-natively-on-sap/ba-p/14453437" rel="noopener nofollow">GroundWork: AI-Powered Strategic Wargaming, Built Natively on SAP</a></h3>
+  <p>Details GroundWork, a strategic simulation engine built on SAP BTP, HANA Cloud, and S/4HANA that combines real-time inventory constraints with game theory. Uses Nash Equilibrium modeling and frontier LLMs to evaluate supply chain actions based on live plant data.</p>
+  <div class="why"><b>Why it matters</b> — Combining game theory mathematical models with real-time ERP operational state provides structured scenario evaluation without depending entirely on LLM reasoning.</div>
+  <p class="src">SAP Community &middot; 08 August 2026 &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/groundwork-ai-powered-strategic-wargaming-built-natively-on-sap/ba-p/14453437" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Supply%20Chain" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Supply Chain</a>
-    <h3><a href="https://www.supplychaindive.com/news/starbucks-targets-24-hour-inventory-replenishment/827030/" rel="noopener nofollow">Starbucks targets 24-hour inventory replenishment</a></h3>
-    <p>Reports on Starbucks shifting its supply chain strategy toward a 24-hour store replenishment model. The pivot follows the decision to decommission an AI-driven inventory management system after a nine-month operational trial.</p>
-    <div class="why"><b>Why it matters</b> — Demonstrates the pragmatic tradeoff of abandoning complex algorithmic inventory tooling when simpler operational replenishment cycles yield better reliability.</div>
-    <p class="src">Supply Chain Dive &middot; <a href="https://www.supplychaindive.com/news/starbucks-targets-24-hour-inventory-replenishment/827030/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Supply%20Chain" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Supply Chain</a>
+  <h3><a href="https://www.supplychaindive.com/news/starbucks-targets-24-hour-inventory-replenishment/827030/" rel="noopener nofollow">Starbucks targets 24-hour inventory replenishment</a></h3>
+  <p>Reports on Starbucks shifting its supply chain strategy toward a 24-hour store replenishment model. The pivot follows the decision to decommission an AI-driven inventory management system after a nine-month operational trial.</p>
+  <div class="why"><b>Why it matters</b> — Demonstrates the pragmatic tradeoff of abandoning complex algorithmic inventory tooling when simpler operational replenishment cycles yield better reliability.</div>
+  <p class="src">Supply Chain Dive &middot; 08 August 2026 &middot; <a href="https://www.supplychaindive.com/news/starbucks-targets-24-hour-inventory-replenishment/827030/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a>
-    <h3><a href="https://diginomica.com/how-essity-transformed-their-b2b-e-commerce-platform-global-scale-sap-commerce-cloud-story" rel="noopener nofollow">How Essity transformed their B2B e-commerce platform on a global scale - an SAP Commerce Cloud story</a></h3>
-    <p>Examines how hygiene product maker Essity unified its global B2B and B2C e-commerce footprint on SAP CX. Discusses architectural choices made to prevent localized market deployments from deteriorating into unmaintainable technical debt.</p>
-    <div class="why"><b>Why it matters</b> — Global enterprise applications require strict governance around centralized core templates to prevent regional customizations from compounding technical debt.</div>
-    <p class="src">Diginomica &middot; <a href="https://diginomica.com/how-essity-transformed-their-b2b-e-commerce-platform-global-scale-sap-commerce-cloud-story" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a>
+  <h3><a href="https://diginomica.com/how-essity-transformed-their-b2b-e-commerce-platform-global-scale-sap-commerce-cloud-story" rel="noopener nofollow">How Essity transformed their B2B e-commerce platform on a global scale - an SAP Commerce Cloud story</a></h3>
+  <p>Examines how hygiene product maker Essity unified its global B2B and B2C e-commerce footprint on SAP CX. Discusses architectural choices made to prevent localized market deployments from deteriorating into unmaintainable technical debt.</p>
+  <div class="why"><b>Why it matters</b> — Global enterprise applications require strict governance around centralized core templates to prevent regional customizations from compounding technical debt.</div>
+  <p class="src">Diginomica &middot; 08 August 2026 &middot; <a href="https://diginomica.com/how-essity-transformed-their-b2b-e-commerce-platform-global-scale-sap-commerce-cloud-story" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a>
-    <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-consume-sap-datasphere-analytical-models-to-sap-fiori-using-odata/ba-p/14445184" rel="noopener nofollow">How to Consume SAP Datasphere Analytical Models to SAP Fiori Using OData Services</a></h3>
-    <p>Provides an architectural walkthrough for exposing SAP Datasphere analytical models to frontend SAP Fiori and CAP applications using OData services. Details the required system binding, security layers, and component orchestration across the data stack.</p>
-    <div class="why"><b>Why it matters</b> — Exposing backend analytical models to custom user interfaces requires deliberate end-to-end configuration across data layer OData endpoints and cloud application frameworks.</div>
-    <p class="src">SAP Community &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-consume-sap-datasphere-analytical-models-to-sap-fiori-using-odata/ba-p/14445184" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a>
+  <h3><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-consume-sap-datasphere-analytical-models-to-sap-fiori-using-odata/ba-p/14445184" rel="noopener nofollow">How to Consume SAP Datasphere Analytical Models to SAP Fiori Using OData Services</a></h3>
+  <p>Provides an architectural walkthrough for exposing SAP Datasphere analytical models to frontend SAP Fiori and CAP applications using OData services. Details the required system binding, security layers, and component orchestration across the data stack.</p>
+  <div class="why"><b>Why it matters</b> — Exposing backend analytical models to custom user interfaces requires deliberate end-to-end configuration across data layer OData endpoints and cloud application frameworks.</div>
+  <p class="src">SAP Community &middot; 08 August 2026 &middot; <a href="https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-consume-sap-datasphere-analytical-models-to-sap-fiori-using-odata/ba-p/14445184" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
-    <h3><a href="https://news.sap.com/2026/08/ai-adoption-transformation-what-customers-report/" rel="noopener nofollow">SAP Customers Share AI Transformation Lessons</a></h3>
-    <p>Hapag-Lloyd&#x27;s SAP S/4HANA Finance transformation, impacting 4,000 global users, emphasizes 265 change ambassadors, while Germany&#x27;s BAnst PT achieved a one-year greenfield S/4HANA public cloud implementation for 1,000 users. Both highlight the critical role of change management for successful AI adoption.</p>
-    <div class="why"><b>Why it matters</b> — Organizations undertaking S/4HANA migrations must prioritize robust change management and user enablement to bridge the gap between technical deployment and actual AI adoption.</div>
-    <p class="src">news.sap.com &middot; <a href="https://news.sap.com/2026/08/ai-adoption-transformation-what-customers-report/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
+  <h3><a href="https://news.sap.com/2026/08/ai-adoption-transformation-what-customers-report/" rel="noopener nofollow">SAP Customers Share AI Transformation Lessons</a></h3>
+  <p>Hapag-Lloyd&#x27;s SAP S/4HANA Finance transformation, impacting 4,000 global users, emphasizes 265 change ambassadors, while Germany&#x27;s BAnst PT achieved a one-year greenfield S/4HANA public cloud implementation for 1,000 users. Both highlight the critical role of change management for successful AI adoption.</p>
+  <div class="why"><b>Why it matters</b> — Organizations undertaking S/4HANA migrations must prioritize robust change management and user enablement to bridge the gap between technical deployment and actual AI adoption.</div>
+  <p class="src">news.sap.com &middot; 08 August 2026 &middot; <a href="https://news.sap.com/2026/08/ai-adoption-transformation-what-customers-report/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
-    <h3><a href="https://www.techradar.com/pro/agentic-ai-has-a-price-its-called-erp-migration" rel="noopener nofollow">Agentic AI Requires ERP Migration Investment</a></h3>
-    <p>TechRadar reports that agentic AI in enterprise software necessitates significant ERP migration investments, cautioning organizations against allowing vendors to dictate the timing and budget for this capital decision.</p>
-    <div class="why"><b>Why it matters</b> — Boards must assert control over the timing and budget of agentic AI-driven ERP migrations, recognizing it as a capital decision with long-term vendor dependency implications.</div>
-    <p class="src">TechRadar &middot; <a href="https://www.techradar.com/pro/agentic-ai-has-a-price-its-called-erp-migration" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
+  <h3><a href="https://www.techradar.com/pro/agentic-ai-has-a-price-its-called-erp-migration" rel="noopener nofollow">Agentic AI Requires ERP Migration Investment</a></h3>
+  <p>TechRadar reports that agentic AI in enterprise software necessitates significant ERP migration investments, cautioning organizations against allowing vendors to dictate the timing and budget for this capital decision.</p>
+  <div class="why"><b>Why it matters</b> — Boards must assert control over the timing and budget of agentic AI-driven ERP migrations, recognizing it as a capital decision with long-term vendor dependency implications.</div>
+  <p class="src">TechRadar &middot; 08 August 2026 &middot; <a href="https://www.techradar.com/pro/agentic-ai-has-a-price-its-called-erp-migration" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=SAP%20Releases" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>SAP Releases</a>
-    <h3><a href="https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/august-2026-cloud-erp-expert-guided-implementation-egi/ba-p/136000000585675" rel="noopener nofollow">SAP Announces August Joule &amp; Business AI EGIs</a></h3>
-    <p>SAP has announced Expert-Guided Implementation (EGI) sessions for August 2026, focusing on activating Joule, understanding its capabilities and architecture, and exploring how Business AI can enhance processes across the SAP landscape.</p>
-    <div class="why"><b>Why it matters</b> — SAP consultants and architects can gain hands-on experience with Joule and Business AI activation, directly impacting their ability to implement these new AI features.</div>
-    <p class="src">community.sap.com &middot; <a href="https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/august-2026-cloud-erp-expert-guided-implementation-egi/ba-p/136000000585675" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=SAP%20Releases" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>SAP Releases</a>
+  <h3><a href="https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/august-2026-cloud-erp-expert-guided-implementation-egi/ba-p/136000000585675" rel="noopener nofollow">SAP Announces August Joule &amp; Business AI EGIs</a></h3>
+  <p>SAP has announced Expert-Guided Implementation (EGI) sessions for August 2026, focusing on activating Joule, understanding its capabilities and architecture, and exploring how Business AI can enhance processes across the SAP landscape.</p>
+  <div class="why"><b>Why it matters</b> — SAP consultants and architects can gain hands-on experience with Joule and Business AI activation, directly impacting their ability to implement these new AI features.</div>
+  <p class="src">community.sap.com &middot; 08 August 2026 &middot; <a href="https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-sap/august-2026-cloud-erp-expert-guided-implementation-egi/ba-p/136000000585675" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Migration%20%26%20EOL" style="--tc:#e3b341"><i style="background:#e3b341"></i>Migration &amp; EOL</a>
-    <h3><a href="https://www.sapinsider.org/2026/07/16/sap-data-migration-and-the-2027-deadline-what-every-business-needs-to-know-before-its-too-late/" rel="noopener nofollow">Data Quality Critical for S/4HANA Migration</a></h3>
-    <p>SAPinsider warns that the 2027 end of mainstream maintenance for SAP ECC 6.0 makes S/4HANA migration urgent, with poor data quality being a major risk that compounds downstream challenges for finance, operations, and supply chain teams.</p>
-    <div class="why"><b>Why it matters</b> — Organizations must prioritize thorough data cleansing and validation before S/4HANA migration to avoid costly failures, delays, and reporting inaccuracies post-cutover.</div>
-    <p class="src">SAPinsider &middot; <a href="https://www.sapinsider.org/2026/07/16/sap-data-migration-and-the-2027-deadline-what-every-business-needs-to-know-before-its-too-late/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Migration%20%26%20EOL" style="--tc:#e3b341"><i style="background:#e3b341"></i>Migration &amp; EOL</a>
+  <h3><a href="https://www.sapinsider.org/2026/07/16/sap-data-migration-and-the-2027-deadline-what-every-business-needs-to-know-before-its-too-late/" rel="noopener nofollow">Data Quality Critical for S/4HANA Migration</a></h3>
+  <p>SAPinsider warns that the 2027 end of mainstream maintenance for SAP ECC 6.0 makes S/4HANA migration urgent, with poor data quality being a major risk that compounds downstream challenges for finance, operations, and supply chain teams.</p>
+  <div class="why"><b>Why it matters</b> — Organizations must prioritize thorough data cleansing and validation before S/4HANA migration to avoid costly failures, delays, and reporting inaccuracies post-cutover.</div>
+  <p class="src">SAPinsider &middot; 08 August 2026 &middot; <a href="https://www.sapinsider.org/2026/07/16/sap-data-migration-and-the-2027-deadline-what-every-business-needs-to-know-before-its-too-late/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=SAP%20Releases" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>SAP Releases</a>
-    <h3><a href="https://help.sap.com/docs/BTP/922bf2dbe0b646aaaa8cb5e077cfd799/75d91059612f4f9098f72112926e9fed.html" rel="noopener nofollow">SAP BTP Connectivity Requires DNS/IP Update</a></h3>
-    <p>SAP BTP users of Cloud Connector and Connectivity Service must update to new DNS hosts and IPs by November 15, 2026, and are reminded of the upcoming removal of TLS 1.2 Diffie-Hellman Ephemeral Ciphers for Cloud Foundry Runtime.</p>
-    <div class="why"><b>Why it matters</b> — SAP BTP administrators must implement network changes by November 15, 2026, or risk connectivity disruptions for Cloud Connector and Connectivity Service.</div>
-    <p class="src">help.sap.com &middot; <a href="https://help.sap.com/docs/BTP/922bf2dbe0b646aaaa8cb5e077cfd799/75d91059612f4f9098f72112926e9fed.html" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=SAP%20Releases" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>SAP Releases</a>
+  <h3><a href="https://help.sap.com/docs/BTP/922bf2dbe0b646aaaa8cb5e077cfd799/75d91059612f4f9098f72112926e9fed.html" rel="noopener nofollow">SAP BTP Connectivity Requires DNS/IP Update</a></h3>
+  <p>SAP BTP users of Cloud Connector and Connectivity Service must update to new DNS hosts and IPs by November 15, 2026, and are reminded of the upcoming removal of TLS 1.2 Diffie-Hellman Ephemeral Ciphers for Cloud Foundry Runtime.</p>
+  <div class="why"><b>Why it matters</b> — SAP BTP administrators must implement network changes by November 15, 2026, or risk connectivity disruptions for Cloud Connector and Connectivity Service.</div>
+  <p class="src">help.sap.com &middot; 08 August 2026 &middot; <a href="https://help.sap.com/docs/BTP/922bf2dbe0b646aaaa8cb5e077cfd799/75d91059612f4f9098f72112926e9fed.html" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 </div>
 <p class="signoff">The future moves fast, right up until it meets a custom field in SAP GUI.</p>

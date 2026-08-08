@@ -152,14 +152,10 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
 /* story feed */
 .feed{display:grid;gap:0}
-.item{display:grid;grid-template-columns:118px 1fr;gap:22px;
-  padding:22px 0;border-top:1px solid var(--hair)}
+.item{padding:22px 0;border-top:1px solid var(--hair);max-width:72ch}
 .item:first-child{border-top:0}
-.item .rail{font-size:12.5px;color:var(--muted);padding-top:3px;line-height:1.5;
-  font-variant-numeric:tabular-nums}
-.item .rail .ch{display:block;font-weight:600;color:var(--soft);
-  text-decoration:none;letter-spacing:-.01em}
-.item .rail .ch:hover{color:var(--accent)}
+.item .src .ch{font-weight:600;color:var(--soft);text-decoration:none}
+.item .src .ch:hover{color:var(--accent)}
 .item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
   font-weight:660}
 .item h3 a{color:var(--ink);text-decoration:none}
@@ -280,8 +276,6 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media(max-width:640px){
   body{font-size:16px}
-  .item{grid-template-columns:1fr;gap:9px}
-  .item .rail{display:flex;gap:10px;padding-top:0}
   .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
 }
 
@@ -338,44 +332,32 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
 <div class="feed">
 <div class="item">
-  <div class="rail"><span>10 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=ai&amp;g=Models" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Models</a>
-    <h3><a href="https://www.mediapost.com/publications/article/416436/openai-shutters-its-browser-amidst-major-changes.html" rel="noopener nofollow">GPT-5.6 Powers Microsoft 365 Copilot</a></h3>
-    <p>OpenAI publicly launched its GPT-5.6 family (Sol, Terra, Luna) on July 9, 2026, with Sol as the flagship model. GPT-5.6 is now the preferred model in Microsoft 365 Copilot, integrating OpenAI&#x27;s latest capabilities into productivity tools like Word, Excel, and PowerPoint.</p>
-    <div class="why"><b>Why it matters</b> — This signifies a major advancement in OpenAI&#x27;s model capabilities and a deeper integration into enterprise workflows, directly impacting how businesses leverage AI for productivity.</div>
-    <p class="src">OpenAI &middot; <a href="https://www.mediapost.com/publications/article/416436/openai-shutters-its-browser-amidst-major-changes.html" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=ai&amp;g=Models" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Models</a>
+  <h3><a href="https://www.mediapost.com/publications/article/416436/openai-shutters-its-browser-amidst-major-changes.html" rel="noopener nofollow">GPT-5.6 Powers Microsoft 365 Copilot</a></h3>
+  <p>OpenAI publicly launched its GPT-5.6 family (Sol, Terra, Luna) on July 9, 2026, with Sol as the flagship model. GPT-5.6 is now the preferred model in Microsoft 365 Copilot, integrating OpenAI&#x27;s latest capabilities into productivity tools like Word, Excel, and PowerPoint.</p>
+  <div class="why"><b>Why it matters</b> — This signifies a major advancement in OpenAI&#x27;s model capabilities and a deeper integration into enterprise workflows, directly impacting how businesses leverage AI for productivity.</div>
+  <p class="src">OpenAI &middot; 10 July 2026 &middot; <a href="https://www.mediapost.com/publications/article/416436/openai-shutters-its-browser-amidst-major-changes.html" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>10 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=ai&amp;g=Tools" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Tools</a>
-    <h3><a href="https://openai.com/news/" rel="noopener nofollow">OpenAI Introduces GPT-Live for Real-time AI</a></h3>
-    <p>On July 8, 2026, OpenAI introduced GPT-Live, a new product designed for real-time interactions. This offering aims to provide immediate and dynamic responses, enhancing applications that require live conversational AI.</p>
-    <div class="why"><b>Why it matters</b> — GPT-Live opens new possibilities for developers building applications requiring instant AI responses, such as advanced chatbots, interactive assistants, and real-time content generation.</div>
-    <p class="src">OpenAI &middot; <a href="https://openai.com/news/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=ai&amp;g=Tools" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Tools</a>
+  <h3><a href="https://openai.com/news/" rel="noopener nofollow">OpenAI Introduces GPT-Live for Real-time AI</a></h3>
+  <p>On July 8, 2026, OpenAI introduced GPT-Live, a new product designed for real-time interactions. This offering aims to provide immediate and dynamic responses, enhancing applications that require live conversational AI.</p>
+  <div class="why"><b>Why it matters</b> — GPT-Live opens new possibilities for developers building applications requiring instant AI responses, such as advanced chatbots, interactive assistants, and real-time content generation.</div>
+  <p class="src">OpenAI &middot; 10 July 2026 &middot; <a href="https://openai.com/news/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>10 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=ai&amp;g=Security" style="--tc:#f78166"><i style="background:#f78166"></i>Security</a>
-    <h3><a href="https://openai.com/news/" rel="noopener nofollow">OpenAI Launches Bio Bug Bounty Program</a></h3>
-    <p>On July 9, 2026, OpenAI initiated a Bio Bug Bounty program, inviting security researchers to identify and report vulnerabilities related to biological misuse or risks within its AI models. This initiative aims to proactively address potential safety concerns in advanced AI systems.</p>
-    <div class="why"><b>Why it matters</b> — This demonstrates OpenAI&#x27;s commitment to responsible AI development and security, encouraging external scrutiny to mitigate risks associated with powerful AI models, particularly in sensitive domains.</div>
-    <p class="src">OpenAI &middot; <a href="https://openai.com/news/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=ai&amp;g=Security" style="--tc:#f78166"><i style="background:#f78166"></i>Security</a>
+  <h3><a href="https://openai.com/news/" rel="noopener nofollow">OpenAI Launches Bio Bug Bounty Program</a></h3>
+  <p>On July 9, 2026, OpenAI initiated a Bio Bug Bounty program, inviting security researchers to identify and report vulnerabilities related to biological misuse or risks within its AI models. This initiative aims to proactively address potential safety concerns in advanced AI systems.</p>
+  <div class="why"><b>Why it matters</b> — This demonstrates OpenAI&#x27;s commitment to responsible AI development and security, encouraging external scrutiny to mitigate risks associated with powerful AI models, particularly in sensitive domains.</div>
+  <p class="src">OpenAI &middot; 10 July 2026 &middot; <a href="https://openai.com/news/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>10 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=ai&amp;g=Tools" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Tools</a>
-    <h3><a href="https://openai.com/news/" rel="noopener nofollow">ChatGPT Evolves for Ambitious Work</a></h3>
-    <p>OpenAI announced on July 9, 2026, that ChatGPT is evolving to become a partner for users&#x27; most ambitious work. This signifies an expansion of ChatGPT&#x27;s capabilities and its role in assisting complex projects and workflows.</p>
-    <div class="why"><b>Why it matters</b> — This indicates a strategic push to position ChatGPT as a more comprehensive and powerful tool for advanced tasks, potentially enhancing its utility for developers and businesses tackling challenging problems.</div>
-    <p class="src">OpenAI &middot; <a href="https://openai.com/news/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=ai&amp;g=Tools" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Tools</a>
+  <h3><a href="https://openai.com/news/" rel="noopener nofollow">ChatGPT Evolves for Ambitious Work</a></h3>
+  <p>OpenAI announced on July 9, 2026, that ChatGPT is evolving to become a partner for users&#x27; most ambitious work. This signifies an expansion of ChatGPT&#x27;s capabilities and its role in assisting complex projects and workflows.</p>
+  <div class="why"><b>Why it matters</b> — This indicates a strategic push to position ChatGPT as a more comprehensive and powerful tool for advanced tasks, potentially enhancing its utility for developers and businesses tackling challenging problems.</div>
+  <p class="src">OpenAI &middot; 10 July 2026 &middot; <a href="https://openai.com/news/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 </div>
 <p class="signoff">Stay curious. Ship great things.</p>

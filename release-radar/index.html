@@ -151,14 +151,10 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
 /* story feed */
 .feed{display:grid;gap:0}
-.item{display:grid;grid-template-columns:118px 1fr;gap:22px;
-  padding:22px 0;border-top:1px solid var(--hair)}
+.item{padding:22px 0;border-top:1px solid var(--hair);max-width:72ch}
 .item:first-child{border-top:0}
-.item .rail{font-size:12.5px;color:var(--muted);padding-top:3px;line-height:1.5;
-  font-variant-numeric:tabular-nums}
-.item .rail .ch{display:block;font-weight:600;color:var(--soft);
-  text-decoration:none;letter-spacing:-.01em}
-.item .rail .ch:hover{color:var(--accent)}
+.item .src .ch{font-weight:600;color:var(--soft);text-decoration:none}
+.item .src .ch:hover{color:var(--accent)}
 .item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
   font-weight:660}
 .item h3 a{color:var(--ink);text-decoration:none}
@@ -279,8 +275,6 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media(max-width:640px){
   body{font-size:16px}
-  .item{grid-template-columns:1fr;gap:9px}
-  .item .rail{display:flex;gap:10px;padding-top:0}
   .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
 }
 
@@ -340,54 +334,39 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Networking</a>
-    <h3><a href="https://github.com/cilium/cilium/releases/tag/v1.20.0" rel="noopener nofollow">Cilium 1.20.0</a></h3>
-    <p>🎉 Release Announcement 🎉: We are excited to announce the Cilium 1.20.0 release! · More than 2,660 new commits have landed in this release, supported by a community of over 1,100 contributors and more than 24,800 GitHub stars! 🤩…</p>
-    <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
-    <p class="src">GitHub · cilium/cilium &middot; <a href="https://github.com/cilium/cilium/releases/tag/v1.20.0" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Networking</a>
+  <h3><a href="https://github.com/cilium/cilium/releases/tag/v1.20.0" rel="noopener nofollow">Cilium 1.20.0</a></h3>
+  <p>🎉 Release Announcement 🎉: We are excited to announce the Cilium 1.20.0 release! · More than 2,660 new commits have landed in this release, supported by a community of over 1,100 contributors and more than 24,800 GitHub stars! 🤩…</p>
+  <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
+  <p class="src">GitHub · cilium/cilium &middot; 30 July 2026 &middot; <a href="https://github.com/cilium/cilium/releases/tag/v1.20.0" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
-    <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.255.0" rel="noopener nofollow">Pulumi 3.255.0</a></h3>
-    <p>[cli] Add an --extension flag to package commands for extension-parameterized packages, reinstalled from Pulumi.yaml on pulumi install · [cli] Project files to disk and surface their paths as environment variables for all output formats when opening an ESC environment #23993…</p>
-    <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
-    <p class="src">GitHub · pulumi/pulumi &middot; <a href="https://github.com/pulumi/pulumi/releases/tag/v3.255.0" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
+  <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.255.0" rel="noopener nofollow">Pulumi 3.255.0</a></h3>
+  <p>[cli] Add an --extension flag to package commands for extension-parameterized packages, reinstalled from Pulumi.yaml on pulumi install · [cli] Project files to disk and surface their paths as environment variables for all output formats when opening an ESC environment #23993…</p>
+  <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
+  <p class="src">GitHub · pulumi/pulumi &middot; 30 July 2026 &middot; <a href="https://github.com/pulumi/pulumi/releases/tag/v3.255.0" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
-    <h3>Also shipped: 3 more releases</h3>
-    <p>Data: Redis 8.2.8 · Orchestration: etcd 3.5.33 · Runtimes: Node.js 26.5.1</p>
-    <div class="why"><b>Why it matters</b> — Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>
-    <p class="src">GitHub</p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
+  <h3>Also shipped: 3 more releases</h3>
+  <p>Data: Redis 8.2.8 · Orchestration: etcd 3.5.33 · Runtimes: Node.js 26.5.1</p>
+  <div class="why"><b>Why it matters</b> — Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>
+  <p class="src">GitHub &middot; 30 July 2026</p>
 </div>
 <div class="item">
-  <div class="rail"><span>26 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
-    <h3>Also shipped: 8 more releases</h3>
-    <p>Data: Redis 8.4.5, Valkey 8.1.9, ClickHouse 26.7.1.1315-stable · Networking: Traefik 2.11.53 · Observability: Grafana 12.4.6, Grafana 12.3.9 · Orchestration: etcd 3.6.14, Kubernetes 1.35.7</p>
-    <div class="why"><b>Why it matters</b> — Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>
-    <p class="src">GitHub</p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
+  <h3>Also shipped: 8 more releases</h3>
+  <p>Data: Redis 8.4.5, Valkey 8.1.9, ClickHouse 26.7.1.1315-stable · Networking: Traefik 2.11.53 · Observability: Grafana 12.4.6, Grafana 12.3.9 · Orchestration: etcd 3.6.14, Kubernetes 1.35.7</p>
+  <div class="why"><b>Why it matters</b> — Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>
+  <p class="src">GitHub &middot; 26 July 2026</p>
 </div>
 <div class="item">
-  <div class="rail"><span>26 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
-    <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.254.0" rel="noopener nofollow">Pulumi 3.254.0</a></h3>
-    <p>[cli] Add pulumi logs share command for sharing logs with Pulumi #22546 · [cli] Add pulumi stack migrate to migrate a stack from another backend to the currently logged-in backend, including re-encrypting config secrets and stack state under the target secrets provider #22902…</p>
-    <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
-    <p class="src">GitHub · pulumi/pulumi &middot; <a href="https://github.com/pulumi/pulumi/releases/tag/v3.254.0" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
+  <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.254.0" rel="noopener nofollow">Pulumi 3.254.0</a></h3>
+  <p>[cli] Add pulumi logs share command for sharing logs with Pulumi #22546 · [cli] Add pulumi stack migrate to migrate a stack from another backend to the currently logged-in backend, including re-encrypting config secrets and stack state under the target secrets provider #22902…</p>
+  <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
+  <p class="src">GitHub · pulumi/pulumi &middot; 26 July 2026 &middot; <a href="https://github.com/pulumi/pulumi/releases/tag/v3.254.0" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 </div>
 <div class="morelink"><a href="../search.html?c=release-radar">Browse all 28 stories in this channel &rarr;</a><span>23 older stories</span></div>

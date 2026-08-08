@@ -151,14 +151,10 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
 /* story feed */
 .feed{display:grid;gap:0}
-.item{display:grid;grid-template-columns:118px 1fr;gap:22px;
-  padding:22px 0;border-top:1px solid var(--hair)}
+.item{padding:22px 0;border-top:1px solid var(--hair);max-width:72ch}
 .item:first-child{border-top:0}
-.item .rail{font-size:12.5px;color:var(--muted);padding-top:3px;line-height:1.5;
-  font-variant-numeric:tabular-nums}
-.item .rail .ch{display:block;font-weight:600;color:var(--soft);
-  text-decoration:none;letter-spacing:-.01em}
-.item .rail .ch:hover{color:var(--accent)}
+.item .src .ch{font-weight:600;color:var(--soft);text-decoration:none}
+.item .src .ch:hover{color:var(--accent)}
 .item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
   font-weight:660}
 .item h3 a{color:var(--ink);text-decoration:none}
@@ -279,8 +275,6 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media(max-width:640px){
   body{font-size:16px}
-  .item{grid-template-columns:1fr;gap:9px}
-  .item .rail{display:flex;gap:10px;padding-top:0}
   .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
 }
 
@@ -340,54 +334,39 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=hr-tech&amp;g=HCM%20Market" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>HCM Market</a>
-    <h3><a href="https://community.designtaxi.com/topic/34476-is-dayforce-down-august-1-2026/" rel="noopener nofollow">Dayforce Experiences Outage</a></h3>
-    <p>Dayforce reportedly experienced a system outage for some users on August 1, 2026. Outage tracking services indicated a rise in user reports around 10:40 PM Eastern Time, with social media also showing users reporting connectivity issues.</p>
-    <div class="why"><b>Why it matters</b> — Users of Dayforce may have experienced disruptions to critical HR and payroll operations due to the reported system outage.</div>
-    <p class="src">community.designtaxi.com &middot; <a href="https://community.designtaxi.com/topic/34476-is-dayforce-down-august-1-2026/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=hr-tech&amp;g=HCM%20Market" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>HCM Market</a>
+  <h3><a href="https://community.designtaxi.com/topic/34476-is-dayforce-down-august-1-2026/" rel="noopener nofollow">Dayforce Experiences Outage</a></h3>
+  <p>Dayforce reportedly experienced a system outage for some users on August 1, 2026. Outage tracking services indicated a rise in user reports around 10:40 PM Eastern Time, with social media also showing users reporting connectivity issues.</p>
+  <div class="why"><b>Why it matters</b> — Users of Dayforce may have experienced disruptions to critical HR and payroll operations due to the reported system outage.</div>
+  <p class="src">community.designtaxi.com &middot; 08 August 2026 &middot; <a href="https://community.designtaxi.com/topic/34476-is-dayforce-down-august-1-2026/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=hr-tech&amp;g=HCM%20Market" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>HCM Market</a>
-    <h3><a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">July Job Losses Signal Labor Market Slowdown</a></h3>
-    <p>Nonfarm payroll employment decreased by 23,000 jobs in July 2026, marking the first net decline since February, with unemployment inching down to 4.1% due to a drop in labor participation. Employment numbers for June and May were also revised downward by 103,000 jobs.</p>
-    <div class="why"><b>Why it matters</b> — The July 2026 job losses and downward revisions for previous months indicate a wider labor market slowdown, impacting talent acquisition and workforce planning strategies.</div>
-    <p class="src">HR Dive &middot; <a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=hr-tech&amp;g=HCM%20Market" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>HCM Market</a>
+  <h3><a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">July Job Losses Signal Labor Market Slowdown</a></h3>
+  <p>Nonfarm payroll employment decreased by 23,000 jobs in July 2026, marking the first net decline since February, with unemployment inching down to 4.1% due to a drop in labor participation. Employment numbers for June and May were also revised downward by 103,000 jobs.</p>
+  <div class="why"><b>Why it matters</b> — The July 2026 job losses and downward revisions for previous months indicate a wider labor market slowdown, impacting talent acquisition and workforce planning strategies.</div>
+  <p class="src">HR Dive &middot; 08 August 2026 &middot; <a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=hr-tech&amp;g=Payroll%20%26%20Compliance" style="--tc:#f78166"><i style="background:#f78166"></i>Payroll &amp; Compliance</a>
-    <h3><a href="https://hrexecutive.com/eeo-1-reporting-may-end-but-hrs-questions-are-just-starting/" rel="noopener nofollow">EEO-1 reporting may end, but HR’s questions are just starting</a></h3>
-    <p>The EEOC voted to propose rescinding mandatory EEO-1 through EEO-6 workforce demographic reporting requirements for private employers and federal contractors. The proposed policy change affects compliance reporting workflows for organizations with 100 or more employees.</p>
-    <div class="why"><b>Why it matters</b> — Rescinding standardized federal reporting rules requires organizations to re-evaluate internal demographic data retention and compliance audit pipelines.</div>
-    <p class="src">HR Executive &middot; <a href="https://hrexecutive.com/eeo-1-reporting-may-end-but-hrs-questions-are-just-starting/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=hr-tech&amp;g=Payroll%20%26%20Compliance" style="--tc:#f78166"><i style="background:#f78166"></i>Payroll &amp; Compliance</a>
+  <h3><a href="https://hrexecutive.com/eeo-1-reporting-may-end-but-hrs-questions-are-just-starting/" rel="noopener nofollow">EEO-1 reporting may end, but HR’s questions are just starting</a></h3>
+  <p>The EEOC voted to propose rescinding mandatory EEO-1 through EEO-6 workforce demographic reporting requirements for private employers and federal contractors. The proposed policy change affects compliance reporting workflows for organizations with 100 or more employees.</p>
+  <div class="why"><b>Why it matters</b> — Rescinding standardized federal reporting rules requires organizations to re-evaluate internal demographic data retention and compliance audit pipelines.</div>
+  <p class="src">HR Executive &middot; 08 August 2026 &middot; <a href="https://hrexecutive.com/eeo-1-reporting-may-end-but-hrs-questions-are-just-starting/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=hr-tech&amp;g=AI%20in%20HR" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI in HR</a>
-    <h3><a href="https://www.thehrdigest.com/managers-are-using-ai-to-plan-layoffs-some-without-any-human-supervision/" rel="noopener nofollow">Managers Use AI for Layoff Decisions</a></h3>
-    <p>A recent survey revealed that 59% of managers have utilized AI to conduct layoffs within their organizations, with 58% also incorporating the technology into firing decisions. Alarmingly, 2 in 5 managers allowed AI to make layoff decisions without human review, raising concerns about potential biases.</p>
-    <div class="why"><b>Why it matters</b> — Organizations face increased legal and ethical risks from AI-driven layoff decisions, especially if age or medical leave are AI parameters without human oversight.</div>
-    <p class="src">The HR Digest &middot; <a href="https://www.thehrdigest.com/managers-are-using-ai-to-plan-layoffs-some-without-any-human-supervision/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=hr-tech&amp;g=AI%20in%20HR" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI in HR</a>
+  <h3><a href="https://www.thehrdigest.com/managers-are-using-ai-to-plan-layoffs-some-without-any-human-supervision/" rel="noopener nofollow">Managers Use AI for Layoff Decisions</a></h3>
+  <p>A recent survey revealed that 59% of managers have utilized AI to conduct layoffs within their organizations, with 58% also incorporating the technology into firing decisions. Alarmingly, 2 in 5 managers allowed AI to make layoff decisions without human review, raising concerns about potential biases.</p>
+  <div class="why"><b>Why it matters</b> — Organizations face increased legal and ethical risks from AI-driven layoff decisions, especially if age or medical leave are AI parameters without human oversight.</div>
+  <p class="src">The HR Digest &middot; 08 August 2026 &middot; <a href="https://www.thehrdigest.com/managers-are-using-ai-to-plan-layoffs-some-without-any-human-supervision/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>08 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=hr-tech&amp;g=Payroll%20%26%20Compliance" style="--tc:#f78166"><i style="background:#f78166"></i>Payroll &amp; Compliance</a>
-    <h3><a href="https://www.aihrdaily.com/article/eu-ai-act-hr-compliance-deadline-august-2026" rel="noopener nofollow">EU AI Act HR Deadline Passes</a></h3>
-    <p>The high-risk provisions of the EU AI Act, which encompass AI systems used in hiring, screening, and workforce management, became enforceable on August 2, 2026. While a proposed delay to December 2, 2027, is under negotiation, it is not yet law, making current compliance critical.</p>
-    <div class="why"><b>Why it matters</b> — Companies using AI in HR must now comply with the EU AI Act&#x27;s high-risk provisions or face immediate regulatory, reputational, and operational risks.</div>
-    <p class="src">aihrdaily.com &middot; <a href="https://www.aihrdaily.com/article/eu-ai-act-hr-compliance-deadline-august-2026" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=hr-tech&amp;g=Payroll%20%26%20Compliance" style="--tc:#f78166"><i style="background:#f78166"></i>Payroll &amp; Compliance</a>
+  <h3><a href="https://www.aihrdaily.com/article/eu-ai-act-hr-compliance-deadline-august-2026" rel="noopener nofollow">EU AI Act HR Deadline Passes</a></h3>
+  <p>The high-risk provisions of the EU AI Act, which encompass AI systems used in hiring, screening, and workforce management, became enforceable on August 2, 2026. While a proposed delay to December 2, 2027, is under negotiation, it is not yet law, making current compliance critical.</p>
+  <div class="why"><b>Why it matters</b> — Companies using AI in HR must now comply with the EU AI Act&#x27;s high-risk provisions or face immediate regulatory, reputational, and operational risks.</div>
+  <p class="src">aihrdaily.com &middot; 08 August 2026 &middot; <a href="https://www.aihrdaily.com/article/eu-ai-act-hr-compliance-deadline-august-2026" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 </div>
 <div class="morelink"><a href="../search.html?c=hr-tech">Browse all 22 stories in this channel &rarr;</a><span>17 older stories</span></div>

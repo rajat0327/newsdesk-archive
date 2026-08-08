@@ -152,14 +152,10 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
 /* story feed */
 .feed{display:grid;gap:0}
-.item{display:grid;grid-template-columns:118px 1fr;gap:22px;
-  padding:22px 0;border-top:1px solid var(--hair)}
+.item{padding:22px 0;border-top:1px solid var(--hair);max-width:72ch}
 .item:first-child{border-top:0}
-.item .rail{font-size:12.5px;color:var(--muted);padding-top:3px;line-height:1.5;
-  font-variant-numeric:tabular-nums}
-.item .rail .ch{display:block;font-weight:600;color:var(--soft);
-  text-decoration:none;letter-spacing:-.01em}
-.item .rail .ch:hover{color:var(--accent)}
+.item .src .ch{font-weight:600;color:var(--soft);text-decoration:none}
+.item .src .ch:hover{color:var(--accent)}
 .item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
   font-weight:660}
 .item h3 a{color:var(--ink);text-decoration:none}
@@ -280,8 +276,6 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media(max-width:640px){
   body{font-size:16px}
-  .item{grid-template-columns:1fr;gap:9px}
-  .item .rail{display:flex;gap:10px;padding-top:0}
   .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
 }
 
@@ -338,84 +332,60 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
 <div class="feed">
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Runtimes" style="--tc:#f778ba"><i style="background:#f778ba"></i>Runtimes</a>
-    <h3><a href="https://github.com/nodejs/node/releases/tag/v24.18.1" rel="noopener nofollow">Node.js 24.18.1</a></h3>
-    <p>This is a security release. · Notable Changes · (CVE-2026-56846) http2: retain header memory in session accounting (Matteo Collina) – High · (CVE-2026-56848) http2: defer rst stream while in scope (Matteo Collina) – High…</p>
-    <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Fixes CVE-2026-56846, CVE-2026-56848, CVE-2026-58043 — patch promptly. Also released on 1 other maintenance line: 22.23.2.</div>
-    <p class="src">GitHub · nodejs/node &middot; <a href="https://github.com/nodejs/node/releases/tag/v24.18.1" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Runtimes" style="--tc:#f778ba"><i style="background:#f778ba"></i>Runtimes</a>
+  <h3><a href="https://github.com/nodejs/node/releases/tag/v24.18.1" rel="noopener nofollow">Node.js 24.18.1</a></h3>
+  <p>This is a security release. · Notable Changes · (CVE-2026-56846) http2: retain header memory in session accounting (Matteo Collina) – High · (CVE-2026-56848) http2: defer rst stream while in scope (Matteo Collina) – High…</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Fixes CVE-2026-56846, CVE-2026-56848, CVE-2026-58043 — patch promptly. Also released on 1 other maintenance line: 22.23.2.</div>
+  <p class="src">GitHub · nodejs/node &middot; 30 July 2026 &middot; <a href="https://github.com/nodejs/node/releases/tag/v24.18.1" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Data</a>
-    <h3><a href="https://github.com/redis/redis/releases/tag/8.4.5" rel="noopener nofollow">Redis 8.4.5</a></h3>
-    <p>SECURITY: There are security fixes in the release. · Security fixes · A crafted stream RESTORE payload can make two consumers share the same NACK, leading to a use-after-free that may result in Remote Code Execution…</p>
-    <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Release notes reference security fixes. Also released on 4 other maintenance lines: 7.4.10, 7.2.15, 6.2.23, 8.10.0.</div>
-    <p class="src">GitHub · redis/redis &middot; <a href="https://github.com/redis/redis/releases/tag/8.4.5" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Data</a>
+  <h3><a href="https://github.com/redis/redis/releases/tag/8.4.5" rel="noopener nofollow">Redis 8.4.5</a></h3>
+  <p>SECURITY: There are security fixes in the release. · Security fixes · A crafted stream RESTORE payload can make two consumers share the same NACK, leading to a use-after-free that may result in Remote Code Execution…</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Release notes reference security fixes. Also released on 4 other maintenance lines: 7.4.10, 7.2.15, 6.2.23, 8.10.0.</div>
+  <p class="src">GitHub · redis/redis &middot; 30 July 2026 &middot; <a href="https://github.com/redis/redis/releases/tag/8.4.5" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Networking</a>
-    <h3><a href="https://github.com/cilium/cilium/releases/tag/v1.20.0" rel="noopener nofollow">Cilium 1.20.0</a></h3>
-    <p>🎉 Release Announcement 🎉: We are excited to announce the Cilium 1.20.0 release! · More than 2,660 new commits have landed in this release, supported by a community of over 1,100 contributors and more than 24,800 GitHub stars! 🤩…</p>
-    <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
-    <p class="src">GitHub · cilium/cilium &middot; <a href="https://github.com/cilium/cilium/releases/tag/v1.20.0" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Networking</a>
+  <h3><a href="https://github.com/cilium/cilium/releases/tag/v1.20.0" rel="noopener nofollow">Cilium 1.20.0</a></h3>
+  <p>🎉 Release Announcement 🎉: We are excited to announce the Cilium 1.20.0 release! · More than 2,660 new commits have landed in this release, supported by a community of over 1,100 contributors and more than 24,800 GitHub stars! 🤩…</p>
+  <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
+  <p class="src">GitHub · cilium/cilium &middot; 30 July 2026 &middot; <a href="https://github.com/cilium/cilium/releases/tag/v1.20.0" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
-    <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.255.0" rel="noopener nofollow">Pulumi 3.255.0</a></h3>
-    <p>[cli] Add an --extension flag to package commands for extension-parameterized packages, reinstalled from Pulumi.yaml on pulumi install · [cli] Project files to disk and surface their paths as environment variables for all output formats when opening an ESC environment #23993…</p>
-    <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
-    <p class="src">GitHub · pulumi/pulumi &middot; <a href="https://github.com/pulumi/pulumi/releases/tag/v3.255.0" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
+  <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.255.0" rel="noopener nofollow">Pulumi 3.255.0</a></h3>
+  <p>[cli] Add an --extension flag to package commands for extension-parameterized packages, reinstalled from Pulumi.yaml on pulumi install · [cli] Project files to disk and surface their paths as environment variables for all output formats when opening an ESC environment #23993…</p>
+  <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
+  <p class="src">GitHub · pulumi/pulumi &middot; 30 July 2026 &middot; <a href="https://github.com/pulumi/pulumi/releases/tag/v3.255.0" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Containers" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Containers</a>
-    <h3><a href="https://github.com/moby/moby/releases/tag/client/v0.5.1" rel="noopener nofollow">Docker Engine client/v0.5.1</a></h3>
-    <p>client/pkg/jsonmessage: Display: fix godoc link. moby/moby#53070 · client: ServiceCreate, ServiceUpdate: fix duplicate and &#x27;unkown&#x27; platforms. moby/moby#53012 · client: ServiceInspect, ContainerCommit: omit optional query args if not set. moby/moby#53010 · golangci-lint: enable perfsprint linter…</p>
-    <div class="why"><b>Why it matters</b> — Patch release — routine upgrade.</div>
-    <p class="src">GitHub · moby/moby &middot; <a href="https://github.com/moby/moby/releases/tag/client/v0.5.1" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Containers" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Containers</a>
+  <h3><a href="https://github.com/moby/moby/releases/tag/client/v0.5.1" rel="noopener nofollow">Docker Engine client/v0.5.1</a></h3>
+  <p>client/pkg/jsonmessage: Display: fix godoc link. moby/moby#53070 · client: ServiceCreate, ServiceUpdate: fix duplicate and &#x27;unkown&#x27; platforms. moby/moby#53012 · client: ServiceInspect, ContainerCommit: omit optional query args if not set. moby/moby#53010 · golangci-lint: enable perfsprint linter…</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade.</div>
+  <p class="src">GitHub · moby/moby &middot; 30 July 2026 &middot; <a href="https://github.com/moby/moby/releases/tag/client/v0.5.1" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Networking</a>
-    <h3><a href="https://github.com/traefik/traefik/releases/tag/v2.11.53" rel="noopener nofollow">Traefik 2.11.53</a></h3>
-    <p>Important: Please read the migration guide. · Advisory GHSA-3ccp-42pg-hgv6 · [middleware, k8s/crd] Add missing ErrorRequestHeaders field to CRDs · [server] Defer the CONNECT payload until the backend accepts the tunnel · [server] Bump google.golang.org/grpc to v1.82.1…</p>
-    <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading.</div>
-    <p class="src">GitHub · traefik/traefik &middot; <a href="https://github.com/traefik/traefik/releases/tag/v2.11.53" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Networking</a>
+  <h3><a href="https://github.com/traefik/traefik/releases/tag/v2.11.53" rel="noopener nofollow">Traefik 2.11.53</a></h3>
+  <p>Important: Please read the migration guide. · Advisory GHSA-3ccp-42pg-hgv6 · [middleware, k8s/crd] Add missing ErrorRequestHeaders field to CRDs · [server] Defer the CONNECT payload until the backend accepts the tunnel · [server] Bump google.golang.org/grpc to v1.82.1…</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading.</div>
+  <p class="src">GitHub · traefik/traefik &middot; 30 July 2026 &middot; <a href="https://github.com/traefik/traefik/releases/tag/v2.11.53" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Orchestration</a>
-    <h3><a href="https://github.com/etcd-io/etcd/releases/tag/v3.6.14" rel="noopener nofollow">etcd 3.6.14</a></h3>
-    <p>Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). · macOS (Darwin) · etcd uses gcr.io/etcd-development/etcd as a primary container registry, and quay.io/coreos/etcd as secondary.</p>
-    <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading.</div>
-    <p class="src">GitHub · etcd-io/etcd &middot; <a href="https://github.com/etcd-io/etcd/releases/tag/v3.6.14" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Orchestration</a>
+  <h3><a href="https://github.com/etcd-io/etcd/releases/tag/v3.6.14" rel="noopener nofollow">etcd 3.6.14</a></h3>
+  <p>Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). · macOS (Darwin) · etcd uses gcr.io/etcd-development/etcd as a primary container registry, and quay.io/coreos/etcd as secondary.</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading.</div>
+  <p class="src">GitHub · etcd-io/etcd &middot; 30 July 2026 &middot; <a href="https://github.com/etcd-io/etcd/releases/tag/v3.6.14" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>30 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
-    <h3>Also shipped: 3 more releases</h3>
-    <p>Data: Redis 8.2.8 · Orchestration: etcd 3.5.33 · Runtimes: Node.js 26.5.1</p>
-    <div class="why"><b>Why it matters</b> — Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>
-    <p class="src">GitHub</p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
+  <h3>Also shipped: 3 more releases</h3>
+  <p>Data: Redis 8.2.8 · Orchestration: etcd 3.5.33 · Runtimes: Node.js 26.5.1</p>
+  <div class="why"><b>Why it matters</b> — Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>
+  <p class="src">GitHub &middot; 30 July 2026</p>
 </div>
 </div>
 <p class="signoff">A good week to test your rollback procedures.</p>

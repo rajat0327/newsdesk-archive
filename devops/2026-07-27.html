@@ -152,14 +152,10 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
 /* story feed */
 .feed{display:grid;gap:0}
-.item{display:grid;grid-template-columns:118px 1fr;gap:22px;
-  padding:22px 0;border-top:1px solid var(--hair)}
+.item{padding:22px 0;border-top:1px solid var(--hair);max-width:72ch}
 .item:first-child{border-top:0}
-.item .rail{font-size:12.5px;color:var(--muted);padding-top:3px;line-height:1.5;
-  font-variant-numeric:tabular-nums}
-.item .rail .ch{display:block;font-weight:600;color:var(--soft);
-  text-decoration:none;letter-spacing:-.01em}
-.item .rail .ch:hover{color:var(--accent)}
+.item .src .ch{font-weight:600;color:var(--soft);text-decoration:none}
+.item .src .ch:hover{color:var(--accent)}
 .item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
   font-weight:660}
 .item h3 a{color:var(--ink);text-decoration:none}
@@ -280,8 +276,6 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media(max-width:640px){
   body{font-size:16px}
-  .item{grid-template-columns:1fr;gap:9px}
-  .item .rail{display:flex;gap:10px;padding-top:0}
   .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
 }
 
@@ -338,64 +332,46 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
 <div class="feed">
 <div class="item">
-  <div class="rail"><span>27 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
-    <h3><a href="https://devops.com/hashicorp-introduces-tfpolicy-a-native-policy-framework-for-terraform/" rel="noopener nofollow">HashiCorp Introduces tfpolicy for Terraform Governance</a></h3>
-    <p>HashiCorp has launched tfpolicy in public beta, a new policy-as-code framework built directly into Terraform. This allows platform teams to write governance rules in HCL, the same language they use for infrastructure, reducing reliance on separate policy tools and syntaxes.</p>
-    <div class="why"><b>Why it matters</b> — tfpolicy streamlines governance by integrating policy enforcement directly into Terraform workflows, simplifying compliance and security for infrastructure teams.</div>
-    <p class="src">DevOps.com &middot; <a href="https://devops.com/hashicorp-introduces-tfpolicy-a-native-policy-framework-for-terraform/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
+  <h3><a href="https://devops.com/hashicorp-introduces-tfpolicy-a-native-policy-framework-for-terraform/" rel="noopener nofollow">HashiCorp Introduces tfpolicy for Terraform Governance</a></h3>
+  <p>HashiCorp has launched tfpolicy in public beta, a new policy-as-code framework built directly into Terraform. This allows platform teams to write governance rules in HCL, the same language they use for infrastructure, reducing reliance on separate policy tools and syntaxes.</p>
+  <div class="why"><b>Why it matters</b> — tfpolicy streamlines governance by integrating policy enforcement directly into Terraform workflows, simplifying compliance and security for infrastructure teams.</div>
+  <p class="src">DevOps.com &middot; 27 July 2026 &middot; <a href="https://devops.com/hashicorp-introduces-tfpolicy-a-native-policy-framework-for-terraform/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>27 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
-    <h3><a href="https://www.hashicorp.com/en/blog/terraform-introduces-workspaces-and-stacks-restore-and-more" rel="noopener nofollow">Terraform Stacks Gain Restore and Monorepo Support</a></h3>
-    <p>HashiCorp Terraform has announced the general availability of Workspaces and Stacks restore, allowing administrators to recover deleted environments with a single click. Additionally, new monorepo support enables multiple independent Stacks to coexist within a single VCS repository, reducing sprawl and simplifying infrastructure organization.</p>
-    <div class="why"><b>Why it matters</b> — These updates significantly improve the resilience and organizational capabilities for platform teams managing complex infrastructure with Terraform, reducing operational overhead and recovery time.</div>
-    <p class="src">HashiCorp &middot; <a href="https://www.hashicorp.com/en/blog/terraform-introduces-workspaces-and-stacks-restore-and-more" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
+  <h3><a href="https://www.hashicorp.com/en/blog/terraform-introduces-workspaces-and-stacks-restore-and-more" rel="noopener nofollow">Terraform Stacks Gain Restore and Monorepo Support</a></h3>
+  <p>HashiCorp Terraform has announced the general availability of Workspaces and Stacks restore, allowing administrators to recover deleted environments with a single click. Additionally, new monorepo support enables multiple independent Stacks to coexist within a single VCS repository, reducing sprawl and simplifying infrastructure organization.</p>
+  <div class="why"><b>Why it matters</b> — These updates significantly improve the resilience and organizational capabilities for platform teams managing complex infrastructure with Terraform, reducing operational overhead and recovery time.</div>
+  <p class="src">HashiCorp &middot; 27 July 2026 &middot; <a href="https://www.hashicorp.com/en/blog/terraform-introduces-workspaces-and-stacks-restore-and-more" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>27 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Cloud%20Providers" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud Providers</a>
-    <h3><a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" rel="noopener nofollow">Azure Expands AI and HPC Infrastructure with AMD</a></h3>
-    <p>Microsoft has expanded its Azure AI and high-performance computing (HPC) infrastructure through a deeper partnership with AMD. This collaboration introduces new AMD-powered Azure services, including HDv2 VMs for data processing, HXv2 VMs for electronic design automation (EDA), and ND MI455X v7 VMs for AI inference workloads.</p>
-    <div class="why"><b>Why it matters</b> — This expansion provides Azure users with more specialized and powerful infrastructure options tailored for demanding AI and HPC workloads, offering greater choice, scale, and efficiency.</div>
-    <p class="src">blogs.microsoft.com &middot; <a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=devops&amp;g=Cloud%20Providers" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud Providers</a>
+  <h3><a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" rel="noopener nofollow">Azure Expands AI and HPC Infrastructure with AMD</a></h3>
+  <p>Microsoft has expanded its Azure AI and high-performance computing (HPC) infrastructure through a deeper partnership with AMD. This collaboration introduces new AMD-powered Azure services, including HDv2 VMs for data processing, HXv2 VMs for electronic design automation (EDA), and ND MI455X v7 VMs for AI inference workloads.</p>
+  <div class="why"><b>Why it matters</b> — This expansion provides Azure users with more specialized and powerful infrastructure options tailored for demanding AI and HPC workloads, offering greater choice, scale, and efficiency.</div>
+  <p class="src">blogs.microsoft.com &middot; 27 July 2026 &middot; <a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>27 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Cloud%20Providers" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud Providers</a>
-    <h3><a href="https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud" rel="noopener nofollow">Google Cloud Boosts Secure AI with MedPerf and TPUs</a></h3>
-    <p>At Google Cloud Next 2026, Google Cloud and MLCommons announced the enablement of MedPerf, a federated benchmarking orchestrator, on Google Cloud&#x27;s confidential compute capabilities for secure medical AI benchmarking. Additionally, Google Cloud has begun shipping its eighth-generation TPU systems (TPU 8t and TPU 8i) to customer data centers.</p>
-    <div class="why"><b>Why it matters</b> — These developments enhance secure AI collaboration in sensitive fields like healthcare and provide customers with cutting-edge, purpose-built hardware for AI training and inference.</div>
-    <p class="src">cloud.google.com &middot; <a href="https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=devops&amp;g=Cloud%20Providers" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud Providers</a>
+  <h3><a href="https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud" rel="noopener nofollow">Google Cloud Boosts Secure AI with MedPerf and TPUs</a></h3>
+  <p>At Google Cloud Next 2026, Google Cloud and MLCommons announced the enablement of MedPerf, a federated benchmarking orchestrator, on Google Cloud&#x27;s confidential compute capabilities for secure medical AI benchmarking. Additionally, Google Cloud has begun shipping its eighth-generation TPU systems (TPU 8t and TPU 8i) to customer data centers.</p>
+  <div class="why"><b>Why it matters</b> — These developments enhance secure AI collaboration in sensitive fields like healthcare and provide customers with cutting-edge, purpose-built hardware for AI training and inference.</div>
+  <p class="src">cloud.google.com &middot; 27 July 2026 &middot; <a href="https://cloud.google.com/blog/topics/ai-infrastructure/state-of-ai-infrastructure-report-and-the-agentic-data-cloud" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>27 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
-    <h3><a href="https://www.pulumi.com/what-is/what-is-pulumi/" rel="noopener nofollow">Pulumi Enhances IaC with Environment Overrides and AI</a></h3>
-    <p>Pulumi has released &quot;Preview ESC Changes with Environment Overrides,&quot; allowing users to preview proposed environment changes against their stack before promotion. The platform also highlights its AI-powered development assistance, capable of generating infrastructure code from natural language and providing intelligent suggestions.</p>
-    <div class="why"><b>Why it matters</b> — These features enhance developer productivity and safety in IaC workflows by enabling pre-deployment validation and leveraging AI for faster, more compliant infrastructure code generation.</div>
-    <p class="src">pulumi.com &middot; <a href="https://www.pulumi.com/what-is/what-is-pulumi/" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
+  <h3><a href="https://www.pulumi.com/what-is/what-is-pulumi/" rel="noopener nofollow">Pulumi Enhances IaC with Environment Overrides and AI</a></h3>
+  <p>Pulumi has released &quot;Preview ESC Changes with Environment Overrides,&quot; allowing users to preview proposed environment changes against their stack before promotion. The platform also highlights its AI-powered development assistance, capable of generating infrastructure code from natural language and providing intelligent suggestions.</p>
+  <div class="why"><b>Why it matters</b> — These features enhance developer productivity and safety in IaC workflows by enabling pre-deployment validation and leveraging AI for faster, more compliant infrastructure code generation.</div>
+  <p class="src">pulumi.com &middot; 27 July 2026 &middot; <a href="https://www.pulumi.com/what-is/what-is-pulumi/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>27 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Kubernetes%20%26%20Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Kubernetes &amp; Orchestration</a>
-    <h3><a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-extended" rel="noopener nofollow">Kubernetes Ecosystem Receives Patch Updates</a></h3>
-    <p>The Kubernetes ecosystem saw several patch releases across various versions this week. Google Kubernetes Engine (GKE) updated its extended channel with new auto-upgrade targets for versions like 1.30 to 1.31.14-gke.2169000. Similarly, k3s released patch updates for versions including v1.36.2+k3s1 and v1.35.6+k3s1, incorporating bug fixes and dependency bumps.</p>
-    <div class="why"><b>Why it matters</b> — These routine patch updates are crucial for maintaining the stability, security, and performance of Kubernetes clusters, ensuring that critical bug fixes and dependency updates are applied.</div>
-    <p class="src">docs.cloud.google.com &middot; <a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-extended" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=devops&amp;g=Kubernetes%20%26%20Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Kubernetes &amp; Orchestration</a>
+  <h3><a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-extended" rel="noopener nofollow">Kubernetes Ecosystem Receives Patch Updates</a></h3>
+  <p>The Kubernetes ecosystem saw several patch releases across various versions this week. Google Kubernetes Engine (GKE) updated its extended channel with new auto-upgrade targets for versions like 1.30 to 1.31.14-gke.2169000. Similarly, k3s released patch updates for versions including v1.36.2+k3s1 and v1.35.6+k3s1, incorporating bug fixes and dependency bumps.</p>
+  <div class="why"><b>Why it matters</b> — These routine patch updates are crucial for maintaining the stability, security, and performance of Kubernetes clusters, ensuring that critical bug fixes and dependency updates are applied.</div>
+  <p class="src">docs.cloud.google.com &middot; 27 July 2026 &middot; <a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes-extended" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 </div>
 <p class="signoff">Ship it. Monitor it. Sleep through the pager.</p>

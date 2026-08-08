@@ -151,14 +151,10 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
 /* story feed */
 .feed{display:grid;gap:0}
-.item{display:grid;grid-template-columns:118px 1fr;gap:22px;
-  padding:22px 0;border-top:1px solid var(--hair)}
+.item{padding:22px 0;border-top:1px solid var(--hair);max-width:72ch}
 .item:first-child{border-top:0}
-.item .rail{font-size:12.5px;color:var(--muted);padding-top:3px;line-height:1.5;
-  font-variant-numeric:tabular-nums}
-.item .rail .ch{display:block;font-weight:600;color:var(--soft);
-  text-decoration:none;letter-spacing:-.01em}
-.item .rail .ch:hover{color:var(--accent)}
+.item .src .ch{font-weight:600;color:var(--soft);text-decoration:none}
+.item .src .ch:hover{color:var(--accent)}
 .item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
   font-weight:660}
 .item h3 a{color:var(--ink);text-decoration:none}
@@ -279,8 +275,6 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media(max-width:640px){
   body{font-size:16px}
-  .item{grid-template-columns:1fr;gap:9px}
-  .item .rail{display:flex;gap:10px;padding-top:0}
   .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
 }
 
@@ -340,54 +334,39 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
-  <div class="rail"><span>04 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-    <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">CVE-2026-18577: N-able N-central</a></h3>
-    <p>N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.</p>
-    <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.2 (HIGH). CISA remediation deadline 06 Aug 2026 — 2 days out.</div>
-    <p class="src">CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">CVE-2026-18577: N-able N-central</a></h3>
+  <p>N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.2 (HIGH). CISA remediation deadline 06 Aug 2026 — 2 days out.</div>
+  <p class="src">CISA KEV &middot; 04 August 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>04 August 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-    <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20316" rel="noopener nofollow">CVE-2026-20316: Cisco Secure Firewall Management Center (FMC)</a></h3>
-    <p>Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.</p>
-    <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 5.3 (MEDIUM). CISA remediation deadline 01 Aug 2026 — already passed.</div>
-    <p class="src">CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20316" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20316" rel="noopener nofollow">CVE-2026-20316: Cisco Secure Firewall Management Center (FMC)</a></h3>
+  <p>Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 5.3 (MEDIUM). CISA remediation deadline 01 Aug 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 04 August 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20316" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>26 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-    <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030" rel="noopener nofollow">CVE-2026-63030: WordPress Core</a></h3>
-    <p>WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.</p>
-    <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 24 Jul 2026 — already passed.</div>
-    <p class="src">CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030" rel="noopener nofollow">CVE-2026-63030: WordPress Core</a></h3>
+  <p>WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 24 Jul 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 26 July 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>26 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-    <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60137" rel="noopener nofollow">CVE-2026-60137: WordPress Core</a></h3>
-    <p>WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.</p>
-    <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 5.9 (MEDIUM). CISA remediation deadline 04 Aug 2026 — 9 days out.</div>
-    <p class="src">CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60137" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60137" rel="noopener nofollow">CVE-2026-60137: WordPress Core</a></h3>
+  <p>WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 5.9 (MEDIUM). CISA remediation deadline 04 Aug 2026 — 9 days out.</div>
+  <p class="src">CISA KEV &middot; 26 July 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60137" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <div class="rail"><span>26 July 2026</span></div>
-  <div>
-    <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-    <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16232" rel="noopener nofollow">CVE-2026-16232: Check Point SmartConsole</a></h3>
-    <p>Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.</p>
-    <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.1 (CRITICAL). CISA remediation deadline 25 Jul 2026 — already passed.</div>
-    <p class="src">CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16232" rel="noopener nofollow">Read the original &rarr;</a></p>
-  </div>
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16232" rel="noopener nofollow">CVE-2026-16232: Check Point SmartConsole</a></h3>
+  <p>Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.1 (CRITICAL). CISA remediation deadline 25 Jul 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 26 July 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-16232" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 </div>
 <div class="morelink"><a href="../search.html?c=security-news">Browse all 22 stories in this channel &rarr;</a><span>17 older stories</span></div>

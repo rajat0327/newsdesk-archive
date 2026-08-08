@@ -152,14 +152,10 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
 /* story feed */
 .feed{display:grid;gap:0}
-.item{display:grid;grid-template-columns:118px 1fr;gap:22px;
-  padding:22px 0;border-top:1px solid var(--hair)}
+.item{padding:22px 0;border-top:1px solid var(--hair);max-width:72ch}
 .item:first-child{border-top:0}
-.item .rail{font-size:12.5px;color:var(--muted);padding-top:3px;line-height:1.5;
-  font-variant-numeric:tabular-nums}
-.item .rail .ch{display:block;font-weight:600;color:var(--soft);
-  text-decoration:none;letter-spacing:-.01em}
-.item .rail .ch:hover{color:var(--accent)}
+.item .src .ch{font-weight:600;color:var(--soft);text-decoration:none}
+.item .src .ch:hover{color:var(--accent)}
 .item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
   font-weight:660}
 .item h3 a{color:var(--ink);text-decoration:none}
@@ -280,8 +276,6 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--mute
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 @media(max-width:640px){
   body{font-size:16px}
-  .item{grid-template-columns:1fr;gap:9px}
-  .item .rail{display:flex;gap:10px;padding-top:0}
   .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
 }
 
@@ -429,19 +423,19 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
         + 'a CVE id, or a version number.</div>';
       return;
     }
+    // Kept in step with render_item: category kicker, headline, summary,
+    // then one byline. The left rail was removed from both.
     OUT.innerHTML = hits.slice(0, 120).map(function(r){
       return '<div class="item">'
-        + '<div class="rail"><a class="ch" href="'+r.s+'/">'+esc(r.c)+'</a>'
-        + '<span>'+esc(r.p)+'</span></div><div>'
-        + '<span class="tag" style="color:'+r.k+';border-color:color-mix(in srgb,'+r.k
-        + ' 38%,transparent);background:color-mix(in srgb,'+r.k+' 9%,transparent)">'
-        + esc(r.g)+'</span>'
+        + '<span class="tag" style="--tc:'+r.k+'"><i style="background:'+r.k
+        + '"></i>'+esc(r.g)+'</span>'
         + '<h3><a href="'+(r.u || (r.s+'/'+r.d+'.html'))+'"'
         + (r.u ? ' rel="noopener nofollow"' : '') + '>'+mark(r.t, terms)+'</a></h3>'
         + '<p>'+mark(r.m, terms)+'</p>'
-        + '<p class="src">'+esc(r.o)+' &middot; <a href="'+r.s+'/'+r.d+'.html">'
-        + 'In this issue &rarr;</a></p>'
-        + '</div></div>';
+        + '<p class="src"><a class="ch" href="'+r.s+'/">'+esc(r.c)+'</a> &middot; '
+        + esc(r.o)+' &middot; '+esc(r.p)+' &middot; '
+        + '<a href="'+r.s+'/'+r.d+'.html">In this issue &rarr;</a></p>'
+        + '</div>';
     }).join('');
   }
 
