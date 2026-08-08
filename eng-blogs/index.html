@@ -164,11 +164,12 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
-.tag-link{text-decoration:none;transition:filter .12s}
-.tag-link:hover{filter:brightness(1.25)}
-.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;
-  font-weight:560;letter-spacing:.01em;padding:2.5px 10px;border-radius:100px;
-  border:1px solid;margin-bottom:8px;white-space:nowrap}
+.tag-link{text-decoration:none;transition:color .12s}
+.tag-link:hover{color:var(--tc)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  font-weight:640;letter-spacing:.06em;text-transform:uppercase;
+  margin:0 16px 7px 0;white-space:nowrap;color:var(--muted)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--tc);flex:none}
 .why{margin-top:11px;padding:9px 13px;border-radius:8px;background:var(--hair);
   font-size:14.5px;color:var(--ink)}
 .why b{font-weight:650;color:var(--accent)}
@@ -332,7 +333,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <p class="stats"><span><b>7</b> stories</span>
      <span><b>1</b> issues</span>
      <span><b>7</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Architecture" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Architecture</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Data &amp; ML</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Infrastructure</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Performance</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Reliability" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Reliability</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Developer%20Experience" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Developer Experience</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Practice%20%26%20Craft" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Practice &amp; Craft</a></p>
+  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Reliability" style="--tc:#f78166"><i style="background:#f78166"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Developer%20Experience" style="--tc:#f778ba"><i style="background:#f778ba"></i>Developer Experience</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Practice%20%26%20Craft" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Practice &amp; Craft</a></p>
 </div>
 
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
@@ -341,7 +342,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>01 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Data &amp; ML</a>
+    <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
     <h3><a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Kafka App? There’s a Skill for That</a></h3>
     <p>Etsy manages over 100 million unique listings from 5.6 million sellers, lacking a standard product catalog. When shoppers search, models must infer meaning and listing content using data from user visits and Etsy listings. Kafka is utilized in this process to enable these models to understand unique and creative items.</p>
     <div class="why"><b>Why it matters</b> — It explains how Etsy uses Kafka and data models to infer meaning from unique listings for complex search queries.</div>
@@ -351,7 +352,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>01 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Data &amp; ML</a>
+    <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
     <h3><a href="https://medium.com/pinterest-engineering/pinner-progression-better-use-case-representation-driving-weekly-active-user-growth-at-pinterest-bd2131ab238a?source=rss----4c5a5f6279b6---4" rel="noopener nofollow">Pinner Progression: Better Use-Case Representation Driving Weekly Active User Growth at Pinterest</a></h3>
     <p>Pinterest&#x27;s mission is to help people discover, and this post, part 1 of 2, focuses on &quot;Pinner Progression.&quot; It aims to achieve better use-case representation to drive weekly active user growth. The article involves contributions from personalization, user understanding, and data science teams, suggesting a deep dive into how these areas contribute to user engagement.</p>
     <div class="why"><b>Why it matters</b> — This post details how better use-case representation in personalization and user understanding drives weekly active user growth.</div>
@@ -361,7 +362,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>01 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Infrastructure</a>
+    <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
     <h3><a href="https://blog.cloudflare.com/post-quantum-authentication-to-origins/" rel="noopener nofollow">Post-quantum authentication to origins is now supported</a></h3>
     <p>Cloudflare&#x27;s Authenticated Origin Pulls and Custom Origin Trust Store now support post-quantum authentication. The post explains how to configure fully post-quantum secure mutually authenticated TLS connections to origin servers. It also dives into the engineering details of how Cloudflare built this and how it fits into their overall post-quantum migration.</p>
     <div class="why"><b>Why it matters</b> — This article provides engineering details on implementing post-quantum authentication for secure TLS connections to origin servers.</div>
@@ -371,7 +372,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>01 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Data &amp; ML</a>
+    <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
     <h3><a href="https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3?source=rss----2615bd06b42e---4" rel="noopener nofollow">GenRec: Towards LLM-Native Recommendation at Netflix</a></h3>
     <p>Recommendations are central to the Netflix experience, with current production models relying on thousands of hand-crafted features and specialized architectures for sequence modeling, feature interactions, and multi-task objectives. This existing stack has evolved over many years to support diverse content. The post introduces GenRec, signaling a move towards LLM-native recommendation at Netflix.</p>
     <div class="why"><b>Why it matters</b> — It outlines the evolution of Netflix&#x27;s core recommendation system and its shift towards LLM-native approaches.</div>
@@ -381,7 +382,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>01 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Performance</a>
+    <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
     <h3><a href="https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/" rel="noopener nofollow">Don’t stop early: Case-folding source code at memory speed</a></h3>
     <p>For accurate text matching in search engines, regex, and case-insensitive contexts, a canonical form called case folding is necessary to erase case distinctions. This ensures that strings differing only in case compare as equal, such as &quot;café&quot; and &quot;CAFÉ.&quot; The post discusses achieving this case folding at memory speed for source code.</p>
     <div class="why"><b>Why it matters</b> — This article details the technical problem and solution for high-performance case folding in text matching systems like search engines.</div>

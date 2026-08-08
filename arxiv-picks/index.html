@@ -164,11 +164,12 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
-.tag-link{text-decoration:none;transition:filter .12s}
-.tag-link:hover{filter:brightness(1.25)}
-.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;
-  font-weight:560;letter-spacing:.01em;padding:2.5px 10px;border-radius:100px;
-  border:1px solid;margin-bottom:8px;white-space:nowrap}
+.tag-link{text-decoration:none;transition:color .12s}
+.tag-link:hover{color:var(--tc)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  font-weight:640;letter-spacing:.06em;text-transform:uppercase;
+  margin:0 16px 7px 0;white-space:nowrap;color:var(--muted)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--tc);flex:none}
 .why{margin-top:11px;padding:9px 13px;border-radius:8px;background:var(--hair);
   font-size:14.5px;color:var(--ink)}
 .why b{font-weight:650;color:var(--accent)}
@@ -332,7 +333,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <p class="stats"><span><b>12</b> stories</span>
      <span><b>2</b> issues</span>
      <span><b>8</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Training &amp; Efficiency</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Evaluation%20%26%20Benchmarks" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Evaluation &amp; Benchmarks</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Safety%20%26%20Alignment" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Safety &amp; Alignment</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Research" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Research</a></p>
+  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Training &amp; Efficiency</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="--tc:#f778ba"><i style="background:#f778ba"></i>Multimodal</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Evaluation%20%26%20Benchmarks" style="--tc:#3fb950"><i style="background:#3fb950"></i>Evaluation &amp; Benchmarks</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Safety%20%26%20Alignment" style="--tc:#f78166"><i style="background:#f78166"></i>Safety &amp; Alignment</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Research" style="--tc:#8b949e"><i style="background:#8b949e"></i>Research</a></p>
 </div>
 
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
@@ -341,7 +342,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>29 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="--tc:#f778ba"><i style="background:#f778ba"></i>Multimodal</a>
     <h3><a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</a></h3>
     <p>SANA-Video 2.0 is introduced as a hybrid video diffusion transformer, scaled to 5B and 14B parameters, designed for high-quality 720p video generation on a single GPU. It achieves quality comparable to full-softmax video DiTs while maintaining the favorable long-sequence scaling of linear attention by employing Hybrid Linear-Softmax Attention and Attention Residuals.</p>
     <div class="why"><b>Why it matters</b> — This paper details architectural innovations, specifically hybrid attention and attention residuals, that enable efficient and high-quality video generation, addressing a key scaling challenge in multimodal models.</div>
@@ -351,7 +352,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>05 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a>
     <h3><a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow">DiffusionGemma Technical Report</a></h3>
     <p>DiffusionGemma introduces discrete diffusion to LLM decoding by iteratively refining blocks of 256 tokens in parallel. Converted directly from pre-trained Gemma weights rather than trained from scratch, the model bypasses sequential token-by-token autoregressive decoding bottlenecks while maintaining generation quality.</p>
     <div class="why"><b>Why it matters</b> — Adapting autoregressive model weights into block-parallel discrete diffusion bypasses sequential KV-cache bottlenecks without requiring full pre-training from scratch.</div>
@@ -361,7 +362,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>05 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="--tc:#f778ba"><i style="background:#f778ba"></i>Multimodal</a>
     <h3><a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow">JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion</a></h3>
     <p>JoyAI-Video-Edit introduces a 16B-parameter autoregressive diffusion framework designed for low-latency streaming video editing. The system processes video in causal chunks without requiring future frame lookahead or a fixed duration, balancing computational complexity with temporal consistency.</p>
     <div class="why"><b>Why it matters</b> — Chunk-wise causal autoregressive diffusion enables real-time unbounded video editing within fixed memory and latency budgets.</div>
@@ -371,7 +372,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>05 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a>
     <h3><a href="https://arxiv.org/abs/2608.01964" rel="noopener nofollow">LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks</a></h3>
     <p>LongHorizon-Harness analyzes how standard LLM agent frameworks fail during extended multi-step workflows due to context bloat. Managing task execution, state, and evaluation inside a single expanding context window causes early assessment errors to compound and derail downstream actions.</p>
     <div class="why"><b>Why it matters</b> — Decoupling state tracking and completion verification from prompt execution history stops hallucinated self-evaluations from cascading across long-horizon agent tasks.</div>
@@ -381,7 +382,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>05 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a>
     <h3><a href="https://arxiv.org/abs/2608.01735" rel="noopener nofollow">DAPD: Dual-Anchored Policy Distillation</a></h3>
     <p>DAPD addresses the privilege illusion in on-policy self-distillation, where student models attempt to emulate privileged teacher behaviors without having access to privileged inputs during inference. The dual-anchored approach regularizes the student policy against both baseline context and privileged teacher distributions.</p>
     <div class="why"><b>Why it matters</b> — Anchoring student training against both baseline and privileged context prevents models from developing dependencies on context features absent at inference time.</div>

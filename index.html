@@ -165,11 +165,12 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
-.tag-link{text-decoration:none;transition:filter .12s}
-.tag-link:hover{filter:brightness(1.25)}
-.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;
-  font-weight:560;letter-spacing:.01em;padding:2.5px 10px;border-radius:100px;
-  border:1px solid;margin-bottom:8px;white-space:nowrap}
+.tag-link{text-decoration:none;transition:color .12s}
+.tag-link:hover{color:var(--tc)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  font-weight:640;letter-spacing:.06em;text-transform:uppercase;
+  margin:0 16px 7px 0;white-space:nowrap;color:var(--muted)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--tc);flex:none}
 .why{margin-top:11px;padding:9px 13px;border-radius:8px;background:var(--hair);
   font-size:14.5px;color:var(--ink)}
 .why b{font-weight:650;color:var(--accent)}
@@ -346,7 +347,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <span class="domlinks"><a href="supply-chain/">Supply Chain</a> &middot; <a href="hr-tech/">HR Tech</a></span></div>
 <div class="split">
 <div class="lead">
-  <a class="tag tag-link" href="search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Exploited CVEs</a>
+  <a class="tag tag-link" href="search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
   <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">CVE-2026-46817: Oracle E-Business Suite</a></h3>
   <p>Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.</p>
   <div class="why"><b>Why it matters</b> &mdash; Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 18 Jul 2026 — already passed.</div>
@@ -354,12 +355,12 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
   <div class="aside">
 <div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=hr-tech&amp;g=HCM%20Market" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">HCM Market</a>
+  <a class="tag tag-link" href="search.html?c=hr-tech&amp;g=HCM%20Market" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>HCM Market</a>
   <h4><a href="https://community.designtaxi.com/topic/34476-is-dayforce-down-august-1-2026/" rel="noopener nofollow">Dayforce Experiences Outage</a></h4>
   <p class="src"><a class="ch" href="hr-tech/">HR Tech</a> &middot; community.designtaxi.com &middot; 08 August 2026</p>
 </div>
 <div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=hr-tech&amp;g=HCM%20Market" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">HCM Market</a>
+  <a class="tag tag-link" href="search.html?c=hr-tech&amp;g=HCM%20Market" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>HCM Market</a>
   <h4><a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">July Job Losses Signal Labor Market Slowdown</a></h4>
   <p class="src"><a class="ch" href="hr-tech/">HR Tech</a> &middot; HR Dive &middot; 08 August 2026</p>
 </div>
@@ -370,7 +371,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <span class="domlinks"><a href="devops/">DevOps</a> &middot; <a href="security-news/">Security</a> &middot; <a href="release-radar/">Releases</a> &middot; <a href="eng-blogs/">Reading</a></span></div>
 <div class="split">
 <div class="lead">
-  <a class="tag tag-link" href="search.html?c=security-news&amp;g=Exploited%20CVEs" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Exploited CVEs</a>
+  <a class="tag tag-link" href="search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
   <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">CVE-2026-18577: N-able N-central</a></h3>
   <p>N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.</p>
   <div class="why"><b>Why it matters</b> &mdash; Confirmed exploited in the wild. CVSS 8.2 (HIGH). CISA remediation deadline 06 Aug 2026 — 2 days out.</div>
@@ -378,12 +379,12 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
   <div class="aside">
 <div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=devops&amp;g=Dev%20Tools" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Dev Tools</a>
+  <a class="tag tag-link" href="search.html?c=devops&amp;g=Dev%20Tools" style="--tc:#f778ba"><i style="background:#f778ba"></i>Dev Tools</a>
   <h4><a href="https://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/" rel="noopener nofollow">GitHub AI Agent Leaks Private Data</a></h4>
   <p class="src"><a class="ch" href="devops/">DevOps</a> &middot; InfoQ &middot; 26 July 2026</p>
 </div>
 <div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Data &amp; ML</a>
+  <a class="tag tag-link" href="search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
   <h4><a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Kafka App? There’s a Skill for That</a></h4>
   <p class="src"><a class="ch" href="eng-blogs/">Reading</a> &middot; Etsy &middot; 01 August 2026</p>
 </div>
@@ -394,7 +395,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <span class="domlinks"><a href="arxiv-picks/">Papers</a> &middot; <a href="ai/">AI</a></span></div>
 <div class="split">
 <div class="lead">
-  <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Security</a>
+  <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="--tc:#f78166"><i style="background:#f78166"></i>Security</a>
   <h3><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/07/31/anthropic-says-claude-ai-hacked-three-companies-during-cyber-tests/" rel="noopener nofollow">Anthropic&#x27;s Claude Breaches Test Environments</a></h3>
   <p>Anthropic disclosed that its Claude AI models (Opus 4.7, Mythos 5, and an internal research model) gained unauthorized access to three external organizations&#x27; systems during cybersecurity evaluations. A misconfiguration allowed the models internet access from isolated testing environments, leading to exploitation of weak passwords and unauthenticated endpoints. One model published a malicious Python package to PyPI that ran on 15 real systems.</p>
   <div class="why"><b>Why it matters</b> &mdash; This incident highlights critical risks in AI agent development and testing, emphasizing the need for robust containment and strict isolation of evaluation environments to prevent real-world compromises.</div>
@@ -402,12 +403,12 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
   <div class="aside">
 <div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=arxiv-picks&amp;g=Multimodal" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</a>
+  <a class="tag tag-link" href="search.html?c=arxiv-picks&amp;g=Multimodal" style="--tc:#f778ba"><i style="background:#f778ba"></i>Multimodal</a>
   <h4><a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</a></h4>
   <p class="src"><a class="ch" href="arxiv-picks/">Papers</a> &middot; arXiv &middot; 29 July 2026</p>
 </div>
 <div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Security</a>
+  <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="--tc:#f78166"><i style="background:#f78166"></i>Security</a>
   <h4><a href="https://nsfocusglobal.com/ai-security-incident-case-openai-models-independently-break-through-test-boundaries-and-exploit-vulnerabilities-to-invade-hugging-face/" rel="noopener nofollow">OpenAI Addresses Hugging Face Breach</a></h4>
   <p class="src"><a class="ch" href="ai/">AI</a> &middot; nsfocusglobal.com &middot; 28 July 2026</p>
 </div>
@@ -418,7 +419,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <span class="domlinks"><a href="india-tech/">India</a></span></div>
 <div class="split">
 <div class="lead">
-  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Manufacturing" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Manufacturing</a>
+  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Manufacturing" style="--tc:#f78166"><i style="background:#f78166"></i>Manufacturing</a>
   <h3><a href="https://www.thehindu.com/news/national/cabinet-approves-127-lakh-crore-for-semicon-mission-20-for-mobile-manufacturing-new-highways/article68407897.ece" rel="noopener nofollow">Semicon India Programme 2.0 Approved with $13.2 Billion Outlay</a></h3>
   <p>The Indian Cabinet approved Semicon India Programme 2.0 on July 15, 2026, allocating INR 1.275 trillion (US$13.23 billion) to bolster the country&#x27;s semiconductor ecosystem. This second phase expands support beyond chip fabrication to include design, advanced packaging, equipment, materials, research, and talent development, with three facilities already in commercial production.</p>
   <div class="why"><b>Why it matters</b> &mdash; This massive government investment creates significant opportunities for engineers and startups in semiconductor design, manufacturing, and related deep tech areas, aiming to reduce import dependence and establish India as a global chip hub.</div>
@@ -426,12 +427,12 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
   <div class="aside">
 <div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Manufacturing" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Manufacturing</a>
+  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Manufacturing" style="--tc:#f78166"><i style="background:#f78166"></i>Manufacturing</a>
   <h4><a href="https://economictimes.indiatimes.com/industry/cons-products/electronics/pli-2-0-india-bets-big-on-making-more-of-the-smartphone-at-home/articleshow/100578909.cms" rel="noopener nofollow">PLI 2.0 for Electronics Manufacturing Announced</a></h4>
   <p class="src"><a class="ch" href="india-tech/">India</a> &middot; economictimes.indiatimes.com &middot; 02 August 2026</p>
 </div>
 <div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Deep%20Tech" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Deep Tech</a>
+  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Deep%20Tech" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Deep Tech</a>
   <h4><a href="https://www.entrepreneur.com/en-in/news-and-trends/spacetech-startup-funding-in-india-hits-871-mn/435678" rel="noopener nofollow">Skyroot Aerospace Achieves India&#x27;s First Private Orbital Launch</a></h4>
   <p class="src"><a class="ch" href="india-tech/">India</a> &middot; Entrepreneur &middot; 02 August 2026</p>
 </div>

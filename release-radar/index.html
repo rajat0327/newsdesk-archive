@@ -164,11 +164,12 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
-.tag-link{text-decoration:none;transition:filter .12s}
-.tag-link:hover{filter:brightness(1.25)}
-.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;
-  font-weight:560;letter-spacing:.01em;padding:2.5px 10px;border-radius:100px;
-  border:1px solid;margin-bottom:8px;white-space:nowrap}
+.tag-link{text-decoration:none;transition:color .12s}
+.tag-link:hover{color:var(--tc)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  font-weight:640;letter-spacing:.06em;text-transform:uppercase;
+  margin:0 16px 7px 0;white-space:nowrap;color:var(--muted)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--tc);flex:none}
 .why{margin-top:11px;padding:9px 13px;border-radius:8px;background:var(--hair);
   font-size:14.5px;color:var(--ink)}
 .why b{font-weight:650;color:var(--accent)}
@@ -332,7 +333,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <p class="stats"><span><b>28</b> stories</span>
      <span><b>2</b> issues</span>
      <span><b>10</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Orchestration" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Orchestration</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Containers" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Containers</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Observability" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Observability</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Networking</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Data</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Runtimes" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Runtimes</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Security" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Security</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=End%20of%20Life" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">End of Life</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Also Shipped</a></p>
+  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Orchestration</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Containers" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Containers</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Observability" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Observability</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Networking</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Data</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Runtimes" style="--tc:#f778ba"><i style="background:#f778ba"></i>Runtimes</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Security" style="--tc:#f78166"><i style="background:#f78166"></i>Security</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=End%20of%20Life" style="--tc:#c69026"><i style="background:#c69026"></i>End of Life</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a></p>
 </div>
 
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
@@ -341,7 +342,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Networking</a>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Networking</a>
     <h3><a href="https://github.com/cilium/cilium/releases/tag/v1.20.0" rel="noopener nofollow">Cilium 1.20.0</a></h3>
     <p>🎉 Release Announcement 🎉: We are excited to announce the Cilium 1.20.0 release! · More than 2,660 new commits have landed in this release, supported by a community of over 1,100 contributors and more than 24,800 GitHub stars! 🤩…</p>
     <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
@@ -351,7 +352,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
     <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.255.0" rel="noopener nofollow">Pulumi 3.255.0</a></h3>
     <p>[cli] Add an --extension flag to package commands for extension-parameterized packages, reinstalled from Pulumi.yaml on pulumi install · [cli] Project files to disk and surface their paths as environment variables for all output formats when opening an ESC environment #23993…</p>
     <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
@@ -361,7 +362,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>30 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Also Shipped</a>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
     <h3>Also shipped: 3 more releases</h3>
     <p>Data: Redis 8.2.8 · Orchestration: etcd 3.5.33 · Runtimes: Node.js 26.5.1</p>
     <div class="why"><b>Why it matters</b> — Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>
@@ -371,7 +372,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Also Shipped</a>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
     <h3>Also shipped: 8 more releases</h3>
     <p>Data: Redis 8.4.5, Valkey 8.1.9, ClickHouse 26.7.1.1315-stable · Networking: Traefik 2.11.53 · Observability: Grafana 12.4.6, Grafana 12.3.9 · Orchestration: etcd 3.6.14, Kubernetes 1.35.7</p>
     <div class="why"><b>Why it matters</b> — Routine patch and minor releases — no major version bumps, flagged CVEs or support cutoffs among them.</div>
@@ -381,7 +382,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a>
+    <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
     <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.254.0" rel="noopener nofollow">Pulumi 3.254.0</a></h3>
     <p>[cli] Add pulumi logs share command for sharing logs with Pulumi #22546 · [cli] Add pulumi stack migrate to migrate a stack from another backend to the currently logged-in backend, including re-encrypting config secrets and stack state under the target secrets provider #22902…</p>
     <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>

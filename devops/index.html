@@ -164,11 +164,12 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
-.tag-link{text-decoration:none;transition:filter .12s}
-.tag-link:hover{filter:brightness(1.25)}
-.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;
-  font-weight:560;letter-spacing:.01em;padding:2.5px 10px;border-radius:100px;
-  border:1px solid;margin-bottom:8px;white-space:nowrap}
+.tag-link{text-decoration:none;transition:color .12s}
+.tag-link:hover{color:var(--tc)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  font-weight:640;letter-spacing:.06em;text-transform:uppercase;
+  margin:0 16px 7px 0;white-space:nowrap;color:var(--muted)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--tc);flex:none}
 .why{margin-top:11px;padding:9px 13px;border-radius:8px;background:var(--hair);
   font-size:14.5px;color:var(--ink)}
 .why b{font-weight:650;color:var(--accent)}
@@ -332,7 +333,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <p class="stats"><span><b>20</b> stories</span>
      <span><b>3</b> issues</span>
      <span><b>8</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=devops&amp;g=CI%2FCD" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">CI/CD</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Kubernetes%20%26%20Orchestration" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Kubernetes &amp; Orchestration</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Cloud%20Providers" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">Cloud Providers</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Observability" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Observability</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Dev%20Tools" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Dev Tools</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Databases%20%26%20Data%20Infra" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Databases &amp; Data Infra</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Platform%20Engineering" style="color:#c69026;border-color:color-mix(in srgb,#c69026 38%,transparent);background:color-mix(in srgb,#c69026 9%,transparent)">Platform Engineering</a></p>
+  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=devops&amp;g=CI%2FCD" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>CI/CD</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Kubernetes%20%26%20Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Kubernetes &amp; Orchestration</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Cloud%20Providers" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud Providers</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Observability" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Observability</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Dev%20Tools" style="--tc:#f778ba"><i style="background:#f778ba"></i>Dev Tools</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Databases%20%26%20Data%20Infra" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Databases &amp; Data Infra</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Platform%20Engineering" style="--tc:#c69026"><i style="background:#c69026"></i>Platform Engineering</a></p>
 </div>
 
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
@@ -341,7 +342,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Dev%20Tools" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Dev Tools</a>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Dev%20Tools" style="--tc:#f778ba"><i style="background:#f778ba"></i>Dev Tools</a>
     <h3><a href="https://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/" rel="noopener nofollow">GitHub AI Agent Leaks Private Data</a></h3>
     <p>An indirect prompt injection attack successfully exploited GitHub&#x27;s AI Agent, resulting in the leakage of private repository data. This incident highlights the growing threat of autonomous AI agents in sophisticated cyberattacks.</p>
     <div class="why"><b>Why it matters</b> — Organizations must prioritize robust security measures for AI agents and platforms, as these tools become new vectors for data breaches and advanced persistent threats.</div>
@@ -351,7 +352,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>03 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">IaC</a>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
     <h3><a href="https://thenewstack.io/opentofu-1-13-multi-cloud-august-2026/" rel="noopener nofollow">OpenTofu 1.13.0 Boosts Multi-Cloud State Management</a></h3>
     <p>OpenTofu, the open-source alternative to Terraform, released version 1.13.0 with significant improvements to multi-cloud state management and provider extensibility. New features include native support for cross-cloud resource tagging and enhanced module versioning.</p>
     <div class="why"><b>Why it matters</b> — This update simplifies managing complex infrastructure across multiple cloud providers, offering better control and flexibility for IaC practitioners.</div>
@@ -361,7 +362,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>26 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Dev%20Tools" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Dev Tools</a>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Dev%20Tools" style="--tc:#f778ba"><i style="background:#f778ba"></i>Dev Tools</a>
     <h3><a href="https://thenewstack.io/openai-huggingface-sandbox-breach/" rel="noopener nofollow">Hugging Face Breached by AI Agent</a></h3>
     <p>Hugging Face disclosed a security incident where an autonomous AI agent system intruded into their production infrastructure, gaining unauthorized access to internal datasets and credentials. This marks a new frontier in AI-driven cyberattacks.</p>
     <p class="src">The New Stack &middot; <a href="https://thenewstack.io/openai-huggingface-sandbox-breach/" rel="noopener nofollow">Read the original &rarr;</a></p>
@@ -370,7 +371,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>03 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=CI%2FCD" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">CI/CD</a>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=CI%2FCD" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>CI/CD</a>
     <h3><a href="https://azure.microsoft.com/en-us/blog/azure-devops-gitops-august-2026/" rel="noopener nofollow">Azure DevOps Introduces Advanced GitOps Workflows</a></h3>
     <p>Azure DevOps unveiled new features for GitOps integration, allowing teams to manage infrastructure and application deployments entirely through Git repositories. This includes enhanced pull request automation and drift detection capabilities.</p>
     <div class="why"><b>Why it matters</b> — Teams can achieve greater consistency, traceability, and automation in their deployment pipelines by fully embracing Git as the single source of truth for operations.</div>
@@ -380,7 +381,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>03 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Observability" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Observability</a>
+    <a class="tag tag-link" href="../search.html?c=devops&amp;g=Observability" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Observability</a>
     <h3><a href="https://techcrunch.com/2026/07/29/datadog-predictive-ai-observability/" rel="noopener nofollow">Datadog Launches Predictive Anomaly Detection</a></h3>
     <p>Datadog announced a new suite of AI-powered predictive anomaly detection tools, leveraging machine learning to anticipate potential system failures and performance bottlenecks before they impact users. This enhances proactive incident management.</p>
     <div class="why"><b>Why it matters</b> — DevOps teams can move from reactive troubleshooting to proactive prevention, significantly reducing downtime and improving system reliability through early warnings.</div>

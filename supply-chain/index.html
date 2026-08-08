@@ -164,11 +164,12 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
-.tag-link{text-decoration:none;transition:filter .12s}
-.tag-link:hover{filter:brightness(1.25)}
-.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;
-  font-weight:560;letter-spacing:.01em;padding:2.5px 10px;border-radius:100px;
-  border:1px solid;margin-bottom:8px;white-space:nowrap}
+.tag-link{text-decoration:none;transition:color .12s}
+.tag-link:hover{color:var(--tc)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  font-weight:640;letter-spacing:.06em;text-transform:uppercase;
+  margin:0 16px 7px 0;white-space:nowrap;color:var(--muted)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--tc);flex:none}
 .why{margin-top:11px;padding:9px 13px;border-radius:8px;background:var(--hair);
   font-size:14.5px;color:var(--ink)}
 .why b{font-weight:650;color:var(--accent)}
@@ -332,7 +333,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <p class="stats"><span><b>22</b> stories</span>
      <span><b>1</b> issues</span>
      <span><b>9</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">AI &amp; Automation</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Exploited CVEs</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=SAP%20Releases" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">SAP Releases</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Migration%20%26%20EOL" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">Migration &amp; EOL</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Warehousing%20%26%20EWM" style="color:#3fb950;border-color:color-mix(in srgb,#3fb950 38%,transparent);background:color-mix(in srgb,#3fb950 9%,transparent)">Warehousing &amp; EWM</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Supply%20Chain" style="color:#39d3d3;border-color:color-mix(in srgb,#39d3d3 38%,transparent);background:color-mix(in srgb,#39d3d3 9%,transparent)">Supply Chain</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Implementation</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Market%20%26%20Vendors" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Market &amp; Vendors</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Reading" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Reading</a></p>
+  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=SAP%20Releases" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>SAP Releases</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Migration%20%26%20EOL" style="--tc:#e3b341"><i style="background:#e3b341"></i>Migration &amp; EOL</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Warehousing%20%26%20EWM" style="--tc:#3fb950"><i style="background:#3fb950"></i>Warehousing &amp; EWM</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Supply%20Chain" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Supply Chain</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Implementation" style="--tc:#f778ba"><i style="background:#f778ba"></i>Implementation</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Market%20%26%20Vendors" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Market &amp; Vendors</a> <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Reading" style="--tc:#8b949e"><i style="background:#8b949e"></i>Reading</a></p>
 </div>
 
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
@@ -341,7 +342,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>08 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="color:#f78166;border-color:color-mix(in srgb,#f78166 38%,transparent);background:color-mix(in srgb,#f78166 9%,transparent)">Exploited CVEs</a>
+    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
     <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">CVE-2026-46817: Oracle E-Business Suite</a></h3>
     <p>Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.</p>
     <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 18 Jul 2026 — already passed.</div>
@@ -351,7 +352,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>08 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Migration%20%26%20EOL" style="color:#e3b341;border-color:color-mix(in srgb,#e3b341 38%,transparent);background:color-mix(in srgb,#e3b341 9%,transparent)">Migration &amp; EOL</a>
+    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=Migration%20%26%20EOL" style="--tc:#e3b341"><i style="background:#e3b341"></i>Migration &amp; EOL</a>
     <h3><a href="https://www.sapinsider.org/2026/07/16/sap-data-migration-and-the-2027-deadline-what-every-business-needs-to-know-before-its-too-late/" rel="noopener nofollow">Data Quality Critical for S/4HANA Migration</a></h3>
     <p>SAPinsider warns that the 2027 end of mainstream maintenance for SAP ECC 6.0 makes S/4HANA migration urgent, with poor data quality being a major risk that compounds downstream challenges for finance, operations, and supply chain teams.</p>
     <div class="why"><b>Why it matters</b> — Organizations must prioritize thorough data cleansing and validation before S/4HANA migration to avoid costly failures, delays, and reporting inaccuracies post-cutover.</div>
@@ -361,7 +362,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>08 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">AI &amp; Automation</a>
+    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
     <h3><a href="https://erpnews.com/" rel="noopener nofollow">AI-Driven Attacks Target ERP</a></h3>
     <p>An Onapsis study reveals that AI-driven attacks are compromising ERP systems faster than security teams can respond. This highlights a critical and growing concern for enterprise security as new AI capabilities are exploited for malicious purposes.</p>
     <div class="why"><b>Why it matters</b> — ERP security teams must rapidly adapt to AI-driven attack vectors, as traditional response times are insufficient against machine-speed threats.</div>
@@ -371,7 +372,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>08 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">AI &amp; Automation</a>
+    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
     <h3><a href="https://www.techradar.com/pro/agentic-ai-has-a-price-its-called-erp-migration" rel="noopener nofollow">Agentic AI Requires ERP Migration Investment</a></h3>
     <p>TechRadar reports that agentic AI in enterprise software necessitates significant ERP migration investments, cautioning organizations against allowing vendors to dictate the timing and budget for this capital decision.</p>
     <div class="why"><b>Why it matters</b> — Boards must assert control over the timing and budget of agentic AI-driven ERP migrations, recognizing it as a capital decision with long-term vendor dependency implications.</div>
@@ -381,7 +382,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>08 August 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">AI &amp; Automation</a>
+    <a class="tag tag-link" href="../search.html?c=supply-chain&amp;g=AI%20%26%20Automation" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>AI &amp; Automation</a>
     <h3><a href="https://erp.today/dynamics-365-erp-mcp-server-agentic-supply-chain/" rel="noopener nofollow">Microsoft Dynamics 365 ERP MCP Server Lets Agents Move from Supply Chain Insight to Action</a></h3>
     <p>Examines Microsoft&#x27;s integration of the Model Context Protocol (MCP) Server into Dynamics 365 Supply Chain Management. The architecture provides a governed connection layer that allows AI agents to perform execution tasks directly across ERP supply chain workflows rather than merely presenting read-only recommendations.</p>
     <div class="why"><b>Why it matters</b> — Using a standardized protocol layer like MCP to mediate agent actions provides a centralized governance boundary for autonomous enterprise operations.</div>

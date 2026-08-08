@@ -165,11 +165,12 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a{color:var(--ink);text-decoration:none}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
-.tag-link{text-decoration:none;transition:filter .12s}
-.tag-link:hover{filter:brightness(1.25)}
-.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;
-  font-weight:560;letter-spacing:.01em;padding:2.5px 10px;border-radius:100px;
-  border:1px solid;margin-bottom:8px;white-space:nowrap}
+.tag-link{text-decoration:none;transition:color .12s}
+.tag-link:hover{color:var(--tc)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  font-weight:640;letter-spacing:.06em;text-transform:uppercase;
+  margin:0 16px 7px 0;white-space:nowrap;color:var(--muted)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--tc);flex:none}
 .why{margin-top:11px;padding:9px 13px;border-radius:8px;background:var(--hair);
   font-size:14.5px;color:var(--ink)}
 .why b{font-weight:650;color:var(--accent)}
@@ -339,7 +340,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>29 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a>
     <h3><a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow">Kimi K3: Open Frontier Intelligence</a></h3>
     <p>This paper introduces Kimi K3, a massive 2.8T parameter Mixture-of-Experts model with 104 billion activated parameters, native vision capabilities, and a 1-million-token context window. Its architecture incorporates Kimi Delta Attention and Attention Residuals to enhance information flow across sequence length and model depth, alongside Stable LatentMoE for efficient expert activation.</p>
     <div class="why"><b>Why it matters</b> — It provides insight into the architectural innovations and scaling strategies behind a new frontier-level multimodal LLM, detailing specific attention mechanisms and MoE techniques.</div>
@@ -349,7 +350,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>29 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="color:#58a6ff;border-color:color-mix(in srgb,#58a6ff 38%,transparent);background:color-mix(in srgb,#58a6ff 9%,transparent)">Agents &amp; Tools</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a>
     <h3><a href="https://arxiv.org/abs/2607.22798" rel="noopener nofollow">StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents</a></h3>
     <p>This work proposes StateAct, an approach for computer-use agents that prioritizes underlying program state over pixel-based screenshots for perception. It argues that screenshots are a lossy rendering, while program state (files, backends, DOM) offers direct, lossless access to task data, enabling more robust inspection and modification.</p>
     <div class="why"><b>Why it matters</b> — It presents a fundamental design decision for improving computer-use agents by shifting perception from visual rendering to direct program state interaction, offering a more robust and less lossy approach.</div>
@@ -359,7 +360,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>29 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="color:#f778ba;border-color:color-mix(in srgb,#f778ba 38%,transparent);background:color-mix(in srgb,#f778ba 9%,transparent)">Multimodal</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="--tc:#f778ba"><i style="background:#f778ba"></i>Multimodal</a>
     <h3><a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow">SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</a></h3>
     <p>SANA-Video 2.0 is introduced as a hybrid video diffusion transformer, scaled to 5B and 14B parameters, designed for high-quality 720p video generation on a single GPU. It achieves quality comparable to full-softmax video DiTs while maintaining the favorable long-sequence scaling of linear attention by employing Hybrid Linear-Softmax Attention and Attention Residuals.</p>
     <div class="why"><b>Why it matters</b> — This paper details architectural innovations, specifically hybrid attention and attention residuals, that enable efficient and high-quality video generation, addressing a key scaling challenge in multimodal models.</div>
@@ -369,7 +370,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>29 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="color:#d2a8ff;border-color:color-mix(in srgb,#d2a8ff 38%,transparent);background:color-mix(in srgb,#d2a8ff 9%,transparent)">LLMs &amp; Reasoning</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a>
     <h3><a href="https://arxiv.org/abs/2607.22529" rel="noopener nofollow">Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills</a></h3>
     <p>This research explores interaction-driven self-evolution for LLM training, moving beyond manual design and annotation. It introduces Skill Self-Play to address the dilemma between task diversity and verification reliability, allowing LLMs to co-evolve skills and broaden their task space while maintaining reliable verification.</p>
     <div class="why"><b>Why it matters</b> — It presents an advanced training paradigm for LLMs that leverages self-evolution and co-evolving skills to overcome fundamental limitations in scaling LLM capabilities and task diversity.</div>
@@ -379,7 +380,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>29 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="color:#79c0ff;border-color:color-mix(in srgb,#79c0ff 38%,transparent);background:color-mix(in srgb,#79c0ff 9%,transparent)">Systems &amp; Inference</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a>
     <h3><a href="https://arxiv.org/abs/2607.24027" rel="noopener nofollow">Sol-Attn: Accelerating Video Generation Inference via On-the-Fly Attention Sparsification</a></h3>
     <p>This paper addresses the dominant attention bottleneck in diffusion transformers for high-fidelity video generation by proposing Sol-Attn, an on-the-fly attention sparsification method. It aims to overcome the limitations of existing training-free dynamic sparse attention methods, which struggle with efficient and accurate sparsification due to rigid or costly routing.</p>
     <div class="why"><b>Why it matters</b> — It offers a crucial systems and inference optimization technique for video generation models, tackling the computational cost of attention through dynamic sparsification.</div>
@@ -389,7 +390,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="item">
   <div class="rail"><span>29 July 2026</span></div>
   <div>
-    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Research" style="color:#8b949e;border-color:color-mix(in srgb,#8b949e 38%,transparent);background:color-mix(in srgb,#8b949e 9%,transparent)">Research</a>
+    <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Research" style="--tc:#8b949e"><i style="background:#8b949e"></i>Research</a>
     <h3><a href="https://arxiv.org/abs/2607.24744" rel="noopener nofollow">Data Pyramid for Embodied Manipulation</a></h3>
     <p>This work proposes organizing the embodied data ecosystem as a &#x27;pyramid&#x27; of five complementary sources to address the unique data requirements of embodied agents. Unlike multimodal foundation models that leverage internet-scale data, embodied agents need data coupling observations with physical states and actions, which this pyramid structure aims to provide.</p>
     <div class="why"><b>Why it matters</b> — It offers a structured approach to understanding and leveraging diverse data sources for embodied AI, which is critical for overcoming the data scarcity bottleneck in learning physical interactions.</div>
