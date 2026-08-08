@@ -52,8 +52,8 @@ header.top .wrap{display:flex;gap:18px;align-items:center;padding-top:13px;paddi
 nav.top-nav{margin-left:auto;display:flex;gap:6px;align-items:center;font-size:14px}
 nav.top-nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:7px}
 nav.top-nav a:hover{color:var(--ink);background:var(--hair)}
-nav.top-nav a.join{color:#fff;background:var(--accent);font-weight:600}
-nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
+nav.top-nav a.sub{color:#fff;background:var(--accent);font-weight:600}
+nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
 
 /* channel bar */
 .chanbar{border-bottom:1px solid var(--line);background:var(--bg);position:relative;z-index:15}
@@ -96,12 +96,9 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
   border-left-color:var(--cc)}
 .chanbar .menu a span{display:block;font-size:12.5px;font-weight:400;
   color:var(--muted);margin-top:1px;letter-spacing:0;line-height:1.35}
-.narrow{display:none}
 @media(max-width:680px){
-  /* Phone header: the button was wrapping to two lines and the nav to two
-     rows, which pushed the first story off the screen entirely. */
-  .wide{display:none}
-  .narrow{display:inline}
+  /* Phone header: the nav was wrapping to two rows, which pushed the first
+     story off the screen entirely. */
   header.top .wrap{gap:10px;padding-top:11px;padding-bottom:11px}
   nav.top-nav{gap:2px;font-size:13.5px}
   nav.top-nav a{padding:6px 8px}
@@ -122,6 +119,8 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
   margin:0 0 12px;font-weight:750}
 .hero .lede{font-size:17px;color:var(--soft);margin:0;max-width:62ch}
 .hero .lede b{color:var(--ink);font-weight:650}
+/* The edition strapline: metadata, so it should not compete with the lede */
+.hero .meta{font-size:14px;color:var(--muted)}
 .stats{display:flex;flex-wrap:wrap;gap:18px;margin:14px 0 0;font-size:14px;
   color:var(--muted);align-items:baseline}
 .stats span{white-space:nowrap}
@@ -323,9 +322,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <nav class="top-nav">
     <a href="../search.html">Search</a>
     <a href="../about.html">About</a>
-    <a href="../feed.xml">RSS</a>
-    <a class="join" href="https://discord.gg/ADeHvdcDe9" rel="noopener">
-      <span class="wide">Join Discord</span><span class="narrow">Discord</span></a>
+    <a class="sub" href="../feed.xml">RSS</a>
   </nav>
 </div></header>
 <div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#3d7dd8">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3d7dd8">Mobile<span>iOS, Android &amp; Cross-Platform</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#3d7dd8">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#3d7dd8">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#3d7dd8">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#3d7dd8">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#3d7dd8">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group" data-here><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#3d7dd8" aria-current="page">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
@@ -336,8 +333,8 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
      text-transform:uppercase">Craft &amp; Leadership</a></p>
   <h1>08 August 2026</h1>
   <p class="lede">48 new posts across 8 practice and leadership sources — 5 worth your time.</p>
-  <p class="meta" style="margin-top:12px">This edition went out to Discord on
-     08 August 2026 as a slide deck.</p>
+  <p class="meta" style="margin-top:12px">One week of Craft &amp; Leadership,
+     9 stories, as published.</p>
 </div>
 <div class="feed">
 <div class="item">
@@ -410,7 +407,6 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <h3>9 stories, every Saturday</h3>
   <p>Published here every week. Follow by RSS to get it as it lands.</p>
   <div class="row">
-    
     <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
     <a class="btn" href="./">All issues</a>
   </div>
@@ -423,7 +419,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.
   &middot; <a href="../about.html">How it works</a>
-  &middot; <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Discord</a>
+  &middot; <a href="../feed.xml">RSS</a>
 </div></footer>
 <script>
 (function(){
