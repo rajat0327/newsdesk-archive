@@ -75,7 +75,8 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .chanbar a.solo[aria-current]::after{background:var(--cc)}
 .chanbar a.solo.all{margin-left:auto;color:var(--muted);font-weight:500}
 
-.chanbar details{position:relative}
+.chanbar details{position:static}
+@media(min-width:641px){.chanbar details{position:relative}}
 .chanbar .menu{position:absolute;top:100%;left:6px;min-width:250px;
   background:var(--panel);border:1px solid var(--line);border-radius:10px;
   box-shadow:var(--shadow);padding:6px;display:grid;gap:1px;z-index:30}
@@ -88,10 +89,11 @@ nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 .chanbar .menu a span{display:block;font-size:12.5px;font-weight:400;
   color:var(--muted);margin-top:1px;letter-spacing:0}
 @media(max-width:640px){
-  .chanbar .menu{position:static;box-shadow:none;border:0;border-radius:0;
-    padding:2px 0 8px 10px;min-width:0}
-  .chanbar details{width:100%}
-  .chanbar a.solo.all{margin-left:0}
+  /* Keep the summaries on one or two compact lines; a full-width stack
+     cost 188px of a phone screen. The menu overlays the page instead. */
+  .chanbar summary,.chanbar a.solo{padding:10px 11px;font-size:14px}
+  .chanbar .menu{position:absolute;left:8px;right:8px;min-width:0}
+  .chanbar a.solo.all{margin-left:auto}
 }
 
 /* hero *//* hero */
