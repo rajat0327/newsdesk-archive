@@ -51,20 +51,50 @@ nav.top-nav a.join{color:#fff;background:var(--accent);font-weight:600}
 nav.top-nav a.join:hover{color:#fff;filter:brightness(1.08)}
 
 /* channel bar */
-.chanbar{border-bottom:1px solid var(--line);background:var(--bg)}
-.chanbar .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;
-  -webkit-overflow-scrolling:touch}
-.chanbar .wrap::-webkit-scrollbar{display:none}
-.chanbar a{position:relative;padding:11px 13px;font-size:14.5px;font-weight:600;
-  color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:-.01em}
-.chanbar a:hover{color:var(--ink)}
-.chanbar a::after{content:"";position:absolute;left:13px;right:13px;bottom:-1px;
-  height:2px;background:transparent;border-radius:2px 2px 0 0}
-.chanbar a:hover::after{background:color-mix(in srgb,var(--cc) 40%,transparent)}
-.chanbar a[aria-current]{color:var(--cc)}
-.chanbar a[aria-current]::after{background:var(--cc)}
+.chanbar{border-bottom:1px solid var(--line);background:var(--bg);position:relative;z-index:15}
+/* No overflow here: it clips the absolutely-positioned menus. Grouping
+   means four items rather than nine, so scrolling is not needed — narrow
+   screens wrap instead. */
+.chanbar .wrap{display:flex;gap:2px;align-items:stretch;flex-wrap:wrap}
 
-/* hero */
+.chanbar summary,.chanbar a.solo{display:flex;align-items:center;gap:6px;
+  padding:11px 13px;font-size:14.5px;font-weight:600;color:var(--muted);
+  text-decoration:none;white-space:nowrap;letter-spacing:-.01em;cursor:pointer;
+  position:relative;list-style:none}
+.chanbar summary::-webkit-details-marker{display:none}
+.chanbar summary:hover,.chanbar a.solo:hover{color:var(--ink)}
+.chanbar summary svg{width:9px;height:6px;stroke:currentColor;fill:none;
+  stroke-width:1.6;transition:transform .15s}
+.chanbar details[open] summary svg{transform:rotate(180deg)}
+.chanbar summary::after,.chanbar a.solo::after{content:"";position:absolute;
+  left:13px;right:13px;bottom:-1px;height:2px;background:transparent;
+  border-radius:2px 2px 0 0}
+.chanbar details[data-here] summary{color:var(--ink)}
+.chanbar details[data-here] summary::after{background:var(--accent)}
+.chanbar a.solo[aria-current]{color:var(--cc)}
+.chanbar a.solo[aria-current]::after{background:var(--cc)}
+.chanbar a.solo.all{margin-left:auto;color:var(--muted);font-weight:500}
+
+.chanbar details{position:relative}
+.chanbar .menu{position:absolute;top:100%;left:6px;min-width:250px;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  box-shadow:var(--shadow);padding:6px;display:grid;gap:1px;z-index:30}
+.chanbar .menu a{display:block;padding:9px 11px;border-radius:7px;
+  text-decoration:none;color:var(--ink);font-size:14.5px;font-weight:620;
+  border-left:2px solid transparent}
+.chanbar .menu a:hover{background:var(--hair);border-left-color:var(--cc)}
+.chanbar .menu a[aria-current]{color:var(--cc);background:var(--hair);
+  border-left-color:var(--cc)}
+.chanbar .menu a span{display:block;font-size:12.5px;font-weight:400;
+  color:var(--muted);margin-top:1px;letter-spacing:0}
+@media(max-width:640px){
+  .chanbar .menu{position:static;box-shadow:none;border:0;border-radius:0;
+    padding:2px 0 8px 10px;min-width:0}
+  .chanbar details{width:100%}
+  .chanbar a.solo.all{margin-left:0}
+}
+
+/* hero *//* hero */
 .hero{padding:48px 0 22px}
 .hero h1{font-size:clamp(34px,5.4vw,52px);line-height:1.04;letter-spacing:-.035em;
   margin:0 0 14px;font-weight:760}
@@ -268,7 +298,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     <a class="join" href="https://discord.gg/ADeHvdcDe9" rel="noopener">Join Discord</a>
   </nav>
 </div></header>
-<div class="chanbar"><div class="wrap"><a href="../india-tech/" style="--cc:#2f9e6f">India</a><a href="../devops/" style="--cc:#3d7dd8">DevOps</a><a href="../security-news/" style="--cc:#d9552f" aria-current="page">Security</a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers</a><a href="../supply-chain/" style="--cc:#3d7dd8">Supply Chain</a><a href="../hr-tech/" style="--cc:#3d7dd8">HR Tech</a><a href="../release-radar/" style="--cc:#b8860b">Releases</a><a href="../ai/" style="--cc:#0f9dab">AI</a><a href="../eng-blogs/" style="--cc:#c2456f">Reading</a></div></div>
+<div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f" aria-current="page">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a></div></details><details class="group"><summary>AI &amp; Research<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#3d7dd8">Supply Chain<span>SAP, warehousing and enterprise AI</span></a><a href="../hr-tech/" style="--cc:#3d7dd8">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
   <h1>Security Weekly Digest</h1>
@@ -351,6 +381,23 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   &middot; <a href="https://discord.gg/ADeHvdcDe9" rel="noopener">Discord</a>
 </div></footer>
 <script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
 document.addEventListener('keydown',function(e){
   if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
     e.preventDefault();location.href='../search.html';}
