@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Databases &amp; Data — 08 August 2026</title>
-<meta name="description" content="64 new posts across 9 database and data engineering sources — 7 worth your time.">
+<meta name="description" content="57 new posts across 9 database and data engineering sources — 7 worth your time.">
 <meta property="og:title" content="Databases &amp; Data — 08 August 2026">
-<meta property="og:description" content="64 new posts across 9 database and data engineering sources — 7 worth your time.">
+<meta property="og:description" content="57 new posts across 9 database and data engineering sources — 7 worth your time.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#3d7dd8">
 <link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/data/2026-08-08.html">
@@ -335,11 +335,88 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
      color:#3d7dd8;font-weight:650;font-size:13px;letter-spacing:.06em;
      text-transform:uppercase">Databases &amp; Data</a></p>
   <h1>08 August 2026</h1>
-  <p class="lede">64 new posts across 9 database and data engineering sources — 7 worth your time.</p>
+  <p class="lede">57 new posts across 9 database and data engineering sources — 7 worth your time.</p>
   <p class="meta" style="margin-top:12px">This edition went out to Discord on
      08 August 2026 as a slide deck.</p>
 </div>
 <div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h3><a href="https://www.dataengineeringweekly.com/p/on-benchmarking" rel="noopener nofollow">On Benchmarking</a></h3>
+  <p>This post explores the methodology of database and system benchmarking, arguing that a raw performance number is meaningless without understanding why a system stops scaling and whether the test matches production workloads. It warns against choosing architectures based solely on isolated high-throughput metrics.</p>
+  <div class="why"><b>Why it matters</b> — A benchmark is only valid if you can identify its scaling limits and align its parameters with your actual production workload characteristics.</div>
+  <p class="src">Data Engineering Weekly &middot; 08 August 2026 &middot; <a href="https://www.dataengineeringweekly.com/p/on-benchmarking" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h3><a href="https://postgr.es/p/9ro" rel="noopener nofollow">Avi Vallarapu: Tuning PostgreSQL HOT Updates - A HammerDB Benchmark</a></h3>
+  <p>This post details how to leverage Heap-Only Tuple (HOT) updates in PostgreSQL to bypass the overhead of standard vacuuming. Using a HammerDB TPROC-C benchmark, it demonstrates how tuning the table fillfactor parameter reduces bloat growth and eliminates vacuum bottlenecks.</p>
+  <div class="why"><b>Why it matters</b> — Tuning the table fillfactor parameter triggers Heap-Only Tuple (HOT) updates, which bypasses index updates and eliminates vacuum overhead during heavy write workloads.</div>
+  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9ro" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
+  <h3><a href="https://clickhouse.com/blog/mercado-libre-observability-on-clickhouse-cloud" rel="noopener nofollow">How Mercado Libre rebuilt its observability platform on ClickHouse Cloud with 50x faster trace queries</a></h3>
+  <p>This case study details how Mercado Libre migrated its observability platform to ClickHouse Cloud to handle an ingestion rate of 400 million spans per minute. The migration achieved up to 89% data compression and reduced trace query latencies from over five minutes to just four seconds.</p>
+  <div class="why"><b>Why it matters</b> — Migrating high-throughput observability data to a columnar store achieved an 89% compression ratio and reduced trace query latency from five minutes to four seconds at a scale of 400 million spans per minute.</div>
+  <p class="src">ClickHouse &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/blog/mercado-libre-observability-on-clickhouse-cloud" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h3><a href="https://postgr.es/p/9ra" rel="noopener nofollow">Umair Shahid: PostgreSQL Lockup vs Stale Connection: How to Tell Them Apart</a></h3>
+  <p>This post provides a guide to diagnosing database connection failures, specifically distinguishing between a genuine PostgreSQL server lockup and a stale connection that silently died in the application&#x27;s connection pool. It highlights how identical-looking application errors can stem from entirely different network or pool failures.</p>
+  <div class="why"><b>Why it matters</b> — Distinguishing between database-level lockups and silent connection pool dropouts prevents misdiagnosing network-level failures as database performance issues.</div>
+  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9ra" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h3><a href="https://postgr.es/p/9r6" rel="noopener nofollow">Alexey Evlampiev: Your Transaction Boundary Belongs in the Program, Not the Filename</a></h3>
+  <p>This article examines how to structure phased schema migrations in PostgreSQL, which often require a mix of transactional and non-transactional operations. It argues that migration frameworks should embed transaction boundaries directly within the SQL program itself rather than relying on external file-naming metadata.</p>
+  <div class="why"><b>Why it matters</b> — Embedding transaction boundaries directly within SQL migration scripts, rather than relying on framework metadata, ensures safer execution of complex, multi-phase schema changes.</div>
+  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9r6" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
+  <h3><a href="https://planetscale.com/blog/massively-parallel-postgres-backups" rel="noopener nofollow">Massively parallel Postgres backups</a></h3>
+  <p>This post discusses the architectural challenges of executing consistent, encrypted database backups every 12 hours on highly active production databases. It focuses on achieving zero impact on production queries while handling massive data volumes through parallel processing.</p>
+  <div class="why"><b>Why it matters</b> — Designing a backup system around massive parallelism allows capturing consistent, encrypted snapshots of active databases with zero impact on production query performance.</div>
+  <p class="src">PlanetScale &middot; 08 August 2026 &middot; <a href="https://planetscale.com/blog/massively-parallel-postgres-backups" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a>
+  <h3><a href="https://redis.io/blog/multi-agent-observability-why-one-trace-is-not-enough/" rel="noopener nofollow">Multi-agent observability: why one trace isn&#x27;t enough</a></h3>
+  <p>This post addresses the unique challenges of monitoring multi-agent AI systems, where interactions span multiple execution loops, shared memory states, and external tool calls. It explains why traditional single-trace observability patterns fail to capture the asynchronous, distributed nature of multi-agent workflows.</p>
+  <div class="why"><b>Why it matters</b> — Multi-agent systems require distributed, multi-loop tracing rather than single-trace patterns to capture interactions across shared memory and asynchronous tool calls.</div>
+  <p class="src">Redis &middot; 08 August 2026 &middot; <a href="https://redis.io/blog/multi-agent-observability-why-one-trace-is-not-enough/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h3><a href="https://clickhouse.com/resources/engineering/alloydb-alternatives" rel="noopener nofollow">Postgres Managed by ClickHouse Benchmarks</a></h3>
+  <p>In PostgresBench at 500 GB, Postgres managed by ClickHouse achieved 26,328 transactions per second on a 16 vCPU, 64 GB RAM instance. This result was 2.4 to 5.2 times the throughput of Crunchy Bridge, Aurora, Neon, and RDS using the same benchmark parameters for transactional workloads.</p>
+  <div class="why"><b>Why it matters</b> — Teams can achieve significantly higher transactional throughput with Postgres managed by ClickHouse, potentially reducing infrastructure costs and improving application responsiveness for write-heavy workloads.</div>
+  <p class="src">clickhouse.com &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/resources/engineering/alloydb-alternatives" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h3><a href="https://www.google.com/search?q=Microsoft%20Fabric%20Lakehouse%20vs.%20Warehouse%20Architectures%20Google%20Cloud%20Blog" rel="noopener nofollow">Microsoft Fabric Lakehouse vs. Warehouse Architectures</a></h3>
+  <p>Microsoft Fabric offers distinct Lakehouse and Data Warehouse architectures, each optimized for different data workloads. Lakehouses are better suited for flexible data engineering, raw/semi-structured data, and data science, while Data Warehouses are ideal for structured reporting and SQL-based analytics. A hybrid approach utilizing OneLake as a unified storage foundation is often recommended for comprehensive data strategies.</p>
+  <div class="why"><b>Why it matters</b> — Data teams must strategically choose between Lakehouse for flexible data science or Warehouse for structured BI within Fabric, directly impacting tool selection and data governance.</div>
+  <p class="src">Google Cloud Blog &middot; 08 August 2026 &middot; <a href="https://www.google.com/search?q=Microsoft%20Fabric%20Lakehouse%20vs.%20Warehouse%20Architectures%20Google%20Cloud%20Blog" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h3><a href="https://clickhouse.com/resources/engineering/bigquery-alternatives-2026" rel="noopener nofollow">Cloud Data Warehouse Cost and Latency</a></h3>
+  <p>Organizations are encountering cost and latency issues with serverless data warehouses like BigQuery, particularly due to &#x27;bytes-scanned&#x27; pricing for frequently executed queries. Solutions like ClickHouse offer compute-based pricing and achieve sub-second latency for high-concurrency, real-time analytical workloads, contrasting with the batch-oriented nature of some traditional warehouses.</p>
+  <div class="why"><b>Why it matters</b> — Data teams must evaluate pricing models and architectural fit to manage costs and achieve required latency for real-time dashboards and user-facing analytics.</div>
+  <p class="src">clickhouse.com &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/resources/engineering/bigquery-alternatives-2026" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
+  <h3><a href="https://www.google.com/search?q=ETL%20Pipeline%20Optimization%20Strategies%20Peliqan" rel="noopener nofollow">ETL Pipeline Optimization Strategies</a></h3>
+  <p>Effective ETL pipeline optimization involves technical tuning, such as using explicit JOINs with indexed keys and replacing correlated subqueries in SQL. Architectural decisions like adopting the ELT pattern can deliver 2-5x performance improvements by leveraging the data warehouse&#x27;s MPP capabilities. Operational practices, including auto-scaling compute and separating ETL and analytics clusters, are also crucial.</p>
+  <div class="why"><b>Why it matters</b> — Implementing these strategies can significantly reduce data latency and compute costs, improving data freshness and freeing up data teams from extensive data preparation overhead.</div>
+  <p class="src">Peliqan &middot; 08 August 2026 &middot; <a href="https://www.google.com/search?q=ETL%20Pipeline%20Optimization%20Strategies%20Peliqan" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
   <h3><a href="https://planetscale.com/blog/concurrency-vs-throughput-vitess-mysql" rel="noopener nofollow">Concurrency vs. Throughput: why more parallelism can make databases slower</a></h3>
@@ -418,10 +495,10 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <p class="src">Databricks &middot; 08 August 2026 &middot; <a href="https://www.databricks.com/solutions/data-engineering" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 </div>
-<p class="signoff">Two articles on distinct counts suggest nobody listened the first time.</p>
+<p class="signoff">Another week of trying to benchmark our way out of bad queries.</p>
 
 <div class="cta">
-  <h3>11 stories, every Tuesday</h3>
+  <h3>22 stories, every Tuesday</h3>
   <p>Published here every week. Follow by RSS to get it as it lands.</p>
   <div class="row">
     
