@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Newsdesk — engineering digests, one a day</title>
+<meta name="description" content="Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.">
+<meta property="og:title" content="Newsdesk — engineering digests, one a day">
+<meta property="og:description" content="Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#3d7dd8">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/try-neutral/">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="feed.xml">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#f7f6f3; --panel:#fffefc; --raise:#fff; --ink:#23232a; --soft:#55555f;
+  --muted:#6c6c76; --line:#e3e1db; --hair:#eeece6; --accent:#35699c;
+  /* Monospace is for keys and code only. It was on dates, counts, chips and
+     labels too, which made every page read like terminal output. Numbers use
+     tabular-nums in the sans face instead — same alignment, far less noise. */
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Inter,sans-serif;
+  --shadow:0 1px 2px rgba(20,20,25,.04),0 8px 24px -12px rgba(20,20,25,.12);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#16161b;--panel:#26262e;--raise:#2c2c34;--ink:#e6e4df;
+        --soft:#b3b1ab;--muted:#8a8992;--line:#2e2e36;--hair:#232329;
+        --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6)}
+}
+:root[data-theme="dark"]{--bg:#16161b;--panel:#26262e;--raise:#2c2c34;
+  --ink:#e6e4df;--soft:#b3b1ab;--muted:#8a8992;--line:#2e2e36;--hair:#232329}
+:root[data-theme="light"]{--bg:#f7f6f3;--panel:#fffefc;--raise:#fff;--ink:#23232a;
+  --soft:#55555f;--muted:#6c6c76;--line:#e3e1db;--hair:#eeece6}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.68;-webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+.narrow{max-width:720px}
+a{color:var(--accent);text-underline-offset:2px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;backdrop-filter:saturate(180%) blur(12px);
+  background:color-mix(in srgb,var(--bg) 86%,transparent);
+  border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;gap:18px;align-items:center;padding-top:13px;padding-bottom:13px}
+.brand{font-weight:750;font-size:18px;color:var(--ink);text-decoration:none;
+  letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+nav.top-nav{margin-left:auto;display:flex;gap:6px;align-items:center;font-size:14px}
+nav.top-nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:7px}
+nav.top-nav a:hover{color:var(--ink);background:var(--hair)}
+nav.top-nav a.sub{color:#fff;background:var(--accent);font-weight:600}
+nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
+
+/* channel bar */
+.chanbar{border-bottom:1px solid var(--line);background:var(--bg);position:relative;z-index:15}
+/* No overflow here: it clips the absolutely-positioned menus. Grouping
+   means four items rather than nine, so scrolling is not needed — narrow
+   screens wrap instead. */
+.chanbar .wrap{display:flex;gap:2px;align-items:stretch;flex-wrap:wrap}
+
+.chanbar summary,.chanbar a.solo{display:flex;align-items:center;gap:6px;
+  padding:11px 13px;font-size:14.5px;font-weight:600;color:var(--muted);
+  text-decoration:none;white-space:nowrap;letter-spacing:-.01em;cursor:pointer;
+  position:relative;list-style:none}
+.chanbar summary::-webkit-details-marker{display:none}
+.chanbar summary:hover,.chanbar a.solo:hover{color:var(--ink)}
+.chanbar summary svg{width:9px;height:6px;stroke:currentColor;fill:none;
+  stroke-width:1.6;transition:transform .15s}
+.chanbar details[open] summary svg{transform:rotate(180deg)}
+.chanbar summary::after,.chanbar a.solo::after{content:"";position:absolute;
+  left:13px;right:13px;bottom:-1px;height:2px;background:transparent;
+  border-radius:2px 2px 0 0}
+.chanbar details[data-here] summary{color:var(--ink)}
+.chanbar details[data-here] summary::after{background:var(--accent)}
+.chanbar a.solo[aria-current]{color:var(--cc)}
+.chanbar a.solo[aria-current]::after{background:var(--cc)}
+.chanbar a.solo.all{margin-left:auto;color:var(--muted);font-weight:500}
+
+.chanbar details{position:static}
+@media(min-width:641px){.chanbar details{position:relative}}
+.chanbar .menu{position:absolute;top:100%;left:6px;min-width:250px;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  box-shadow:var(--shadow);padding:6px;display:grid;gap:1px;z-index:30}
+/* Seven channels in one column filled two thirds of the screen. Two
+   columns halve it without dropping the descriptions. */
+.chanbar .menu.wide{grid-template-columns:1fr 1fr;min-width:480px}
+.chanbar .menu a{display:block;padding:9px 11px;border-radius:7px;
+  text-decoration:none;color:var(--ink);font-size:14.5px;font-weight:620;
+  border-left:2px solid transparent}
+.chanbar .menu a:hover{background:var(--hair);border-left-color:var(--cc)}
+.chanbar .menu a[aria-current]{color:var(--cc);background:var(--hair);
+  border-left-color:var(--cc)}
+.chanbar .menu a span{display:block;font-size:12.5px;font-weight:400;
+  color:var(--muted);margin-top:1px;letter-spacing:0;line-height:1.35}
+@media(max-width:680px){
+  /* Phone header: the nav was wrapping to two rows, which pushed the first
+     story off the screen entirely. */
+  header.top .wrap{gap:10px;padding-top:11px;padding-bottom:11px}
+  nav.top-nav{gap:2px;font-size:13.5px}
+  nav.top-nav a{padding:6px 8px}
+  .brand{font-size:17px}
+  .chanbar summary,.chanbar a.solo{padding:9px 9px;font-size:13.5px}
+  /* On a phone the descriptions cost more than they explain */
+  .chanbar .menu,.chanbar .menu.wide{position:absolute;left:8px;right:8px;
+    min-width:0;grid-template-columns:1fr}
+  .chanbar .menu a{padding:8px 10px}
+  .chanbar .menu a span{display:none}
+  .chanbar a.solo.all{display:none}   /* Search in the header already covers it */
+  .stats{gap:6px 14px;font-size:13.5px}
+}
+
+/* hero *//* hero */
+.hero{padding:38px 0 16px}
+.hero h1{font-size:clamp(30px,4.4vw,42px);line-height:1.04;letter-spacing:-.035em;
+  margin:0 0 12px;font-weight:750}
+.hero .lede{font-size:17px;color:var(--soft);margin:0;max-width:62ch}
+.hero .lede b{color:var(--ink);font-weight:650}
+/* The edition strapline: metadata, so it should not compete with the lede */
+.hero .meta{font-size:14px;color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:18px;margin:14px 0 0;font-size:14px;
+  color:var(--muted);align-items:baseline}
+.stats span{white-space:nowrap}
+.stats b{color:var(--ink);font-weight:670;font-size:15.5px;
+  font-variant-numeric:tabular-nums}
+
+/* end-of-life, full form — Release Radar only */
+.countdown{margin:22px 0 0;border:1px solid var(--line);border-radius:11px;
+  background:var(--panel);overflow:hidden}
+.countdown h4{margin:0;padding:11px 16px;font-size:11px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--muted);font-weight:650;
+  border-bottom:1px solid var(--line)}
+.countdown ul{list-style:none;margin:0;padding:7px 0}
+.countdown li{display:flex;align-items:center;gap:14px;padding:7px 16px;
+  font-size:14.5px}
+.countdown .name{font-weight:600;min-width:150px}
+.countdown .bar{flex:1;height:4px;border-radius:3px;background:var(--hair);
+  position:relative;min-width:40px;overflow:hidden}
+.countdown .bar i{position:absolute;inset:0 auto 0 0;border-radius:3px;display:block}
+.countdown .days{font-size:13px;color:var(--muted);white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+@media(max-width:640px){.countdown .name{min-width:0}.countdown .bar{display:none}}
+
+/* section headings *//* section headings */
+.sec{display:flex;align-items:baseline;gap:12px;margin:52px 0 18px}
+.hero+.sec,.hero+.count{margin-top:26px}
+.sec h2{font-size:14px;letter-spacing:.09em;text-transform:uppercase;margin:0;
+  color:var(--muted);font-weight:650}
+.sec .rule{flex:1;height:1px;background:var(--line)}
+.sec a{font-size:14px;text-decoration:none}
+.sec h2{white-space:nowrap}
+.domlinks{font-size:13.5px;color:var(--muted);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.domlinks a{text-decoration:none}
+.domlinks a:hover{text-decoration:underline}
+@media(max-width:640px){.domlinks{display:none}}
+
+/* story feed */
+.feed{display:grid;gap:0}
+.item{padding:22px 0;border-top:1px solid var(--hair);max-width:72ch}
+.item:first-child{border-top:0}
+.item .src .ch{font-weight:600;color:var(--soft);text-decoration:none}
+.item .src .ch:hover{color:var(--accent)}
+.item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
+  font-weight:660}
+.item h3 a{color:var(--ink);text-decoration:none}
+.item h3 a:hover{color:var(--accent)}
+.item p{margin:0;color:var(--soft);font-size:15.5px}
+.tag-link{text-decoration:none;transition:color .12s}
+.tag-link:hover{color:var(--tc)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  font-weight:640;letter-spacing:.06em;text-transform:uppercase;
+  margin:0 16px 7px 0;white-space:nowrap;color:var(--muted)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--tc);flex:none}
+.why{margin-top:11px;padding:9px 13px;border-radius:8px;background:var(--hair);
+  font-size:14.5px;color:var(--ink)}
+.why b{font-weight:650;color:var(--accent)}
+.src{margin-top:9px;font-size:13.5px;color:var(--muted)}
+.src a{text-decoration:none}
+.src a:hover{text-decoration:underline}
+
+/* front-page magazine split */
+.split{display:grid;grid-template-columns:1.55fr 1fr;gap:0 34px;
+  align-items:start}
+.lead{padding-right:2px}
+.lead h3{margin:8px 0 0;font-size:26px;line-height:1.22;letter-spacing:-.022em;
+  font-weight:680}
+.lead h3 a{color:var(--ink);text-decoration:none}
+.lead h3 a:hover{color:var(--accent)}
+.lead p{margin:11px 0 0;color:var(--soft);font-size:16px}
+.lead .why{margin-top:13px}
+.lead .src{margin-top:13px;font-size:13.5px;color:var(--muted)}
+.lead .src a.ch{color:var(--soft);font-weight:600;text-decoration:none}
+.lead .src a.ch:hover{color:var(--accent)}
+.aside{border-left:1px solid var(--line);padding-left:26px;
+  display:grid;gap:0;align-content:start}
+.aside-item{padding:0 0 18px;border-bottom:1px solid var(--hair);margin-bottom:18px}
+.aside-item:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.aside-item h4{margin:7px 0 0;font-size:16px;line-height:1.34;
+  letter-spacing:-.012em;font-weight:640}
+.aside-item h4 a{color:var(--ink);text-decoration:none}
+.aside-item h4 a:hover{color:var(--accent)}
+.aside-item .src{margin-top:7px;font-size:13px;color:var(--muted)}
+.aside-item .src a.ch{color:var(--soft);font-weight:600;text-decoration:none}
+@media(max-width:760px){
+  .split{grid-template-columns:1fr;gap:26px 0}
+  .lead h3{font-size:22px}
+  .aside{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:20px}
+}
+
+/* channel cards */
+/* A directory, not a feature grid: this sits below six domain sections that
+   already showed the stories, so it earns four columns and compact cards
+   rather than the ~850px full screen it used to take. */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.card{position:relative;background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:15px 16px 13px;text-decoration:none;
+  display:flex;flex-direction:column;
+  transition:transform .14s ease,box-shadow .14s ease,border-color .14s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);
+  border-color:color-mix(in srgb,var(--ca) 45%,var(--line))}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;
+  background:var(--ca);border-radius:12px 12px 0 0}
+.card h3{margin:0 0 4px;font-size:16.5px;color:var(--ink);letter-spacing:-.02em;
+  font-weight:680;line-height:1.3}
+.card p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.45}
+/* Pinned to the bottom so a two-line title never leaves the stats ragged
+   against its neighbours in the same row */
+.card .n{margin-top:auto;padding-top:10px;font-size:12.5px;color:var(--muted);
+  font-variant-numeric:tabular-nums;
+  /* Never wrap: a second line here makes the whole grid row taller */
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Not the accent: the card already carries it on the top bar, and colouring
+   the day too put twenty saturated labels on one screen. */
+.card .n .d{color:var(--muted);text-transform:uppercase;letter-spacing:.07em;
+  font-weight:650;font-size:11.5px;margin-right:5px}
+
+.morelink{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  margin:26px 0 0;padding:15px 18px;border:1px solid var(--line);
+  border-radius:10px;background:var(--panel)}
+.morelink a{font-weight:640;text-decoration:none;font-size:15.5px}
+.morelink a:hover{text-decoration:underline}
+.morelink span{margin-left:auto;font-size:13.5px;color:var(--muted);
+  font-variant-numeric:tabular-nums}
+
+/* weekly editions */
+.editions-note{margin:-6px 0 14px;color:var(--muted);font-size:14.5px;max-width:60ch}
+.issues{list-style:none;padding:0;margin:0}
+.issues li{border-top:1px solid var(--hair)}
+.issues a.edition{display:grid;grid-template-columns:132px 1fr auto;gap:16px;
+  align-items:baseline;padding:15px 0;text-decoration:none}
+.issues a.edition:hover .h{color:var(--accent)}
+.issues .d{font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.issues .h{color:var(--ink);font-size:15.5px;font-weight:560;line-height:1.45}
+.issues a.edition .n{font-size:13px;color:var(--muted);white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+@media(max-width:640px){
+  .issues a.edition{grid-template-columns:1fr;gap:4px}
+  .issues a.edition .n{display:none}
+}
+.issues .titles{margin:9px 0 0;padding:0;list-style:none;font-size:14.5px;
+  color:var(--muted);display:grid;gap:3px}
+.issues .titles li{border:0;padding:0;display:flex;gap:8px}
+.issues .titles li::before{content:"–";color:var(--line)}
+
+/* The week's sign-off. NB: .aside is already the magazine sidebar — naming
+   this .aside turned every sidebar story italic with a stray dash. */
+.signoff{margin:34px 0 0;padding:16px 0 0;border-top:1px solid var(--hair);
+  color:var(--muted);font-size:16px;font-style:italic;letter-spacing:-.005em;
+  max-width:60ch}
+.signoff::before{content:"— ";opacity:.55}
+
+/* misc */
+.cta{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:22px;margin:52px 0 0}
+.cta h3{margin:0 0 6px;font-size:19px;letter-spacing:-.02em}
+.cta p{margin:0;color:var(--soft);font-size:15.5px}
+.cta .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btn{display:inline-block;padding:9px 15px;border-radius:9px;font-size:14.5px;
+  text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--ink)}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+.btn:hover{filter:brightness(1.06)}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:26px 0 56px;
+  color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+.prose p{color:var(--soft)}
+.prose h2{font-size:21px;letter-spacing:-.02em;margin:38px 0 12px;color:var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--hair)}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media(max-width:640px){
+  body{font-size:16px}
+  .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
+}
+
+/* Palette trial: no colour in the all-channels grid. */
+.card::before{display:none}
+.card{padding-top:15px}
+
+.searchbox{position:relative;margin:26px 0 0}
+.searchbox form{margin:0}
+.searchbox input{width:100%;font:inherit;font-size:17px;padding:13px 15px 13px 42px;
+  border-radius:11px;border:1px solid var(--line);background:var(--panel);
+  color:var(--ink);outline:none}
+.searchbox input:focus{border-color:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent)}
+.searchbox svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  width:17px;height:17px;stroke:var(--muted);fill:none;stroke-width:2}
+.searchbox kbd{position:absolute;right:12px;top:50%;transform:translateY(-50%);
+  font:600 11px var(--mono);color:var(--muted);border:1px solid var(--line);
+  border-radius:5px;padding:2px 6px;background:var(--hair)}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.filters button{font:inherit;font-size:13px;padding:5px 11px;border-radius:100px;
+  border:1px solid var(--line);background:var(--panel);color:var(--muted);
+  cursor:pointer}
+.filters button:hover{color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--accent);color:#fff;
+  border-color:transparent}
+.catrow{margin-top:9px;padding-top:11px;border-top:1px dashed var(--line)}
+.catrow button{font-size:12.5px;padding:4px 10px}
+.count{margin:22px 0 4px;font-size:13.5px;color:var(--muted);
+  font-variant-numeric:tabular-nums}
+mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
+  border-radius:3px;padding:0 2px}
+.empty{padding:44px 0;text-align:center;color:var(--muted)}
+</style>
+<style>:root{--accent:#3d7dd8}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="search.html">Search</a>
+    <a href="about.html">About</a>
+    <a class="sub" href="feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <h1>One digest a day.<br>Mostly not written by AI.</h1>
+  <p class="lede">20 weekly digests for engineers. Most of what you
+     read comes straight from an API rather than a language model.
+     <a class="more" href="about.html">How it works&nbsp;&rarr;</a></p>
+  <p class="stats"><span><b>20</b> channels</span>
+     <span><b>32</b> issues</span>
+     <span><b>281</b> stories</span>
+     <span><b>31</b> projects tracked</span></p>
+</div>
+
+<div class="sec"><h2>Enterprise Systems</h2><div class="rule"></div>
+  <span class="domlinks"><a href="supply-chain/">Supply Chain</a> &middot; <a href="hr-tech/">HR Tech</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=supply-chain&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">CVE-2026-46817: Oracle E-Business Suite</a></h3>
+  <p>Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 18 Jul 2026 — already passed.</div>
+  <p class="src"><a class="ch" href="supply-chain/">Supply Chain &amp; ERP</a> &middot; CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46817" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=hr-tech&amp;g=HCM%20Market" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>HCM Market</a>
+  <h4><a href="https://community.designtaxi.com/topic/34476-is-dayforce-down-august-1-2026/" rel="noopener nofollow">Dayforce Experiences Outage</a></h4>
+  <p class="src"><a class="ch" href="hr-tech/">HR Tech</a> &middot; community.designtaxi.com &middot; 08 August 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=hr-tech&amp;g=HCM%20Market" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>HCM Market</a>
+  <h4><a href="https://www.hrdive.com/news/workers-are-all-in-fight-or-flight-mode/826990/" rel="noopener nofollow">July Job Losses Signal Labor Market Slowdown</a></h4>
+  <p class="src"><a class="ch" href="hr-tech/">HR Tech</a> &middot; HR Dive &middot; 08 August 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>India</h2><div class="rule"></div>
+  <span class="domlinks"><a href="india-tech/">India</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Policy%20%26%20Regulation" style="--tc:#e3b341"><i style="background:#e3b341"></i>Policy &amp; Regulation</a>
+  <h3><a href="https://indianexpress.com/article/india/new-it-rules-social-media-firms-2-hour-deadline-to-remove-sensitive-posts-10821695/" rel="noopener nofollow">New IT Rules Mandate 2-Hour Deepfake Takedown</a></h3>
+  <p>Amendments to the Information Technology (IT) Rules, 2021, notified on February 10, 2026, and effective February 20, 2026, now require social media platforms to remove &quot;sensitive&quot; synthetically generated information (SGI), including deepfakes, within two hours of receiving a complaint. Previously, the deadline was 24 hours. The rules also mandate prominent labeling and embedded metadata for AI-generated content.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Platforms must implement significantly faster content moderation systems and technical measures for AI content, or face legal repercussions for non-compliance.</div>
+  <p class="src"><a class="ch" href="india-tech/">India Tech Weekly</a> &middot; indianexpress.com &middot; <a href="https://indianexpress.com/article/india/new-it-rules-social-media-firms-2-hour-deadline-to-remove-sensitive-posts-10821695/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Funding" style="--tc:#3fb950"><i style="background:#3fb950"></i>Funding</a>
+  <h4><a href="https://yourstory.com/2026/08/weekly-funding-roundup-aug-1-7-sharp-rise-in-vc-inflow-led-by-river-mobility" rel="noopener nofollow">River Mobility Raises $120 Million Funding</a></h4>
+  <p class="src"><a class="ch" href="india-tech/">India</a> &middot; YourStory.com &middot; 09 August 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>Engineering</h2><div class="rule"></div>
+  <span class="domlinks"><a href="devops/">DevOps</a> &middot; <a href="security-news/">Security</a> &middot; <a href="web/">Web</a> &middot; <a href="release-radar/">Releases</a> &middot; <a href="mobile/">Mobile</a> &middot; <a href="open-source/">Open Source</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=open-source&amp;g=Supply%20Chain" style="--tc:#f778ba"><i style="background:#f778ba"></i>Supply Chain</a>
+  <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/" rel="noopener nofollow">npm &#x27;Shai-Hulud&#x27; Worm Compromises Packages</a></h3>
+  <p>Security researchers identified an active supply chain attack involving the &#x27;ChainDrop&#x27; / &#x27;Shai-Hulud&#x27; malware family, which compromised over 1,300 npm package versions, including Keyv and related caching libraries. The malware steals developer credentials and self-propagates by republishing modified packages.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Organizations using Node.js must immediately review dependencies, treat credentials on affected systems as compromised, and remove malicious package versions from all environments.</div>
+  <p class="src"><a class="ch" href="open-source/">Open Source</a> &middot; microsoft.com &middot; <a href="https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=mobile&amp;g=Android%20%26%20Kotlin" style="--tc:#3fb950"><i style="background:#3fb950"></i>Android &amp; Kotlin</a>
+  <h4><a href="https://android-developers.googleblog.com/2026/08/android-skills-philosophy.html" rel="noopener nofollow">Inside Android Skills - Built for deprecation</a></h4>
+  <p class="src"><a class="ch" href="mobile/">Mobile</a> &middot; Android Developers &middot; 08 August 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=web&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h4><a href="https://chriscoyier.net/2026/07/30/codepen-2-0/" rel="noopener nofollow">CodePen 2.0</a></h4>
+  <p class="src"><a class="ch" href="web/">Web</a> &middot; Chris Coyier &middot; 08 August 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>Go-to-Market</h2><div class="rule"></div>
+  <span class="domlinks"><a href="marketing/">Marketing</a> &middot; <a href="sales/">Sales</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=marketing&amp;g=Privacy%20%26%20Policy" style="--tc:#f78166"><i style="background:#f78166"></i>Privacy &amp; Policy</a>
+  <h3><a href="https://www.searchenginejournal.com/wordpress-security-release-7-0-3-fixes-high-severity-xss-vulnerability/584927/" rel="noopener nofollow">WordPress Security Release 7.0.3 Fixes High Severity XSS Vulnerability via @sejournal, @martinibuster</a></h3>
+  <p>A security update for WordPress 7.0.3 that fixes 12 vulnerabilities, including a high-severity XSS flaw on the login screen. The post highlights the technical risks of the &quot;nastiest&quot; vulnerability identified by security researchers.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Login screen XSS is particularly dangerous as it bypasses standard authenticated-user protections.</div>
+  <p class="src"><a class="ch" href="marketing/">Marketing</a> &middot; Search Engine Journal &middot; <a href="https://www.searchenginejournal.com/wordpress-security-release-7-0-3-fixes-high-severity-xss-vulnerability/584927/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=sales&amp;g=Market%20Moves" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Market Moves</a>
+  <h4><a href="https://www.saastr.com/airtable-just-sold-for-2-25b-at-2-7x-arr-it-raised-1-4b-and-was-once-worth-11-7b/" rel="noopener nofollow">Airtable Just Sold for $2.25B at 2.7x ARR. It Raised $1.4B and Was Once Worth $11.7B. This Was … Market</a></h4>
+  <p class="src"><a class="ch" href="sales/">Sales</a> &middot; SaaStr &middot; 08 August 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=marketing&amp;g=Analytics" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Analytics</a>
+  <h4><a href="https://moz.com/blog/50k-fan-outs-reveal-about-brands" rel="noopener nofollow">What 50k Query Fan-Outs Reveal About Brands (+ Free Data!)</a></h4>
+  <p class="src"><a class="ch" href="marketing/">Marketing</a> &middot; Moz &middot; 08 August 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>Data &amp; AI</h2><div class="rule"></div>
+  <span class="domlinks"><a href="data/">Data</a> &middot; <a href="arxiv-picks/">Papers</a> &middot; <a href="ai/">AI</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h3><a href="https://www.databricks.com/blog/bigquery-databricks-strategic-framework-modern-migration" rel="noopener nofollow">BigQuery to Databricks Migration Framework</a></h3>
+  <p>This article outlines a strategic framework for migrating from Google BigQuery to Databricks Lakehouse, emphasizing maximizing ROI, unifying governance, and building an AI-ready foundation. It consolidates BI, ETL, and multi-model AI into one environment, aiming for predictable performance and reduced operational overhead.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Organizations can reduce data silos and achieve predictable performance by adopting a phased migration to an open lakehouse architecture.</div>
+  <p class="src"><a class="ch" href="data/">Databases &amp; Data</a> &middot; Databricks &middot; <a href="https://www.databricks.com/blog/bigquery-databricks-strategic-framework-modern-migration" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a>
+  <h4><a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow">DiffusionGemma Technical Report</a></h4>
+  <p class="src"><a class="ch" href="arxiv-picks/">Papers</a> &middot; arXiv &middot; 05 August 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
+  <h4><a href="https://clickhouse.com/blog/mercado-libre-observability-on-clickhouse-cloud" rel="noopener nofollow">How Mercado Libre rebuilt its observability platform on ClickHouse Cloud with 50x faster trace queries</a></h4>
+  <p class="src"><a class="ch" href="data/">Data</a> &middot; ClickHouse &middot; 08 August 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>Industries</h2><div class="rule"></div>
+  <span class="domlinks"><a href="fintech/">Fintech</a> &middot; <a href="chips/">Chips</a> &middot; <a href="climate/">Climate</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=chips&amp;g=Packaging" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Packaging</a>
+  <h3><a href="https://semiengineering.com/model-tracks-bond-front-velocity-for-wafer-and-die-bonding-imec/" rel="noopener nofollow">Model Tracks Bond Front Velocity in Lubrication-Mediated Bonding of Flexible Substrates (imec)</a></h3>
+  <p>An imec researcher has modeled the bond front velocity in lubrication-mediated bonding of flexible substrates. This process is critical for 3D stacking and heterogeneous integration, enabling novel interconnect architectures for integrated circuits.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Quantifying bond front velocity provides a mathematical basis to optimize throughput and yield in lubrication-mediated 3D stacking.</div>
+  <p class="src"><a class="ch" href="chips/">Chips &amp; Silicon</a> &middot; Semiconductor Engineering &middot; <a href="https://semiengineering.com/model-tracks-bond-front-velocity-for-wafer-and-die-bonding-imec/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=climate&amp;g=Data%20Centre%20Demand" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data Centre Demand</a>
+  <h4><a href="https://www.volts.wtf/p/what-should-state-policymakers-do" rel="noopener nofollow">What should state policymakers do about data centers?</a></h4>
+  <p class="src"><a class="ch" href="climate/">Climate</a> &middot; Volts &middot; 09 August 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=fintech&amp;g=Fraud%20%26%20Risk" style="--tc:#f778ba"><i style="background:#f778ba"></i>Fraud &amp; Risk</a>
+  <h4><a href="https://www.pymnts.com/cybersecurity/2026/wall-streets-new-cybersecurity-threat-starts-with-a-phone-call/" rel="noopener nofollow">Wall Street’s New Cybersecurity Threat Starts With a Phone Call</a></h4>
+  <p class="src"><a class="ch" href="fintech/">Fintech</a> &middot; PYMNTS &middot; 09 August 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>Design</h2><div class="rule"></div>
+  <span class="domlinks"><a href="design/">Design</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=design&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h3><a href="https://www.nngroup.com/articles/no-new-name-ux/?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss-syndication" rel="noopener nofollow">No New Name Has Replaced “UX”</a></h3>
+  <p>A survey of 604 design and tech professionals reveals that &#x27;UX&#x27; remains the dominant term for the field despite industry layoffs and budget cuts. While practitioners frequently debate the industry&#x27;s identity, alternative naming conventions remain highly fragmented.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Despite internal industry anxieties and rebranding attempts, &#x27;UX&#x27; remains the only universally recognized term for the discipline among external stakeholders.</div>
+  <p class="src"><a class="ch" href="design/">Design &amp; UX</a> &middot; Nielsen Norman &middot; <a href="https://www.nngroup.com/articles/no-new-name-ux/?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss-syndication" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=design&amp;g=Research" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Research</a>
+  <h4><a href="https://www.nngroup.com/articles/dogfooding/?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss-syndication" rel="noopener nofollow">Dogfooding vs. QA vs. User Research</a></h4>
+  <p class="src"><a class="ch" href="design/">Design</a> &middot; Nielsen Norman &middot; 09 August 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=design&amp;g=Design%20Systems" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Design Systems</a>
+  <h4><a href="https://uxdesign.cc/defining-ethical-design-for-machines-10d8f7309eec?source=rss----138adf9c44c---4" rel="noopener nofollow">Defining ethical design for machines</a></h4>
+  <p class="src"><a class="ch" href="design/">Design</a> &middot; UX Collective &middot; 09 August 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>Longform</h2><div class="rule"></div>
+  <span class="domlinks"><a href="eng-blogs/">Reading</a> &middot; <a href="craft/">Craft</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=craft&amp;g=Incidents%20%26%20Ops" style="--tc:#f78166"><i style="background:#f78166"></i>Incidents &amp; Ops</a>
+  <h3><a href="https://www.infoq.com/news/2026/08/cosmosescape-master-key/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow">Wiz Discloses CosmosEscape, and Practitioners Debate What Customers Could Have Done</a></h3>
+  <p>Wiz Research identified a vulnerability chain called CosmosEscape that allowed escaping Azure Cosmos DB&#x27;s Gremlin sandbox to access a platform-wide read/write key. While Microsoft patched the entry point in two days, it took until July 2026 to completely remove the compromised key, sparking industry debate over shared responsibility and rearchitecture costs.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Sandbox escapes can expose platform-wide master keys, demonstrating that cloud provider mitigation timelines can extend to several years and require significant customer-side rearchitecture.</div>
+  <p class="src"><a class="ch" href="craft/">Craft &amp; Leadership</a> &middot; InfoQ Architecture &middot; <a href="https://www.infoq.com/news/2026/08/cosmosescape-master-key/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=craft&amp;g=Migrations" style="--tc:#e3b341"><i style="background:#e3b341"></i>Migrations</a>
+  <h4><a href="https://www.infoq.com/news/2026/08/ai-technical-debt-economics/" rel="noopener nofollow">AI Reshapes Technical Debt Economics</a></h4>
+  <p class="src"><a class="ch" href="craft/">Craft</a> &middot; InfoQ &middot; 08 August 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=craft&amp;g=Productivity" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Productivity</a>
+  <h4><a href="https://leaddev.com/productivity/new-metrics-ai-era-aug26" rel="noopener nofollow">Beyond DORA: New Productivity Metrics for AI Era</a></h4>
+  <p class="src"><a class="ch" href="craft/">Craft</a> &middot; LeadDev &middot; 08 August 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>All channels</h2><div class="rule"></div>
+  <a href="search.html">Browse all 281 stories &rarr;</a></div>
+<div class="cards">
+  <a class="card" href="india-tech/" style="--ca:#2f9e6f">
+    <h3>India Tech Weekly</h3>
+    <p>Startups, Policy &amp; Platforms</p>
+    <div class="n"><span class="d">Sun</span>
+       2 issues &middot; 8 stories</div>
+  </a>
+  <a class="card" href="design/" style="--ca:#5a5bd3">
+    <h3>Design &amp; UX</h3>
+    <p>Interfaces, Research &amp; Systems</p>
+    <div class="n"><span class="d">Sun</span>
+       1 issue &middot; 6 stories</div>
+  </a>
+  <a class="card" href="devops/" style="--ca:#3d7dd8">
+    <h3>DevOps Weekly Digest</h3>
+    <p>Engineering Edition</p>
+    <div class="n"><span class="d">Mon</span>
+       3 issues &middot; 20 stories</div>
+  </a>
+  <a class="card" href="marketing/" style="--ca:#9f2d33">
+    <h3>Marketing</h3>
+    <p>Search, Content &amp; Demand</p>
+    <div class="n"><span class="d">Mon</span>
+       1 issue &middot; 8 stories</div>
+  </a>
+  <a class="card" href="fintech/" style="--ca:#c8519f">
+    <h3>Fintech &amp; Payments</h3>
+    <p>Rails, Regulation &amp; Banking Tech</p>
+    <div class="n"><span class="d">Mon</span>
+       1 issue &middot; 7 stories</div>
+  </a>
+  <a class="card" href="security-news/" style="--ca:#d9552f">
+    <h3>Security Weekly Digest</h3>
+    <p>Exploits, Breaches &amp; Advisories</p>
+    <div class="n"><span class="d">Tue</span>
+       3 issues &middot; 22 stories</div>
+  </a>
+  <a class="card" href="data/" style="--ca:#c22ebe">
+    <h3>Databases &amp; Data</h3>
+    <p>Engines, Pipelines &amp; Query Plans</p>
+    <div class="n"><span class="d">Tue</span>
+       1 issue &middot; 20 stories</div>
+  </a>
+  <a class="card" href="chips/" style="--ca:#38a0d6">
+    <h3>Chips &amp; Silicon</h3>
+    <p>Fabs, Process Nodes &amp; Accelerators</p>
+    <div class="n"><span class="d">Tue</span>
+       1 issue &middot; 4 stories</div>
+  </a>
+  <a class="card" href="arxiv-picks/" style="--ca:#8a5cd6">
+    <h3>arXiv Picks</h3>
+    <p>Papers Worth Reading</p>
+    <div class="n"><span class="d">Wed</span>
+       2 issues &middot; 12 stories</div>
+  </a>
+  <a class="card" href="supply-chain/" style="--ca:#a2d35a">
+    <h3>Supply Chain &amp; ERP</h3>
+    <p>Finance, Manufacturing, Warehousing &amp; Enterprise AI</p>
+    <div class="n"><span class="d">Wed</span>
+       2 issues &middot; 24 stories</div>
+  </a>
+  <a class="card" href="web/" style="--ca:#2d9f8c">
+    <h3>Web &amp; Frontend</h3>
+    <p>Browsers, Frameworks &amp; the Platform</p>
+    <div class="n"><span class="d">Wed</span>
+       1 issue &middot; 19 stories</div>
+  </a>
+  <a class="card" href="hr-tech/" style="--ca:#7f15ac">
+    <h3>HR &amp; Payroll Tech</h3>
+    <p>SuccessFactors, payroll and people systems</p>
+    <div class="n"><span class="d">Thu</span>
+       1 issue &middot; 22 stories</div>
+  </a>
+  <a class="card" href="release-radar/" style="--ca:#b8860b">
+    <h3>Release Radar</h3>
+    <p>What Shipped This Week</p>
+    <div class="n"><span class="d">Thu</span>
+       2 issues &middot; 28 stories</div>
+  </a>
+  <a class="card" href="sales/" style="--ca:#9f612d">
+    <h3>Sales &amp; Revenue</h3>
+    <p>B2B Go-to-Market &amp; Retention</p>
+    <div class="n"><span class="d">Thu</span>
+       1 issue &middot; 7 stories</div>
+  </a>
+  <a class="card" href="ai/" style="--ca:#0f9dab">
+    <h3>AI Tech Weekly Digest</h3>
+    <p>Engineering Edition</p>
+    <div class="n"><span class="d">Fri</span>
+       5 issues &middot; 30 stories</div>
+  </a>
+  <a class="card" href="mobile/" style="--ca:#3fc22e">
+    <h3>Mobile</h3>
+    <p>iOS, Android &amp; Cross-Platform</p>
+    <div class="n"><span class="d">Fri</span>
+       1 issue &middot; 11 stories</div>
+  </a>
+  <a class="card" href="open-source/" style="--ca:#4bac15">
+    <h3>Open Source</h3>
+    <p>Licences, Governance &amp; Supply Chain</p>
+    <div class="n"><span class="d">Fri</span>
+       1 issue &middot; 7 stories</div>
+  </a>
+  <a class="card" href="eng-blogs/" style="--ca:#c2456f">
+    <h3>Engineering Reading</h3>
+    <p>From the Blogs Worth Following</p>
+    <div class="n"><span class="d">Sat</span>
+       1 issue &middot; 7 stories</div>
+  </a>
+  <a class="card" href="craft/" style="--ca:#51c85d">
+    <h3>Craft &amp; Leadership</h3>
+    <p>Architecture, Practice &amp; Running Teams</p>
+    <div class="n"><span class="d">Sat</span>
+       1 issue &middot; 9 stories</div>
+  </a>
+  <a class="card" href="climate/" style="--ca:#b9d638">
+    <h3>Climate &amp; Energy</h3>
+    <p>Grid, Storage &amp; the Transition</p>
+    <div class="n"><span class="d">Sat</span>
+       1 issue &middot; 10 stories</div>
+  </a>
+</div>
+
+<div class="cta">
+  <h3>Read along</h3>
+  <p>Every channel has its own feed, and there is one for the whole publication.
+     No app, no login, nothing to sign up for.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="about.html">How it works</a>
+  </div>
+</div>
+<p class="signoff">Hopefully the AI agents can figure out French e-invoicing.</p>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="about.html">How it works</a>
+  &middot; <a href="feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='search.html';}
+});
+</script>
+</body>
+</html>
