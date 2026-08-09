@@ -229,7 +229,9 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
 /* Pinned to the bottom so a two-line title never leaves the stats ragged
    against its neighbours in the same row */
 .card .n{margin-top:auto;padding-top:10px;font-size:12.5px;color:var(--muted);
-  font-variant-numeric:tabular-nums}
+  font-variant-numeric:tabular-nums;
+  /* Never wrap: a second line here makes the whole grid row taller */
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card .n .d{color:var(--ca);text-transform:uppercase;letter-spacing:.07em;
   font-weight:650;font-size:11.5px;margin-right:5px}
 

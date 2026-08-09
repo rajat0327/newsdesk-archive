@@ -230,7 +230,9 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
 /* Pinned to the bottom so a two-line title never leaves the stats ragged
    against its neighbours in the same row */
 .card .n{margin-top:auto;padding-top:10px;font-size:12.5px;color:var(--muted);
-  font-variant-numeric:tabular-nums}
+  font-variant-numeric:tabular-nums;
+  /* Never wrap: a second line here makes the whole grid row taller */
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card .n .d{color:var(--ca);text-transform:uppercase;letter-spacing:.07em;
   font-weight:650;font-size:11.5px;margin-right:5px}
 
@@ -355,11 +357,11 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <button data-c="web" aria-pressed="false">Web &amp; Frontend</button>
   <button data-c="hr-tech" aria-pressed="false">HR &amp; Payroll Tech</button>
   <button data-c="release-radar" aria-pressed="false">Release Radar</button>
+  <button data-c="sales" aria-pressed="false">Sales &amp; Revenue</button>
   <button data-c="ai" aria-pressed="false">AI Tech Weekly Digest</button>
   <button data-c="mobile" aria-pressed="false">Mobile</button>
   <button data-c="eng-blogs" aria-pressed="false">Engineering Reading</button>
   <button data-c="craft" aria-pressed="false">Craft &amp; Leadership</button>
-  <button data-c="sales" aria-pressed="false">Sales &amp; Revenue</button>
   </div>
   <div class="filters catrow" id="catrow"></div>
 </div>

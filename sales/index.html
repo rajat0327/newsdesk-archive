@@ -229,7 +229,9 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
 /* Pinned to the bottom so a two-line title never leaves the stats ragged
    against its neighbours in the same row */
 .card .n{margin-top:auto;padding-top:10px;font-size:12.5px;color:var(--muted);
-  font-variant-numeric:tabular-nums}
+  font-variant-numeric:tabular-nums;
+  /* Never wrap: a second line here makes the whole grid row taller */
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card .n .d{color:var(--ca);text-transform:uppercase;letter-spacing:.07em;
   font-weight:650;font-size:11.5px;margin-right:5px}
 
@@ -335,7 +337,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="hero">
   <h1>Sales &amp; Revenue</h1>
   <p class="lede">B2B Go-to-Market &amp; Retention. Published every
-     <b>week</b>, here and by RSS.</p>
+     <b>Thursday</b>, here and by RSS.</p>
   <p class="stats"><span><b>7</b> stories</span>
      <span><b>1</b> issues</span>
      <span><b>9</b> categories</span></p>
