@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Climate &amp; Energy — 09 August 2026</title>
+<meta name="description" content="68 new posts across 4 climate and energy sources — 7 worth your time.">
+<meta property="og:title" content="Climate &amp; Energy — 09 August 2026">
+<meta property="og:description" content="68 new posts across 4 climate and energy sources — 7 worth your time.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#afc936">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/climate/2026-08-09.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#f7f6f3; --panel:#fffefc; --raise:#fff; --ink:#23232a; --soft:#55555f;
+  --muted:#6c6c76; --line:#e3e1db; --hair:#eeece6; --accent:#35699c;
+  /* Monospace is for keys and code only. It was on dates, counts, chips and
+     labels too, which made every page read like terminal output. Numbers use
+     tabular-nums in the sans face instead — same alignment, far less noise. */
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Inter,sans-serif;
+  --shadow:0 1px 2px rgba(20,20,25,.04),0 8px 24px -12px rgba(20,20,25,.12);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#16161b;--panel:#26262e;--raise:#2c2c34;--ink:#e6e4df;
+        --soft:#b3b1ab;--muted:#8a8992;--line:#2e2e36;--hair:#232329;
+        --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6)}
+}
+:root[data-theme="dark"]{--bg:#16161b;--panel:#26262e;--raise:#2c2c34;
+  --ink:#e6e4df;--soft:#b3b1ab;--muted:#8a8992;--line:#2e2e36;--hair:#232329}
+:root[data-theme="light"]{--bg:#f7f6f3;--panel:#fffefc;--raise:#fff;--ink:#23232a;
+  --soft:#55555f;--muted:#6c6c76;--line:#e3e1db;--hair:#eeece6}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.68;-webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+.narrow{max-width:720px}
+a{color:var(--accent);text-underline-offset:2px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:20;backdrop-filter:saturate(180%) blur(12px);
+  background:color-mix(in srgb,var(--bg) 86%,transparent);
+  border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;gap:18px;align-items:center;padding-top:13px;padding-bottom:13px}
+.brand{font-weight:750;font-size:18px;color:var(--ink);text-decoration:none;
+  letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+nav.top-nav{margin-left:auto;display:flex;gap:6px;align-items:center;font-size:14px}
+nav.top-nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:7px}
+nav.top-nav a:hover{color:var(--ink);background:var(--hair)}
+nav.top-nav a.sub{color:#fff;background:var(--accent);font-weight:600}
+nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
+
+/* channel bar */
+.chanbar{border-bottom:1px solid var(--line);background:var(--bg);position:relative;z-index:15}
+/* No overflow here: it clips the absolutely-positioned menus. Grouping
+   means four items rather than nine, so scrolling is not needed — narrow
+   screens wrap instead. */
+.chanbar .wrap{display:flex;gap:2px;align-items:stretch;flex-wrap:wrap}
+
+.chanbar summary,.chanbar a.solo{display:flex;align-items:center;gap:6px;
+  padding:11px 13px;font-size:14.5px;font-weight:600;color:var(--muted);
+  text-decoration:none;white-space:nowrap;letter-spacing:-.01em;cursor:pointer;
+  position:relative;list-style:none}
+.chanbar summary::-webkit-details-marker{display:none}
+.chanbar summary:hover,.chanbar a.solo:hover{color:var(--ink)}
+.chanbar summary svg{width:9px;height:6px;stroke:currentColor;fill:none;
+  stroke-width:1.6;transition:transform .15s}
+.chanbar details[open] summary svg{transform:rotate(180deg)}
+.chanbar summary::after,.chanbar a.solo::after{content:"";position:absolute;
+  left:13px;right:13px;bottom:-1px;height:2px;background:transparent;
+  border-radius:2px 2px 0 0}
+.chanbar details[data-here] summary{color:var(--ink)}
+.chanbar details[data-here] summary::after{background:var(--accent)}
+.chanbar a.solo[aria-current]{color:var(--cc)}
+.chanbar a.solo[aria-current]::after{background:var(--cc)}
+.chanbar a.solo.all{margin-left:auto;color:var(--muted);font-weight:500}
+
+.chanbar details{position:static}
+@media(min-width:641px){.chanbar details{position:relative}}
+.chanbar .menu{position:absolute;top:100%;left:6px;min-width:250px;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  box-shadow:var(--shadow);padding:6px;display:grid;gap:1px;z-index:30}
+/* Seven channels in one column filled two thirds of the screen. Two
+   columns halve it without dropping the descriptions. */
+.chanbar .menu.wide{grid-template-columns:1fr 1fr;min-width:480px}
+.chanbar .menu a{display:block;padding:9px 11px;border-radius:7px;
+  text-decoration:none;color:var(--ink);font-size:14.5px;font-weight:620;
+  border-left:2px solid transparent}
+.chanbar .menu a:hover{background:var(--hair);border-left-color:var(--cc)}
+.chanbar .menu a[aria-current]{color:var(--cc);background:var(--hair);
+  border-left-color:var(--cc)}
+.chanbar .menu a span{display:block;font-size:12.5px;font-weight:400;
+  color:var(--muted);margin-top:1px;letter-spacing:0;line-height:1.35}
+@media(max-width:680px){
+  /* Phone header: the nav was wrapping to two rows, which pushed the first
+     story off the screen entirely. */
+  header.top .wrap{gap:10px;padding-top:11px;padding-bottom:11px}
+  nav.top-nav{gap:2px;font-size:13.5px}
+  nav.top-nav a{padding:6px 8px}
+  .brand{font-size:17px}
+  .chanbar summary,.chanbar a.solo{padding:9px 9px;font-size:13.5px}
+  /* On a phone the descriptions cost more than they explain */
+  .chanbar .menu,.chanbar .menu.wide{position:absolute;left:8px;right:8px;
+    min-width:0;grid-template-columns:1fr}
+  .chanbar .menu a{padding:8px 10px}
+  .chanbar .menu a span{display:none}
+  .chanbar a.solo.all{display:none}   /* Search in the header already covers it */
+  .stats{gap:6px 14px;font-size:13.5px}
+}
+
+/* hero *//* hero */
+.hero{padding:38px 0 16px}
+.hero h1{font-size:clamp(30px,4.4vw,42px);line-height:1.04;letter-spacing:-.035em;
+  margin:0 0 12px;font-weight:750}
+.hero .lede{font-size:17px;color:var(--soft);margin:0;max-width:62ch}
+.hero .lede b{color:var(--ink);font-weight:650}
+/* The edition strapline: metadata, so it should not compete with the lede */
+.hero .meta{font-size:14px;color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:18px;margin:14px 0 0;font-size:14px;
+  color:var(--muted);align-items:baseline}
+.stats span{white-space:nowrap}
+.stats b{color:var(--ink);font-weight:670;font-size:15.5px;
+  font-variant-numeric:tabular-nums}
+
+/* end-of-life, full form — Release Radar only */
+.countdown{margin:22px 0 0;border:1px solid var(--line);border-radius:11px;
+  background:var(--panel);overflow:hidden}
+.countdown h4{margin:0;padding:11px 16px;font-size:11px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--muted);font-weight:650;
+  border-bottom:1px solid var(--line)}
+.countdown ul{list-style:none;margin:0;padding:7px 0}
+.countdown li{display:flex;align-items:center;gap:14px;padding:7px 16px;
+  font-size:14.5px}
+.countdown .name{font-weight:600;min-width:150px}
+.countdown .bar{flex:1;height:4px;border-radius:3px;background:var(--hair);
+  position:relative;min-width:40px;overflow:hidden}
+.countdown .bar i{position:absolute;inset:0 auto 0 0;border-radius:3px;display:block}
+.countdown .days{font-size:13px;color:var(--muted);white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+@media(max-width:640px){.countdown .name{min-width:0}.countdown .bar{display:none}}
+
+/* section headings *//* section headings */
+.sec{display:flex;align-items:baseline;gap:12px;margin:52px 0 18px}
+.hero+.sec,.hero+.count{margin-top:26px}
+.sec h2{font-size:14px;letter-spacing:.09em;text-transform:uppercase;margin:0;
+  color:var(--muted);font-weight:650}
+.sec .rule{flex:1;height:1px;background:var(--line)}
+.sec a{font-size:14px;text-decoration:none}
+.sec h2{white-space:nowrap}
+.domlinks{font-size:13.5px;color:var(--muted);white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis}
+.domlinks a{text-decoration:none}
+.domlinks a:hover{text-decoration:underline}
+@media(max-width:640px){.domlinks{display:none}}
+
+/* story feed */
+.feed{display:grid;gap:0}
+.item{padding:22px 0;border-top:1px solid var(--hair);max-width:72ch}
+.item:first-child{border-top:0}
+.item .src .ch{font-weight:600;color:var(--soft);text-decoration:none}
+.item .src .ch:hover{color:var(--accent)}
+.item h3{margin:0 0 7px;font-size:19px;line-height:1.32;letter-spacing:-.015em;
+  font-weight:660}
+.item h3 a{color:var(--ink);text-decoration:none}
+.item h3 a:hover{color:var(--accent)}
+.item p{margin:0;color:var(--soft);font-size:15.5px}
+.tag-link{text-decoration:none;transition:color .12s}
+.tag-link:hover{color:var(--tc)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  font-weight:640;letter-spacing:.06em;text-transform:uppercase;
+  margin:0 16px 7px 0;white-space:nowrap;color:var(--muted)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--tc);flex:none}
+.why{margin-top:11px;padding:9px 13px;border-radius:8px;background:var(--hair);
+  font-size:14.5px;color:var(--ink)}
+.why b{font-weight:650;color:var(--accent)}
+.src{margin-top:9px;font-size:13.5px;color:var(--muted)}
+.src a{text-decoration:none}
+.src a:hover{text-decoration:underline}
+
+/* front-page magazine split */
+.split{display:grid;grid-template-columns:1.55fr 1fr;gap:0 34px;
+  align-items:start}
+.lead{padding-right:2px}
+.lead h3{margin:8px 0 0;font-size:26px;line-height:1.22;letter-spacing:-.022em;
+  font-weight:680}
+.lead h3 a{color:var(--ink);text-decoration:none}
+.lead h3 a:hover{color:var(--accent)}
+.lead p{margin:11px 0 0;color:var(--soft);font-size:16px}
+.lead .why{margin-top:13px}
+.lead .src{margin-top:13px;font-size:13.5px;color:var(--muted)}
+.lead .src a.ch{color:var(--soft);font-weight:600;text-decoration:none}
+.lead .src a.ch:hover{color:var(--accent)}
+.aside{border-left:1px solid var(--line);padding-left:26px;
+  display:grid;gap:0;align-content:start}
+.aside-item{padding:0 0 18px;border-bottom:1px solid var(--hair);margin-bottom:18px}
+.aside-item:last-child{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.aside-item h4{margin:7px 0 0;font-size:16px;line-height:1.34;
+  letter-spacing:-.012em;font-weight:640}
+.aside-item h4 a{color:var(--ink);text-decoration:none}
+.aside-item h4 a:hover{color:var(--accent)}
+.aside-item .src{margin-top:7px;font-size:13px;color:var(--muted)}
+.aside-item .src a.ch{color:var(--soft);font-weight:600;text-decoration:none}
+@media(max-width:760px){
+  .split{grid-template-columns:1fr;gap:26px 0}
+  .lead h3{font-size:22px}
+  .aside{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:20px}
+}
+
+/* channel cards */
+/* A directory, not a feature grid: this sits below six domain sections that
+   already showed the stories, so it earns four columns and compact cards
+   rather than the ~850px full screen it used to take. */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.card{position:relative;background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:15px 16px 13px;text-decoration:none;
+  display:flex;flex-direction:column;
+  transition:transform .14s ease,box-shadow .14s ease,border-color .14s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow);
+  border-color:color-mix(in srgb,var(--ca) 45%,var(--line))}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;
+  background:var(--ca);border-radius:12px 12px 0 0}
+.card h3{margin:0 0 4px;font-size:16.5px;color:var(--ink);letter-spacing:-.02em;
+  font-weight:680;line-height:1.3}
+.card p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.45}
+/* Pinned to the bottom so a two-line title never leaves the stats ragged
+   against its neighbours in the same row */
+.card .n{margin-top:auto;padding-top:10px;font-size:12.5px;color:var(--muted);
+  font-variant-numeric:tabular-nums;
+  /* Never wrap: a second line here makes the whole grid row taller */
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card .n .d{color:var(--ca);text-transform:uppercase;letter-spacing:.07em;
+  font-weight:650;font-size:11.5px;margin-right:5px}
+
+.morelink{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  margin:26px 0 0;padding:15px 18px;border:1px solid var(--line);
+  border-radius:10px;background:var(--panel)}
+.morelink a{font-weight:640;text-decoration:none;font-size:15.5px}
+.morelink a:hover{text-decoration:underline}
+.morelink span{margin-left:auto;font-size:13.5px;color:var(--muted);
+  font-variant-numeric:tabular-nums}
+
+/* weekly editions */
+.editions-note{margin:-6px 0 14px;color:var(--muted);font-size:14.5px;max-width:60ch}
+.issues{list-style:none;padding:0;margin:0}
+.issues li{border-top:1px solid var(--hair)}
+.issues a.edition{display:grid;grid-template-columns:132px 1fr auto;gap:16px;
+  align-items:baseline;padding:15px 0;text-decoration:none}
+.issues a.edition:hover .h{color:var(--accent)}
+.issues .d{font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.issues .h{color:var(--ink);font-size:15.5px;font-weight:560;line-height:1.45}
+.issues a.edition .n{font-size:13px;color:var(--muted);white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+@media(max-width:640px){
+  .issues a.edition{grid-template-columns:1fr;gap:4px}
+  .issues a.edition .n{display:none}
+}
+.issues .titles{margin:9px 0 0;padding:0;list-style:none;font-size:14.5px;
+  color:var(--muted);display:grid;gap:3px}
+.issues .titles li{border:0;padding:0;display:flex;gap:8px}
+.issues .titles li::before{content:"–";color:var(--line)}
+
+/* The week's sign-off. NB: .aside is already the magazine sidebar — naming
+   this .aside turned every sidebar story italic with a stray dash. */
+.signoff{margin:34px 0 0;padding:16px 0 0;border-top:1px solid var(--hair);
+  color:var(--muted);font-size:16px;font-style:italic;letter-spacing:-.005em;
+  max-width:60ch}
+.signoff::before{content:"— ";opacity:.55}
+
+/* misc */
+.cta{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:22px;margin:52px 0 0}
+.cta h3{margin:0 0 6px;font-size:19px;letter-spacing:-.02em}
+.cta p{margin:0;color:var(--soft);font-size:15.5px}
+.cta .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.btn{display:inline-block;padding:9px 15px;border-radius:9px;font-size:14.5px;
+  text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--ink)}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+.btn:hover{filter:brightness(1.06)}
+footer{border-top:1px solid var(--line);margin-top:64px;padding:26px 0 56px;
+  color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+.prose p{color:var(--soft)}
+.prose h2{font-size:21px;letter-spacing:-.02em;margin:38px 0 12px;color:var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--hair)}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media(max-width:640px){
+  body{font-size:16px}
+  .stats div{flex:1 1 50%;border-bottom:1px solid var(--line)}
+}
+
+.searchbox{position:relative;margin:26px 0 0}
+.searchbox form{margin:0}
+.searchbox input{width:100%;font:inherit;font-size:17px;padding:13px 15px 13px 42px;
+  border-radius:11px;border:1px solid var(--line);background:var(--panel);
+  color:var(--ink);outline:none}
+.searchbox input:focus{border-color:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent)}
+.searchbox svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  width:17px;height:17px;stroke:var(--muted);fill:none;stroke-width:2}
+.searchbox kbd{position:absolute;right:12px;top:50%;transform:translateY(-50%);
+  font:600 11px var(--mono);color:var(--muted);border:1px solid var(--line);
+  border-radius:5px;padding:2px 6px;background:var(--hair)}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 0}
+.filters button{font:inherit;font-size:13px;padding:5px 11px;border-radius:100px;
+  border:1px solid var(--line);background:var(--panel);color:var(--muted);
+  cursor:pointer}
+.filters button:hover{color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--accent);color:#fff;
+  border-color:transparent}
+.catrow{margin-top:9px;padding-top:11px;border-top:1px dashed var(--line)}
+.catrow button{font-size:12.5px;padding:4px 10px}
+.count{margin:22px 0 4px;font-size:13.5px;color:var(--muted);
+  font-variant-numeric:tabular-nums}
+mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
+  border-radius:3px;padding:0 2px}
+.empty{padding:44px 0;text-align:center;color:var(--muted)}
+</style>
+<style>:root{--accent:#afc936}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#36c9b1">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#48c936">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#6ac936">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c936c6">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group" data-here><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c93697">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#3697c9">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#afc936" aria-current="page">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#8dc936">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#9d36c9">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#c9363e">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#c97b36">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#36c946">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#3638c9">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#afc936;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Climate &amp; Energy</a></p>
+  <h1>09 August 2026</h1>
+  <p class="lede">68 new posts across 4 climate and energy sources — 7 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Climate &amp; Energy,
+     10 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=climate&amp;g=Data%20Centre%20Demand" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data Centre Demand</a>
+  <h3><a href="https://www.volts.wtf/p/what-should-state-policymakers-do" rel="noopener nofollow">What should state policymakers do about data centers?</a></h3>
+  <p>This episode analyzes the rapid growth of data center electricity demand, noting that 15 states accounted for 80% of US demand in 2023. A single hyperscale campus can consume 15% to 20% of a utility&#x27;s capacity, while building the necessary transmission takes 5 to 15 years.</p>
+  <div class="why"><b>Why it matters</b> — Highlights the severe operational mismatch between the rapid deployment of hyperscale computing facilities and the 5-to-15-year timeline required to build supporting transmission infrastructure.</div>
+  <p class="src">Volts &middot; 09 August 2026 &middot; <a href="https://www.volts.wtf/p/what-should-state-policymakers-do" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=climate&amp;g=Nuclear" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Nuclear</a>
+  <h3><a href="https://cleantechnica.com/2026/08/06/climate-change-europe-nuclear-cooling-assumptions/" rel="noopener nofollow">Climate Change Is Rewriting Europe’s Nuclear Cooling Assumptions</a></h3>
+  <p>Romanian engineers used 180 kg of explosives to clear a rock outcrop in the Danube&#x27;s Bala Canal. The blast allowed the construction of a temporary dam to maintain cooling water levels for a nuclear plant during low river flows caused by extreme heat.</p>
+  <div class="why"><b>Why it matters</b> — Highlights how climate-induced low river levels force extreme, invasive civil engineering interventions to prevent thermal power plant shutdowns.</div>
+  <p class="src">CleanTechnica &middot; 09 August 2026 &middot; <a href="https://cleantechnica.com/2026/08/06/climate-change-europe-nuclear-cooling-assumptions/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=climate&amp;g=Grid%20%26%20Transmission" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Grid &amp; Transmission</a>
+  <h3><a href="https://www.carbonbrief.org/factcheck-how-nuclear-gas-wind-and-solar-power-are-affected-during-heatwaves" rel="noopener nofollow">Factcheck: How nuclear, gas, wind and solar power are affected during heatwaves</a></h3>
+  <p>This analysis examines how extreme heatwaves exceeding 40°C in Europe during June and July 2026 impacted different power sources. The extreme temperatures forced nuclear shutdowns due to cooling limits, reduced gas plant efficiency, dropped wind speeds, and caused electricity networks to sag.</p>
+  <div class="why"><b>Why it matters</b> — Quantifies the simultaneous derating of multiple generation types during extreme heat, forcing grid operators to plan for correlated capacity drops across nuclear, thermal, and wind.</div>
+  <p class="src">Carbon Brief &middot; 09 August 2026 &middot; <a href="https://www.carbonbrief.org/factcheck-how-nuclear-gas-wind-and-solar-power-are-affected-during-heatwaves" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=climate&amp;g=Grid%20%26%20Transmission" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Grid &amp; Transmission</a>
+  <h3><a href="https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan" rel="noopener nofollow">PJM’s big new data center plan: Make the states figure it out</a></h3>
+  <p>PJM Interconnection has introduced a plan shifting the responsibility of managing data center load growth onto individual states and utilities. The policy aims to prevent soaring grid upgrade costs from being socialized across all utility customers in its 13-state territory.</p>
+  <div class="why"><b>Why it matters</b> — Establishes a regulatory precedent where regional transmission organizations refuse to socialize the grid upgrade costs of large digital loads, shifting the financial burden directly to local utilities and states.</div>
+  <p class="src">Canary Media &middot; 09 August 2026 &middot; <a href="https://www.canarymedia.com/articles/data-centers/pjm-data-center-plan" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=climate&amp;g=Storage" style="--tc:#3fb950"><i style="background:#3fb950"></i>Storage</a>
+  <h3><a href="https://cleantechnica.com/2026/08/08/worlds-largest-12-8-gwh-battery-storage-cluster-activated-in-china/" rel="noopener nofollow">World’s Largest 12.8 GWh Battery Storage Cluster Activated in China</a></h3>
+  <p>Envision Group has integrated an AI management system into its 12.8 GWh battery storage network in northern China. The network includes a 4 GWh flagship plant that went online in February 2026.</p>
+  <div class="why"><b>Why it matters</b> — Demonstrates that coordinating gigawatt-hour scale storage networks requires transitioning from localized controls to centralized, AI-driven management systems.</div>
+  <p class="src">CleanTechnica &middot; 09 August 2026 &middot; <a href="https://cleantechnica.com/2026/08/08/worlds-largest-12-8-gwh-battery-storage-cluster-activated-in-china/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=climate&amp;g=Grid%20%26%20Transmission" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Grid &amp; Transmission</a>
+  <h3><a href="https://www.canarymedia.com/articles/geothermal/zanskar-brings-geothermal-well-back" rel="noopener nofollow">How to bring a geothermal well back from the dead</a></h3>
+  <p>Geothermal developer Zanskar acquired a failing power plant in New Mexico in 2024 to rehabilitate it. The plant&#x27;s shallow wells had been rapidly losing heat, causing a steep decline in power output.</p>
+  <div class="why"><b>Why it matters</b> — Focuses on the engineering challenge of thermal drawdown in shallow geothermal reservoirs and the technical viability of rehabilitating underperforming assets.</div>
+  <p class="src">Canary Media &middot; 09 August 2026 &middot; <a href="https://www.canarymedia.com/articles/geothermal/zanskar-brings-geothermal-well-back" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=climate&amp;g=Grid%20%26%20Transmission" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Grid &amp; Transmission</a>
+  <h3><a href="https://www.volts.wtf/p/grid-cybersecurity-how-big-is-the" rel="noopener nofollow">Grid cybersecurity: how big is the threat &amp; what should we do about it?</a></h3>
+  <p>An interview with cybersecurity expert Patrick Miller explores the realistic threats to the US bulk power system. The discussion covers the actual impact of Chinese inverter vulnerabilities, federal enforcement rules, and why physical threats like squirrels still cause more frequent damage than hackers.</p>
+  <div class="why"><b>Why it matters</b> — Provides a realistic threat model for grid operators, distinguishing between sensationalized nation-state cyber threats and the actual, more frequent causes of physical grid disruption.</div>
+  <p class="src">Volts &middot; 09 August 2026 &middot; <a href="https://www.volts.wtf/p/grid-cybersecurity-how-big-is-the" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=climate&amp;g=Data%20Centre%20Demand" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data Centre Demand</a>
+  <h3><a href="https://www.pv-magazine.com/2026/08/06/transmission-logjams-and-ai-load-growth-push-data-centers-toward-on-site-solar-storage-and-vpps/" rel="noopener nofollow">Data Centers Strain Grids, Prompt Moratoriums</a></h3>
+  <p>Global electricity demand from data centers grew 17% in 2025, with AI-focused centers up 50%, leading to significant grid strain. In Q1 2026, 75 U.S. data center projects worth $130 billion were blocked or delayed due to energy constraints and delayed grid connections. New York imposed a one-year moratorium on new data center construction in mid-July, and PJM accepted 715 new generation projects (over 200 GW) into its reformed interconnection process to address supply shortages.</p>
+  <div class="why"><b>Why it matters</b> — Grid operators and developers must now factor in significant regulatory and financial risks, including potential moratoriums and higher costs for grid upgrades, when planning new data center projects.</div>
+  <p class="src">pv-magazine.com &middot; 09 August 2026 &middot; <a href="https://www.pv-magazine.com/2026/08/06/transmission-logjams-and-ai-load-growth-push-data-centers-toward-on-site-solar-storage-and-vpps/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=climate&amp;g=Nuclear" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Nuclear</a>
+  <h3><a href="https://www.energy.gov/articles/fact-sheet-golden-era-american-nuclear-energy-has-arrived" rel="noopener nofollow">Multiple Advanced Reactors Achieve Criticality</a></h3>
+  <p>Oklo&#x27;s Groves Isotope Test Reactor achieved criticality on August 6, 2026, in Lockhart, Texas, becoming the fifth DOE-authorized advanced reactor to reach this milestone this summer. This follows Antares Nuclear&#x27;s Mark-0 (June 4), Valar Atomics&#x27; Ward 250 (June 18), Deployable Energy&#x27;s Unity (June 30), and Aalo Atomics&#x27; Aalo-X (July 4) also achieving criticality, as reported in an August 4, 2026, DOE fact sheet.</p>
+  <div class="why"><b>Why it matters</b> — These milestones demonstrate the successful, safe operation of new nuclear reactor designs, accelerating the pathway to commercial deployment and contributing to grid decarbonization.</div>
+  <p class="src">energy.gov &middot; 09 August 2026 &middot; <a href="https://www.energy.gov/articles/fact-sheet-golden-era-american-nuclear-energy-has-arrived" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=climate&amp;g=Storage" style="--tc:#3fb950"><i style="background:#3fb950"></i>Storage</a>
+  <h3><a href="https://www.energy-storage.news/us-french-partnership-targets-anode-free-sodium-ion-battery-commercialization/" rel="noopener nofollow">US-French Partnership for Sodium-Ion Batteries</a></h3>
+  <p>Mana Battery (US) and French manufacturer Saft announced a partnership on August 6, 2026, to commercialize anode-free sodium-ion battery technology. This collaboration targets applications including data centers, defense, aerospace, and e-mobility, aiming for costs 20-30% lower than lithium-ion for non-space-constrained sites by late 2026.</p>
+  <div class="why"><b>Why it matters</b> — Engineers can anticipate new, potentially safer and cheaper battery options for stationary storage and EVs, which could significantly alter material supply chains and project economics.</div>
+  <p class="src">energy-storage.news &middot; 09 August 2026 &middot; <a href="https://www.energy-storage.news/us-french-partnership-targets-anode-free-sodium-ion-battery-commercialization/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+</div>
+<p class="signoff">Good luck explaining thermodynamics to the zoning board.</p>
+
+<div class="cta">
+  <h3>10 stories, every Saturday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>
