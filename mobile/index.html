@@ -211,21 +211,27 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
 }
 
 /* channel cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+/* A directory, not a feature grid: this sits below six domain sections that
+   already showed the stories, so it earns four columns and compact cards
+   rather than the ~850px full screen it used to take. */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
 .card{position:relative;background:var(--panel);border:1px solid var(--line);
-  border-radius:12px;padding:18px 18px 16px;text-decoration:none;display:block;
+  border-radius:12px;padding:15px 16px 13px;text-decoration:none;
+  display:flex;flex-direction:column;
   transition:transform .14s ease,box-shadow .14s ease,border-color .14s}
 .card:hover{transform:translateY(-2px);box-shadow:var(--shadow);
   border-color:color-mix(in srgb,var(--ca) 45%,var(--line))}
 .card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;
   background:var(--ca);border-radius:12px 12px 0 0}
-.card .day{font-size:11.5px;color:var(--ca);text-transform:uppercase;
-  letter-spacing:.09em;font-weight:650}
-.card h3{margin:7px 0 5px;font-size:18px;color:var(--ink);letter-spacing:-.02em;
-  font-weight:680}
-.card p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.5}
-.card .n{margin-top:11px;font-size:13px;color:var(--muted);
+.card h3{margin:0 0 4px;font-size:16.5px;color:var(--ink);letter-spacing:-.02em;
+  font-weight:680;line-height:1.3}
+.card p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.45}
+/* Pinned to the bottom so a two-line title never leaves the stats ragged
+   against its neighbours in the same row */
+.card .n{margin-top:auto;padding-top:10px;font-size:12.5px;color:var(--muted);
   font-variant-numeric:tabular-nums}
+.card .n .d{color:var(--ca);text-transform:uppercase;letter-spacing:.07em;
+  font-weight:650;font-size:11.5px;margin-right:5px}
 
 .morelink{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
   margin:26px 0 0;padding:15px 18px;border:1px solid var(--line);

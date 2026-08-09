@@ -212,21 +212,27 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
 }
 
 /* channel cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+/* A directory, not a feature grid: this sits below six domain sections that
+   already showed the stories, so it earns four columns and compact cards
+   rather than the ~850px full screen it used to take. */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
 .card{position:relative;background:var(--panel);border:1px solid var(--line);
-  border-radius:12px;padding:18px 18px 16px;text-decoration:none;display:block;
+  border-radius:12px;padding:15px 16px 13px;text-decoration:none;
+  display:flex;flex-direction:column;
   transition:transform .14s ease,box-shadow .14s ease,border-color .14s}
 .card:hover{transform:translateY(-2px);box-shadow:var(--shadow);
   border-color:color-mix(in srgb,var(--ca) 45%,var(--line))}
 .card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;
   background:var(--ca);border-radius:12px 12px 0 0}
-.card .day{font-size:11.5px;color:var(--ca);text-transform:uppercase;
-  letter-spacing:.09em;font-weight:650}
-.card h3{margin:7px 0 5px;font-size:18px;color:var(--ink);letter-spacing:-.02em;
-  font-weight:680}
-.card p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.5}
-.card .n{margin-top:11px;font-size:13px;color:var(--muted);
+.card h3{margin:0 0 4px;font-size:16.5px;color:var(--ink);letter-spacing:-.02em;
+  font-weight:680;line-height:1.3}
+.card p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.45}
+/* Pinned to the bottom so a two-line title never leaves the stats ragged
+   against its neighbours in the same row */
+.card .n{margin-top:auto;padding-top:10px;font-size:12.5px;color:var(--muted);
   font-variant-numeric:tabular-nums}
+.card .n .d{color:var(--ca);text-transform:uppercase;letter-spacing:.07em;
+  font-weight:650;font-size:11.5px;margin-right:5px}
 
 .morelink{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
   margin:26px 0 0;padding:15px 18px;border:1px solid var(--line);
@@ -486,94 +492,94 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <a href="search.html">Browse all 233 stories &rarr;</a></div>
 <div class="cards">
   <a class="card" href="india-tech/" style="--ca:#2f9e6f">
-    <div class="day">Sunday</div>
     <h3>India Tech Weekly</h3>
     <p>Startups, Policy &amp; Platforms</p>
-    <div class="n">2 issues &middot; 8 stories</div>
+    <div class="n"><span class="d">Sunday</span>
+       2 issues &middot; 8 stories</div>
   </a>
   <a class="card" href="devops/" style="--ca:#3d7dd8">
-    <div class="day">Monday</div>
     <h3>DevOps Weekly Digest</h3>
     <p>Engineering Edition</p>
-    <div class="n">3 issues &middot; 20 stories</div>
+    <div class="n"><span class="d">Monday</span>
+       3 issues &middot; 20 stories</div>
   </a>
   <a class="card" href="marketing/" style="--ca:#3d7dd8">
-    <div class="day">Monday</div>
     <h3>Marketing</h3>
     <p>Search, Content &amp; Demand</p>
-    <div class="n">1 issues &middot; 8 stories</div>
+    <div class="n"><span class="d">Monday</span>
+       1 issue &middot; 8 stories</div>
   </a>
   <a class="card" href="security-news/" style="--ca:#d9552f">
-    <div class="day">Tuesday</div>
     <h3>Security Weekly Digest</h3>
     <p>Exploits, Breaches &amp; Advisories</p>
-    <div class="n">3 issues &middot; 22 stories</div>
+    <div class="n"><span class="d">Tuesday</span>
+       3 issues &middot; 22 stories</div>
   </a>
   <a class="card" href="data/" style="--ca:#3d7dd8">
-    <div class="day">Tuesday</div>
     <h3>Databases &amp; Data</h3>
     <p>Engines, Pipelines &amp; Query Plans</p>
-    <div class="n">1 issues &middot; 20 stories</div>
+    <div class="n"><span class="d">Tuesday</span>
+       1 issue &middot; 20 stories</div>
   </a>
   <a class="card" href="arxiv-picks/" style="--ca:#8a5cd6">
-    <div class="day">Wednesday</div>
     <h3>arXiv Picks</h3>
     <p>Papers Worth Reading</p>
-    <div class="n">2 issues &middot; 12 stories</div>
+    <div class="n"><span class="d">Wednesday</span>
+       2 issues &middot; 12 stories</div>
   </a>
   <a class="card" href="supply-chain/" style="--ca:#3d7dd8">
-    <div class="day">Wednesday</div>
     <h3>Supply Chain &amp; ERP</h3>
     <p>Finance, Manufacturing, Warehousing &amp; Enterprise AI</p>
-    <div class="n">1 issues &middot; 10 stories</div>
+    <div class="n"><span class="d">Wednesday</span>
+       1 issue &middot; 10 stories</div>
   </a>
   <a class="card" href="web/" style="--ca:#3d7dd8">
-    <div class="day">Wednesday</div>
     <h3>Web &amp; Frontend</h3>
     <p>Browsers, Frameworks &amp; the Platform</p>
-    <div class="n">1 issues &middot; 19 stories</div>
+    <div class="n"><span class="d">Wednesday</span>
+       1 issue &middot; 19 stories</div>
   </a>
   <a class="card" href="hr-tech/" style="--ca:#3d7dd8">
-    <div class="day">Thursday</div>
     <h3>HR &amp; Payroll Tech</h3>
     <p>SuccessFactors, payroll and people systems</p>
-    <div class="n">1 issues &middot; 22 stories</div>
+    <div class="n"><span class="d">Thursday</span>
+       1 issue &middot; 22 stories</div>
   </a>
   <a class="card" href="release-radar/" style="--ca:#b8860b">
-    <div class="day">Thursday</div>
     <h3>Release Radar</h3>
     <p>What Shipped This Week</p>
-    <div class="n">2 issues &middot; 28 stories</div>
+    <div class="n"><span class="d">Thursday</span>
+       2 issues &middot; 28 stories</div>
   </a>
   <a class="card" href="ai/" style="--ca:#0f9dab">
-    <div class="day">Friday</div>
     <h3>AI Tech Weekly Digest</h3>
     <p>Engineering Edition</p>
-    <div class="n">5 issues &middot; 30 stories</div>
+    <div class="n"><span class="d">Friday</span>
+       5 issues &middot; 30 stories</div>
   </a>
   <a class="card" href="mobile/" style="--ca:#3d7dd8">
-    <div class="day">Friday</div>
     <h3>Mobile</h3>
     <p>iOS, Android &amp; Cross-Platform</p>
-    <div class="n">1 issues &middot; 11 stories</div>
+    <div class="n"><span class="d">Friday</span>
+       1 issue &middot; 11 stories</div>
   </a>
   <a class="card" href="eng-blogs/" style="--ca:#c2456f">
-    <div class="day">Saturday</div>
     <h3>Engineering Reading</h3>
     <p>From the Blogs Worth Following</p>
-    <div class="n">1 issues &middot; 7 stories</div>
+    <div class="n"><span class="d">Saturday</span>
+       1 issue &middot; 7 stories</div>
   </a>
   <a class="card" href="craft/" style="--ca:#3d7dd8">
-    <div class="day">Saturday</div>
     <h3>Craft &amp; Leadership</h3>
     <p>Architecture, Practice &amp; Running Teams</p>
-    <div class="n">1 issues &middot; 9 stories</div>
+    <div class="n"><span class="d">Saturday</span>
+       1 issue &middot; 9 stories</div>
   </a>
   <a class="card" href="sales/" style="--ca:#3d7dd8">
-    <div class="day">Weekly</div>
     <h3>Sales &amp; Revenue</h3>
     <p>B2B Go-to-Market &amp; Retention</p>
-    <div class="n">1 issues &middot; 7 stories</div>
+    <div class="n"><span class="d">Weekly</span>
+       1 issue &middot; 7 stories</div>
   </a>
 </div>
 
