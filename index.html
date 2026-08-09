@@ -233,7 +233,9 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
   font-variant-numeric:tabular-nums;
   /* Never wrap: a second line here makes the whole grid row taller */
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.card .n .d{color:var(--ca);text-transform:uppercase;letter-spacing:.07em;
+/* Not the accent: the card already carries it on the top bar, and colouring
+   the day too put twenty saturated labels on one screen. */
+.card .n .d{color:var(--muted);text-transform:uppercase;letter-spacing:.07em;
   font-weight:650;font-size:11.5px;margin-right:5px}
 
 .morelink{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
@@ -333,7 +335,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     <a class="sub" href="feed.xml">RSS</a>
   </nav>
 </div></header>
-<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="web/" style="--cc:#36c9b1">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="mobile/" style="--cc:#48c936">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="open-source/" style="--cc:#6ac936">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="data/" style="--cc:#c936c6">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="fintech/" style="--cc:#c93697">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="chips/" style="--cc:#3697c9">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="climate/" style="--cc:#afc936">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="supply-chain/" style="--cc:#8dc936">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="hr-tech/" style="--cc:#9d36c9">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="marketing/" style="--cc:#c9363e">Marketing<span>Search, Content &amp; Demand</span></a><a href="sales/" style="--cc:#c97b36">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="craft/" style="--cc:#36c946">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="design/" style="--cc:#3638c9">Design</a><a class="solo" href="india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="search.html">All stories</a></div></div>
+<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="devops/" style="--cc:#6988b5">DevOps<span>Engineering Edition</span></a><a href="security-news/" style="--cc:#b57a69">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="web/" style="--cc:#69b5a8">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="release-radar/" style="--cc:#b59f69">Releases<span>What Shipped This Week</span></a><a href="mobile/" style="--cc:#72b569">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="open-source/" style="--cc:#84b569">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="data/" style="--cc:#b569b3">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="arxiv-picks/" style="--cc:#8569b5">Papers<span>Papers Worth Reading</span></a><a href="ai/" style="--cc:#69aeb5">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="fintech/" style="--cc:#b5699b">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="chips/" style="--cc:#699bb5">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="climate/" style="--cc:#a7b569">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="supply-chain/" style="--cc:#96b569">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="hr-tech/" style="--cc:#9e69b5">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="marketing/" style="--cc:#b5696d">Marketing<span>Search, Content &amp; Demand</span></a><a href="sales/" style="--cc:#b58c69">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="eng-blogs/" style="--cc:#b56982">Reading<span>From the Blogs Worth Following</span></a><a href="craft/" style="--cc:#69b571">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="design/" style="--cc:#696ab5">Design</a><a class="solo" href="india-tech/" style="--cc:#69b595">India</a><a class="solo all" href="search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
   <h1>One digest a day.<br>Mostly not written by AI.</h1>
@@ -341,8 +343,8 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
      read comes straight from an API rather than a language model.
      <a class="more" href="about.html">How it works&nbsp;&rarr;</a></p>
   <p class="stats"><span><b>20</b> channels</span>
-     <span><b>31</b> issues</span>
-     <span><b>267</b> stories</span>
+     <span><b>32</b> issues</span>
+     <span><b>281</b> stories</span>
      <span><b>31</b> projects tracked</span></p>
 </div>
 
@@ -370,30 +372,6 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   </div>
 </div>
 
-<div class="sec"><h2>Engineering</h2><div class="rule"></div>
-  <span class="domlinks"><a href="devops/">DevOps</a> &middot; <a href="security-news/">Security</a> &middot; <a href="web/">Web</a> &middot; <a href="release-radar/">Releases</a> &middot; <a href="mobile/">Mobile</a> &middot; <a href="open-source/">Open Source</a></span></div>
-<div class="split">
-<div class="lead">
-  <a class="tag tag-link" href="search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">CVE-2026-18577: N-able N-central</a></h3>
-  <p>N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.</p>
-  <div class="why"><b>Why it matters</b> &mdash; Confirmed exploited in the wild. CVSS 8.2 (HIGH). CISA remediation deadline 06 Aug 2026 — 2 days out.</div>
-  <p class="src"><a class="ch" href="security-news/">Security Weekly Digest</a> &middot; CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">Read the original &rarr;</a></p>
-</div>
-  <div class="aside">
-<div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=open-source&amp;g=Supply%20Chain" style="--tc:#f778ba"><i style="background:#f778ba"></i>Supply Chain</a>
-  <h4><a href="https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/" rel="noopener nofollow">npm &#x27;Shai-Hulud&#x27; Worm Compromises Packages</a></h4>
-  <p class="src"><a class="ch" href="open-source/">Open Source</a> &middot; microsoft.com &middot; 09 August 2026</p>
-</div>
-<div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=mobile&amp;g=Android%20%26%20Kotlin" style="--tc:#3fb950"><i style="background:#3fb950"></i>Android &amp; Kotlin</a>
-  <h4><a href="https://android-developers.googleblog.com/2026/08/android-skills-philosophy.html" rel="noopener nofollow">Inside Android Skills - Built for deprecation</a></h4>
-  <p class="src"><a class="ch" href="mobile/">Mobile</a> &middot; Android Developers &middot; 08 August 2026</p>
-</div>
-  </div>
-</div>
-
 <div class="sec"><h2>India</h2><div class="rule"></div>
   <span class="domlinks"><a href="india-tech/">India</a></span></div>
 <div class="split">
@@ -409,6 +387,30 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <a class="tag tag-link" href="search.html?c=india-tech&amp;g=Funding" style="--tc:#3fb950"><i style="background:#3fb950"></i>Funding</a>
   <h4><a href="https://yourstory.com/2026/08/weekly-funding-roundup-aug-1-7-sharp-rise-in-vc-inflow-led-by-river-mobility" rel="noopener nofollow">River Mobility Raises $120 Million Funding</a></h4>
   <p class="src"><a class="ch" href="india-tech/">India</a> &middot; YourStory.com &middot; 09 August 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>Engineering</h2><div class="rule"></div>
+  <span class="domlinks"><a href="devops/">DevOps</a> &middot; <a href="security-news/">Security</a> &middot; <a href="web/">Web</a> &middot; <a href="release-radar/">Releases</a> &middot; <a href="mobile/">Mobile</a> &middot; <a href="open-source/">Open Source</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=open-source&amp;g=Supply%20Chain" style="--tc:#f778ba"><i style="background:#f778ba"></i>Supply Chain</a>
+  <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/" rel="noopener nofollow">npm &#x27;Shai-Hulud&#x27; Worm Compromises Packages</a></h3>
+  <p>Security researchers identified an active supply chain attack involving the &#x27;ChainDrop&#x27; / &#x27;Shai-Hulud&#x27; malware family, which compromised over 1,300 npm package versions, including Keyv and related caching libraries. The malware steals developer credentials and self-propagates by republishing modified packages.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Organizations using Node.js must immediately review dependencies, treat credentials on affected systems as compromised, and remove malicious package versions from all environments.</div>
+  <p class="src"><a class="ch" href="open-source/">Open Source</a> &middot; microsoft.com &middot; <a href="https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=mobile&amp;g=Android%20%26%20Kotlin" style="--tc:#3fb950"><i style="background:#3fb950"></i>Android &amp; Kotlin</a>
+  <h4><a href="https://android-developers.googleblog.com/2026/08/android-skills-philosophy.html" rel="noopener nofollow">Inside Android Skills - Built for deprecation</a></h4>
+  <p class="src"><a class="ch" href="mobile/">Mobile</a> &middot; Android Developers &middot; 08 August 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=web&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h4><a href="https://chriscoyier.net/2026/07/30/codepen-2-0/" rel="noopener nofollow">CodePen 2.0</a></h4>
+  <p class="src"><a class="ch" href="web/">Web</a> &middot; Chris Coyier &middot; 08 August 2026</p>
 </div>
   </div>
 </div>
@@ -534,123 +536,123 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 </div>
 
 <div class="sec"><h2>All channels</h2><div class="rule"></div>
-  <a href="search.html">Browse all 267 stories &rarr;</a></div>
+  <a href="search.html">Browse all 281 stories &rarr;</a></div>
 <div class="cards">
-  <a class="card" href="india-tech/" style="--ca:#2f9e6f">
+  <a class="card" href="india-tech/" style="--ca:#69b595">
     <h3>India Tech Weekly</h3>
     <p>Startups, Policy &amp; Platforms</p>
     <div class="n"><span class="d">Sun</span>
        2 issues &middot; 8 stories</div>
   </a>
-  <a class="card" href="design/" style="--ca:#3638c9">
+  <a class="card" href="design/" style="--ca:#696ab5">
     <h3>Design &amp; UX</h3>
     <p>Interfaces, Research &amp; Systems</p>
     <div class="n"><span class="d">Sun</span>
        1 issue &middot; 6 stories</div>
   </a>
-  <a class="card" href="devops/" style="--ca:#3d7dd8">
+  <a class="card" href="devops/" style="--ca:#6988b5">
     <h3>DevOps Weekly Digest</h3>
     <p>Engineering Edition</p>
     <div class="n"><span class="d">Mon</span>
        3 issues &middot; 20 stories</div>
   </a>
-  <a class="card" href="marketing/" style="--ca:#c9363e">
+  <a class="card" href="marketing/" style="--ca:#b5696d">
     <h3>Marketing</h3>
     <p>Search, Content &amp; Demand</p>
     <div class="n"><span class="d">Mon</span>
        1 issue &middot; 8 stories</div>
   </a>
-  <a class="card" href="fintech/" style="--ca:#c93697">
+  <a class="card" href="fintech/" style="--ca:#b5699b">
     <h3>Fintech &amp; Payments</h3>
     <p>Rails, Regulation &amp; Banking Tech</p>
     <div class="n"><span class="d">Mon</span>
        1 issue &middot; 7 stories</div>
   </a>
-  <a class="card" href="security-news/" style="--ca:#d9552f">
+  <a class="card" href="security-news/" style="--ca:#b57a69">
     <h3>Security Weekly Digest</h3>
     <p>Exploits, Breaches &amp; Advisories</p>
     <div class="n"><span class="d">Tue</span>
        3 issues &middot; 22 stories</div>
   </a>
-  <a class="card" href="data/" style="--ca:#c936c6">
+  <a class="card" href="data/" style="--ca:#b569b3">
     <h3>Databases &amp; Data</h3>
     <p>Engines, Pipelines &amp; Query Plans</p>
     <div class="n"><span class="d">Tue</span>
        1 issue &middot; 20 stories</div>
   </a>
-  <a class="card" href="chips/" style="--ca:#3697c9">
+  <a class="card" href="chips/" style="--ca:#699bb5">
     <h3>Chips &amp; Silicon</h3>
     <p>Fabs, Process Nodes &amp; Accelerators</p>
     <div class="n"><span class="d">Tue</span>
        1 issue &middot; 4 stories</div>
   </a>
-  <a class="card" href="arxiv-picks/" style="--ca:#8a5cd6">
+  <a class="card" href="arxiv-picks/" style="--ca:#8569b5">
     <h3>arXiv Picks</h3>
     <p>Papers Worth Reading</p>
     <div class="n"><span class="d">Wed</span>
        2 issues &middot; 12 stories</div>
   </a>
-  <a class="card" href="supply-chain/" style="--ca:#8dc936">
+  <a class="card" href="supply-chain/" style="--ca:#96b569">
     <h3>Supply Chain &amp; ERP</h3>
     <p>Finance, Manufacturing, Warehousing &amp; Enterprise AI</p>
     <div class="n"><span class="d">Wed</span>
-       1 issue &middot; 10 stories</div>
+       2 issues &middot; 24 stories</div>
   </a>
-  <a class="card" href="web/" style="--ca:#36c9b1">
+  <a class="card" href="web/" style="--ca:#69b5a8">
     <h3>Web &amp; Frontend</h3>
     <p>Browsers, Frameworks &amp; the Platform</p>
     <div class="n"><span class="d">Wed</span>
        1 issue &middot; 19 stories</div>
   </a>
-  <a class="card" href="hr-tech/" style="--ca:#9d36c9">
+  <a class="card" href="hr-tech/" style="--ca:#9e69b5">
     <h3>HR &amp; Payroll Tech</h3>
     <p>SuccessFactors, payroll and people systems</p>
     <div class="n"><span class="d">Thu</span>
        1 issue &middot; 22 stories</div>
   </a>
-  <a class="card" href="release-radar/" style="--ca:#b8860b">
+  <a class="card" href="release-radar/" style="--ca:#b59f69">
     <h3>Release Radar</h3>
     <p>What Shipped This Week</p>
     <div class="n"><span class="d">Thu</span>
        2 issues &middot; 28 stories</div>
   </a>
-  <a class="card" href="sales/" style="--ca:#c97b36">
+  <a class="card" href="sales/" style="--ca:#b58c69">
     <h3>Sales &amp; Revenue</h3>
     <p>B2B Go-to-Market &amp; Retention</p>
     <div class="n"><span class="d">Thu</span>
        1 issue &middot; 7 stories</div>
   </a>
-  <a class="card" href="ai/" style="--ca:#0f9dab">
+  <a class="card" href="ai/" style="--ca:#69aeb5">
     <h3>AI Tech Weekly Digest</h3>
     <p>Engineering Edition</p>
     <div class="n"><span class="d">Fri</span>
        5 issues &middot; 30 stories</div>
   </a>
-  <a class="card" href="mobile/" style="--ca:#48c936">
+  <a class="card" href="mobile/" style="--ca:#72b569">
     <h3>Mobile</h3>
     <p>iOS, Android &amp; Cross-Platform</p>
     <div class="n"><span class="d">Fri</span>
        1 issue &middot; 11 stories</div>
   </a>
-  <a class="card" href="open-source/" style="--ca:#6ac936">
+  <a class="card" href="open-source/" style="--ca:#84b569">
     <h3>Open Source</h3>
     <p>Licences, Governance &amp; Supply Chain</p>
     <div class="n"><span class="d">Fri</span>
        1 issue &middot; 7 stories</div>
   </a>
-  <a class="card" href="eng-blogs/" style="--ca:#c2456f">
+  <a class="card" href="eng-blogs/" style="--ca:#b56982">
     <h3>Engineering Reading</h3>
     <p>From the Blogs Worth Following</p>
     <div class="n"><span class="d">Sat</span>
        1 issue &middot; 7 stories</div>
   </a>
-  <a class="card" href="craft/" style="--ca:#36c946">
+  <a class="card" href="craft/" style="--ca:#69b571">
     <h3>Craft &amp; Leadership</h3>
     <p>Architecture, Practice &amp; Running Teams</p>
     <div class="n"><span class="d">Sat</span>
        1 issue &middot; 9 stories</div>
   </a>
-  <a class="card" href="climate/" style="--ca:#afc936">
+  <a class="card" href="climate/" style="--ca:#a7b569">
     <h3>Climate &amp; Energy</h3>
     <p>Grid, Storage &amp; the Transition</p>
     <div class="n"><span class="d">Sat</span>
@@ -667,7 +669,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
     <a class="btn" href="about.html">How it works</a>
   </div>
 </div>
-<p class="signoff">Good luck explaining outcome engineering to a client still struggling with business partner replication.</p>
+<p class="signoff">Hopefully the AI agents can figure out French e-invoicing.</p>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.
