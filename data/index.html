@@ -221,8 +221,12 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
   transition:transform .14s ease,box-shadow .14s ease,border-color .14s}
 .card:hover{transform:translateY(-2px);box-shadow:var(--shadow);
   border-color:color-mix(in srgb,var(--ca) 45%,var(--line))}
-.card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;
-  background:var(--ca);border-radius:12px 12px 0 0}
+/* No coloured bar here. Twenty channel hues side by side read as a
+   spectrum however they were tuned — tried at 0.61 saturation, at 0.34, and
+   with the weights varied, and all three were noise at this density. The
+   accent still identifies a channel on the channel's own page, where it is
+   the only one on screen. The one exception is the hover border below,
+   which shows a single card's colour at a time. */
 .card h3{margin:0 0 4px;font-size:16.5px;color:var(--ink);letter-spacing:-.02em;
   font-weight:680;line-height:1.3}
 .card p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.45}
