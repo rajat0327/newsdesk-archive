@@ -3,7 +3,14 @@
   <title>Newsdesk — DevOps Weekly Digest</title>
   <link>https://rajat0327.github.io/newsdesk-archive/devops/</link>
   <description>Engineering Edition</description>
-  <lastBuildDate>Sun, 09 Aug 2026 09:49:45 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 10 Aug 2026 04:13:14 +0000</lastBuildDate>
+    <item>
+      <title>DevOps Weekly Digest — 10 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-10.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-08-10.html</guid>
+      <pubDate>Mon, 10 Aug 2026 08:00:00 +0000</pubDate>
+      <description>TypeScript 6.0 introduces breaking changes, while Chrome and Node.js deliver key developer tooling updates.</description>
+    </item>
     <item>
       <title>DevOps Weekly Digest — 03 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-03.html</link>
