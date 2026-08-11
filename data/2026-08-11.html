@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Databases &amp; Data — Engines, Pipelines &amp; Query Plans</title>
-<meta name="description" content="Engines, Pipelines &amp; Query Plans. 27 stories across 2 issues.">
-<meta property="og:title" content="Databases &amp; Data — Engines, Pipelines &amp; Query Plans">
-<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 27 stories across 2 issues.">
+<title>Databases &amp; Data — 11 August 2026</title>
+<meta name="description" content="46 new posts across 8 database and data engineering sources — 5 worth your time.">
+<meta property="og:title" content="Databases &amp; Data — 11 August 2026">
+<meta property="og:description" content="46 new posts across 8 database and data engineering sources — 5 worth your time.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c22ebe">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/data/2026-08-11.html">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <style>
 *,*::before,*::after{box-sizing:border-box}
@@ -341,32 +342,35 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group" data-here><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe" aria-current="page">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
-  <h1>Databases &amp; Data</h1>
-  <p class="lede">Engines, Pipelines &amp; Query Plans. Published every
-     <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>27</b> stories</span>
-     <span><b>2</b> issues</span>
-     <span><b>9</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#c22ebe;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Databases &amp; Data</a></p>
+  <h1>11 August 2026</h1>
+  <p class="lede">46 new posts across 8 database and data engineering sources — 5 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Databases &amp; Data,
+     7 stories, as published.</p>
 </div>
-
-
-<div class="sec"><h2>Top stories</h2><div class="rule"></div>
-  <a href="feed.xml">RSS</a></div>
 <div class="feed">
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
-  <h3><a href="https://www.databricks.com/blog/bigquery-databricks-strategic-framework-modern-migration" rel="noopener nofollow">BigQuery to Databricks Migration Framework</a></h3>
-  <p>This article outlines a strategic framework for migrating from Google BigQuery to Databricks Lakehouse, emphasizing maximizing ROI, unifying governance, and building an AI-ready foundation. It consolidates BI, ETL, and multi-model AI into one environment, aiming for predictable performance and reduced operational overhead.</p>
-  <div class="why"><b>Why it matters</b> — Organizations can reduce data silos and achieve predictable performance by adopting a phased migration to an open lakehouse architecture.</div>
-  <p class="src">Databricks &middot; 08 August 2026 &middot; <a href="https://www.databricks.com/blog/bigquery-databricks-strategic-framework-modern-migration" rel="noopener nofollow">Read the original &rarr;</a></p>
-</div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
   <h3><a href="https://clickhouse.com/blog/musinsa-customer-data-platform" rel="noopener nofollow">How Musinsa scaled its audience engine with ClickHouse Cloud and reduced TCO by 71.4%</a></h3>
   <p>Details how fashion platform Musinsa migrated its audience engine from a self-hosted ClickHouse setup to ClickHouse Cloud. The migration utilized ClickPipes for real-time ingestion, resulting in an 86.5% reduction in storage costs and a 71.4% reduction in total cost of ownership.</p>
   <div class="why"><b>Why it matters</b> — Migrating to managed cloud services can drastically lower TCO (by over 70% in this case) and storage costs (by over 86%) by offloading infrastructure management and leveraging native ingestion pipelines.</div>
   <p class="src">ClickHouse &middot; 11 August 2026 &middot; <a href="https://clickhouse.com/blog/musinsa-customer-data-platform" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h3><a href="https://postgr.es/p/9rV" rel="noopener nofollow">Umair Shahid: Choosing the Right PostgreSQL Partition Key</a></h3>
+  <p>Explains the common pitfall where partitioning a large PostgreSQL table fails to improve query performance. The author discusses how choosing the wrong partition key results in queries remaining slow, and emphasizes the importance of aligning the key with query patterns.</p>
+  <div class="why"><b>Why it matters</b> — Partitioning is not a magic performance switch; if the partition key does not align with your query filters, the database still has to scan multiple partitions, yielding zero performance gains.</div>
+  <p class="src">Planet PostgreSQL &middot; 11 August 2026 &middot; <a href="https://postgr.es/p/9rV" rel="noopener nofollow">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h3><a href="https://postgr.es/p/9r9" rel="noopener nofollow">Christophe Pettus: All Your GUCs in a Row: idle_in_transaction_session_timeout</a></h3>
+  <p>Explains the operational dangers of idle transactions in PostgreSQL, which hold locks and block the vacuum process, potentially leading to cascading outages. It covers how to configure the `idle_in_transaction_session_timeout` parameter to automatically terminate these hazardous connections.</p>
+  <div class="why"><b>Why it matters</b> — Unclosed transactions block VACUUM from cleaning up dead tuples, leading to severe table bloat and transaction ID wraparound; setting a strict timeout prevents a single leaked connection from degrading the entire database.</div>
+  <p class="src">Planet PostgreSQL &middot; 11 August 2026 &middot; <a href="https://postgr.es/p/9r9" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
@@ -389,18 +393,28 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <div class="why"><b>Why it matters</b> — Data engineers running analytical workloads with large joins on ClickHouse will see automatic performance gains and reduced memory consumption without manual tuning, improving query efficiency and resource utilization.</div>
   <p class="src">ClickHouse &middot; 11 August 2026 &middot; <a href="https://clickhouse.com/docs/resources/changelogs/oss/2026" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h3><a href="https://www.infoq.com/news/2026/08/canva-session-revocation-scale/" rel="noopener nofollow">Canva Revokes Sessions via S3, Cuts Cache Memory 87.5%</a></h3>
+  <p>Canva redesigned its session revocation infrastructure to use Amazon S3, storing revocation data as compact, immutable records and distributing it to application gateways as in-memory indexes. This approach supports hundreds of millions of active sessions, improved deployment speed, reduced database infrastructure, and cut the memory footprint of their revocation cache by 87.5% by avoiding MySQL lookups.</p>
+  <div class="why"><b>Why it matters</b> — Engineering teams can significantly reduce database load and memory usage for high-volume session management by offloading revocation data to object storage and distributing it as in-memory indexes.</div>
+  <p class="src">InfoQ &middot; 11 August 2026 &middot; <a href="https://www.infoq.com/news/2026/08/canva-session-revocation-scale/" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
-<div class="morelink"><a href="../search.html?c=data">Browse all 27 stories in this channel &rarr;</a><span>22 older stories</span></div>
-
+</div>
 <p class="signoff">Most database scaling is just finding more aggressive ways to kill idle sessions.</p>
 
-<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
-<p class="editions-note">Each edition is one week's digest exactly as it was
-   published — a summary of the week, then the stories.</p>
-<ul class="issues">
-  <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">46 new posts across 8 database and data engineering sources — 5 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-08.html"><span class="d">08 August 2026</span><span class="h">57 new posts across 9 database and data engineering sources — 7 worth your time.</span><span class="n">20 stories &rarr;</span></a></li>
-</ul>
+<div class="cta">
+  <h3>7 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-08-08.html">&larr; Previous issue</a>
+</div>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.
