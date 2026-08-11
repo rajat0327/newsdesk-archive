@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Tue, 11 Aug 2026 04:03:50 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 11 Aug 2026 17:30:52 +0000</lastBuildDate>
     <item>
       <title>Chips &amp; Silicon — 11 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/chips/2026-08-11.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/chips/2026-08-11.html</guid>
       <pubDate>Tue, 11 Aug 2026 08:00:00 +0000</pubDate>
       <description>69 new posts across 3 semiconductor sources — 3 worth your time.</description>
+    </item>
+    <item>
+      <title>Databases &amp; Data — 11 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/data/2026-08-11.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/data/2026-08-11.html</guid>
+      <pubDate>Tue, 11 Aug 2026 08:00:00 +0000</pubDate>
+      <description>52 new posts across 9 database and data engineering sources — 5 worth your time.</description>
     </item>
     <item>
       <title>Security Weekly Digest — 11 August 2026</title>
