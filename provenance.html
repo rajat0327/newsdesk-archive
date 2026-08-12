@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About Newsdesk</title>
-<meta name="description" content="How these digests are put together.">
-<meta property="og:title" content="About Newsdesk">
-<meta property="og:description" content="How these digests are put together.">
+<title>Where this comes from</title>
+<meta name="description" content="What supplies the facts, what gets withheld, and how many links still work.">
+<meta property="og:title" content="Where this comes from">
+<meta property="og:description" content="What supplies the facts, what gets withheld, and how many links still work.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#3d7dd8">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="feed.xml">
@@ -24,63 +24,52 @@
 </div></header>
 <div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="search.html">All stories</a></div></div>
 <main class="wrap">
-<div class="hero"><h1>How this works</h1>
-<p class="lede">Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</p></div>
+<div class="hero"><h1>Where this comes from</h1>
+<p class="lede">Every figure on this page is read out of the archive when the
+site is built, including the unflattering ones.</p></div>
 <div class="prose narrow">
-<p>Each channel gathers a week of stories and publishes them here. What differs
-between channels is how much a language model is trusted to do — and for most
-of them, the answer is very little.</p>
-<h2>Where the facts come from</h2>
-<p><b>Release Radar</b> uses no model at all. Versions and end-of-life dates
-come from the GitHub Releases API and endoflife.date, so every number is
-checkable at the source. <b>Security</b> takes its exploited-vulnerability
-half straight from CISA's catalog, with severity from NVD.</p>
-<p><b>Engineering Reading</b> and <b>arXiv Picks</b> let a model choose and
-summarise, but never write a link or a title — those come from the feed or the
-paper record, so an article that does not exist cannot be invented.</p>
-<p>Only the three news channels let a model find stories. Even there, every
-link is one it actually retrieved rather than composed, filtered against a
-list of publications chosen in advance; where the stated source disagrees with
-the link, the link wins.</p>
-<h2>What you will not see</h2>
-<p>Padding. If a story has nothing non-obvious to say about why it matters, it
-says nothing instead of filling the space.</p>
-<p>The figures behind all of this — what supplies each channel's facts, which
-publications appear most, how many stories are withheld and why, and how many
-published links still resolve — are on
-<a href="provenance.html">Where this comes from</a>, computed from the archive
-each time the site is built.</p>
-<h2>Channels</h2>
+
+<h2>How much the model decides</h2>
+<p>The distinction that matters is not which model is used but what supplies
+the facts. A title, a link and a date taken from a feed or an API cannot be
+invented; only the choosing and the phrasing are left to a model.</p>
 <div class="scroll"><table>
-<tr><th>Channel</th><th>Day</th><th>Issues</th><th>Stories</th></tr>
-<tr><td><a href='india-tech/'>India Tech Weekly</a></td><td>Sunday</td><td>2</td><td>3</td></tr>
-<tr><td><a href='design/'>Design &amp; UX</a></td><td>Sunday</td><td>1</td><td>6</td></tr>
-<tr><td><a href='devops/'>DevOps Weekly Digest</a></td><td>Monday</td><td>4</td><td>17</td></tr>
-<tr><td><a href='marketing/'>Marketing</a></td><td>Monday</td><td>2</td><td>15</td></tr>
-<tr><td><a href='fintech/'>Fintech &amp; Payments</a></td><td>Monday</td><td>2</td><td>10</td></tr>
-<tr><td><a href='security-news/'>Security Weekly Digest</a></td><td>Tuesday</td><td>4</td><td>27</td></tr>
-<tr><td><a href='data/'>Databases &amp; Data</a></td><td>Tuesday</td><td>2</td><td>22</td></tr>
-<tr><td><a href='chips/'>Chips &amp; Silicon</a></td><td>Tuesday</td><td>2</td><td>7</td></tr>
-<tr><td><a href='arxiv-picks/'>arXiv Picks</a></td><td>Wednesday</td><td>3</td><td>18</td></tr>
-<tr><td><a href='supply-chain/'>Supply Chain &amp; ERP</a></td><td>Wednesday</td><td>3</td><td>37</td></tr>
-<tr><td><a href='web/'>Web &amp; Frontend</a></td><td>Wednesday</td><td>2</td><td>25</td></tr>
-<tr><td><a href='hr-tech/'>HR &amp; Payroll Tech</a></td><td>Thursday</td><td>1</td><td>21</td></tr>
-<tr><td><a href='release-radar/'>Release Radar</a></td><td>Thursday</td><td>2</td><td>28</td></tr>
-<tr><td><a href='sales/'>Sales &amp; Revenue</a></td><td>Thursday</td><td>1</td><td>7</td></tr>
-<tr><td><a href='ai/'>AI Tech Weekly Digest</a></td><td>Friday</td><td>6</td><td>26</td></tr>
-<tr><td><a href='mobile/'>Mobile</a></td><td>Friday</td><td>1</td><td>9</td></tr>
-<tr><td><a href='open-source/'>Open Source</a></td><td>Friday</td><td>1</td><td>7</td></tr>
-<tr><td><a href='eng-blogs/'>Engineering Reading</a></td><td>Saturday</td><td>1</td><td>7</td></tr>
-<tr><td><a href='craft/'>Craft &amp; Leadership</a></td><td>Saturday</td><td>1</td><td>5</td></tr>
-<tr><td><a href='climate/'>Climate &amp; Energy</a></td><td>Saturday</td><td>1</td><td>9</td></tr>
+<tr><th></th><th>Facts come from</th><th>The model</th><th>Channels</th></tr>
+<tr><td><b>1</b></td><td>GitHub Releases API, endoflife.date</td><td>not used at all</td><td class='muted-cell'>Release Radar</td></tr>
+<tr><td><b>3</b></td><td>CISA's catalog, the arXiv paper record</td><td>picks and phrases, never writes a link</td><td class='muted-cell'>Security Weekly Digest, Supply Chain &amp; ERP, arXiv Picks</td></tr>
+<tr><td><b>14</b></td><td>the feed record — title, link, date</td><td>picks and phrases, never writes a link</td><td class='muted-cell'>AI Tech Weekly Digest, Chips &amp; Silicon, Climate &amp; Energy, Craft &amp; Leadership, Databases &amp; Data, Design &amp; UX, Engineering Reading, Fintech &amp; Payments, HR &amp; Payroll Tech, Marketing, Mobile, Open Source, Sales &amp; Revenue, Web &amp; Frontend</td></tr>
+<tr><td><b>2</b></td><td>search results it actually retrieved</td><td>also finds the stories</td><td class='muted-cell'>DevOps Weekly Digest, India Tech Weekly</td></tr>
 </table></div>
-</div>
-<div class="cta">
-  <h3>Read along</h3>
-  <p>A different channel most days, or all of them in one feed.</p>
-  <div class="row">
-    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
-  </div>
+
+<h2>Sources</h2>
+<p><b>136</b> feeds are configured across <b>20</b> channels,
+and <b>158</b> distinct publications have supplied at least one
+published story. No source is trusted by name: a link is kept only if its
+domain is on the channel's list and the page actually resolves.</p>
+<div class="scroll"><table>
+<tr><th>Most published</th><th>Stories</th></tr>
+<tr><td>arXiv</td><td>18</td></tr><tr><td>CISA KEV</td><td>13</td></tr><tr><td>Planet PostgreSQL</td><td>8</td></tr><tr><td>Frontend Masters</td><td>8</td></tr><tr><td>SAP Community</td><td>6</td></tr><tr><td>SAP ERP</td><td>6</td></tr><tr><td>SAP HCM Community</td><td>5</td></tr><tr><td>Search Engine Journal</td><td>5</td></tr><tr><td>endoflife.date</td><td>5</td></tr><tr><td>ERP Today</td><td>5</td></tr><tr><td>CSS-Tricks</td><td>5</td></tr><tr><td>OpenAI</td><td>4</td></tr>
+</table></div>
+
+<h2>What is withheld</h2>
+<p><b>353</b> stories are archived; <b>306</b> appear
+on the site. The <b>47</b> difference is not editing. It is stories
+whose link went to a search page, to an expired redirect, to a page that no
+longer exists, or that repeated another story in the same issue.</p>
+<p>The archive keeps all of them. It is the record of what ran, and it is
+what makes it possible to tell whether any of this is improving.</p>
+
+<h2>Links that no longer work</h2>
+<p>Every published link was checked on
+        <b>2026-08-12</b>. Of 345,
+        <b>318</b> still resolve and <b>27</b> answer 404.
+        Those 27 are withheld from the site until they come
+        back; the archive keeps them, because what was published is a matter of
+        record.</p>
+        <p>Most were never real: a model writing a plausible path on a genuine
+        publication's domain. The check that would have caught them now runs
+        before anything is published, so this number should fall rather than
+        grow.</p>
 </div>
 </main>
 <footer><div class="wrap">
