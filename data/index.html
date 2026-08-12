@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Databases &amp; Data — Engines, Pipelines &amp; Query Plans</title>
-<meta name="description" content="Engines, Pipelines &amp; Query Plans. 25 stories across 2 issues.">
+<meta name="description" content="Engines, Pipelines &amp; Query Plans. 23 stories across 2 issues.">
 <meta property="og:title" content="Databases &amp; Data — Engines, Pipelines &amp; Query Plans">
-<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 25 stories across 2 issues.">
+<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 23 stories across 2 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c22ebe">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -344,7 +344,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <h1>Databases &amp; Data</h1>
   <p class="lede">Engines, Pipelines &amp; Query Plans. Published every
      <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>25</b> stories</span>
+  <p class="stats"><span><b>23</b> stories</span>
      <span><b>2</b> issues</span>
      <span><b>9</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
@@ -369,13 +369,6 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <p class="src">ClickHouse &middot; 11 August 2026 &middot; <a href="https://clickhouse.com/blog/musinsa-customer-data-platform" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
-  <h3><a href="https://postgr.es/p/9rc" rel="noopener nofollow">Christophe Pettus: All Your GUCs in a Row: idle_replication_slot_timeout</a></h3>
-  <p>Covers the introduction of `idle_replication_slot_timeout` in PostgreSQL 18. This parameter prevents abandoned replication slots from retaining write-ahead logs (WAL) indefinitely, which otherwise risks filling up disk space and crashing the primary database.</p>
-  <div class="why"><b>Why it matters</b> — Setting an expiration timeout on abandoned replication slots prevents disk-space exhaustion outages caused by dead consumers.</div>
-  <p class="src">Planet PostgreSQL &middot; 11 August 2026 &middot; <a href="https://postgr.es/p/9rc" rel="noopener nofollow">Read the original &rarr;</a></p>
-</div>
-<div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
   <h3><a href="https://clickhouse.com/blog/mercado-libre-observability-on-clickhouse-cloud" rel="noopener nofollow">How Mercado Libre rebuilt its observability platform on ClickHouse Cloud with 50x faster trace queries</a></h3>
   <p>This case study details how Mercado Libre migrated its observability platform to ClickHouse Cloud to handle an ingestion rate of 400 million spans per minute. The migration achieved up to 89% data compression and reduced trace query latencies from over five minutes to just four seconds.</p>
@@ -389,8 +382,15 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <div class="why"><b>Why it matters</b> — Designing a backup system around massive parallelism allows capturing consistent, encrypted snapshots of active databases with zero impact on production query performance.</div>
   <p class="src">PlanetScale &middot; 08 August 2026 &middot; <a href="https://planetscale.com/blog/massively-parallel-postgres-backups" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h3><a href="https://clickhouse.com/resources/engineering/alloydb-alternatives" rel="noopener nofollow">Postgres Managed by ClickHouse Benchmarks</a></h3>
+  <p>In PostgresBench at 500 GB, Postgres managed by ClickHouse achieved 26,328 transactions per second on a 16 vCPU, 64 GB RAM instance. This result was 2.4 to 5.2 times the throughput of Crunchy Bridge, Aurora, Neon, and RDS using the same benchmark parameters for transactional workloads.</p>
+  <div class="why"><b>Why it matters</b> — Teams can achieve significantly higher transactional throughput with Postgres managed by ClickHouse, potentially reducing infrastructure costs and improving application responsiveness for write-heavy workloads.</div>
+  <p class="src">clickhouse.com &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/resources/engineering/alloydb-alternatives" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
-<div class="morelink"><a href="../search.html?c=data">Browse all 25 stories in this channel &rarr;</a><span>20 older stories</span></div>
+</div>
+<div class="morelink"><a href="../search.html?c=data">Browse all 23 stories in this channel &rarr;</a><span>18 older stories</span></div>
 
 <p class="signoff">Another week of configuring Postgres to survive our own application code.</p>
 
@@ -398,8 +398,8 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
-  <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">52 new posts across 9 database and data engineering sources — 5 worth your time.</span><span class="n">5 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-08.html"><span class="d">08 August 2026</span><span class="h">57 new posts across 9 database and data engineering sources — 7 worth your time.</span><span class="n">20 stories &rarr;</span></a></li>
+  <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">52 new posts across 9 database and data engineering sources — 5 worth your time.</span><span class="n">4 stories &rarr;</span></a></li>
+  <li><a class="edition" href="2026-08-08.html"><span class="d">08 August 2026</span><span class="h">57 new posts across 9 database and data engineering sources — 7 worth your time.</span><span class="n">19 stories &rarr;</span></a></li>
 </ul>
 </main>
 <footer><div class="wrap">
