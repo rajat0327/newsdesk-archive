@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Databases &amp; Data — Engines, Pipelines &amp; Query Plans</title>
-<meta name="description" content="Engines, Pipelines &amp; Query Plans. 23 stories across 2 issues.">
+<meta name="description" content="Engines, Pipelines &amp; Query Plans. 22 stories across 2 issues.">
 <meta property="og:title" content="Databases &amp; Data — Engines, Pipelines &amp; Query Plans">
-<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 23 stories across 2 issues.">
+<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 22 stories across 2 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c22ebe">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -344,7 +344,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <h1>Databases &amp; Data</h1>
   <p class="lede">Engines, Pipelines &amp; Query Plans. Published every
      <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>23</b> stories</span>
+  <p class="stats"><span><b>22</b> stories</span>
      <span><b>2</b> issues</span>
      <span><b>9</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
@@ -354,13 +354,6 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
   <a href="feed.xml">RSS</a></div>
 <div class="feed">
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
-  <h3><a href="https://www.databricks.com/blog/bigquery-databricks-strategic-framework-modern-migration" rel="noopener nofollow">BigQuery to Databricks Migration Framework</a></h3>
-  <p>This article outlines a strategic framework for migrating from Google BigQuery to Databricks Lakehouse, emphasizing maximizing ROI, unifying governance, and building an AI-ready foundation. It consolidates BI, ETL, and multi-model AI into one environment, aiming for predictable performance and reduced operational overhead.</p>
-  <div class="why"><b>Why it matters</b> — Organizations can reduce data silos and achieve predictable performance by adopting a phased migration to an open lakehouse architecture.</div>
-  <p class="src">Databricks &middot; 08 August 2026 &middot; <a href="https://www.databricks.com/blog/bigquery-databricks-strategic-framework-modern-migration" rel="noopener nofollow">Read the original &rarr;</a></p>
-</div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
   <h3><a href="https://clickhouse.com/blog/musinsa-customer-data-platform" rel="noopener nofollow">How Musinsa scaled its audience engine with ClickHouse Cloud and reduced TCO by 71.4%</a></h3>
@@ -389,8 +382,15 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
   <div class="why"><b>Why it matters</b> — Teams can achieve significantly higher transactional throughput with Postgres managed by ClickHouse, potentially reducing infrastructure costs and improving application responsiveness for write-heavy workloads.</div>
   <p class="src">clickhouse.com &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/resources/engineering/alloydb-alternatives" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h3><a href="https://planetscale.com/blog/concurrency-vs-throughput-vitess-mysql" rel="noopener nofollow">Concurrency vs. Throughput: why more parallelism can make databases slower</a></h3>
+  <p>Examines a 16-minute MySQL production outage caused by a sudden traffic spike that spiraled into lock contention. The post tracks how query throughput collapsed from 15,000 queries per second down to 1,500 as concurrency and error rates peaked.</p>
+  <div class="why"><b>Why it matters</b> — Uncontrolled concurrency beyond optimal queue depth causes severe lock contention, turning extra parallelism into lower overall system throughput.</div>
+  <p class="src">PlanetScale &middot; 08 August 2026 &middot; <a href="https://planetscale.com/blog/concurrency-vs-throughput-vitess-mysql" rel="noopener nofollow">Read the original &rarr;</a></p>
 </div>
-<div class="morelink"><a href="../search.html?c=data">Browse all 23 stories in this channel &rarr;</a><span>18 older stories</span></div>
+</div>
+<div class="morelink"><a href="../search.html?c=data">Browse all 22 stories in this channel &rarr;</a><span>17 older stories</span></div>
 
 <p class="signoff">Another week of configuring Postgres to survive our own application code.</p>
 
@@ -399,7 +399,7 @@ mark{background:color-mix(in srgb,var(--accent) 24%,transparent);color:inherit;
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
   <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">52 new posts across 9 database and data engineering sources — 5 worth your time.</span><span class="n">4 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-08.html"><span class="d">08 August 2026</span><span class="h">57 new posts across 9 database and data engineering sources — 7 worth your time.</span><span class="n">19 stories &rarr;</span></a></li>
+  <li><a class="edition" href="2026-08-08.html"><span class="d">08 August 2026</span><span class="h">57 new posts across 9 database and data engineering sources — 7 worth your time.</span><span class="n">18 stories &rarr;</span></a></li>
 </ul>
 </main>
 <footer><div class="wrap">
