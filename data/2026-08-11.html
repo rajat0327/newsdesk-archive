@@ -37,31 +37,31 @@
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
-  <h3><a href="https://planetscale.com/blog/the-dangers-of-postgres-subtransactions" rel="noopener nofollow">The dangers of Postgres subtransactions</a></h3>
+  <h2><a href="https://planetscale.com/blog/the-dangers-of-postgres-subtransactions" rel="noopener nofollow">The dangers of Postgres subtransactions</a></h2>
   <p>Explains how accumulating numerous subtransaction IDs in a single transaction degrades throughput across a PostgreSQL cluster. It highlights how this can prevent new read replicas from accepting queries during WAL replay, rendering them useless during load spikes.</p>
   <div class="why"><b>Why it matters</b> — Subtransactions can silently break read replica scaling during traffic spikes by blocking query execution during WAL replay.</div>
-  <p class="src">PlanetScale &middot; 11 August 2026 &middot; <a href="https://planetscale.com/blog/the-dangers-of-postgres-subtransactions" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">PlanetScale &middot; 11 August 2026 &middot; <a href="https://planetscale.com/blog/the-dangers-of-postgres-subtransactions" rel="noopener nofollow" aria-label="Read the original: The dangers of Postgres subtransactions">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://postgr.es/p/9rV" rel="noopener nofollow">Umair Shahid: Choosing the Right PostgreSQL Partition Key</a></h3>
+  <h2><a href="https://postgr.es/p/9rV" rel="noopener nofollow">Umair Shahid: Choosing the Right PostgreSQL Partition Key</a></h2>
   <p>Discusses why partitioning a large table sometimes fails to improve query performance. It explains how choosing the wrong partition key keeps queries slow and how to select the correct key to achieve the expected performance gains.</p>
   <div class="why"><b>Why it matters</b> — Partitioning is not a magic performance switch; if the partition key does not align with your query patterns, you incur the overhead of partitioning without any of the speed benefits.</div>
-  <p class="src">Planet PostgreSQL &middot; 11 August 2026 &middot; <a href="https://postgr.es/p/9rV" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Planet PostgreSQL &middot; 11 August 2026 &middot; <a href="https://postgr.es/p/9rV" rel="noopener nofollow" aria-label="Read the original: Umair Shahid: Choosing the Right PostgreSQL Partition Key">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
-  <h3><a href="https://clickhouse.com/blog/musinsa-customer-data-platform" rel="noopener nofollow">How Musinsa scaled its audience engine with ClickHouse Cloud and reduced TCO by 71.4%</a></h3>
+  <h2><a href="https://clickhouse.com/blog/musinsa-customer-data-platform" rel="noopener nofollow">How Musinsa scaled its audience engine with ClickHouse Cloud and reduced TCO by 71.4%</a></h2>
   <p>Details Musinsa&#x27;s migration of its audience engine from self-hosted ClickHouse to ClickHouse Cloud. The transition reduced storage costs by 86.5% and total cost of ownership by up to 71.4% while simplifying ingestion.</p>
   <div class="why"><b>Why it matters</b> — Offloading infrastructure management to a managed cloud service can yield massive TCO reductions (up to 71.4%) and storage savings (86.5%) for high-scale analytical workloads.</div>
-  <p class="src">ClickHouse &middot; 11 August 2026 &middot; <a href="https://clickhouse.com/blog/musinsa-customer-data-platform" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">ClickHouse &middot; 11 August 2026 &middot; <a href="https://clickhouse.com/blog/musinsa-customer-data-platform" rel="noopener nofollow" aria-label="Read the original: How Musinsa scaled its audience engine with ClickHouse Cloud and reduced TCO by 71.4%">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
-  <h3><a href="https://postgr.es/p/9r9" rel="noopener nofollow">Christophe Pettus: All Your GUCs in a Row: idle_in_transaction_session_timeout</a></h3>
+  <h2><a href="https://postgr.es/p/9r9" rel="noopener nofollow">Christophe Pettus: All Your GUCs in a Row: idle_in_transaction_session_timeout</a></h2>
   <p>Explains the severe operational risks of idle transactions, which hold locks and block vacuum processes. It details how a single forgotten connection can trigger a cascading outage and how to use this timeout parameter to prevent it.</p>
   <div class="why"><b>Why it matters</b> — Unclosed transactions block PostgreSQL&#x27;s VACUUM process, leading to table bloat and transaction ID wraparound risks that can take down an entire cluster.</div>
-  <p class="src">Planet PostgreSQL &middot; 11 August 2026 &middot; <a href="https://postgr.es/p/9r9" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Planet PostgreSQL &middot; 11 August 2026 &middot; <a href="https://postgr.es/p/9r9" rel="noopener nofollow" aria-label="Read the original: Christophe Pettus: All Your GUCs in a Row: idle_in_transaction_session_timeout">Read the original &rarr;</a></p>
 </div>
 </div>
 <p class="signoff">Another week of configuring Postgres to survive our own application code.</p>

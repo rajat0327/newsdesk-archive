@@ -26,6 +26,16 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
 .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
 .narrow{max-width:720px}
 a{color:var(--accent);text-underline-offset:2px}
+/* One :focus rule in the whole stylesheet meant a keyboard user could barely
+   tell where they were. :focus-visible so a mouse click does not draw it. */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+/* Three transitions, including the card lift, ignored the OS setting. */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;transition-duration:.01ms !important;
+    scroll-behavior:auto !important}
+  .card:hover{transform:none}
+}
 
 /* header */
 header.top{position:sticky;top:0;z-index:20;backdrop-filter:saturate(180%) blur(12px);
@@ -63,7 +73,7 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
   border-radius:2px 2px 0 0}
 .chanbar details[data-here] summary{color:var(--ink)}
 .chanbar details[data-here] summary::after{background:var(--accent)}
-.chanbar a.solo[aria-current]{color:var(--cc)}
+.chanbar a.solo[aria-current]{color:color-mix(in srgb,var(--cc) 45%,var(--ink))}
 .chanbar a.solo[aria-current]::after{background:var(--cc)}
 .chanbar a.solo.all{margin-left:auto;color:var(--muted);font-weight:500}
 
@@ -79,7 +89,8 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
   text-decoration:none;color:var(--ink);font-size:14.5px;font-weight:620;
   border-left:2px solid transparent}
 .chanbar .menu a:hover{background:var(--hair);border-left-color:var(--cc)}
-.chanbar .menu a[aria-current]{color:var(--cc);background:var(--hair);
+.chanbar .menu a[aria-current]{color:color-mix(in srgb,var(--cc) 45%,var(--ink));
+  background:var(--hair);
   border-left-color:var(--cc)}
 .chanbar .menu a span{display:block;font-size:12.5px;font-weight:400;
   color:var(--muted);margin-top:1px;letter-spacing:0;line-height:1.35}
@@ -117,7 +128,7 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
 /* end-of-life, full form — Release Radar only */
 .countdown{margin:22px 0 0;border:1px solid var(--line);border-radius:11px;
   background:var(--panel);overflow:hidden}
-.countdown h4{margin:0;padding:11px 16px;font-size:11px;letter-spacing:.08em;
+.countdown h2{margin:0;padding:11px 16px;font-size:11px;letter-spacing:.08em;
   text-transform:uppercase;color:var(--muted);font-weight:650;
   border-bottom:1px solid var(--line)}
 .countdown ul{list-style:none;margin:0;padding:7px 0}
@@ -157,7 +168,7 @@ nav.top-nav a.sub:hover{color:#fff;filter:brightness(1.08)}
 .item h3 a:hover{color:var(--accent)}
 .item p{margin:0;color:var(--soft);font-size:15.5px}
 .tag-link{text-decoration:none;transition:color .12s}
-.tag-link:hover{color:var(--tc)}
+.tag-link:hover{color:color-mix(in srgb,var(--tc) 45%,var(--ink))}
 .tag{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
   font-weight:640;letter-spacing:.06em;text-transform:uppercase;
   margin:0 16px 7px 0;white-space:nowrap;color:var(--muted)}

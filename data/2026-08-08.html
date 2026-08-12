@@ -37,129 +37,129 @@
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
-  <h3><a href="https://www.dataengineeringweekly.com/p/on-benchmarking" rel="noopener nofollow">On Benchmarking</a></h3>
+  <h2><a href="https://www.dataengineeringweekly.com/p/on-benchmarking" rel="noopener nofollow">On Benchmarking</a></h2>
   <p>This post explores the methodology of database and system benchmarking, arguing that a raw performance number is meaningless without understanding why a system stops scaling and whether the test matches production workloads. It warns against choosing architectures based solely on isolated high-throughput metrics.</p>
   <div class="why"><b>Why it matters</b> — A benchmark is only valid if you can identify its scaling limits and align its parameters with your actual production workload characteristics.</div>
-  <p class="src">Data Engineering Weekly &middot; 08 August 2026 &middot; <a href="https://www.dataengineeringweekly.com/p/on-benchmarking" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Data Engineering Weekly &middot; 08 August 2026 &middot; <a href="https://www.dataengineeringweekly.com/p/on-benchmarking" rel="noopener nofollow" aria-label="Read the original: On Benchmarking">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://postgr.es/p/9ro" rel="noopener nofollow">Avi Vallarapu: Tuning PostgreSQL HOT Updates - A HammerDB Benchmark</a></h3>
+  <h2><a href="https://postgr.es/p/9ro" rel="noopener nofollow">Avi Vallarapu: Tuning PostgreSQL HOT Updates - A HammerDB Benchmark</a></h2>
   <p>This post details how to leverage Heap-Only Tuple (HOT) updates in PostgreSQL to bypass the overhead of standard vacuuming. Using a HammerDB TPROC-C benchmark, it demonstrates how tuning the table fillfactor parameter reduces bloat growth and eliminates vacuum bottlenecks.</p>
   <div class="why"><b>Why it matters</b> — Tuning the table fillfactor parameter triggers Heap-Only Tuple (HOT) updates, which bypasses index updates and eliminates vacuum overhead during heavy write workloads.</div>
-  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9ro" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9ro" rel="noopener nofollow" aria-label="Read the original: Avi Vallarapu: Tuning PostgreSQL HOT Updates - A HammerDB Benchmark">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
-  <h3><a href="https://clickhouse.com/blog/mercado-libre-observability-on-clickhouse-cloud" rel="noopener nofollow">How Mercado Libre rebuilt its observability platform on ClickHouse Cloud with 50x faster trace queries</a></h3>
+  <h2><a href="https://clickhouse.com/blog/mercado-libre-observability-on-clickhouse-cloud" rel="noopener nofollow">How Mercado Libre rebuilt its observability platform on ClickHouse Cloud with 50x faster trace queries</a></h2>
   <p>This case study details how Mercado Libre migrated its observability platform to ClickHouse Cloud to handle an ingestion rate of 400 million spans per minute. The migration achieved up to 89% data compression and reduced trace query latencies from over five minutes to just four seconds.</p>
   <div class="why"><b>Why it matters</b> — Migrating high-throughput observability data to a columnar store achieved an 89% compression ratio and reduced trace query latency from five minutes to four seconds at a scale of 400 million spans per minute.</div>
-  <p class="src">ClickHouse &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/blog/mercado-libre-observability-on-clickhouse-cloud" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">ClickHouse &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/blog/mercado-libre-observability-on-clickhouse-cloud" rel="noopener nofollow" aria-label="Read the original: How Mercado Libre rebuilt its observability platform on ClickHouse Cloud with 50x faster trace queries">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
-  <h3><a href="https://postgr.es/p/9ra" rel="noopener nofollow">Umair Shahid: PostgreSQL Lockup vs Stale Connection: How to Tell Them Apart</a></h3>
+  <h2><a href="https://postgr.es/p/9ra" rel="noopener nofollow">Umair Shahid: PostgreSQL Lockup vs Stale Connection: How to Tell Them Apart</a></h2>
   <p>This post provides a guide to diagnosing database connection failures, specifically distinguishing between a genuine PostgreSQL server lockup and a stale connection that silently died in the application&#x27;s connection pool. It highlights how identical-looking application errors can stem from entirely different network or pool failures.</p>
   <div class="why"><b>Why it matters</b> — Distinguishing between database-level lockups and silent connection pool dropouts prevents misdiagnosing network-level failures as database performance issues.</div>
-  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9ra" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9ra" rel="noopener nofollow" aria-label="Read the original: Umair Shahid: PostgreSQL Lockup vs Stale Connection: How to Tell Them Apart">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
-  <h3><a href="https://postgr.es/p/9r6" rel="noopener nofollow">Alexey Evlampiev: Your Transaction Boundary Belongs in the Program, Not the Filename</a></h3>
+  <h2><a href="https://postgr.es/p/9r6" rel="noopener nofollow">Alexey Evlampiev: Your Transaction Boundary Belongs in the Program, Not the Filename</a></h2>
   <p>This article examines how to structure phased schema migrations in PostgreSQL, which often require a mix of transactional and non-transactional operations. It argues that migration frameworks should embed transaction boundaries directly within the SQL program itself rather than relying on external file-naming metadata.</p>
   <div class="why"><b>Why it matters</b> — Embedding transaction boundaries directly within SQL migration scripts, rather than relying on framework metadata, ensures safer execution of complex, multi-phase schema changes.</div>
-  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9r6" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9r6" rel="noopener nofollow" aria-label="Read the original: Alexey Evlampiev: Your Transaction Boundary Belongs in the Program, Not the Filename">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
-  <h3><a href="https://planetscale.com/blog/massively-parallel-postgres-backups" rel="noopener nofollow">Massively parallel Postgres backups</a></h3>
+  <h2><a href="https://planetscale.com/blog/massively-parallel-postgres-backups" rel="noopener nofollow">Massively parallel Postgres backups</a></h2>
   <p>This post discusses the architectural challenges of executing consistent, encrypted database backups every 12 hours on highly active production databases. It focuses on achieving zero impact on production queries while handling massive data volumes through parallel processing.</p>
   <div class="why"><b>Why it matters</b> — Designing a backup system around massive parallelism allows capturing consistent, encrypted snapshots of active databases with zero impact on production query performance.</div>
-  <p class="src">PlanetScale &middot; 08 August 2026 &middot; <a href="https://planetscale.com/blog/massively-parallel-postgres-backups" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">PlanetScale &middot; 08 August 2026 &middot; <a href="https://planetscale.com/blog/massively-parallel-postgres-backups" rel="noopener nofollow" aria-label="Read the original: Massively parallel Postgres backups">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a>
-  <h3><a href="https://redis.io/blog/multi-agent-observability-why-one-trace-is-not-enough/" rel="noopener nofollow">Multi-agent observability: why one trace isn&#x27;t enough</a></h3>
+  <h2><a href="https://redis.io/blog/multi-agent-observability-why-one-trace-is-not-enough/" rel="noopener nofollow">Multi-agent observability: why one trace isn&#x27;t enough</a></h2>
   <p>This post addresses the unique challenges of monitoring multi-agent AI systems, where interactions span multiple execution loops, shared memory states, and external tool calls. It explains why traditional single-trace observability patterns fail to capture the asynchronous, distributed nature of multi-agent workflows.</p>
   <div class="why"><b>Why it matters</b> — Multi-agent systems require distributed, multi-loop tracing rather than single-trace patterns to capture interactions across shared memory and asynchronous tool calls.</div>
-  <p class="src">Redis &middot; 08 August 2026 &middot; <a href="https://redis.io/blog/multi-agent-observability-why-one-trace-is-not-enough/" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Redis &middot; 08 August 2026 &middot; <a href="https://redis.io/blog/multi-agent-observability-why-one-trace-is-not-enough/" rel="noopener nofollow" aria-label="Read the original: Multi-agent observability: why one trace isn&#x27;t enough">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://clickhouse.com/resources/engineering/alloydb-alternatives" rel="noopener nofollow">Postgres Managed by ClickHouse Benchmarks</a></h3>
+  <h2><a href="https://clickhouse.com/resources/engineering/alloydb-alternatives" rel="noopener nofollow">Postgres Managed by ClickHouse Benchmarks</a></h2>
   <p>In PostgresBench at 500 GB, Postgres managed by ClickHouse achieved 26,328 transactions per second on a 16 vCPU, 64 GB RAM instance. This result was 2.4 to 5.2 times the throughput of Crunchy Bridge, Aurora, Neon, and RDS using the same benchmark parameters for transactional workloads.</p>
   <div class="why"><b>Why it matters</b> — Teams can achieve significantly higher transactional throughput with Postgres managed by ClickHouse, potentially reducing infrastructure costs and improving application responsiveness for write-heavy workloads.</div>
-  <p class="src">clickhouse.com &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/resources/engineering/alloydb-alternatives" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">clickhouse.com &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/resources/engineering/alloydb-alternatives" rel="noopener nofollow" aria-label="Read the original: Postgres Managed by ClickHouse Benchmarks">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
-  <h3><a href="https://clickhouse.com/resources/engineering/bigquery-alternatives-2026" rel="noopener nofollow">Cloud Data Warehouse Cost and Latency</a></h3>
+  <h2><a href="https://clickhouse.com/resources/engineering/bigquery-alternatives-2026" rel="noopener nofollow">Cloud Data Warehouse Cost and Latency</a></h2>
   <p>Organizations are encountering cost and latency issues with serverless data warehouses like BigQuery, particularly due to &#x27;bytes-scanned&#x27; pricing for frequently executed queries. Solutions like ClickHouse offer compute-based pricing and achieve sub-second latency for high-concurrency, real-time analytical workloads, contrasting with the batch-oriented nature of some traditional warehouses.</p>
   <div class="why"><b>Why it matters</b> — Data teams must evaluate pricing models and architectural fit to manage costs and achieve required latency for real-time dashboards and user-facing analytics.</div>
-  <p class="src">clickhouse.com &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/resources/engineering/bigquery-alternatives-2026" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">clickhouse.com &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/resources/engineering/bigquery-alternatives-2026" rel="noopener nofollow" aria-label="Read the original: Cloud Data Warehouse Cost and Latency">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://planetscale.com/blog/concurrency-vs-throughput-vitess-mysql" rel="noopener nofollow">Concurrency vs. Throughput: why more parallelism can make databases slower</a></h3>
+  <h2><a href="https://planetscale.com/blog/concurrency-vs-throughput-vitess-mysql" rel="noopener nofollow">Concurrency vs. Throughput: why more parallelism can make databases slower</a></h2>
   <p>Examines a 16-minute MySQL production outage caused by a sudden traffic spike that spiraled into lock contention. The post tracks how query throughput collapsed from 15,000 queries per second down to 1,500 as concurrency and error rates peaked.</p>
   <div class="why"><b>Why it matters</b> — Uncontrolled concurrency beyond optimal queue depth causes severe lock contention, turning extra parallelism into lower overall system throughput.</div>
-  <p class="src">PlanetScale &middot; 08 August 2026 &middot; <a href="https://planetscale.com/blog/concurrency-vs-throughput-vitess-mysql" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">PlanetScale &middot; 08 August 2026 &middot; <a href="https://planetscale.com/blog/concurrency-vs-throughput-vitess-mysql" rel="noopener nofollow" aria-label="Read the original: Concurrency vs. Throughput: why more parallelism can make databases slower">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
-  <h3><a href="https://duckdb.org/2026/07/31/asynchronous-io.html" rel="noopener nofollow">Asynchronous I/O in DuckDB: Work, Thread, Work</a></h3>
+  <h2><a href="https://duckdb.org/2026/07/31/asynchronous-io.html" rel="noopener nofollow">Asynchronous I/O in DuckDB: Work, Thread, Work</a></h2>
   <p>Explains how DuckDB historically relied on early filter and projection pushdowns to avoid I/O bottlenecks on local disks. It details the architectural shift toward asynchronous I/O needed when querying remote or high-latency storage where pruning alone is insufficient.</p>
   <div class="why"><b>Why it matters</b> — Filter pushdown optimization is insufficient for high-latency remote storage, requiring dedicated asynchronous I/O pipelines to keep compute threads saturated.</div>
-  <p class="src">DuckDB &middot; 08 August 2026 &middot; <a href="https://duckdb.org/2026/07/31/asynchronous-io.html" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">DuckDB &middot; 08 August 2026 &middot; <a href="https://duckdb.org/2026/07/31/asynchronous-io.html" rel="noopener nofollow" aria-label="Read the original: Asynchronous I/O in DuckDB: Work, Thread, Work">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
-  <h3><a href="https://postgr.es/p/9r5" rel="noopener nofollow">Alexey Evlampiev: Your ALTER TABLE Is Fast. The Queue Behind It Is Not.</a></h3>
+  <h2><a href="https://postgr.es/p/9r5" rel="noopener nofollow">Alexey Evlampiev: Your ALTER TABLE Is Fast. The Queue Behind It Is Not.</a></h2>
   <p>Demonstrates how an ALTER TABLE statement that executes in just six milliseconds can stall all incoming read queries on a table for sixteen seconds. It illustrates how PostgreSQL lock queues cause cascading query delays regardless of actual execution speed.</p>
   <div class="why"><b>Why it matters</b> — The operational impact of DDL is determined by lock queue waiting time rather than the execution duration of the schema change itself.</div>
-  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9r5" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9r5" rel="noopener nofollow" aria-label="Read the original: Alexey Evlampiev: Your ALTER TABLE Is Fast. The Queue Behind It Is Not.">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
-  <h3><a href="https://clickhouse.com/blog/making-clickhouse-cloud-autoscaling-more-reactive" rel="noopener nofollow">Fixed cadence to seconds: making ClickHouse Cloud autoscaling more reactive</a></h3>
+  <h2><a href="https://clickhouse.com/blog/making-clickhouse-cloud-autoscaling-more-reactive" rel="noopener nofollow">Fixed cadence to seconds: making ClickHouse Cloud autoscaling more reactive</a></h2>
   <p>Details the re-architecture of ClickHouse Cloud&#x27;s autoscaling orchestration using Kubernetes controller-runtime and a ClickHouse-backed signals table. The new mechanism introduces a reactive fast path that triggers scale-up events in seconds instead of relying on periodic polling.</p>
   <div class="why"><b>Why it matters</b> — Replacing periodic polling with a signal-table architecture reduces autoscaling latency from minutes to seconds during sudden traffic spikes.</div>
-  <p class="src">ClickHouse &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/blog/making-clickhouse-cloud-autoscaling-more-reactive" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">ClickHouse &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/blog/making-clickhouse-cloud-autoscaling-more-reactive" rel="noopener nofollow" aria-label="Read the original: Fixed cadence to seconds: making ClickHouse Cloud autoscaling more reactive">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://postgr.es/p/9rw" rel="noopener nofollow">Radim Marek: The DISTINCT in your COUNT</a></h3>
+  <h2><a href="https://postgr.es/p/9rw" rel="noopener nofollow">Radim Marek: The DISTINCT in your COUNT</a></h2>
   <p>Analyzes how using DISTINCT inside a COUNT aggregate forces PostgreSQL to run queries on a single core. It explains why this single keyword silently disables parallel query execution across worker processes for large scans.</p>
   <div class="why"><b>Why it matters</b> — Adding DISTINCT to a COUNT aggregate silently disables PostgreSQL parallel query execution, turning multi-core scans into single-threaded bottlenecks.</div>
-  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9rw" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9rw" rel="noopener nofollow" aria-label="Read the original: Radim Marek: The DISTINCT in your COUNT">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://postgr.es/p/9rb" rel="noopener nofollow">Elizabeth Garrett Christensen: Postgres COUNT(DISTINCT) Too Slow? Fast Approximation Guide</a></h3>
+  <h2><a href="https://postgr.es/p/9rb" rel="noopener nofollow">Elizabeth Garrett Christensen: Postgres COUNT(DISTINCT) Too Slow? Fast Approximation Guide</a></h2>
   <p>Compares exact COUNT(DISTINCT) queries against HyperLogLog probabilistic estimation in PostgreSQL, showing execution times dropping from 671ms to 320ms. It demonstrates how hashing and aggregating into HLL sketches enables instant mergeable cardinality queries.</p>
   <div class="why"><b>Why it matters</b> — HyperLogLog sketches provide mergeable pre-aggregations that replace slow distinct counts with near-instant cardinality estimates.</div>
-  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9rb" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Planet PostgreSQL &middot; 08 August 2026 &middot; <a href="https://postgr.es/p/9rb" rel="noopener nofollow" aria-label="Read the original: Elizabeth Garrett Christensen: Postgres COUNT(DISTINCT) Too Slow? Fast Approximation Guide">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
-  <h3><a href="https://aws.amazon.com/blogs/database/advanced-data-modeling-using-user-defined-types-and-protocol-buffers-for-amazon-keyspaces/" rel="noopener nofollow">Advanced Data Modeling in Amazon Keyspaces</a></h3>
+  <h2><a href="https://aws.amazon.com/blogs/database/advanced-data-modeling-using-user-defined-types-and-protocol-buffers-for-amazon-keyspaces/" rel="noopener nofollow">Advanced Data Modeling in Amazon Keyspaces</a></h2>
   <p>Amazon Keyspaces now supports User-Defined Types (UDTs) and Protocol Buffers (Protobuf) for modeling complex data. This allows grouping related attributes to improve data model clarity and application performance in a serverless database.</p>
   <div class="why"><b>Why it matters</b> — Engineers can build more maintainable and efficient applications by using UDTs or Protobuf for complex data structures in Amazon Keyspaces.</div>
-  <p class="src">aws.amazon.com &middot; 08 August 2026 &middot; <a href="https://aws.amazon.com/blogs/database/advanced-data-modeling-using-user-defined-types-and-protocol-buffers-for-amazon-keyspaces/" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">aws.amazon.com &middot; 08 August 2026 &middot; <a href="https://aws.amazon.com/blogs/database/advanced-data-modeling-using-user-defined-types-and-protocol-buffers-for-amazon-keyspaces/" rel="noopener nofollow" aria-label="Read the original: Advanced Data Modeling in Amazon Keyspaces">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
-  <h3><a href="https://clickhouse.com/resources/engineering/managed-postgres-analytics-2026" rel="noopener nofollow">Managed Postgres OLAP Performance Comparison</a></h3>
+  <h2><a href="https://clickhouse.com/resources/engineering/managed-postgres-analytics-2026" rel="noopener nofollow">Managed Postgres OLAP Performance Comparison</a></h2>
   <p>A comparison of managed Postgres services for OLAP workloads highlights how different storage engines, I/O paths, and cache behaviors impact performance. ClickHouse Managed Postgres demonstrated superior throughput compared to Aurora, despite Aurora having twice the RAM in the tested configuration.</p>
   <div class="why"><b>Why it matters</b> — Teams evaluating managed Postgres for OLAP should consider underlying storage engine architecture, as it significantly impacts throughput and resource efficiency.</div>
-  <p class="src">clickhouse.com &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/resources/engineering/managed-postgres-analytics-2026" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">clickhouse.com &middot; 08 August 2026 &middot; <a href="https://clickhouse.com/resources/engineering/managed-postgres-analytics-2026" rel="noopener nofollow" aria-label="Read the original: Managed Postgres OLAP Performance Comparison">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
-  <h3><a href="https://www.databricks.com/solutions/data-engineering" rel="noopener nofollow">Databricks Lakeflow for Data Engineering</a></h3>
+  <h2><a href="https://www.databricks.com/solutions/data-engineering" rel="noopener nofollow">Databricks Lakeflow for Data Engineering</a></h2>
   <p>Databricks introduced Lakeflow, an end-to-end solution for data engineering, encompassing ingestion, transformation, and orchestration of data. It supports both batch and streaming pipelines built on Apache Spark Declarative Pipelines.</p>
   <div class="why"><b>Why it matters</b> — Data engineers can simplify building and managing efficient batch and streaming data pipelines with Lakeflow&#x27;s unified declarative framework.</div>
-  <p class="src">Databricks &middot; 08 August 2026 &middot; <a href="https://www.databricks.com/solutions/data-engineering" rel="noopener nofollow">Read the original &rarr;</a></p>
+  <p class="src">Databricks &middot; 08 August 2026 &middot; <a href="https://www.databricks.com/solutions/data-engineering" rel="noopener nofollow" aria-label="Read the original: Databricks Lakeflow for Data Engineering">Read the original &rarr;</a></p>
 </div>
 </div>
 <p class="signoff">Another week of trying to benchmark our way out of bad queries.</p>
