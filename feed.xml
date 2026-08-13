@@ -3,7 +3,7 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Thu, 13 Aug 2026 04:27:14 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 13 Aug 2026 04:31:02 +0000</lastBuildDate>
     <item>
       <title>HR &amp; Payroll Tech — 13 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-08-13.html</link>
@@ -17,6 +17,13 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-13.html</guid>
       <pubDate>Thu, 13 Aug 2026 08:00:00 +0000</pubDate>
       <description>16 releases across 31 tracked projects, including 2 with security fixes.</description>
+    </item>
+    <item>
+      <title>Sales &amp; Revenue — 13 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/sales/2026-08-13.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/sales/2026-08-13.html</guid>
+      <pubDate>Thu, 13 Aug 2026 08:00:00 +0000</pubDate>
+      <description>27 new posts across 5 go-to-market sources — 5 worth your time.</description>
     </item>
     <item>
       <title>AI Tech Weekly Digest — 12 August 2026</title>
