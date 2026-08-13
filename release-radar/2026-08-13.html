@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Release Radar — What Shipped This Week</title>
-<meta name="description" content="What Shipped This Week. 36 stories across 3 issues.">
-<meta property="og:title" content="Release Radar — What Shipped This Week">
-<meta property="og:description" content="What Shipped This Week. 36 stories across 3 issues.">
+<title>Release Radar — 13 August 2026</title>
+<meta name="description" content="16 releases across 31 tracked projects, including 2 with security fixes.">
+<meta property="og:title" content="Release Radar — 13 August 2026">
+<meta property="og:description" content="16 releases across 31 tracked projects, including 2 with security fixes.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#b8860b">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-13.html">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <link rel="stylesheet" href="../style.css">
 <style>:root{--accent:#b8860b}</style>
@@ -25,75 +26,85 @@
 <div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b" aria-current="page">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
-  <h1>Release Radar</h1>
-  <p class="lede">What Shipped This Week. Published every
-     <b>Thursday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>36</b> stories</span>
-     <span><b>3</b> issues</span>
-     <span><b>10</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Orchestration</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Containers" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Containers</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Observability" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Observability</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Networking</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Data</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Runtimes" style="--tc:#f778ba"><i style="background:#f778ba"></i>Runtimes</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Security" style="--tc:#f78166"><i style="background:#f78166"></i>Security</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=End%20of%20Life" style="--tc:#c69026"><i style="background:#c69026"></i>End of Life</a> <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a></p>
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#b8860b;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Release Radar</a></p>
+  <h1>13 August 2026</h1>
+  <p class="lede">16 releases across 31 tracked projects, including 2 with security fixes.</p>
+  <p class="meta" style="margin-top:12px">One week of Release Radar,
+     8 stories, as published.</p>
 </div>
-<div class="countdown">
-  <h2>Support windows closing &mdash; recalculated today</h2>
-  <ul>
-<li><span class="name">Kubernetes 1.34</span><span class="bar"><i style="width:21%;background:#b8860b"></i></span><span class="days">75 days &middot; 27 Oct 2026</span></li>
-<li><span class="name">Python 3.10</span><span class="bar"><i style="width:22%;background:#b8860b"></i></span><span class="days">79 days &middot; 31 Oct 2026</span></li>
-<li><span class="name">PostgreSQL 14</span><span class="bar"><i style="width:25%;background:#b8860b"></i></span><span class="days">91 days &middot; 12 Nov 2026</span></li>
-<li><span class="name">Redis 8.0</span><span class="bar"><i style="width:30%;background:#b8860b"></i></span><span class="days">110 days &middot; 01 Dec 2026</span></li>
-<li><span class="name">Docker Engine 25.0</span><span class="bar"><i style="width:31%;background:#b8860b"></i></span><span class="days">113 days &middot; 04 Dec 2026</span></li>
-  </ul>
-</div>
-
-<div class="sec"><h2>Top stories</h2><div class="rule"></div>
-  <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Containers" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Containers</a>
-  <h3><a href="https://github.com/moby/moby/releases/tag/v25.0.17" rel="noopener nofollow">Docker Engine 25.0.17</a></h3>
+  <h2><a href="https://github.com/moby/moby/releases/tag/v25.0.17" rel="noopener nofollow">Docker Engine 25.0.17</a></h2>
   <p>For a full list of pull requests and changes in this release, refer to the relevant GitHub milestone · moby/moby, 25.0.17 milestone · Changes to the Engine API, see API version history. · Bug fixes and enhancements · Fix CVE-2026-41568: symlink escape in mount destination creation…</p>
   <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Fixes CVE-2026-41568, CVE-2026-41567, CVE-2026-42306 — patch promptly. Also released on 1 other maintenance line: Engine docker-v29.7.2.</div>
   <p class="src">GitHub · moby/moby &middot; 13 August 2026 &middot; <a href="https://github.com/moby/moby/releases/tag/v25.0.17" rel="noopener nofollow" aria-label="Read the original: Docker Engine 25.0.17">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Orchestration</a>
-  <h3><a href="https://github.com/argoproj/argo-cd/releases/tag/v3.3.14" rel="noopener nofollow">Argo CD 3.3.14</a></h3>
+  <h2><a href="https://github.com/argoproj/argo-cd/releases/tag/v3.3.14" rel="noopener nofollow">Argo CD 3.3.14</a></h2>
   <p>Release Signatures and Provenance · All Argo CD container images are signed by cosign. A Provenance is generated for container images and CLI binaries which meet the SLSA Level 3 specifications. See the documentation on how to verify. · Release Notes Blog Post…</p>
   <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Fixes CVE-2026-49978, CVE-2026-69152 — patch promptly. Also released on 1 other maintenance line: CD 3.4.7.</div>
   <p class="src">GitHub · argoproj/argo-cd &middot; 13 August 2026 &middot; <a href="https://github.com/argoproj/argo-cd/releases/tag/v3.3.14" rel="noopener nofollow" aria-label="Read the original: Argo CD 3.3.14">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
-  <h3>5 more releases, nothing urgent</h3>
-  <p>Containers: Docker Engine 25.0.16, containerd 2.3.4 · IaC: Ansible 2.20.8 · Observability: Grafana 13.1.3 · Orchestration: Argo CD 3.5.1</p>
-  <p class="src">GitHub &middot; 13 August 2026</p>
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=End%20of%20Life" style="--tc:#c69026"><i style="background:#c69026"></i>End of Life</a>
+  <h2><a href="https://endoflife.date/redis" rel="noopener nofollow">Redis 8.0 reaches EOL in under 180 days</a></h2>
+  <p>Support for Redis 8.0 ends on 01 December 2026 — 110 days away. Latest release on this line is 8.0.6.</p>
+  <div class="why"><b>Why it matters</b> — No further security patches after this date — schedule the upgrade now if anything still runs it.</div>
+  <p class="src">endoflife.date &middot; 13 August 2026 &middot; <a href="https://endoflife.date/redis" rel="noopener nofollow" aria-label="Read the original: Redis 8.0 reaches EOL in under 180 days">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Containers" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Containers</a>
+  <h2><a href="https://github.com/containerd/containerd/releases/tag/v2.2.7" rel="noopener nofollow">containerd 2.2.7</a></h2>
+  <p>Welcome to the v2.2.7 release of containerd! · The seventh patch release for containerd 2.2 contains various fixes and updates. · Container Runtime Interface (CRI)…</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Notes mention breaking changes or deprecations — read before upgrading.</div>
+  <p class="src">GitHub · containerd/containerd &middot; 13 August 2026 &middot; <a href="https://github.com/containerd/containerd/releases/tag/v2.2.7" rel="noopener nofollow" aria-label="Read the original: containerd 2.2.7">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
-  <h3><a href="https://github.com/pulumi/pulumi/releases/tag/v3.254.0" rel="noopener nofollow">Pulumi 3.254.0</a></h3>
-  <p>[cli] Add pulumi logs share command for sharing logs with Pulumi #22546 · [cli] Add pulumi stack migrate to migrate a stack from another backend to the currently logged-in backend, including re-encrypting config secrets and stack state under the target secrets provider #22902…</p>
-  <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
-  <p class="src">GitHub · pulumi/pulumi &middot; 26 July 2026 &middot; <a href="https://github.com/pulumi/pulumi/releases/tag/v3.254.0" rel="noopener nofollow" aria-label="Read the original: Pulumi 3.254.0">Read the original &rarr;</a></p>
+  <h2><a href="https://github.com/ansible/ansible/releases/tag/v2.21.3" rel="noopener nofollow">Ansible 2.21.3</a></h2>
+  <p>See the full changelog for the changes included in this release. · Release Artifacts · Built Distribution: ansible_core-2.21.3-py3-none-any.whl - &amp;zwnj;2446988 bytes · 9e7dd367f7dc5d5e9fc5ae1baf8af9c4edc09e916a73a40108a3f32e3ad93f10 (SHA256)…</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Also released on 2 other maintenance lines: 2.19.12, 2.18.19.</div>
+  <p class="src">GitHub · ansible/ansible &middot; 13 August 2026 &middot; <a href="https://github.com/ansible/ansible/releases/tag/v2.21.3" rel="noopener nofollow" aria-label="Read the original: Ansible 2.21.3">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Observability" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Observability</a>
-  <h3><a href="https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.157.0" rel="noopener nofollow">OpenTelemetry Collector 0.157.0</a></h3>
-  <p>Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.157.0 · End User Changelog · 🛑 Breaking changes 🛑…</p>
-  <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible. Notes mention breaking changes or deprecations — read before upgrading.</div>
-  <p class="src">GitHub · open-telemetry/opentelemetry-collector &middot; 26 July 2026 &middot; <a href="https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.157.0" rel="noopener nofollow" aria-label="Read the original: OpenTelemetry Collector 0.157.0">Read the original &rarr;</a></p>
+  <h2><a href="https://github.com/grafana/grafana/releases/tag/v13.0.6" rel="noopener nofollow">Grafana 13.0.6</a></h2>
+  <p>What&#x27;s new highlights</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Also released on 1 other maintenance line: 12.4.8.</div>
+  <p class="src">GitHub · grafana/grafana &middot; 13 August 2026 &middot; <a href="https://github.com/grafana/grafana/releases/tag/v13.0.6" rel="noopener nofollow" aria-label="Read the original: Grafana 13.0.6">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Data</a>
+  <h2><a href="https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.3.19-stable" rel="noopener nofollow">ClickHouse 26.7.3.19-stable</a></h2>
+  <p>ClickHouse published v26.7.3.19-stable with no release notes.</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade.</div>
+  <p class="src">GitHub · ClickHouse/ClickHouse &middot; 13 August 2026 &middot; <a href="https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.3.19-stable" rel="noopener nofollow" aria-label="Read the original: ClickHouse 26.7.3.19-stable">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
+  <h2>5 more releases, nothing urgent</h2>
+  <p>Containers: Docker Engine 25.0.16, containerd 2.3.4 · IaC: Ansible 2.20.8 · Observability: Grafana 13.1.3 · Orchestration: Argo CD 3.5.1</p>
+  <p class="src">GitHub &middot; 13 August 2026</p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=release-radar">Browse all 36 stories in this channel &rarr;</a><span>31 older stories</span></div>
+<p class="signoff">Read the changelog before you bump the tag.</p>
 
-<p class="signoff">A good week to test your rollback procedures.</p>
-
-<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
-<p class="editions-note">Each edition is one week's digest exactly as it was
-   published — a summary of the week, then the stories.</p>
-<ul class="issues">
-  <li><a class="edition" href="2026-08-13.html"><span class="d">13 August 2026</span><span class="h">16 releases across 31 tracked projects, including 2 with security fixes.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-30.html"><span class="d">30 July 2026</span><span class="h">15 releases across 31 tracked projects, including 2 with security fixes.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-26.html"><span class="d">26 July 2026</span><span class="h">28 releases across 31 tracked projects, including 2 with security fixes.</span><span class="n">20 stories &rarr;</span></a></li>
-</ul>
+<div class="cta">
+  <h3>8 stories, every Thursday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-07-30.html">&larr; Previous issue</a>
+</div>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.
