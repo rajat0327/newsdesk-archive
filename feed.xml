@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Fri, 14 Aug 2026 04:27:30 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 15 Aug 2026 03:11:35 +0000</lastBuildDate>
+    <item>
+      <title>Engineering Reading — 15 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-08-15.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-08-15.html</guid>
+      <pubDate>Sat, 15 Aug 2026 08:00:00 +0000</pubDate>
+      <description>19 new posts across 8 engineering blogs — 7 worth your time.</description>
+    </item>
     <item>
       <title>AI Tech Weekly Digest — 14 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/ai/2026-08-14.html</link>
@@ -30,7 +37,7 @@
       <link>https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-08-13.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-08-13.html</guid>
       <pubDate>Thu, 13 Aug 2026 08:00:00 +0000</pubDate>
-      <description>50 new posts across 5 HR and SuccessFactors sources — 6 worth your time.</description>
+      <description>50 new posts across 5 HR and SuccessFactors sources — 8 worth your time.</description>
     </item>
     <item>
       <title>Release Radar — 13 August 2026</title>
@@ -65,14 +72,14 @@
       <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-12.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-12.html</guid>
       <pubDate>Wed, 12 Aug 2026 08:00:00 +0000</pubDate>
-      <description>92 new posts across 10 SAP and supply chain sources — 9 worth your time.</description>
+      <description>92 new posts across 10 SAP and supply chain sources — 13 worth your time.</description>
     </item>
     <item>
       <title>Web &amp; Frontend — 12 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/web/2026-08-12.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/web/2026-08-12.html</guid>
       <pubDate>Wed, 12 Aug 2026 08:00:00 +0000</pubDate>
-      <description>10 new posts across 6 web platform sources — 7 worth your time.</description>
+      <description>10 new posts across 6 web platform sources — 8 worth your time.</description>
     </item>
     <item>
       <title>Chips &amp; Silicon — 11 August 2026</title>
@@ -86,7 +93,7 @@
       <link>https://rajat0327.github.io/newsdesk-archive/data/2026-08-11.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/data/2026-08-11.html</guid>
       <pubDate>Tue, 11 Aug 2026 08:00:00 +0000</pubDate>
-      <description>52 new posts across 9 database and data engineering sources — 5 worth your time.</description>
+      <description>52 new posts across 9 database and data engineering sources — 4 worth your time.</description>
     </item>
     <item>
       <title>Security Weekly Digest — 11 August 2026</title>
@@ -114,21 +121,21 @@
       <link>https://rajat0327.github.io/newsdesk-archive/marketing/2026-08-10.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/marketing/2026-08-10.html</guid>
       <pubDate>Mon, 10 Aug 2026 08:00:00 +0000</pubDate>
-      <description>50 new posts across 6 marketing sources — 7 worth your time.</description>
+      <description>50 new posts across 6 marketing sources — 8 worth your time.</description>
     </item>
     <item>
       <title>Chips &amp; Silicon — 09 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/chips/2026-08-09.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/chips/2026-08-09.html</guid>
       <pubDate>Sun, 09 Aug 2026 08:00:00 +0000</pubDate>
-      <description>70 new posts across 3 semiconductor sources — 2 worth your time.</description>
+      <description>70 new posts across 3 semiconductor sources — 4 worth your time.</description>
     </item>
     <item>
       <title>Climate &amp; Energy — 09 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/climate/2026-08-09.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/climate/2026-08-09.html</guid>
       <pubDate>Sun, 09 Aug 2026 08:00:00 +0000</pubDate>
-      <description>68 new posts across 4 climate and energy sources — 7 worth your time.</description>
+      <description>68 new posts across 4 climate and energy sources — 9 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 09 August 2026</title>
@@ -142,7 +149,7 @@
       <link>https://rajat0327.github.io/newsdesk-archive/fintech/2026-08-09.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/fintech/2026-08-09.html</guid>
       <pubDate>Sun, 09 Aug 2026 08:00:00 +0000</pubDate>
-      <description>65 new posts across 3 fintech and payments sources — 4 worth your time.</description>
+      <description>65 new posts across 3 fintech and payments sources — 5 worth your time.</description>
     </item>
     <item>
       <title>India Tech Weekly — 09 August 2026</title>
@@ -156,14 +163,14 @@
       <link>https://rajat0327.github.io/newsdesk-archive/open-source/2026-08-09.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/open-source/2026-08-09.html</guid>
       <pubDate>Sun, 09 Aug 2026 08:00:00 +0000</pubDate>
-      <description>23 new posts across 3 open source sources — 5 worth your time.</description>
+      <description>23 new posts across 3 open source sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Supply Chain &amp; ERP — 09 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-09.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-09.html</guid>
       <pubDate>Sun, 09 Aug 2026 08:00:00 +0000</pubDate>
-      <description>106 new posts across 11 SAP and supply chain sources — 9 worth your time.</description>
+      <description>106 new posts across 11 SAP and supply chain sources — 14 worth your time.</description>
     </item>
     <item>
       <title>Craft &amp; Leadership — 08 August 2026</title>
@@ -177,14 +184,14 @@
       <link>https://rajat0327.github.io/newsdesk-archive/data/2026-08-08.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/data/2026-08-08.html</guid>
       <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
-      <description>57 new posts across 9 database and data engineering sources — 7 worth your time.</description>
+      <description>57 new posts across 9 database and data engineering sources — 18 worth your time.</description>
     </item>
     <item>
       <title>HR &amp; Payroll Tech — 08 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-08-08.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-08-08.html</guid>
       <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
-      <description>46 new posts across 5 HR and SuccessFactors sources — 6 worth your time.</description>
+      <description>46 new posts across 5 HR and SuccessFactors sources — 21 worth your time.</description>
     </item>
     <item>
       <title>Marketing — 08 August 2026</title>
@@ -198,7 +205,7 @@
       <link>https://rajat0327.github.io/newsdesk-archive/mobile/2026-08-08.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/mobile/2026-08-08.html</guid>
       <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
-      <description>17 new posts across 7 mobile platform sources — 7 worth your time.</description>
+      <description>17 new posts across 7 mobile platform sources — 9 worth your time.</description>
     </item>
     <item>
       <title>Sales &amp; Revenue — 08 August 2026</title>
@@ -212,14 +219,14 @@
       <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-08.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-08.html</guid>
       <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
-      <description>116 new posts across 11 SAP and supply chain sources — 9 worth your time.</description>
+      <description>116 new posts across 11 SAP and supply chain sources — 10 worth your time.</description>
     </item>
     <item>
       <title>Web &amp; Frontend — 08 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/web/2026-08-08.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/web/2026-08-08.html</guid>
       <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
-      <description>16 new posts across 7 web platform sources — 7 worth your time.</description>
+      <description>16 new posts across 7 web platform sources — 17 worth your time.</description>
     </item>
     <item>
       <title>arXiv Picks — 05 August 2026</title>
