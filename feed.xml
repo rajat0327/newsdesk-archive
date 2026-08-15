@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sat, 15 Aug 2026 03:14:38 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 15 Aug 2026 03:21:27 +0000</lastBuildDate>
+    <item>
+      <title>Climate &amp; Energy — 15 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/climate/2026-08-15.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/climate/2026-08-15.html</guid>
+      <pubDate>Sat, 15 Aug 2026 08:00:00 +0000</pubDate>
+      <description>61 new posts across 4 climate and energy sources — 10 worth your time.</description>
+    </item>
     <item>
       <title>Craft &amp; Leadership — 15 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/craft/2026-08-15.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/ai/2026-07-17.html</guid>
       <pubDate>Fri, 17 Jul 2026 08:00:00 +0000</pubDate>
       <description>The EU AI Act enters enforcement, major new AI models launch, and AI hardware demand drives record profits.</description>
-    </item>
-    <item>
-      <title>AI Tech Weekly Digest — 10 July 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/ai/2026-07-10.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/ai/2026-07-10.html</guid>
-      <pubDate>Fri, 10 Jul 2026 08:00:00 +0000</pubDate>
-      <description>OpenAI Unveils GPT-5.6, Integrates with Microsoft 365, and Launches New Developer Tools</description>
     </item>
 </channel></rss>
