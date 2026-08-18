@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Databases &amp; Data — Engines, Pipelines &amp; Query Plans</title>
-<meta name="description" content="Engines, Pipelines &amp; Query Plans. 30 stories across 3 issues.">
-<meta property="og:title" content="Databases &amp; Data — Engines, Pipelines &amp; Query Plans">
-<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 30 stories across 3 issues.">
+<title>Databases &amp; Data — 18 August 2026</title>
+<meta name="description" content="53 new posts across 8 database and data engineering sources — 8 worth your time.">
+<meta property="og:title" content="Databases &amp; Data — 18 August 2026">
+<meta property="og:description" content="53 new posts across 8 database and data engineering sources — 8 worth your time.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c22ebe">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/data/2026-08-18.html">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <link rel="stylesheet" href="../style.css">
 <style>:root{--accent:#c22ebe}</style>
@@ -25,67 +26,86 @@
 <div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group" data-here><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe" aria-current="page">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
-  <h1>Databases &amp; Data</h1>
-  <p class="lede">Engines, Pipelines &amp; Query Plans. Published every
-     <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>30</b> stories</span>
-     <span><b>3</b> issues</span>
-     <span><b>9</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#c22ebe;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Databases &amp; Data</a></p>
+  <h1>18 August 2026</h1>
+  <p class="lede">53 new posts across 8 database and data engineering sources — 8 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Databases &amp; Data,
+     8 stories, as published.</p>
 </div>
-
-
-<div class="sec"><h2>Top stories</h2><div class="rule"></div>
-  <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://postgr.es/p/9st" rel="noopener nofollow">Alexander Ioffe: What Does a Covering Index Cost You?</a></h3>
+  <h2><a href="https://postgr.es/p/9st" rel="noopener nofollow">Alexander Ioffe: What Does a Covering Index Cost You?</a></h2>
   <p>Quantifies the write overhead of covering indexes on PostgreSQL 17 using a 2-million-row dataset. It shows that while reads are 1.26x faster, INSERTs and UPDATEs slow down by 28% and 25% respectively, meaning covering indexes only yield a net benefit below approximately 4,300 writes per analytical read.</p>
   <div class="why"><b>Why it matters</b> — Covering indexes impose a measurable write penalty (+28% on INSERTs, +25% on UPDATEs) that only pays off if the write-to-analytical-read ratio is below ~4,300.</div>
   <p class="src">Planet PostgreSQL &middot; 18 August 2026 &middot; <a href="https://postgr.es/p/9st" rel="noopener nofollow" aria-label="Read the original: Alexander Ioffe: What Does a Covering Index Cost You?">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://postgr.es/p/9sw" rel="noopener nofollow">Alexander Ioffe: Why Does PostgreSQL Skip My Index?</a></h3>
+  <h2><a href="https://postgr.es/p/9sw" rel="noopener nofollow">Alexander Ioffe: Why Does PostgreSQL Skip My Index?</a></h2>
   <p>Explains how PostgreSQL&#x27;s default cost model parameters, specifically random_page_cost = 4.0, are optimized for legacy spinning disks and cause the planner to ignore valid indexes on modern SSDs. Adjusting this parameter to 1.1 allowed a sample query&#x27;s execution time to drop from 125.98ms to 68.69ms.</p>
   <div class="why"><b>Why it matters</b> — The default random_page_cost of 4.0 is outdated for SSDs; lowering it to 1.1 aligns the planner with modern hardware performance and prevents it from skipping indexes.</div>
   <p class="src">Planet PostgreSQL &middot; 18 August 2026 &middot; <a href="https://postgr.es/p/9sw" rel="noopener nofollow" aria-label="Read the original: Alexander Ioffe: Why Does PostgreSQL Skip My Index?">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
-  <h3><a href="https://www.getdbt.com/blog/model-for-the-token-not-the-table" rel="noopener nofollow">Model for the token, not the table</a></h3>
+  <h2><a href="https://www.getdbt.com/blog/model-for-the-token-not-the-table" rel="noopener nofollow">Model for the token, not the table</a></h2>
   <p>Details how restructuring raw Gong API transcript data within a data warehouse using dbt optimized the data payload for LLM consumption. By modeling specifically for token efficiency rather than traditional tabular structures, the team reduced their LLM token costs by 20x.</p>
   <div class="why"><b>Why it matters</b> — Modeling warehouse data specifically to minimize LLM token footprints rather than adhering to traditional database normalization can reduce API costs by up to 20x.</div>
   <p class="src">dbt &middot; 18 August 2026 &middot; <a href="https://www.getdbt.com/blog/model-for-the-token-not-the-table" rel="noopener nofollow" aria-label="Read the original: Model for the token, not the table">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
-  <h3><a href="https://postgr.es/p/9sx" rel="noopener nofollow">Ajin Cherian: Failover slot synchronization in PostgreSQL</a></h3>
+  <h2><a href="https://postgr.es/p/9sx" rel="noopener nofollow">Ajin Cherian: Failover slot synchronization in PostgreSQL</a></h2>
   <p>Explores PostgreSQL 17&#x27;s new failover slot synchronization feature, which keeps logical replication slots synchronized on standby servers. This prevents subscribers from losing their replication progress and needing a full resynchronization when a standby is promoted to primary.</p>
   <div class="why"><b>Why it matters</b> — PostgreSQL 17&#x27;s failover slot synchronization maintains logical replication slot states on standbys, preventing expensive subscriber resynchronizations during failover.</div>
   <p class="src">Planet PostgreSQL &middot; 18 August 2026 &middot; <a href="https://postgr.es/p/9sx" rel="noopener nofollow" aria-label="Read the original: Ajin Cherian: Failover slot synchronization in PostgreSQL">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
-  <h3><a href="https://clickhouse.com/blog/ifood-agentic-security-platform" rel="noopener nofollow">How iFood built its agentic security platform on ClickHouse Cloud</a></h3>
+  <h2><a href="https://clickhouse.com/blog/ifood-agentic-security-platform" rel="noopener nofollow">How iFood built its agentic security platform on ClickHouse Cloud</a></h2>
   <p>A case study of iFood migrating its security platform to ClickHouse Cloud to handle high-volume telemetry. The migration resulted in query performance improvements of 9x to 16x while reducing infrastructure costs by 40% to 50%.</p>
   <div class="why"><b>Why it matters</b> — Migrating high-volume security telemetry to ClickHouse Cloud cut costs by 40-50% while accelerating queries by up to 16x.</div>
   <p class="src">ClickHouse &middot; 18 August 2026 &middot; <a href="https://clickhouse.com/blog/ifood-agentic-security-platform" rel="noopener nofollow" aria-label="Read the original: How iFood built its agentic security platform on ClickHouse Cloud">Read the original &rarr;</a></p>
 </div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
+  <h2><a href="https://www.getdbt.com/blog/dbt-state-use-case" rel="noopener nofollow">How dbt State cuts warehouse compute and speeds up every run</a></h2>
+  <p>Demonstrates how Fanatics optimized their data pipeline execution times and warehouse spend using dbt State. By leveraging state comparison to identify and rebuild only modified models and their downstream dependencies, they significantly reduced compute consumption.</p>
+  <div class="why"><b>Why it matters</b> — Using dbt State to perform incremental, impact-aware runs instead of full rebuilds directly reduces warehouse compute costs.</div>
+  <p class="src">dbt &middot; 18 August 2026 &middot; <a href="https://www.getdbt.com/blog/dbt-state-use-case" rel="noopener nofollow" aria-label="Read the original: How dbt State cuts warehouse compute and speeds up every run">Read the original &rarr;</a></p>
 </div>
-<div class="morelink"><a href="../search.html?c=data">Browse all 30 stories in this channel &rarr;</a><span>25 older stories</span></div>
-
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a>
+  <h2><a href="https://redis.io/blog/reciprocal-rank-fusion/" rel="noopener nofollow">Reciprocal rank fusion: why combining search results is harder than it looks</a></h2>
+  <p>Explains the challenges of merging traditional keyword search results (BM25 scores) with vector search results (cosine similarity) into a single, cohesive ranking. It details how Reciprocal Rank Fusion (RRF) bypasses the problem of uncalibrated raw scores by using rank position instead of raw scores.</p>
+  <div class="why"><b>Why it matters</b> — Reciprocal Rank Fusion (RRF) normalizes and merges disparate search scoring systems (like BM25 and vector similarity) by prioritizing rank order over raw scores.</div>
+  <p class="src">Redis &middot; 18 August 2026 &middot; <a href="https://redis.io/blog/reciprocal-rank-fusion/" rel="noopener nofollow" aria-label="Read the original: Reciprocal rank fusion: why combining search results is harder than it looks">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
+  <h2><a href="https://clickhouse.com/blog/agentic-infrastructure-clickhousectl-distributed-clickstack" rel="noopener nofollow">Agentic Infrastructure with ClickHousectl</a></h2>
+  <p>A multi-region observability platform was built using `clickhousectl` and ClickHouse Cloud across the US, Europe, and Japan. Each region ingests its own OpenTelemetry logs, traces, and metrics, with a global view consolidated in Europe. This architecture allows for distributed storage while providing a single pane of glass for operational health.</p>
+  <div class="why"><b>Why it matters</b> — Deploying a multi-region observability platform with ClickHouse Cloud and `clickhousectl` enables regional data ingestion and a single global view for operational insights.</div>
+  <p class="src">ClickHouse &middot; 18 August 2026 &middot; <a href="https://clickhouse.com/blog/agentic-infrastructure-clickhousectl-distributed-clickstack" rel="noopener nofollow" aria-label="Read the original: Agentic Infrastructure with ClickHousectl">Read the original &rarr;</a></p>
+</div>
+</div>
 <p class="signoff">At least the agents will also have to debug why Postgres skipped their index.</p>
 
-<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
-<p class="editions-note">Each edition is one week's digest exactly as it was
-   published — a summary of the week, then the stories.</p>
-<ul class="issues">
-  <li><a class="edition" href="2026-08-18.html"><span class="d">18 August 2026</span><span class="h">53 new posts across 8 database and data engineering sources — 8 worth your time.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">52 new posts across 9 database and data engineering sources — 4 worth your time.</span><span class="n">4 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-08.html"><span class="d">08 August 2026</span><span class="h">57 new posts across 9 database and data engineering sources — 18 worth your time.</span><span class="n">18 stories &rarr;</span></a></li>
-</ul>
+<div class="cta">
+  <h3>8 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-08-11.html">&larr; Previous issue</a>
+</div>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.
