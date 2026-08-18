@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Tue, 18 Aug 2026 03:24:09 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 18 Aug 2026 03:28:46 +0000</lastBuildDate>
     <item>
       <title>Databases &amp; Data — 18 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/data/2026-08-18.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/data/2026-08-18.html</guid>
       <pubDate>Tue, 18 Aug 2026 08:00:00 +0000</pubDate>
       <description>53 new posts across 8 database and data engineering sources — 8 worth your time.</description>
+    </item>
+    <item>
+      <title>Security Weekly Digest — 18 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/security-news/2026-08-18.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/security-news/2026-08-18.html</guid>
+      <pubDate>Tue, 18 Aug 2026 08:00:00 +0000</pubDate>
+      <description>4 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 17 August 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/ai/2026-07-28.html</guid>
       <pubDate>Tue, 28 Jul 2026 08:00:00 +0000</pubDate>
       <description>AI stock sell-off intensifies as major tech players diversify chip strategies and new AI models target developer efficiency.</description>
-    </item>
-    <item>
-      <title>Security Weekly Digest — 28 July 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/security-news/2026-07-28.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/security-news/2026-07-28.html</guid>
-      <pubDate>Tue, 28 Jul 2026 08:00:00 +0000</pubDate>
-      <description>2 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
     </item>
 </channel></rss>
