@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 19 Aug 2026 03:32:02 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 19 Aug 2026 03:35:51 +0000</lastBuildDate>
     <item>
       <title>arXiv Picks — 19 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-08-19.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-08-19.html</guid>
       <pubDate>Wed, 19 Aug 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Can We Defend Against AI-Generated Video Attacks on Real-World Crisis  (268 upvotes).</description>
+    </item>
+    <item>
+      <title>Web &amp; Frontend — 19 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/web/2026-08-19.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/web/2026-08-19.html</guid>
+      <pubDate>Wed, 19 Aug 2026 08:00:00 +0000</pubDate>
+      <description>12 new posts across 6 web platform sources — 8 worth your time.</description>
     </item>
     <item>
       <title>Databases &amp; Data — 18 August 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-07-30.html</guid>
       <pubDate>Thu, 30 Jul 2026 08:00:00 +0000</pubDate>
       <description>15 releases across 31 tracked projects, including 2 with security fixes.</description>
-    </item>
-    <item>
-      <title>arXiv Picks — 29 July 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-07-29.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-07-29.html</guid>
-      <pubDate>Wed, 29 Jul 2026 08:00:00 +0000</pubDate>
-      <description>20 papers shortlisted this week — most discussed: Kimi K3: Open Frontier Intelligence (291 upvotes).</description>
     </item>
 </channel></rss>
