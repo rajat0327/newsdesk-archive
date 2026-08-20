@@ -3,7 +3,14 @@
   <title>Newsdesk — Release Radar</title>
   <link>https://rajat0327.github.io/newsdesk-archive/release-radar/</link>
   <description>What Shipped This Week</description>
-  <lastBuildDate>Wed, 19 Aug 2026 03:35:51 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 20 Aug 2026 03:15:33 +0000</lastBuildDate>
+    <item>
+      <title>Release Radar — 20 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-20.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-20.html</guid>
+      <pubDate>Thu, 20 Aug 2026 08:00:00 +0000</pubDate>
+      <description>35 releases across 31 tracked projects, including 5 with security fixes.</description>
+    </item>
     <item>
       <title>Release Radar — 13 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-13.html</link>
