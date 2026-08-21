@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Fri, 21 Aug 2026 03:31:07 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 21 Aug 2026 03:35:02 +0000</lastBuildDate>
+    <item>
+      <title>AI Tech Weekly Digest — 21 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/ai/2026-08-21.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/ai/2026-08-21.html</guid>
+      <pubDate>Fri, 21 Aug 2026 08:00:00 +0000</pubDate>
+      <description>44 new posts across 8 AI lab and practitioner sources — 7 worth your time.</description>
+    </item>
     <item>
       <title>Mobile — 21 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/mobile/2026-08-21.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-08-05.html</guid>
       <pubDate>Wed, 05 Aug 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: SwanTale: Unified Multi-Speaker Speech and Audio Generation for Instru (142 upvotes).</description>
-    </item>
-    <item>
-      <title>Security Weekly Digest — 04 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/security-news/2026-08-04.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/security-news/2026-08-04.html</guid>
-      <pubDate>Tue, 04 Aug 2026 08:00:00 +0000</pubDate>
-      <description>2 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
     </item>
 </channel></rss>
