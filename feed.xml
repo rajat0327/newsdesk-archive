@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sat, 22 Aug 2026 03:14:13 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 22 Aug 2026 03:16:34 +0000</lastBuildDate>
+    <item>
+      <title>Craft &amp; Leadership — 22 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/craft/2026-08-22.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/craft/2026-08-22.html</guid>
+      <pubDate>Sat, 22 Aug 2026 08:00:00 +0000</pubDate>
+      <description>47 new posts across 9 practice and leadership sources — 5 worth your time.</description>
+    </item>
     <item>
       <title>Engineering Reading — 22 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-08-22.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-08.html</guid>
       <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
       <description>116 new posts across 11 SAP and supply chain sources — 10 worth your time.</description>
-    </item>
-    <item>
-      <title>Web &amp; Frontend — 08 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/web/2026-08-08.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/web/2026-08-08.html</guid>
-      <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
-      <description>16 new posts across 7 web platform sources — 17 worth your time.</description>
     </item>
 </channel></rss>
