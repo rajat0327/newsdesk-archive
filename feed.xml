@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sat, 22 Aug 2026 03:23:43 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 23 Aug 2026 03:30:09 +0000</lastBuildDate>
+    <item>
+      <title>India Tech Weekly — 23 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/india-tech/2026-08-23.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/india-tech/2026-08-23.html</guid>
+      <pubDate>Sun, 23 Aug 2026 08:00:00 +0000</pubDate>
+      <description>India's UPI faces potential transaction fees for large merchants, while startups secure significant funding rounds and ISRO shifts focus to R&amp;D.</description>
+    </item>
     <item>
       <title>Climate &amp; Energy — 22 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/climate/2026-08-22.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/mobile/2026-08-08.html</guid>
       <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
       <description>17 new posts across 7 mobile platform sources — 9 worth your time.</description>
-    </item>
-    <item>
-      <title>Sales &amp; Revenue — 08 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/sales/2026-08-08.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/sales/2026-08-08.html</guid>
-      <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
-      <description>28 new posts across 6 go-to-market sources — 7 worth your time.</description>
     </item>
 </channel></rss>
