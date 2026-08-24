@@ -3,7 +3,14 @@
   <title>Newsdesk — DevOps Weekly Digest</title>
   <link>https://rajat0327.github.io/newsdesk-archive/devops/</link>
   <description>Engineering Edition</description>
-  <lastBuildDate>Sun, 23 Aug 2026 03:33:34 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 24 Aug 2026 03:31:20 +0000</lastBuildDate>
+    <item>
+      <title>DevOps Weekly Digest — 24 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-24.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-08-24.html</guid>
+      <pubDate>Mon, 24 Aug 2026 08:00:00 +0000</pubDate>
+      <description>GitHub suffers major 8-hour outage, AWS Glue 6.0 introduces breaking changes, and OpenTofu 1.9 surpasses Terraform in features.</description>
+    </item>
     <item>
       <title>DevOps Weekly Digest — 17 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-17.html</link>
