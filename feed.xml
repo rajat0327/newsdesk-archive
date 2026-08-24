@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 24 Aug 2026 03:33:25 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 24 Aug 2026 03:36:24 +0000</lastBuildDate>
     <item>
       <title>DevOps Weekly Digest — 24 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-24.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-08-24.html</guid>
       <pubDate>Mon, 24 Aug 2026 08:00:00 +0000</pubDate>
       <description>GitHub suffers major 8-hour outage, AWS Glue 6.0 introduces breaking changes, and OpenTofu 1.9 surpasses Terraform in features.</description>
+    </item>
+    <item>
+      <title>Fintech &amp; Payments — 24 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/fintech/2026-08-24.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/fintech/2026-08-24.html</guid>
+      <pubDate>Mon, 24 Aug 2026 08:00:00 +0000</pubDate>
+      <description>64 new posts across 4 fintech and payments sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Marketing — 24 August 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/craft/2026-08-08.html</guid>
       <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
       <description>48 new posts across 8 practice and leadership sources — 5 worth your time.</description>
-    </item>
-    <item>
-      <title>Databases &amp; Data — 08 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/data/2026-08-08.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/data/2026-08-08.html</guid>
-      <pubDate>Sat, 08 Aug 2026 08:00:00 +0000</pubDate>
-      <description>57 new posts across 9 database and data engineering sources — 18 worth your time.</description>
     </item>
 </channel></rss>
