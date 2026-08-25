@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Security Weekly Digest — Exploits, Breaches &amp; Advisories</title>
-<meta name="description" content="Exploits, Breaches &amp; Advisories. 40 stories across 6 issues.">
-<meta property="og:title" content="Security Weekly Digest — Exploits, Breaches &amp; Advisories">
-<meta property="og:description" content="Exploits, Breaches &amp; Advisories. 40 stories across 6 issues.">
+<title>Security Weekly Digest — 25 August 2026</title>
+<meta name="description" content="9 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
+<meta property="og:title" content="Security Weekly Digest — 25 August 2026">
+<meta property="og:description" content="9 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#d9552f">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/security-news/2026-08-25.html">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <link rel="stylesheet" href="../style.css">
 <style>:root{--accent:#d9552f}</style>
@@ -25,70 +26,93 @@
 <div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f" aria-current="page">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
-  <h1>Security Weekly Digest</h1>
-  <p class="lede">Exploits, Breaches &amp; Advisories. Published every
-     <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>40</b> stories</span>
-     <span><b>6</b> issues</span>
-     <span><b>9</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Breaches" style="--tc:#f778ba"><i style="background:#f778ba"></i>Breaches</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Supply%20Chain" style="--tc:#e3b341"><i style="background:#e3b341"></i>Supply Chain</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Cloud%20%26%20SaaS" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud &amp; SaaS</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Vulnerabilities" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vulnerabilities</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Threat%20Actors" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Threat Actors</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Ransomware" style="--tc:#f778ba"><i style="background:#f778ba"></i>Ransomware</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Policy%20%26%20Compliance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Policy &amp; Compliance</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Tooling" style="--tc:#3fb950"><i style="background:#3fb950"></i>Tooling</a></p>
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#d9552f;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Security Weekly Digest</a></p>
+  <h1>25 August 2026</h1>
+  <p class="lede">9 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</p>
+  <p class="meta" style="margin-top:12px">One week of Security Weekly Digest,
+     9 stories, as published.</p>
 </div>
-
-
-<div class="sec"><h2>Top stories</h2><div class="rule"></div>
-  <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21962" rel="noopener nofollow">CVE-2026-21962: HTTP Server and Oracle Weblogic Server Proxy Plug-in</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21962" rel="noopener nofollow">CVE-2026-21962: HTTP Server and Oracle Weblogic Server Proxy Plug-in</a></h2>
   <p>Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data as well as unauthorized access to critical data or complete access to all Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in accessible data.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 10.0 (CRITICAL). CISA remediation deadline 27 Aug 2026 — 2 days out.</div>
   <p class="src">CISA KEV &middot; 25 August 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-21962" rel="noopener nofollow" aria-label="Read the original: CVE-2026-21962: HTTP Server and Oracle Weblogic Server Proxy Plug-in">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-64849" rel="noopener nofollow">CVE-2026-64849: MLflow</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-64849" rel="noopener nofollow">CVE-2026-64849: MLflow</a></h2>
   <p>MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.3 (CRITICAL). CISA remediation deadline 02 Sep 2026 — 8 days out.</div>
   <p class="src">CISA KEV &middot; 25 August 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-64849" rel="noopener nofollow" aria-label="Read the original: CVE-2026-64849: MLflow">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33824" rel="noopener nofollow">CVE-2026-33824: Microsoft Internet Key Exchange (IKE) Service Extensions</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33824" rel="noopener nofollow">CVE-2026-33824: Microsoft Internet Key Exchange (IKE) Service Extensions</a></h2>
   <p>Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 21 Aug 2026 — already passed.</div>
   <p class="src">CISA KEV &middot; 25 August 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33824" rel="noopener nofollow" aria-label="Read the original: CVE-2026-33824: Microsoft Internet Key Exchange (IKE) Service Extensions">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59310" rel="noopener nofollow">CVE-2026-59310: Broadcom VMware vCenter</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59310" rel="noopener nofollow">CVE-2026-59310: Broadcom VMware vCenter</a></h2>
   <p>Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 21 Aug 2026 — already passed.</div>
   <p class="src">CISA KEV &middot; 25 August 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59310" rel="noopener nofollow" aria-label="Read the original: CVE-2026-59310: Broadcom VMware vCenter">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-65400" rel="noopener nofollow">CVE-2026-65400: Apple macOS</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-65400" rel="noopener nofollow">CVE-2026-65400: Apple macOS</a></h2>
   <p>Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 21 Aug 2026 — already passed.</div>
   <p class="src">CISA KEV &middot; 25 August 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-65400" rel="noopener nofollow" aria-label="Read the original: CVE-2026-65400: Apple macOS">Read the original &rarr;</a></p>
 </div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Ransomware" style="--tc:#f778ba"><i style="background:#f778ba"></i>Ransomware</a>
+  <h2><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-071a" rel="noopener nofollow">CISA Updates Medusa Ransomware Advisory</a></h2>
+  <p>CISA, FBI, and HHS updated their joint advisory on Medusa ransomware on August 18, 2026, detailing expanded techniques and tooling, including faster exploitation of unpatched vulnerabilities and improved post-exploitation capabilities. Medusa actors have impacted over 500 critical infrastructure organizations.</p>
+  <div class="why"><b>Why it matters</b> — Organizations must prioritize patching and implement enhanced incident response to counter Medusa&#x27;s rapid exploitation and stealthier post-exploitation tactics.</div>
+  <p class="src">CISA &middot; 25 August 2026 &middot; <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-071a" rel="noopener nofollow" aria-label="Read the original: CISA Updates Medusa Ransomware Advisory">Read the original &rarr;</a></p>
 </div>
-<div class="morelink"><a href="../search.html?c=security-news">Browse all 40 stories in this channel &rarr;</a><span>35 older stories</span></div>
-
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Vulnerabilities" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vulnerabilities</a>
+  <h2><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" rel="noopener nofollow">CISA Adds Actively Exploited Vulnerabilities to KEV</a></h2>
+  <p>On August 18, 2026, CISA added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog: VMware vCenter (CVE-2026-59310), Microsoft SharePoint (CVE-2026-55040), Windows IKE Service Extensions (CVE-2026-33824), and Apple macOS (CVE-2026-65400), indicating active exploitation in the wild.</p>
+  <div class="why"><b>Why it matters</b> — Federal agencies must patch these actively exploited flaws by August 21, 2026, and all organizations should assume compromise if unpatched.</div>
+  <p class="src">CISA &middot; 25 August 2026 &middot; <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" rel="noopener nofollow" aria-label="Read the original: CISA Adds Actively Exploited Vulnerabilities to KEV">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Threat%20Actors" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Threat Actors</a>
+  <h2><a href="https://thehackernews.com/2026/08/ransom-busters-claims-it-hacked.html" rel="noopener nofollow">Ransom Busters Impersonates Incident Responders</a></h2>
+  <p>A ransomware affiliate, &#x27;Ransom Busters,&#x27; is contacting victims of ransomware attacks, claiming to have infiltrated the attackers&#x27; servers and offering to delete stolen data and provide encryption keys for a fee between $20,000 and $60,000.</p>
+  <div class="why"><b>Why it matters</b> — Organizations should be wary of unsolicited recovery offers from third parties, as they may be deceptive tactics by the original attackers to extort further payments.</div>
+  <p class="src">The Hacker News &middot; 25 August 2026 &middot; <a href="https://thehackernews.com/2026/08/ransom-busters-claims-it-hacked.html" rel="noopener nofollow" aria-label="Read the original: Ransom Busters Impersonates Incident Responders">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Threat%20Actors" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Threat Actors</a>
+  <h2><a href="https://www.infosecurity-magazine.com/news/doubloon-dredger-notion/" rel="noopener nofollow">Doubloon Dredger Abuses Notion for Token Harvesting</a></h2>
+  <p>The financially motivated threat actor &#x27;Doubloon Dredger&#x27; is abusing free Notion accounts, malicious PDFs, and device code phishing to harvest authentication tokens from targeted organizations. The attacks involve impersonating senior executives to send document-sharing notifications.</p>
+  <div class="why"><b>Why it matters</b> — Organizations using Notion should educate users about phishing tactics and implement strong authentication, as legitimate platform abuse bypasses traditional email security.</div>
+  <p class="src">Infosecurity Magazine &middot; 25 August 2026 &middot; <a href="https://www.infosecurity-magazine.com/news/doubloon-dredger-notion/" rel="noopener nofollow" aria-label="Read the original: Doubloon Dredger Abuses Notion for Token Harvesting">Read the original &rarr;</a></p>
+</div>
+</div>
 <p class="signoff">Go ahead and clear your calendar; the backlog has already been decided.</p>
 
-<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
-<p class="editions-note">Each edition is one week's digest exactly as it was
-   published — a summary of the week, then the stories.</p>
-<ul class="issues">
-  <li><a class="edition" href="2026-08-25.html"><span class="d">25 August 2026</span><span class="h">9 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-18.html"><span class="d">18 August 2026</span><span class="h">4 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">4 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">AI-powered ransomware, widespread npm supply chain attacks, and new regulatory mandates define a turbulent week in cybersecurity.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-04.html"><span class="d">04 August 2026</span><span class="h">2 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">2 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-28.html"><span class="d">28 July 2026</span><span class="h">2 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-26.html"><span class="d">26 July 2026</span><span class="h">6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
-</ul>
+<div class="cta">
+  <h3>9 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-08-18.html">&larr; Previous issue</a>
+</div>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.
