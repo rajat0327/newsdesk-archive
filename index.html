@@ -31,8 +31,8 @@
      read comes straight from an API rather than a language model.
      <a class="more" href="about.html">How it works&nbsp;&rarr;</a></p>
   <p class="stats"><span><b>20</b> channels</span>
-     <span><b>75</b> issues</span>
-     <span><b>519</b> stories</span>
+     <span><b>76</b> issues</span>
+     <span><b>526</b> stories</span>
      <span><b>31</b> projects tracked</span></p>
 </div>
 
@@ -56,6 +56,30 @@
   <a class="tag tag-link" href="search.html?c=open-source&amp;g=Supply%20Chain" style="--tc:#f778ba"><i style="background:#f778ba"></i>Supply Chain</a>
   <h4><a href="https://lwn.net/Articles/1089720/" rel="noopener nofollow">Supply chain attack on arrayref (Rust blog)</a></h4>
   <p class="src"><a class="ch" href="open-source/">Open Source</a> &middot; LWN &middot; 21 August 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>Data &amp; AI</h2><div class="rule"></div>
+  <span class="domlinks"><a href="data/">Data</a> &middot; <a href="arxiv-picks/">Papers</a> &middot; <a href="ai/">AI</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h3><a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow">What else runs on your Postgres server, and how do we stop it from taking the database down?</a></h3>
+  <p>Describes the mechanisms ClickHouse Managed Postgres uses to prevent supporting services (like backup agents or logging daemons) from compromising database availability. It details the use of cgroup limits, runtime budgets, and disk-full session exemptions to isolate resources.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Implementing disk-full session exemptions allows administrators to connect and run cleanup commands even when the disk is at 100% capacity and rejecting standard connections.</div>
+  <p class="src"><a class="ch" href="data/">Databases &amp; Data</a> &middot; ClickHouse &middot; <a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow" aria-label="Read the original: What else runs on your Postgres server, and how do we stop it from taking the database down?">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=ai&amp;g=Models" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Models</a>
+  <h4><a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b/" rel="noopener nofollow">Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things</a></h4>
+  <p class="src"><a class="ch" href="ai/">AI</a> &middot; Simon Willison &middot; 21 August 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a>
+  <h4><a href="https://arxiv.org/abs/2608.15089" rel="noopener nofollow">StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling</a></h4>
+  <p class="src"><a class="ch" href="arxiv-picks/">Papers</a> &middot; arXiv &middot; 19 August 2026</p>
 </div>
   </div>
 </div>
@@ -156,30 +180,6 @@
   </div>
 </div>
 
-<div class="sec"><h2>Data &amp; AI</h2><div class="rule"></div>
-  <span class="domlinks"><a href="data/">Data</a> &middot; <a href="arxiv-picks/">Papers</a> &middot; <a href="ai/">AI</a></span></div>
-<div class="split">
-<div class="lead">
-  <a class="tag tag-link" href="search.html?c=ai&amp;g=Models" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Models</a>
-  <h3><a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b/" rel="noopener nofollow">Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things</a></h3>
-  <p>Alibaba released Qwen 3.8 27B, an Apache 2 licensed vision-capable LLM suitable for running on a laptop. While its benchmarks show a performance boost, the model defaults to overthinking its responses.</p>
-  <div class="why"><b>Why it matters</b> &mdash; Developers can run this model locally on standard laptops, but must implement prompt engineering or system instructions to curb its default overthinking behavior.</div>
-  <p class="src"><a class="ch" href="ai/">AI Tech Weekly Digest</a> &middot; Simon Willison &middot; <a href="https://simonwillison.net/2026/Aug/16/qwen-38-27b/" rel="noopener nofollow" aria-label="Read the original: Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things">Read the original &rarr;</a></p>
-</div>
-  <div class="aside">
-<div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h4><a href="https://postgr.es/p/9st" rel="noopener nofollow">Alexander Ioffe: What Does a Covering Index Cost You?</a></h4>
-  <p class="src"><a class="ch" href="data/">Data</a> &middot; Planet PostgreSQL &middot; 18 August 2026</p>
-</div>
-<div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a>
-  <h4><a href="https://arxiv.org/abs/2608.15089" rel="noopener nofollow">StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling</a></h4>
-  <p class="src"><a class="ch" href="arxiv-picks/">Papers</a> &middot; arXiv &middot; 19 August 2026</p>
-</div>
-  </div>
-</div>
-
 <div class="sec"><h2>Enterprise Systems</h2><div class="rule"></div>
   <span class="domlinks"><a href="supply-chain/">Supply Chain</a> &middot; <a href="hr-tech/">HR Tech</a></span></div>
 <div class="split">
@@ -229,7 +229,7 @@
 </div>
 
 <div class="sec"><h2>All channels</h2><div class="rule"></div>
-  <a href="search.html">Browse all 519 stories &rarr;</a></div>
+  <a href="search.html">Browse all 526 stories &rarr;</a></div>
 <div class="cards">
   <a class="card" href="india-tech/" style="--ca:#2f9e6f">
     <h3>India Tech Weekly</h3>
@@ -271,7 +271,7 @@
     <h3>Databases &amp; Data</h3>
     <p>Engines, Pipelines &amp; Query Plans</p>
     <div class="n"><span class="d">Tue</span>
-       3 issues &middot; 30 stories</div>
+       4 issues &middot; 37 stories</div>
   </a>
   <a class="card" href="chips/" style="--ca:#38a0d6">
     <h3>Chips &amp; Silicon</h3>
