@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 26 Aug 2026 03:34:26 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 26 Aug 2026 03:37:59 +0000</lastBuildDate>
     <item>
       <title>arXiv Picks — 26 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-08-26.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-08-26.html</guid>
       <pubDate>Wed, 26 Aug 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: EnvHarness: Awakening Static Worlds for Agent Learning (263 upvotes).</description>
+    </item>
+    <item>
+      <title>Supply Chain &amp; ERP — 26 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-26.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-26.html</guid>
+      <pubDate>Wed, 26 Aug 2026 08:00:00 +0000</pubDate>
+      <description>SAP's Autonomous Enterprise vision and AI-driven automation dominate enterprise news this week, reshaping workflows from procurement to warehousing.</description>
     </item>
     <item>
       <title>Web &amp; Frontend — 26 August 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/climate/2026-08-09.html</guid>
       <pubDate>Sun, 09 Aug 2026 08:00:00 +0000</pubDate>
       <description>68 new posts across 4 climate and energy sources — 9 worth your time.</description>
-    </item>
-    <item>
-      <title>Design &amp; UX — 09 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/design/2026-08-09.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/design/2026-08-09.html</guid>
-      <pubDate>Sun, 09 Aug 2026 08:00:00 +0000</pubDate>
-      <description>20 new posts across 4 design and research sources — 6 worth your time.</description>
     </item>
 </channel></rss>
