@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Fri, 28 Aug 2026 14:30:53 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 28 Aug 2026 14:32:34 +0000</lastBuildDate>
     <item>
       <title>Mobile — 28 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/mobile/2026-08-28.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/mobile/2026-08-28.html</guid>
       <pubDate>Fri, 28 Aug 2026 08:00:00 +0000</pubDate>
       <description>9 new posts across 3 mobile platform sources — 9 worth your time.</description>
+    </item>
+    <item>
+      <title>Open Source — 28 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/open-source/2026-08-28.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/open-source/2026-08-28.html</guid>
+      <pubDate>Fri, 28 Aug 2026 08:00:00 +0000</pubDate>
+      <description>23 new posts across 4 open source sources — 5 worth your time.</description>
     </item>
     <item>
       <title>HR &amp; Payroll Tech — 27 August 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/security-news/2026-08-11.html</guid>
       <pubDate>Tue, 11 Aug 2026 08:00:00 +0000</pubDate>
       <description>AI-powered ransomware, widespread npm supply chain attacks, and new regulatory mandates define a turbulent week in cybersecurity.</description>
-    </item>
-    <item>
-      <title>DevOps Weekly Digest — 10 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-10.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-08-10.html</guid>
-      <pubDate>Mon, 10 Aug 2026 08:00:00 +0000</pubDate>
-      <description>TypeScript 6.0 introduces breaking changes, while Chrome and Node.js deliver key developer tooling updates.</description>
     </item>
 </channel></rss>
