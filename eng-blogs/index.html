@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Engineering Reading — From the Blogs Worth Following</title>
-<meta name="description" content="From the Blogs Worth Following. 21 stories across 3 issues.">
+<meta name="description" content="From the Blogs Worth Following. 28 stories across 4 issues.">
 <meta property="og:title" content="Engineering Reading — From the Blogs Worth Following">
-<meta property="og:description" content="From the Blogs Worth Following. 21 stories across 3 issues.">
+<meta property="og:description" content="From the Blogs Worth Following. 28 stories across 4 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c2456f">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Engineering Reading</h1>
   <p class="lede">From the Blogs Worth Following. Published every
      <b>Saturday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>21</b> stories</span>
-     <span><b>3</b> issues</span>
+  <p class="stats"><span><b>28</b> stories</span>
+     <span><b>4</b> issues</span>
      <span><b>7</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Reliability" style="--tc:#f78166"><i style="background:#f78166"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Developer%20Experience" style="--tc:#f778ba"><i style="background:#f778ba"></i>Developer Experience</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Practice%20%26%20Craft" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Practice &amp; Craft</a></p>
 </div>
@@ -40,6 +40,13 @@
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
+  <h3><a href="https://aws.amazon.com/blogs/architecture/how-a-global-payment-processor-preserved-aws-ram-shares-and-lake-formation-permissions-during-an-aws-organizations-migration/" rel="noopener nofollow">How a global payment processor preserved AWS RAM shares and Lake Formation permissions during an AWS Organizations migration</a></h3>
+  <p>This post outlines how to safely migrate AWS accounts between organizations while preserving AWS Resource Access Manager (RAM) shares and Lake Formation permissions. It addresses the challenges of maintaining resource trust boundaries when an account leaves its parent organization.</p>
+  <div class="why"><b>Why it matters</b> — Migrating AWS accounts across organizational boundaries requires careful sequencing to prevent the automatic revocation of RAM shares and data lake permissions.</div>
+  <p class="src">AWS Architecture &middot; 29 August 2026 &middot; <a href="https://aws.amazon.com/blogs/architecture/how-a-global-payment-processor-preserved-aws-ram-shares-and-lake-formation-permissions-during-an-aws-organizations-migration/" rel="noopener nofollow" aria-label="Read the original: How a global payment processor preserved AWS RAM shares and Lake Formation permissions during an AWS Organizations migration">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
   <h3><a href="https://blog.cloudflare.com/revisiting-spectre-attacks-on-workers/" rel="noopener nofollow">A revisit of remote Spectre attacks on Cloudflare Workers</a></h3>
   <p>Cloudflare re-evaluated remote Spectre attacks against its Workers platform to see if newer stabilization techniques pose a threat. The company previously deployed a defense called Dynamic Process Isolation (DyPrIs) to isolate suspicious scripts into separate processes. This post revisits the effectiveness of that defense against modern attack methods.</p>
   <div class="why"><b>Why it matters</b> — Dynamic Process Isolation (DyPrIs) can mitigate remote Spectre attacks by identifying malicious-looking scripts and isolating them into separate processes.</div>
@@ -47,41 +54,35 @@
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
-  <h3><a href="https://www.datadoghq.com/blog/engineering/gitretriever/" rel="noopener nofollow">20× the CI traffic without getting slower: How we rebuilt Git serving at Datadog</a></h3>
-  <p>Datadog built a tool called gitretriever to handle a 20-fold increase in CI Git traffic. The new system maintains low latency while reducing backend CPU usage. This allowed the platform to scale efficiently under heavy load.</p>
-  <div class="why"><b>Why it matters</b> — A custom Git serving layer can handle a 20x increase in CI traffic while reducing backend CPU usage and maintaining low latency.</div>
-  <p class="src">Datadog &middot; 22 August 2026 &middot; <a href="https://www.datadoghq.com/blog/engineering/gitretriever/" rel="noopener nofollow" aria-label="Read the original: 20× the CI traffic without getting slower: How we rebuilt Git serving at Datadog">Read the original &rarr;</a></p>
+  <h3><a href="https://blog.cloudflare.com/dns-cache-memory-optimization-1111/" rel="noopener nofollow">How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache</a></h3>
+  <p>Cloudflare optimized its DNS cache platform, Big Pineapple, which stores over 250 billion entries. By implementing five successive memory storage changes, they reduced the per-entry memory footprint by over 50%, saving 100 terabytes of RAM across their fleet.</p>
+  <div class="why"><b>Why it matters</b> — At massive scale, saving even a single byte per cache entry yields significant aggregate memory savings, demonstrating the value of micro-optimizations in data structures.</div>
+  <p class="src">Cloudflare &middot; 29 August 2026 &middot; <a href="https://blog.cloudflare.com/dns-cache-memory-optimization-1111/" rel="noopener nofollow" aria-label="Read the original: How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
-  <h3><a href="https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab?source=rss----53c7c27702d5---4" rel="noopener nofollow">How we knew COVID was over (and what our models had to unlearn)</a></h3>
-  <p>Airbnb&#x27;s Forecasting Data Science team manages continuous forecasts for demand, bookings, and cancellations across thousands of markets. This post discusses the decision-making process behind when to retrain, rebuild, or leave forecasting models alone. It specifically details how their models had to unlearn pandemic-era trends as COVID-19 ended.</p>
-  <div class="why"><b>Why it matters</b> — Forecasting models must be actively managed to unlearn anomalous historical trends, such as pandemic-era disruptions, to maintain accuracy across thousands of distinct markets.</div>
-  <p class="src">Airbnb &middot; 22 August 2026 &middot; <a href="https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab?source=rss----53c7c27702d5---4" rel="noopener nofollow" aria-label="Read the original: How we knew COVID was over (and what our models had to unlearn)">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
+  <h3><a href="https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/" rel="noopener nofollow">MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines</a></h3>
+  <p>Meta details the MTIA 300, its custom training and inference accelerator optimized for recommendation models. The chip features built-in NIC chiplets and a co-designed communication library (HCCL) to offload communication overhead and outperform general-purpose GPUs.</p>
+  <div class="why"><b>Why it matters</b> — Integrating network interface cards directly onto accelerator chips reduces communication bottlenecks in distributed AI training workloads.</div>
+  <p class="src">Meta &middot; 29 August 2026 &middot; <a href="https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/" rel="noopener nofollow" aria-label="Read the original: MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
-  <h3><a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Kafka App? There’s a Skill for That</a></h3>
-  <p>Etsy manages over 100 million unique listings from 5.6 million sellers, lacking a standard product catalog. When shoppers search, models must infer meaning and listing content using data from user visits and Etsy listings. Kafka is utilized in this process to enable these models to understand unique and creative items.</p>
-  <div class="why"><b>Why it matters</b> — It explains how Etsy uses Kafka and data models to infer meaning from unique listings for complex search queries.</div>
-  <p class="src">Etsy &middot; 01 August 2026 &middot; <a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow" aria-label="Read the original: Kafka App? There’s a Skill for That">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
-  <h3><a href="https://medium.com/pinterest-engineering/pinner-progression-better-use-case-representation-driving-weekly-active-user-growth-at-pinterest-bd2131ab238a?source=rss----4c5a5f6279b6---4" rel="noopener nofollow">Pinner Progression: Better Use-Case Representation Driving Weekly Active User Growth at Pinterest</a></h3>
-  <p>Pinterest&#x27;s mission is to help people discover, and this post, part 1 of 2, focuses on &quot;Pinner Progression.&quot; It aims to achieve better use-case representation to drive weekly active user growth. The article involves contributions from personalization, user understanding, and data science teams, suggesting a deep dive into how these areas contribute to user engagement.</p>
-  <div class="why"><b>Why it matters</b> — This post details how better use-case representation in personalization and user understanding drives weekly active user growth.</div>
-  <p class="src">Pinterest &middot; 01 August 2026 &middot; <a href="https://medium.com/pinterest-engineering/pinner-progression-better-use-case-representation-driving-weekly-active-user-growth-at-pinterest-bd2131ab238a?source=rss----4c5a5f6279b6---4" rel="noopener nofollow" aria-label="Read the original: Pinner Progression: Better Use-Case Representation Driving Weekly Active User Growth at Pinterest">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
+  <h3><a href="https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet/" rel="noopener nofollow">MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet</a></h3>
+  <p>Meta introduced MetaRoCE, a clean-sheet RDMA transport protocol designed specifically for AI workloads on commodity Ethernet. The release includes the protocol specification, a reference software implementation, and a compliance test suite to help scale GPU-to-GPU data transfers.</p>
+  <div class="why"><b>Why it matters</b> — Custom RDMA protocols optimized for commodity Ethernet can prevent GPU idle time during large-scale AI training without requiring proprietary networking hardware.</div>
+  <p class="src">Meta &middot; 29 August 2026 &middot; <a href="https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet/" rel="noopener nofollow" aria-label="Read the original: MetaRoCE: A New RDMA Transport Built for AI-Scale Ethernet">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=eng-blogs">Browse all 21 stories in this channel &rarr;</a><span>16 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=eng-blogs">Browse all 28 stories in this channel &rarr;</a><span>23 older stories</span></div>
 
-<p class="signoff">No matter how advanced the AI gets, we are still just debugging autoscalers.</p>
+<p class="signoff">Designing custom AI silicon is nice, but surviving an AWS Organization migration is the real test.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-08-29.html"><span class="d">29 August 2026</span><span class="h">12 new posts across 7 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-08-22.html"><span class="d">22 August 2026</span><span class="h">16 new posts across 7 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-08-15.html"><span class="d">15 August 2026</span><span class="h">19 new posts across 8 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-08-01.html"><span class="d">01 August 2026</span><span class="h">17 new posts across 8 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
