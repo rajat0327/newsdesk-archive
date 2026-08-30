@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sun, 30 Aug 2026 08:29:15 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 30 Aug 2026 08:29:31 +0000</lastBuildDate>
     <item>
       <title>Design &amp; UX — 30 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/design/2026-08-30.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/design/2026-08-30.html</guid>
       <pubDate>Sun, 30 Aug 2026 08:00:00 +0000</pubDate>
       <description>16 new posts across 4 design and research sources — 7 worth your time.</description>
+    </item>
+    <item>
+      <title>India Tech Weekly — 30 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/india-tech/2026-08-30.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/india-tech/2026-08-30.html</guid>
+      <pubDate>Sun, 30 Aug 2026 08:00:00 +0000</pubDate>
+      <description>India's Tech Sector Sees Policy Implementation, Space Innovation, and Robust Startup Funding</description>
     </item>
     <item>
       <title>Climate &amp; Energy — 29 August 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/ai/2026-08-12.html</guid>
       <pubDate>Wed, 12 Aug 2026 08:00:00 +0000</pubDate>
       <description>57 new posts across 8 AI lab and practitioner sources — 5 worth your time.</description>
-    </item>
-    <item>
-      <title>arXiv Picks — 12 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-08-12.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-08-12.html</guid>
-      <pubDate>Wed, 12 Aug 2026 08:00:00 +0000</pubDate>
-      <description>20 papers shortlisted this week — most discussed: Macaron-V1: Towards Open Continual Learning with Self-Improvement and  (282 upvotes).</description>
     </item>
 </channel></rss>
