@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sat, 29 Aug 2026 09:23:55 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 30 Aug 2026 08:29:15 +0000</lastBuildDate>
+    <item>
+      <title>Design &amp; UX — 30 August 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/design/2026-08-30.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/design/2026-08-30.html</guid>
+      <pubDate>Sun, 30 Aug 2026 08:00:00 +0000</pubDate>
+      <description>16 new posts across 4 design and research sources — 7 worth your time.</description>
+    </item>
     <item>
       <title>Climate &amp; Energy — 29 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/climate/2026-08-29.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-08-12.html</guid>
       <pubDate>Wed, 12 Aug 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Macaron-V1: Towards Open Continual Learning with Self-Improvement and  (282 upvotes).</description>
-    </item>
-    <item>
-      <title>Supply Chain &amp; ERP — 12 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-12.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-12.html</guid>
-      <pubDate>Wed, 12 Aug 2026 08:00:00 +0000</pubDate>
-      <description>92 new posts across 10 SAP and supply chain sources — 13 worth your time.</description>
     </item>
 </channel></rss>
