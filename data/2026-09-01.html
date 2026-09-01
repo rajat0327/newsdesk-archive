@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Databases &amp; Data — Engines, Pipelines &amp; Query Plans</title>
-<meta name="description" content="Engines, Pipelines &amp; Query Plans. 46 stories across 5 issues.">
-<meta property="og:title" content="Databases &amp; Data — Engines, Pipelines &amp; Query Plans">
-<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 46 stories across 5 issues.">
+<title>Databases &amp; Data — 01 September 2026</title>
+<meta name="description" content="55 new posts across 9 database and data engineering sources — 9 worth your time.">
+<meta property="og:title" content="Databases &amp; Data — 01 September 2026">
+<meta property="og:description" content="55 new posts across 9 database and data engineering sources — 9 worth your time.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c22ebe">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/data/2026-09-01.html">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <link rel="stylesheet" href="../style.css">
 <style>:root{--accent:#c22ebe}</style>
@@ -25,69 +26,93 @@
 <div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group" data-here><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe" aria-current="page">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
-  <h1>Databases &amp; Data</h1>
-  <p class="lede">Engines, Pipelines &amp; Query Plans. Published every
-     <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>46</b> stories</span>
-     <span><b>5</b> issues</span>
-     <span><b>9</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#c22ebe;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Databases &amp; Data</a></p>
+  <h1>01 September 2026</h1>
+  <p class="lede">55 new posts across 9 database and data engineering sources — 9 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Databases &amp; Data,
+     9 stories, as published.</p>
 </div>
-
-
-<div class="sec"><h2>Top stories</h2><div class="rule"></div>
-  <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
-  <h3><a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow">What else runs on your Postgres server, and how do we stop it from taking the database down?</a></h3>
-  <p>Describes the mechanisms ClickHouse Managed Postgres uses to prevent supporting services (like backup agents or logging daemons) from compromising database availability. It details the use of cgroup limits, runtime budgets, and disk-full session exemptions to isolate resources.</p>
-  <div class="why"><b>Why it matters</b> — Implementing disk-full session exemptions allows administrators to connect and run cleanup commands even when the disk is at 100% capacity and rejecting standard connections.</div>
-  <p class="src">ClickHouse &middot; 25 August 2026 &middot; <a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow" aria-label="Read the original: What else runs on your Postgres server, and how do we stop it from taking the database down?">Read the original &rarr;</a></p>
+  <h2><a href="https://planetscale.com/blog/debugging-live-database-connections" rel="noopener nofollow">How one connection kills a database</a></h2>
+  <p>Analyzes a classic database outage scenario where an uncommitted transaction holding an exclusive lock on a table blocks a pending schema change. This block cascades, preventing all subsequent queries from executing and ultimately taking down the database.</p>
+  <div class="why"><b>Why it matters</b> — An uncommitted transaction combined with a pending DDL lock request can completely block all read and write traffic, making lock timeout configurations critical.</div>
+  <p class="src">PlanetScale &middot; 01 September 2026 &middot; <a href="https://planetscale.com/blog/debugging-live-database-connections" rel="noopener nofollow" aria-label="Read the original: How one connection kills a database">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://postgr.es/p/9tf" rel="noopener nofollow">Andrew Atkinson: PostgreSQL 18: 23x Faster Inserts With UUID V7</a></h3>
+  <h2><a href="https://postgr.es/p/9tf" rel="noopener nofollow">Andrew Atkinson: PostgreSQL 18: 23x Faster Inserts With UUID V7</a></h2>
   <p>Shares a real-world migration from UUID v1 and v4 primary keys to UUID v7, resulting in 23x faster inserts. It discusses the performance benefits of sequential keys and the locking trade-offs of altering column defaults.</p>
   <div class="why"><b>Why it matters</b> — Switching to sequential UUID v7 keys restores B-tree index locality and drastically improves write performance, but altering column defaults requires an exclusive table lock.</div>
   <p class="src">Planet PostgreSQL &middot; 01 September 2026 &middot; <a href="https://postgr.es/p/9tf" rel="noopener nofollow" aria-label="Read the original: Andrew Atkinson: PostgreSQL 18: 23x Faster Inserts With UUID V7">Read the original &rarr;</a></p>
 </div>
 <div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://postgr.es/p/9tB" rel="noopener nofollow">Radim Marek: Read your own writes, off the primary</a></h2>
+  <p>Addresses the common issue of replication lag where a user writes to the primary database but immediately reads stale data from an asynchronous replica. It explores architectural patterns to ensure read-your-own-writes consistency.</p>
+  <div class="why"><b>Why it matters</b> — Relying on asynchronous replicas for immediate subsequent reads leads to transient data invisibility unless the application routes post-write reads back to the primary or tracks replication lag.</div>
+  <p class="src">Planet PostgreSQL &middot; 01 September 2026 &middot; <a href="https://postgr.es/p/9tB" rel="noopener nofollow" aria-label="Read the original: Radim Marek: Read your own writes, off the primary">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://postgr.es/p/9tr" rel="noopener nofollow">semab tariq: How to Calculate Fillfactor for Your Tables</a></h2>
+  <p>Provides a practical guide and mathematical formula to calculate the optimal fillfactor for PostgreSQL tables. Adjusting this setting leaves free space on pages to accommodate in-place (HOT) updates, reducing write amplification.</p>
+  <div class="why"><b>Why it matters</b> — Using the formula 100 - (average row size / 8192 * 100) to set fillfactor enables Heap-Only Tuple (HOT) updates, significantly cutting down WAL volume and disk I/O.</div>
+  <p class="src">Planet PostgreSQL &middot; 01 September 2026 &middot; <a href="https://postgr.es/p/9tr" rel="noopener nofollow" aria-label="Read the original: semab tariq: How to Calculate Fillfactor for Your Tables">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
+  <h2><a href="https://duckdb.org/2026/08/25/how-duckdb-runs-recursive-ctes-faster.html" rel="noopener nofollow">How DuckDB Runs Recursive CTEs Faster</a></h2>
+  <p>Deep dives into DuckDB&#x27;s query engine internals to show how optimizing the scope of reusable runtime state speeds up recursive CTEs. By keeping state active across iterations instead of rebuilding it, the engine avoids redundant evaluation overhead.</p>
+  <div class="why"><b>Why it matters</b> — Scoping runtime evaluation state across iterations in recursive CTEs prevents redundant work and significantly accelerates graph traversal queries.</div>
+  <p class="src">DuckDB &middot; 01 September 2026 &middot; <a href="https://duckdb.org/2026/08/25/how-duckdb-runs-recursive-ctes-faster.html" rel="noopener nofollow" aria-label="Read the original: How DuckDB Runs Recursive CTEs Faster">Read the original &rarr;</a></p>
+</div>
+<div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a>
-  <h3><a href="https://clickhouse.com/blog/reliable-opentelemetry-ingestion-at-scale" rel="noopener nofollow">Ensuring reliable OpenTelemetry ingestion at scale</a></h3>
+  <h2><a href="https://clickhouse.com/blog/reliable-opentelemetry-ingestion-at-scale" rel="noopener nofollow">Ensuring reliable OpenTelemetry ingestion at scale</a></h2>
   <p>Explains the architecture and engineering decisions behind ClickHouse Cloud&#x27;s ingestion pipeline, which processes 50 million OpenTelemetry events per second. It focuses on maintaining reliability and performance at extreme scale.</p>
   <div class="why"><b>Why it matters</b> — Scaling telemetry ingestion to 50 million events per second requires robust buffering and batching strategies to prevent backpressure from destabilizing the storage layer.</div>
   <p class="src">ClickHouse &middot; 01 September 2026 &middot; <a href="https://clickhouse.com/blog/reliable-opentelemetry-ingestion-at-scale" rel="noopener nofollow" aria-label="Read the original: Ensuring reliable OpenTelemetry ingestion at scale">Read the original &rarr;</a></p>
 </div>
 <div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h2><a href="https://planetscale.com/blog/dealing-with-large-tables-in-postgres" rel="noopener nofollow">Problems with large tables in Postgres</a></h2>
+  <p>Examines how tables that grow excessively large, wide, or &#x27;fat&#x27; (containing oversized out-of-line values) degrade database performance in distinct, predictable ways. It outlines the specific operational bottlenecks associated with each type of growth.</p>
+  <div class="why"><b>Why it matters</b> — Table growth degrades performance differently depending on whether it is driven by row count, column count, or oversized values, requiring distinct mitigation strategies like partitioning or normalization.</div>
+  <p class="src">PlanetScale &middot; 01 September 2026 &middot; <a href="https://planetscale.com/blog/dealing-with-large-tables-in-postgres" rel="noopener nofollow" aria-label="Read the original: Problems with large tables in Postgres">Read the original &rarr;</a></p>
+</div>
+<div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://aws.amazon.com/blogs/big-data/gpu-accelerated-apache-spark-with-amazon-emr-and-nvidia-rtx-pro-4500-on-amazon-ec2-g7-instances-runs-up-to-3-7x-faster/" rel="noopener nofollow">GPU-Accelerated Spark on EMR for Faster Analytics</a></h3>
+  <h2><a href="https://aws.amazon.com/blogs/big-data/gpu-accelerated-apache-spark-with-amazon-emr-and-nvidia-rtx-pro-4500-on-amazon-ec2-g7-instances-runs-up-to-3-7x-faster/" rel="noopener nofollow">GPU-Accelerated Spark on EMR for Faster Analytics</a></h2>
   <p>Amazon EMR on EKS now runs Apache Spark workloads up to 3.7x faster and 31% cheaper on Amazon EC2 G7 instances with NVIDIA RTX PRO 4500 GPUs compared to comparable CPU instances. In TPC-DS 3 TB benchmarks, G7 instances completed the 103-query power run in 4.7 minutes, saving 750 seconds per run.</p>
   <div class="why"><b>Why it matters</b> — Data engineers can significantly reduce Spark job run times and operational costs for large-scale ETL and ML pipelines without modifying existing code.</div>
   <p class="src">aws.amazon.com &middot; 01 September 2026 &middot; <a href="https://aws.amazon.com/blogs/big-data/gpu-accelerated-apache-spark-with-amazon-emr-and-nvidia-rtx-pro-4500-on-amazon-ec2-g7-instances-runs-up-to-3-7x-faster/" rel="noopener nofollow" aria-label="Read the original: GPU-Accelerated Spark on EMR for Faster Analytics">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a>
-  <h3><a href="https://www.confluent.io/hub/confluentinc/kafka-connect-oracle-xstream-cdc-source/" rel="noopener nofollow">Oracle XStream CDC to Kafka for High-Volume Streaming</a></h3>
+  <h2><a href="https://www.confluent.io/hub/confluentinc/kafka-connect-oracle-xstream-cdc-source/" rel="noopener nofollow">Oracle XStream CDC to Kafka for High-Volume Streaming</a></h2>
   <p>The Oracle XStream CDC Source connector for Confluent Platform captures changes from Oracle databases to Apache Kafka topics, supporting high-volume scenarios of over 150 GB of CDC data per hour using Oracle&#x27;s XStream API. It offers two topologies, including downstream capture to offload capture workload from the source OLTP database, ensuring production performance is not affected.</p>
   <div class="why"><b>Why it matters</b> — Teams can implement robust, high-throughput real-time data synchronization from Oracle databases to Kafka, minimizing impact on production OLTP systems.</div>
   <p class="src">Confluent &middot; 01 September 2026 &middot; <a href="https://www.confluent.io/hub/confluentinc/kafka-connect-oracle-xstream-cdc-source/" rel="noopener nofollow" aria-label="Read the original: Oracle XStream CDC to Kafka for High-Volume Streaming">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=data">Browse all 46 stories in this channel &rarr;</a><span>41 older stories</span></div>
-
 <p class="signoff">We will do absolutely anything to avoid just buying a larger database instance.</p>
 
-<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
-<p class="editions-note">Each edition is one week's digest exactly as it was
-   published — a summary of the week, then the stories.</p>
-<ul class="issues">
-  <li><a class="edition" href="2026-09-01.html"><span class="d">01 September 2026</span><span class="h">55 new posts across 9 database and data engineering sources — 9 worth your time.</span><span class="n">9 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-25.html"><span class="d">25 August 2026</span><span class="h">53 new posts across 9 database and data engineering sources — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-18.html"><span class="d">18 August 2026</span><span class="h">53 new posts across 8 database and data engineering sources — 8 worth your time.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">52 new posts across 9 database and data engineering sources — 4 worth your time.</span><span class="n">4 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-08.html"><span class="d">08 August 2026</span><span class="h">57 new posts across 9 database and data engineering sources — 18 worth your time.</span><span class="n">18 stories &rarr;</span></a></li>
-</ul>
+<div class="cta">
+  <h3>9 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-08-25.html">&larr; Previous issue</a>
+</div>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.
