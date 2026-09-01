@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Security Weekly Digest — Exploits, Breaches &amp; Advisories</title>
-<meta name="description" content="Exploits, Breaches &amp; Advisories. 46 stories across 7 issues.">
-<meta property="og:title" content="Security Weekly Digest — Exploits, Breaches &amp; Advisories">
-<meta property="og:description" content="Exploits, Breaches &amp; Advisories. 46 stories across 7 issues.">
+<title>Security Weekly Digest — 01 September 2026</title>
+<meta name="description" content="12 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
+<meta property="og:title" content="Security Weekly Digest — 01 September 2026">
+<meta property="og:description" content="12 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#d9552f">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-01.html">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <link rel="stylesheet" href="../style.css">
 <style>:root{--accent:#d9552f}</style>
@@ -25,71 +26,72 @@
 <div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f" aria-current="page">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
-  <h1>Security Weekly Digest</h1>
-  <p class="lede">Exploits, Breaches &amp; Advisories. Published every
-     <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>46</b> stories</span>
-     <span><b>7</b> issues</span>
-     <span><b>9</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Breaches" style="--tc:#f778ba"><i style="background:#f778ba"></i>Breaches</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Supply%20Chain" style="--tc:#e3b341"><i style="background:#e3b341"></i>Supply Chain</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Cloud%20%26%20SaaS" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud &amp; SaaS</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Vulnerabilities" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vulnerabilities</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Threat%20Actors" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Threat Actors</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Ransomware" style="--tc:#f778ba"><i style="background:#f778ba"></i>Ransomware</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Policy%20%26%20Compliance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Policy &amp; Compliance</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Tooling" style="--tc:#3fb950"><i style="background:#3fb950"></i>Tooling</a></p>
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#d9552f;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Security Weekly Digest</a></p>
+  <h1>01 September 2026</h1>
+  <p class="lede">12 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</p>
+  <p class="meta" style="margin-top:12px">One week of Security Weekly Digest,
+     6 stories, as published.</p>
 </div>
-
-
-<div class="sec"><h2>Top stories</h2><div class="rule"></div>
-  <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82078" rel="noopener nofollow">CVE-2026-82078: PaperCut NG/MF</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82078" rel="noopener nofollow">CVE-2026-82078: PaperCut NG/MF</a></h2>
   <p>PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process. This vulnerability can be chained with CVE-2026-81578.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.4 (CRITICAL). CISA remediation deadline 14 Sep 2026 — 13 days out.</div>
   <p class="src">CISA KEV &middot; 01 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82078" rel="noopener nofollow" aria-label="Read the original: CVE-2026-82078: PaperCut NG/MF">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53362" rel="noopener nofollow">CVE-2026-53362: Linux Kernel</a></h3>
-  <p>Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux.</p>
-  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 7.8 (HIGH). CISA remediation deadline 30 Aug 2026 — already passed.</div>
-  <p class="src">CISA KEV &middot; 01 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53362" rel="noopener nofollow" aria-label="Read the original: CVE-2026-53362: Linux Kernel">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-49105" rel="noopener nofollow">CVE-2023-49105: ownCloud</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-49105" rel="noopener nofollow">CVE-2023-49105: ownCloud</a></h2>
   <p>ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has no signing-key configured.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 30 Aug 2026 — already passed.</div>
   <p class="src">CISA KEV &middot; 01 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-49105" rel="noopener nofollow" aria-label="Read the original: CVE-2023-49105: ownCloud">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60004" rel="noopener nofollow">CVE-2026-60004: Gitea</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60004" rel="noopener nofollow">CVE-2026-60004: Gitea</a></h2>
   <p>Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell commands as the Gitea service account.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 28 Aug 2026 — already passed.</div>
   <p class="src">CISA KEV &middot; 01 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-60004" rel="noopener nofollow" aria-label="Read the original: CVE-2026-60004: Gitea">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-23758" rel="noopener nofollow">CVE-2021-23758: Ajax.NET Professional</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53362" rel="noopener nofollow">CVE-2026-53362: Linux Kernel</a></h2>
+  <p>Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to Suse, Red Hat, and other products using Linux.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 7.8 (HIGH). CISA remediation deadline 30 Aug 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 01 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-53362" rel="noopener nofollow" aria-label="Read the original: CVE-2026-53362: Linux Kernel">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-23758" rel="noopener nofollow">CVE-2021-23758: Ajax.NET Professional</a></h2>
   <p>Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.1 (HIGH). CISA remediation deadline 09 Sep 2026 — 8 days out.</div>
   <p class="src">CISA KEV &middot; 01 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-23758" rel="noopener nofollow" aria-label="Read the original: CVE-2021-23758: Ajax.NET Professional">Read the original &rarr;</a></p>
 </div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2015-5287" rel="noopener nofollow">CVE-2015-5287: Red Hat Automatic Bug Reporting Tool</a></h2>
+  <p>Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a predictable name. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 7.8 (HIGH). CISA remediation deadline 09 Sep 2026 — 8 days out.</div>
+  <p class="src">CISA KEV &middot; 01 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-5287" rel="noopener nofollow" aria-label="Read the original: CVE-2015-5287: Red Hat Automatic Bug Reporting Tool">Read the original &rarr;</a></p>
 </div>
-<div class="morelink"><a href="../search.html?c=security-news">Browse all 46 stories in this channel &rarr;</a><span>41 older stories</span></div>
-
+</div>
 <p class="signoff">Our patch cycle appears to have lost all concept of linear time.</p>
 
-<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
-<p class="editions-note">Each edition is one week's digest exactly as it was
-   published — a summary of the week, then the stories.</p>
-<ul class="issues">
-  <li><a class="edition" href="2026-09-01.html"><span class="d">01 September 2026</span><span class="h">12 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">6 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-25.html"><span class="d">25 August 2026</span><span class="h">9 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-18.html"><span class="d">18 August 2026</span><span class="h">4 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">4 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">AI-powered ransomware, widespread npm supply chain attacks, and new regulatory mandates define a turbulent week in cybersecurity.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-04.html"><span class="d">04 August 2026</span><span class="h">2 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">2 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-28.html"><span class="d">28 July 2026</span><span class="h">2 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-26.html"><span class="d">26 July 2026</span><span class="h">6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
-</ul>
+<div class="cta">
+  <h3>6 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-08-25.html">&larr; Previous issue</a>
+</div>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.
