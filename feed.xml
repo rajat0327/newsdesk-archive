@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 31 Aug 2026 08:51:11 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 01 Sep 2026 07:59:00 +0000</lastBuildDate>
+    <item>
+      <title>Chips &amp; Silicon — 01 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/chips/2026-09-01.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/chips/2026-09-01.html</guid>
+      <pubDate>Tue, 01 Sep 2026 08:00:00 +0000</pubDate>
+      <description>70 new posts across 3 semiconductor sources — 7 worth your time.</description>
+    </item>
     <item>
       <title>DevOps Weekly Digest — 31 August 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-31.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/open-source/2026-08-14.html</guid>
       <pubDate>Fri, 14 Aug 2026 08:00:00 +0000</pubDate>
       <description>26 new posts across 5 open source sources — 6 worth your time.</description>
-    </item>
-    <item>
-      <title>HR &amp; Payroll Tech — 13 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-08-13.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-08-13.html</guid>
-      <pubDate>Thu, 13 Aug 2026 08:00:00 +0000</pubDate>
-      <description>50 new posts across 5 HR and SuccessFactors sources — 8 worth your time.</description>
     </item>
 </channel></rss>

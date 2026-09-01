@@ -46,32 +46,32 @@
   <p class="src">arXiv &middot; 29 July 2026 &middot; <a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow" aria-label="Read the original: SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Research" style="--tc:#8b949e"><i style="background:#8b949e"></i>Research</a>
-  <h3><a href="https://arxiv.org/abs/2608.22876" rel="noopener nofollow">The Mask Is Not the Model: Auditing Prefix Invariance in Attention, State-Space, and Hybrid Sequence Models</a></h3>
-  <p>This paper formalizes prefix invariance to ensure representations at a given position do not depend on future inputs, introducing a lightweight audit requiring only two forward passes without training or gradients. The authors demonstrate that traditional attention-mask inspection is insufficient, as causal leaks can still occur via operations like scans or normalization.</p>
-  <div class="why"><b>Why it matters</b> — A zero-training, two-forward-pass audit can detect causal leaks in attention and state-space models that bypass standard attention-mask checks.</div>
-  <p class="src">arXiv &middot; 26 August 2026 &middot; <a href="https://arxiv.org/abs/2608.22876" rel="noopener nofollow" aria-label="Read the original: The Mask Is Not the Model: Auditing Prefix Invariance in Attention, State-Space, and Hybrid Sequence Models">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Training &amp; Efficiency</a>
-  <h3><a href="https://arxiv.org/abs/2608.20061" rel="noopener nofollow">Let&#x27;s Scale Step by Step: Compute-Efficient Hyperparameter Transfer for Large-Scale Mixture-of-Experts</a></h3>
-  <p>This paper addresses the high computational cost of tuning hyperparameters, specifically learning rates, for large-scale Mixture-of-Experts (MoE) models. It proposes a compute-efficient, two-step hyperparameter transfer framework to optimize these parameters across extreme model sizes and token budgets.</p>
-  <div class="why"><b>Why it matters</b> — A two-step hyperparameter transfer framework allows optimizing learning rates for large-scale MoE models without expensive sweeping at full scale.</div>
-  <p class="src">arXiv &middot; 26 August 2026 &middot; <a href="https://arxiv.org/abs/2608.20061" rel="noopener nofollow" aria-label="Read the original: Let&#x27;s Scale Step by Step: Compute-Efficient Hyperparameter Transfer for Large-Scale Mixture-of-Experts">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a>
+  <h3><a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow">Kimi K3: Open Frontier Intelligence</a></h3>
+  <p>This paper introduces Kimi K3, a massive 2.8T parameter Mixture-of-Experts model with 104 billion activated parameters, native vision capabilities, and a 1-million-token context window. Its architecture incorporates Kimi Delta Attention and Attention Residuals to enhance information flow across sequence length and model depth, alongside Stable LatentMoE for efficient expert activation.</p>
+  <div class="why"><b>Why it matters</b> — It provides insight into the architectural innovations and scaling strategies behind a new frontier-level multimodal LLM, detailing specific attention mechanisms and MoE techniques.</div>
+  <p class="src">arXiv &middot; 29 July 2026 &middot; <a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow" aria-label="Read the original: Kimi K3: Open Frontier Intelligence">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a>
-  <h3><a href="https://arxiv.org/abs/2608.20430" rel="noopener nofollow">RISE: Adaptive Imagination for World Action Models</a></h3>
-  <p>RISE is a system-level adaptive imagination framework for World Action Models (WAMs) that replaces fixed imagination budgets with dynamic planning. It makes sequential Roll/Stop decisions based on the expected planning benefit of continuing a rollout in a given scene.</p>
-  <div class="why"><b>Why it matters</b> — Replacing fixed rollout budgets with dynamic Roll/Stop decisions optimizes inference compute by only simulating future states when it benefits planning.</div>
-  <p class="src">arXiv &middot; 26 August 2026 &middot; <a href="https://arxiv.org/abs/2608.20430" rel="noopener nofollow" aria-label="Read the original: RISE: Adaptive Imagination for World Action Models">Read the original &rarr;</a></p>
+  <h3><a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow">DiffusionGemma Technical Report</a></h3>
+  <p>DiffusionGemma introduces discrete diffusion to LLM decoding by iteratively refining blocks of 256 tokens in parallel. Converted directly from pre-trained Gemma weights rather than trained from scratch, the model bypasses sequential token-by-token autoregressive decoding bottlenecks while maintaining generation quality.</p>
+  <div class="why"><b>Why it matters</b> — Adapting autoregressive model weights into block-parallel discrete diffusion bypasses sequential KV-cache bottlenecks without requiring full pre-training from scratch.</div>
+  <p class="src">arXiv &middot; 05 August 2026 &middot; <a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow" aria-label="Read the original: DiffusionGemma Technical Report">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a>
-  <h3><a href="https://arxiv.org/abs/2608.23041" rel="noopener nofollow">AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces</a></h3>
-  <p>AutoSaddler is an automated framework designed to optimize agent harnesses, which traditionally require manual engineering of prompts, tool configurations, and control logic. It leverages durable updates extracted from agent execution traces to automatically improve agent robustness on long-horizon tasks.</p>
-  <div class="why"><b>Why it matters</b> — Automating harness optimization directly from agent execution traces eliminates the manual trial-and-error of designing prompts and tool configurations.</div>
-  <p class="src">arXiv &middot; 26 August 2026 &middot; <a href="https://arxiv.org/abs/2608.23041" rel="noopener nofollow" aria-label="Read the original: AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="--tc:#f778ba"><i style="background:#f778ba"></i>Multimodal</a>
+  <h3><a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow">JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion</a></h3>
+  <p>JoyAI-Video-Edit introduces a 16B-parameter autoregressive diffusion framework designed for low-latency streaming video editing. The system processes video in causal chunks without requiring future frame lookahead or a fixed duration, balancing computational complexity with temporal consistency.</p>
+  <div class="why"><b>Why it matters</b> — Chunk-wise causal autoregressive diffusion enables real-time unbounded video editing within fixed memory and latency budgets.</div>
+  <p class="src">arXiv &middot; 05 August 2026 &middot; <a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow" aria-label="Read the original: JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Evaluation%20%26%20Benchmarks" style="--tc:#3fb950"><i style="background:#3fb950"></i>Evaluation &amp; Benchmarks</a>
+  <h3><a href="https://arxiv.org/abs/2608.09802" rel="noopener nofollow">SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring</a></h3>
+  <p>This paper introduces SWE-Bench ProMax and reveals that nearly 60% of unsolved instances in the widely used SWE-bench Verified benchmark contain flawed tests, such as overly narrow or overly broad assertions. It addresses these evaluation quality issues to provide a more accurate benchmark for long-horizon software engineering agents.</p>
+  <div class="why"><b>Why it matters</b> — Nearly 60% of unsolved SWE-bench Verified instances are flawed, meaning agent performance evaluations are heavily bottlenecked by benchmark test quality rather than actual agent capability.</div>
+  <p class="src">arXiv &middot; 12 August 2026 &middot; <a href="https://arxiv.org/abs/2608.09802" rel="noopener nofollow" aria-label="Read the original: SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring">Read the original &rarr;</a></p>
 </div>
 </div>
 <div class="morelink"><a href="../search.html?c=arxiv-picks">Browse all 30 stories in this channel &rarr;</a><span>25 older stories</span></div>
