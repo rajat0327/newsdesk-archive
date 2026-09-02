@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Web &amp; Frontend — Browsers, Frameworks &amp; the Platform</title>
-<meta name="description" content="Browsers, Frameworks &amp; the Platform. 39 stories across 4 issues.">
+<meta name="description" content="Browsers, Frameworks &amp; the Platform. 47 stories across 5 issues.">
 <meta property="og:title" content="Web &amp; Frontend — Browsers, Frameworks &amp; the Platform">
-<meta property="og:description" content="Browsers, Frameworks &amp; the Platform. 39 stories across 4 issues.">
+<meta property="og:description" content="Browsers, Frameworks &amp; the Platform. 47 stories across 5 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#2d9f8c">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Web &amp; Frontend</h1>
   <p class="lede">Browsers, Frameworks &amp; the Platform. Published every
      <b>Wednesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>39</b> stories</span>
-     <span><b>4</b> issues</span>
+  <p class="stats"><span><b>47</b> stories</span>
+     <span><b>5</b> issues</span>
      <span><b>9</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=web&amp;g=Browsers%20%26%20Standards" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Browsers &amp; Standards</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Frameworks" style="--tc:#3fb950"><i style="background:#3fb950"></i>Frameworks</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=CSS%20%26%20Layout" style="--tc:#f778ba"><i style="background:#f778ba"></i>CSS &amp; Layout</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=TypeScript%20%26%20Tooling" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>TypeScript &amp; Tooling</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Runtimes" style="--tc:#f78166"><i style="background:#f78166"></i>Runtimes</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Accessibility" style="--tc:#e3b341"><i style="background:#e3b341"></i>Accessibility</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Security" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Security</a> <a class="tag tag-link" href="../search.html?c=web&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
 </div>
@@ -53,35 +53,36 @@
   <p class="src">devblogs.microsoft.com &middot; 08 August 2026 &middot; <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/" rel="noopener nofollow" aria-label="Read the original: TypeScript 7.0 Ships Go Compiler">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=web&amp;g=Runtimes" style="--tc:#f78166"><i style="background:#f78166"></i>Runtimes</a>
-  <h3><a href="https://bun.com/blog/bun-v1.4" rel="noopener nofollow">Bun 1.4</a></h3>
-  <p>Bun 1.4 introduces a complete rewrite of the runtime in Rust and features built-in headless browser automation via Bun.WebView. The release also adds Node.js 26.3.0 compatibility, new APIs for markdown and images, and an opt-in global virtual store.</p>
-  <div class="why"><b>Why it matters</b> — An opt-in global virtual store can speed up package installs by up to 7 times while native headless browser automation eliminates the need for external browser-control dependencies.</div>
-  <p class="src">Bun &middot; 26 August 2026 &middot; <a href="https://bun.com/blog/bun-v1.4" rel="noopener nofollow" aria-label="Read the original: Bun 1.4">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=web&amp;g=CSS%20%26%20Layout" style="--tc:#f778ba"><i style="background:#f778ba"></i>CSS &amp; Layout</a>
+  <h3><a href="https://web.dev/blog/web-platform-08-2026?hl=en" rel="noopener nofollow">CSS `text-box` Properties Reach Baseline</a></h3>
+  <p>The CSS `text-box-trim`, `text-box-edge`, and `text-box` shorthand properties are now Baseline Newly available, with Firefox 154 (August 18, 2026) adding support. This means they are supported across Chrome 133, Edge 133, Firefox 154, and Safari 18.2.</p>
+  <div class="why"><b>Why it matters</b> — Developers can now precisely control text alignment and spacing by trimming font leading, reducing the need for manual adjustments or hacks.</div>
+  <p class="src">web.dev &middot; 02 September 2026 &middot; <a href="https://web.dev/blog/web-platform-08-2026?hl=en" rel="noopener nofollow" aria-label="Read the original: CSS `text-box` Properties Reach Baseline">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=web&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
-  <h3><a href="https://blog.master.dev/microlighter/" rel="noopener nofollow">MicroLighter</a></h3>
-  <p>MicroLighter is a 2 KB client-side syntax highlighter that avoids DOM manipulation entirely by leveraging the native CSS Custom Highlight API. It uses TextMate grammars to parse and colorize text, packaged inside a lightweight web component.</p>
-  <div class="why"><b>Why it matters</b> — Utilizing the CSS Custom Highlight API allows for high-performance text styling without the rendering overhead and layout thrashing of mutating the DOM tree.</div>
-  <p class="src">Frontend Masters &middot; 26 August 2026 &middot; <a href="https://blog.master.dev/microlighter/" rel="noopener nofollow" aria-label="Read the original: MicroLighter">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=web&amp;g=CSS%20%26%20Layout" style="--tc:#f778ba"><i style="background:#f778ba"></i>CSS &amp; Layout</a>
+  <h3><a href="https://jakearchibald.com/2026/css-custom-property-compute-time/" rel="noopener nofollow">Controlling when CSS custom property values are computed</a></h3>
+  <p>This post explores how and when CSS custom property values are calculated, particularly when using dynamic functions like sibling-index(). It explains the rendering implications of these computation times and how they affect child element styles.</p>
+  <div class="why"><b>Why it matters</b> — Custom property values assigned via dynamic functions like sibling-index() are computed at different times in the cascade, which can cause unexpected scaling bugs in nested child elements.</div>
+  <p class="src">Jake Archibald &middot; 02 September 2026 &middot; <a href="https://jakearchibald.com/2026/css-custom-property-compute-time/" rel="noopener nofollow" aria-label="Read the original: Controlling when CSS custom property values are computed">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=web&amp;g=Browsers%20%26%20Standards" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Browsers &amp; Standards</a>
-  <h3><a href="https://www.w3.org/news/2026/" rel="noopener nofollow">WebAuthn Level 3 Becomes W3C Recommendation</a></h3>
-  <p>The Web Authentication Working Group has published Web Authentication: An API for accessing Public Key Credentials Level 3 as a W3C Recommendation on August 25, 2026. This specification defines an API for web applications to create and use strong, attested, scoped, public key-based credentials for user authentication. Level 3 is the successor to Level 2, with new features planned for Level 4.</p>
-  <div class="why"><b>Why it matters</b> — Developers can now implement stronger, standardized public key-based authentication in web applications, improving security and reducing reliance on traditional password-based systems.</div>
-  <p class="src">w3.org &middot; 26 August 2026 &middot; <a href="https://www.w3.org/news/2026/" rel="noopener nofollow" aria-label="Read the original: WebAuthn Level 3 Becomes W3C Recommendation">Read the original &rarr;</a></p>
+  <h3><a href="https://css-tricks.com/creating-web-widgets-using-the-document-picture-in-picture-api/" rel="noopener nofollow">Creating Web Widgets Using the Document Picture-in-Picture API</a></h3>
+  <p>This article explains how to use the Document Picture-in-Picture API to create floating windows. Unlike traditional PiP which only supports video, this API allows developers to inject arbitrary HTML, CSS, and JavaScript to build interactive floating widgets.</p>
+  <div class="why"><b>Why it matters</b> — The Document Picture-in-Picture API enables developers to open an always-on-top window that can be populated with arbitrary, interactive HTML and CSS rather than just video streams.</div>
+  <p class="src">CSS-Tricks &middot; 02 September 2026 &middot; <a href="https://css-tricks.com/creating-web-widgets-using-the-document-picture-in-picture-api/" rel="noopener nofollow" aria-label="Read the original: Creating Web Widgets Using the Document Picture-in-Picture API">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=web">Browse all 39 stories in this channel &rarr;</a><span>34 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=web">Browse all 47 stories in this channel &rarr;</a><span>42 older stories</span></div>
 
-<p class="signoff">We can implement passwordless authentication, but displaying a Command key is still a blog post.</p>
+<p class="signoff">At this rate, we will soon be debugging memory leaks in our stylesheets.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-09-02.html"><span class="d">02 September 2026</span><span class="h">14 new posts across 5 web platform sources — 8 worth your time.</span><span class="n">8 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-08-26.html"><span class="d">26 August 2026</span><span class="h">9 new posts across 4 web platform sources — 6 worth your time.</span><span class="n">6 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-08-19.html"><span class="d">19 August 2026</span><span class="h">12 new posts across 6 web platform sources — 8 worth your time.</span><span class="n">8 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-08-12.html"><span class="d">12 August 2026</span><span class="h">10 new posts across 6 web platform sources — 8 worth your time.</span><span class="n">8 stories &rarr;</span></a></li>
