@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 02 Sep 2026 07:16:04 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 02 Sep 2026 07:17:33 +0000</lastBuildDate>
+    <item>
+      <title>arXiv Picks — 02 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-02.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-02.html</guid>
+      <pubDate>Wed, 02 Sep 2026 08:00:00 +0000</pubDate>
+      <description>20 papers shortlisted this week — most discussed: StudentSim: Training LLM-based Student Simulators (191 upvotes).</description>
+    </item>
     <item>
       <title>Web &amp; Frontend — 02 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/web/2026-09-02.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/craft/2026-08-15.html</guid>
       <pubDate>Sat, 15 Aug 2026 08:00:00 +0000</pubDate>
       <description>49 new posts across 10 practice and leadership sources — 6 worth your time.</description>
-    </item>
-    <item>
-      <title>Engineering Reading — 15 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-08-15.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-08-15.html</guid>
-      <pubDate>Sat, 15 Aug 2026 08:00:00 +0000</pubDate>
-      <description>19 new posts across 8 engineering blogs — 7 worth your time.</description>
     </item>
 </channel></rss>
