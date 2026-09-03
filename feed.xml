@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Thu, 03 Sep 2026 07:16:35 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 03 Sep 2026 07:20:18 +0000</lastBuildDate>
+    <item>
+      <title>HR &amp; Payroll Tech — 03 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-09-03.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-09-03.html</guid>
+      <pubDate>Thu, 03 Sep 2026 08:00:00 +0000</pubDate>
+      <description>45 new posts across 6 HR and SuccessFactors sources — 9 worth your time.</description>
+    </item>
     <item>
       <title>Release Radar — 03 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-03.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/design/2026-08-16.html</guid>
       <pubDate>Sun, 16 Aug 2026 08:00:00 +0000</pubDate>
       <description>16 new posts across 4 design and research sources — 6 worth your time.</description>
-    </item>
-    <item>
-      <title>India Tech Weekly — 16 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/india-tech/2026-08-16.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/india-tech/2026-08-16.html</guid>
-      <pubDate>Sun, 16 Aug 2026 08:00:00 +0000</pubDate>
-      <description>Parliament passes bill enabling potential UPI transaction charges, while India's space economy soars and semiconductor manufacturing expands.</description>
     </item>
 </channel></rss>
