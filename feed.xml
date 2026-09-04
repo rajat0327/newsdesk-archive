@@ -3,7 +3,7 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Fri, 04 Sep 2026 07:24:32 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 04 Sep 2026 07:27:51 +0000</lastBuildDate>
     <item>
       <title>AI Tech Weekly Digest — 04 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/ai/2026-09-04.html</link>
@@ -17,6 +17,13 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/mobile/2026-09-04.html</guid>
       <pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate>
       <description>9 new posts across 5 mobile platform sources — 7 worth your time.</description>
+    </item>
+    <item>
+      <title>Open Source — 04 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/open-source/2026-09-04.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/open-source/2026-09-04.html</guid>
+      <pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate>
+      <description>EU Cyber Resilience Act reporting obligations begin, while a major npm supply chain attack compromises popular packages.</description>
     </item>
     <item>
       <title>HR &amp; Payroll Tech — 03 September 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/security-news/2026-08-18.html</guid>
       <pubDate>Tue, 18 Aug 2026 08:00:00 +0000</pubDate>
       <description>4 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
-    </item>
-    <item>
-      <title>DevOps Weekly Digest — 17 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-17.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-08-17.html</guid>
-      <pubDate>Mon, 17 Aug 2026 08:00:00 +0000</pubDate>
-      <description>TypeScript 6.0 breaks existing builds with new strict defaults, forcing immediate migration for many projects.</description>
     </item>
 </channel></rss>
