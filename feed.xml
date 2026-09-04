@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Thu, 03 Sep 2026 07:24:53 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 04 Sep 2026 07:23:39 +0000</lastBuildDate>
+    <item>
+      <title>Mobile — 04 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/mobile/2026-09-04.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/mobile/2026-09-04.html</guid>
+      <pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate>
+      <description>9 new posts across 5 mobile platform sources — 7 worth your time.</description>
+    </item>
     <item>
       <title>HR &amp; Payroll Tech — 03 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-09-03.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/fintech/2026-08-17.html</guid>
       <pubDate>Mon, 17 Aug 2026 08:00:00 +0000</pubDate>
       <description>64 new posts across 4 fintech and payments sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>Marketing — 17 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/marketing/2026-08-17.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/marketing/2026-08-17.html</guid>
-      <pubDate>Mon, 17 Aug 2026 08:00:00 +0000</pubDate>
-      <description>53 new posts across 7 marketing sources — 8 worth your time.</description>
     </item>
 </channel></rss>
