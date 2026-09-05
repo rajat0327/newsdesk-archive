@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Engineering Reading — From the Blogs Worth Following</title>
-<meta name="description" content="From the Blogs Worth Following. 28 stories across 4 issues.">
+<meta name="description" content="From the Blogs Worth Following. 35 stories across 5 issues.">
 <meta property="og:title" content="Engineering Reading — From the Blogs Worth Following">
-<meta property="og:description" content="From the Blogs Worth Following. 28 stories across 4 issues.">
+<meta property="og:description" content="From the Blogs Worth Following. 35 stories across 5 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c2456f">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Engineering Reading</h1>
   <p class="lede">From the Blogs Worth Following. Published every
      <b>Saturday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>28</b> stories</span>
-     <span><b>4</b> issues</span>
+  <p class="stats"><span><b>35</b> stories</span>
+     <span><b>5</b> issues</span>
      <span><b>7</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Reliability" style="--tc:#f78166"><i style="background:#f78166"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Developer%20Experience" style="--tc:#f778ba"><i style="background:#f778ba"></i>Developer Experience</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Practice%20%26%20Craft" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Practice &amp; Craft</a></p>
 </div>
@@ -53,35 +53,36 @@
   <p class="src">Cloudflare &middot; 22 August 2026 &middot; <a href="https://blog.cloudflare.com/revisiting-spectre-attacks-on-workers/" rel="noopener nofollow" aria-label="Read the original: A revisit of remote Spectre attacks on Cloudflare Workers">Read the original &rarr;</a></p>
 </div>
 <div class="item">
+  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Developer%20Experience" style="--tc:#f778ba"><i style="background:#f778ba"></i>Developer Experience</a>
+  <h3><a href="https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90/" rel="noopener nofollow">Portal by Spotify cut my Claude Code token usage by 90%</a></h3>
+  <p>Spotify details how using Portal reduced Claude Code token usage by 90% during AI-assisted development. The post highlights that optimizing I/O and context delivery is far more impactful for AI coding agents than raw model processing.</p>
+  <div class="why"><b>Why it matters</b> — Reducing LLM token usage in coding agents depends heavily on optimizing I/O and context delivery rather than relying solely on the model&#x27;s internal reasoning.</div>
+  <p class="src">Spotify &middot; 05 September 2026 &middot; <a href="https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90/" rel="noopener nofollow" aria-label="Read the original: Portal by Spotify cut my Claude Code token usage by 90%">Read the original &rarr;</a></p>
+</div>
+<div class="item">
   <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
-  <h3><a href="https://blog.cloudflare.com/dns-cache-memory-optimization-1111/" rel="noopener nofollow">How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache</a></h3>
-  <p>Cloudflare optimized its DNS cache platform, Big Pineapple, which stores over 250 billion entries. By implementing five successive memory storage changes, they reduced the per-entry memory footprint by over 50%, saving 100 terabytes of RAM across their fleet.</p>
-  <div class="why"><b>Why it matters</b> — At massive scale, saving even a single byte per cache entry yields significant aggregate memory savings, demonstrating the value of micro-optimizations in data structures.</div>
-  <p class="src">Cloudflare &middot; 29 August 2026 &middot; <a href="https://blog.cloudflare.com/dns-cache-memory-optimization-1111/" rel="noopener nofollow" aria-label="Read the original: How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache">Read the original &rarr;</a></p>
+  <h3><a href="https://blog.cloudflare.com/cache-transcoding/" rel="noopener nofollow">How we could save petabytes of cache storage with Zstandard and Pingora</a></h3>
+  <p>To combat rising memory and HDD costs, Cloudflare prototyped a method to expand effective cache capacity across its distributed CDN. The solution leverages Zstandard compression and the Pingora framework to optimize cache storage.</p>
+  <div class="why"><b>Why it matters</b> — Compressing cache data in-transit and in-memory using Zstandard can dramatically offset rising physical storage costs in large-scale distributed systems.</div>
+  <p class="src">Cloudflare &middot; 05 September 2026 &middot; <a href="https://blog.cloudflare.com/cache-transcoding/" rel="noopener nofollow" aria-label="Read the original: How we could save petabytes of cache storage with Zstandard and Pingora">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
-  <h3><a href="https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/" rel="noopener nofollow">MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines</a></h3>
-  <p>Meta details the MTIA 300, its custom training and inference accelerator optimized for recommendation models. The chip features built-in NIC chiplets and a co-designed communication library (HCCL) to offload communication overhead and outperform general-purpose GPUs.</p>
-  <div class="why"><b>Why it matters</b> — Integrating network interface cards directly onto accelerator chips reduces communication bottlenecks in distributed AI training workloads.</div>
-  <p class="src">Meta &middot; 29 August 2026 &middot; <a href="https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics/" rel="noopener nofollow" aria-label="Read the original: MTIA 300: Meta’s First Training Chip with Built-in NICs and Communication-Offloading Engines">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
-  <h3><a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Kafka App? There’s a Skill for That</a></h3>
-  <p>Etsy manages over 100 million unique listings from 5.6 million sellers, lacking a standard product catalog. When shoppers search, models must infer meaning and listing content using data from user visits and Etsy listings. Kafka is utilized in this process to enable these models to understand unique and creative items.</p>
-  <div class="why"><b>Why it matters</b> — It explains how Etsy uses Kafka and data models to infer meaning from unique listings for complex search queries.</div>
-  <p class="src">Etsy &middot; 01 August 2026 &middot; <a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow" aria-label="Read the original: Kafka App? There’s a Skill for That">Read the original &rarr;</a></p>
+  <h3><a href="https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta/" rel="noopener nofollow">ZGateway: Learnings from Putting a Proxy in Front of ZippyDB</a></h3>
+  <p>Meta introduced ZGateway, a unified proxy layer placed in front of its primary key-value store, ZippyDB, which handles billions of operations per second. The proxy centralizes traffic management, enabling admission control, load balancing, cross-region resilience, and richer operations.</p>
+  <div class="why"><b>Why it matters</b> — Decoupling traffic management from the storage engine via a dedicated proxy layer enables centralized admission control and load balancing without modifying the underlying database.</div>
+  <p class="src">Meta &middot; 05 September 2026 &middot; <a href="https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta/" rel="noopener nofollow" aria-label="Read the original: ZGateway: Learnings from Putting a Proxy in Front of ZippyDB">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=eng-blogs">Browse all 28 stories in this channel &rarr;</a><span>23 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=eng-blogs">Browse all 35 stories in this channel &rarr;</a><span>30 older stories</span></div>
 
-<p class="signoff">Designing custom AI silicon is nice, but surviving an AWS Organization migration is the real test.</p>
+<p class="signoff">We are now building complex systems just to afford the AI writing them.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-09-05.html"><span class="d">05 September 2026</span><span class="h">12 new posts across 8 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-08-29.html"><span class="d">29 August 2026</span><span class="h">12 new posts across 7 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-08-22.html"><span class="d">22 August 2026</span><span class="h">16 new posts across 7 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-08-15.html"><span class="d">15 August 2026</span><span class="h">19 new posts across 8 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
