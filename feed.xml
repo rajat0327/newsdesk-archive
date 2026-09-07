@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 07 Sep 2026 07:29:45 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 07 Sep 2026 07:32:18 +0000</lastBuildDate>
     <item>
       <title>DevOps Weekly Digest — 07 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-09-07.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-09-07.html</guid>
       <pubDate>Mon, 07 Sep 2026 08:00:00 +0000</pubDate>
       <description>Kubernetes Storage Migration Goes GA, AWS Boosts AI Agent Governance, and Polars 2.0 Promises Speed</description>
+    </item>
+    <item>
+      <title>Fintech &amp; Payments — 07 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/fintech/2026-09-07.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/fintech/2026-09-07.html</guid>
+      <pubDate>Mon, 07 Sep 2026 08:00:00 +0000</pubDate>
+      <description>64 new posts across 3 fintech and payments sources — 9 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 06 September 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-08-20.html</guid>
       <pubDate>Thu, 20 Aug 2026 08:00:00 +0000</pubDate>
       <description>50 new posts across 6 HR and SuccessFactors sources — 11 worth your time.</description>
-    </item>
-    <item>
-      <title>Release Radar — 20 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-20.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-20.html</guid>
-      <pubDate>Thu, 20 Aug 2026 08:00:00 +0000</pubDate>
-      <description>35 releases across 31 tracked projects, including 5 with security fixes.</description>
     </item>
 </channel></rss>
