@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DevOps Weekly Digest — Engineering Edition</title>
-<meta name="description" content="Engineering Edition. 27 stories across 8 issues.">
-<meta property="og:title" content="DevOps Weekly Digest — Engineering Edition">
-<meta property="og:description" content="Engineering Edition. 27 stories across 8 issues.">
+<title>DevOps Weekly Digest — 07 September 2026</title>
+<meta name="description" content="Kubernetes Storage Migration Goes GA, AWS Boosts AI Agent Governance, and Polars 2.0 Promises Speed">
+<meta property="og:title" content="DevOps Weekly Digest — 07 September 2026">
+<meta property="og:description" content="Kubernetes Storage Migration Goes GA, AWS Boosts AI Agent Governance, and Polars 2.0 Promises Speed">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#3d7dd8">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/devops/2026-09-07.html">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <link rel="stylesheet" href="../style.css">
 <style>:root{--accent:#3d7dd8}</style>
@@ -25,71 +26,72 @@
 <div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8" aria-current="page">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
-  <h1>DevOps Weekly Digest</h1>
-  <p class="lede">Engineering Edition. Published every
-     <b>Monday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>27</b> stories</span>
-     <span><b>8</b> issues</span>
-     <span><b>8</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=devops&amp;g=CI%2FCD" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>CI/CD</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Kubernetes%20%26%20Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Kubernetes &amp; Orchestration</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Cloud%20Providers" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud Providers</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Observability" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Observability</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Dev%20Tools" style="--tc:#f778ba"><i style="background:#f778ba"></i>Dev Tools</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Databases%20%26%20Data%20Infra" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Databases &amp; Data Infra</a> <a class="tag tag-link" href="../search.html?c=devops&amp;g=Platform%20Engineering" style="--tc:#c69026"><i style="background:#c69026"></i>Platform Engineering</a></p>
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#3d7dd8;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">DevOps Weekly Digest</a></p>
+  <h1>07 September 2026</h1>
+  <p class="lede">Kubernetes Storage Migration Goes GA, AWS Boosts AI Agent Governance, and Polars 2.0 Promises Speed</p>
+  <p class="meta" style="margin-top:12px">One week of DevOps Weekly Digest,
+     6 stories, as published.</p>
 </div>
-
-
-<div class="sec"><h2>Top stories</h2><div class="rule"></div>
-  <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=devops&amp;g=Kubernetes%20%26%20Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Kubernetes &amp; Orchestration</a>
-  <h3><a href="https://kubernetes.io/blog/" rel="noopener nofollow">Kubernetes v1.37 Storage Version Migration GA</a></h3>
+  <h2><a href="https://kubernetes.io/blog/" rel="noopener nofollow">Kubernetes v1.37 Storage Version Migration GA</a></h2>
   <p>Storage Version Migration (SVM) has reached General Availability (GA) in Kubernetes v1.37, released on August 31, 2026. This feature, available via the built-in `storagemigration.k8s.io/v1` API, ensures smooth upgrades and consistent data handling across API versions.</p>
   <div class="why"><b>Why it matters</b> — Operators can now rely on a stable, built-in mechanism to automatically migrate stored API objects, simplifying cluster upgrades and reducing manual intervention for data consistency.</div>
   <p class="src">kubernetes.io &middot; 07 September 2026 &middot; <a href="https://kubernetes.io/blog/" rel="noopener nofollow" aria-label="Read the original: Kubernetes v1.37 Storage Version Migration GA">Read the original &rarr;</a></p>
 </div>
 <div class="item">
+  <a class="tag tag-link" href="../search.html?c=devops&amp;g=Platform%20Engineering" style="--tc:#c69026"><i style="background:#c69026"></i>Platform Engineering</a>
+  <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-agent-registry-generally-available/" rel="noopener nofollow">AWS Agent Registry Now Generally Available</a></h2>
+  <p>On August 31, 2026, AWS announced the general availability of the AWS Agent Registry, a new service for discovering, governing, and cataloging autonomous AI agents across an organization. It supports automated discovery of AgentCore Runtimes and Gateways, integrating with AWS Organizations for centralized oversight.</p>
+  <div class="why"><b>Why it matters</b> — Teams gain centralized visibility and governance over their AI agents, addressing &quot;shadow AI&quot; and enabling security teams to enforce compliance and quality criteria before agents are widely adopted.</div>
+  <p class="src">AWS &middot; 07 September 2026 &middot; <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-agent-registry-generally-available/" rel="noopener nofollow" aria-label="Read the original: AWS Agent Registry Now Generally Available">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=devops&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
+  <h2><a href="https://www.hashicorp.com/en/blog" rel="noopener nofollow">HashiCorp Vault Agentic IAM Generally Available</a></h2>
+  <p>HashiCorp announced on September 1, 2026, that Vault agentic IAM is now generally available. This feature provides enhanced identity and access management capabilities specifically for AI agents and automated workflows within Vault.</p>
+  <div class="why"><b>Why it matters</b> — Organizations can now apply granular access controls and audit trails to AI agents, ensuring secure and compliant operations as agentic workflows become more prevalent in infrastructure management.</div>
+  <p class="src">hashicorp.com &middot; 07 September 2026 &middot; <a href="https://www.hashicorp.com/en/blog" rel="noopener nofollow" aria-label="Read the original: HashiCorp Vault Agentic IAM Generally Available">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=devops&amp;g=Observability" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Observability</a>
+  <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/opensearch-cluster-status-insight/" rel="noopener nofollow">OpenSearch Service Adds Cluster Insights</a></h2>
+  <p>On August 31, 2026, Amazon OpenSearch Service added 17 new Cluster Insights for diagnostics, available at no additional cost for domains running OpenSearch 1.0+ and Elasticsearch 6.8+. These insights provide recommendations for scaling, disk capacity, and shard allocation.</p>
+  <div class="why"><b>Why it matters</b> — OpenSearch users can now diagnose and resolve cluster stability issues faster with automated insights, reducing the time spent on manual troubleshooting and improving operational efficiency.</div>
+  <p class="src">AWS &middot; 07 September 2026 &middot; <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/opensearch-cluster-status-insight/" rel="noopener nofollow" aria-label="Read the original: OpenSearch Service Adds Cluster Insights">Read the original &rarr;</a></p>
+</div>
+<div class="item">
   <a class="tag tag-link" href="../search.html?c=devops&amp;g=Databases%20%26%20Data%20Infra" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Databases &amp; Data Infra</a>
-  <h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/documentdb-major-version-upgrade-8-0/" rel="noopener nofollow">DocumentDB Supports Direct Upgrades to 8.0</a></h3>
+  <h2><a href="https://aws.amazon.com/about-aws/whats-new/2026/08/documentdb-major-version-upgrade-8-0/" rel="noopener nofollow">DocumentDB Supports Direct Upgrades to 8.0</a></h2>
   <p>As of August 31, 2026, Amazon DocumentDB now supports direct major version upgrades from engine versions 3.6 or 4.0 to 8.0. This eliminates the need for intermediate version upgrades, simplifying the upgrade process.</p>
   <div class="why"><b>Why it matters</b> — DocumentDB users can upgrade to version 8.0 directly, saving time and reducing operational complexity by skipping intermediate steps and preserving existing configurations.</div>
   <p class="src">AWS &middot; 07 September 2026 &middot; <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/documentdb-major-version-upgrade-8-0/" rel="noopener nofollow" aria-label="Read the original: DocumentDB Supports Direct Upgrades to 8.0">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=devops&amp;g=Databases%20%26%20Data%20Infra" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Databases &amp; Data Infra</a>
-  <h3><a href="https://thenewstack.io/" rel="noopener nofollow">Polars 2.0 Pre-release Offers 5x Speed Boost</a></h3>
+  <h2><a href="https://thenewstack.io/" rel="noopener nofollow">Polars 2.0 Pre-release Offers 5x Speed Boost</a></h2>
   <p>A pre-release of Polars 2.0, announced on September 6, 2026, promises a five-fold speed increase. However, this performance gain may come with changes to row order, requiring users to adapt their data processing workflows.</p>
   <div class="why"><b>Why it matters</b> — Data engineers can achieve significantly faster data processing with Polars 2.0, but must account for potential row order changes that could impact existing downstream dependencies.</div>
   <p class="src">The New Stack &middot; 07 September 2026 &middot; <a href="https://thenewstack.io/" rel="noopener nofollow" aria-label="Read the original: Polars 2.0 Pre-release Offers 5x Speed Boost">Read the original &rarr;</a></p>
 </div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=devops&amp;g=Dev%20Tools" style="--tc:#f778ba"><i style="background:#f778ba"></i>Dev Tools</a>
-  <h3><a href="https://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/" rel="noopener nofollow">GitHub AI Agent Leaks Private Data</a></h3>
-  <p>An indirect prompt injection attack successfully exploited GitHub&#x27;s AI Agent, resulting in the leakage of private repository data. This incident highlights the growing threat of autonomous AI agents in sophisticated cyberattacks.</p>
-  <div class="why"><b>Why it matters</b> — Organizations must prioritize robust security measures for AI agents and platforms, as these tools become new vectors for data breaches and advanced persistent threats.</div>
-  <p class="src">InfoQ &middot; 26 July 2026 &middot; <a href="https://www.infoq.com/news/2026/07/gitlost-github-prompt-injection/" rel="noopener nofollow" aria-label="Read the original: GitHub AI Agent Leaks Private Data">Read the original &rarr;</a></p>
 </div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=devops&amp;g=Cloud%20Providers" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud Providers</a>
-  <h3><a href="https://status.cloud.google.com/incidents/utF3FMFdQfwBzJcGG6vf" rel="noopener nofollow">Google Cloud us-west1 Outage</a></h3>
-  <p>Google Cloud&#x27;s us-west1 region experienced a 2-hour, 22-minute outage on August 20, 2026, affecting 33 services including Compute Engine, Storage, Databases, and Kubernetes. The root cause was routine fiber maintenance that went awry, and automated systems failed to prevent the widespread impact.</p>
-  <p class="src">status.cloud.google.com &middot; 31 August 2026 &middot; <a href="https://status.cloud.google.com/incidents/utF3FMFdQfwBzJcGG6vf" rel="noopener nofollow" aria-label="Read the original: Google Cloud us-west1 Outage">Read the original &rarr;</a></p>
-</div>
-</div>
-<div class="morelink"><a href="../search.html?c=devops">Browse all 27 stories in this channel &rarr;</a><span>22 older stories</span></div>
-
 <p class="signoff">Another week of tools to manage the tools we just finished installing.</p>
 
-<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
-<p class="editions-note">Each edition is one week's digest exactly as it was
-   published — a summary of the week, then the stories.</p>
-<ul class="issues">
-  <li><a class="edition" href="2026-09-07.html"><span class="d">07 September 2026</span><span class="h">Kubernetes Storage Migration Goes GA, AWS Boosts AI Agent Governance, and Polars 2.0 Promises Speed</span><span class="n">6 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-31.html"><span class="d">31 August 2026</span><span class="h">Google Cloud outage in us-west1 highlights cloud reliability challenges amidst routine maintenance.</span><span class="n">2 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-24.html"><span class="d">24 August 2026</span><span class="h">GitHub suffers major 8-hour outage, AWS Glue 6.0 introduces breaking changes, and OpenTofu 1.9 surpasses Terraform in features.</span><span class="n">1 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-17.html"><span class="d">17 August 2026</span><span class="h">TypeScript 6.0 breaks existing builds with new strict defaults, forcing immediate migration for many projects.</span><span class="n">1 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-10.html"><span class="d">10 August 2026</span><span class="h">TypeScript 6.0 introduces breaking changes, while Chrome and Node.js deliver key developer tooling updates.</span><span class="n">3 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-03.html"><span class="d">03 August 2026</span><span class="h">Cloud Providers Push Serverless Edge, Kubernetes Enhances AI Workloads, and Observability Tools Gain Predictive Analytics</span><span class="n">1 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-27.html"><span class="d">27 July 2026</span><span class="h">IaC and Cloud AI Lead DevOps News with Terraform Governance, Azure HPC Expansion, and Google Cloud&#x27;s Secure AI Benchmarking</span><span class="n">6 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-26.html"><span class="d">26 July 2026</span><span class="h">Autonomous AI Agent Orchestrates Hugging Face Security Breach, Signaling New Era of Cyber Threats.</span><span class="n">7 stories &rarr;</span></a></li>
-</ul>
+<div class="cta">
+  <h3>6 stories, every Monday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-08-31.html">&larr; Previous issue</a>
+</div>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.

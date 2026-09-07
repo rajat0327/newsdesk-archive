@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sun, 06 Sep 2026 07:23:40 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 07 Sep 2026 07:29:45 +0000</lastBuildDate>
+    <item>
+      <title>DevOps Weekly Digest — 07 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-09-07.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-09-07.html</guid>
+      <pubDate>Mon, 07 Sep 2026 08:00:00 +0000</pubDate>
+      <description>Kubernetes Storage Migration Goes GA, AWS Boosts AI Agent Governance, and Polars 2.0 Promises Speed</description>
+    </item>
     <item>
       <title>Design &amp; UX — 06 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/design/2026-09-06.html</link>
@@ -135,7 +142,7 @@
       <link>https://rajat0327.github.io/newsdesk-archive/marketing/2026-08-31.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/marketing/2026-08-31.html</guid>
       <pubDate>Mon, 31 Aug 2026 08:00:00 +0000</pubDate>
-      <description>46 new posts across 7 marketing sources — 8 worth your time.</description>
+      <description>46 new posts across 7 marketing sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 30 August 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-20.html</guid>
       <pubDate>Thu, 20 Aug 2026 08:00:00 +0000</pubDate>
       <description>35 releases across 31 tracked projects, including 5 with security fixes.</description>
-    </item>
-    <item>
-      <title>Sales &amp; Revenue — 20 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/sales/2026-08-20.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/sales/2026-08-20.html</guid>
-      <pubDate>Thu, 20 Aug 2026 08:00:00 +0000</pubDate>
-      <description>29 new posts across 5 go-to-market sources — 7 worth your time.</description>
     </item>
 </channel></rss>
