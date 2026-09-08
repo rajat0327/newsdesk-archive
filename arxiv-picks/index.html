@@ -53,25 +53,25 @@
   <p class="src">arXiv &middot; 02 September 2026 &middot; <a href="https://arxiv.org/abs/2608.30320" rel="noopener nofollow" aria-label="Read the original: On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Training &amp; Efficiency</a>
-  <h3><a href="https://arxiv.org/abs/2608.31036" rel="noopener nofollow">Normalized Low-Rank Adaptation</a></h3>
-  <p>This paper investigates the training dynamics of Low-Rank Adaptation (LoRA), noting that because the up-projection matrix is initialized to zero, early optimization is heavily dominated by the down-projection matrix. To address this imbalance and stabilize optimization, the authors introduce Normalized Low-Rank Adaptation (NoRA). This method regularizes the training dynamics to ensure more stable and effective parameter-efficient fine-tuning.</p>
-  <div class="why"><b>Why it matters</b> — Normalizing LoRA&#x27;s projection layers prevents the down-projection matrix from dominating early training dynamics, leading to more stable and effective optimization.</div>
-  <p class="src">arXiv &middot; 02 September 2026 &middot; <a href="https://arxiv.org/abs/2608.31036" rel="noopener nofollow" aria-label="Read the original: Normalized Low-Rank Adaptation">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Training &amp; Efficiency</a>
-  <h3><a href="https://arxiv.org/abs/2609.01343" rel="noopener nofollow">SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers</a></h3>
-  <p>This paper presents scaling laws for &quot;looped&quot; Mixture-of-Experts (MoE) Transformers, which iterate a shared block of layers to increase effective depth. Unlike typical evaluations that conflate architectural benefits with extra FLOPs, this study matches per-token FLOPs, non-embedding parameters, and KV cache size. The resulting recipe, SMELT, provides a systematic approach to scaling looped MoE architectures.</p>
-  <div class="why"><b>Why it matters</b> — Looped MoE architectures can be systematically scaled by matching compute budgets (FLOPs and KV cache) rather than just parameter counts, isolating true architectural advantages.</div>
-  <p class="src">arXiv &middot; 02 September 2026 &middot; <a href="https://arxiv.org/abs/2609.01343" rel="noopener nofollow" aria-label="Read the original: SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers">Read the original &rarr;</a></p>
-</div>
-<div class="item">
   <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a>
-  <h3><a href="https://arxiv.org/abs/2608.31046" rel="noopener nofollow">Does On-Policy Distillation Really Distill? From Noisy Teacher to Self-Improvement</a></h3>
-  <p>This work analyzes On-Policy Distillation (OPD), an alternative to reinforcement learning with verifiable rewards (RLVR) that provides dense token-level supervision. Because the teacher model must score student-generated trajectories that are off-policy for the teacher, the paper investigates whether the student&#x27;s gains stem from reliable teacher supervision or self-improvement. The authors quantitatively evaluate these dynamics to clarify the true source of optimization in OPD.</p>
-  <div class="why"><b>Why it matters</b> — Token-level supervision in on-policy distillation may function more as a mechanism for student self-improvement than direct teacher knowledge transfer due to the off-policy nature of student trajectories.</div>
-  <p class="src">arXiv &middot; 02 September 2026 &middot; <a href="https://arxiv.org/abs/2608.31046" rel="noopener nofollow" aria-label="Read the original: Does On-Policy Distillation Really Distill? From Noisy Teacher to Self-Improvement">Read the original &rarr;</a></p>
+  <h3><a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow">Kimi K3: Open Frontier Intelligence</a></h3>
+  <p>This paper introduces Kimi K3, a massive 2.8T parameter Mixture-of-Experts model with 104 billion activated parameters, native vision capabilities, and a 1-million-token context window. Its architecture incorporates Kimi Delta Attention and Attention Residuals to enhance information flow across sequence length and model depth, alongside Stable LatentMoE for efficient expert activation.</p>
+  <div class="why"><b>Why it matters</b> — It provides insight into the architectural innovations and scaling strategies behind a new frontier-level multimodal LLM, detailing specific attention mechanisms and MoE techniques.</div>
+  <p class="src">arXiv &middot; 29 July 2026 &middot; <a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow" aria-label="Read the original: Kimi K3: Open Frontier Intelligence">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a>
+  <h3><a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow">DiffusionGemma Technical Report</a></h3>
+  <p>DiffusionGemma introduces discrete diffusion to LLM decoding by iteratively refining blocks of 256 tokens in parallel. Converted directly from pre-trained Gemma weights rather than trained from scratch, the model bypasses sequential token-by-token autoregressive decoding bottlenecks while maintaining generation quality.</p>
+  <div class="why"><b>Why it matters</b> — Adapting autoregressive model weights into block-parallel discrete diffusion bypasses sequential KV-cache bottlenecks without requiring full pre-training from scratch.</div>
+  <p class="src">arXiv &middot; 05 August 2026 &middot; <a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow" aria-label="Read the original: DiffusionGemma Technical Report">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="--tc:#f778ba"><i style="background:#f778ba"></i>Multimodal</a>
+  <h3><a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow">JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion</a></h3>
+  <p>JoyAI-Video-Edit introduces a 16B-parameter autoregressive diffusion framework designed for low-latency streaming video editing. The system processes video in causal chunks without requiring future frame lookahead or a fixed duration, balancing computational complexity with temporal consistency.</p>
+  <div class="why"><b>Why it matters</b> — Chunk-wise causal autoregressive diffusion enables real-time unbounded video editing within fixed memory and latency budgets.</div>
+  <p class="src">arXiv &middot; 05 August 2026 &middot; <a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow" aria-label="Read the original: JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion">Read the original &rarr;</a></p>
 </div>
 </div>
 <div class="morelink"><a href="../search.html?c=arxiv-picks">Browse all 36 stories in this channel &rarr;</a><span>31 older stories</span></div>
