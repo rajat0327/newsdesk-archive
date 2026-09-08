@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Databases &amp; Data — Engines, Pipelines &amp; Query Plans</title>
-<meta name="description" content="Engines, Pipelines &amp; Query Plans. 53 stories across 6 issues.">
-<meta property="og:title" content="Databases &amp; Data — Engines, Pipelines &amp; Query Plans">
-<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 53 stories across 6 issues.">
+<title>Databases &amp; Data — 08 September 2026</title>
+<meta name="description" content="42 new posts across 6 database and data engineering sources — 7 worth your time.">
+<meta property="og:title" content="Databases &amp; Data — 08 September 2026">
+<meta property="og:description" content="42 new posts across 6 database and data engineering sources — 7 worth your time.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c22ebe">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/data/2026-09-08.html">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <link rel="stylesheet" href="../style.css">
 <style>:root{--accent:#c22ebe}</style>
@@ -25,70 +26,79 @@
 <div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group" data-here><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe" aria-current="page">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
-  <h1>Databases &amp; Data</h1>
-  <p class="lede">Engines, Pipelines &amp; Query Plans. Published every
-     <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>53</b> stories</span>
-     <span><b>6</b> issues</span>
-     <span><b>9</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#c22ebe;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Databases &amp; Data</a></p>
+  <h1>08 September 2026</h1>
+  <p class="lede">42 new posts across 6 database and data engineering sources — 7 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Databases &amp; Data,
+     7 stories, as published.</p>
 </div>
-
-
-<div class="sec"><h2>Top stories</h2><div class="rule"></div>
-  <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
-  <h3><a href="https://postgr.es/p/9tE" rel="noopener nofollow">Maki Majima: Migration files and Git do not mix</a></h3>
-  <p>This post argues that migration directories, with their timestamped, append-only schema changes and in-database state tracking, fundamentally conflict with Git&#x27;s version control model. It highlights that migrations don&#x27;t inherit Git&#x27;s protections like review processes, creating two unsynchronized timelines.</p>
-  <div class="why"><b>Why it matters</b> — It exposes a critical impedance mismatch between database schema migration tools and Git, prompting reflection on how to manage schema changes and their deployment processes more robustly.</div>
-  <p class="src">Planet PostgreSQL &middot; 08 September 2026 &middot; <a href="https://postgr.es/p/9tE" rel="noopener nofollow" aria-label="Read the original: Maki Majima: Migration files and Git do not mix">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
-  <h3><a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow">What else runs on your Postgres server, and how do we stop it from taking the database down?</a></h3>
-  <p>Describes the mechanisms ClickHouse Managed Postgres uses to prevent supporting services (like backup agents or logging daemons) from compromising database availability. It details the use of cgroup limits, runtime budgets, and disk-full session exemptions to isolate resources.</p>
-  <div class="why"><b>Why it matters</b> — Implementing disk-full session exemptions allows administrators to connect and run cleanup commands even when the disk is at 100% capacity and rejecting standard connections.</div>
-  <p class="src">ClickHouse &middot; 25 August 2026 &middot; <a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow" aria-label="Read the original: What else runs on your Postgres server, and how do we stop it from taking the database down?">Read the original &rarr;</a></p>
-</div>
-<div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
-  <h3><a href="https://postgr.es/p/9tP" rel="noopener nofollow">Alexander Ioffe: How One Extra JOIN Reliably Breaks Postgres</a></h3>
+  <h2><a href="https://postgr.es/p/9tP" rel="noopener nofollow">Alexander Ioffe: How One Extra JOIN Reliably Breaks Postgres</a></h2>
   <p>This article details how adding a small 5-row lookup table to a 9-table billing query in Postgres can drastically degrade performance, flipping a 0.3ms nested loop plan to a 467ms hash join. The root cause is identified as `join_collapse_limit = 8`, a default Postgres has shipped since 2005.</p>
   <div class="why"><b>Why it matters</b> — It reveals a specific, counter-intuitive performance cliff in PostgreSQL related to `join_collapse_limit`, demonstrating how a seemingly minor query change can lead to significant performance regressions.</div>
   <p class="src">Planet PostgreSQL &middot; 08 September 2026 &middot; <a href="https://postgr.es/p/9tP" rel="noopener nofollow" aria-label="Read the original: Alexander Ioffe: How One Extra JOIN Reliably Breaks Postgres">Read the original &rarr;</a></p>
 </div>
 <div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://postgr.es/p/9tX" rel="noopener nofollow">Mikhail Shytsko: What Replica Mode Does Not Switch Off</a></h2>
+  <p>This post reveals a common misconception about `session_replication_role = replica`, demonstrating that it does not fully disable enforcement for a session, leading to unexpected writes and rejections. It illustrates with an example of an order for a non-existent customer and a negative amount.</p>
+  <div class="why"><b>Why it matters</b> — It clarifies a critical nuance of `session_replication_role = replica`, preventing data integrity issues or unexpected behavior when attempting to bypass constraints during specific database operations.</div>
+  <p class="src">Planet PostgreSQL &middot; 08 September 2026 &middot; <a href="https://postgr.es/p/9tX" rel="noopener nofollow" aria-label="Read the original: Mikhail Shytsko: What Replica Mode Does Not Switch Off">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
+  <h2><a href="https://postgr.es/p/9tE" rel="noopener nofollow">Maki Majima: Migration files and Git do not mix</a></h2>
+  <p>This post argues that migration directories, with their timestamped, append-only schema changes and in-database state tracking, fundamentally conflict with Git&#x27;s version control model. It highlights that migrations don&#x27;t inherit Git&#x27;s protections like review processes, creating two unsynchronized timelines.</p>
+  <div class="why"><b>Why it matters</b> — It exposes a critical impedance mismatch between database schema migration tools and Git, prompting reflection on how to manage schema changes and their deployment processes more robustly.</div>
+  <p class="src">Planet PostgreSQL &middot; 08 September 2026 &middot; <a href="https://postgr.es/p/9tE" rel="noopener nofollow" aria-label="Read the original: Maki Majima: Migration files and Git do not mix">Read the original &rarr;</a></p>
+</div>
+<div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
-  <h3><a href="https://clickhouse.com/blog/uken-games-clickhouse-observability-stack" rel="noopener nofollow">How Uken Games reduces observability costs by 87% with ClickHouse</a></h3>
+  <h2><a href="https://clickhouse.com/blog/uken-games-clickhouse-observability-stack" rel="noopener nofollow">How Uken Games reduces observability costs by 87% with ClickHouse</a></h2>
   <p>Uken Games achieved an 87% reduction in observability costs by replacing Datadog with an open-source stack built on ClickHouse. This allowed them to store every trace on a single node while significantly cutting expenses.</p>
   <div class="why"><b>Why it matters</b> — It provides a concrete example with a significant cost saving (87%) by migrating to an open-source observability stack, demonstrating a viable strategy for managing large-scale data costs.</div>
   <p class="src">ClickHouse &middot; 08 September 2026 &middot; <a href="https://clickhouse.com/blog/uken-games-clickhouse-observability-stack" rel="noopener nofollow" aria-label="Read the original: How Uken Games reduces observability costs by 87% with ClickHouse">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
-  <h3><a href="https://clickhouse.com/blog/agentic-analytics-benchmark-data-agent-mnist" rel="noopener nofollow">The Agentic Analytics Benchmark: Measuring model accuracy and efficiency in analytical agents</a></h3>
+  <h2><a href="https://clickhouse.com/blog/agentic-analytics-benchmark-data-agent-mnist" rel="noopener nofollow">The Agentic Analytics Benchmark: Measuring model accuracy and efficiency in analytical agents</a></h2>
   <p>This article presents the Agentic Analytics Benchmark, which tested 28 AI models on 201 real analytics questions from a production data warehouse. It measures correctness, cost, and speed, and provides an open harness for replication.</p>
   <div class="why"><b>Why it matters</b> — It offers quantitative benchmark results for AI model performance in analytical tasks, providing data engineers with concrete metrics (correctness, cost, speed) to evaluate and select models for agentic analytics.</div>
   <p class="src">ClickHouse &middot; 08 September 2026 &middot; <a href="https://clickhouse.com/blog/agentic-analytics-benchmark-data-agent-mnist" rel="noopener nofollow" aria-label="Read the original: The Agentic Analytics Benchmark: Measuring model accuracy and efficiency in analytical agents">Read the original &rarr;</a></p>
 </div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
+  <h2><a href="https://planetscale.com/blog/what-is-a-neki-router" rel="noopener nofollow">What is a Neki router?</a></h2>
+  <p>This post describes the Neki router, a component in sharded databases responsible for determining which shard(s) should execute a query. It explains that the router builds the initial plan based on data topology before Postgres creates its execution plan.</p>
+  <div class="why"><b>Why it matters</b> — It introduces the concept of a sharding router and its role in distributed database query planning, which is fundamental to understanding how queries are executed and optimized in sharded environments.</div>
+  <p class="src">PlanetScale &middot; 08 September 2026 &middot; <a href="https://planetscale.com/blog/what-is-a-neki-router" rel="noopener nofollow" aria-label="Read the original: What is a Neki router?">Read the original &rarr;</a></p>
 </div>
-<div class="morelink"><a href="../search.html?c=data">Browse all 53 stories in this channel &rarr;</a><span>48 older stories</span></div>
-
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
+  <h2><a href="https://clickhouse.com/blog/clickhouse-streaming-http-api" rel="noopener nofollow">ClickHouse as a streaming HTTP API</a></h2>
+  <p>This post describes how to build a streaming HTTP API directly within ClickHouse 26.8, leveraging named handlers, typed parameters, pagination, framing formats, and access control. This allows for direct data serving from the database.</p>
+  <div class="why"><b>Why it matters</b> — It presents a method to turn an OLAP database into a direct, streaming API endpoint, potentially simplifying data serving architectures and reducing latency for real-time applications.</div>
+  <p class="src">ClickHouse &middot; 08 September 2026 &middot; <a href="https://clickhouse.com/blog/clickhouse-streaming-http-api" rel="noopener nofollow" aria-label="Read the original: ClickHouse as a streaming HTTP API">Read the original &rarr;</a></p>
+</div>
+</div>
 <p class="signoff">The database always has another surprise.</p>
 
-<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
-<p class="editions-note">Each edition is one week's digest exactly as it was
-   published — a summary of the week, then the stories.</p>
-<ul class="issues">
-  <li><a class="edition" href="2026-09-08.html"><span class="d">08 September 2026</span><span class="h">42 new posts across 6 database and data engineering sources — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-09-01.html"><span class="d">01 September 2026</span><span class="h">55 new posts across 9 database and data engineering sources — 9 worth your time.</span><span class="n">9 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-25.html"><span class="d">25 August 2026</span><span class="h">53 new posts across 9 database and data engineering sources — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-18.html"><span class="d">18 August 2026</span><span class="h">53 new posts across 8 database and data engineering sources — 8 worth your time.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">52 new posts across 9 database and data engineering sources — 4 worth your time.</span><span class="n">4 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-08.html"><span class="d">08 August 2026</span><span class="h">57 new posts across 9 database and data engineering sources — 18 worth your time.</span><span class="n">18 stories &rarr;</span></a></li>
-</ul>
+<div class="cta">
+  <h3>7 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-09-01.html">&larr; Previous issue</a>
+</div>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.
