@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Security Weekly Digest — Exploits, Breaches &amp; Advisories</title>
-<meta name="description" content="Exploits, Breaches &amp; Advisories. 55 stories across 8 issues.">
-<meta property="og:title" content="Security Weekly Digest — Exploits, Breaches &amp; Advisories">
-<meta property="og:description" content="Exploits, Breaches &amp; Advisories. 55 stories across 8 issues.">
+<title>Security Weekly Digest — 08 September 2026</title>
+<meta name="description" content="8 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
+<meta property="og:title" content="Security Weekly Digest — 08 September 2026">
+<meta property="og:description" content="8 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#d9552f">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-08.html">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <link rel="stylesheet" href="../style.css">
 <style>:root{--accent:#d9552f}</style>
@@ -25,72 +26,93 @@
 <div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f" aria-current="page">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
-  <h1>Security Weekly Digest</h1>
-  <p class="lede">Exploits, Breaches &amp; Advisories. Published every
-     <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>55</b> stories</span>
-     <span><b>8</b> issues</span>
-     <span><b>9</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Breaches" style="--tc:#f778ba"><i style="background:#f778ba"></i>Breaches</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Supply%20Chain" style="--tc:#e3b341"><i style="background:#e3b341"></i>Supply Chain</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Cloud%20%26%20SaaS" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud &amp; SaaS</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Vulnerabilities" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vulnerabilities</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Threat%20Actors" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Threat Actors</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Ransomware" style="--tc:#f778ba"><i style="background:#f778ba"></i>Ransomware</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Policy%20%26%20Compliance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Policy &amp; Compliance</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Tooling" style="--tc:#3fb950"><i style="background:#3fb950"></i>Tooling</a></p>
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#d9552f;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Security Weekly Digest</a></p>
+  <h1>08 September 2026</h1>
+  <p class="lede">8 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</p>
+  <p class="meta" style="margin-top:12px">One week of Security Weekly Digest,
+     9 stories, as published.</p>
 </div>
-
-
-<div class="sec"><h2>Top stories</h2><div class="rule"></div>
-  <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html" rel="noopener nofollow">Langflow and Rails Flaws Actively Exploited</a></h3>
-  <p>Threat actors are actively exploiting critical vulnerabilities in Langflow (CVE-2026-0768) and Ruby on Rails (CVE-2026-66066) as of September 1, 2026. The Langflow flaw allows arbitrary Python code execution, while the Rails vulnerability enables unauthenticated attackers to read arbitrary files and potentially achieve remote code execution, leading to credential harvesting and command-and-control activity.</p>
-  <div class="why"><b>Why it matters</b> — Organizations using Langflow or Ruby on Rails with Active Storage and libvips must immediately patch to prevent unauthenticated remote code execution and data exposure.</div>
-  <p class="src">The Hacker News &middot; 08 September 2026 &middot; <a href="https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html" rel="noopener nofollow" aria-label="Read the original: Langflow and Rails Flaws Actively Exploited">Read the original &rarr;</a></p>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49869" rel="noopener nofollow">CVE-2026-49869: Kestra OSS</a></h2>
+  <p>Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 10.0 (CRITICAL). CISA remediation deadline 05 Sep 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 08 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49869" rel="noopener nofollow" aria-label="Read the original: CVE-2026-49869: Kestra OSS">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83548" rel="noopener nofollow">CVE-2026-83548: SonicWall SMA1000 Appliances</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82329" rel="noopener nofollow">CVE-2026-82329: JFrog Artifactory</a></h2>
+  <p>JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 05 Sep 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 08 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82329" rel="noopener nofollow" aria-label="Read the original: CVE-2026-82329: JFrog Artifactory">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9586" rel="noopener nofollow">CVE-2026-9586: Sangoma Switchvox</a></h2>
+  <p>Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.3 (CRITICAL). CISA remediation deadline 05 Sep 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 08 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-9586" rel="noopener nofollow" aria-label="Read the original: CVE-2026-9586: Sangoma Switchvox">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83548" rel="noopener nofollow">CVE-2026-83548: SonicWall SMA1000 Appliances</a></h2>
   <p>SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 10.0 (CRITICAL). CISA remediation deadline 05 Sep 2026 — already passed.</div>
   <p class="src">CISA KEV &middot; 08 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83548" rel="noopener nofollow" aria-label="Read the original: CVE-2026-83548: SonicWall SMA1000 Appliances">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-85046" rel="noopener nofollow">CVE-2026-85046: Google Chromium V8</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-85046" rel="noopener nofollow">CVE-2026-85046: Google Chromium V8</a></h2>
   <p>Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.8 (HIGH). CISA remediation deadline 18 Sep 2026 — 10 days out.</div>
   <p class="src">CISA KEV &middot; 08 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-85046" rel="noopener nofollow" aria-label="Read the original: CVE-2026-85046: Google Chromium V8">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48710" rel="noopener nofollow">CVE-2026-48710: Kludex Starlette</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59822" rel="noopener nofollow">CVE-2026-59822: BerriAI LiteLLM</a></h2>
+  <p>BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an arbitrary Bearer token.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.8 (HIGH). CISA remediation deadline 16 Sep 2026 — 8 days out.</div>
+  <p class="src">CISA KEV &middot; 08 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59822" rel="noopener nofollow" aria-label="Read the original: CVE-2026-59822: BerriAI LiteLLM">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48710" rel="noopener nofollow">CVE-2026-48710: Kludex Starlette</a></h2>
   <p>Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentication bypass when the authentication depends on the reconstructed URL’s path. This vulnerability could be chaned with CVE-2026-42271.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 6.5 (MEDIUM). CISA remediation deadline 16 Sep 2026 — 8 days out.</div>
   <p class="src">CISA KEV &middot; 08 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48710" rel="noopener nofollow" aria-label="Read the original: CVE-2026-48710: Kludex Starlette">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49869" rel="noopener nofollow">CVE-2026-49869: Kestra OSS</a></h3>
-  <p>Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.</p>
-  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 10.0 (CRITICAL). CISA remediation deadline 05 Sep 2026 — already passed.</div>
-  <p class="src">CISA KEV &middot; 08 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49869" rel="noopener nofollow" aria-label="Read the original: CVE-2026-49869: Kestra OSS">Read the original &rarr;</a></p>
+  <h2><a href="https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html" rel="noopener nofollow">Langflow and Rails Flaws Actively Exploited</a></h2>
+  <p>Threat actors are actively exploiting critical vulnerabilities in Langflow (CVE-2026-0768) and Ruby on Rails (CVE-2026-66066) as of September 1, 2026. The Langflow flaw allows arbitrary Python code execution, while the Rails vulnerability enables unauthenticated attackers to read arbitrary files and potentially achieve remote code execution, leading to credential harvesting and command-and-control activity.</p>
+  <div class="why"><b>Why it matters</b> — Organizations using Langflow or Ruby on Rails with Active Storage and libvips must immediately patch to prevent unauthenticated remote code execution and data exposure.</div>
+  <p class="src">The Hacker News &middot; 08 September 2026 &middot; <a href="https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html" rel="noopener nofollow" aria-label="Read the original: Langflow and Rails Flaws Actively Exploited">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Supply%20Chain" style="--tc:#e3b341"><i style="background:#e3b341"></i>Supply Chain</a>
+  <h2><a href="https://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html" rel="noopener nofollow">Magento/Adobe Commerce 0-Day Exploited</a></h2>
+  <p>E-commerce storefronts are being compromised by an unpatched Magento and Adobe Commerce zero-day vulnerability, dubbed StyleSmuggler, which allows unauthenticated attackers remote code execution. Attacks commenced on September 4, 2026, injecting malicious code into Magento&#x27;s template system to evade existing safeguards.</p>
+  <div class="why"><b>Why it matters</b> — E-commerce platforms running Magento or Adobe Commerce must apply emergency mitigations or patches to prevent unauthenticated remote code execution and store backdooring.</div>
+  <p class="src">The Hacker News &middot; 08 September 2026 &middot; <a href="https://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html" rel="noopener nofollow" aria-label="Read the original: Magento/Adobe Commerce 0-Day Exploited">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=security-news">Browse all 55 stories in this channel &rarr;</a><span>50 older stories</span></div>
-
 <p class="signoff">At this point, the vulnerability scanner is basically writing our sprint backlog.</p>
 
-<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
-<p class="editions-note">Each edition is one week's digest exactly as it was
-   published — a summary of the week, then the stories.</p>
-<ul class="issues">
-  <li><a class="edition" href="2026-09-08.html"><span class="d">08 September 2026</span><span class="h">8 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-09-01.html"><span class="d">01 September 2026</span><span class="h">12 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">6 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-25.html"><span class="d">25 August 2026</span><span class="h">9 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-18.html"><span class="d">18 August 2026</span><span class="h">4 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">4 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">AI-powered ransomware, widespread npm supply chain attacks, and new regulatory mandates define a turbulent week in cybersecurity.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-04.html"><span class="d">04 August 2026</span><span class="h">2 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">2 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-28.html"><span class="d">28 July 2026</span><span class="h">2 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-26.html"><span class="d">26 July 2026</span><span class="h">6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
-</ul>
+<div class="cta">
+  <h3>9 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-09-01.html">&larr; Previous issue</a>
+</div>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.
