@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 09 Sep 2026 07:32:56 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 09 Sep 2026 07:34:27 +0000</lastBuildDate>
     <item>
       <title>arXiv Picks — 09 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-09.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-09.html</guid>
       <pubDate>Wed, 09 Sep 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Compile by Training: Turning Natural-Language Specifications into Loca (378 upvotes).</description>
+    </item>
+    <item>
+      <title>Supply Chain &amp; ERP — 09 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-09.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-09.html</guid>
+      <pubDate>Wed, 09 Sep 2026 08:00:00 +0000</pubDate>
+      <description>125 new posts across 11 SAP and supply chain sources — 6 worth your time.</description>
     </item>
     <item>
       <title>Chips &amp; Silicon — 08 September 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/climate/2026-08-22.html</guid>
       <pubDate>Sat, 22 Aug 2026 08:00:00 +0000</pubDate>
       <description>66 new posts across 4 climate and energy sources — 8 worth your time.</description>
-    </item>
-    <item>
-      <title>Craft &amp; Leadership — 22 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/craft/2026-08-22.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/craft/2026-08-22.html</guid>
-      <pubDate>Sat, 22 Aug 2026 08:00:00 +0000</pubDate>
-      <description>47 new posts across 9 practice and leadership sources — 5 worth your time.</description>
     </item>
 </channel></rss>
