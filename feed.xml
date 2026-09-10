@@ -3,7 +3,7 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Thu, 10 Sep 2026 07:32:27 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 10 Sep 2026 07:33:32 +0000</lastBuildDate>
     <item>
       <title>HR &amp; Payroll Tech — 10 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-09-10.html</link>
@@ -17,6 +17,13 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-10.html</guid>
       <pubDate>Thu, 10 Sep 2026 08:00:00 +0000</pubDate>
       <description>24 releases across 31 tracked projects, including 2 with security fixes.</description>
+    </item>
+    <item>
+      <title>Sales &amp; Revenue — 10 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/sales/2026-09-10.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/sales/2026-09-10.html</guid>
+      <pubDate>Thu, 10 Sep 2026 08:00:00 +0000</pubDate>
+      <description>23 new posts across 4 go-to-market sources — 7 worth your time.</description>
     </item>
     <item>
       <title>arXiv Picks — 09 September 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/fintech/2026-08-24.html</guid>
       <pubDate>Mon, 24 Aug 2026 08:00:00 +0000</pubDate>
       <description>64 new posts across 4 fintech and payments sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>Marketing — 24 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/marketing/2026-08-24.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/marketing/2026-08-24.html</guid>
-      <pubDate>Mon, 24 Aug 2026 08:00:00 +0000</pubDate>
-      <description>51 new posts across 7 marketing sources — 7 worth your time.</description>
     </item>
 </channel></rss>
