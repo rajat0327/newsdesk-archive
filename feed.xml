@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sat, 12 Sep 2026 07:21:49 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 13 Sep 2026 07:36:12 +0000</lastBuildDate>
+    <item>
+      <title>India Tech Weekly — 13 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/india-tech/2026-09-13.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/india-tech/2026-09-13.html</guid>
+      <pubDate>Sun, 13 Sep 2026 08:00:00 +0000</pubDate>
+      <description>Indian space-tech startup Pixxel secures $100 million in Series C funding, marking the largest investment round for the sector.</description>
+    </item>
     <item>
       <title>Climate &amp; Energy — 12 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/climate/2026-09-12.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-08-26.html</guid>
       <pubDate>Wed, 26 Aug 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: EnvHarness: Awakening Static Worlds for Agent Learning (263 upvotes).</description>
-    </item>
-    <item>
-      <title>Supply Chain &amp; ERP — 26 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-26.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-08-26.html</guid>
-      <pubDate>Wed, 26 Aug 2026 08:00:00 +0000</pubDate>
-      <description>SAP's Autonomous Enterprise vision and AI-driven automation dominate enterprise news this week, reshaping workflows from procurement to warehousing.</description>
     </item>
 </channel></rss>
