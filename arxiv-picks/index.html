@@ -46,32 +46,32 @@
   <p class="src">arXiv &middot; 29 July 2026 &middot; <a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow" aria-label="Read the original: SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a>
-  <h3><a href="https://arxiv.org/abs/2609.03430" rel="noopener nofollow">Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning</a></h3>
-  <p>This work challenges the standard paradigm of KV cache compression, which relies on complex scoring metrics to evict less important tokens. The authors demonstrate that the selection signal in these methods contributes almost nothing, and that a simple random eviction strategy performs surprisingly well.</p>
-  <div class="why"><b>Why it matters</b> — Complex, computationally expensive KV cache eviction algorithms can be replaced with simple random eviction without significant loss in reasoning performance, drastically simplifying inference engine design.</div>
-  <p class="src">arXiv &middot; 09 September 2026 &middot; <a href="https://arxiv.org/abs/2609.03430" rel="noopener nofollow" aria-label="Read the original: Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Training &amp; Efficiency</a>
-  <h3><a href="https://arxiv.org/abs/2609.04172" rel="noopener nofollow">Rethinking On-Policy Distillation of Large Language Models II: One Training Example</a></h3>
-  <p>This study explores the data limits of on-policy distillation (OPD) by training a student model using only a single query. Surprisingly, this one-shot distillation continues to improve the student model over hundreds of steps, recovering the majority of the performance gains achieved by full-dataset distillation.</p>
-  <div class="why"><b>Why it matters</b> — On-policy distillation does not require massive datasets; training on even a single query can yield continuous optimization gains and recover most of the performance of full-data distillation.</div>
-  <p class="src">arXiv &middot; 09 September 2026 &middot; <a href="https://arxiv.org/abs/2609.04172" rel="noopener nofollow" aria-label="Read the original: Rethinking On-Policy Distillation of Large Language Models II: One Training Example">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a>
+  <h3><a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow">Kimi K3: Open Frontier Intelligence</a></h3>
+  <p>This paper introduces Kimi K3, a massive 2.8T parameter Mixture-of-Experts model with 104 billion activated parameters, native vision capabilities, and a 1-million-token context window. Its architecture incorporates Kimi Delta Attention and Attention Residuals to enhance information flow across sequence length and model depth, alongside Stable LatentMoE for efficient expert activation.</p>
+  <div class="why"><b>Why it matters</b> — It provides insight into the architectural innovations and scaling strategies behind a new frontier-level multimodal LLM, detailing specific attention mechanisms and MoE techniques.</div>
+  <p class="src">arXiv &middot; 29 July 2026 &middot; <a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow" aria-label="Read the original: Kimi K3: Open Frontier Intelligence">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a>
-  <h3><a href="https://arxiv.org/abs/2609.04199" rel="noopener nofollow">Compile by Training: Turning Natural-Language Specifications into Local Neural Functions</a></h3>
-  <p>This paper introduces a method to compile natural-language specifications into local, reusable neural functions. It uses remote teacher models to generate task-specific training examples, which are then used to train a local student model, eliminating the latency, cost, and dependency of calling remote APIs.</p>
-  <div class="why"><b>Why it matters</b> — Engineers can replace expensive, high-latency remote API calls for structured text tasks with local, specialized neural functions trained on synthetic data generated from a single natural-language specification.</div>
-  <p class="src">arXiv &middot; 09 September 2026 &middot; <a href="https://arxiv.org/abs/2609.04199" rel="noopener nofollow" aria-label="Read the original: Compile by Training: Turning Natural-Language Specifications into Local Neural Functions">Read the original &rarr;</a></p>
+  <h3><a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow">DiffusionGemma Technical Report</a></h3>
+  <p>DiffusionGemma introduces discrete diffusion to LLM decoding by iteratively refining blocks of 256 tokens in parallel. Converted directly from pre-trained Gemma weights rather than trained from scratch, the model bypasses sequential token-by-token autoregressive decoding bottlenecks while maintaining generation quality.</p>
+  <div class="why"><b>Why it matters</b> — Adapting autoregressive model weights into block-parallel discrete diffusion bypasses sequential KV-cache bottlenecks without requiring full pre-training from scratch.</div>
+  <p class="src">arXiv &middot; 05 August 2026 &middot; <a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow" aria-label="Read the original: DiffusionGemma Technical Report">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a>
-  <h3><a href="https://arxiv.org/abs/2609.04148" rel="noopener nofollow">Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments</a></h3>
-  <p>The authors present a framework that converts static agent trajectories into executable, scalable terminal environments. This allows agent post-training to benefit from interactive execution feedback and multiple verifiable tasks, rather than relying on frozen, single-use demonstrations.</p>
-  <div class="why"><b>Why it matters</b> — Instead of manually building complex interactive environments for agent training, developers can programmatically synthesize executable environments directly from existing agent execution logs.</div>
-  <p class="src">arXiv &middot; 09 September 2026 &middot; <a href="https://arxiv.org/abs/2609.04148" rel="noopener nofollow" aria-label="Read the original: Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="--tc:#f778ba"><i style="background:#f778ba"></i>Multimodal</a>
+  <h3><a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow">JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion</a></h3>
+  <p>JoyAI-Video-Edit introduces a 16B-parameter autoregressive diffusion framework designed for low-latency streaming video editing. The system processes video in causal chunks without requiring future frame lookahead or a fixed duration, balancing computational complexity with temporal consistency.</p>
+  <div class="why"><b>Why it matters</b> — Chunk-wise causal autoregressive diffusion enables real-time unbounded video editing within fixed memory and latency budgets.</div>
+  <p class="src">arXiv &middot; 05 August 2026 &middot; <a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow" aria-label="Read the original: JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Evaluation%20%26%20Benchmarks" style="--tc:#3fb950"><i style="background:#3fb950"></i>Evaluation &amp; Benchmarks</a>
+  <h3><a href="https://arxiv.org/abs/2608.09802" rel="noopener nofollow">SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring</a></h3>
+  <p>This paper introduces SWE-Bench ProMax and reveals that nearly 60% of unsolved instances in the widely used SWE-bench Verified benchmark contain flawed tests, such as overly narrow or overly broad assertions. It addresses these evaluation quality issues to provide a more accurate benchmark for long-horizon software engineering agents.</p>
+  <div class="why"><b>Why it matters</b> — Nearly 60% of unsolved SWE-bench Verified instances are flawed, meaning agent performance evaluations are heavily bottlenecked by benchmark test quality rather than actual agent capability.</div>
+  <p class="src">arXiv &middot; 12 August 2026 &middot; <a href="https://arxiv.org/abs/2608.09802" rel="noopener nofollow" aria-label="Read the original: SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring">Read the original &rarr;</a></p>
 </div>
 </div>
 <div class="morelink"><a href="../search.html?c=arxiv-picks">Browse all 42 stories in this channel &rarr;</a><span>37 older stories</span></div>
