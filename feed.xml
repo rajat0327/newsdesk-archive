@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 16 Sep 2026 07:52:22 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 16 Sep 2026 07:54:34 +0000</lastBuildDate>
     <item>
       <title>arXiv Picks — 16 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-16.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-16.html</guid>
       <pubDate>Wed, 16 Sep 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation (628 upvotes).</description>
+    </item>
+    <item>
+      <title>Supply Chain &amp; ERP — 16 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-16.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-16.html</guid>
+      <pubDate>Wed, 16 Sep 2026 08:00:00 +0000</pubDate>
+      <description>115 new posts across 11 SAP and supply chain sources — 6 worth your time.</description>
     </item>
     <item>
       <title>Web &amp; Frontend — 16 September 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/climate/2026-08-29.html</guid>
       <pubDate>Sat, 29 Aug 2026 08:00:00 +0000</pubDate>
       <description>61 new posts across 4 climate and energy sources — 6 worth your time.</description>
-    </item>
-    <item>
-      <title>Craft &amp; Leadership — 29 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/craft/2026-08-29.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/craft/2026-08-29.html</guid>
-      <pubDate>Sat, 29 Aug 2026 08:00:00 +0000</pubDate>
-      <description>46 new posts across 8 practice and leadership sources — 5 worth your time.</description>
     </item>
 </channel></rss>
