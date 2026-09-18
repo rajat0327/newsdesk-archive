@@ -46,6 +46,13 @@
   <p class="src">docs.cloud.google.com &middot; 15 September 2026 &middot; <a href="https://docs.cloud.google.com/release-notes" rel="noopener nofollow" aria-label="Read the original: Mandiant Feeds Deprecated, Migration Required">Read the original &rarr;</a></p>
 </div>
 <div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h3><a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow">What else runs on your Postgres server, and how do we stop it from taking the database down?</a></h3>
+  <p>Describes the mechanisms ClickHouse Managed Postgres uses to prevent supporting services (like backup agents or logging daemons) from compromising database availability. It details the use of cgroup limits, runtime budgets, and disk-full session exemptions to isolate resources.</p>
+  <div class="why"><b>Why it matters</b> — Implementing disk-full session exemptions allows administrators to connect and run cleanup commands even when the disk is at 100% capacity and rejecting standard connections.</div>
+  <p class="src">ClickHouse &middot; 25 August 2026 &middot; <a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow" aria-label="Read the original: What else runs on your Postgres server, and how do we stop it from taking the database down?">Read the original &rarr;</a></p>
+</div>
+<div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
   <h3><a href="https://postgr.es/p/9tE" rel="noopener nofollow">Maki Majima: Migration files and Git do not mix</a></h3>
   <p>This post argues that migration directories, with their timestamped, append-only schema changes and in-database state tracking, fundamentally conflict with Git&#x27;s version control model. It highlights that migrations don&#x27;t inherit Git&#x27;s protections like review processes, creating two unsynchronized timelines.</p>
@@ -57,13 +64,6 @@
   <h3><a href="https://postgr.es/p/9uo" rel="noopener nofollow">Umair Shahid: How to De-Risk a Mission-Critical PostgreSQL Migration</a></h3>
   <p>Outlines a structured methodology for executing high-stakes PostgreSQL migrations, prioritizing metrics like Recovery Time Objective (RTO) over speed. It guides operators on choosing between dump/restore and logical replication based on downtime budgets, emphasizing validation with checksums.</p>
   <p class="src">Planet PostgreSQL &middot; 15 September 2026 &middot; <a href="https://postgr.es/p/9uo" rel="noopener nofollow" aria-label="Read the original: Umair Shahid: How to De-Risk a Mission-Critical PostgreSQL Migration">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
-  <h3><a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow">What else runs on your Postgres server, and how do we stop it from taking the database down?</a></h3>
-  <p>Describes the mechanisms ClickHouse Managed Postgres uses to prevent supporting services (like backup agents or logging daemons) from compromising database availability. It details the use of cgroup limits, runtime budgets, and disk-full session exemptions to isolate resources.</p>
-  <div class="why"><b>Why it matters</b> — Implementing disk-full session exemptions allows administrators to connect and run cleanup commands even when the disk is at 100% capacity and rejecting standard connections.</div>
-  <p class="src">ClickHouse &middot; 25 August 2026 &middot; <a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow" aria-label="Read the original: What else runs on your Postgres server, and how do we stop it from taking the database down?">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
