@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sat, 19 Sep 2026 07:35:23 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 20 Sep 2026 07:52:49 +0000</lastBuildDate>
+    <item>
+      <title>India Tech Weekly — 20 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/india-tech/2026-09-20.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/india-tech/2026-09-20.html</guid>
+      <pubDate>Sun, 20 Sep 2026 08:00:00 +0000</pubDate>
+      <description>India's tech landscape sees major shifts with new UPI charges, semiconductor production, and a changing job market.</description>
+    </item>
     <item>
       <title>Climate &amp; Energy — 19 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/climate/2026-09-19.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-02.html</guid>
       <pubDate>Wed, 02 Sep 2026 08:00:00 +0000</pubDate>
       <description>118 new posts across 11 SAP and supply chain sources — 9 worth your time.</description>
-    </item>
-    <item>
-      <title>Web &amp; Frontend — 02 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/web/2026-09-02.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/web/2026-09-02.html</guid>
-      <pubDate>Wed, 02 Sep 2026 08:00:00 +0000</pubDate>
-      <description>14 new posts across 5 web platform sources — 8 worth your time.</description>
     </item>
 </channel></rss>
