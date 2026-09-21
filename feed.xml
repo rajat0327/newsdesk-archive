@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sun, 20 Sep 2026 07:57:28 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 21 Sep 2026 08:12:08 +0000</lastBuildDate>
+    <item>
+      <title>Fintech &amp; Payments — 21 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/fintech/2026-09-21.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/fintech/2026-09-21.html</guid>
+      <pubDate>Mon, 21 Sep 2026 08:00:00 +0000</pubDate>
+      <description>63 new posts across 4 fintech and payments sources — 7 worth your time.</description>
+    </item>
     <item>
       <title>Design &amp; UX — 20 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/design/2026-09-20.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/sales/2026-09-03.html</guid>
       <pubDate>Thu, 03 Sep 2026 08:00:00 +0000</pubDate>
       <description>24 new posts across 4 go-to-market sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>arXiv Picks — 02 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-02.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-02.html</guid>
-      <pubDate>Wed, 02 Sep 2026 08:00:00 +0000</pubDate>
-      <description>20 papers shortlisted this week — most discussed: StudentSim: Training LLM-based Student Simulators (191 upvotes).</description>
     </item>
 </channel></rss>
