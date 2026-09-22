@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Databases &amp; Data — Engines, Pipelines &amp; Query Plans</title>
-<meta name="description" content="Engines, Pipelines &amp; Query Plans. 62 stories across 7 issues.">
+<meta name="description" content="Engines, Pipelines &amp; Query Plans. 70 stories across 8 issues.">
 <meta property="og:title" content="Databases &amp; Data — Engines, Pipelines &amp; Query Plans">
-<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 62 stories across 7 issues.">
+<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 70 stories across 8 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c22ebe">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Databases &amp; Data</h1>
   <p class="lede">Engines, Pipelines &amp; Query Plans. Published every
      <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>62</b> stories</span>
-     <span><b>7</b> issues</span>
+  <p class="stats"><span><b>70</b> stories</span>
+     <span><b>8</b> issues</span>
      <span><b>9</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
 </div>
@@ -38,6 +38,13 @@
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
   <a href="feed.xml">RSS</a></div>
 <div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h3><a href="https://postgr.es/p/9uB" rel="noopener nofollow">Christophe Pettus: 19th Nervous Breakdown</a></h3>
+  <p>A post-mortem on the PostgreSQL 19 release cycle, which saw eight major features reverted or pulled just weeks before the freeze. It examines the breakdown in the review process and the technical debt incurred by landing complex features too late in the development window.</p>
+  <div class="why"><b>Why it matters</b> — Aggressive feature landing without sufficient review cycles can force late-stage reverts that delay major database releases.</div>
+  <p class="src">Planet PostgreSQL &middot; 22 September 2026 &middot; <a href="https://postgr.es/p/9uB" rel="noopener nofollow" aria-label="Read the original: Christophe Pettus: 19th Nervous Breakdown">Read the original &rarr;</a></p>
+</div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
   <h3><a href="https://docs.cloud.google.com/release-notes" rel="noopener nofollow">Mandiant Feeds Deprecated, Migration Required</a></h3>
@@ -60,27 +67,22 @@
   <p class="src">Planet PostgreSQL &middot; 08 September 2026 &middot; <a href="https://postgr.es/p/9tE" rel="noopener nofollow" aria-label="Read the original: Maki Majima: Migration files and Git do not mix">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
-  <h3><a href="https://postgr.es/p/9uo" rel="noopener nofollow">Umair Shahid: How to De-Risk a Mission-Critical PostgreSQL Migration</a></h3>
-  <p>Outlines a structured methodology for executing high-stakes PostgreSQL migrations, prioritizing metrics like Recovery Time Objective (RTO) over speed. It guides operators on choosing between dump/restore and logical replication based on downtime budgets, emphasizing validation with checksums.</p>
-  <p class="src">Planet PostgreSQL &middot; 15 September 2026 &middot; <a href="https://postgr.es/p/9uo" rel="noopener nofollow" aria-label="Read the original: Umair Shahid: How to De-Risk a Mission-Critical PostgreSQL Migration">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h3><a href="https://planetscale.com/blog/118-million-queries-per-second-on-neki" rel="noopener nofollow">118 million queries per second on Neki</a></h3>
-  <p>Details a massive scalability benchmark of PlanetScale&#x27;s Neki, scaling to 118 million queries per second across 512 shards with 1.22 PiB of data. The test demonstrates linear scalability under extreme load.</p>
-  <div class="why"><b>Why it matters</b> — Demonstrates that horizontal sharding can achieve linear performance scaling up to hundreds of millions of QPS and petabyte-scale datasets.</div>
-  <p class="src">PlanetScale &middot; 15 September 2026 &middot; <a href="https://planetscale.com/blog/118-million-queries-per-second-on-neki" rel="noopener nofollow" aria-label="Read the original: 118 million queries per second on Neki">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h3><a href="https://www.mongodb.com/docs/mongodb-shell/release-notes/#v2.11.1" rel="noopener nofollow">MongoDB Fixes Critical Security Flaws</a></h3>
+  <p>MongoDB&#x27;s `mongosh` 2.11.1 release includes fixes for critical security vulnerabilities, specifically CVE-2026-26278 affecting MONGODB-AWS auth and CVE-2026-26960 impacting the snippets feature. These updates address potential remote code execution and other security risks.</p>
+  <div class="why"><b>Why it matters</b> — Teams using MongoDB `mongosh` must upgrade to version 2.11.1 to patch critical security vulnerabilities, preventing potential remote code execution and protecting sensitive data.</div>
+  <p class="src">mongodb.com &middot; 22 September 2026 &middot; <a href="https://www.mongodb.com/docs/mongodb-shell/release-notes/#v2.11.1" rel="noopener nofollow" aria-label="Read the original: MongoDB Fixes Critical Security Flaws">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=data">Browse all 62 stories in this channel &rarr;</a><span>57 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=data">Browse all 70 stories in this channel &rarr;</a><span>65 older stories</span></div>
 
-<p class="signoff">Another week of trying to index our way out of a migration.</p>
+<p class="signoff">It seems we are still just finding new ways to manage the same old state.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-09-22.html"><span class="d">22 September 2026</span><span class="h">55 new posts across 8 database and data engineering sources — 8 worth your time.</span><span class="n">8 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-15.html"><span class="d">15 September 2026</span><span class="h">53 new posts across 7 database and data engineering sources — 9 worth your time.</span><span class="n">9 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-08.html"><span class="d">08 September 2026</span><span class="h">42 new posts across 6 database and data engineering sources — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-01.html"><span class="d">01 September 2026</span><span class="h">55 new posts across 9 database and data engineering sources — 9 worth your time.</span><span class="n">9 stories &rarr;</span></a></li>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Databases &amp; Data — 22 September 2026</title>
+<meta name="description" content="55 new posts across 8 database and data engineering sources — 8 worth your time.">
+<meta property="og:title" content="Databases &amp; Data — 22 September 2026">
+<meta property="og:description" content="55 new posts across 8 database and data engineering sources — 8 worth your time.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#c22ebe">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/data/2026-09-22.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<link rel="stylesheet" href="../style.css">
+<style>:root{--accent:#c22ebe}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group" data-here><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe" aria-current="page">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#c22ebe;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Databases &amp; Data</a></p>
+  <h1>22 September 2026</h1>
+  <p class="lede">55 new posts across 8 database and data engineering sources — 8 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Databases &amp; Data,
+     8 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h2><a href="https://postgr.es/p/9v4" rel="noopener nofollow">Mikhail Shytsko: Your Agent Is Reading Someone Else&#x27;s Tenant</a></h2>
+  <p>This post details a critical data leakage scenario where PgBouncer in transaction mode allowed one tenant to see another&#x27;s data. It explains how session variables used for tenant identification persist across pooled connections, leading to cross-tenant access when a subsequent client assumes a clean state.</p>
+  <div class="why"><b>Why it matters</b> — Session variables are not safe for multi-tenant isolation when using a connection pooler in transaction mode.</div>
+  <p class="src">Planet PostgreSQL &middot; 22 September 2026 &middot; <a href="https://postgr.es/p/9v4" rel="noopener nofollow" aria-label="Read the original: Mikhail Shytsko: Your Agent Is Reading Someone Else&#x27;s Tenant">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h2><a href="https://postgr.es/p/9uB" rel="noopener nofollow">Christophe Pettus: 19th Nervous Breakdown</a></h2>
+  <p>A post-mortem on the PostgreSQL 19 release cycle, which saw eight major features reverted or pulled just weeks before the freeze. It examines the breakdown in the review process and the technical debt incurred by landing complex features too late in the development window.</p>
+  <div class="why"><b>Why it matters</b> — Aggressive feature landing without sufficient review cycles can force late-stage reverts that delay major database releases.</div>
+  <p class="src">Planet PostgreSQL &middot; 22 September 2026 &middot; <a href="https://postgr.es/p/9uB" rel="noopener nofollow" aria-label="Read the original: Christophe Pettus: 19th Nervous Breakdown">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h2><a href="https://planetscale.com/blog/how-to-make-a-replication-slot-survive-a-cutover" rel="noopener nofollow">Blocking cutovers to save replication slots</a></h2>
+  <p>PlanetScale explains their decision to intentionally block database cutovers when replication slots are at risk. The post outlines the trade-off between immediate availability and the long-term durability risks of primary-replica desynchronization in cloud-native environments.</p>
+  <div class="why"><b>Why it matters</b> — Durability often requires intentionally failing a cutover rather than risking a primary-replica desync.</div>
+  <p class="src">PlanetScale &middot; 22 September 2026 &middot; <a href="https://planetscale.com/blog/how-to-make-a-replication-slot-survive-a-cutover" rel="noopener nofollow" aria-label="Read the original: Blocking cutovers to save replication slots">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://planetscale.com/blog/the-architecture-of-neki" rel="noopener nofollow">The architecture of Neki</a></h2>
+  <p>An architectural deep dive into Neki, a sharding solution for Postgres that enables massive scaling through a single connection string. It details how the system routes queries across sharded instances without requiring a fork or a wire-compatible reimplementation of the Postgres engine.</p>
+  <div class="why"><b>Why it matters</b> — Transparent sharding can be achieved through a routing layer that preserves the underlying database&#x27;s standard engine and wire protocol.</div>
+  <p class="src">PlanetScale &middot; 22 September 2026 &middot; <a href="https://planetscale.com/blog/the-architecture-of-neki" rel="noopener nofollow" aria-label="Read the original: The architecture of Neki">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://postgr.es/p/9u-" rel="noopener nofollow">Ryan Booz: Postgres in Production Special Series: How to Query pg_stat_statements to Find Slow and Expensive Postgres Queries (Part 7)</a></h2>
+  <p>This guide provides a production-ready methodology for using pg_stat_statements during active incidents. It focuses on the necessity of diffing snapshots to isolate performance during specific windows and comparing those results against pg_stat_activity to find expensive queries.</p>
+  <div class="why"><b>Why it matters</b> — Cumulative metrics are only useful for incident response if you diff snapshots to isolate performance during the specific window of the outage.</div>
+  <p class="src">Planet PostgreSQL &middot; 22 September 2026 &middot; <a href="https://postgr.es/p/9u-" rel="noopener nofollow" aria-label="Read the original: Ryan Booz: Postgres in Production Special Series: How to Query pg_stat_statements to Find Slow and Expensive Postgres Queries (Part 7)">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
+  <h2><a href="https://clickhouse.com/blog/replica-aware-routing-public-beta" rel="noopener nofollow">Replica-aware routing public beta</a></h2>
+  <p>ClickHouse describes the implementation of replica-aware routing to solve stateful session issues. By pinning HTTP and native protocol requests to specific replicas, the system ensures that temporary tables and named sessions remain visible to follow-up queries in a distributed cluster.</p>
+  <div class="why"><b>Why it matters</b> — Stateful SQL features like temporary tables require protocol-level pinning to ensure query consistency in distributed replica sets.</div>
+  <p class="src">ClickHouse &middot; 22 September 2026 &middot; <a href="https://clickhouse.com/blog/replica-aware-routing-public-beta" rel="noopener nofollow" aria-label="Read the original: Replica-aware routing public beta">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
+  <h2><a href="https://duckdb.org/2026/09/18/opfs-wasm.html" rel="noopener nofollow">Persistent Databases in the Browser with DuckDB-Wasm and OPFS</a></h2>
+  <p>DuckDB explores the transition from manual IndexedDB serialization to using the Origin Private File System (OPFS) for browser-based persistence. It details how this modern browser API allows Wasm-based databases to achieve native-like storage performance without application-layer overhead.</p>
+  <div class="why"><b>Why it matters</b> — OPFS allows Wasm-based databases to achieve native-like persistence and performance by bypassing the overhead of IndexedDB.</div>
+  <p class="src">DuckDB &middot; 22 September 2026 &middot; <a href="https://duckdb.org/2026/09/18/opfs-wasm.html" rel="noopener nofollow" aria-label="Read the original: Persistent Databases in the Browser with DuckDB-Wasm and OPFS">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h2><a href="https://www.mongodb.com/docs/mongodb-shell/release-notes/#v2.11.1" rel="noopener nofollow">MongoDB Fixes Critical Security Flaws</a></h2>
+  <p>MongoDB&#x27;s `mongosh` 2.11.1 release includes fixes for critical security vulnerabilities, specifically CVE-2026-26278 affecting MONGODB-AWS auth and CVE-2026-26960 impacting the snippets feature. These updates address potential remote code execution and other security risks.</p>
+  <div class="why"><b>Why it matters</b> — Teams using MongoDB `mongosh` must upgrade to version 2.11.1 to patch critical security vulnerabilities, preventing potential remote code execution and protecting sensitive data.</div>
+  <p class="src">mongodb.com &middot; 22 September 2026 &middot; <a href="https://www.mongodb.com/docs/mongodb-shell/release-notes/#v2.11.1" rel="noopener nofollow" aria-label="Read the original: MongoDB Fixes Critical Security Flaws">Read the original &rarr;</a></p>
+</div>
+</div>
+<p class="signoff">It seems we are still just finding new ways to manage the same old state.</p>
+
+<div class="cta">
+  <h3>8 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-09-15.html">&larr; Previous issue</a>
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../provenance.html">Where this comes from</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>
