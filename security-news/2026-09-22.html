@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Security Weekly Digest — Exploits, Breaches &amp; Advisories</title>
-<meta name="description" content="Exploits, Breaches &amp; Advisories. 67 stories across 10 issues.">
-<meta property="og:title" content="Security Weekly Digest — Exploits, Breaches &amp; Advisories">
-<meta property="og:description" content="Exploits, Breaches &amp; Advisories. 67 stories across 10 issues.">
+<title>Security Weekly Digest — 22 September 2026</title>
+<meta name="description" content="6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
+<meta property="og:title" content="Security Weekly Digest — 22 September 2026">
+<meta property="og:description" content="6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#d9552f">
+<link rel="canonical" href="https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-22.html">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
 <link rel="stylesheet" href="../style.css">
 <style>:root{--accent:#d9552f}</style>
@@ -25,74 +26,65 @@
 <div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f" aria-current="page">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
 <main class="wrap">
 <div class="hero">
-  <h1>Security Weekly Digest</h1>
-  <p class="lede">Exploits, Breaches &amp; Advisories. Published every
-     <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>67</b> stories</span>
-     <span><b>10</b> issues</span>
-     <span><b>9</b> categories</span></p>
-  <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Breaches" style="--tc:#f778ba"><i style="background:#f778ba"></i>Breaches</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Supply%20Chain" style="--tc:#e3b341"><i style="background:#e3b341"></i>Supply Chain</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Cloud%20%26%20SaaS" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud &amp; SaaS</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Vulnerabilities" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vulnerabilities</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Threat%20Actors" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Threat Actors</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Ransomware" style="--tc:#f778ba"><i style="background:#f778ba"></i>Ransomware</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Policy%20%26%20Compliance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Policy &amp; Compliance</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Tooling" style="--tc:#3fb950"><i style="background:#3fb950"></i>Tooling</a></p>
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#d9552f;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Security Weekly Digest</a></p>
+  <h1>22 September 2026</h1>
+  <p class="lede">6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</p>
+  <p class="meta" style="margin-top:12px">One week of Security Weekly Digest,
+     5 stories, as published.</p>
 </div>
-
-
-<div class="sec"><h2>Top stories</h2><div class="rule"></div>
-  <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html" rel="noopener nofollow">Langflow and Rails Flaws Actively Exploited</a></h3>
-  <p>Threat actors are actively exploiting critical vulnerabilities in Langflow (CVE-2026-0768) and Ruby on Rails (CVE-2026-66066) as of September 1, 2026. The Langflow flaw allows arbitrary Python code execution, while the Rails vulnerability enables unauthenticated attackers to read arbitrary files and potentially achieve remote code execution, leading to credential harvesting and command-and-control activity.</p>
-  <div class="why"><b>Why it matters</b> — Organizations using Langflow or Ruby on Rails with Active Storage and libvips must immediately patch to prevent unauthenticated remote code execution and data exposure.</div>
-  <p class="src">The Hacker News &middot; 08 September 2026 &middot; <a href="https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html" rel="noopener nofollow" aria-label="Read the original: Langflow and Rails Flaws Actively Exploited">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7273" rel="noopener nofollow">CVE-2026-7273: Zyxel GS1900 Series Switches</a></h3>
-  <p>Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.</p>
-  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.8 (HIGH). CISA remediation deadline 24 Sep 2026 — 2 days out.</div>
-  <p class="src">CISA KEV &middot; 22 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7273" rel="noopener nofollow" aria-label="Read the original: CVE-2026-7273: Zyxel GS1900 Series Switches">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-39682" rel="noopener nofollow">CVE-2025-39682: Linux Kernel</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-39682" rel="noopener nofollow">CVE-2025-39682: Linux Kernel</a></h2>
   <p>Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended recvmsg() record-type handling, potentially causing subsequent TLS records to be processed using incorrect zero-copy and queuing assumptions. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 21 Sep 2026 — already passed.</div>
   <p class="src">CISA KEV &middot; 22 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-39682" rel="noopener nofollow" aria-label="Read the original: CVE-2025-39682: Linux Kernel">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76460" rel="noopener nofollow">CVE-2026-76460: Cisco Identity Services Engine</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76460" rel="noopener nofollow">CVE-2026-76460: Cisco Identity Services Engine</a></h2>
   <p>Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker to gain unauthorized access to the affected device by bypassing the web-based management interface.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 10.0 (CRITICAL). CISA remediation deadline 19 Sep 2026 — already passed.</div>
   <p class="src">CISA KEV &middot; 22 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76460" rel="noopener nofollow" aria-label="Read the original: CVE-2026-76460: Cisco Identity Services Engine">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58704" rel="noopener nofollow">CVE-2026-58704: Google Pixel</a></h3>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7273" rel="noopener nofollow">CVE-2026-7273: Zyxel GS1900 Series Switches</a></h2>
+  <p>Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.8 (HIGH). CISA remediation deadline 24 Sep 2026 — 2 days out.</div>
+  <p class="src">CISA KEV &middot; 22 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7273" rel="noopener nofollow" aria-label="Read the original: CVE-2026-7273: Zyxel GS1900 Series Switches">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58704" rel="noopener nofollow">CVE-2026-58704: Google Pixel</a></h2>
   <p>Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.</p>
   <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.8 (HIGH). CISA remediation deadline 19 Sep 2026 — already passed.</div>
   <p class="src">CISA KEV &middot; 22 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-58704" rel="noopener nofollow" aria-label="Read the original: CVE-2026-58704: Google Pixel">Read the original &rarr;</a></p>
 </div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-87886" rel="noopener nofollow">CVE-2026-87886: Acronis Backup</a></h2>
+  <p>Acronis Backup plugin for cPanel &amp; WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 7.8 (HIGH). CISA remediation deadline 19 Sep 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 22 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-87886" rel="noopener nofollow" aria-label="Read the original: CVE-2026-87886: Acronis Backup">Read the original &rarr;</a></p>
 </div>
-<div class="morelink"><a href="../search.html?c=security-news">Browse all 67 stories in this channel &rarr;</a><span>62 older stories</span></div>
-
+</div>
 <p class="signoff">Looks like we&#x27;re patching the entire stack this weekend.</p>
 
-<div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
-<p class="editions-note">Each edition is one week's digest exactly as it was
-   published — a summary of the week, then the stories.</p>
-<ul class="issues">
-  <li><a class="edition" href="2026-09-22.html"><span class="d">22 September 2026</span><span class="h">6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">5 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-09-15.html"><span class="d">15 September 2026</span><span class="h">12 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">7 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-09-08.html"><span class="d">08 September 2026</span><span class="h">8 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-09-01.html"><span class="d">01 September 2026</span><span class="h">12 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">6 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-25.html"><span class="d">25 August 2026</span><span class="h">9 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-18.html"><span class="d">18 August 2026</span><span class="h">4 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">4 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-11.html"><span class="d">11 August 2026</span><span class="h">AI-powered ransomware, widespread npm supply chain attacks, and new regulatory mandates define a turbulent week in cybersecurity.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-08-04.html"><span class="d">04 August 2026</span><span class="h">2 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">2 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-28.html"><span class="d">28 July 2026</span><span class="h">2 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">8 stories &rarr;</span></a></li>
-  <li><a class="edition" href="2026-07-26.html"><span class="d">26 July 2026</span><span class="h">6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
-</ul>
+<div class="cta">
+  <h3>5 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-09-15.html">&larr; Previous issue</a>
+</div>
 </main>
 <footer><div class="wrap">
   Built from the digest archive. Every fact links to the source it came from.

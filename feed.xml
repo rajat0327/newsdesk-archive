@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://rajat0327.github.io/newsdesk-archive</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Tue, 22 Sep 2026 07:55:48 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 22 Sep 2026 08:00:16 +0000</lastBuildDate>
     <item>
       <title>Databases &amp; Data — 22 September 2026</title>
       <link>https://rajat0327.github.io/newsdesk-archive/data/2026-09-22.html</link>
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/data/2026-09-22.html</guid>
       <pubDate>Tue, 22 Sep 2026 08:00:00 +0000</pubDate>
       <description>55 new posts across 8 database and data engineering sources — 8 worth your time.</description>
+    </item>
+    <item>
+      <title>Security Weekly Digest — 22 September 2026</title>
+      <link>https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-22.html</link>
+      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-22.html</guid>
+      <pubDate>Tue, 22 Sep 2026 08:00:00 +0000</pubDate>
+      <description>6 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
     </item>
     <item>
       <title>Fintech &amp; Payments — 21 September 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/open-source/2026-09-04.html</guid>
       <pubDate>Fri, 04 Sep 2026 08:00:00 +0000</pubDate>
       <description>EU Cyber Resilience Act reporting obligations begin, while a major npm supply chain attack compromises popular packages.</description>
-    </item>
-    <item>
-      <title>HR &amp; Payroll Tech — 03 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-09-03.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-09-03.html</guid>
-      <pubDate>Thu, 03 Sep 2026 08:00:00 +0000</pubDate>
-      <description>45 new posts across 6 HR and SuccessFactors sources — 9 worth your time.</description>
     </item>
 </channel></rss>
