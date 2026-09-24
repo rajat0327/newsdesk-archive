@@ -1,62 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
   <title>Newsdesk — Release Radar</title>
-  <link>https://rajat0327.github.io/newsdesk-archive/release-radar/</link>
+  <link>https://news.maahol.com/release-radar/</link>
   <description>What Shipped This Week</description>
-  <lastBuildDate>Wed, 23 Sep 2026 08:05:53 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 07:41:55 +0000</lastBuildDate>
+    <item>
+      <title>Release Radar — 24 September 2026</title>
+      <link>https://news.maahol.com/release-radar/2026-09-24.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-09-24.html</guid>
+      <pubDate>Thu, 24 Sep 2026 08:00:00 +0000</pubDate>
+      <description>30 releases across 31 tracked projects — all minor and patch, a quiet week for upgrades.</description>
+    </item>
     <item>
       <title>Release Radar — 17 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-17.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-17.html</guid>
+      <link>https://news.maahol.com/release-radar/2026-09-17.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-09-17.html</guid>
       <pubDate>Thu, 17 Sep 2026 08:00:00 +0000</pubDate>
       <description>30 releases across 31 tracked projects, including 2 with security fixes.</description>
     </item>
     <item>
       <title>Release Radar — 10 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-10.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-10.html</guid>
+      <link>https://news.maahol.com/release-radar/2026-09-10.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-09-10.html</guid>
       <pubDate>Thu, 10 Sep 2026 08:00:00 +0000</pubDate>
       <description>24 releases across 31 tracked projects, including 2 with security fixes.</description>
     </item>
     <item>
       <title>Release Radar — 03 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-03.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-03.html</guid>
+      <link>https://news.maahol.com/release-radar/2026-09-03.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-09-03.html</guid>
       <pubDate>Thu, 03 Sep 2026 08:00:00 +0000</pubDate>
       <description>27 releases across 31 tracked projects, including 2 with security fixes.</description>
     </item>
     <item>
       <title>Release Radar — 27 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-27.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-27.html</guid>
+      <link>https://news.maahol.com/release-radar/2026-08-27.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-08-27.html</guid>
       <pubDate>Thu, 27 Aug 2026 08:00:00 +0000</pubDate>
       <description>23 releases across 31 tracked projects, including 3 with security fixes.</description>
     </item>
     <item>
       <title>Release Radar — 20 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-20.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-20.html</guid>
+      <link>https://news.maahol.com/release-radar/2026-08-20.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-08-20.html</guid>
       <pubDate>Thu, 20 Aug 2026 08:00:00 +0000</pubDate>
       <description>35 releases across 31 tracked projects, including 5 with security fixes.</description>
     </item>
     <item>
       <title>Release Radar — 13 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-13.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-08-13.html</guid>
+      <link>https://news.maahol.com/release-radar/2026-08-13.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-08-13.html</guid>
       <pubDate>Thu, 13 Aug 2026 08:00:00 +0000</pubDate>
       <description>16 releases across 31 tracked projects, including 2 with security fixes.</description>
     </item>
     <item>
       <title>Release Radar — 30 July 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-07-30.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-07-30.html</guid>
+      <link>https://news.maahol.com/release-radar/2026-07-30.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-07-30.html</guid>
       <pubDate>Thu, 30 Jul 2026 08:00:00 +0000</pubDate>
       <description>15 releases across 31 tracked projects, including 2 with security fixes.</description>
     </item>
     <item>
       <title>Release Radar — 26 July 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-07-26.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-07-26.html</guid>
+      <link>https://news.maahol.com/release-radar/2026-07-26.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-07-26.html</guid>
       <pubDate>Sun, 26 Jul 2026 08:00:00 +0000</pubDate>
       <description>28 releases across 31 tracked projects, including 2 with security fixes.</description>
     </item>

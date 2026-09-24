@@ -1,357 +1,357 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
   <title>Newsdesk</title>
-  <link>https://rajat0327.github.io/newsdesk-archive</link>
+  <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 23 Sep 2026 08:05:53 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 07:41:56 +0000</lastBuildDate>
+    <item>
+      <title>Release Radar — 24 September 2026</title>
+      <link>https://news.maahol.com/release-radar/2026-09-24.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-09-24.html</guid>
+      <pubDate>Thu, 24 Sep 2026 08:00:00 +0000</pubDate>
+      <description>30 releases across 31 tracked projects — all minor and patch, a quiet week for upgrades.</description>
+    </item>
     <item>
       <title>Supply Chain &amp; ERP — 23 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-23.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-23.html</guid>
+      <link>https://news.maahol.com/supply-chain/2026-09-23.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-09-23.html</guid>
       <pubDate>Wed, 23 Sep 2026 08:00:00 +0000</pubDate>
       <description>122 new posts across 11 SAP and supply chain sources — 4 worth your time.</description>
     </item>
     <item>
       <title>Web &amp; Frontend — 23 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/web/2026-09-23.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/web/2026-09-23.html</guid>
+      <link>https://news.maahol.com/web/2026-09-23.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/web/2026-09-23.html</guid>
       <pubDate>Wed, 23 Sep 2026 08:00:00 +0000</pubDate>
       <description>11 new posts across 3 web platform sources — 6 worth your time.</description>
     </item>
     <item>
       <title>Chips &amp; Silicon — 22 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/chips/2026-09-22.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/chips/2026-09-22.html</guid>
+      <link>https://news.maahol.com/chips/2026-09-22.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/chips/2026-09-22.html</guid>
       <pubDate>Tue, 22 Sep 2026 08:00:00 +0000</pubDate>
       <description>60 new posts across 2 semiconductor sources — 4 worth your time.</description>
     </item>
     <item>
       <title>Databases &amp; Data — 22 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/data/2026-09-22.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/data/2026-09-22.html</guid>
+      <link>https://news.maahol.com/data/2026-09-22.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/data/2026-09-22.html</guid>
       <pubDate>Tue, 22 Sep 2026 08:00:00 +0000</pubDate>
       <description>55 new posts across 8 database and data engineering sources — 8 worth your time.</description>
     </item>
     <item>
       <title>Security Weekly Digest — 22 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-22.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-22.html</guid>
+      <link>https://news.maahol.com/security-news/2026-09-22.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/security-news/2026-09-22.html</guid>
       <pubDate>Tue, 22 Sep 2026 08:00:00 +0000</pubDate>
       <description>6 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
     </item>
     <item>
       <title>Fintech &amp; Payments — 21 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/fintech/2026-09-21.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/fintech/2026-09-21.html</guid>
+      <link>https://news.maahol.com/fintech/2026-09-21.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-09-21.html</guid>
       <pubDate>Mon, 21 Sep 2026 08:00:00 +0000</pubDate>
       <description>63 new posts across 4 fintech and payments sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Marketing — 21 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/marketing/2026-09-21.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/marketing/2026-09-21.html</guid>
+      <link>https://news.maahol.com/marketing/2026-09-21.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/marketing/2026-09-21.html</guid>
       <pubDate>Mon, 21 Sep 2026 08:00:00 +0000</pubDate>
       <description>47 new posts across 7 marketing sources — 8 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 20 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/design/2026-09-20.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/design/2026-09-20.html</guid>
+      <link>https://news.maahol.com/design/2026-09-20.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/design/2026-09-20.html</guid>
       <pubDate>Sun, 20 Sep 2026 08:00:00 +0000</pubDate>
       <description>30 new posts across 4 design and research sources — 6 worth your time.</description>
     </item>
     <item>
       <title>India Tech Weekly — 20 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/india-tech/2026-09-20.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/india-tech/2026-09-20.html</guid>
+      <link>https://news.maahol.com/india-tech/2026-09-20.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/india-tech/2026-09-20.html</guid>
       <pubDate>Sun, 20 Sep 2026 08:00:00 +0000</pubDate>
       <description>India's tech landscape sees major shifts with new UPI charges, semiconductor production, and a changing job market.</description>
     </item>
     <item>
       <title>Climate &amp; Energy — 19 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/climate/2026-09-19.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/climate/2026-09-19.html</guid>
+      <link>https://news.maahol.com/climate/2026-09-19.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/climate/2026-09-19.html</guid>
       <pubDate>Sat, 19 Sep 2026 08:00:00 +0000</pubDate>
       <description>66 new posts across 4 climate and energy sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Craft &amp; Leadership — 19 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/craft/2026-09-19.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/craft/2026-09-19.html</guid>
+      <link>https://news.maahol.com/craft/2026-09-19.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/craft/2026-09-19.html</guid>
       <pubDate>Sat, 19 Sep 2026 08:00:00 +0000</pubDate>
       <description>43 new posts across 9 practice and leadership sources — 5 worth your time.</description>
     </item>
     <item>
       <title>Engineering Reading — 19 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-09-19.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-09-19.html</guid>
+      <link>https://news.maahol.com/eng-blogs/2026-09-19.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/eng-blogs/2026-09-19.html</guid>
       <pubDate>Sat, 19 Sep 2026 08:00:00 +0000</pubDate>
       <description>18 new posts across 8 engineering blogs — 7 worth your time.</description>
     </item>
     <item>
       <title>AI Tech Weekly Digest — 18 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/ai/2026-09-18.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/ai/2026-09-18.html</guid>
+      <link>https://news.maahol.com/ai/2026-09-18.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/ai/2026-09-18.html</guid>
       <pubDate>Fri, 18 Sep 2026 08:00:00 +0000</pubDate>
       <description>52 new posts across 7 AI lab and practitioner sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Mobile — 18 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/mobile/2026-09-18.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/mobile/2026-09-18.html</guid>
+      <link>https://news.maahol.com/mobile/2026-09-18.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/mobile/2026-09-18.html</guid>
       <pubDate>Fri, 18 Sep 2026 08:00:00 +0000</pubDate>
       <description>10 new posts across 4 mobile platform sources — 9 worth your time.</description>
     </item>
     <item>
       <title>Open Source — 18 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/open-source/2026-09-18.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/open-source/2026-09-18.html</guid>
+      <link>https://news.maahol.com/open-source/2026-09-18.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/open-source/2026-09-18.html</guid>
       <pubDate>Fri, 18 Sep 2026 08:00:00 +0000</pubDate>
       <description>25 new posts across 3 open source sources — 6 worth your time.</description>
     </item>
     <item>
       <title>HR &amp; Payroll Tech — 17 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-09-17.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-09-17.html</guid>
+      <link>https://news.maahol.com/hr-tech/2026-09-17.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/hr-tech/2026-09-17.html</guid>
       <pubDate>Thu, 17 Sep 2026 08:00:00 +0000</pubDate>
       <description>38 new posts across 5 HR and SuccessFactors sources — 10 worth your time.</description>
     </item>
     <item>
       <title>Release Radar — 17 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-17.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-17.html</guid>
+      <link>https://news.maahol.com/release-radar/2026-09-17.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-09-17.html</guid>
       <pubDate>Thu, 17 Sep 2026 08:00:00 +0000</pubDate>
       <description>30 releases across 31 tracked projects, including 2 with security fixes.</description>
     </item>
     <item>
       <title>Sales &amp; Revenue — 17 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/sales/2026-09-17.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/sales/2026-09-17.html</guid>
+      <link>https://news.maahol.com/sales/2026-09-17.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/sales/2026-09-17.html</guid>
       <pubDate>Thu, 17 Sep 2026 08:00:00 +0000</pubDate>
       <description>19 new posts across 4 go-to-market sources — 7 worth your time.</description>
     </item>
     <item>
       <title>arXiv Picks — 16 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-16.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-16.html</guid>
+      <link>https://news.maahol.com/arxiv-picks/2026-09-16.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/arxiv-picks/2026-09-16.html</guid>
       <pubDate>Wed, 16 Sep 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation (628 upvotes).</description>
     </item>
     <item>
       <title>Supply Chain &amp; ERP — 16 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-16.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-16.html</guid>
+      <link>https://news.maahol.com/supply-chain/2026-09-16.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-09-16.html</guid>
       <pubDate>Wed, 16 Sep 2026 08:00:00 +0000</pubDate>
       <description>115 new posts across 11 SAP and supply chain sources — 6 worth your time.</description>
     </item>
     <item>
       <title>Web &amp; Frontend — 16 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/web/2026-09-16.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/web/2026-09-16.html</guid>
+      <link>https://news.maahol.com/web/2026-09-16.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/web/2026-09-16.html</guid>
       <pubDate>Wed, 16 Sep 2026 08:00:00 +0000</pubDate>
       <description>11 new posts across 4 web platform sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Chips &amp; Silicon — 15 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/chips/2026-09-15.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/chips/2026-09-15.html</guid>
+      <link>https://news.maahol.com/chips/2026-09-15.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/chips/2026-09-15.html</guid>
       <pubDate>Tue, 15 Sep 2026 08:00:00 +0000</pubDate>
       <description>60 new posts across 2 semiconductor sources — 4 worth your time.</description>
     </item>
     <item>
       <title>Databases &amp; Data — 15 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/data/2026-09-15.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/data/2026-09-15.html</guid>
+      <link>https://news.maahol.com/data/2026-09-15.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/data/2026-09-15.html</guid>
       <pubDate>Tue, 15 Sep 2026 08:00:00 +0000</pubDate>
       <description>53 new posts across 7 database and data engineering sources — 9 worth your time.</description>
     </item>
     <item>
       <title>Security Weekly Digest — 15 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-15.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-15.html</guid>
+      <link>https://news.maahol.com/security-news/2026-09-15.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/security-news/2026-09-15.html</guid>
       <pubDate>Tue, 15 Sep 2026 08:00:00 +0000</pubDate>
       <description>12 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
     </item>
     <item>
       <title>Fintech &amp; Payments — 14 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/fintech/2026-09-14.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/fintech/2026-09-14.html</guid>
+      <link>https://news.maahol.com/fintech/2026-09-14.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-09-14.html</guid>
       <pubDate>Mon, 14 Sep 2026 08:00:00 +0000</pubDate>
       <description>51 new posts across 3 fintech and payments sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Marketing — 14 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/marketing/2026-09-14.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/marketing/2026-09-14.html</guid>
+      <link>https://news.maahol.com/marketing/2026-09-14.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/marketing/2026-09-14.html</guid>
       <pubDate>Mon, 14 Sep 2026 08:00:00 +0000</pubDate>
       <description>46 new posts across 6 marketing sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 13 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/design/2026-09-13.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/design/2026-09-13.html</guid>
+      <link>https://news.maahol.com/design/2026-09-13.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/design/2026-09-13.html</guid>
       <pubDate>Sun, 13 Sep 2026 08:00:00 +0000</pubDate>
       <description>26 new posts across 4 design and research sources — 6 worth your time.</description>
     </item>
     <item>
       <title>India Tech Weekly — 13 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/india-tech/2026-09-13.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/india-tech/2026-09-13.html</guid>
+      <link>https://news.maahol.com/india-tech/2026-09-13.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/india-tech/2026-09-13.html</guid>
       <pubDate>Sun, 13 Sep 2026 08:00:00 +0000</pubDate>
       <description>Indian space-tech startup Pixxel secures $100 million in Series C funding, marking the largest investment round for the sector.</description>
     </item>
     <item>
       <title>Climate &amp; Energy — 12 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/climate/2026-09-12.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/climate/2026-09-12.html</guid>
+      <link>https://news.maahol.com/climate/2026-09-12.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/climate/2026-09-12.html</guid>
       <pubDate>Sat, 12 Sep 2026 08:00:00 +0000</pubDate>
       <description>66 new posts across 4 climate and energy sources — 9 worth your time.</description>
     </item>
     <item>
       <title>Craft &amp; Leadership — 12 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/craft/2026-09-12.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/craft/2026-09-12.html</guid>
+      <link>https://news.maahol.com/craft/2026-09-12.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/craft/2026-09-12.html</guid>
       <pubDate>Sat, 12 Sep 2026 08:00:00 +0000</pubDate>
       <description>44 new posts across 6 practice and leadership sources — 6 worth your time.</description>
     </item>
     <item>
       <title>Engineering Reading — 12 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-09-12.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-09-12.html</guid>
+      <link>https://news.maahol.com/eng-blogs/2026-09-12.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/eng-blogs/2026-09-12.html</guid>
       <pubDate>Sat, 12 Sep 2026 08:00:00 +0000</pubDate>
       <description>11 new posts across 4 engineering blogs — 7 worth your time.</description>
     </item>
     <item>
       <title>AI Tech Weekly Digest — 11 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/ai/2026-09-11.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/ai/2026-09-11.html</guid>
+      <link>https://news.maahol.com/ai/2026-09-11.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/ai/2026-09-11.html</guid>
       <pubDate>Fri, 11 Sep 2026 08:00:00 +0000</pubDate>
       <description>56 new posts across 8 AI lab and practitioner sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Mobile — 11 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/mobile/2026-09-11.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/mobile/2026-09-11.html</guid>
+      <link>https://news.maahol.com/mobile/2026-09-11.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/mobile/2026-09-11.html</guid>
       <pubDate>Fri, 11 Sep 2026 08:00:00 +0000</pubDate>
       <description>9 new posts across 6 mobile platform sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Open Source — 11 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/open-source/2026-09-11.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/open-source/2026-09-11.html</guid>
+      <link>https://news.maahol.com/open-source/2026-09-11.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/open-source/2026-09-11.html</guid>
       <pubDate>Fri, 11 Sep 2026 08:00:00 +0000</pubDate>
       <description>20 new posts across 4 open source sources — 5 worth your time.</description>
     </item>
     <item>
       <title>HR &amp; Payroll Tech — 10 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-09-10.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/hr-tech/2026-09-10.html</guid>
+      <link>https://news.maahol.com/hr-tech/2026-09-10.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/hr-tech/2026-09-10.html</guid>
       <pubDate>Thu, 10 Sep 2026 08:00:00 +0000</pubDate>
       <description>47 new posts across 5 HR and SuccessFactors sources — 10 worth your time.</description>
     </item>
     <item>
       <title>Release Radar — 10 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-10.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/release-radar/2026-09-10.html</guid>
+      <link>https://news.maahol.com/release-radar/2026-09-10.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-09-10.html</guid>
       <pubDate>Thu, 10 Sep 2026 08:00:00 +0000</pubDate>
       <description>24 releases across 31 tracked projects, including 2 with security fixes.</description>
     </item>
     <item>
       <title>Sales &amp; Revenue — 10 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/sales/2026-09-10.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/sales/2026-09-10.html</guid>
+      <link>https://news.maahol.com/sales/2026-09-10.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/sales/2026-09-10.html</guid>
       <pubDate>Thu, 10 Sep 2026 08:00:00 +0000</pubDate>
       <description>23 new posts across 4 go-to-market sources — 7 worth your time.</description>
     </item>
     <item>
       <title>arXiv Picks — 09 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-09.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/arxiv-picks/2026-09-09.html</guid>
+      <link>https://news.maahol.com/arxiv-picks/2026-09-09.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/arxiv-picks/2026-09-09.html</guid>
       <pubDate>Wed, 09 Sep 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Compile by Training: Turning Natural-Language Specifications into Loca (378 upvotes).</description>
     </item>
     <item>
       <title>Supply Chain &amp; ERP — 09 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-09.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/supply-chain/2026-09-09.html</guid>
+      <link>https://news.maahol.com/supply-chain/2026-09-09.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-09-09.html</guid>
       <pubDate>Wed, 09 Sep 2026 08:00:00 +0000</pubDate>
       <description>125 new posts across 11 SAP and supply chain sources — 6 worth your time.</description>
     </item>
     <item>
       <title>Web &amp; Frontend — 09 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/web/2026-09-09.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/web/2026-09-09.html</guid>
+      <link>https://news.maahol.com/web/2026-09-09.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/web/2026-09-09.html</guid>
       <pubDate>Wed, 09 Sep 2026 08:00:00 +0000</pubDate>
       <description>14 new posts across 8 web platform sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Chips &amp; Silicon — 08 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/chips/2026-09-08.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/chips/2026-09-08.html</guid>
+      <link>https://news.maahol.com/chips/2026-09-08.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/chips/2026-09-08.html</guid>
       <pubDate>Tue, 08 Sep 2026 08:00:00 +0000</pubDate>
       <description>69 new posts across 3 semiconductor sources — 9 worth your time.</description>
     </item>
     <item>
       <title>Databases &amp; Data — 08 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/data/2026-09-08.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/data/2026-09-08.html</guid>
+      <link>https://news.maahol.com/data/2026-09-08.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/data/2026-09-08.html</guid>
       <pubDate>Tue, 08 Sep 2026 08:00:00 +0000</pubDate>
       <description>42 new posts across 6 database and data engineering sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Security Weekly Digest — 08 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-08.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/security-news/2026-09-08.html</guid>
+      <link>https://news.maahol.com/security-news/2026-09-08.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/security-news/2026-09-08.html</guid>
       <pubDate>Tue, 08 Sep 2026 08:00:00 +0000</pubDate>
       <description>8 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 07 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-09-07.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-09-07.html</guid>
+      <link>https://news.maahol.com/devops/2026-09-07.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-09-07.html</guid>
       <pubDate>Mon, 07 Sep 2026 08:00:00 +0000</pubDate>
       <description>Kubernetes Storage Migration Goes GA, AWS Boosts AI Agent Governance, and Polars 2.0 Promises Speed</description>
     </item>
     <item>
       <title>Fintech &amp; Payments — 07 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/fintech/2026-09-07.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/fintech/2026-09-07.html</guid>
+      <link>https://news.maahol.com/fintech/2026-09-07.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-09-07.html</guid>
       <pubDate>Mon, 07 Sep 2026 08:00:00 +0000</pubDate>
       <description>64 new posts across 3 fintech and payments sources — 9 worth your time.</description>
     </item>
     <item>
       <title>Marketing — 07 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/marketing/2026-09-07.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/marketing/2026-09-07.html</guid>
+      <link>https://news.maahol.com/marketing/2026-09-07.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/marketing/2026-09-07.html</guid>
       <pubDate>Mon, 07 Sep 2026 08:00:00 +0000</pubDate>
       <description>46 new posts across 6 marketing sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 06 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/design/2026-09-06.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/design/2026-09-06.html</guid>
+      <link>https://news.maahol.com/design/2026-09-06.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/design/2026-09-06.html</guid>
       <pubDate>Sun, 06 Sep 2026 08:00:00 +0000</pubDate>
       <description>17 new posts across 4 design and research sources — 5 worth your time.</description>
     </item>
     <item>
       <title>India Tech Weekly — 06 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/india-tech/2026-09-06.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/india-tech/2026-09-06.html</guid>
+      <link>https://news.maahol.com/india-tech/2026-09-06.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/india-tech/2026-09-06.html</guid>
       <pubDate>Sun, 06 Sep 2026 08:00:00 +0000</pubDate>
       <description>India prepares for agentic UPI payments, launches first GEO Earth-observer, and details new semiconductor incentives.</description>
     </item>
     <item>
       <title>Craft &amp; Leadership — 05 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/craft/2026-09-05.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/craft/2026-09-05.html</guid>
+      <link>https://news.maahol.com/craft/2026-09-05.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/craft/2026-09-05.html</guid>
       <pubDate>Sat, 05 Sep 2026 08:00:00 +0000</pubDate>
       <description>48 new posts across 7 practice and leadership sources — 6 worth your time.</description>
-    </item>
-    <item>
-      <title>Engineering Reading — 05 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-09-05.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/eng-blogs/2026-09-05.html</guid>
-      <pubDate>Sat, 05 Sep 2026 08:00:00 +0000</pubDate>
-      <description>12 new posts across 8 engineering blogs — 7 worth your time.</description>
     </item>
 </channel></rss>

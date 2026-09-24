@@ -1,62 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
   <title>Newsdesk — DevOps Weekly Digest</title>
-  <link>https://rajat0327.github.io/newsdesk-archive/devops/</link>
+  <link>https://news.maahol.com/devops/</link>
   <description>Engineering Edition</description>
-  <lastBuildDate>Wed, 23 Sep 2026 08:05:53 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 24 Sep 2026 07:41:55 +0000</lastBuildDate>
     <item>
       <title>DevOps Weekly Digest — 07 September 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-09-07.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-09-07.html</guid>
+      <link>https://news.maahol.com/devops/2026-09-07.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-09-07.html</guid>
       <pubDate>Mon, 07 Sep 2026 08:00:00 +0000</pubDate>
       <description>Kubernetes Storage Migration Goes GA, AWS Boosts AI Agent Governance, and Polars 2.0 Promises Speed</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 31 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-31.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-08-31.html</guid>
+      <link>https://news.maahol.com/devops/2026-08-31.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-08-31.html</guid>
       <pubDate>Mon, 31 Aug 2026 08:00:00 +0000</pubDate>
       <description>Google Cloud outage in us-west1 highlights cloud reliability challenges amidst routine maintenance.</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 24 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-24.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-08-24.html</guid>
+      <link>https://news.maahol.com/devops/2026-08-24.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-08-24.html</guid>
       <pubDate>Mon, 24 Aug 2026 08:00:00 +0000</pubDate>
       <description>GitHub suffers major 8-hour outage, AWS Glue 6.0 introduces breaking changes, and OpenTofu 1.9 surpasses Terraform in features.</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 17 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-17.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-08-17.html</guid>
+      <link>https://news.maahol.com/devops/2026-08-17.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-08-17.html</guid>
       <pubDate>Mon, 17 Aug 2026 08:00:00 +0000</pubDate>
       <description>TypeScript 6.0 breaks existing builds with new strict defaults, forcing immediate migration for many projects.</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 10 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-10.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-08-10.html</guid>
+      <link>https://news.maahol.com/devops/2026-08-10.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-08-10.html</guid>
       <pubDate>Mon, 10 Aug 2026 08:00:00 +0000</pubDate>
       <description>TypeScript 6.0 introduces breaking changes, while Chrome and Node.js deliver key developer tooling updates.</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 03 August 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-08-03.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-08-03.html</guid>
+      <link>https://news.maahol.com/devops/2026-08-03.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-08-03.html</guid>
       <pubDate>Mon, 03 Aug 2026 08:00:00 +0000</pubDate>
       <description>Cloud Providers Push Serverless Edge, Kubernetes Enhances AI Workloads, and Observability Tools Gain Predictive Analytics</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 27 July 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-07-27.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-07-27.html</guid>
+      <link>https://news.maahol.com/devops/2026-07-27.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-07-27.html</guid>
       <pubDate>Mon, 27 Jul 2026 08:00:00 +0000</pubDate>
       <description>IaC and Cloud AI Lead DevOps News with Terraform Governance, Azure HPC Expansion, and Google Cloud's Secure AI Benchmarking</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 26 July 2026</title>
-      <link>https://rajat0327.github.io/newsdesk-archive/devops/2026-07-26.html</link>
-      <guid isPermaLink="true">https://rajat0327.github.io/newsdesk-archive/devops/2026-07-26.html</guid>
+      <link>https://news.maahol.com/devops/2026-07-26.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-07-26.html</guid>
       <pubDate>Sun, 26 Jul 2026 08:00:00 +0000</pubDate>
       <description>Autonomous AI Agent Orchestrates Hugging Face Security Breach, Signaling New Era of Cyber Threats.</description>
     </item>
