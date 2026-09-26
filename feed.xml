@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sat, 26 Sep 2026 07:55:46 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 26 Sep 2026 08:03:14 +0000</lastBuildDate>
+    <item>
+      <title>Craft &amp; Leadership — 26 September 2026</title>
+      <link>https://news.maahol.com/craft/2026-09-26.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/craft/2026-09-26.html</guid>
+      <pubDate>Sat, 26 Sep 2026 08:00:00 +0000</pubDate>
+      <description>47 new posts across 10 practice and leadership sources — 6 worth your time.</description>
+    </item>
     <item>
       <title>Engineering Reading — 26 September 2026</title>
       <link>https://news.maahol.com/eng-blogs/2026-09-26.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/security-news/2026-09-08.html</guid>
       <pubDate>Tue, 08 Sep 2026 08:00:00 +0000</pubDate>
       <description>8 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
-    </item>
-    <item>
-      <title>DevOps Weekly Digest — 07 September 2026</title>
-      <link>https://news.maahol.com/devops/2026-09-07.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/devops/2026-09-07.html</guid>
-      <pubDate>Mon, 07 Sep 2026 08:00:00 +0000</pubDate>
-      <description>Kubernetes Storage Migration Goes GA, AWS Boosts AI Agent Governance, and Polars 2.0 Promises Speed</description>
     </item>
 </channel></rss>
