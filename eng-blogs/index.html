@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Engineering Reading — From the Blogs Worth Following</title>
-<meta name="description" content="From the Blogs Worth Following. 49 stories across 7 issues.">
+<meta name="description" content="From the Blogs Worth Following. 56 stories across 8 issues.">
 <meta property="og:title" content="Engineering Reading — From the Blogs Worth Following">
-<meta property="og:description" content="From the Blogs Worth Following. 49 stories across 7 issues.">
+<meta property="og:description" content="From the Blogs Worth Following. 56 stories across 8 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c2456f">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Engineering Reading</h1>
   <p class="lede">From the Blogs Worth Following. Published every
      <b>Saturday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>49</b> stories</span>
-     <span><b>7</b> issues</span>
+  <p class="stats"><span><b>56</b> stories</span>
+     <span><b>8</b> issues</span>
      <span><b>7</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Reliability" style="--tc:#f78166"><i style="background:#f78166"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Developer%20Experience" style="--tc:#f778ba"><i style="background:#f778ba"></i>Developer Experience</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Practice%20%26%20Craft" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Practice &amp; Craft</a></p>
 </div>
@@ -38,6 +38,13 @@
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
   <a href="feed.xml">RSS</a></div>
 <div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Reliability" style="--tc:#f78166"><i style="background:#f78166"></i>Reliability</a>
+  <h3><a href="https://blog.cloudflare.com/containers-cross-tenant-vulnerability/" rel="noopener nofollow">How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers</a></h3>
+  <p>A detailed security write-up of a cross-tenant data exposure vulnerability in Cloudflare Containers. It covers the technical discovery via a bug bounty and the subsequent remediation steps.</p>
+  <div class="why"><b>Why it matters</b> — Multi-tenant container platforms must implement strict isolation to prevent cross-tenant data leaks, highlighting the value of bug bounty programs in finding edge-case vulnerabilities.</div>
+  <p class="src">Cloudflare &middot; 26 September 2026 &middot; <a href="https://blog.cloudflare.com/containers-cross-tenant-vulnerability/" rel="noopener nofollow" aria-label="Read the original: How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers">Read the original &rarr;</a></p>
+</div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
   <h3><a href="https://blog.cloudflare.com/revisiting-spectre-attacks-on-workers/" rel="noopener nofollow">A revisit of remote Spectre attacks on Cloudflare Workers</a></h3>
@@ -54,34 +61,28 @@
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
-  <h3><a href="https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/" rel="noopener nofollow">Saving another 100TB of RAM with math (and Rust)</a></h3>
-  <p>Cloudflare shares how they optimized memory usage across their global network of thousands of servers. By leveraging mathematical optimizations and Rust, they managed to reclaim 100TB of RAM from services running on every node.</p>
-  <div class="why"><b>Why it matters</b> — Even small, node-level memory optimizations yield massive resource savings when multiplied across a global, uniform server fleet.</div>
-  <p class="src">Cloudflare &middot; 19 September 2026 &middot; <a href="https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/" rel="noopener nofollow" aria-label="Read the original: Saving another 100TB of RAM with math (and Rust)">Read the original &rarr;</a></p>
+  <h3><a href="https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/" rel="noopener nofollow">Improving site performance by shipping more CSS</a></h3>
+  <p>Explains why GitHub moved away from CSS-in-JS to static CSS to solve performance issues on pages with high component counts. It details the trade-offs between flexibility and runtime performance.</p>
+  <div class="why"><b>Why it matters</b> — Static CSS avoids the runtime overhead of CSS-in-JS, which can become a performance bottleneck as the number of components on a page increases.</div>
+  <p class="src">GitHub &middot; 26 September 2026 &middot; <a href="https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/" rel="noopener nofollow" aria-label="Read the original: Improving site performance by shipping more CSS">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
-  <h3><a href="https://medium.com/pinterest-engineering/beyond-two-towers-launching-the-3-tower-engagement-co-train-model-part-2-0b96167d2c14?source=rss----4c5a5f6279b6---4" rel="noopener nofollow">Beyond Two Towers: Launching the 3-Tower Engagement Co-Train Model (Part 2)</a></h3>
-  <p>Pinterest details the architecture and deployment of their 3-Tower Engagement Co-Train Model for lightweight ads ranking. The post covers how they moved beyond traditional two-tower models to improve engagement prediction accuracy.</p>
-  <div class="why"><b>Why it matters</b> — Adding a third tower to traditional retrieval architectures allows models to co-train on multiple engagement objectives simultaneously.</div>
-  <p class="src">Pinterest &middot; 19 September 2026 &middot; <a href="https://medium.com/pinterest-engineering/beyond-two-towers-launching-the-3-tower-engagement-co-train-model-part-2-0b96167d2c14?source=rss----4c5a5f6279b6---4" rel="noopener nofollow" aria-label="Read the original: Beyond Two Towers: Launching the 3-Tower Engagement Co-Train Model (Part 2)">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
-  <h3><a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Kafka App? There’s a Skill for That</a></h3>
-  <p>Etsy manages over 100 million unique listings from 5.6 million sellers, lacking a standard product catalog. When shoppers search, models must infer meaning and listing content using data from user visits and Etsy listings. Kafka is utilized in this process to enable these models to understand unique and creative items.</p>
-  <div class="why"><b>Why it matters</b> — It explains how Etsy uses Kafka and data models to infer meaning from unique listings for complex search queries.</div>
-  <p class="src">Etsy &middot; 01 August 2026 &middot; <a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow" aria-label="Read the original: Kafka App? There’s a Skill for That">Read the original &rarr;</a></p>
+  <h3><a href="https://medium.com/pinterest-engineering/partition-finalization-in-pinterests-next-generation-db-ingestion-framework-4c7da6e4cc8f?source=rss----4c5a5f6279b6---4" rel="noopener nofollow">Partition Finalization in Pinterest’s Next-Generation DB Ingestion Framework</a></h3>
+  <p>The third entry in a series on database ingestion, focusing on the mechanics of partition finalization using Kafka and Flink. It addresses the challenges of maintaining consistency in high-volume stream processing.</p>
+  <div class="why"><b>Why it matters</b> — Using stream processing primitives for partition management ensures exactly-once semantics and consistency in high-throughput database ingestion pipelines.</div>
+  <p class="src">Pinterest &middot; 26 September 2026 &middot; <a href="https://medium.com/pinterest-engineering/partition-finalization-in-pinterests-next-generation-db-ingestion-framework-4c7da6e4cc8f?source=rss----4c5a5f6279b6---4" rel="noopener nofollow" aria-label="Read the original: Partition Finalization in Pinterest’s Next-Generation DB Ingestion Framework">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=eng-blogs">Browse all 49 stories in this channel &rarr;</a><span>44 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=eng-blogs">Browse all 56 stories in this channel &rarr;</a><span>51 older stories</span></div>
 
-<p class="signoff">Still chasing efficiency and stability, now with more AI.</p>
+<p class="signoff">Laying subsea cables is apparently easier than configuring HTTP cache headers.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-09-26.html"><span class="d">26 September 2026</span><span class="h">15 new posts across 7 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-19.html"><span class="d">19 September 2026</span><span class="h">18 new posts across 8 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-12.html"><span class="d">12 September 2026</span><span class="h">11 new posts across 4 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-05.html"><span class="d">05 September 2026</span><span class="h">12 new posts across 8 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
