@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 28 Sep 2026 08:57:55 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 08:58:23 +0000</lastBuildDate>
     <item>
       <title>DevOps Weekly Digest — 28 September 2026</title>
       <link>https://news.maahol.com/devops/2026-09-28.html</link>
       <guid isPermaLink="true">https://news.maahol.com/devops/2026-09-28.html</guid>
       <pubDate>Mon, 28 Sep 2026 08:00:00 +0000</pubDate>
       <description>Cloud providers and developer tooling see significant AI-driven updates, while data center construction faces increasing delays.</description>
+    </item>
+    <item>
+      <title>Fintech &amp; Payments — 28 September 2026</title>
+      <link>https://news.maahol.com/fintech/2026-09-28.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-09-28.html</guid>
+      <pubDate>Mon, 28 Sep 2026 08:00:00 +0000</pubDate>
+      <description>63 new posts across 4 fintech and payments sources — 9 worth your time.</description>
     </item>
     <item>
       <title>Marketing — 28 September 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/arxiv-picks/2026-09-09.html</guid>
       <pubDate>Wed, 09 Sep 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Compile by Training: Turning Natural-Language Specifications into Loca (378 upvotes).</description>
-    </item>
-    <item>
-      <title>Supply Chain &amp; ERP — 09 September 2026</title>
-      <link>https://news.maahol.com/supply-chain/2026-09-09.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-09-09.html</guid>
-      <pubDate>Wed, 09 Sep 2026 08:00:00 +0000</pubDate>
-      <description>125 new posts across 11 SAP and supply chain sources — 6 worth your time.</description>
     </item>
 </channel></rss>
