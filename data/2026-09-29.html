@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Databases &amp; Data — 29 September 2026</title>
+<meta name="description" content="63 new posts across 8 database and data engineering sources — 7 worth your time.">
+<meta property="og:title" content="Databases &amp; Data — 29 September 2026">
+<meta property="og:description" content="63 new posts across 8 database and data engineering sources — 7 worth your time.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#c22ebe">
+<link rel="canonical" href="https://news.maahol.com/data/2026-09-29.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<link rel="stylesheet" href="../style.css">
+<style>:root{--accent:#c22ebe}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group" data-here><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe" aria-current="page">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#c22ebe;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Databases &amp; Data</a></p>
+  <h1>29 September 2026</h1>
+  <p class="lede">63 new posts across 8 database and data engineering sources — 7 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Databases &amp; Data,
+     7 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://postgr.es/p/9wu" rel="noopener nofollow">Dinesh Kumar: ALTER FUNCTION SET work_mem: Fixing PostgreSQL Disk Spills Without a Global Change</a></h2>
+  <p>This article demonstrates how to use `ALTER FUNCTION SET work_mem` in PostgreSQL to prevent specific functions from spilling to disk during sorts, avoiding a global `work_mem` change. A production fix reduced disk spills from 150 GB a day to 0.</p>
+  <div class="why"><b>Why it matters</b> — Targeted `work_mem` adjustments at the function level can resolve performance issues like disk spills without impacting other queries, offering a granular optimization strategy.</div>
+  <p class="src">Planet PostgreSQL &middot; 29 September 2026 &middot; <a href="https://postgr.es/p/9wu" rel="noopener nofollow" aria-label="Read the original: Dinesh Kumar: ALTER FUNCTION SET work_mem: Fixing PostgreSQL Disk Spills Without a Global Change">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://postgr.es/p/9wi" rel="noopener nofollow">Chris van Eijk: PostgreSQL indexes for multi-tenant SaaS: tenant_id first</a></h2>
+  <p>This post measures the impact of five different index strategies for multi-tenant SaaS applications in PostgreSQL 17, focusing on why `tenant_id` should come first in indexes. It also considers the effect of RLS and partitioning.</p>
+  <div class="why"><b>Why it matters</b> — For multi-tenant SaaS, placing `tenant_id` first in PostgreSQL indexes is a critical optimization, significantly improving query performance and impacting the effectiveness of Row-Level Security (RLS) and partitioning.</div>
+  <p class="src">Planet PostgreSQL &middot; 29 September 2026 &middot; <a href="https://postgr.es/p/9wi" rel="noopener nofollow" aria-label="Read the original: Chris van Eijk: PostgreSQL indexes for multi-tenant SaaS: tenant_id first">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://postgr.es/p/9wh" rel="noopener nofollow">Chris van Eijk: Invoice numbers per tenant in PostgreSQL, without gaps</a></h2>
+  <p>This article evaluates five methods for generating gap-free invoice numbers per tenant in PostgreSQL 17, including sequences, `max()+1`, `SERIALIZABLE` transactions, and counter rows. It measures their performance under load for duplicates, gaps and speed.</p>
+  <div class="why"><b>Why it matters</b> — Generating gap-free sequential numbers per tenant in a concurrent environment is a common data modeling challenge, and this analysis provides measured trade-offs between different PostgreSQL approaches for reliability and performance.</div>
+  <p class="src">Planet PostgreSQL &middot; 29 September 2026 &middot; <a href="https://postgr.es/p/9wh" rel="noopener nofollow" aria-label="Read the original: Chris van Eijk: Invoice numbers per tenant in PostgreSQL, without gaps">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://redis.io/blog/how-moving-from-azure-cache-for-redis-to-azure-managed-redis-can-cut-costs-by-40percent/" rel="noopener nofollow">How moving from Azure Cache for Redis to Azure Managed Redis can cut costs by 40%</a></h2>
+  <p>This article demonstrates how migrating from Azure Cache for Redis to Azure Managed Redis can reduce monthly service costs by approximately 40%. It cites specific comparisons showing 43–44% reductions for equivalent high-availability setups in East US 2 Premium-to-Balanced scenarios.</p>
+  <p class="src">Redis &middot; 29 September 2026 &middot; <a href="https://redis.io/blog/how-moving-from-azure-cache-for-redis-to-azure-managed-redis-can-cut-costs-by-40percent/" rel="noopener nofollow" aria-label="Read the original: How moving from Azure Cache for Redis to Azure Managed Redis can cut costs by 40%">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
+  <h2><a href="https://clickhouse.com/blog/fountain-agentic-ai-for-high-volume-hiring" rel="noopener nofollow">How Fountain rebuilt its data plane on ClickHouse Cloud to power Cue, the Frontline Superintelligence</a></h2>
+  <p>Fountain rebuilt its data plane on ClickPipes and ClickHouse Cloud, cutting analytics latency from three hours to under two minutes and reducing costs by 66%. This transformation powered their &quot;Frontline Superintelligence&quot; product, Cue.</p>
+  <div class="why"><b>Why it matters</b> — Significant improvements in analytics latency (from hours to minutes) and cost reduction (66%) are achievable by migrating data planes to modern analytical databases, demonstrating clear ROI for such architectural shifts.</div>
+  <p class="src">ClickHouse &middot; 29 September 2026 &middot; <a href="https://clickhouse.com/blog/fountain-agentic-ai-for-high-volume-hiring" rel="noopener nofollow" aria-label="Read the original: How Fountain rebuilt its data plane on ClickHouse Cloud to power Cue, the Frontline Superintelligence">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h2><a href="https://clickhouse.com/blog/can-your-postgres-survive-a-bad-query" rel="noopener nofollow">Can your Postgres survive a bad query?</a></h2>
+  <p>This benchmark compares how managed Postgres providers like RDS, Cloud SQL, and ClickHouse Managed Postgres handle recursive queries that exhaust memory. It evaluates whether the database engine can isolate and terminate a &quot;bad&quot; query or if the resource exhaustion leads to a full cluster outage.</p>
+  <div class="why"><b>Why it matters</b> — Managed database &quot;survival&quot; under memory pressure varies significantly; some providers allow a single bad query to impact the entire cluster&#x27;s availability.</div>
+  <p class="src">ClickHouse &middot; 29 September 2026 &middot; <a href="https://clickhouse.com/blog/can-your-postgres-survive-a-bad-query" rel="noopener nofollow" aria-label="Read the original: Can your Postgres survive a bad query?">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
+  <h2><a href="https://neon.com/blog/inside-branch-based-restores-in-lakebase-postgres" rel="noopener nofollow">Inside branch-based restores in Lakebase Postgres</a></h2>
+  <p>This post analyzes the architectural limitations of traditional point-in-time recovery (PITR), which becomes prohibitively slow as database volume grows. It explains how branch-based restores in systems like Lakebase Postgres use copy-on-write snapshots to decouple recovery time from data size.</p>
+  <div class="why"><b>Why it matters</b> — For large production databases, traditional PITR is often too slow to meet RTO requirements, necessitating a move toward snapshot-based branching.</div>
+  <p class="src">Neon &middot; 29 September 2026 &middot; <a href="https://neon.com/blog/inside-branch-based-restores-in-lakebase-postgres" rel="noopener nofollow" aria-label="Read the original: Inside branch-based restores in Lakebase Postgres">Read the original &rarr;</a></p>
+</div>
+</div>
+<p class="signoff">PostgreSQL&#x27;s intricacies continue to fill our weeks.</p>
+
+<div class="cta">
+  <h3>7 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-09-22.html">&larr; Previous issue</a>
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../provenance.html">Where this comes from</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>
