@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Security Weekly Digest — Exploits, Breaches &amp; Advisories</title>
-<meta name="description" content="Exploits, Breaches &amp; Advisories. 67 stories across 10 issues.">
+<meta name="description" content="Exploits, Breaches &amp; Advisories. 76 stories across 11 issues.">
 <meta property="og:title" content="Security Weekly Digest — Exploits, Breaches &amp; Advisories">
-<meta property="og:description" content="Exploits, Breaches &amp; Advisories. 67 stories across 10 issues.">
+<meta property="og:description" content="Exploits, Breaches &amp; Advisories. 76 stories across 11 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#d9552f">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Security Weekly Digest</h1>
   <p class="lede">Exploits, Breaches &amp; Advisories. Published every
      <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>67</b> stories</span>
-     <span><b>10</b> issues</span>
+  <p class="stats"><span><b>76</b> stories</span>
+     <span><b>11</b> issues</span>
      <span><b>9</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Breaches" style="--tc:#f778ba"><i style="background:#f778ba"></i>Breaches</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Supply%20Chain" style="--tc:#e3b341"><i style="background:#e3b341"></i>Supply Chain</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Cloud%20%26%20SaaS" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud &amp; SaaS</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Vulnerabilities" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vulnerabilities</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Threat%20Actors" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Threat Actors</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Ransomware" style="--tc:#f778ba"><i style="background:#f778ba"></i>Ransomware</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Policy%20%26%20Compliance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Policy &amp; Compliance</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Tooling" style="--tc:#3fb950"><i style="background:#3fb950"></i>Tooling</a></p>
 </div>
@@ -47,41 +47,42 @@
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7273" rel="noopener nofollow">CVE-2026-7273: Zyxel GS1900 Series Switches</a></h3>
-  <p>Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.</p>
-  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.8 (HIGH). CISA remediation deadline 24 Sep 2026 — 2 days out.</div>
-  <p class="src">CISA KEV &middot; 22 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-7273" rel="noopener nofollow" aria-label="Read the original: CVE-2026-7273: Zyxel GS1900 Series Switches">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Ransomware" style="--tc:#f778ba"><i style="background:#f778ba"></i>Ransomware</a>
-  <h3><a href="https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html" rel="noopener nofollow">China-Linked Storm-1175 Deploys StormEncryptor Ransomware</a></h3>
-  <p>Microsoft disclosed that China-linked threat actor Storm-1175 is deploying a new ransomware strain, StormEncryptor, marking a shift from their previous use of Medusa ransomware. Initial access likely involves exploiting CVE-2026-18577 in N-able N-central, with rapid progression from access to encryption.</p>
-  <div class="why"><b>Why it matters</b> — Organizations using N-able N-central must immediately patch CVE-2026-18577 and implement robust monitoring for rapid post-compromise activity to defend against Storm-1175.</div>
-  <p class="src">The Hacker News &middot; 11 August 2026 &middot; <a href="https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html" rel="noopener nofollow" aria-label="Read the original: China-Linked Storm-1175 Deploys StormEncryptor Ransomware">Read the original &rarr;</a></p>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5430" rel="noopener nofollow">CVE-2026-5430: WSO2 Multiple Products</a></h3>
+  <p>WSO2 API Control Plane, API Manager, Traffic Manager &amp; Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 10.0 (CRITICAL). CISA remediation deadline 27 Sep 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 29 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5430" rel="noopener nofollow" aria-label="Read the original: CVE-2026-5430: WSO2 Multiple Products">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030" rel="noopener nofollow">CVE-2026-63030: WordPress Core</a></h3>
-  <p>WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.</p>
-  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 24 Jul 2026 — already passed.</div>
-  <p class="src">CISA KEV &middot; 26 July 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030" rel="noopener nofollow" aria-label="Read the original: CVE-2026-63030: WordPress Core">Read the original &rarr;</a></p>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-94127" rel="noopener nofollow">CVE-2026-94127: F5 BIG-IP APM</a></h3>
+  <p>F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.3 (CRITICAL). CISA remediation deadline 25 Sep 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 29 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-94127" rel="noopener nofollow" aria-label="Read the original: CVE-2026-94127: F5 BIG-IP APM">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">CVE-2026-18577: N-able N-central</a></h3>
-  <p>N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.</p>
-  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.2 (HIGH). CISA remediation deadline 06 Aug 2026 — 2 days out.</div>
-  <p class="src">CISA KEV &middot; 04 August 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow" aria-label="Read the original: CVE-2026-18577: N-able N-central">Read the original &rarr;</a></p>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-93952" rel="noopener nofollow">CVE-2026-93952: Arista VeloCloud Orchestrator</a></h3>
+  <p>Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.5 (CRITICAL). CISA remediation deadline 25 Sep 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 29 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-93952" rel="noopener nofollow" aria-label="Read the original: CVE-2026-93952: Arista VeloCloud Orchestrator">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-65660" rel="noopener nofollow">CVE-2026-65660: Microsoft SharePoint</a></h3>
+  <p>Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.8 (HIGH). CISA remediation deadline 28 Sep 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 29 September 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-65660" rel="noopener nofollow" aria-label="Read the original: CVE-2026-65660: Microsoft SharePoint">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=security-news">Browse all 67 stories in this channel &rarr;</a><span>62 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=security-news">Browse all 76 stories in this channel &rarr;</a><span>71 older stories</span></div>
 
-<p class="signoff">Looks like we&#x27;re patching the entire stack this weekend.</p>
+<p class="signoff">There goes the sprint velocity.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-09-29.html"><span class="d">29 September 2026</span><span class="h">7 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-22.html"><span class="d">22 September 2026</span><span class="h">6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">5 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-15.html"><span class="d">15 September 2026</span><span class="h">12 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-08.html"><span class="d">08 September 2026</span><span class="h">8 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
