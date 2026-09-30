@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 30 Sep 2026 08:56:26 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 09:00:15 +0000</lastBuildDate>
     <item>
       <title>arXiv Picks — 30 September 2026</title>
       <link>https://news.maahol.com/arxiv-picks/2026-09-30.html</link>
       <guid isPermaLink="true">https://news.maahol.com/arxiv-picks/2026-09-30.html</guid>
       <pubDate>Wed, 30 Sep 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Raven: The Harness of Harnesses for Composable Agentic Intelligence (244 upvotes).</description>
+    </item>
+    <item>
+      <title>Supply Chain &amp; ERP — 30 September 2026</title>
+      <link>https://news.maahol.com/supply-chain/2026-09-30.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-09-30.html</guid>
+      <pubDate>Wed, 30 Sep 2026 08:00:00 +0000</pubDate>
+      <description>121 new posts across 11 SAP and supply chain sources — 11 worth your time.</description>
     </item>
     <item>
       <title>Web &amp; Frontend — 30 September 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/ai/2026-09-11.html</guid>
       <pubDate>Fri, 11 Sep 2026 08:00:00 +0000</pubDate>
       <description>56 new posts across 8 AI lab and practitioner sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>Mobile — 11 September 2026</title>
-      <link>https://news.maahol.com/mobile/2026-09-11.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/mobile/2026-09-11.html</guid>
-      <pubDate>Fri, 11 Sep 2026 08:00:00 +0000</pubDate>
-      <description>9 new posts across 6 mobile platform sources — 7 worth your time.</description>
     </item>
 </channel></rss>
