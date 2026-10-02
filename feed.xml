@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Fri, 02 Oct 2026 08:48:32 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 08:50:37 +0000</lastBuildDate>
     <item>
       <title>Mobile — 02 October 2026</title>
       <link>https://news.maahol.com/mobile/2026-10-02.html</link>
       <guid isPermaLink="true">https://news.maahol.com/mobile/2026-10-02.html</guid>
       <pubDate>Fri, 02 Oct 2026 08:00:00 +0000</pubDate>
       <description>9 new posts across 5 mobile platform sources — 8 worth your time.</description>
+    </item>
+    <item>
+      <title>Open Source — 02 October 2026</title>
+      <link>https://news.maahol.com/open-source/2026-10-02.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/open-source/2026-10-02.html</guid>
+      <pubDate>Fri, 02 Oct 2026 08:00:00 +0000</pubDate>
+      <description>AI Agent Exploits Zammad Zero-Days as Supply Chain Risks Resurface and EU CRA Reporting Commences</description>
     </item>
     <item>
       <title>HR &amp; Payroll Tech — 01 October 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/design/2026-09-13.html</guid>
       <pubDate>Sun, 13 Sep 2026 08:00:00 +0000</pubDate>
       <description>26 new posts across 4 design and research sources — 6 worth your time.</description>
-    </item>
-    <item>
-      <title>India Tech Weekly — 13 September 2026</title>
-      <link>https://news.maahol.com/india-tech/2026-09-13.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/india-tech/2026-09-13.html</guid>
-      <pubDate>Sun, 13 Sep 2026 08:00:00 +0000</pubDate>
-      <description>Indian space-tech startup Pixxel secures $100 million in Series C funding, marking the largest investment round for the sector.</description>
     </item>
 </channel></rss>
