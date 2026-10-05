@@ -3,7 +3,7 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 05 Oct 2026 09:31:41 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 09:35:22 +0000</lastBuildDate>
     <item>
       <title>DevOps Weekly Digest — 05 October 2026</title>
       <link>https://news.maahol.com/devops/2026-10-05.html</link>
@@ -17,6 +17,13 @@
       <guid isPermaLink="true">https://news.maahol.com/fintech/2026-10-05.html</guid>
       <pubDate>Mon, 05 Oct 2026 08:00:00 +0000</pubDate>
       <description>65 new posts across 4 fintech and payments sources — 7 worth your time.</description>
+    </item>
+    <item>
+      <title>Marketing — 05 October 2026</title>
+      <link>https://news.maahol.com/marketing/2026-10-05.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/marketing/2026-10-05.html</guid>
+      <pubDate>Mon, 05 Oct 2026 08:00:00 +0000</pubDate>
+      <description>50 new posts across 6 marketing sources — 9 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 04 October 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/sales/2026-09-17.html</guid>
       <pubDate>Thu, 17 Sep 2026 08:00:00 +0000</pubDate>
       <description>19 new posts across 4 go-to-market sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>arXiv Picks — 16 September 2026</title>
-      <link>https://news.maahol.com/arxiv-picks/2026-09-16.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/arxiv-picks/2026-09-16.html</guid>
-      <pubDate>Wed, 16 Sep 2026 08:00:00 +0000</pubDate>
-      <description>20 papers shortlisted this week — most discussed: Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation (628 upvotes).</description>
     </item>
 </channel></rss>
