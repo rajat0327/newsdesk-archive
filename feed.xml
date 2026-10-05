@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sun, 04 Oct 2026 08:43:26 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 09:23:59 +0000</lastBuildDate>
+    <item>
+      <title>DevOps Weekly Digest — 05 October 2026</title>
+      <link>https://news.maahol.com/devops/2026-10-05.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-10-05.html</guid>
+      <pubDate>Mon, 05 Oct 2026 08:00:00 +0000</pubDate>
+      <description>Cloudflare container flaw exposes cross-tenant data, forcing critical isolation review for multi-tenant cloud environments.</description>
+    </item>
     <item>
       <title>Design &amp; UX — 04 October 2026</title>
       <link>https://news.maahol.com/design/2026-10-04.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-09-16.html</guid>
       <pubDate>Wed, 16 Sep 2026 08:00:00 +0000</pubDate>
       <description>115 new posts across 11 SAP and supply chain sources — 6 worth your time.</description>
-    </item>
-    <item>
-      <title>Web &amp; Frontend — 16 September 2026</title>
-      <link>https://news.maahol.com/web/2026-09-16.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/web/2026-09-16.html</guid>
-      <pubDate>Wed, 16 Sep 2026 08:00:00 +0000</pubDate>
-      <description>11 new posts across 4 web platform sources — 7 worth your time.</description>
     </item>
 </channel></rss>
