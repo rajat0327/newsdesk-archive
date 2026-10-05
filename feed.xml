@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 05 Oct 2026 09:23:59 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 09:31:41 +0000</lastBuildDate>
     <item>
       <title>DevOps Weekly Digest — 05 October 2026</title>
       <link>https://news.maahol.com/devops/2026-10-05.html</link>
       <guid isPermaLink="true">https://news.maahol.com/devops/2026-10-05.html</guid>
       <pubDate>Mon, 05 Oct 2026 08:00:00 +0000</pubDate>
       <description>Cloudflare container flaw exposes cross-tenant data, forcing critical isolation review for multi-tenant cloud environments.</description>
+    </item>
+    <item>
+      <title>Fintech &amp; Payments — 05 October 2026</title>
+      <link>https://news.maahol.com/fintech/2026-10-05.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-10-05.html</guid>
+      <pubDate>Mon, 05 Oct 2026 08:00:00 +0000</pubDate>
+      <description>65 new posts across 4 fintech and payments sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 04 October 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/arxiv-picks/2026-09-16.html</guid>
       <pubDate>Wed, 16 Sep 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation (628 upvotes).</description>
-    </item>
-    <item>
-      <title>Supply Chain &amp; ERP — 16 September 2026</title>
-      <link>https://news.maahol.com/supply-chain/2026-09-16.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-09-16.html</guid>
-      <pubDate>Wed, 16 Sep 2026 08:00:00 +0000</pubDate>
-      <description>115 new posts across 11 SAP and supply chain sources — 6 worth your time.</description>
     </item>
 </channel></rss>
