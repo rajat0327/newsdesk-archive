@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Databases &amp; Data — 06 October 2026</title>
+<meta name="description" content="63 new posts across 9 database and data engineering sources — 7 worth your time.">
+<meta property="og:title" content="Databases &amp; Data — 06 October 2026">
+<meta property="og:description" content="63 new posts across 9 database and data engineering sources — 7 worth your time.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#c22ebe">
+<link rel="canonical" href="https://news.maahol.com/data/2026-10-06.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<link rel="stylesheet" href="../style.css">
+<style>:root{--accent:#c22ebe}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group" data-here><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe" aria-current="page">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#c22ebe;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Databases &amp; Data</a></p>
+  <h1>06 October 2026</h1>
+  <p class="lede">63 new posts across 9 database and data engineering sources — 7 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Databases &amp; Data,
+     7 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://postgr.es/p/9x1" rel="noopener nofollow">Alexander Ioffe: I ran the same query twice and Postgres disagreed with itself</a></h2>
+  <p>The author investigates why two identical EXPLAIN ANALYZE runs on statistically identical data produced opposite query plans (73 vs 3,449 heap blocks) with a tiny 1.5% margin. The post uses ExoBench to measure the planner&#x27;s behavior and demonstrates an index shape that eliminates this unpredictability.</p>
+  <div class="why"><b>Why it matters</b> — A tiny statistical margin can cause the Postgres query planner to fluctuate wildly between plans, but specific index shapes can eliminate this unpredictability.</div>
+  <p class="src">Planet PostgreSQL &middot; 06 October 2026 &middot; <a href="https://postgr.es/p/9x1" rel="noopener nofollow" aria-label="Read the original: Alexander Ioffe: I ran the same query twice and Postgres disagreed with itself">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://postgr.es/p/9wx" rel="noopener nofollow">Hollis Varden: UUIDv4 or UUIDv7 for a primary key? 5 million rows on PostgreSQL 18</a></h2>
+  <p>This post benchmarks UUIDv4 against the newly native UUIDv7 primary keys in PostgreSQL 18 using a 5-million-row dataset. The results show that UUIDv7 inserts took 27 seconds compared to 46 seconds for UUIDv4, with the UUIDv4 index being 29% larger, while random lookups performed identically.</p>
+  <div class="why"><b>Why it matters</b> — Sequential UUIDv7 primary keys can reduce insert times by over 40% and index size by nearly 30% compared to random UUIDv4, without sacrificing lookup performance.</div>
+  <p class="src">Planet PostgreSQL &middot; 06 October 2026 &middot; <a href="https://postgr.es/p/9wx" rel="noopener nofollow" aria-label="Read the original: Hollis Varden: UUIDv4 or UUIDv7 for a primary key? 5 million rows on PostgreSQL 18">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://postgr.es/p/9wE" rel="noopener nofollow">Chris van Eijk: Row-level security performance in PostgreSQL, measured</a></h2>
+  <p>Evaluates the performance overhead of Row-Level Security (RLS) policies in PostgreSQL 17. It analyzes the specific costs associated with function volatility, the use of `(SELECT ...)` wrappers, membership subqueries, and how the leakproof rule can inadvertently disable indexes.</p>
+  <div class="why"><b>Why it matters</b> — RLS policies can silently disable index scans if the underlying functions are not marked leakproof, severely degrading query performance.</div>
+  <p class="src">Planet PostgreSQL &middot; 06 October 2026 &middot; <a href="https://postgr.es/p/9wE" rel="noopener nofollow" aria-label="Read the original: Chris van Eijk: Row-level security performance in PostgreSQL, measured">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
+  <h2><a href="https://clickhouse.com/blog/linkedin-observability-at-scale" rel="noopener nofollow">How LinkedIn extended ClickHouse from distributed tracing to metric discovery and analytics</a></h2>
+  <p>Details how LinkedIn scaled its ClickHouse-based observability stack to consolidate over 13 billion metrics into a single index. The system successfully handles more than 150,000 queries per minute, expanding ClickHouse&#x27;s role from tracing to high-throughput metric discovery.</p>
+  <div class="why"><b>Why it matters</b> — Consolidating massive-scale tracing and metric data into a unified ClickHouse index can support extremely high query volumes (150k+ QPM) while simplifying observability architecture.</div>
+  <p class="src">ClickHouse &middot; 06 October 2026 &middot; <a href="https://clickhouse.com/blog/linkedin-observability-at-scale" rel="noopener nofollow" aria-label="Read the original: How LinkedIn extended ClickHouse from distributed tracing to metric discovery and analytics">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://planetscale.com/blog/hot-shards-hotter-tenants" rel="noopener nofollow">Handling hot shards</a></h2>
+  <p>Explores the challenges of sharding database tables on a `tenant_id` column in production. It discusses how Neki&#x27;s router manages data topology to handle uneven write and read distributions across shards when dealing with hot tenants.</p>
+  <div class="why"><b>Why it matters</b> — Sharding by tenant ID inevitably creates hot shards in production, requiring routing layers that can dynamically manage uneven data topology and query distribution.</div>
+  <p class="src">PlanetScale &middot; 06 October 2026 &middot; <a href="https://planetscale.com/blog/hot-shards-hotter-tenants" rel="noopener nofollow" aria-label="Read the original: Handling hot shards">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://planetscale.com/blog/designing-neki-for-performance" rel="noopener nofollow">Designing Neki for performance</a></h2>
+  <p>This post details the design of Neki, a routing layer positioned between PostgreSQL clients and servers to enable sharding. It addresses the performance challenge of introducing an extra network hop and discusses the trade-offs of making multiple database servers appear as a single instance.</p>
+  <div class="why"><b>Why it matters</b> — Adding a routing layer for database sharding introduces latency overhead; optimizing this layer requires minimizing processing time to offset the unavoidable extra network hop.</div>
+  <p class="src">PlanetScale &middot; 06 October 2026 &middot; <a href="https://planetscale.com/blog/designing-neki-for-performance" rel="noopener nofollow" aria-label="Read the original: Designing Neki for performance">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h2><a href="https://neon.com/blog/how-we-systematically-improved-our-reliability" rel="noopener nofollow">How we systematically improved our reliability</a></h2>
+  <p>Following two major incidents in a single week, Neon outlines the systematic engineering efforts implemented to improve platform reliability. The post details the specific technical and operational changes rolled out to maintain high uptime across a rapidly growing fleet and customer base.</p>
+  <div class="why"><b>Why it matters</b> — Post-incident reliability engineering requires a systematic, fleet-wide approach to infrastructure hardening rather than isolated quick fixes.</div>
+  <p class="src">Neon &middot; 06 October 2026 &middot; <a href="https://neon.com/blog/how-we-systematically-improved-our-reliability" rel="noopener nofollow" aria-label="Read the original: How we systematically improved our reliability">Read the original &rarr;</a></p>
+</div>
+</div>
+<p class="signoff">Another week of fighting the database we chose to make our lives easier.</p>
+
+<div class="cta">
+  <h3>7 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-09-29.html">&larr; Previous issue</a>
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../provenance.html">Where this comes from</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>
