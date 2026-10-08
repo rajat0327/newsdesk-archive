@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Release Radar — 08 October 2026</title>
+<meta name="description" content="49 releases across 31 tracked projects, including 3 with security fixes.">
+<meta property="og:title" content="Release Radar — 08 October 2026">
+<meta property="og:description" content="49 releases across 31 tracked projects, including 3 with security fixes.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#b8860b">
+<link rel="canonical" href="https://news.maahol.com/release-radar/2026-10-08.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<link rel="stylesheet" href="../style.css">
+<style>:root{--accent:#b8860b}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b" aria-current="page">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#b8860b;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Release Radar</a></p>
+  <h1>08 October 2026</h1>
+  <p class="lede">49 releases across 31 tracked projects, including 3 with security fixes.</p>
+  <p class="meta" style="margin-top:12px">One week of Release Radar,
+     8 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Orchestration" style="--tc:#3fb950"><i style="background:#3fb950"></i>Orchestration</a>
+  <h2><a href="https://github.com/argoproj/argo-cd/releases/tag/v3.3.15" rel="noopener nofollow">Argo CD 3.3.15</a></h2>
+  <p>Release Signatures and Provenance · All Argo CD container images are signed by cosign. A Provenance is generated for container images and CLI binaries which meet the SLSA Level 3 specifications. See the documentation on how to verify. · Release Notes Blog Post…</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Fixes CVE-2026-77459, CVE-2025-61560, CVE-2026-55797 — patch promptly. Also released on 1 other maintenance line: CD 3.5.4.</div>
+  <p class="src">GitHub · argoproj/argo-cd &middot; 08 October 2026 &middot; <a href="https://github.com/argoproj/argo-cd/releases/tag/v3.3.15" rel="noopener nofollow" aria-label="Read the original: Argo CD 3.3.15">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Networking" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Networking</a>
+  <h2><a href="https://github.com/envoyproxy/envoy/releases/tag/v1.39.3" rel="noopener nofollow">Envoy 1.39.3</a></h2>
+  <p>Summary of changes · Security fixes · GHSA-8vc2-jrm4-835w · oauth2: crash on requests without a :path header (i.e. CONNECT). The filter now rejects such requests with 400. · GHSA-47vj-9r25-wv5j…</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Release notes reference security fixes. Also released on 6 other maintenance lines: 1.37.8, 1.36.12, 1.39.2, 1.38.5, 1.37.7, 1.36.11.</div>
+  <p class="src">GitHub · envoyproxy/envoy &middot; 08 October 2026 &middot; <a href="https://github.com/envoyproxy/envoy/releases/tag/v1.39.3" rel="noopener nofollow" aria-label="Read the original: Envoy 1.39.3">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Observability" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Observability</a>
+  <h2><a href="https://github.com/prometheus/prometheus/releases/tag/v3.13.4" rel="noopener nofollow">Prometheus 3.13.4</a></h2>
+  <p>[SECURITY] Bump google.golang.org/grpc to v1.83.1 to fix HTTP/2 DATA frame fragmentation memory exhaustion (GO-2026-6348). #19834 · [SECURITY] UI: Update vulnerable npm dependencies. #19834 · [BUGFIX] Agent: Ignore unknown WAL record types to allow rolling back from newer versions. #19814…</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Release notes reference security fixes.</div>
+  <p class="src">GitHub · prometheus/prometheus &middot; 08 October 2026 &middot; <a href="https://github.com/prometheus/prometheus/releases/tag/v3.13.4" rel="noopener nofollow" aria-label="Read the original: Prometheus 3.13.4">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
+  <h2><a href="https://github.com/opentofu/opentofu/releases/tag/v1.12.7" rel="noopener nofollow">OpenTofu 1.12.7</a></h2>
+  <p>SECURITY ADVISORIES · When using either a remote-exec or file provisioner to connect to an attacker-controlled SSH server, the server could previously deadlock the connection by sending certain unexpected packet types…</p>
+  <div class="why"><b>Why it matters</b> — Patch release — routine upgrade. Fixes CVE-2026-78662, CVE-2026-56855 — patch promptly.</div>
+  <p class="src">GitHub · opentofu/opentofu &middot; 08 October 2026 &middot; <a href="https://github.com/opentofu/opentofu/releases/tag/v1.12.7" rel="noopener nofollow" aria-label="Read the original: OpenTofu 1.12.7">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Runtimes" style="--tc:#f778ba"><i style="background:#f778ba"></i>Runtimes</a>
+  <h2><a href="https://github.com/nodejs/node/releases/tag/v26.11.0" rel="noopener nofollow">Node.js 26.11.0</a></h2>
+  <p>Notable Changes · \[232f178825] - (SEMVER-MINOR) buffer: add isLatin1 (James M Snell) #66298 · \[27778036de] - (SEMVER-MINOR) buffer: add Buffer.stringLength() (Matteo Collina) #66064 · \[4f84c4bda2] - build, doc: move to redesign (Aviv Keller) #62045…</p>
+  <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
+  <p class="src">GitHub · nodejs/node &middot; 08 October 2026 &middot; <a href="https://github.com/nodejs/node/releases/tag/v26.11.0" rel="noopener nofollow" aria-label="Read the original: Node.js 26.11.0">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=IaC" style="--tc:#e3b341"><i style="background:#e3b341"></i>IaC</a>
+  <h2><a href="https://github.com/pulumi/pulumi/releases/tag/v3.268.0" rel="noopener nofollow">Pulumi 3.268.0</a></h2>
+  <p>[engine] Negotiate OutputValues on Invoke so SDKs can pass dependency-carrying values in args and receive them in the response, and providers can process them, gated by a new accepts_outputs_in_invoke handshake capability #24953…</p>
+  <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
+  <p class="src">GitHub · pulumi/pulumi &middot; 08 October 2026 &middot; <a href="https://github.com/pulumi/pulumi/releases/tag/v3.268.0" rel="noopener nofollow" aria-label="Read the original: Pulumi 3.268.0">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Containers" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Containers</a>
+  <h2><a href="https://github.com/docker/compose/releases/tag/v5.6.0" rel="noopener nofollow">Docker Compose 5.6.0</a></h2>
+  <p>&gt; ℹ️ This release adds partial support for jobs: only manually-triggered jobs are supported for now, scheduled jobs are not yet available. Full job support will land once the corresponding Docker Engine support is merged. · ✨ Improvements…</p>
+  <div class="why"><b>Why it matters</b> — Minor release — new functionality, backward compatible.</div>
+  <p class="src">GitHub · docker/compose &middot; 08 October 2026 &middot; <a href="https://github.com/docker/compose/releases/tag/v5.6.0" rel="noopener nofollow" aria-label="Read the original: Docker Compose 5.6.0">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=release-radar&amp;g=Also%20Shipped" style="--tc:#8b949e"><i style="background:#8b949e"></i>Also Shipped</a>
+  <h2>16 more releases, nothing urgent</h2>
+  <p>Containers: Docker Engine client/v0.6.1, Docker Engine api/v1.56.1 · Data: ClickHouse 26.8.20.9-lts, ClickHouse 26.7.24.8-stable · IaC: Ansible 2.21.5, Terraform 1.16.5, Pulumi 3.267.0, Ansible 2.20.10, OpenTofu 1.13.1 · Networking: Traefik 3.7.14, Envoy 1.38.6, Traefik 2.11.58 · Orchestration: Argo CD 3.4.10 · Runtimes: Rust 1.99.0, Node.js 26.11.1 · Security: Vault 2.1.2</p>
+  <p class="src">GitHub &middot; 08 October 2026</p>
+</div>
+</div>
+<p class="signoff">Read the changelog before you bump the tag.</p>
+
+<div class="cta">
+  <h3>8 stories, every Thursday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-10-01.html">&larr; Previous issue</a>
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../provenance.html">Where this comes from</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>

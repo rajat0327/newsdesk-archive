@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 07 Oct 2026 09:16:14 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 09:11:54 +0000</lastBuildDate>
+    <item>
+      <title>Release Radar — 08 October 2026</title>
+      <link>https://news.maahol.com/release-radar/2026-10-08.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-10-08.html</guid>
+      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
+      <description>49 releases across 31 tracked projects, including 3 with security fixes.</description>
+    </item>
     <item>
       <title>arXiv Picks — 07 October 2026</title>
       <link>https://news.maahol.com/arxiv-picks/2026-10-07.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/craft/2026-09-19.html</guid>
       <pubDate>Sat, 19 Sep 2026 08:00:00 +0000</pubDate>
       <description>43 new posts across 9 practice and leadership sources — 5 worth your time.</description>
-    </item>
-    <item>
-      <title>Engineering Reading — 19 September 2026</title>
-      <link>https://news.maahol.com/eng-blogs/2026-09-19.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/eng-blogs/2026-09-19.html</guid>
-      <pubDate>Sat, 19 Sep 2026 08:00:00 +0000</pubDate>
-      <description>18 new posts across 8 engineering blogs — 7 worth your time.</description>
     </item>
 </channel></rss>
