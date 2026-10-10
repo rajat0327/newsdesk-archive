@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sat, 10 Oct 2026 08:45:19 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 10 Oct 2026 08:47:28 +0000</lastBuildDate>
+    <item>
+      <title>Craft &amp; Leadership — 10 October 2026</title>
+      <link>https://news.maahol.com/craft/2026-10-10.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/craft/2026-10-10.html</guid>
+      <pubDate>Sat, 10 Oct 2026 08:00:00 +0000</pubDate>
+      <description>43 new posts across 9 practice and leadership sources — 6 worth your time.</description>
+    </item>
     <item>
       <title>Engineering Reading — 10 October 2026</title>
       <link>https://news.maahol.com/eng-blogs/2026-10-10.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/data/2026-09-22.html</guid>
       <pubDate>Tue, 22 Sep 2026 08:00:00 +0000</pubDate>
       <description>55 new posts across 8 database and data engineering sources — 8 worth your time.</description>
-    </item>
-    <item>
-      <title>Security Weekly Digest — 22 September 2026</title>
-      <link>https://news.maahol.com/security-news/2026-09-22.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/security-news/2026-09-22.html</guid>
-      <pubDate>Tue, 22 Sep 2026 08:00:00 +0000</pubDate>
-      <description>6 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
     </item>
 </channel></rss>
