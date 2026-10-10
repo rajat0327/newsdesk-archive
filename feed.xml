@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Fri, 09 Oct 2026 09:32:07 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 10 Oct 2026 08:45:19 +0000</lastBuildDate>
+    <item>
+      <title>Engineering Reading — 10 October 2026</title>
+      <link>https://news.maahol.com/eng-blogs/2026-10-10.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/eng-blogs/2026-10-10.html</guid>
+      <pubDate>Sat, 10 Oct 2026 08:00:00 +0000</pubDate>
+      <description>18 new posts across 8 engineering blogs — 7 worth your time.</description>
+    </item>
     <item>
       <title>AI Tech Weekly Digest — 09 October 2026</title>
       <link>https://news.maahol.com/ai/2026-10-09.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/security-news/2026-09-22.html</guid>
       <pubDate>Tue, 22 Sep 2026 08:00:00 +0000</pubDate>
       <description>6 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
-    </item>
-    <item>
-      <title>Fintech &amp; Payments — 21 September 2026</title>
-      <link>https://news.maahol.com/fintech/2026-09-21.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-09-21.html</guid>
-      <pubDate>Mon, 21 Sep 2026 08:00:00 +0000</pubDate>
-      <description>63 new posts across 4 fintech and payments sources — 7 worth your time.</description>
     </item>
 </channel></rss>
