@@ -39,20 +39,6 @@
   <a href="feed.xml">RSS</a></div>
 <div class="feed">
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=open-source&amp;g=Security" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Security</a>
-  <h3><a href="https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html" rel="noopener nofollow">CISA Flags Linux Kernel Vulnerabilities</a></h3>
-  <p>CISA added three Linux kernel flaws (CVE-2025-39682, CVE-2026-53266, CVE-2025-39964) to its Known Exploited Vulnerabilities catalog on September 19, 2026, with Red Hat confirming active exploitation. These critical and high-severity bugs, already patched, could lead to denial-of-service, privilege escalation, or data corruption. Federal agencies were given a three-day deadline to patch by September 21, 2026.</p>
-  <div class="why"><b>Why it matters</b> — Organizations using affected Linux kernel versions must immediately apply patches to prevent potential remote code execution, privilege escalation, or denial-of-service attacks.</div>
-  <p class="src">The Hacker News &middot; 02 October 2026 &middot; <a href="https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html" rel="noopener nofollow" aria-label="Read the original: CISA Flags Linux Kernel Vulnerabilities">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=open-source&amp;g=Security" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Security</a>
-  <h3><a href="https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/" rel="noopener nofollow">AI Agent Exploits Zammad Zero-Days</a></h3>
-  <p>Two zero-day vulnerabilities (CVE-2026-102489 and CVE-2026-102490) in the open-source Zammad ticketing system were chained by an autonomous AI agent to breach the Dutch Institute for Vulnerability Disclosure (DIVD). This allowed session hijacking, remote code execution, and privilege escalation to root, leading to data exfiltration.</p>
-  <div class="why"><b>Why it matters</b> — Organizations using Zammad must immediately upgrade to version 7 or take instances offline to prevent AI-driven attacks that can lead to root compromise and data theft.</div>
-  <p class="src">bleepingcomputer.com &middot; 02 October 2026 &middot; <a href="https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/" rel="noopener nofollow" aria-label="Read the original: AI Agent Exploits Zammad Zero-Days">Read the original &rarr;</a></p>
-</div>
-<div class="item">
   <a class="tag tag-link" href="../search.html?c=open-source&amp;g=Supply%20Chain" style="--tc:#f778ba"><i style="background:#f778ba"></i>Supply Chain</a>
   <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/" rel="noopener nofollow">npm &#x27;Shai-Hulud&#x27; Worm Compromises Packages</a></h3>
   <p>Security researchers identified an active supply chain attack involving the &#x27;ChainDrop&#x27; / &#x27;Shai-Hulud&#x27; malware family, which compromised over 1,300 npm package versions, including Keyv and related caching libraries. The malware steals developer credentials and self-propagates by republishing modified packages.</p>
@@ -72,6 +58,20 @@
   <p>The Linux kernel maintainers released eight stable kernel versions simultaneously to address a single vulnerability (CVE-2026-80590) that can cause a kernel panic. The vulnerability has been present in the codebase since Linux 2.6.27, affecting long-term stable releases spanning many years.</p>
   <div class="why"><b>Why it matters</b> — A single legacy vulnerability can require coordinated emergency releases across nearly a decade of stable branches, illustrating the massive maintenance tail of core open-source infrastructure.</div>
   <p class="src">LWN &middot; 28 August 2026 &middot; <a href="https://lwn.net/Articles/1091118/" rel="noopener nofollow" aria-label="Read the original: Eight stable kernels with fix for a single vulnerability">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=open-source&amp;g=Supply%20Chain" style="--tc:#f778ba"><i style="background:#f778ba"></i>Supply Chain</a>
+  <h3><a href="https://snyk.io/blog/inside-keyv-npm-compromise-preinstall-malware-trusted-provenance-ide-hooks/" rel="noopener nofollow">Keyv npm Packages Compromised in Attack</a></h3>
+  <p>A supply chain attack, starting August 4, 2026, compromised widely used npm packages like &#x27;keyv&#x27; and &#x27;cacheable&#x27; through a GitHub account takeover, injecting a self-propagating credential-stealing worm. This &#x27;Mini Shai-Hulud&#x27; variant affected hundreds of packages with over 500 million weekly downloads.</p>
+  <div class="why"><b>Why it matters</b> — Engineers must audit dependency trees, pin to versions published before August 4, 2026, and rotate all potentially exposed credentials to mitigate the spread of credential-stealing malware.</div>
+  <p class="src">Snyk &middot; 04 September 2026 &middot; <a href="https://snyk.io/blog/inside-keyv-npm-compromise-preinstall-malware-trusted-provenance-ide-hooks/" rel="noopener nofollow" aria-label="Read the original: Keyv npm Packages Compromised in Attack">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=open-source&amp;g=Supply%20Chain" style="--tc:#f778ba"><i style="background:#f778ba"></i>Supply Chain</a>
+  <h3><a href="https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html" rel="noopener nofollow">CrowdSec Repos Copied via TanStack Attack</a></h3>
+  <p>CrowdSec disclosed on September 18, 2026, that approximately 170 of its private GitHub repositories were copied on May 22, 2026, using a former employee&#x27;s compromised GitHub OAuth token. The compromise stemmed from a May supply chain attack on TanStack npm packages that stole credentials from developer machines.</p>
+  <div class="why"><b>Why it matters</b> — Organizations must promptly revoke departing employee access and audit for long-lived credentials, as a past supply chain attack can lead to data exfiltration months later.</div>
+  <p class="src">thehackernews.com &middot; 25 September 2026 &middot; <a href="https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html" rel="noopener nofollow" aria-label="Read the original: CrowdSec Repos Copied via TanStack Attack">Read the original &rarr;</a></p>
 </div>
 </div>
 <div class="morelink"><a href="../search.html?c=open-source">Browse all 63 stories in this channel &rarr;</a><span>58 older stories</span></div>

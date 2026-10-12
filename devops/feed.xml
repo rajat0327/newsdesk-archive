@@ -3,7 +3,14 @@
   <title>Newsdesk — DevOps Weekly Digest</title>
   <link>https://news.maahol.com/devops/</link>
   <description>Engineering Edition</description>
-  <lastBuildDate>Sun, 11 Oct 2026 09:16:14 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 09:33:33 +0000</lastBuildDate>
+    <item>
+      <title>DevOps Weekly Digest — 12 October 2026</title>
+      <link>https://news.maahol.com/devops/2026-10-12.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-10-12.html</guid>
+      <pubDate>Mon, 12 Oct 2026 08:00:00 +0000</pubDate>
+      <description>GitHub overhauls Git infrastructure to handle 5x surge in AI agent-driven commits.</description>
+    </item>
     <item>
       <title>DevOps Weekly Digest — 05 October 2026</title>
       <link>https://news.maahol.com/devops/2026-10-05.html</link>
