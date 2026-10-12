@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 12 Oct 2026 09:40:31 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 12 Oct 2026 09:41:05 +0000</lastBuildDate>
     <item>
       <title>DevOps Weekly Digest — 12 October 2026</title>
       <link>https://news.maahol.com/devops/2026-10-12.html</link>
       <guid isPermaLink="true">https://news.maahol.com/devops/2026-10-12.html</guid>
       <pubDate>Mon, 12 Oct 2026 08:00:00 +0000</pubDate>
       <description>GitHub overhauls Git infrastructure to handle 5x surge in AI agent-driven commits.</description>
+    </item>
+    <item>
+      <title>Fintech &amp; Payments — 12 October 2026</title>
+      <link>https://news.maahol.com/fintech/2026-10-12.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-10-12.html</guid>
+      <pubDate>Mon, 12 Oct 2026 08:00:00 +0000</pubDate>
+      <description>63 new posts across 3 fintech and payments sources — 6 worth your time.</description>
     </item>
     <item>
       <title>Marketing — 12 October 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/open-source/2026-09-25.html</guid>
       <pubDate>Fri, 25 Sep 2026 08:00:00 +0000</pubDate>
       <description>28 new posts across 3 open source sources — 9 worth your time.</description>
-    </item>
-    <item>
-      <title>HR &amp; Payroll Tech — 24 September 2026</title>
-      <link>https://news.maahol.com/hr-tech/2026-09-24.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/hr-tech/2026-09-24.html</guid>
-      <pubDate>Thu, 24 Sep 2026 08:00:00 +0000</pubDate>
-      <description>39 new posts across 4 HR and SuccessFactors sources — 11 worth your time.</description>
     </item>
 </channel></rss>
