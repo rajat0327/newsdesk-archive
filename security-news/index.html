@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Security Weekly Digest — Exploits, Breaches &amp; Advisories</title>
-<meta name="description" content="Exploits, Breaches &amp; Advisories. 80 stories across 12 issues.">
+<meta name="description" content="Exploits, Breaches &amp; Advisories. 86 stories across 13 issues.">
 <meta property="og:title" content="Security Weekly Digest — Exploits, Breaches &amp; Advisories">
-<meta property="og:description" content="Exploits, Breaches &amp; Advisories. 80 stories across 12 issues.">
+<meta property="og:description" content="Exploits, Breaches &amp; Advisories. 86 stories across 13 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#d9552f">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Security Weekly Digest</h1>
   <p class="lede">Exploits, Breaches &amp; Advisories. Published every
      <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>80</b> stories</span>
-     <span><b>12</b> issues</span>
+  <p class="stats"><span><b>86</b> stories</span>
+     <span><b>13</b> issues</span>
      <span><b>9</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Breaches" style="--tc:#f778ba"><i style="background:#f778ba"></i>Breaches</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Supply%20Chain" style="--tc:#e3b341"><i style="background:#e3b341"></i>Supply Chain</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Cloud%20%26%20SaaS" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud &amp; SaaS</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Vulnerabilities" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vulnerabilities</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Threat%20Actors" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Threat Actors</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Ransomware" style="--tc:#f778ba"><i style="background:#f778ba"></i>Ransomware</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Policy%20%26%20Compliance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Policy &amp; Compliance</a> <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Tooling" style="--tc:#3fb950"><i style="background:#3fb950"></i>Tooling</a></p>
 </div>
@@ -40,6 +40,13 @@
 <div class="feed">
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h3><a href="https://thehackernews.com/" rel="noopener nofollow">SonicWall SMA1000 Vulnerability Exploited</a></h3>
+  <p>Threat actors began actively exploiting CVE-2026-102255, a critical pre-authenticated server-side request forgery (SSRF) vulnerability in SonicWall Secure Mobile Access (SMA) 1000 appliances, within days of its public disclosure on October 6, 2026. SonicWall released patches for versions 12.4.3-03670 and 12.5.0-03082, urging customers to update their 6210, 7210, and 8200v models.</p>
+  <div class="why"><b>Why it matters</b> — Organizations using affected SonicWall SMA1000 appliances must immediately apply patches and verify system integrity, as attackers are rapidly exploiting this critical vulnerability to gain unauthorized access.</div>
+  <p class="src">thehackernews.com &middot; 13 October 2026 &middot; <a href="https://thehackernews.com/" rel="noopener nofollow" aria-label="Read the original: SonicWall SMA1000 Vulnerability Exploited">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
   <h3><a href="https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html" rel="noopener nofollow">Langflow and Rails Flaws Actively Exploited</a></h3>
   <p>Threat actors are actively exploiting critical vulnerabilities in Langflow (CVE-2026-0768) and Ruby on Rails (CVE-2026-66066) as of September 1, 2026. The Langflow flaw allows arbitrary Python code execution, while the Rails vulnerability enables unauthenticated attackers to read arbitrary files and potentially achieve remote code execution, leading to credential harvesting and command-and-control activity.</p>
   <div class="why"><b>Why it matters</b> — Organizations using Langflow or Ruby on Rails with Active Storage and libvips must immediately patch to prevent unauthenticated remote code execution and data exposure.</div>
@@ -47,41 +54,35 @@
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-102490" rel="noopener nofollow">CVE-2026-102490: Zammad GmbH</a></h3>
-  <p>Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.</p>
-  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.4 (CRITICAL). CISA remediation deadline 05 Oct 2026 — already passed.</div>
-  <p class="src">CISA KEV &middot; 06 October 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-102490" rel="noopener nofollow" aria-label="Read the original: CVE-2026-102490: Zammad GmbH">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Ransomware" style="--tc:#f778ba"><i style="background:#f778ba"></i>Ransomware</a>
-  <h3><a href="https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html" rel="noopener nofollow">China-Linked Storm-1175 Deploys StormEncryptor Ransomware</a></h3>
-  <p>Microsoft disclosed that China-linked threat actor Storm-1175 is deploying a new ransomware strain, StormEncryptor, marking a shift from their previous use of Medusa ransomware. Initial access likely involves exploiting CVE-2026-18577 in N-able N-central, with rapid progression from access to encryption.</p>
-  <div class="why"><b>Why it matters</b> — Organizations using N-able N-central must immediately patch CVE-2026-18577 and implement robust monitoring for rapid post-compromise activity to defend against Storm-1175.</div>
-  <p class="src">The Hacker News &middot; 11 August 2026 &middot; <a href="https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html" rel="noopener nofollow" aria-label="Read the original: China-Linked Storm-1175 Deploys StormEncryptor Ransomware">Read the original &rarr;</a></p>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22894" rel="noopener nofollow">CVE-2023-22894: Strapi</a></h3>
+  <p>Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. This vulnerability can be chained with CVE-2023-22621 to achieve remote code execution.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 4.9 (MEDIUM). CISA remediation deadline 11 Oct 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 13 October 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-22894" rel="noopener nofollow" aria-label="Read the original: CVE-2023-22894: Strapi">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030" rel="noopener nofollow">CVE-2026-63030: WordPress Core</a></h3>
-  <p>WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.</p>
-  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 24 Jul 2026 — already passed.</div>
-  <p class="src">CISA KEV &middot; 26 July 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030" rel="noopener nofollow" aria-label="Read the original: CVE-2026-63030: WordPress Core">Read the original &rarr;</a></p>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-3199" rel="noopener nofollow">CVE-2021-3199: ONLYOFFICE Docs</a></h3>
+  <p>ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 11 Oct 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 13 October 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-3199" rel="noopener nofollow" aria-label="Read the original: CVE-2021-3199: ONLYOFFICE Docs">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow">CVE-2026-18577: N-able N-central</a></h3>
-  <p>N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incomplete patch for CVE-2026-18556.</p>
-  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.2 (HIGH). CISA remediation deadline 06 Aug 2026 — 2 days out.</div>
-  <p class="src">CISA KEV &middot; 04 August 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18577" rel="noopener nofollow" aria-label="Read the original: CVE-2026-18577: N-able N-central">Read the original &rarr;</a></p>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2015-3306" rel="noopener nofollow">CVE-2015-3306: ProFTPD</a></h3>
+  <p>ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 10.0 (CRITICAL). CISA remediation deadline 11 Oct 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 13 October 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2015-3306" rel="noopener nofollow" aria-label="Read the original: CVE-2015-3306: ProFTPD">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=security-news">Browse all 80 stories in this channel &rarr;</a><span>75 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=security-news">Browse all 86 stories in this channel &rarr;</a><span>81 older stories</span></div>
 
-<p class="signoff">The ongoing dance between progress and prudence.</p>
+<p class="signoff">The long tail of vulnerabilities continues.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-10-13.html"><span class="d">13 October 2026</span><span class="h">5 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">6 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-06.html"><span class="d">06 October 2026</span><span class="h">4 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">4 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-29.html"><span class="d">29 September 2026</span><span class="h">7 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">9 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-22.html"><span class="d">22 September 2026</span><span class="h">6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</span><span class="n">5 stories &rarr;</span></a></li>
