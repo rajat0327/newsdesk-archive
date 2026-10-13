@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Databases &amp; Data — 13 October 2026</title>
+<meta name="description" content="52 new posts across 9 database and data engineering sources — 9 worth your time.">
+<meta property="og:title" content="Databases &amp; Data — 13 October 2026">
+<meta property="og:description" content="52 new posts across 9 database and data engineering sources — 9 worth your time.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#c22ebe">
+<link rel="canonical" href="https://news.maahol.com/data/2026-10-13.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<link rel="stylesheet" href="../style.css">
+<style>:root{--accent:#c22ebe}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group" data-here><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe" aria-current="page">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#c22ebe;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Databases &amp; Data</a></p>
+  <h1>13 October 2026</h1>
+  <p class="lede">52 new posts across 9 database and data engineering sources — 9 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Databases &amp; Data,
+     9 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://clickhouse.com/blog/chasing-32ms-tail-latency-clickhouse" rel="noopener nofollow">Chasing that 32 ms tail latency in ClickHouse</a></h2>
+  <p>An investigation into 32ms tail latency spikes in ClickHouse revealed that idle periods caused TCP congestion windows to reset. Small, unbatched metadata packets in the Native protocol were overflowing these windows, a problem eventually solved by batching the packets.</p>
+  <div class="why"><b>Why it matters</b> — TCP congestion windows can be reset by idle periods, causing latency spikes if protocol metadata isn&#x27;t batched.</div>
+  <p class="src">ClickHouse &middot; 13 October 2026 &middot; <a href="https://clickhouse.com/blog/chasing-32ms-tail-latency-clickhouse" rel="noopener nofollow" aria-label="Read the original: Chasing that 32 ms tail latency in ClickHouse">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://postgr.es/p/9xR" rel="noopener nofollow">Alexander Ioffe: Why is my Whale Query 1000x Slower in Prod? Databases hate skew, each hates it differently</a></h2>
+  <p>A comparison of how Postgres and SQL Server handle extreme data skew, where 10% of customers own 80% of data. While a single session setting can rescue Postgres performance, SQL Server requires a different access-path fix to avoid a 1,000x slowdown.</p>
+  <div class="why"><b>Why it matters</b> — Data skew fixes are engine-specific; a session setting in Postgres might require a structural access-path change in SQL Server.</div>
+  <p class="src">Planet PostgreSQL &middot; 13 October 2026 &middot; <a href="https://postgr.es/p/9xR" rel="noopener nofollow" aria-label="Read the original: Alexander Ioffe: Why is my Whale Query 1000x Slower in Prod? Databases hate skew, each hates it differently">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
+  <h2><a href="https://planetscale.com/blog/what-gets-toasted-in-postgres" rel="noopener nofollow">What gets TOASTed in Postgres</a></h2>
+  <p>A deep dive into the TOAST mechanism in Postgres, demonstrating the exact 2,001-byte threshold that triggers LZ4 compression. The post explains how Postgres moves large values out of the main row to maintain performance and storage efficiency.</p>
+  <div class="why"><b>Why it matters</b> — The 2KB threshold is the hard limit where Postgres transitions from standard row storage to TOAST compression.</div>
+  <p class="src">PlanetScale &middot; 13 October 2026 &middot; <a href="https://planetscale.com/blog/what-gets-toasted-in-postgres" rel="noopener nofollow" aria-label="Read the original: What gets TOASTed in Postgres">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h2><a href="https://postgr.es/p/9xm" rel="noopener nofollow">Christophe Pettus: All Your GUCs in a Row: array_nulls (Special Update)</a></h2>
+  <p>A warning regarding the removal of the `array_nulls` parameter in PostgreSQL 20. Because `pg_dump` does not explicitly set this parameter, restoring backups into databases where it was previously disabled can lead to silent corruption of text arrays.</p>
+  <div class="why"><b>Why it matters</b> — Configuration parameters removed in new versions can cause silent data corruption during logical restores if the dump utility assumes defaults.</div>
+  <p class="src">Planet PostgreSQL &middot; 13 October 2026 &middot; <a href="https://postgr.es/p/9xm" rel="noopener nofollow" aria-label="Read the original: Christophe Pettus: All Your GUCs in a Row: array_nulls (Special Update)">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
+  <h2><a href="https://postgr.es/p/9xa" rel="noopener nofollow">Igor Suhorukov: Vectorized Query Execution in PostgreSQL 19: Arrow, ORCA and Flight SQL in a PostgreSQL Extension</a></h2>
+  <p>An analysis of porting Apache Cloudberry to PostgreSQL 19, identifying the row-based executor as the primary bottleneck. Even with MPP implementations, the overhead of passing every value through the function manager (fmgr) prevents Postgres from matching the speed of columnar engines.</p>
+  <div class="why"><b>Why it matters</b> — Row-based executors incur significant overhead via the function manager that limits performance regardless of the underlying distribution architecture.</div>
+  <p class="src">Planet PostgreSQL &middot; 13 October 2026 &middot; <a href="https://postgr.es/p/9xa" rel="noopener nofollow" aria-label="Read the original: Igor Suhorukov: Vectorized Query Execution in PostgreSQL 19: Arrow, ORCA and Flight SQL in a PostgreSQL Extension">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h2><a href="https://duckdb.org/2026/10/07/view-only-mode.html" rel="noopener nofollow">A DuckDB Database with No Data in It</a></h2>
+  <p>An architectural pattern using DuckDB where the database file contains no actual data, only view definitions. This allows the database to act as a lightweight metadata layer (only a few hundred kilobytes) pointing to massive Parquet datasets on object storage.</p>
+  <div class="why"><b>Why it matters</b> — Decoupling the database file from the data allows for &#x27;zero-byte&#x27; databases that act as portable catalogs for cloud storage.</div>
+  <p class="src">DuckDB &middot; 13 October 2026 &middot; <a href="https://duckdb.org/2026/10/07/view-only-mode.html" rel="noopener nofollow" aria-label="Read the original: A DuckDB Database with No Data in It">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://clickhouse.com/blog/clera-migrates-to-clickhouse-managed-postgres" rel="noopener nofollow">How we migrated Clera’s 500 GB production database to ClickHouse Managed Postgres overnight</a></h2>
+  <p>Details the overnight migration of a 500 GB production database with over 500 tables to a managed Postgres environment. The transition successfully reduced CPU utilization from a constant 100% to a stable 10-20% range.</p>
+  <div class="why"><b>Why it matters</b> — Infrastructure-level migrations can resolve persistent performance bottlenecks that query-level optimizations cannot, specifically reclaiming up to 80% of CPU capacity.</div>
+  <p class="src">ClickHouse &middot; 13 October 2026 &middot; <a href="https://clickhouse.com/blog/clera-migrates-to-clickhouse-managed-postgres" rel="noopener nofollow" aria-label="Read the original: How we migrated Clera’s 500 GB production database to ClickHouse Managed Postgres overnight">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://www.databricks.com/blog/lakehouse-better-data-warehouse-2026-benchmarks-and-proof" rel="noopener nofollow">Lakehouse Outperforms Warehouses in 2026 Benchmarks</a></h2>
+  <p>Databricks&#x27; 2026 benchmarks show its Lakehouse platform is 77% faster since 2022, with customers reporting 90% query performance improvements and 25-60% cost reductions after migrating. The Lakehouse now matches or exceeds traditional data warehouses for SQL workloads, offering sub-second p50 latency on 1-TB workloads at 74% lower cost than classic compute.</p>
+  <div class="why"><b>Why it matters</b> — Data teams can achieve superior SQL query performance and significant cost savings by adopting lakehouse architectures, eliminating the need for separate data copies for different workloads.</div>
+  <p class="src">databricks.com &middot; 13 October 2026 &middot; <a href="https://www.databricks.com/blog/lakehouse-better-data-warehouse-2026-benchmarks-and-proof" rel="noopener nofollow" aria-label="Read the original: Lakehouse Outperforms Warehouses in 2026 Benchmarks">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
+  <h2><a href="https://www.cockroachlabs.com/blog/pragmatic-engineer-podcast-recap-peter-mattis/" rel="noopener nofollow">CockroachDB CTO on Distributed Database Design</a></h2>
+  <p>Peter Mattis, Cockroach Labs CTO, discussed B-trees, automatic sharding, and strong consistency via Raft in distributed databases. He highlighted the latency tradeoff with cross-region replication and advised against chatty read-write patterns, emphasizing batching reads in parallel.</p>
+  <div class="why"><b>Why it matters</b> — Understanding the fundamental design choices like automatic sharding and strong consistency, and their inherent latency trade-offs, is crucial for engineers building and operating mission-critical distributed SQL applications.</div>
+  <p class="src">Cockroach Labs &middot; 13 October 2026 &middot; <a href="https://www.cockroachlabs.com/blog/pragmatic-engineer-podcast-recap-peter-mattis/" rel="noopener nofollow" aria-label="Read the original: CockroachDB CTO on Distributed Database Design">Read the original &rarr;</a></p>
+</div>
+</div>
+<p class="signoff">Still optimizing, still migrating, still debating architectures. The work persists.</p>
+
+<div class="cta">
+  <h3>9 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-10-06.html">&larr; Previous issue</a>
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../provenance.html">Where this comes from</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>
