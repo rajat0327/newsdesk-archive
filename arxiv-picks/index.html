@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>arXiv Picks — Papers Worth Reading</title>
-<meta name="description" content="Papers Worth Reading. 60 stories across 10 issues.">
+<meta name="description" content="Papers Worth Reading. 66 stories across 11 issues.">
 <meta property="og:title" content="arXiv Picks — Papers Worth Reading">
-<meta property="og:description" content="Papers Worth Reading. 60 stories across 10 issues.">
+<meta property="og:description" content="Papers Worth Reading. 66 stories across 11 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#8a5cd6">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>arXiv Picks</h1>
   <p class="lede">Papers Worth Reading. Published every
      <b>Wednesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>60</b> stories</span>
-     <span><b>10</b> issues</span>
+  <p class="stats"><span><b>66</b> stories</span>
+     <span><b>11</b> issues</span>
      <span><b>8</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Training &amp; Efficiency</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="--tc:#f778ba"><i style="background:#f778ba"></i>Multimodal</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Evaluation%20%26%20Benchmarks" style="--tc:#3fb950"><i style="background:#3fb950"></i>Evaluation &amp; Benchmarks</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Safety%20%26%20Alignment" style="--tc:#f78166"><i style="background:#f78166"></i>Safety &amp; Alignment</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a> <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Research" style="--tc:#8b949e"><i style="background:#8b949e"></i>Research</a></p>
 </div>
@@ -46,42 +46,43 @@
   <p class="src">arXiv &middot; 29 July 2026 &middot; <a href="https://arxiv.org/abs/2607.21553" rel="noopener nofollow" aria-label="Read the original: SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Training &amp; Efficiency</a>
-  <h3><a href="https://arxiv.org/abs/2610.07767" rel="noopener nofollow">TRACE: Rollout-Guided Quantization-Aware Training for FP4 Reinforcement Learning of MoE Language Models</a></h3>
-  <p>This paper addresses the substantial computation and memory overheads in reinforcement learning (RL) for post-training large language models (LLMs), particularly during rollout generation. It identifies a key limitation in existing FP4 RL methods, which optimize quantization accuracy on training and rollout paths independently. The proposed TRACE method aims to directly reduce these overheads through rollout-guided quantization-aware training.</p>
-  <div class="why"><b>Why it matters</b> — Directly optimizing quantization accuracy for both training and rollout paths in FP4 RL can significantly reduce computational and memory overheads for post-training LLMs, improving efficiency.</div>
-  <p class="src">arXiv &middot; 07 October 2026 &middot; <a href="https://arxiv.org/abs/2610.07767" rel="noopener nofollow" aria-label="Read the original: TRACE: Rollout-Guided Quantization-Aware Training for FP4 Reinforcement Learning of MoE Language Models">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a>
+  <h3><a href="https://arxiv.org/abs/2610.13361" rel="noopener nofollow">AgentSWE: Can Coding Agents Build the Agent You Actually Want?</a></h3>
+  <p>This paper introduces AgentSWE, a new benchmark designed to test whether coding agents faithfully serve user requirements, rather than merely appearing to. It addresses a critical assumption in the deployment of software-producing agents, which is currently untested by existing benchmarks.</p>
+  <div class="why"><b>Why it matters</b> — A new benchmark for evaluating the faithfulness of coding agents, addressing the critical assumption that they will genuinely serve user requirements rather than just appearing to.</div>
+  <p class="src">arXiv &middot; 14 October 2026 &middot; <a href="https://arxiv.org/abs/2610.13361" rel="noopener nofollow" aria-label="Read the original: AgentSWE: Can Coding Agents Build the Agent You Actually Want?">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Evaluation%20%26%20Benchmarks" style="--tc:#3fb950"><i style="background:#3fb950"></i>Evaluation &amp; Benchmarks</a>
-  <h3><a href="https://arxiv.org/abs/2610.04292" rel="noopener nofollow">LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures</a></h3>
-  <p>This paper introduces LMBuild, a new benchmark for evaluating LLM agents that generate 3D structures. It addresses the gap in existing evaluations, which primarily focus on geometric quality while overlooking the crucial aspects of physical realizability and intended function. LMBuild aims to assess whether generated objects can actually be built and perform their functions in the physical world.</p>
-  <div class="why"><b>Why it matters</b> — Evaluating LLM agents for 3D structure generation requires assessing buildability and functionality, not just geometric quality, to ensure practical applicability and reveal real-world limitations.</div>
-  <p class="src">arXiv &middot; 07 October 2026 &middot; <a href="https://arxiv.org/abs/2610.04292" rel="noopener nofollow" aria-label="Read the original: LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a>
+  <h3><a href="https://arxiv.org/abs/2610.17953" rel="noopener nofollow">Agent-Reflex: Teaching Language Agents to Act Reflectively</a></h3>
+  <p>This work proposes Agent-Reflex, a general training framework for language agents to learn reflection and failure recovery. It addresses the limitations of existing methods in providing supervision for agents operating in real deployments with noisy feedback and user interventions.</p>
+  <div class="why"><b>Why it matters</b> — A general training framework for reflection learning and failure recovery can significantly improve the robustness and adaptability of language agents in real-world deployments with noisy feedback and user interventions.</div>
+  <p class="src">arXiv &middot; 14 October 2026 &middot; <a href="https://arxiv.org/abs/2610.17953" rel="noopener nofollow" aria-label="Read the original: Agent-Reflex: Teaching Language Agents to Act Reflectively">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a>
-  <h3><a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow">Kimi K3: Open Frontier Intelligence</a></h3>
-  <p>This paper introduces Kimi K3, a massive 2.8T parameter Mixture-of-Experts model with 104 billion activated parameters, native vision capabilities, and a 1-million-token context window. Its architecture incorporates Kimi Delta Attention and Attention Residuals to enhance information flow across sequence length and model depth, alongside Stable LatentMoE for efficient expert activation.</p>
-  <div class="why"><b>Why it matters</b> — It provides insight into the architectural innovations and scaling strategies behind a new frontier-level multimodal LLM, detailing specific attention mechanisms and MoE techniques.</div>
-  <p class="src">arXiv &middot; 29 July 2026 &middot; <a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow" aria-label="Read the original: Kimi K3: Open Frontier Intelligence">Read the original &rarr;</a></p>
+  <h3><a href="https://arxiv.org/abs/2610.16794" rel="noopener nofollow">TPPO: Tracking-Value PPO For Language Model Reasoning</a></h3>
+  <p>This paper addresses the challenge of standard PPO critics failing to track value evolution under sparse terminal rewards in language model reasoning. It analyzes the relationship between successive prefix values, showing they admit a Bayesian formulation to model this evolution.</p>
+  <div class="why"><b>Why it matters</b> — Analyzing the relationship between successive prefix values can lead to improved PPO critics for language model reasoning, especially when dealing with sparse terminal rewards.</div>
+  <p class="src">arXiv &middot; 14 October 2026 &middot; <a href="https://arxiv.org/abs/2610.16794" rel="noopener nofollow" aria-label="Read the original: TPPO: Tracking-Value PPO For Language Model Reasoning">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a>
-  <h3><a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow">DiffusionGemma Technical Report</a></h3>
-  <p>DiffusionGemma introduces discrete diffusion to LLM decoding by iteratively refining blocks of 256 tokens in parallel. Converted directly from pre-trained Gemma weights rather than trained from scratch, the model bypasses sequential token-by-token autoregressive decoding bottlenecks while maintaining generation quality.</p>
-  <div class="why"><b>Why it matters</b> — Adapting autoregressive model weights into block-parallel discrete diffusion bypasses sequential KV-cache bottlenecks without requiring full pre-training from scratch.</div>
-  <p class="src">arXiv &middot; 05 August 2026 &middot; <a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow" aria-label="Read the original: DiffusionGemma Technical Report">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a>
+  <h3><a href="https://arxiv.org/abs/2610.14709" rel="noopener nofollow">Vela: User Behavior as Supervision Sparks LLM Intelligence</a></h3>
+  <p>This work highlights that current LLMs, trained on static text, lack the &quot;user dimension&quot; intelligence needed for applications acting on long-term user behavior histories. It proposes using user behavior as supervision to infer preferences, intent, and future actions from weeks to years of data.</p>
+  <div class="why"><b>Why it matters</b> — Training LLMs with long-term user behavior data can enhance their ability to infer user preferences and intent, crucial for personalized applications like assistants and recommendation systems.</div>
+  <p class="src">arXiv &middot; 14 October 2026 &middot; <a href="https://arxiv.org/abs/2610.14709" rel="noopener nofollow" aria-label="Read the original: Vela: User Behavior as Supervision Sparks LLM Intelligence">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=arxiv-picks">Browse all 60 stories in this channel &rarr;</a><span>55 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=arxiv-picks">Browse all 66 stories in this channel &rarr;</a><span>61 older stories</span></div>
 
-<p class="signoff">More complexity, more interesting failure modes.</p>
+<p class="signoff">It appears we have successfully automated the process of overthinking.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-10-14.html"><span class="d">14 October 2026</span><span class="h">20 papers shortlisted this week — most discussed: Thinking Inertia: LLMs Keep Thinking When Told Not To (218 upvotes).</span><span class="n">6 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-07.html"><span class="d">07 October 2026</span><span class="h">20 papers shortlisted this week — most discussed: Rethinking Cross-Tokenizer On-Policy Distillation: From Alignment Cove (68 upvotes).</span><span class="n">6 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-30.html"><span class="d">30 September 2026</span><span class="h">20 papers shortlisted this week — most discussed: Raven: The Harness of Harnesses for Composable Agentic Intelligence (244 upvotes).</span><span class="n">6 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-09-16.html"><span class="d">16 September 2026</span><span class="h">20 papers shortlisted this week — most discussed: Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation (628 upvotes).</span><span class="n">6 stories &rarr;</span></a></li>
