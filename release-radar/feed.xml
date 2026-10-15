@@ -3,7 +3,14 @@
   <title>Newsdesk — Release Radar</title>
   <link>https://news.maahol.com/release-radar/</link>
   <description>What Shipped This Week</description>
-  <lastBuildDate>Wed, 14 Oct 2026 08:00:17 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 15 Oct 2026 07:35:39 +0000</lastBuildDate>
+    <item>
+      <title>Release Radar — 15 October 2026</title>
+      <link>https://news.maahol.com/release-radar/2026-10-15.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-10-15.html</guid>
+      <pubDate>Thu, 15 Oct 2026 08:00:00 +0000</pubDate>
+      <description>46 releases across 31 tracked projects, including 9 with security fixes.</description>
+    </item>
     <item>
       <title>Release Radar — 08 October 2026</title>
       <link>https://news.maahol.com/release-radar/2026-10-08.html</link>
