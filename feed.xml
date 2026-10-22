@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Thu, 22 Oct 2026 07:46:55 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 22 Oct 2026 07:54:37 +0000</lastBuildDate>
+    <item>
+      <title>HR &amp; Payroll Tech — 22 October 2026</title>
+      <link>https://news.maahol.com/hr-tech/2026-10-22.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/hr-tech/2026-10-22.html</guid>
+      <pubDate>Thu, 22 Oct 2026 08:00:00 +0000</pubDate>
+      <description>42 new posts across 5 HR and SuccessFactors sources — 11 worth your time.</description>
+    </item>
     <item>
       <title>Release Radar — 22 October 2026</title>
       <link>https://news.maahol.com/release-radar/2026-10-22.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/design/2026-10-04.html</guid>
       <pubDate>Sun, 04 Oct 2026 08:00:00 +0000</pubDate>
       <description>21 new posts across 4 design and research sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>India Tech Weekly — 04 October 2026</title>
-      <link>https://news.maahol.com/india-tech/2026-10-04.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/india-tech/2026-10-04.html</guid>
-      <pubDate>Sun, 04 Oct 2026 08:00:00 +0000</pubDate>
-      <description>India's tech landscape sees major shifts with new UPI charges, deep tech funding, and AI-driven job restructuring in GCCs.</description>
     </item>
 </channel></rss>
