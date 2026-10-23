@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Fri, 23 Oct 2026 07:53:13 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 23 Oct 2026 07:54:58 +0000</lastBuildDate>
+    <item>
+      <title>AI Tech Weekly Digest — 23 October 2026</title>
+      <link>https://news.maahol.com/ai/2026-10-23.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/ai/2026-10-23.html</guid>
+      <pubDate>Fri, 23 Oct 2026 08:00:00 +0000</pubDate>
+      <description>76 new posts across 8 AI lab and practitioner sources — 7 worth your time.</description>
+    </item>
     <item>
       <title>Mobile — 23 October 2026</title>
       <link>https://news.maahol.com/mobile/2026-10-23.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/security-news/2026-10-06.html</guid>
       <pubDate>Tue, 06 Oct 2026 08:00:00 +0000</pubDate>
       <description>4 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
-    </item>
-    <item>
-      <title>DevOps Weekly Digest — 05 October 2026</title>
-      <link>https://news.maahol.com/devops/2026-10-05.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/devops/2026-10-05.html</guid>
-      <pubDate>Mon, 05 Oct 2026 08:00:00 +0000</pubDate>
-      <description>Cloudflare container flaw exposes cross-tenant data, forcing critical isolation review for multi-tenant cloud environments.</description>
     </item>
 </channel></rss>
