@@ -31,8 +31,8 @@
      read comes straight from an API rather than a language model.
      <a class="more" href="about.html">How it works&nbsp;&rarr;</a></p>
   <p class="stats"><span><b>20</b> channels</span>
-     <span><b>238</b> issues</span>
-     <span><b>1634</b> stories</span>
+     <span><b>239</b> issues</span>
+     <span><b>1641</b> stories</span>
      <span><b>31</b> projects tracked</span></p>
 </div>
 
@@ -41,10 +41,10 @@
 <div class="split">
 <div class="lead">
   <a class="tag tag-link" href="search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
-  <h3><a href="https://thehackernews.com/" rel="noopener nofollow">SonicWall SMA1000 Vulnerability Exploited</a></h3>
-  <p>Threat actors began actively exploiting CVE-2026-102255, a critical pre-authenticated server-side request forgery (SSRF) vulnerability in SonicWall Secure Mobile Access (SMA) 1000 appliances, within days of its public disclosure on October 6, 2026. SonicWall released patches for versions 12.4.3-03670 and 12.5.0-03082, urging customers to update their 6210, 7210, and 8200v models.</p>
-  <div class="why"><b>Why it matters</b> &mdash; Organizations using affected SonicWall SMA1000 appliances must immediately apply patches and verify system integrity, as attackers are rapidly exploiting this critical vulnerability to gain unauthorized access.</div>
-  <p class="src"><a class="ch" href="security-news/">Security Weekly Digest</a> &middot; thehackernews.com &middot; <a href="https://thehackernews.com/" rel="noopener nofollow" aria-label="Read the original: SonicWall SMA1000 Vulnerability Exploited">Read the original &rarr;</a></p>
+  <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-105134" rel="noopener nofollow">CVE-2026-105134: AhsayCBS</a></h3>
+  <p>Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Confirmed exploited in the wild. CVSS 9.3 (CRITICAL). CISA remediation deadline 17 Oct 2026 — already passed.</div>
+  <p class="src"><a class="ch" href="security-news/">Security Weekly Digest</a> &middot; CISA KEV &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-105134" rel="noopener nofollow" aria-label="Read the original: CVE-2026-105134: AhsayCBS">Read the original &rarr;</a></p>
 </div>
   <div class="aside">
 <div class="aside-item">
@@ -108,26 +108,50 @@
   </div>
 </div>
 
+<div class="sec"><h2>Longform</h2><div class="rule"></div>
+  <span class="domlinks"><a href="eng-blogs/">Reading</a> &middot; <a href="craft/">Craft</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
+  <h3><a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener nofollow">The bridge to agent-scale Git infrastructure</a></h3>
+  <p>GitHub details its next-generation storage architecture designed to handle exponential Git traffic growth by moving repositories to a hybrid environment across local data centers and Azure. The post focuses on the technical challenge of a 25ms round trip and the architectural principles of minimizing coordination to maintain performance.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Minimize coordination to solve latency issues in geographically distributed storage systems.</div>
+  <p class="src"><a class="ch" href="eng-blogs/">Engineering Reading</a> &middot; GitHub &middot; <a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener nofollow" aria-label="Read the original: The bridge to agent-scale Git infrastructure">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=craft&amp;g=Testing%20%26%20Quality" style="--tc:#3fb950"><i style="background:#3fb950"></i>Testing &amp; Quality</a>
+  <h4><a href="https://martinfowler.com/articles/are-harnesses-worth-the-cost.html" rel="noopener nofollow">Are Harnesses Worth the Cost?</a></h4>
+  <p class="src"><a class="ch" href="craft/">Craft</a> &middot; Martin Fowler &middot; 17 October 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
+  <h4><a href="https://blog.cloudflare.com/obsessive-inference-optimization/" rel="noopener nofollow">Cutting our inference bill by 68% by being obsessive about optimization</a></h4>
+  <p class="src"><a class="ch" href="eng-blogs/">Reading</a> &middot; Cloudflare &middot; 24 October 2026</p>
+</div>
+  </div>
+</div>
+
 <div class="sec"><h2>Data &amp; AI</h2><div class="rule"></div>
   <span class="domlinks"><a href="data/">Data</a> &middot; <a href="arxiv-picks/">Papers</a> &middot; <a href="ai/">AI</a></span></div>
 <div class="split">
 <div class="lead">
-  <a class="tag tag-link" href="search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
-  <h3><a href="https://clickhouse.com/blog/clera-migrates-to-clickhouse-managed-postgres" rel="noopener nofollow">How we migrated Clera’s 500 GB production database to ClickHouse Managed Postgres overnight</a></h3>
-  <p>Details the overnight migration of a 500 GB production database with over 500 tables to a managed Postgres environment. The transition successfully reduced CPU utilization from a constant 100% to a stable 10-20% range.</p>
-  <div class="why"><b>Why it matters</b> &mdash; Infrastructure-level migrations can resolve persistent performance bottlenecks that query-level optimizations cannot, specifically reclaiming up to 80% of CPU capacity.</div>
-  <p class="src"><a class="ch" href="data/">Databases &amp; Data</a> &middot; ClickHouse &middot; <a href="https://clickhouse.com/blog/clera-migrates-to-clickhouse-managed-postgres" rel="noopener nofollow" aria-label="Read the original: How we migrated Clera’s 500 GB production database to ClickHouse Managed Postgres overnight">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="search.html?c=ai&amp;g=Research" style="--tc:#f778ba"><i style="background:#f778ba"></i>Research</a>
+  <h3><a href="https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/" rel="noopener nofollow">“We were looking at it wrong”: The explosive claim that’s upended the AI world</a></h3>
+  <p>Goodfire researcher Nick Cammarata published a 26,000-word analysis claiming that neural networks are significantly easier to interpret than previously assumed. The findings suggest that large language models may be far simpler to understand internally than current consensus holds.</p>
+  <div class="why"><b>Why it matters</b> &mdash; If neural network mechanics are simpler to decode than expected, safety auditing and interpretability tools can be integrated directly into model evaluation workflows.</div>
+  <p class="src"><a class="ch" href="ai/">AI Tech Weekly Digest</a> &middot; MIT Tech Review &middot; <a href="https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/" rel="noopener nofollow" aria-label="Read the original: “We were looking at it wrong”: The explosive claim that’s upended the AI world">Read the original &rarr;</a></p>
 </div>
   <div class="aside">
-<div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=ai&amp;g=Research" style="--tc:#f778ba"><i style="background:#f778ba"></i>Research</a>
-  <h4><a href="https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/" rel="noopener nofollow">“We were looking at it wrong”: The explosive claim that’s upended the AI world</a></h4>
-  <p class="src"><a class="ch" href="ai/">AI</a> &middot; MIT Tech Review &middot; 23 October 2026</p>
-</div>
 <div class="aside-item">
   <a class="tag tag-link" href="search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a>
   <h4><a href="https://arxiv.org/abs/2610.26860" rel="noopener nofollow">OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory</a></h4>
   <p class="src"><a class="ch" href="arxiv-picks/">Papers</a> &middot; arXiv &middot; 21 October 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h4><a href="https://postgr.es/p/9yG" rel="noopener nofollow">Álvaro Hernández: Open-source Citus matches PlanetScale&#x27;s Neki at 10M QPS on half the data nodes</a></h4>
+  <p class="src"><a class="ch" href="data/">Data</a> &middot; Planet PostgreSQL &middot; 20 October 2026</p>
 </div>
   </div>
 </div>
@@ -180,32 +204,8 @@
   </div>
 </div>
 
-<div class="sec"><h2>Longform</h2><div class="rule"></div>
-  <span class="domlinks"><a href="eng-blogs/">Reading</a> &middot; <a href="craft/">Craft</a></span></div>
-<div class="split">
-<div class="lead">
-  <a class="tag tag-link" href="search.html?c=craft&amp;g=Testing%20%26%20Quality" style="--tc:#3fb950"><i style="background:#3fb950"></i>Testing &amp; Quality</a>
-  <h3><a href="https://martinfowler.com/articles/are-harnesses-worth-the-cost.html" rel="noopener nofollow">Are Harnesses Worth the Cost?</a></h3>
-  <p>An empirical experiment evaluated coding agents building an API service with and without behavioral testing harnesses across different LLMs. A frontier model succeeded either way, but a cost-optimized model improved from a 30% success rate without a harness to 100% success with one. The harnessed lower-cost model matched frontier accuracy at the trade-off of higher token usage and execution time.</p>
-  <div class="why"><b>Why it matters</b> &mdash; Behavioral testing harnesses can elevate lower-cost LLMs to frontier-model reliability levels in exchange for higher token consumption and runtime.</div>
-  <p class="src"><a class="ch" href="craft/">Craft &amp; Leadership</a> &middot; Martin Fowler &middot; <a href="https://martinfowler.com/articles/are-harnesses-worth-the-cost.html" rel="noopener nofollow" aria-label="Read the original: Are Harnesses Worth the Cost?">Read the original &rarr;</a></p>
-</div>
-  <div class="aside">
-<div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
-  <h4><a href="https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/" rel="noopener nofollow">From 2,500 requests to 24: Rebuilding star history without the stargazers</a></h4>
-  <p class="src"><a class="ch" href="eng-blogs/">Reading</a> &middot; GitHub &middot; 17 October 2026</p>
-</div>
-<div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=craft&amp;g=Incidents%20%26%20Ops" style="--tc:#f78166"><i style="background:#f78166"></i>Incidents &amp; Ops</a>
-  <h4><a href="https://www.infoq.com/presentations/eve-observability-head-sampling/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow">Presentation: How Eve Online Leverages Head Based Sampling to Observe &quot;Fun&quot;</a></h4>
-  <p class="src"><a class="ch" href="craft/">Craft</a> &middot; InfoQ Architecture &middot; 17 October 2026</p>
-</div>
-  </div>
-</div>
-
 <div class="sec"><h2>All channels</h2><div class="rule"></div>
-  <a href="search.html">Browse all 1634 stories &rarr;</a></div>
+  <a href="search.html">Browse all 1641 stories &rarr;</a></div>
 <div class="cards">
   <a class="card" href="india-tech/" style="--ca:#2f9e6f">
     <h3>India Tech Weekly</h3>
@@ -313,7 +313,7 @@
     <h3>Engineering Reading</h3>
     <p>From the Blogs Worth Following</p>
     <div class="n"><span class="d">Sat</span>
-       11 issues &middot; 77 stories</div>
+       12 issues &middot; 84 stories</div>
   </a>
   <a class="card" href="craft/" style="--ca:#51c85d">
     <h3>Craft &amp; Leadership</h3>

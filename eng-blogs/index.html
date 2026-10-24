@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Engineering Reading — From the Blogs Worth Following</title>
-<meta name="description" content="From the Blogs Worth Following. 77 stories across 11 issues.">
+<meta name="description" content="From the Blogs Worth Following. 84 stories across 12 issues.">
 <meta property="og:title" content="Engineering Reading — From the Blogs Worth Following">
-<meta property="og:description" content="From the Blogs Worth Following. 77 stories across 11 issues.">
+<meta property="og:description" content="From the Blogs Worth Following. 84 stories across 12 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c2456f">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Engineering Reading</h1>
   <p class="lede">From the Blogs Worth Following. Published every
      <b>Saturday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>77</b> stories</span>
-     <span><b>11</b> issues</span>
+  <p class="stats"><span><b>84</b> stories</span>
+     <span><b>12</b> issues</span>
      <span><b>7</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Reliability" style="--tc:#f78166"><i style="background:#f78166"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Developer%20Experience" style="--tc:#f778ba"><i style="background:#f778ba"></i>Developer Experience</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Practice%20%26%20Craft" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Practice &amp; Craft</a></p>
 </div>
@@ -60,28 +60,29 @@
   <p class="src">Cloudflare &middot; 26 September 2026 &middot; <a href="https://blog.cloudflare.com/containers-cross-tenant-vulnerability/" rel="noopener nofollow" aria-label="Read the original: How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
-  <h3><a href="https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/" rel="noopener nofollow">From 2,500 requests to 24: Rebuilding star history without the stargazers</a></h3>
-  <p>GitHub re-engineered how star history trajectories are calculated, moving away from fetching complete lists of individual stargazer records page-by-page. The new approach reduces the required API calls for a repository timeline from 2,500 down to 24.</p>
-  <div class="why"><b>Why it matters</b> — Decoupling aggregate historical metrics from full record enumeration dramatically reduces API request volume and server overhead.</div>
-  <p class="src">GitHub &middot; 17 October 2026 &middot; <a href="https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/" rel="noopener nofollow" aria-label="Read the original: From 2,500 requests to 24: Rebuilding star history without the stargazers">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
+  <h3><a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener nofollow">The bridge to agent-scale Git infrastructure</a></h3>
+  <p>GitHub details its next-generation storage architecture designed to handle exponential Git traffic growth by moving repositories to a hybrid environment across local data centers and Azure. The post focuses on the technical challenge of a 25ms round trip and the architectural principles of minimizing coordination to maintain performance.</p>
+  <div class="why"><b>Why it matters</b> — Minimize coordination to solve latency issues in geographically distributed storage systems.</div>
+  <p class="src">GitHub &middot; 24 October 2026 &middot; <a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener nofollow" aria-label="Read the original: The bridge to agent-scale Git infrastructure">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a>
-  <h3><a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow">Kafka App? There’s a Skill for That</a></h3>
-  <p>Etsy manages over 100 million unique listings from 5.6 million sellers, lacking a standard product catalog. When shoppers search, models must infer meaning and listing content using data from user visits and Etsy listings. Kafka is utilized in this process to enable these models to understand unique and creative items.</p>
-  <div class="why"><b>Why it matters</b> — It explains how Etsy uses Kafka and data models to infer meaning from unique listings for complex search queries.</div>
-  <p class="src">Etsy &middot; 01 August 2026 &middot; <a href="https://www.etsy.com/codeascraft/kafka-app-thereas-a-skill-for-that?utm_source=OpenGraph&amp;utm_medium=PageTools&amp;utm_campaign=Share" rel="noopener nofollow" aria-label="Read the original: Kafka App? There’s a Skill for That">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
+  <h3><a href="https://blog.cloudflare.com/obsessive-inference-optimization/" rel="noopener nofollow">Cutting our inference bill by 68% by being obsessive about optimization</a></h3>
+  <p>Cloudflare documents a 68% reduction in AI inference costs for their code reviewer tool through aggressive optimization. The post details how they addressed a cost spike from $1.19 to $2.46 per review by focusing on execution efficiency rather than changing the underlying model architecture.</p>
+  <div class="why"><b>Why it matters</b> — Obsessive optimization can reduce inference costs by over 60% without changing the underlying model architecture.</div>
+  <p class="src">Cloudflare &middot; 24 October 2026 &middot; <a href="https://blog.cloudflare.com/obsessive-inference-optimization/" rel="noopener nofollow" aria-label="Read the original: Cutting our inference bill by 68% by being obsessive about optimization">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=eng-blogs">Browse all 77 stories in this channel &rarr;</a><span>72 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=eng-blogs">Browse all 84 stories in this channel &rarr;</a><span>79 older stories</span></div>
 
-<p class="signoff">Another week of building complex infrastructure to fix last year&#x27;s complex infrastructure.</p>
+<p class="signoff">Half of us are writing agents, and the other half is trying to afford them.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-10-24.html"><span class="d">24 October 2026</span><span class="h">30 new posts across 9 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-17.html"><span class="d">17 October 2026</span><span class="h">43 new posts across 9 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-10.html"><span class="d">10 October 2026</span><span class="h">18 new posts across 8 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-03.html"><span class="d">03 October 2026</span><span class="h">36 new posts across 7 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
