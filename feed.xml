@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 26 Oct 2026 08:00:17 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 26 Oct 2026 08:05:43 +0000</lastBuildDate>
     <item>
       <title>DevOps Weekly Digest — 26 October 2026</title>
       <link>https://news.maahol.com/devops/2026-10-26.html</link>
       <guid isPermaLink="true">https://news.maahol.com/devops/2026-10-26.html</guid>
       <pubDate>Mon, 26 Oct 2026 08:00:00 +0000</pubDate>
       <description>Node.js issues critical security updates, while cloud providers enhance AI infrastructure and developer tooling sees major beta releases.</description>
+    </item>
+    <item>
+      <title>Fintech &amp; Payments — 26 October 2026</title>
+      <link>https://news.maahol.com/fintech/2026-10-26.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-10-26.html</guid>
+      <pubDate>Mon, 26 Oct 2026 08:00:00 +0000</pubDate>
+      <description>61 new posts across 4 fintech and payments sources — 5 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 25 October 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-10-08.html</guid>
       <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
       <description>49 releases across 31 tracked projects, including 3 with security fixes.</description>
-    </item>
-    <item>
-      <title>Sales &amp; Revenue — 08 October 2026</title>
-      <link>https://news.maahol.com/sales/2026-10-08.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/sales/2026-10-08.html</guid>
-      <pubDate>Thu, 08 Oct 2026 08:00:00 +0000</pubDate>
-      <description>25 new posts across 4 go-to-market sources — 8 worth your time.</description>
     </item>
 </channel></rss>
