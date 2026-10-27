@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Databases &amp; Data — Engines, Pipelines &amp; Query Plans</title>
-<meta name="description" content="Engines, Pipelines &amp; Query Plans. 99 stories across 12 issues.">
+<meta name="description" content="Engines, Pipelines &amp; Query Plans. 108 stories across 13 issues.">
 <meta property="og:title" content="Databases &amp; Data — Engines, Pipelines &amp; Query Plans">
-<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 99 stories across 12 issues.">
+<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 108 stories across 13 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c22ebe">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Databases &amp; Data</h1>
   <p class="lede">Engines, Pipelines &amp; Query Plans. Published every
      <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>99</b> stories</span>
-     <span><b>12</b> issues</span>
+  <p class="stats"><span><b>108</b> stories</span>
+     <span><b>13</b> issues</span>
      <span><b>9</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
 </div>
@@ -38,6 +38,13 @@
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
   <a href="feed.xml">RSS</a></div>
 <div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h3><a href="https://postgr.es/p/9zf" rel="noopener nofollow">Jeremy Schneider: Postgres recovery_prefetch Considered Harmful and Causing Outages</a></h3>
+  <p>Jeremy Schneider highlights real-world production outages caused by PostgreSQL&#x27;s recovery_prefetch setting. The post explores how background prefetching during recovery can quietly introduce unexpected issues that disrupt database availability.</p>
+  <div class="why"><b>Why it matters</b> — Audit default recovery flags like recovery_prefetch, as aggressive background prefetching during WAL replay can lead to unpredicted production deadlocks or outages.</div>
+  <p class="src">Planet PostgreSQL &middot; 27 October 2026 &middot; <a href="https://postgr.es/p/9zf" rel="noopener nofollow" aria-label="Read the original: Jeremy Schneider: Postgres recovery_prefetch Considered Harmful and Causing Outages">Read the original &rarr;</a></p>
+</div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
   <h3><a href="https://docs.cloud.google.com/release-notes" rel="noopener nofollow">Mandiant Feeds Deprecated, Migration Required</a></h3>
@@ -66,22 +73,16 @@
   <div class="why"><b>Why it matters</b> — Implementing disk-full session exemptions allows administrators to connect and run cleanup commands even when the disk is at 100% capacity and rejecting standard connections.</div>
   <p class="src">ClickHouse &middot; 25 August 2026 &middot; <a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow" aria-label="Read the original: What else runs on your Postgres server, and how do we stop it from taking the database down?">Read the original &rarr;</a></p>
 </div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
-  <h3><a href="https://postgr.es/p/9tE" rel="noopener nofollow">Maki Majima: Migration files and Git do not mix</a></h3>
-  <p>This post argues that migration directories, with their timestamped, append-only schema changes and in-database state tracking, fundamentally conflict with Git&#x27;s version control model. It highlights that migrations don&#x27;t inherit Git&#x27;s protections like review processes, creating two unsynchronized timelines.</p>
-  <div class="why"><b>Why it matters</b> — It exposes a critical impedance mismatch between database schema migration tools and Git, prompting reflection on how to manage schema changes and their deployment processes more robustly.</div>
-  <p class="src">Planet PostgreSQL &middot; 08 September 2026 &middot; <a href="https://postgr.es/p/9tE" rel="noopener nofollow" aria-label="Read the original: Maki Majima: Migration files and Git do not mix">Read the original &rarr;</a></p>
 </div>
-</div>
-<div class="morelink"><a href="../search.html?c=data">Browse all 99 stories in this channel &rarr;</a><span>94 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=data">Browse all 108 stories in this channel &rarr;</a><span>103 older stories</span></div>
 
-<p class="signoff">Eventually every modern architecture turns back into a relational database with extra steps.</p>
+<p class="signoff">The industry remains divided between those who trust their constraints and those who have used them.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-10-27.html"><span class="d">27 October 2026</span><span class="h">75 new posts across 9 database and data engineering sources — 9 worth your time.</span><span class="n">9 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-20.html"><span class="d">20 October 2026</span><span class="h">50 new posts across 7 database and data engineering sources — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-13.html"><span class="d">13 October 2026</span><span class="h">52 new posts across 9 database and data engineering sources — 8 worth your time.</span><span class="n">8 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-06.html"><span class="d">06 October 2026</span><span class="h">63 new posts across 9 database and data engineering sources — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
