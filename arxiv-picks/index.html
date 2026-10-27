@@ -53,25 +53,25 @@
   <p class="src">arXiv &middot; 21 October 2026 &middot; <a href="https://arxiv.org/abs/2610.26860" rel="noopener nofollow" aria-label="Read the original: OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Training &amp; Efficiency</a>
-  <h3><a href="https://arxiv.org/abs/2610.25043" rel="noopener nofollow">VLA-Rolling: Fewer Denoising Steps, Better Control via Adaptive Action Reuse</a></h3>
-  <p>This paper addresses the inefficiency of flow-matching vision-language-action (VLA) models that discard the &#x27;action tail&#x27; during receding-horizon replanning. It introduces VLA-Rolling, which adaptively reuses the unexecuted portion of previous action chunks to reduce the number of denoising steps needed for the next update.</p>
-  <div class="why"><b>Why it matters</b> — Reusing the unexecuted action tail in receding-horizon control reduces the computational cost of frequent replanning without losing the temporal coherence of the generated trajectory.</div>
-  <p class="src">arXiv &middot; 21 October 2026 &middot; <a href="https://arxiv.org/abs/2610.25043" rel="noopener nofollow" aria-label="Read the original: VLA-Rolling: Fewer Denoising Steps, Better Control via Adaptive Action Reuse">Read the original &rarr;</a></p>
-</div>
-<div class="item">
   <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=LLMs%20%26%20Reasoning" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>LLMs &amp; Reasoning</a>
-  <h3><a href="https://arxiv.org/abs/2610.27628" rel="noopener nofollow">PAR: Progress-Aligned Recurrence for Length Generalization in State Tracking</a></h3>
-  <p>Progress-Aligned Recurrence (PAR) addresses the failure of looped language models to generalize to longer problems despite increased test-time iterations. It trains the model so that each iteration k corresponds to a specific progress point, preventing the recurrent state scale from drifting during extended execution.</p>
-  <div class="why"><b>Why it matters</b> — Aligning specific iterations to progress steps prevents recurrent state drift and enables looped models to generalize to longer sequences than seen during training.</div>
-  <p class="src">arXiv &middot; 21 October 2026 &middot; <a href="https://arxiv.org/abs/2610.27628" rel="noopener nofollow" aria-label="Read the original: PAR: Progress-Aligned Recurrence for Length Generalization in State Tracking">Read the original &rarr;</a></p>
+  <h3><a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow">Kimi K3: Open Frontier Intelligence</a></h3>
+  <p>This paper introduces Kimi K3, a massive 2.8T parameter Mixture-of-Experts model with 104 billion activated parameters, native vision capabilities, and a 1-million-token context window. Its architecture incorporates Kimi Delta Attention and Attention Residuals to enhance information flow across sequence length and model depth, alongside Stable LatentMoE for efficient expert activation.</p>
+  <div class="why"><b>Why it matters</b> — It provides insight into the architectural innovations and scaling strategies behind a new frontier-level multimodal LLM, detailing specific attention mechanisms and MoE techniques.</div>
+  <p class="src">arXiv &middot; 29 July 2026 &middot; <a href="https://arxiv.org/abs/2607.24653" rel="noopener nofollow" aria-label="Read the original: Kimi K3: Open Frontier Intelligence">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Training%20%26%20Efficiency" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Training &amp; Efficiency</a>
-  <h3><a href="https://arxiv.org/abs/2610.26834" rel="noopener nofollow">Kronecker Delta Rule for Long Context Linear Attention</a></h3>
-  <p>KronLSTM introduces a linear attention architecture based on the Kronecker Delta Rule for associative matrix memories. This mechanism allows for targeted memory revision by modifying the memory matrix along only a single direction, which minimizes interference with previously stored information.</p>
-  <div class="why"><b>Why it matters</b> — Updating associative memory along a single matrix direction allows for targeted error correction with minimal interference to existing stored information.</div>
-  <p class="src">arXiv &middot; 21 October 2026 &middot; <a href="https://arxiv.org/abs/2610.26834" rel="noopener nofollow" aria-label="Read the original: Kronecker Delta Rule for Long Context Linear Attention">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Systems%20%26%20Inference" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Systems &amp; Inference</a>
+  <h3><a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow">DiffusionGemma Technical Report</a></h3>
+  <p>DiffusionGemma introduces discrete diffusion to LLM decoding by iteratively refining blocks of 256 tokens in parallel. Converted directly from pre-trained Gemma weights rather than trained from scratch, the model bypasses sequential token-by-token autoregressive decoding bottlenecks while maintaining generation quality.</p>
+  <div class="why"><b>Why it matters</b> — Adapting autoregressive model weights into block-parallel discrete diffusion bypasses sequential KV-cache bottlenecks without requiring full pre-training from scratch.</div>
+  <p class="src">arXiv &middot; 05 August 2026 &middot; <a href="https://arxiv.org/abs/2608.00146" rel="noopener nofollow" aria-label="Read the original: DiffusionGemma Technical Report">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=arxiv-picks&amp;g=Multimodal" style="--tc:#f778ba"><i style="background:#f778ba"></i>Multimodal</a>
+  <h3><a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow">JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion</a></h3>
+  <p>JoyAI-Video-Edit introduces a 16B-parameter autoregressive diffusion framework designed for low-latency streaming video editing. The system processes video in causal chunks without requiring future frame lookahead or a fixed duration, balancing computational complexity with temporal consistency.</p>
+  <div class="why"><b>Why it matters</b> — Chunk-wise causal autoregressive diffusion enables real-time unbounded video editing within fixed memory and latency budgets.</div>
+  <p class="src">arXiv &middot; 05 August 2026 &middot; <a href="https://arxiv.org/abs/2608.03974" rel="noopener nofollow" aria-label="Read the original: JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion">Read the original &rarr;</a></p>
 </div>
 </div>
 <div class="morelink"><a href="../search.html?c=arxiv-picks">Browse all 72 stories in this channel &rarr;</a><span>67 older stories</span></div>
