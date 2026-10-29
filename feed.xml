@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Thu, 29 Oct 2026 08:42:00 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 29 Oct 2026 08:47:07 +0000</lastBuildDate>
+    <item>
+      <title>HR &amp; Payroll Tech — 29 October 2026</title>
+      <link>https://news.maahol.com/hr-tech/2026-10-29.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/hr-tech/2026-10-29.html</guid>
+      <pubDate>Thu, 29 Oct 2026 08:00:00 +0000</pubDate>
+      <description>39 new posts across 5 HR and SuccessFactors sources — 11 worth your time.</description>
+    </item>
     <item>
       <title>Release Radar — 29 October 2026</title>
       <link>https://news.maahol.com/release-radar/2026-10-29.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/india-tech/2026-10-11.html</guid>
       <pubDate>Sun, 11 Oct 2026 08:00:00 +0000</pubDate>
       <description>India introduces UPI merchant fees, clarifies data protection, and boosts deep tech and manufacturing initiatives.</description>
-    </item>
-    <item>
-      <title>Climate &amp; Energy — 10 October 2026</title>
-      <link>https://news.maahol.com/climate/2026-10-10.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/climate/2026-10-10.html</guid>
-      <pubDate>Sat, 10 Oct 2026 08:00:00 +0000</pubDate>
-      <description>16 new posts across 3 climate and energy sources — 5 worth your time.</description>
     </item>
 </channel></rss>
