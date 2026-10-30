@@ -3,7 +3,7 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Fri, 30 Oct 2026 08:54:24 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 30 Oct 2026 08:56:59 +0000</lastBuildDate>
     <item>
       <title>AI Tech Weekly Digest — 30 October 2026</title>
       <link>https://news.maahol.com/ai/2026-10-30.html</link>
@@ -17,6 +17,13 @@
       <guid isPermaLink="true">https://news.maahol.com/mobile/2026-10-30.html</guid>
       <pubDate>Fri, 30 Oct 2026 08:00:00 +0000</pubDate>
       <description>6 new posts across 3 mobile platform sources — 6 worth your time.</description>
+    </item>
+    <item>
+      <title>Open Source — 30 October 2026</title>
+      <link>https://news.maahol.com/open-source/2026-10-30.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/open-source/2026-10-30.html</guid>
+      <pubDate>Fri, 30 Oct 2026 08:00:00 +0000</pubDate>
+      <description>24 new posts across 3 open source sources — 6 worth your time.</description>
     </item>
     <item>
       <title>HR &amp; Payroll Tech — 29 October 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/devops/2026-10-12.html</guid>
       <pubDate>Mon, 12 Oct 2026 08:00:00 +0000</pubDate>
       <description>GitHub overhauls Git infrastructure to handle 5x surge in AI agent-driven commits.</description>
-    </item>
-    <item>
-      <title>Fintech &amp; Payments — 12 October 2026</title>
-      <link>https://news.maahol.com/fintech/2026-10-12.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-10-12.html</guid>
-      <pubDate>Mon, 12 Oct 2026 08:00:00 +0000</pubDate>
-      <description>63 new posts across 3 fintech and payments sources — 6 worth your time.</description>
     </item>
 </channel></rss>
