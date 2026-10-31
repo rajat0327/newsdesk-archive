@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Engineering Reading — From the Blogs Worth Following</title>
-<meta name="description" content="From the Blogs Worth Following. 84 stories across 12 issues.">
+<meta name="description" content="From the Blogs Worth Following. 91 stories across 13 issues.">
 <meta property="og:title" content="Engineering Reading — From the Blogs Worth Following">
-<meta property="og:description" content="From the Blogs Worth Following. 84 stories across 12 issues.">
+<meta property="og:description" content="From the Blogs Worth Following. 91 stories across 13 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c2456f">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Engineering Reading</h1>
   <p class="lede">From the Blogs Worth Following. Published every
      <b>Saturday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>84</b> stories</span>
-     <span><b>12</b> issues</span>
+  <p class="stats"><span><b>91</b> stories</span>
+     <span><b>13</b> issues</span>
      <span><b>7</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Data%20%26%20ML" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Data &amp; ML</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Reliability" style="--tc:#f78166"><i style="background:#f78166"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Developer%20Experience" style="--tc:#f778ba"><i style="background:#f778ba"></i>Developer Experience</a> <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Practice%20%26%20Craft" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Practice &amp; Craft</a></p>
 </div>
@@ -38,6 +38,13 @@
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
   <a href="feed.xml">RSS</a></div>
 <div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Reliability" style="--tc:#f78166"><i style="background:#f78166"></i>Reliability</a>
+  <h3><a href="https://blog.cloudflare.com/emudhra-patching/" rel="noopener nofollow">4 real? Tracking exploitation and patching of eMudhra’s weak keys</a></h3>
+  <p>Cloudflare responded to the discovery of eMudhra&#x27;s eight shockingly weak cryptographic keys, including the number 4, used to protect the Internet. They immediately took action and detailed their response to the exploitation and patching of these keys.</p>
+  <div class="why"><b>Why it matters</b> — The critical importance of strong cryptographic key generation and the immediate, decisive action required to mitigate severe vulnerabilities impacting internet trust.</div>
+  <p class="src">Cloudflare &middot; 31 October 2026 &middot; <a href="https://blog.cloudflare.com/emudhra-patching/" rel="noopener nofollow" aria-label="Read the original: 4 real? Tracking exploitation and patching of eMudhra’s weak keys">Read the original &rarr;</a></p>
+</div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
   <h3><a href="https://blog.cloudflare.com/revisiting-spectre-attacks-on-workers/" rel="noopener nofollow">A revisit of remote Spectre attacks on Cloudflare Workers</a></h3>
@@ -60,28 +67,22 @@
   <p class="src">Cloudflare &middot; 26 September 2026 &middot; <a href="https://blog.cloudflare.com/containers-cross-tenant-vulnerability/" rel="noopener nofollow" aria-label="Read the original: How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Infrastructure" style="--tc:#3fb950"><i style="background:#3fb950"></i>Infrastructure</a>
-  <h3><a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener nofollow">The bridge to agent-scale Git infrastructure</a></h3>
-  <p>GitHub details its next-generation storage architecture designed to handle exponential Git traffic growth by moving repositories to a hybrid environment across local data centers and Azure. The post focuses on the technical challenge of a 25ms round trip and the architectural principles of minimizing coordination to maintain performance.</p>
-  <div class="why"><b>Why it matters</b> — Minimize coordination to solve latency issues in geographically distributed storage systems.</div>
-  <p class="src">GitHub &middot; 24 October 2026 &middot; <a href="https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/" rel="noopener nofollow" aria-label="Read the original: The bridge to agent-scale Git infrastructure">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Performance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Performance</a>
-  <h3><a href="https://blog.cloudflare.com/obsessive-inference-optimization/" rel="noopener nofollow">Cutting our inference bill by 68% by being obsessive about optimization</a></h3>
-  <p>Cloudflare documents a 68% reduction in AI inference costs for their code reviewer tool through aggressive optimization. The post details how they addressed a cost spike from $1.19 to $2.46 per review by focusing on execution efficiency rather than changing the underlying model architecture.</p>
-  <div class="why"><b>Why it matters</b> — Obsessive optimization can reduce inference costs by over 60% without changing the underlying model architecture.</div>
-  <p class="src">Cloudflare &middot; 24 October 2026 &middot; <a href="https://blog.cloudflare.com/obsessive-inference-optimization/" rel="noopener nofollow" aria-label="Read the original: Cutting our inference bill by 68% by being obsessive about optimization">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=eng-blogs&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a>
+  <h3><a href="https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts" rel="noopener nofollow">Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts</a></h3>
+  <p>Stripe migrated $1B in vendor payments to its Global Payouts product, reducing new-market setup time from six weeks to one and achieving a 99.9% payout success rate. The post shares the lessons learned from this internal adoption and large-scale system transition.</p>
+  <div class="why"><b>Why it matters</b> — The measurable efficiency gains (6 weeks to 1 week setup, 99.9% success rate) and lessons from internal product adoption for large-scale financial operations.</div>
+  <p class="src">Stripe &middot; 31 October 2026 &middot; <a href="https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts" rel="noopener nofollow" aria-label="Read the original: Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=eng-blogs">Browse all 84 stories in this channel &rarr;</a><span>79 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=eng-blogs">Browse all 91 stories in this channel &rarr;</a><span>86 older stories</span></div>
 
-<p class="signoff">Half of us are writing agents, and the other half is trying to afford them.</p>
+<p class="signoff">Glad to see ad delivery getting the deep architectural rigor it truly deserves.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-10-31.html"><span class="d">31 October 2026</span><span class="h">27 new posts across 6 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-24.html"><span class="d">24 October 2026</span><span class="h">30 new posts across 9 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-17.html"><span class="d">17 October 2026</span><span class="h">43 new posts across 9 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-10-10.html"><span class="d">10 October 2026</span><span class="h">18 new posts across 8 engineering blogs — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>

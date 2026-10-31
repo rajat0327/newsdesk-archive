@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sat, 31 Oct 2026 08:42:48 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 31 Oct 2026 08:43:17 +0000</lastBuildDate>
     <item>
       <title>Craft &amp; Leadership — 31 October 2026</title>
       <link>https://news.maahol.com/craft/2026-10-31.html</link>
       <guid isPermaLink="true">https://news.maahol.com/craft/2026-10-31.html</guid>
       <pubDate>Sat, 31 Oct 2026 08:00:00 +0000</pubDate>
       <description>48 new posts across 10 practice and leadership sources — 7 worth your time.</description>
+    </item>
+    <item>
+      <title>Engineering Reading — 31 October 2026</title>
+      <link>https://news.maahol.com/eng-blogs/2026-10-31.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/eng-blogs/2026-10-31.html</guid>
+      <pubDate>Sat, 31 Oct 2026 08:00:00 +0000</pubDate>
+      <description>27 new posts across 6 engineering blogs — 7 worth your time.</description>
     </item>
     <item>
       <title>AI Tech Weekly Digest — 30 October 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/data/2026-10-13.html</guid>
       <pubDate>Tue, 13 Oct 2026 08:00:00 +0000</pubDate>
       <description>52 new posts across 9 database and data engineering sources — 8 worth your time.</description>
-    </item>
-    <item>
-      <title>Security Weekly Digest — 13 October 2026</title>
-      <link>https://news.maahol.com/security-news/2026-10-13.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/security-news/2026-10-13.html</guid>
-      <pubDate>Tue, 13 Oct 2026 08:00:00 +0000</pubDate>
-      <description>5 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
     </item>
 </channel></rss>
