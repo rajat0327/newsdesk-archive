@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 02 Nov 2026 09:46:20 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 02 Nov 2026 09:49:08 +0000</lastBuildDate>
     <item>
       <title>DevOps Weekly Digest — 02 November 2026</title>
       <link>https://news.maahol.com/devops/2026-11-02.html</link>
       <guid isPermaLink="true">https://news.maahol.com/devops/2026-11-02.html</guid>
       <pubDate>Mon, 02 Nov 2026 08:00:00 +0000</pubDate>
       <description>AI-driven infrastructure automation and platform evolution dominate this week's DevOps news, alongside key cloud provider updates and observability enhancements.</description>
+    </item>
+    <item>
+      <title>Fintech &amp; Payments — 02 November 2026</title>
+      <link>https://news.maahol.com/fintech/2026-11-02.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-11-02.html</guid>
+      <pubDate>Mon, 02 Nov 2026 08:00:00 +0000</pubDate>
+      <description>71 new posts across 4 fintech and payments sources — 8 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 01 November 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/sales/2026-10-15.html</guid>
       <pubDate>Thu, 15 Oct 2026 08:00:00 +0000</pubDate>
       <description>34 new posts across 6 go-to-market sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>arXiv Picks — 14 October 2026</title>
-      <link>https://news.maahol.com/arxiv-picks/2026-10-14.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/arxiv-picks/2026-10-14.html</guid>
-      <pubDate>Wed, 14 Oct 2026 08:00:00 +0000</pubDate>
-      <description>20 papers shortlisted this week — most discussed: Thinking Inertia: LLMs Keep Thinking When Told Not To (218 upvotes).</description>
     </item>
 </channel></rss>
