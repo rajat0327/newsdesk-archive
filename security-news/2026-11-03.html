@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Security Weekly Digest — 03 November 2026</title>
+<meta name="description" content="6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
+<meta property="og:title" content="Security Weekly Digest — 03 November 2026">
+<meta property="og:description" content="6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#d9552f">
+<link rel="canonical" href="https://news.maahol.com/security-news/2026-11-03.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<link rel="stylesheet" href="../style.css">
+<style>:root{--accent:#d9552f}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f" aria-current="page">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#d9552f;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Security Weekly Digest</a></p>
+  <h1>03 November 2026</h1>
+  <p class="lede">6 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</p>
+  <p class="meta" style="margin-top:12px">One week of Security Weekly Digest,
+     6 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-97229" rel="noopener nofollow">CVE-2026-97229: GitLab Community Edition and Enterprise Edition</a></h2>
+  <p>GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 10.0 (CRITICAL). CISA remediation deadline 01 Nov 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 03 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-97229" rel="noopener nofollow" aria-label="Read the original: CVE-2026-97229: GitLab Community Edition and Enterprise Edition">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48356" rel="noopener nofollow">CVE-2026-48356: Adobe Commerce and Magento</a></h2>
+  <p>Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim&#x27;s account or session.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.3 (CRITICAL). CISA remediation deadline 10 Nov 2026 — 7 days out.</div>
+  <p class="src">CISA KEV &middot; 03 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48356" rel="noopener nofollow" aria-label="Read the original: CVE-2026-48356: Adobe Commerce and Magento">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111497" rel="noopener nofollow">CVE-2026-111497: Google Brotli</a></h2>
+  <p>Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.2 (CRITICAL). CISA remediation deadline 10 Nov 2026 — 7 days out.</div>
+  <p class="src">CISA KEV &middot; 03 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111497" rel="noopener nofollow" aria-label="Read the original: CVE-2026-111497: Google Brotli">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76418" rel="noopener nofollow">CVE-2026-76418: Secure Firewall ASA Software and Cisco Secure FTD Software</a></h2>
+  <p>Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.6 (HIGH). CISA remediation deadline 01 Nov 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 03 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76418" rel="noopener nofollow" aria-label="Read the original: CVE-2026-76418: Secure Firewall ASA Software and Cisco Secure FTD Software">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46300" rel="noopener nofollow">CVE-2026-46300: Linux Kernel</a></h2>
+  <p>Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing to decrypt shared fragments in place. This vulnerability can be chained with CVE-2026-109618 and CVE-2026-109619 to implant PHP webshells and run commands as root.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 7.8 (HIGH). CISA remediation deadline 31 Oct 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 03 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46300" rel="noopener nofollow" aria-label="Read the original: CVE-2026-46300: Linux Kernel">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41709" rel="noopener nofollow">CVE-2026-41709: Broadcom VMware ESX</a></h2>
+  <p>Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 2.7 (LOW). CISA remediation deadline 11 Nov 2026 — 8 days out.</div>
+  <p class="src">CISA KEV &middot; 03 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41709" rel="noopener nofollow" aria-label="Read the original: CVE-2026-41709: Broadcom VMware ESX">Read the original &rarr;</a></p>
+</div>
+</div>
+<p class="signoff">At least we don&#x27;t have to argue about sprint priorities this week.</p>
+
+<div class="cta">
+  <h3>6 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-10-27.html">&larr; Previous issue</a>
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../provenance.html">Where this comes from</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>
