@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Tue, 03 Nov 2026 09:50:21 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 03 Nov 2026 09:51:41 +0000</lastBuildDate>
     <item>
       <title>Chips &amp; Silicon — 03 November 2026</title>
       <link>https://news.maahol.com/chips/2026-11-03.html</link>
       <guid isPermaLink="true">https://news.maahol.com/chips/2026-11-03.html</guid>
       <pubDate>Tue, 03 Nov 2026 08:00:00 +0000</pubDate>
       <description>69 new posts across 3 semiconductor sources — 6 worth your time.</description>
+    </item>
+    <item>
+      <title>Databases &amp; Data — 03 November 2026</title>
+      <link>https://news.maahol.com/data/2026-11-03.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/data/2026-11-03.html</guid>
+      <pubDate>Tue, 03 Nov 2026 08:00:00 +0000</pubDate>
+      <description>74 new posts across 9 database and data engineering sources — 8 worth your time.</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 02 November 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/open-source/2026-10-16.html</guid>
       <pubDate>Fri, 16 Oct 2026 08:00:00 +0000</pubDate>
       <description>26 new posts across 2 open source sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>HR &amp; Payroll Tech — 15 October 2026</title>
-      <link>https://news.maahol.com/hr-tech/2026-10-15.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/hr-tech/2026-10-15.html</guid>
-      <pubDate>Thu, 15 Oct 2026 08:00:00 +0000</pubDate>
-      <description>56 new posts across 5 HR and SuccessFactors sources — 9 worth your time.</description>
     </item>
 </channel></rss>

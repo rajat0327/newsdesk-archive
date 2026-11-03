@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Databases &amp; Data — 03 November 2026</title>
+<meta name="description" content="74 new posts across 9 database and data engineering sources — 8 worth your time.">
+<meta property="og:title" content="Databases &amp; Data — 03 November 2026">
+<meta property="og:description" content="74 new posts across 9 database and data engineering sources — 8 worth your time.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#c22ebe">
+<link rel="canonical" href="https://news.maahol.com/data/2026-11-03.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<link rel="stylesheet" href="../style.css">
+<style>:root{--accent:#c22ebe}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group" data-here><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe" aria-current="page">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#c22ebe;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Databases &amp; Data</a></p>
+  <h1>03 November 2026</h1>
+  <p class="lede">74 new posts across 9 database and data engineering sources — 8 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Databases &amp; Data,
+     8 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://postgr.es/p/9Ah" rel="noopener nofollow">Vadim Yatsenko: Zero-Copy I/O for the Shared Storage Daemon: Removing the Last Copy from the WAL Path</a></h2>
+  <p>In PolarDB, every database commit requires the Write-Ahead Log (WAL) record to reach shared storage, involving data movement from WAL buffers through a shared-storage daemon to the device. This article details how the last data copy in this critical WAL path was eliminated to improve performance.</p>
+  <div class="why"><b>Why it matters</b> — Optimizing the WAL path by eliminating unnecessary data copies, such as through zero-copy I/O, is a critical technique for enhancing durability and performance in high-throughput database systems.</div>
+  <p class="src">Planet PostgreSQL &middot; 03 November 2026 &middot; <a href="https://postgr.es/p/9Ah" rel="noopener nofollow" aria-label="Read the original: Vadim Yatsenko: Zero-Copy I/O for the Shared Storage Daemon: Removing the Last Copy from the WAL Path">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://postgr.es/p/9zX" rel="noopener nofollow">Vadim Yatsenko: Commit Sequence Number (CSN) MVCC: Lock-Free Snapshot Acquisition</a></h2>
+  <p>PostgreSQL&#x27;s Multi-Version Concurrency Control (MVCC) determines row visibility by checking if a writing transaction was committed before a query&#x27;s snapshot. This article describes Commit Sequence Number (CSN) MVCC, a technique for achieving lock-free snapshot acquisition, improving concurrency.</p>
+  <div class="why"><b>Why it matters</b> — Implementing Commit Sequence Number (CSN) MVCC enables lock-free snapshot acquisition, a crucial technique for improving concurrency and performance in highly transactional database systems.</div>
+  <p class="src">Planet PostgreSQL &middot; 03 November 2026 &middot; <a href="https://postgr.es/p/9zX" rel="noopener nofollow" aria-label="Read the original: Vadim Yatsenko: Commit Sequence Number (CSN) MVCC: Lock-Free Snapshot Acquisition">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://postgr.es/p/9AF" rel="noopener nofollow">Igor Suhorukov: pg_vexec one month on: ahead of ClickHouse on Parquet, close behind on MergeTree</a></h2>
+  <p>This project ported Greenplum&#x27;s ORCA analytical query planner to PostgreSQL 19, isolating minimal core patches to create a vectorized, high-performance DBMS. After one month, this database fork shows faster performance, outperforming ClickHouse on Parquet and nearing its MergeTree performance.</p>
+  <div class="why"><b>Why it matters</b> — Vectorized query execution and advanced query planners, even when backported, can significantly boost PostgreSQL&#x27;s analytical performance, challenging specialized OLAP databases.</div>
+  <p class="src">Planet PostgreSQL &middot; 03 November 2026 &middot; <a href="https://postgr.es/p/9AF" rel="noopener nofollow" aria-label="Read the original: Igor Suhorukov: pg_vexec one month on: ahead of ClickHouse on Parquet, close behind on MergeTree">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://planetscale.com/blog/designing-a-planned-switchover-for-minimum-disruption" rel="noopener nofollow">Designing a planned switchover for minimum disruption</a></h2>
+  <p>This post details the process of designing a planned switchover for a Neki shard, which consists of a Postgres primary and multiple replicas. The goal is to safely promote a replica to primary with minimum disruption, covering scenarios like pod replacement, kernel upgrades, or moving the primary.</p>
+  <div class="why"><b>Why it matters</b> — Planned switchovers for database primaries require careful design to ensure minimal disruption during maintenance or upgrades, contrasting with unplanned failovers.</div>
+  <p class="src">PlanetScale &middot; 03 November 2026 &middot; <a href="https://planetscale.com/blog/designing-a-planned-switchover-for-minimum-disruption" rel="noopener nofollow" aria-label="Read the original: Designing a planned switchover for minimum disruption">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
+  <h2><a href="https://www.getdbt.com/blog/virgin-media-o2-dbt-state-compute-costs" rel="noopener nofollow">How Virgin Media O2 cut compute costs 30% by giving dbt a memory</a></h2>
+  <p>Virgin Media O2 achieved significant cost and performance improvements by adopting dbt v2 and dbt State at scale. This resulted in a 30% reduction in dbt compute costs and a 35% decrease in model run times.</p>
+  <div class="why"><b>Why it matters</b> — Leveraging dbt&#x27;s stateful features and newer versions can lead to substantial cost savings (30% compute) and performance gains (35% faster model runs) in large-scale data transformation pipelines.</div>
+  <p class="src">dbt &middot; 03 November 2026 &middot; <a href="https://www.getdbt.com/blog/virgin-media-o2-dbt-state-compute-costs" rel="noopener nofollow" aria-label="Read the original: How Virgin Media O2 cut compute costs 30% by giving dbt a memory">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
+  <h2><a href="https://www.getdbt.com/blog/aws-dbt-semantic-layer-ai-agent-revenue-accuracy" rel="noopener nofollow">Why an AI agent&#x27;s revenue query was $3.5 million wrong, and how AWS fixed it with dbt Semantic Layer</a></h2>
+  <p>An AI agent generated a plausible revenue query that was incorrect by $3.5 million. AWS addressed this by using the dbt Semantic Layer to provide essential business context, preventing such errors in AI-driven analytics.</p>
+  <div class="why"><b>Why it matters</b> — AI agents require a well-governed semantic layer to provide accurate business context, preventing significant financial errors ($3.5M) in their generated queries and analyses.</div>
+  <p class="src">dbt &middot; 03 November 2026 &middot; <a href="https://www.getdbt.com/blog/aws-dbt-semantic-layer-ai-agent-revenue-accuracy" rel="noopener nofollow" aria-label="Read the original: Why an AI agent&#x27;s revenue query was $3.5 million wrong, and how AWS fixed it with dbt Semantic Layer">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a>
+  <h2><a href="https://clickhouse.com/blog/openrouter-llm-routing-observability-clickhouse-cloud" rel="noopener nofollow">How OpenRouter observes, understands, and acts on 740 million LLM requests a day with ClickHouse Cloud</a></h2>
+  <p>OpenRouter scaled its customer analytics, model rankings, internal AI agents, and routing across 500+ models using ClickHouse Cloud, handling 740 million LLM requests daily and growing monthly requests 33x to 19.7 billion. It serves as their single store for these diverse workloads.</p>
+  <div class="why"><b>Why it matters</b> — A single OLAP store can handle diverse, high-volume analytics and AI agent workloads, scaling to billions of requests with significant growth.</div>
+  <p class="src">ClickHouse &middot; 03 November 2026 &middot; <a href="https://clickhouse.com/blog/openrouter-llm-routing-observability-clickhouse-cloud" rel="noopener nofollow" aria-label="Read the original: How OpenRouter observes, understands, and acts on 740 million LLM requests a day with ClickHouse Cloud">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://www.postgresql.org/" rel="noopener nofollow">pg_vexec Ahead of ClickHouse on Parquet</a></h2>
+  <p>Igor Suhorukov&#x27;s experimental `pg_vexec` extension for PostgreSQL, which adds vectorized execution, outperformed ClickHouse on Parquet data by 13x and performed closely on MergeTree data in recent benchmarks. This demonstrates PostgreSQL&#x27;s growing analytical capabilities.</p>
+  <div class="why"><b>Why it matters</b> — PostgreSQL with vectorized execution now offers competitive analytical query performance against specialized OLAP databases for hybrid workloads.</div>
+  <p class="src">postgresql.org &middot; 03 November 2026 &middot; <a href="https://www.postgresql.org/" rel="noopener nofollow" aria-label="Read the original: pg_vexec Ahead of ClickHouse on Parquet">Read the original &rarr;</a></p>
+</div>
+</div>
+<p class="signoff">Zero-copy WAL optimizations on one end, AI agents guessing the schema on the other.</p>
+
+<div class="cta">
+  <h3>8 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-10-27.html">&larr; Previous issue</a>
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../provenance.html">Where this comes from</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>
