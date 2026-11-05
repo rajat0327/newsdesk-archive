@@ -3,7 +3,21 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Tue, 03 Nov 2026 09:58:21 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 05 Nov 2026 09:41:08 +0000</lastBuildDate>
+    <item>
+      <title>Release Radar — 05 November 2026</title>
+      <link>https://news.maahol.com/release-radar/2026-11-05.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-11-05.html</guid>
+      <pubDate>Thu, 05 Nov 2026 08:00:00 +0000</pubDate>
+      <description>18 releases across 31 tracked projects, including 2 with security fixes.</description>
+    </item>
+    <item>
+      <title>Supply Chain &amp; ERP — 04 November 2026</title>
+      <link>https://news.maahol.com/supply-chain/2026-11-04.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-11-04.html</guid>
+      <pubDate>Wed, 04 Nov 2026 08:00:00 +0000</pubDate>
+      <description>123 new posts across 11 SAP and supply chain sources — 7 worth your time.</description>
+    </item>
     <item>
       <title>Chips &amp; Silicon — 03 November 2026</title>
       <link>https://news.maahol.com/chips/2026-11-03.html</link>
@@ -339,19 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/eng-blogs/2026-10-17.html</guid>
       <pubDate>Sat, 17 Oct 2026 08:00:00 +0000</pubDate>
       <description>43 new posts across 9 engineering blogs — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>AI Tech Weekly Digest — 16 October 2026</title>
-      <link>https://news.maahol.com/ai/2026-10-16.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/ai/2026-10-16.html</guid>
-      <pubDate>Fri, 16 Oct 2026 08:00:00 +0000</pubDate>
-      <description>58 new posts across 8 AI lab and practitioner sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>Mobile — 16 October 2026</title>
-      <link>https://news.maahol.com/mobile/2026-10-16.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/mobile/2026-10-16.html</guid>
-      <pubDate>Fri, 16 Oct 2026 08:00:00 +0000</pubDate>
-      <description>14 new posts across 5 mobile platform sources — 7 worth your time.</description>
     </item>
 </channel></rss>
