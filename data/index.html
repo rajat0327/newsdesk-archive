@@ -61,17 +61,17 @@
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
-  <h3><a href="https://postgr.es/p/9zf" rel="noopener nofollow">Jeremy Schneider: Postgres recovery_prefetch Considered Harmful and Causing Outages</a></h3>
-  <p>Jeremy Schneider highlights real-world production outages caused by PostgreSQL&#x27;s recovery_prefetch setting. The post explores how background prefetching during recovery can quietly introduce unexpected issues that disrupt database availability.</p>
-  <div class="why"><b>Why it matters</b> — Audit default recovery flags like recovery_prefetch, as aggressive background prefetching during WAL replay can lead to unpredicted production deadlocks or outages.</div>
-  <p class="src">Planet PostgreSQL &middot; 27 October 2026 &middot; <a href="https://postgr.es/p/9zf" rel="noopener nofollow" aria-label="Read the original: Jeremy Schneider: Postgres recovery_prefetch Considered Harmful and Causing Outages">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
   <h3><a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow">What else runs on your Postgres server, and how do we stop it from taking the database down?</a></h3>
   <p>Describes the mechanisms ClickHouse Managed Postgres uses to prevent supporting services (like backup agents or logging daemons) from compromising database availability. It details the use of cgroup limits, runtime budgets, and disk-full session exemptions to isolate resources.</p>
   <div class="why"><b>Why it matters</b> — Implementing disk-full session exemptions allows administrators to connect and run cleanup commands even when the disk is at 100% capacity and rejecting standard connections.</div>
   <p class="src">ClickHouse &middot; 25 August 2026 &middot; <a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow" aria-label="Read the original: What else runs on your Postgres server, and how do we stop it from taking the database down?">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
+  <h3><a href="https://postgr.es/p/9tE" rel="noopener nofollow">Maki Majima: Migration files and Git do not mix</a></h3>
+  <p>This post argues that migration directories, with their timestamped, append-only schema changes and in-database state tracking, fundamentally conflict with Git&#x27;s version control model. It highlights that migrations don&#x27;t inherit Git&#x27;s protections like review processes, creating two unsynchronized timelines.</p>
+  <div class="why"><b>Why it matters</b> — It exposes a critical impedance mismatch between database schema migration tools and Git, prompting reflection on how to manage schema changes and their deployment processes more robustly.</div>
+  <p class="src">Planet PostgreSQL &middot; 08 September 2026 &middot; <a href="https://postgr.es/p/9tE" rel="noopener nofollow" aria-label="Read the original: Maki Majima: Migration files and Git do not mix">Read the original &rarr;</a></p>
 </div>
 </div>
 <div class="morelink"><a href="../search.html?c=data">Browse all 116 stories in this channel &rarr;</a><span>111 older stories</span></div>
