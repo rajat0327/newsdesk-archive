@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 09 Nov 2026 10:05:54 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 09 Nov 2026 10:14:37 +0000</lastBuildDate>
     <item>
       <title>Fintech &amp; Payments — 09 November 2026</title>
       <link>https://news.maahol.com/fintech/2026-11-09.html</link>
       <guid isPermaLink="true">https://news.maahol.com/fintech/2026-11-09.html</guid>
       <pubDate>Mon, 09 Nov 2026 08:00:00 +0000</pubDate>
       <description>68 new posts across 4 fintech and payments sources — 9 worth your time.</description>
+    </item>
+    <item>
+      <title>Marketing — 09 November 2026</title>
+      <link>https://news.maahol.com/marketing/2026-11-09.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/marketing/2026-11-09.html</guid>
+      <pubDate>Mon, 09 Nov 2026 08:00:00 +0000</pubDate>
+      <description>54 new posts across 7 marketing sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Design &amp; UX — 08 November 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/sales/2026-10-22.html</guid>
       <pubDate>Thu, 22 Oct 2026 08:00:00 +0000</pubDate>
       <description>33 new posts across 6 go-to-market sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>arXiv Picks — 21 October 2026</title>
-      <link>https://news.maahol.com/arxiv-picks/2026-10-21.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/arxiv-picks/2026-10-21.html</guid>
-      <pubDate>Wed, 21 Oct 2026 08:00:00 +0000</pubDate>
-      <description>20 papers shortlisted this week — most discussed: Scaling Parameter-Efficient Fine-Tuning for Brain Encoding (235 upvotes).</description>
     </item>
 </channel></rss>
