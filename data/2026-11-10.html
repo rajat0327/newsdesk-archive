@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Databases &amp; Data — 10 November 2026</title>
+<meta name="description" content="83 new posts across 10 database and data engineering sources — 9 worth your time.">
+<meta property="og:title" content="Databases &amp; Data — 10 November 2026">
+<meta property="og:description" content="83 new posts across 10 database and data engineering sources — 9 worth your time.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#c22ebe">
+<link rel="canonical" href="https://news.maahol.com/data/2026-11-10.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<link rel="stylesheet" href="../style.css">
+<style>:root{--accent:#c22ebe}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group"><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group" data-here><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe" aria-current="page">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#c22ebe;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Databases &amp; Data</a></p>
+  <h1>10 November 2026</h1>
+  <p class="lede">83 new posts across 10 database and data engineering sources — 9 worth your time.</p>
+  <p class="meta" style="margin-top:12px">One week of Databases &amp; Data,
+     9 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h2><a href="https://postgr.es/p/9B8" rel="noopener nofollow">Nikolay Samokhvalov: UUIDv4 vs UUIDv7: what a random primary key costs in Postgres</a></h2>
+  <p>This post benchmarks UUIDv4, UUIDv7, and ordered primary keys on Postgres 18 using a 100M row dataset. It quantifies the performance penalty of random keys, showing UUIDv4 inserts at roughly 65% the rate of ordered keys while generating up to 1.9x the WAL volume per row.</p>
+  <div class="why"><b>Why it matters</b> — Random primary keys like UUIDv4 create significant write amplification and cache churn; switching to time-ordered UUIDv7 can recover ~35% of insert throughput and nearly halve WAL generation.</div>
+  <p class="src">Planet PostgreSQL &middot; 10 November 2026 &middot; <a href="https://postgr.es/p/9B8" rel="noopener nofollow" aria-label="Read the original: Nikolay Samokhvalov: UUIDv4 vs UUIDv7: what a random primary key costs in Postgres">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://postgr.es/p/9Bl" rel="noopener nofollow">Chris van Eijk: json vs jsonb in PostgreSQL: size and speed, measured</a></h2>
+  <p>A detailed comparison of json and jsonb storage in Postgres 17 and 18 across six different document structures. The results show that while jsonb is often faster to query, it can be up to 41% larger than raw json depending on the document shape.</p>
+  <div class="why"><b>Why it matters</b> — The common assumption that jsonb is always more efficient is false; document shape dictates whether you gain a 23% size reduction or suffer a 41% storage penalty.</div>
+  <p class="src">Planet PostgreSQL &middot; 10 November 2026 &middot; <a href="https://postgr.es/p/9Bl" rel="noopener nofollow" aria-label="Read the original: Chris van Eijk: json vs jsonb in PostgreSQL: size and speed, measured">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
+  <h2><a href="https://clickhouse.com/blog/fencing-a-postgres-primary-that-might-still-be-alive" rel="noopener nofollow">Fencing a Postgres primary that might still be alive</a></h2>
+  <p>This technical deep dive explains the &#x27;fencing&#x27; problem in database failover, where a promoted standby must ensure the old primary cannot accept writes. It details specific implementation strategies for bare metal, AWS, and GCP, and explains the rationale behind a fail-open design.</p>
+  <div class="why"><b>Why it matters</b> — Promoting a standby without a robust fencing mechanism for the old primary risks split-brain scenarios and data corruption during network partitions.</div>
+  <p class="src">ClickHouse &middot; 10 November 2026 &middot; <a href="https://clickhouse.com/blog/fencing-a-postgres-primary-that-might-still-be-alive" rel="noopener nofollow" aria-label="Read the original: Fencing a Postgres primary that might still be alive">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a>
+  <h2><a href="https://neon.com/blog/lakebase-postgres-reads-never-touch-object-storage" rel="noopener nofollow">Lakebase Postgres is built on object storage, but 99.99999% of reads never touch it</a></h2>
+  <p>The post examines the architecture of running Postgres on top of object storage like S3. It explains how a multi-tiered caching strategy allows 99.99999% of reads to be served from local memory or NVMe, bypassing the high latency of the object store.</p>
+  <div class="why"><b>Why it matters</b> — Architectural caching can make high-latency, low-cost object storage viable for primary database workloads without sacrificing millisecond-level read performance.</div>
+  <p class="src">Neon &middot; 10 November 2026 &middot; <a href="https://neon.com/blog/lakebase-postgres-reads-never-touch-object-storage" rel="noopener nofollow" aria-label="Read the original: Lakebase Postgres is built on object storage, but 99.99999% of reads never touch it">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
+  <h2><a href="https://planetscale.com/blog/the-hidden-latency-inside-your-database" rel="noopener nofollow">The hidden latency inside your database</a></h2>
+  <p>An analysis of the &#x27;hidden&#x27; network latency that exists inside cloud-managed database clusters, specifically between the compute engine and network-attached storage (NAS). It argues that this internal hop is often a larger bottleneck than the distance between the application and the database.</p>
+  <div class="why"><b>Why it matters</b> — Optimizing application-to-database latency is futile if the database itself is bottlenecked by the millisecond-scale network hop to its own storage volumes.</div>
+  <p class="src">PlanetScale &middot; 10 November 2026 &middot; <a href="https://planetscale.com/blog/the-hidden-latency-inside-your-database" rel="noopener nofollow" aria-label="Read the original: The hidden latency inside your database">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h2><a href="https://postgr.es/p/9Bp" rel="noopener nofollow">Richard Yen: An Index Scan Is Only Half the Story</a></h2>
+  <p>A migration case study where a query&#x27;s performance degraded from tens of milliseconds to over a second despite identical schemas and indexes. It explores how infrastructure environment differences and query planner behavior can diverge during cloud migrations.</p>
+  <div class="why"><b>Why it matters</b> — Identical SQL and indexing do not guarantee performance parity; environmental factors like underlying hardware and planner statistics can cause 100x latency regressions during migrations.</div>
+  <p class="src">Planet PostgreSQL &middot; 10 November 2026 &middot; <a href="https://postgr.es/p/9Bp" rel="noopener nofollow" aria-label="Read the original: Richard Yen: An Index Scan Is Only Half the Story">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a>
+  <h2><a href="https://clickhouse.com/blog/a-month-with-walshadow-clickhouse-managed-postgres" rel="noopener nofollow">What I learned from a month with WalShadow on ClickHouse Managed Postgres</a></h2>
+  <p>A report on a month-long test of WalShadow for Postgres-to-ClickHouse replication. It provides a direct comparison of replication latency against standard pipes and evaluates how the system handles schema changes and data recovery.</p>
+  <div class="why"><b>Why it matters</b> — Real-world replication testing reveals the trade-offs between managed &#x27;pipes&#x27; and custom CDC implementations regarding latency, schema drift, and operational recovery.</div>
+  <p class="src">ClickHouse &middot; 10 November 2026 &middot; <a href="https://clickhouse.com/blog/a-month-with-walshadow-clickhouse-managed-postgres" rel="noopener nofollow" aria-label="Read the original: What I learned from a month with WalShadow on ClickHouse Managed Postgres">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
+  <h2><a href="https://www.snowflake.com/en/news/press-releases/expedition-2026-autonomous-data-engineering/" rel="noopener nofollow">Snowflake Delivers Autonomous Data Engineering</a></h2>
+  <p>Snowflake announced new autonomous data engineering and real-time analytics innovations at Expedition 2026. These capabilities leverage AI agents to automate recurring data pipeline fixes, enabling end-to-end real-time analytics with a median data-readiness latency of 3 seconds for dashboards, applications, and AI agents.</p>
+  <div class="why"><b>Why it matters</b> — Data engineers can leverage Snowflake&#x27;s new AI agents to automate pipeline fixes, reducing manual effort and achieving 3-second data readiness for real-time analytics.</div>
+  <p class="src">Snowflake &middot; 10 November 2026 &middot; <a href="https://www.snowflake.com/en/news/press-releases/expedition-2026-autonomous-data-engineering/" rel="noopener nofollow" aria-label="Read the original: Snowflake Delivers Autonomous Data Engineering">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a>
+  <h2><a href="https://www.confluent.io/blog/2026-q4-confluent-bundle-launch/" rel="noopener nofollow">Confluent Introduces Streamhouse Architecture</a></h2>
+  <p>Confluent introduced its Streamhouse architecture, a new data architecture designed to provide real-time business context for AI agents and applications. With Lightning Tables now generally available on AWS, the platform offers low-latency SQL and API access to live streaming data, with changes available within hundreds of milliseconds and queries returning in 10-100 ms at over 1,000 queries per second.</p>
+  <div class="why"><b>Why it matters</b> — Teams building AI agents and real-time applications can now query live streaming data directly in Confluent with 10-100ms latency, eliminating separate ETL and databases.</div>
+  <p class="src">confluent.io &middot; 10 November 2026 &middot; <a href="https://www.confluent.io/blog/2026-q4-confluent-bundle-launch/" rel="noopener nofollow" aria-label="Read the original: Confluent Introduces Streamhouse Architecture">Read the original &rarr;</a></p>
+</div>
+</div>
+<p class="signoff">Still micro-optimizing Postgres while the vendors invent new words for databases.</p>
+
+<div class="cta">
+  <h3>9 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-11-03.html">&larr; Previous issue</a>
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../provenance.html">Where this comes from</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>
