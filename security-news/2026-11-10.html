@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Security Weekly Digest — 10 November 2026</title>
+<meta name="description" content="7 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
+<meta property="og:title" content="Security Weekly Digest — 10 November 2026">
+<meta property="og:description" content="7 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#d9552f">
+<link rel="canonical" href="https://news.maahol.com/security-news/2026-11-10.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<link rel="stylesheet" href="../style.css">
+<style>:root{--accent:#d9552f}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f" aria-current="page">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#d9552f;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Security Weekly Digest</a></p>
+  <h1>10 November 2026</h1>
+  <p class="lede">7 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</p>
+  <p class="meta" style="margin-top:12px">One week of Security Weekly Digest,
+     9 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-102895" rel="noopener nofollow">CVE-2026-102895: GPUStack</a></h2>
+  <p>GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code execution through POST /v2/inference-backends/from-yaml.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 12 Nov 2026 — 2 days out.</div>
+  <p class="src">CISA KEV &middot; 10 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-102895" rel="noopener nofollow" aria-label="Read the original: CVE-2026-102895: GPUStack">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116779" rel="noopener nofollow">CVE-2026-116779: SignalWire FreeSwitch</a></h2>
+  <p>SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 12 Nov 2026 — 2 days out.</div>
+  <p class="src">CISA KEV &middot; 10 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116779" rel="noopener nofollow" aria-label="Read the original: CVE-2026-116779: SignalWire FreeSwitch">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123218" rel="noopener nofollow">CVE-2026-123218: IBM Aspera Faspex</a></h2>
+  <p>IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.8 (CRITICAL). CISA remediation deadline 12 Nov 2026 — 2 days out.</div>
+  <p class="src">CISA KEV &middot; 10 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123218" rel="noopener nofollow" aria-label="Read the original: CVE-2026-123218: IBM Aspera Faspex">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123158" rel="noopener nofollow">CVE-2026-123158: OpenBSD OpenSSH</a></h2>
+  <p>OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.1 (HIGH). CISA remediation deadline 12 Nov 2026 — 2 days out.</div>
+  <p class="src">CISA KEV &middot; 10 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123158" rel="noopener nofollow" aria-label="Read the original: CVE-2026-123158: OpenBSD OpenSSH">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19868" rel="noopener nofollow">CVE-2026-19868: SonicWall SonicOS SSLVPN</a></h2>
+  <p>SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 7.5 (HIGH). CISA remediation deadline 20 Nov 2026 — 10 days out.</div>
+  <p class="src">CISA KEV &middot; 10 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19868" rel="noopener nofollow" aria-label="Read the original: CVE-2026-19868: SonicWall SonicOS SSLVPN">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-119977" rel="noopener nofollow">CVE-2026-119977: WordPress Core</a></h2>
+  <p>WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.1 (HIGH). CISA remediation deadline 06 Nov 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 10 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-119977" rel="noopener nofollow" aria-label="Read the original: CVE-2026-119977: WordPress Core">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2024-27834" rel="noopener nofollow">CVE-2024-27834: Apple Multiple Products</a></h2>
+  <p>Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 5.5 (MEDIUM). CISA remediation deadline 18 Nov 2026 — 8 days out.</div>
+  <p class="src">CISA KEV &middot; 10 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-27834" rel="noopener nofollow" aria-label="Read the original: CVE-2024-27834: Apple Multiple Products">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Supply%20Chain" style="--tc:#e3b341"><i style="background:#e3b341"></i>Supply Chain</a>
+  <h2><a href="https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js-and-swarm-desktop-to-deliver-wallet-stealing-malware.html" rel="noopener nofollow">Ethersphere Supply Chain Attack Steals Wallet Keys</a></h2>
+  <p>Malicious versions of the `@ethersphere/bee-js` npm package (13.3.0) and Swarm Desktop app (0.56.2) were published on November 9, 2026, through the project&#x27;s own release pipeline. The compromised code steals Swarm node wallet keys and installs backdoors on Windows, macOS, and Linux machines. Both malicious releases have been removed, and a clean Swarm Desktop update (0.56.3) was released.</p>
+  <div class="why"><b>Why it matters</b> — Users who installed `bee-js` 13.3.0 or ran Swarm Desktop 0.56.2 must treat their machines as compromised, revoke affected credentials, and migrate to clean versions 13.2.0 and 0.56.3.</div>
+  <p class="src">The Hacker News &middot; 10 November 2026 &middot; <a href="https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js-and-swarm-desktop-to-deliver-wallet-stealing-malware.html" rel="noopener nofollow" aria-label="Read the original: Ethersphere Supply Chain Attack Steals Wallet Keys">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Policy%20%26%20Compliance" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Policy &amp; Compliance</a>
+  <h2><a href="https://industrialcyber.co/critical-infrastructure/ncsc-annual-review-2026-warns-ai-powered-malware-could-target-uk-critical-infrastructure-by-2028/" rel="noopener nofollow">UK NCSC Warns AI Ransomware Threat to CNI</a></h2>
+  <p>The UK National Cyber Security Centre (NCSC) published its Annual Review 2026 on November 3, 2026, warning that AI-powered malware is &quot;highly likely&quot; to be used in ransomware attacks against the UK&#x27;s critical national infrastructure (CNI) by 2028. The report emphasizes AI&#x27;s role in increasing the speed, scale, and efficiency of existing hostile operations.</p>
+  <div class="why"><b>Why it matters</b> — UK critical infrastructure organizations must urgently invest in foundational cybersecurity and reduce internet exposure to counter AI-accelerated ransomware threats by 2028.</div>
+  <p class="src">Industrial Cyber &middot; 10 November 2026 &middot; <a href="https://industrialcyber.co/critical-infrastructure/ncsc-annual-review-2026-warns-ai-powered-malware-could-target-uk-critical-infrastructure-by-2028/" rel="noopener nofollow" aria-label="Read the original: UK NCSC Warns AI Ransomware Threat to CNI">Read the original &rarr;</a></p>
+</div>
+</div>
+<p class="signoff">Convenient of them to cover every single layer of the stack this week.</p>
+
+<div class="cta">
+  <h3>9 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-11-03.html">&larr; Previous issue</a>
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../provenance.html">Where this comes from</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>
