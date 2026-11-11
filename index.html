@@ -31,8 +31,8 @@
      read comes straight from an API rather than a language model.
      <a class="more" href="about.html">How it works&nbsp;&rarr;</a></p>
   <p class="stats"><span><b>20</b> channels</span>
-     <span><b>287</b> issues</span>
-     <span><b>1962</b> stories</span>
+     <span><b>288</b> issues</span>
+     <span><b>1968</b> stories</span>
      <span><b>31</b> projects tracked</span></p>
 </div>
 
@@ -56,6 +56,30 @@
   <a class="tag tag-link" href="search.html?c=devops&amp;g=Cloud%20Providers" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud Providers</a>
   <h4><a href="https://aws.amazon.com/about-aws/whats-new/2026/09/aws-service-availability/" rel="noopener nofollow">AWS Service Deprecations, Sunsets</a></h4>
   <p class="src"><a class="ch" href="devops/">DevOps</a> &middot; AWS &middot; 02 November 2026</p>
+</div>
+  </div>
+</div>
+
+<div class="sec"><h2>Data &amp; AI</h2><div class="rule"></div>
+  <span class="domlinks"><a href="data/">Data</a> &middot; <a href="arxiv-picks/">Papers</a> &middot; <a href="ai/">AI</a></span></div>
+<div class="split">
+<div class="lead">
+  <a class="tag tag-link" href="search.html?c=arxiv-picks&amp;g=Agents%20%26%20Tools" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Agents &amp; Tools</a>
+  <h3><a href="https://arxiv.org/abs/2611.14320" rel="noopener nofollow">Don&#x27;t Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents</a></h3>
+  <p>Examines memory-induced degradation in LLM agents, where adding external experience memory causes an agent to fail on tasks it would otherwise solve without memory. Finds that degradation occurs when agents derive incorrect lessons from past trajectories or misread and misapply valid ones.</p>
+  <div class="why"><b>Why it matters</b> &mdash; Naive trajectory-based memory distillation can cause net performance loss by inserting incorrect or misapplied lessons into agent contexts.</div>
+  <p class="src"><a class="ch" href="arxiv-picks/">arXiv Picks</a> &middot; arXiv &middot; <a href="https://arxiv.org/abs/2611.14320" rel="noopener nofollow" aria-label="Read the original: Don&#x27;t Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents">Read the original &rarr;</a></p>
+</div>
+  <div class="aside">
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
+  <h4><a href="https://postgr.es/p/9B8" rel="noopener nofollow">Nikolay Samokhvalov: UUIDv4 vs UUIDv7: what a random primary key costs in Postgres</a></h4>
+  <p class="src"><a class="ch" href="data/">Data</a> &middot; Planet PostgreSQL &middot; 10 November 2026</p>
+</div>
+<div class="aside-item">
+  <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="--tc:#f78166"><i style="background:#f78166"></i>Security</a>
+  <h4><a href="https://openai.com/index/a-thousand-fewer-paths-to-root" rel="noopener nofollow">A thousand fewer paths to root</a></h4>
+  <p class="src"><a class="ch" href="ai/">AI</a> &middot; OpenAI &middot; 06 November 2026</p>
 </div>
   </div>
 </div>
@@ -104,30 +128,6 @@
   <a class="tag tag-link" href="search.html?c=climate&amp;g=Solar%20%26%20Wind" style="--tc:#e3b341"><i style="background:#e3b341"></i>Solar &amp; Wind</a>
   <h4><a href="https://www.canarymedia.com/articles/offshore-wind/revolution-wind-fully-operational" rel="noopener nofollow">A third major US offshore wind farm is now fully operational</a></h4>
   <p class="src"><a class="ch" href="climate/">Climate</a> &middot; Canary Media &middot; 07 November 2026</p>
-</div>
-  </div>
-</div>
-
-<div class="sec"><h2>Data &amp; AI</h2><div class="rule"></div>
-  <span class="domlinks"><a href="data/">Data</a> &middot; <a href="arxiv-picks/">Papers</a> &middot; <a href="ai/">AI</a></span></div>
-<div class="split">
-<div class="lead">
-  <a class="tag tag-link" href="search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a>
-  <h3><a href="https://postgr.es/p/9B8" rel="noopener nofollow">Nikolay Samokhvalov: UUIDv4 vs UUIDv7: what a random primary key costs in Postgres</a></h3>
-  <p>This post benchmarks UUIDv4, UUIDv7, and ordered primary keys on Postgres 18 using a 100M row dataset. It quantifies the performance penalty of random keys, showing UUIDv4 inserts at roughly 65% the rate of ordered keys while generating up to 1.9x the WAL volume per row.</p>
-  <div class="why"><b>Why it matters</b> &mdash; Random primary keys like UUIDv4 create significant write amplification and cache churn; switching to time-ordered UUIDv7 can recover ~35% of insert throughput and nearly halve WAL generation.</div>
-  <p class="src"><a class="ch" href="data/">Databases &amp; Data</a> &middot; Planet PostgreSQL &middot; <a href="https://postgr.es/p/9B8" rel="noopener nofollow" aria-label="Read the original: Nikolay Samokhvalov: UUIDv4 vs UUIDv7: what a random primary key costs in Postgres">Read the original &rarr;</a></p>
-</div>
-  <div class="aside">
-<div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=ai&amp;g=Security" style="--tc:#f78166"><i style="background:#f78166"></i>Security</a>
-  <h4><a href="https://openai.com/index/a-thousand-fewer-paths-to-root" rel="noopener nofollow">A thousand fewer paths to root</a></h4>
-  <p class="src"><a class="ch" href="ai/">AI</a> &middot; OpenAI &middot; 06 November 2026</p>
-</div>
-<div class="aside-item">
-  <a class="tag tag-link" href="search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a>
-  <h4><a href="https://postgr.es/p/9Bl" rel="noopener nofollow">Chris van Eijk: json vs jsonb in PostgreSQL: size and speed, measured</a></h4>
-  <p class="src"><a class="ch" href="data/">Data</a> &middot; Planet PostgreSQL &middot; 10 November 2026</p>
 </div>
   </div>
 </div>
@@ -229,7 +229,7 @@
 </div>
 
 <div class="sec"><h2>All channels</h2><div class="rule"></div>
-  <a href="search.html">Browse all 1962 stories &rarr;</a></div>
+  <a href="search.html">Browse all 1968 stories &rarr;</a></div>
 <div class="cards">
   <a class="card" href="india-tech/" style="--ca:#2f9e6f">
     <h3>India Tech Weekly</h3>
@@ -283,7 +283,7 @@
     <h3>arXiv Picks</h3>
     <p>Papers Worth Reading</p>
     <div class="n"><span class="d">Wed</span>
-       13 issues &middot; 78 stories</div>
+       14 issues &middot; 84 stories</div>
   </a>
   <a class="card" href="supply-chain/" style="--ca:#a2d35a">
     <h3>Supply Chain &amp; ERP</h3>
