@@ -53,25 +53,25 @@
   <p class="src">InfoQ Architecture &middot; 07 November 2026 &middot; <a href="https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow" aria-label="Read the original: Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools">Read the original &rarr;</a></p>
 </div>
 <div class="item">
-  <a class="tag tag-link" href="../search.html?c=craft&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a>
-  <h3><a href="https://www.infoq.com/articles/agentic-ai-context-memory-knowledge/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow">Article: Systemic Approach to Memory, Knowledge, and Context in Agentic AI Architectures</a></h3>
-  <p>This article outlines a systemic context engine architecture designed to select, inject, compress, and expire data before passing it to LLMs. It defines an operational framework separating context, memory, and knowledge using tiered storage, curated data, and token budgeting to prevent anti-patterns like context stuffing.</p>
-  <div class="why"><b>Why it matters</b> — Manage LLM context lifecycle via tiered memory and token budgeting rather than raw prompt context stuffing.</div>
-  <p class="src">InfoQ Architecture &middot; 07 November 2026 &middot; <a href="https://www.infoq.com/articles/agentic-ai-context-memory-knowledge/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow" aria-label="Read the original: Article: Systemic Approach to Memory, Knowledge, and Context in Agentic AI Architectures">Read the original &rarr;</a></p>
-</div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=craft&amp;g=Testing%20%26%20Quality" style="--tc:#3fb950"><i style="background:#3fb950"></i>Testing &amp; Quality</a>
-  <h3><a href="https://danluu.com/astra-testing/" rel="noopener nofollow">Test and verification technique effectiveness with GPT-6 Astra</a></h3>
-  <p>Dan Luu analyzes empirical testing performance when LLM agents are directed to use specific software verification techniques versus open-ended defaults. The evaluation notes that unguided agents frequently generate low-value unit tests compared to structured verification methods.</p>
-  <div class="why"><b>Why it matters</b> — Explicitly constraining LLM verification methods prevents agents from defaulting to superficial unit tests.</div>
-  <p class="src">Dan Luu &middot; 07 November 2026 &middot; <a href="https://danluu.com/astra-testing/" rel="noopener nofollow" aria-label="Read the original: Test and verification technique effectiveness with GPT-6 Astra">Read the original &rarr;</a></p>
+  <a class="tag tag-link" href="../search.html?c=craft&amp;g=Incidents%20%26%20Ops" style="--tc:#f78166"><i style="background:#f78166"></i>Incidents &amp; Ops</a>
+  <h3><a href="https://www.infoq.com/news/2026/08/cosmosescape-master-key/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow">Wiz Discloses CosmosEscape, and Practitioners Debate What Customers Could Have Done</a></h3>
+  <p>Wiz Research identified a vulnerability chain called CosmosEscape that allowed escaping Azure Cosmos DB&#x27;s Gremlin sandbox to access a platform-wide read/write key. While Microsoft patched the entry point in two days, it took until July 2026 to completely remove the compromised key, sparking industry debate over shared responsibility and rearchitecture costs.</p>
+  <div class="why"><b>Why it matters</b> — Sandbox escapes can expose platform-wide master keys, demonstrating that cloud provider mitigation timelines can extend to several years and require significant customer-side rearchitecture.</div>
+  <p class="src">InfoQ Architecture &middot; 08 August 2026 &middot; <a href="https://www.infoq.com/news/2026/08/cosmosescape-master-key/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow" aria-label="Read the original: Wiz Discloses CosmosEscape, and Practitioners Debate What Customers Could Have Done">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=craft&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a>
-  <h3><a href="https://martinfowler.com/articles/data-product-platform-nav.html" rel="noopener nofollow">The Data Product Platform Navigator</a></h3>
-  <p>This piece introduces a platform navigator based on the CNCF Platform Engineering Maturity Model to help organizations address low adoption of self-service data platforms. It outlines how to structure self-service data mesh platforms to scale across teams at different maturity levels.</p>
-  <div class="why"><b>Why it matters</b> — Assess organizational platform maturity against standard models to diagnose and fix adoption bottlenecks in self-service platforms.</div>
-  <p class="src">Martin Fowler &middot; 07 November 2026 &middot; <a href="https://martinfowler.com/articles/data-product-platform-nav.html" rel="noopener nofollow" aria-label="Read the original: The Data Product Platform Navigator">Read the original &rarr;</a></p>
+  <h3><a href="https://www.infoq.com/news/2026/08/canva-session-revocation-scale/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow">Canva Shares S3 Based Architecture for Session Revocation across Hundreds of Millions of Sessions</a></h3>
+  <p>Canva redesigned its session revocation infrastructure to support 100 million active sessions while reducing database lookups. The new architecture utilizes Amazon S3 for durable revocation records and distributes compact, in-memory indexes to application gateways.</p>
+  <div class="why"><b>Why it matters</b> — Distributing compact, in-memory indexes to gateways from S3 cut Canva&#x27;s revocation cache memory footprint by 87.5% and reduced database infrastructure requirements.</div>
+  <p class="src">InfoQ Architecture &middot; 15 August 2026 &middot; <a href="https://www.infoq.com/news/2026/08/canva-session-revocation-scale/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow" aria-label="Read the original: Canva Shares S3 Based Architecture for Session Revocation across Hundreds of Millions of Sessions">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=craft&amp;g=Careers" style="--tc:#f778ba"><i style="background:#f778ba"></i>Careers</a>
+  <h3><a href="https://randsinrepose.com/archives/the-promotion-paradox/" rel="noopener nofollow">The Promotion Paradox</a></h3>
+  <p>Explores the challenges when a top engineer is promoted to interim manager, covering delegation, 1-on-1s, and the critical question of whether they actually want the management path.</p>
+  <div class="why"><b>Why it matters</b> — Navigating the transition from individual contributor to interim manager by focusing on delegation and career alignment.</div>
+  <p class="src">Rands in Repose &middot; 22 August 2026 &middot; <a href="https://randsinrepose.com/archives/the-promotion-paradox/" rel="noopener nofollow" aria-label="Read the original: The Promotion Paradox">Read the original &rarr;</a></p>
 </div>
 </div>
 <div class="morelink"><a href="../search.html?c=craft">Browse all 78 stories in this channel &rarr;</a><span>73 older stories</span></div>
