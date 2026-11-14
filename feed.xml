@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Fri, 13 Nov 2026 09:55:59 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 09:13:19 +0000</lastBuildDate>
+    <item>
+      <title>Engineering Reading — 14 November 2026</title>
+      <link>https://news.maahol.com/eng-blogs/2026-11-14.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/eng-blogs/2026-11-14.html</guid>
+      <pubDate>Sat, 14 Nov 2026 08:00:00 +0000</pubDate>
+      <description>25 new posts across 8 engineering blogs — 7 worth your time.</description>
+    </item>
     <item>
       <title>AI Tech Weekly Digest — 13 November 2026</title>
       <link>https://news.maahol.com/ai/2026-11-13.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/security-news/2026-10-27.html</guid>
       <pubDate>Tue, 27 Oct 2026 08:00:00 +0000</pubDate>
       <description>9 vulnerabilities added to CISA's exploited-in-the-wild catalog this week.</description>
-    </item>
-    <item>
-      <title>DevOps Weekly Digest — 26 October 2026</title>
-      <link>https://news.maahol.com/devops/2026-10-26.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/devops/2026-10-26.html</guid>
-      <pubDate>Mon, 26 Oct 2026 08:00:00 +0000</pubDate>
-      <description>Node.js issues critical security updates, while cloud providers enhance AI infrastructure and developer tooling sees major beta releases.</description>
     </item>
 </channel></rss>
