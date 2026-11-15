@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sun, 15 Nov 2026 09:43:58 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 15 Nov 2026 09:44:20 +0000</lastBuildDate>
+    <item>
+      <title>Design &amp; UX — 15 November 2026</title>
+      <link>https://news.maahol.com/design/2026-11-15.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/design/2026-11-15.html</guid>
+      <pubDate>Sun, 15 Nov 2026 08:00:00 +0000</pubDate>
+      <description>20 new posts across 4 design and research sources — 7 worth your time.</description>
+    </item>
     <item>
       <title>India Tech Weekly — 15 November 2026</title>
       <link>https://news.maahol.com/india-tech/2026-11-15.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-10-28.html</guid>
       <pubDate>Wed, 28 Oct 2026 08:00:00 +0000</pubDate>
       <description>129 new posts across 11 SAP and supply chain sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>Web &amp; Frontend — 28 October 2026</title>
-      <link>https://news.maahol.com/web/2026-10-28.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/web/2026-10-28.html</guid>
-      <pubDate>Wed, 28 Oct 2026 08:00:00 +0000</pubDate>
-      <description>10 new posts across 3 web platform sources — 6 worth your time.</description>
     </item>
 </channel></rss>
