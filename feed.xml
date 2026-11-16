@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sun, 15 Nov 2026 09:44:20 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 10:03:47 +0000</lastBuildDate>
+    <item>
+      <title>Marketing — 16 November 2026</title>
+      <link>https://news.maahol.com/marketing/2026-11-16.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/marketing/2026-11-16.html</guid>
+      <pubDate>Mon, 16 Nov 2026 08:00:00 +0000</pubDate>
+      <description>50 new posts across 7 marketing sources — 7 worth your time.</description>
+    </item>
     <item>
       <title>Design &amp; UX — 15 November 2026</title>
       <link>https://news.maahol.com/design/2026-11-15.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/arxiv-picks/2026-10-28.html</guid>
       <pubDate>Wed, 28 Oct 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Trajectory2Gym: Decision-Grounded Compositional Interaction Synthesis  (349 upvotes).</description>
-    </item>
-    <item>
-      <title>Supply Chain &amp; ERP — 28 October 2026</title>
-      <link>https://news.maahol.com/supply-chain/2026-10-28.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-10-28.html</guid>
-      <pubDate>Wed, 28 Oct 2026 08:00:00 +0000</pubDate>
-      <description>129 new posts across 11 SAP and supply chain sources — 7 worth your time.</description>
     </item>
 </channel></rss>
