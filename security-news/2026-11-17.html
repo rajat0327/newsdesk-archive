@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Security Weekly Digest — 17 November 2026</title>
+<meta name="description" content="8 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
+<meta property="og:title" content="Security Weekly Digest — 17 November 2026">
+<meta property="og:description" content="8 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#d9552f">
+<link rel="canonical" href="https://news.maahol.com/security-news/2026-11-17.html">
+<link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
+<link rel="stylesheet" href="../style.css">
+<style>:root{--accent:#d9552f}</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><span class="dot"></span>Newsdesk</a>
+  <nav class="top-nav">
+    <a href="../search.html">Search</a>
+    <a href="../about.html">About</a>
+    <a class="sub" href="../feed.xml">RSS</a>
+  </nav>
+</div></header>
+<div class="chanbar"><div class="wrap"><details class="group" data-here><summary>Engineering<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu wide"><a href="../devops/" style="--cc:#3d7dd8">DevOps<span>Engineering Edition</span></a><a href="../security-news/" style="--cc:#d9552f" aria-current="page">Security<span>Exploits, Breaches &amp; Advisories</span></a><a href="../web/" style="--cc:#2d9f8c">Web<span>Browsers, Frameworks &amp; the Platform</span></a><a href="../release-radar/" style="--cc:#b8860b">Releases<span>What Shipped This Week</span></a><a href="../mobile/" style="--cc:#3fc22e">Mobile<span>iOS, Android &amp; Cross-Platform</span></a><a href="../open-source/" style="--cc:#4bac15">Open Source<span>Licences, Governance &amp; Supply Chain</span></a></div></details><details class="group"><summary>Data &amp; AI<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../data/" style="--cc:#c22ebe">Data<span>Engines, Pipelines &amp; Query Plans</span></a><a href="../arxiv-picks/" style="--cc:#8a5cd6">Papers<span>Papers Worth Reading</span></a><a href="../ai/" style="--cc:#0f9dab">AI<span>Engineering Edition</span></a></div></details><details class="group"><summary>Industries<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../fintech/" style="--cc:#c8519f">Fintech<span>Rails, Regulation &amp; Banking Tech</span></a><a href="../chips/" style="--cc:#38a0d6">Chips<span>Fabs, Process Nodes &amp; Accelerators</span></a><a href="../climate/" style="--cc:#b9d638">Climate<span>Grid, Storage &amp; the Transition</span></a></div></details><details class="group"><summary>Enterprise Systems<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../supply-chain/" style="--cc:#a2d35a">Supply Chain<span>Finance, Manufacturing, Warehousing &amp; Enterprise AI</span></a><a href="../hr-tech/" style="--cc:#7f15ac">HR Tech<span>SuccessFactors, payroll and people systems</span></a></div></details><details class="group"><summary>Go-to-Market<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../marketing/" style="--cc:#9f2d33">Marketing<span>Search, Content &amp; Demand</span></a><a href="../sales/" style="--cc:#9f612d">Sales<span>B2B Go-to-Market &amp; Retention</span></a></div></details><details class="group"><summary>Longform<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></summary><div class="menu"><a href="../eng-blogs/" style="--cc:#c2456f">Reading<span>From the Blogs Worth Following</span></a><a href="../craft/" style="--cc:#51c85d">Craft<span>Architecture, Practice &amp; Running Teams</span></a></div></details><a class="solo" href="../design/" style="--cc:#5a5bd3">Design</a><a class="solo" href="../india-tech/" style="--cc:#2f9e6f">India</a><a class="solo all" href="../search.html">All stories</a></div></div>
+<main class="wrap">
+<div class="hero">
+  <p class="sec" style="margin:0 0 10px"><a href="./" style="text-decoration:none;
+     color:#d9552f;font-weight:650;font-size:13px;letter-spacing:.06em;
+     text-transform:uppercase">Security Weekly Digest</a></p>
+  <h1>17 November 2026</h1>
+  <p class="lede">8 vulnerabilities added to CISA&#x27;s exploited-in-the-wild catalog this week.</p>
+  <p class="meta" style="margin-top:12px">One week of Security Weekly Digest,
+     12 stories, as published.</p>
+</div>
+<div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116606" rel="noopener nofollow">CVE-2026-116606: Barracuda Networks Barracuda Email Security Gateway (ESG)</a></h2>
+  <p>Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration. This vulnerability can be chained with CVE-2026-111560.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 9.3 (CRITICAL). CISA remediation deadline 13 Nov 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 17 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-116606" rel="noopener nofollow" aria-label="Read the original: CVE-2026-116606: Barracuda Networks Barracuda Email Security Gateway (ESG)">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-114713" rel="noopener nofollow">CVE-2026-114713: UnrealIRCd</a></h2>
+  <p>UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.6 (HIGH). CISA remediation deadline 16 Nov 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 17 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-114713" rel="noopener nofollow" aria-label="Read the original: CVE-2026-114713: UnrealIRCd">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123039" rel="noopener nofollow">CVE-2026-123039: Check Point Multiple Products</a></h2>
+  <p>Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 7.8 (HIGH). CISA remediation deadline 16 Nov 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 17 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123039" rel="noopener nofollow" aria-label="Read the original: CVE-2026-123039: Check Point Multiple Products">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20320" rel="noopener nofollow">CVE-2026-20320: Cisco BroadWorks</a></h2>
+  <p>Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 7.5 (HIGH). CISA remediation deadline 24 Nov 2026 — 7 days out.</div>
+  <p class="src">CISA KEV &middot; 17 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-20320" rel="noopener nofollow" aria-label="Read the original: CVE-2026-20320: Cisco BroadWorks">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111560" rel="noopener nofollow">CVE-2026-111560: Barracuda Networks Multiple Products</a></h2>
+  <p>Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) contain an OS command injection vulnerability. This vulnerability could allow an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed. This vulnerability can be chained with CVE-2026-116606</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.6 (HIGH). CISA remediation deadline 13 Nov 2026 — already passed.</div>
+  <p class="src">CISA KEV &middot; 17 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111560" rel="noopener nofollow" aria-label="Read the original: CVE-2026-111560: Barracuda Networks Multiple Products">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125350" rel="noopener nofollow">CVE-2026-125350: Google Chromium</a></h2>
+  <p>Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize Chromium, including, but not limited to, Google Chrome, Microsoft Edge, and Opera.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 8.8 (HIGH). CISA remediation deadline 24 Nov 2026 — 7 days out.</div>
+  <p class="src">CISA KEV &middot; 17 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125350" rel="noopener nofollow" aria-label="Read the original: CVE-2026-125350: Google Chromium">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-124194" rel="noopener nofollow">CVE-2026-124194: Microsoft Office</a></h2>
+  <p>Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 6.5 (MEDIUM). CISA remediation deadline 24 Nov 2026 — 7 days out.</div>
+  <p class="src">CISA KEV &middot; 17 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-124194" rel="noopener nofollow" aria-label="Read the original: CVE-2026-124194: Microsoft Office">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Exploited%20CVEs" style="--tc:#f78166"><i style="background:#f78166"></i>Exploited CVEs</a>
+  <h2><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111793" rel="noopener nofollow">CVE-2026-111793: Openwave Messaging Limited Webtop Media Transcoder</a></h2>
+  <p>Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience.</p>
+  <div class="why"><b>Why it matters</b> — Confirmed exploited in the wild. CVSS 4.3 (MEDIUM). CISA remediation deadline 24 Nov 2026 — 7 days out.</div>
+  <p class="src">CISA KEV &middot; 17 November 2026 &middot; <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111793" rel="noopener nofollow" aria-label="Read the original: CVE-2026-111793: Openwave Messaging Limited Webtop Media Transcoder">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Threat%20Actors" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Threat Actors</a>
+  <h2><a href="https://www.infosecurity-magazine.com/news/fbi-growing-abuse-ai-pentesting/" rel="noopener nofollow">FBI Warns ARTEX AI Tool Abuse</a></h2>
+  <p>The FBI issued a Flash notice on November 13, 2026, warning about increasing malicious cyber intrusion campaigns globally that leverage the open-source, AI-powered penetration testing tool ARTEX. Threat actors have used ARTEX since at least August 2026, targeting sectors including financial services, government, and technology, with some intrusions progressing from initial targeting to privileged access in under three hours.</p>
+  <div class="why"><b>Why it matters</b> — Organizations must prioritize defenses against AI-accelerated attacks, as tools like ARTEX significantly compress attack timelines, demanding faster detection and response capabilities.</div>
+  <p class="src">Infosecurity Magazine &middot; 17 November 2026 &middot; <a href="https://www.infosecurity-magazine.com/news/fbi-growing-abuse-ai-pentesting/" rel="noopener nofollow" aria-label="Read the original: FBI Warns ARTEX AI Tool Abuse">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Vulnerabilities" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vulnerabilities</a>
+  <h2><a href="https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/" rel="noopener nofollow">Microsoft Patches 1,000+ Flaws, Outlook Zero-Day</a></h2>
+  <p>Microsoft&#x27;s November 2026 Patch Tuesday addressed 1,094 vulnerabilities across Windows, Office, Azure, and other products, including 63 critical flaws. Notably, an actively exploited spoofing vulnerability in Microsoft Outlook (CVE-2026-124194) was patched, which could leak NTLM v2 hashes when a specially crafted file is opened.</p>
+  <div class="why"><b>Why it matters</b> — Organizations must immediately apply Microsoft&#x27;s November updates, especially for Outlook, to mitigate the risk of credential theft from an actively exploited zero-day.</div>
+  <p class="src">KrebsOnSecurity &middot; 17 November 2026 &middot; <a href="https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/" rel="noopener nofollow" aria-label="Read the original: Microsoft Patches 1,000+ Flaws, Outlook Zero-Day">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Ransomware" style="--tc:#f778ba"><i style="background:#f778ba"></i>Ransomware</a>
+  <h2><a href="https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline" rel="noopener nofollow">AI Fuels Ransomware Surge, Payments Drop</a></h2>
+  <p>Ransomware attacks increased by nearly 40% in Q3 2026, with threat groups leveraging AI tools to create convincing phishing emails and quickly identify sensitive data. Despite the surge in incidents, fewer organizations are paying ransoms, with the median demand dropping to $700,000 in 2026 from $2 million in 2024, as more companies recover data from backups.</p>
+  <div class="why"><b>Why it matters</b> — Organizations should prioritize robust backup and recovery strategies over ransom payments, as AI-driven attacks increase volume but reduce attacker leverage against prepared defenses.</div>
+  <p class="src">Dark Reading &middot; 17 November 2026 &middot; <a href="https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline" rel="noopener nofollow" aria-label="Read the original: AI Fuels Ransomware Surge, Payments Drop">Read the original &rarr;</a></p>
+</div>
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=security-news&amp;g=Cloud%20%26%20SaaS" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Cloud &amp; SaaS</a>
+  <h2><a href="https://www.infosecurity-magazine.com/news/microsoft-365-outage-security/" rel="noopener nofollow">Microsoft 365 Outage Fuels Phishing</a></h2>
+  <p>A widespread Microsoft 365 outage, disrupting Outlook and other services on November 12-13, 2026, prompted warnings from security agencies about a surge in phishing campaigns. Cybercriminals quickly leveraged the disruption to launch convincing phishing emails and fake support scams, aiming to steal credentials from users desperate to regain access to M365 services.</p>
+  <div class="why"><b>Why it matters</b> — Organizations must educate users on outage-related phishing tactics and implement robust multi-factor authentication, as attackers exploit service disruptions to compromise credentials.</div>
+  <p class="src">Infosecurity Magazine &middot; 17 November 2026 &middot; <a href="https://www.infosecurity-magazine.com/news/microsoft-365-outage-security/" rel="noopener nofollow" aria-label="Read the original: Microsoft 365 Outage Fuels Phishing">Read the original &rarr;</a></p>
+</div>
+</div>
+<p class="signoff">Just when the patch queue was starting to look manageable.</p>
+
+<div class="cta">
+  <h3>12 stories, every Tuesday</h3>
+  <p>Published here every week. Follow by RSS to get it as it lands.</p>
+  <div class="row">
+    <a class="btn primary" href="feed.xml">Subscribe by RSS</a>
+    <a class="btn" href="./">All issues</a>
+  </div>
+</div>
+<div class="cta" style="background:none;border:0;padding:0;display:flex;
+     justify-content:space-between;gap:16px;margin-top:26px;font-size:15px">
+  <a href="2026-11-10.html">&larr; Previous issue</a>
+</div>
+</main>
+<footer><div class="wrap">
+  Built from the digest archive. Every fact links to the source it came from.
+  &middot; <a href="../about.html">How it works</a>
+  &middot; <a href="../provenance.html">Where this comes from</a>
+  &middot; <a href="../feed.xml">RSS</a>
+</div></footer>
+<script>
+(function(){
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.chanbar details'));
+  groups.forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if(!d.open) return;
+      groups.forEach(function(o){ if(o !== d) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function(ev){
+    if(ev.target.closest('.chanbar')) return;
+    groups.forEach(function(d){ d.open = false; });
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape') groups.forEach(function(d){ d.open = false; });
+  });
+})();
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='/'&&!/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)){
+    e.preventDefault();location.href='../search.html';}
+});
+</script>
+</body>
+</html>
