@@ -3,7 +3,7 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Thu, 19 Nov 2026 02:39:51 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 02:40:26 +0000</lastBuildDate>
     <item>
       <title>HR &amp; Payroll Tech — 19 November 2026</title>
       <link>https://news.maahol.com/hr-tech/2026-11-19.html</link>
@@ -17,6 +17,13 @@
       <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-11-19.html</guid>
       <pubDate>Thu, 19 Nov 2026 08:00:00 +0000</pubDate>
       <description>42 releases across 31 tracked projects — 1 major version bump: Node.js 27.0.0-alpha.0.1.1.</description>
+    </item>
+    <item>
+      <title>Sales &amp; Revenue — 19 November 2026</title>
+      <link>https://news.maahol.com/sales/2026-11-19.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/sales/2026-11-19.html</guid>
+      <pubDate>Thu, 19 Nov 2026 08:00:00 +0000</pubDate>
+      <description>31 new posts across 5 go-to-market sources — 8 worth your time.</description>
     </item>
     <item>
       <title>arXiv Picks — 18 November 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/climate/2026-10-31.html</guid>
       <pubDate>Sat, 31 Oct 2026 08:00:00 +0000</pubDate>
       <description>66 new posts across 4 climate and energy sources — 8 worth your time.</description>
-    </item>
-    <item>
-      <title>Craft &amp; Leadership — 31 October 2026</title>
-      <link>https://news.maahol.com/craft/2026-10-31.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/craft/2026-10-31.html</guid>
-      <pubDate>Sat, 31 Oct 2026 08:00:00 +0000</pubDate>
-      <description>48 new posts across 10 practice and leadership sources — 7 worth your time.</description>
     </item>
 </channel></rss>
