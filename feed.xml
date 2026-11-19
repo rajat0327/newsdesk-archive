@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 18 Nov 2026 02:50:27 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 02:31:33 +0000</lastBuildDate>
+    <item>
+      <title>Release Radar — 19 November 2026</title>
+      <link>https://news.maahol.com/release-radar/2026-11-19.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-11-19.html</guid>
+      <pubDate>Thu, 19 Nov 2026 08:00:00 +0000</pubDate>
+      <description>42 releases across 31 tracked projects — 1 major version bump: Node.js 27.0.0-alpha.0.1.1.</description>
+    </item>
     <item>
       <title>arXiv Picks — 18 November 2026</title>
       <link>https://news.maahol.com/arxiv-picks/2026-11-18.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/eng-blogs/2026-10-31.html</guid>
       <pubDate>Sat, 31 Oct 2026 08:00:00 +0000</pubDate>
       <description>27 new posts across 6 engineering blogs — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>AI Tech Weekly Digest — 30 October 2026</title>
-      <link>https://news.maahol.com/ai/2026-10-30.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/ai/2026-10-30.html</guid>
-      <pubDate>Fri, 30 Oct 2026 08:00:00 +0000</pubDate>
-      <description>55 new posts across 9 AI lab and practitioner sources — 10 worth your time.</description>
     </item>
 </channel></rss>
