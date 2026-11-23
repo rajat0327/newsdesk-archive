@@ -3,7 +3,14 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Sun, 22 Nov 2026 02:38:27 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 02:36:22 +0000</lastBuildDate>
+    <item>
+      <title>DevOps Weekly Digest — 23 November 2026</title>
+      <link>https://news.maahol.com/devops/2026-11-23.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/devops/2026-11-23.html</guid>
+      <pubDate>Mon, 23 Nov 2026 08:00:00 +0000</pubDate>
+      <description>AWS enhances multicloud connectivity, serverless compute, and observability with key infrastructure and developer tooling updates.</description>
+    </item>
     <item>
       <title>Design &amp; UX — 22 November 2026</title>
       <link>https://news.maahol.com/design/2026-11-22.html</link>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-11-04.html</guid>
       <pubDate>Wed, 04 Nov 2026 08:00:00 +0000</pubDate>
       <description>123 new posts across 11 SAP and supply chain sources — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>Chips &amp; Silicon — 03 November 2026</title>
-      <link>https://news.maahol.com/chips/2026-11-03.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/chips/2026-11-03.html</guid>
-      <pubDate>Tue, 03 Nov 2026 08:00:00 +0000</pubDate>
-      <description>69 new posts across 3 semiconductor sources — 6 worth your time.</description>
     </item>
 </channel></rss>
