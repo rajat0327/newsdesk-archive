@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Mon, 23 Nov 2026 02:41:16 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 02:41:48 +0000</lastBuildDate>
     <item>
       <title>DevOps Weekly Digest — 23 November 2026</title>
       <link>https://news.maahol.com/devops/2026-11-23.html</link>
       <guid isPermaLink="true">https://news.maahol.com/devops/2026-11-23.html</guid>
       <pubDate>Mon, 23 Nov 2026 08:00:00 +0000</pubDate>
       <description>AWS enhances multicloud connectivity, serverless compute, and observability with key infrastructure and developer tooling updates.</description>
+    </item>
+    <item>
+      <title>Fintech &amp; Payments — 23 November 2026</title>
+      <link>https://news.maahol.com/fintech/2026-11-23.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/fintech/2026-11-23.html</guid>
+      <pubDate>Mon, 23 Nov 2026 08:00:00 +0000</pubDate>
+      <description>20 new posts across 3 fintech and payments sources — 5 worth your time.</description>
     </item>
     <item>
       <title>Marketing — 23 November 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/release-radar/2026-11-05.html</guid>
       <pubDate>Thu, 05 Nov 2026 08:00:00 +0000</pubDate>
       <description>18 releases across 31 tracked projects, including 2 with security fixes.</description>
-    </item>
-    <item>
-      <title>Sales &amp; Revenue — 05 November 2026</title>
-      <link>https://news.maahol.com/sales/2026-11-05.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/sales/2026-11-05.html</guid>
-      <pubDate>Thu, 05 Nov 2026 08:00:00 +0000</pubDate>
-      <description>29 new posts across 6 go-to-market sources — 7 worth your time.</description>
     </item>
 </channel></rss>
