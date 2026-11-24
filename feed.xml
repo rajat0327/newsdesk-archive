@@ -3,7 +3,7 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Tue, 24 Nov 2026 02:36:45 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 02:40:17 +0000</lastBuildDate>
     <item>
       <title>Chips &amp; Silicon — 24 November 2026</title>
       <link>https://news.maahol.com/chips/2026-11-24.html</link>
@@ -17,6 +17,13 @@
       <guid isPermaLink="true">https://news.maahol.com/data/2026-11-24.html</guid>
       <pubDate>Tue, 24 Nov 2026 08:00:00 +0000</pubDate>
       <description>77 new posts across 10 database and data engineering sources — 11 worth your time.</description>
+    </item>
+    <item>
+      <title>Security Weekly Digest — 24 November 2026</title>
+      <link>https://news.maahol.com/security-news/2026-11-24.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/security-news/2026-11-24.html</guid>
+      <pubDate>Tue, 24 Nov 2026 08:00:00 +0000</pubDate>
+      <description>10 vulnerabilities added to CISA's exploited-in-the-wild catalog this week, 1 tied to ransomware.</description>
     </item>
     <item>
       <title>DevOps Weekly Digest — 23 November 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/mobile/2026-11-06.html</guid>
       <pubDate>Fri, 06 Nov 2026 08:00:00 +0000</pubDate>
       <description>12 new posts across 6 mobile platform sources — 8 worth your time.</description>
-    </item>
-    <item>
-      <title>Open Source — 06 November 2026</title>
-      <link>https://news.maahol.com/open-source/2026-11-06.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/open-source/2026-11-06.html</guid>
-      <pubDate>Fri, 06 Nov 2026 08:00:00 +0000</pubDate>
-      <description>20 new posts across 3 open source sources — 5 worth your time.</description>
     </item>
 </channel></rss>

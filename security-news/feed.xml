@@ -3,7 +3,14 @@
   <title>Newsdesk — Security Weekly Digest</title>
   <link>https://news.maahol.com/security-news/</link>
   <description>Exploits, Breaches &amp; Advisories</description>
-  <lastBuildDate>Tue, 24 Nov 2026 02:36:45 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 24 Nov 2026 02:40:17 +0000</lastBuildDate>
+    <item>
+      <title>Security Weekly Digest — 24 November 2026</title>
+      <link>https://news.maahol.com/security-news/2026-11-24.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/security-news/2026-11-24.html</guid>
+      <pubDate>Tue, 24 Nov 2026 08:00:00 +0000</pubDate>
+      <description>10 vulnerabilities added to CISA's exploited-in-the-wild catalog this week, 1 tied to ransomware.</description>
+    </item>
     <item>
       <title>Security Weekly Digest — 17 November 2026</title>
       <link>https://news.maahol.com/security-news/2026-11-17.html</link>
