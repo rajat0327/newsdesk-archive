@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Databases &amp; Data — Engines, Pipelines &amp; Query Plans</title>
-<meta name="description" content="Engines, Pipelines &amp; Query Plans. 135 stories across 16 issues.">
+<meta name="description" content="Engines, Pipelines &amp; Query Plans. 146 stories across 17 issues.">
 <meta property="og:title" content="Databases &amp; Data — Engines, Pipelines &amp; Query Plans">
-<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 135 stories across 16 issues.">
+<meta property="og:description" content="Engines, Pipelines &amp; Query Plans. 146 stories across 17 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#c22ebe">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Databases &amp; Data</h1>
   <p class="lede">Engines, Pipelines &amp; Query Plans. Published every
      <b>Tuesday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>135</b> stories</span>
-     <span><b>16</b> issues</span>
+  <p class="stats"><span><b>146</b> stories</span>
+     <span><b>17</b> issues</span>
      <span><b>9</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=data&amp;g=Postgres" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Postgres</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Analytics%20%26%20OLAP" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Analytics &amp; OLAP</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Streaming%20%26%20CDC" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Streaming &amp; CDC</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Storage%20Internals" style="--tc:#f78166"><i style="background:#f78166"></i>Storage Internals</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Performance" style="--tc:#e3b341"><i style="background:#e3b341"></i>Performance</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Vector%20%26%20AI%20Data" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Vector &amp; AI Data</a> <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
 </div>
@@ -38,6 +38,13 @@
 <div class="sec"><h2>Top stories</h2><div class="rule"></div>
   <a href="feed.xml">RSS</a></div>
 <div class="feed">
+<div class="item">
+  <a class="tag tag-link" href="../search.html?c=data&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a>
+  <h3><a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-automates-source-actions/" rel="noopener nofollow">AWS Automates Large-Scale Migration Cutover Actions</a></h3>
+  <p>AWS Transform now automates the traditionally manual and time-consuming tasks of preparing and validating servers during large-scale cloud migrations. The new &#x27;source actions&#x27; capability allows users to define actions once and execute them in bulk across multiple servers and migration waves, centralizing management and reuse. This streamlines both pre-migration preparation and post-launch validation on AWS.</p>
+  <div class="why"><b>Why it matters</b> — Teams can significantly reduce manual effort and human error in large-scale cloud migrations by automating server preparation and validation tasks with AWS Transform&#x27;s new source actions.</div>
+  <p class="src">AWS Amazon.com &middot; 24 November 2026 &middot; <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-automates-source-actions/" rel="noopener nofollow" aria-label="Read the original: AWS Automates Large-Scale Migration Cutover Actions">Read the original &rarr;</a></p>
+</div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=data&amp;g=Data%20Engineering" style="--tc:#3fb950"><i style="background:#3fb950"></i>Data Engineering</a>
   <h3><a href="https://docs.cloud.google.com/release-notes" rel="noopener nofollow">Mandiant Feeds Deprecated, Migration Required</a></h3>
@@ -66,22 +73,16 @@
   <div class="why"><b>Why it matters</b> — Provides approach patterns for running large database cutovers when native change data capture or logical replication functionality is unavailable.</div>
   <p class="src">PlanetScale &middot; 17 November 2026 &middot; <a href="https://planetscale.com/blog/migrate-from-heroku-to-planetscale" rel="noopener nofollow" aria-label="Read the original: How we migrate TBs from Heroku without logical replication">Read the original &rarr;</a></p>
 </div>
-<div class="item">
-  <a class="tag tag-link" href="../search.html?c=data&amp;g=Reliability" style="--tc:#f778ba"><i style="background:#f778ba"></i>Reliability</a>
-  <h3><a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow">What else runs on your Postgres server, and how do we stop it from taking the database down?</a></h3>
-  <p>Describes the mechanisms ClickHouse Managed Postgres uses to prevent supporting services (like backup agents or logging daemons) from compromising database availability. It details the use of cgroup limits, runtime budgets, and disk-full session exemptions to isolate resources.</p>
-  <div class="why"><b>Why it matters</b> — Implementing disk-full session exemptions allows administrators to connect and run cleanup commands even when the disk is at 100% capacity and rejecting standard connections.</div>
-  <p class="src">ClickHouse &middot; 25 August 2026 &middot; <a href="https://clickhouse.com/blog/protect-postgres-from-supporting-processes" rel="noopener nofollow" aria-label="Read the original: What else runs on your Postgres server, and how do we stop it from taking the database down?">Read the original &rarr;</a></p>
 </div>
-</div>
-<div class="morelink"><a href="../search.html?c=data">Browse all 135 stories in this channel &rarr;</a><span>130 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=data">Browse all 146 stories in this channel &rarr;</a><span>141 older stories</span></div>
 
-<p class="signoff">Another week spent either tuning PostgreSQL or planning to upgrade it.</p>
+<p class="signoff">Still paying interest on choices that felt reasonable at the time.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-11-24.html"><span class="d">24 November 2026</span><span class="h">77 new posts across 10 database and data engineering sources — 11 worth your time.</span><span class="n">11 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-11-17.html"><span class="d">17 November 2026</span><span class="h">66 new posts across 10 database and data engineering sources — 10 worth your time.</span><span class="n">10 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-11-10.html"><span class="d">10 November 2026</span><span class="h">83 new posts across 10 database and data engineering sources — 9 worth your time.</span><span class="n">9 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-11-03.html"><span class="d">03 November 2026</span><span class="h">74 new posts across 9 database and data engineering sources — 8 worth your time.</span><span class="n">8 stories &rarr;</span></a></li>
