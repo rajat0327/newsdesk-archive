@@ -3,13 +3,20 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 25 Nov 2026 02:38:17 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 02:39:18 +0000</lastBuildDate>
     <item>
       <title>arXiv Picks — 25 November 2026</title>
       <link>https://news.maahol.com/arxiv-picks/2026-11-25.html</link>
       <guid isPermaLink="true">https://news.maahol.com/arxiv-picks/2026-11-25.html</guid>
       <pubDate>Wed, 25 Nov 2026 08:00:00 +0000</pubDate>
       <description>20 papers shortlisted this week — most discussed: Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Huma (175 upvotes).</description>
+    </item>
+    <item>
+      <title>Supply Chain &amp; ERP — 25 November 2026</title>
+      <link>https://news.maahol.com/supply-chain/2026-11-25.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-11-25.html</guid>
+      <pubDate>Wed, 25 Nov 2026 08:00:00 +0000</pubDate>
+      <description>128 new posts across 11 SAP and supply chain sources — 8 worth your time.</description>
     </item>
     <item>
       <title>Chips &amp; Silicon — 24 November 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/eng-blogs/2026-11-07.html</guid>
       <pubDate>Sat, 07 Nov 2026 08:00:00 +0000</pubDate>
       <description>24 new posts across 9 engineering blogs — 7 worth your time.</description>
-    </item>
-    <item>
-      <title>AI Tech Weekly Digest — 06 November 2026</title>
-      <link>https://news.maahol.com/ai/2026-11-06.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/ai/2026-11-06.html</guid>
-      <pubDate>Fri, 06 Nov 2026 08:00:00 +0000</pubDate>
-      <description>66 new posts across 8 AI lab and practitioner sources — 7 worth your time.</description>
     </item>
 </channel></rss>
