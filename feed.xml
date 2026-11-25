@@ -3,7 +3,7 @@
   <title>Newsdesk</title>
   <link>https://news.maahol.com</link>
   <description>Weekly digests for engineers, SAP consultants and supply chain teams. Most of what you read comes straight from an API — not from a language model.</description>
-  <lastBuildDate>Wed, 25 Nov 2026 02:39:18 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 02:39:45 +0000</lastBuildDate>
     <item>
       <title>arXiv Picks — 25 November 2026</title>
       <link>https://news.maahol.com/arxiv-picks/2026-11-25.html</link>
@@ -17,6 +17,13 @@
       <guid isPermaLink="true">https://news.maahol.com/supply-chain/2026-11-25.html</guid>
       <pubDate>Wed, 25 Nov 2026 08:00:00 +0000</pubDate>
       <description>128 new posts across 11 SAP and supply chain sources — 8 worth your time.</description>
+    </item>
+    <item>
+      <title>Web &amp; Frontend — 25 November 2026</title>
+      <link>https://news.maahol.com/web/2026-11-25.html</link>
+      <guid isPermaLink="true">https://news.maahol.com/web/2026-11-25.html</guid>
+      <pubDate>Wed, 25 Nov 2026 08:00:00 +0000</pubDate>
+      <description>16 new posts across 7 web platform sources — 7 worth your time.</description>
     </item>
     <item>
       <title>Chips &amp; Silicon — 24 November 2026</title>
@@ -346,12 +353,5 @@
       <guid isPermaLink="true">https://news.maahol.com/craft/2026-11-07.html</guid>
       <pubDate>Sat, 07 Nov 2026 08:00:00 +0000</pubDate>
       <description>45 new posts across 8 practice and leadership sources — 5 worth your time.</description>
-    </item>
-    <item>
-      <title>Engineering Reading — 07 November 2026</title>
-      <link>https://news.maahol.com/eng-blogs/2026-11-07.html</link>
-      <guid isPermaLink="true">https://news.maahol.com/eng-blogs/2026-11-07.html</guid>
-      <pubDate>Sat, 07 Nov 2026 08:00:00 +0000</pubDate>
-      <description>24 new posts across 9 engineering blogs — 7 worth your time.</description>
     </item>
 </channel></rss>
