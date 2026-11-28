@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Craft &amp; Leadership — Architecture, Practice &amp; Running Teams</title>
-<meta name="description" content="Architecture, Practice &amp; Running Teams. 91 stories across 16 issues.">
+<meta name="description" content="Architecture, Practice &amp; Running Teams. 96 stories across 17 issues.">
 <meta property="og:title" content="Craft &amp; Leadership — Architecture, Practice &amp; Running Teams">
-<meta property="og:description" content="Architecture, Practice &amp; Running Teams. 91 stories across 16 issues.">
+<meta property="og:description" content="Architecture, Practice &amp; Running Teams. 96 stories across 17 issues.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#51c85d">
 <link rel="alternate" type="application/rss+xml" title="Newsdesk" href="../feed.xml">
@@ -28,8 +28,8 @@
   <h1>Craft &amp; Leadership</h1>
   <p class="lede">Architecture, Practice &amp; Running Teams. Published every
      <b>Saturday</b>, here and by RSS.</p>
-  <p class="stats"><span><b>91</b> stories</span>
-     <span><b>16</b> issues</span>
+  <p class="stats"><span><b>96</b> stories</span>
+     <span><b>17</b> issues</span>
      <span><b>9</b> categories</span></p>
   <p style="margin-top:16px"><a class="tag tag-link" href="../search.html?c=craft&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a> <a class="tag tag-link" href="../search.html?c=craft&amp;g=Leading%20Teams" style="--tc:#d2a8ff"><i style="background:#d2a8ff"></i>Leading Teams</a> <a class="tag tag-link" href="../search.html?c=craft&amp;g=Incidents%20%26%20Ops" style="--tc:#f78166"><i style="background:#f78166"></i>Incidents &amp; Ops</a> <a class="tag tag-link" href="../search.html?c=craft&amp;g=Testing%20%26%20Quality" style="--tc:#3fb950"><i style="background:#3fb950"></i>Testing &amp; Quality</a> <a class="tag tag-link" href="../search.html?c=craft&amp;g=Migrations" style="--tc:#e3b341"><i style="background:#e3b341"></i>Migrations</a> <a class="tag tag-link" href="../search.html?c=craft&amp;g=Productivity" style="--tc:#39d3d3"><i style="background:#39d3d3"></i>Productivity</a> <a class="tag tag-link" href="../search.html?c=craft&amp;g=Careers" style="--tc:#f778ba"><i style="background:#f778ba"></i>Careers</a> <a class="tag tag-link" href="../search.html?c=craft&amp;g=Opinion" style="--tc:#79c0ff"><i style="background:#79c0ff"></i>Opinion</a> <a class="tag tag-link" href="../search.html?c=craft&amp;g=Practice" style="--tc:#8b949e"><i style="background:#8b949e"></i>Practice</a></p>
 </div>
@@ -61,27 +61,28 @@
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=craft&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a>
-  <h3><a href="https://www.infoq.com/presentations/scale-llm-ranking-systems-linkedin/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow">Presentation: Scaling LLM-Based Ranking Systems for Latency-Critical Search &amp; Recommendation Workloads</a></h3>
-  <p>LinkedIn details how it met strict P99 latency SLAs for LLM ranking by distilling a 7B parameter model down to 400M and compressing job contexts into single-token embeddings. It also highlights eliminating underlying system bottlenecks using custom flash attention masks, gc.freeze, Python GIL workarounds, and non-blocking CUDA memory copies.</p>
-  <div class="why"><b>Why it matters</b> — Distilling models down to under 500M parameters combined with single-token embedding compression can deliver a 10x throughput increase for latency-critical production workloads.</div>
-  <p class="src">InfoQ Architecture &middot; 21 November 2026 &middot; <a href="https://www.infoq.com/presentations/scale-llm-ranking-systems-linkedin/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow" aria-label="Read the original: Presentation: Scaling LLM-Based Ranking Systems for Latency-Critical Search &amp; Recommendation Workloads">Read the original &rarr;</a></p>
+  <h3><a href="https://www.infoq.com/news/2026/11/doordash-dispatch-redesign/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow">DoorDash Scales Dispatch 10x While Maintaining 99.99% Peak Availability</a></h3>
+  <p>DoorDash redesigned its real-time dispatch platform by decoupling coordination from heavy computation to handle 10x higher throughput while keeping peak availability over 99.99%. The updated architecture incorporates hybrid machine learning and multi-agent reinforcement learning for dynamic delivery optimization.</p>
+  <div class="why"><b>Why it matters</b> — Decoupling architectural coordination from heavy optimization computation enables massive scalability while maintaining strict peak availability SLAs.</div>
+  <p class="src">InfoQ Architecture &middot; 28 November 2026 &middot; <a href="https://www.infoq.com/news/2026/11/doordash-dispatch-redesign/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow" aria-label="Read the original: DoorDash Scales Dispatch 10x While Maintaining 99.99% Peak Availability">Read the original &rarr;</a></p>
 </div>
 <div class="item">
   <a class="tag tag-link" href="../search.html?c=craft&amp;g=Architecture" style="--tc:#58a6ff"><i style="background:#58a6ff"></i>Architecture</a>
-  <h3><a href="https://www.infoq.com/news/2026/11/uber-go-translation-cache/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow">Uber Cuts Translation Cache Memory by up to 90% While Keeping P99 Latency Below 1 MS</a></h3>
-  <p>Uber redesigned its Go-based translation cache into a hybrid model that keeps keys and hot values in memory while offloading remaining entries to disk. This design reduced initial memory consumption by over 90% while maintaining hit rates above 99.9% and disk-backed miss P99 latency under 100 microseconds.</p>
-  <div class="why"><b>Why it matters</b> — Hybrid cache architectures that offload cold values to disk significantly reduce Go garbage collection overhead and memory footprints without breaking sub-millisecond P99 SLAs.</div>
-  <p class="src">InfoQ Architecture &middot; 21 November 2026 &middot; <a href="https://www.infoq.com/news/2026/11/uber-go-translation-cache/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow" aria-label="Read the original: Uber Cuts Translation Cache Memory by up to 90% While Keeping P99 Latency Below 1 MS">Read the original &rarr;</a></p>
+  <h3><a href="https://www.infoq.com/news/2026/11/openai-git-pando/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow">OpenAI Scales Git for Coding Agents with Pando</a></h3>
+  <p>OpenAI detailed Pando, a backend that scales standard Git repository operations for concurrent coding agents without altering existing workflows. By isolating branch update coordination and reusing packfiles across fetches, Pando reduced median push latency by nearly 80%.</p>
+  <div class="why"><b>Why it matters</b> — High-concurrency automated agent workflows can scale on standard Git by decoupling branch updates and caching packfiles rather than replacing Git.</div>
+  <p class="src">InfoQ Architecture &middot; 28 November 2026 &middot; <a href="https://www.infoq.com/news/2026/11/openai-git-pando/?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Architecture+%26+Design" rel="noopener nofollow" aria-label="Read the original: OpenAI Scales Git for Coding Agents with Pando">Read the original &rarr;</a></p>
 </div>
 </div>
-<div class="morelink"><a href="../search.html?c=craft">Browse all 91 stories in this channel &rarr;</a><span>86 older stories</span></div>
+<div class="morelink"><a href="../search.html?c=craft">Browse all 96 stories in this channel &rarr;</a><span>91 older stories</span></div>
 
-<p class="signoff">Sub-millisecond latency just gives us more time to reflect on our choices.</p>
+<p class="signoff">Someone&#x27;s VP is about to ask why we aren&#x27;t shipping a hundred PRs a week.</p>
 
 <div class="sec"><h2>Weekly editions</h2><div class="rule"></div></div>
 <p class="editions-note">Each edition is one week's digest exactly as it was
    published — a summary of the week, then the stories.</p>
 <ul class="issues">
+  <li><a class="edition" href="2026-11-28.html"><span class="d">28 November 2026</span><span class="h">45 new posts across 7 practice and leadership sources — 5 worth your time.</span><span class="n">5 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-11-21.html"><span class="d">21 November 2026</span><span class="h">48 new posts across 7 practice and leadership sources — 6 worth your time.</span><span class="n">6 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-11-14.html"><span class="d">14 November 2026</span><span class="h">50 new posts across 8 practice and leadership sources — 7 worth your time.</span><span class="n">7 stories &rarr;</span></a></li>
   <li><a class="edition" href="2026-11-07.html"><span class="d">07 November 2026</span><span class="h">45 new posts across 8 practice and leadership sources — 5 worth your time.</span><span class="n">5 stories &rarr;</span></a></li>
